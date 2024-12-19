@@ -1,0 +1,159 @@
+# config.yml
+# Linux Users: PHP Namespaces use back slash \ rather than a forward slash /
+# So for destinations_php, the namespace would be DDEX\ERN
+
+xsd2php:
+  namespaces:
+    'http://ddex.net/xml/ern/34':   'DDEX\ERN\ERN_340'
+    'http://ddex.net/xml/ern/35':   'DDEX\ERN\ERN_350'
+    'http://ddex.net/xml/ern/36':   'DDEX\ERN\ERN_360'
+    'http://ddex.net/xml/ern/37':   'DDEX\ERN\ERN_370'
+    'http://ddex.net/xml/ern/38':   'DDEX\ERN\ERN_380'
+    'http://ddex.net/xml/ern/40':   'DDEX\ERN\ERN_400'
+    'http://ddex.net/xml/ern/41':   'DDEX\ERN\ERN_410'
+    'http://ddex.net/xml/ern/42':   'DDEX\ERN\ERN_420'
+    'http://ddex.net/xml/ern/43':   'DDEX\ERN\ERN_430'
+    'http://ddex.net/xml/ern/341':  'DDEX\ERN\ERN_341'
+    'http://ddex.net/xml/ern/351':  'DDEX\ERN\ERN_351'
+    'http://ddex.net/xml/ern/371':  'DDEX\ERN\ERN_371'
+    'http://ddex.net/xml/ern/37D1': 'DDEX\ERN\ERN_37D1'
+    'http://ddex.net/xml/ern/37D2': 'DDEX\ERN\ERN_37D2'
+    'http://ddex.net/xml/ern/381':  'DDEX\ERN\ERN_381'
+    'http://ddex.net/xml/ern/382':  'DDEX\ERN\ERN_382'
+    'http://ddex.net/xml/ern/383':  'DDEX\ERN\ERN_383'
+    'http://ddex.net/xml/ern/411':  'DDEX\ERN\ERN_411'
+    'http://ddex.net/xml/ern/431':  'DDEX\ERN\ERN_431'
+
+
+    # avs
+    'http://ddex.net/xml/avs/avs': 'DDEX\AVS'
+    'http://ddex.net/xml/allowed-value-sets': 'DDEX\AVS'
+
+    # ddexC, legacy
+    'http://ddex.net/xml/20120214/ddexC': 'DDEX\ddexC'
+    'http://ddex.net/xml/20120404/ddexC': 'DDEX\ddexC'
+    'http://ddex.net/xml/20120719/ddexC': 'DDEX\ddexC'
+    'http://ddex.net/xml/20121219/ddexC': 'DDEX\ddexC'
+
+    'http://ddex.net/xml/20120214/ddex': 'DDEX'
+    'http://ddex.net/xml/20120404/ddex': 'DDEX'
+    'http://ddex.net/xml/20120719/ddex': 'DDEX'
+    'http://ddex.net/xml/20121219/ddex': 'DDEX'
+
+    'http://ddex.net/xml/20120214/iso3166a2': 'ISO\iso3166a2'
+    'http://ddex.net/xml/20120404/iso3166a2': 'ISO\iso3166a2'
+    'http://ddex.net/xml/20120719/iso3166a2': 'ISO\iso3166a2'
+    'http://ddex.net/xml/20121219/iso3166a2': 'ISO\iso3166a2'
+
+    'http://ddex.net/xml/20120214/iso4217a': 'ISO\iso4217a'
+    'http://ddex.net/xml/20120404/iso4217a': 'ISO\iso4217a'
+    'http://ddex.net/xml/20120719/iso4217a': 'ISO\iso4217a'
+    'http://ddex.net/xml/20121219/iso4217a': 'ISO\iso4217a'
+
+    'http://ddex.net/xml/20120214/iso639a2': 'ISO\iso639a2'
+    'http://ddex.net/xml/20120404/iso639a2': 'ISO\iso639a2'
+    'http://ddex.net/xml/20120719/iso639a2': 'ISO\iso639a2'
+    'http://ddex.net/xml/20121219/iso639a2': 'ISO\iso639a2'
+
+
+
+  destinations_php:
+    'DDEX\ddexC': ..\src\DDEXWrapper\schema\DDEX\ddexC\
+    
+    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_431
+
+  destinations_jms:
+    'DDEX\ddexC': ..\src\DDEXWrapper\metadata\DDEX\ddexC\
+
+    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_431
+
+  destinations_validation:
+    'DDEX\ddexC': ..\src\DDEXWrapper\validation\DDEX\ddexC\
+
+    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_431
+    
+  # XML namespaces for generated output
+  # https://github.com/zoliszabo/xsd2php/pull/1/commits/8a99036ae12f238fab79443fadf74c1a12a6fa30
+  xml_namespaces:
+    'http://ddex.net/xml/ern/34': 'ern'
+    'http://ddex.net/xml/ern/341': 'ern'
+    'http://ddex.net/xml/ern/35': 'ern'
+    'http://ddex.net/xml/ern/351': 'ern'
+    'http://ddex.net/xml/ern/36': 'ern'
+    'http://ddex.net/xml/ern/37': 'ern'
+    'http://ddex.net/xml/ern/371': 'ern'
+    'http://ddex.net/xml/ern/37D1': 'ern'
+    'http://ddex.net/xml/ern/37D2': 'ern'
+    'http://ddex.net/xml/ern/38': 'ern'
+    'http://ddex.net/xml/ern/381': 'ern'
+    'http://ddex.net/xml/ern/382': 'ern'
+    'http://ddex.net/xml/ern/383': 'ern'
+    'http://ddex.net/xml/ern/40': 'ern'
+    'http://ddex.net/xml/ern/41': 'ern'
+    'http://ddex.net/xml/ern/411': 'ern'
+    'http://ddex.net/xml/ern/42': 'ern'
+    'http://ddex.net/xml/ern/43': 'ern'
+    'http://ddex.net/xml/ern/431': 'ern'
+
+  aliases:
+    '':
+      DateTime: 'DateTimeTypeHandler'
+
+  naming_strategy: long # optional and default
+  path_generator: psr4
+  configs_jms:
+    xml_cdata: false # Disables CDATA

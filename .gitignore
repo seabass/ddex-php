@@ -1,0 +1,7 @@
+/composer.lock
+/vendor/
+/dev/wget.exe
+/src/DDEXWrapper/metadata/
+/src/DDEXWrapper/schema/
+/src/DDEXWrapper/validation/
+/src/DDEXWrapper/xml/

@@ -1,0 +1,36 @@
+{
+    "name": "seabass/ddex-php",
+    "description": "ddex",
+    "authors": [
+        {
+            "name": "Sebastian Wolff",
+            "email": "seabass88@gmail.com"
+        }
+    ],
+    "require": {
+        "jms/serializer": "^3.32",
+        "symfony/validator": "^6.4",
+        "goetas-webservices/xsd2php": "@dev",
+        "goetas-webservices/xsd2php-runtime": "@dev"
+    },
+    "require-dev": {
+        "goetas-webservices/xsd2php": "@dev",
+        "goetas-webservices/xsd2php-runtime": "@dev"
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "./dev/composer/goetas-webservices/xsd2php"
+    },{
+        "type": "path",
+        "url": "./dev/composer/goetas-webservices/xsd2php-runtime"
+    }],
+    "autoload": {
+      "psr-4": {
+        "DDEX\\": "src/"
+      }
+    },
+    "autoload-dev": {
+    "psr-4": {
+      "DDEX\\Tests\\": "tests/"
+    }
+}

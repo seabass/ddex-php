@@ -1,0 +1,12 @@
+xsd2php:
+  namespaces:
+    'http://www.opentravel.org/OTA/2003/05': 'OTA'
+  destinations_php:
+    'OTA': ota/php
+  destinations_jms:
+    'OTA': ota/jms
+  destinations_validation:
+    'OTA': ota/validation
+  aliases:
+    'http://www.opentravel.org/OTA/2003/05':
+      CustomOTADateTimeFormat:  'CustomDateTime'

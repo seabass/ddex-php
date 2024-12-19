@@ -1,0 +1,12 @@
+tools:
+    external_code_coverage:
+        timeout: 3600 #60 min
+
+checks:
+    php:
+        code_rating: true
+        duplication: true
+
+filter:
+    paths:
+        - src/*
