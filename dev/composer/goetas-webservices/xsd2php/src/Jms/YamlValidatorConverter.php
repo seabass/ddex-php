@@ -211,6 +211,10 @@ class YamlValidatorConverter extends YamlConverter
      */
     private function loadValidatorElement(array &$property, ElementItem $element)
     {
+
+    	if($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
+    		return false;
+    	}
         /* @var $element Element */
         $type = $element->getType();
 
@@ -326,7 +330,9 @@ class YamlValidatorConverter extends YamlConverter
     {
         $property = parent::visitElement($class, $schema, $element, $arrayize);
 
-        $this->loadValidatorElement($property, $element);
+        if($property) {
+        	$this->loadValidatorElement($property, $element);
+        }
 
         return $property;
     }

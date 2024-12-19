@@ -496,6 +496,10 @@ class YamlConverter extends AbstractConverter
      */
     protected function &visitElement(&$class, Schema $schema, ElementItem $element, $arrayize = true)
     {
+
+    	if($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
+    		return false;
+    	}
         $property = [];
         $property['expose'] = true;
         $property['access_type'] = 'public_method';

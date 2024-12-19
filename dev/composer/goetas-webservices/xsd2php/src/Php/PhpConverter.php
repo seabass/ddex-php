@@ -134,7 +134,9 @@ class PhpConverter extends AbstractConverter
 				$this->visitGroup($class, $schema, $childSequence);
 			} else {
 				$property = $this->visitElement($class, $schema, $childSequence);
-				$class->addProperty($property);
+				if($property) {
+					$class->addProperty($property);
+				}
 			}
 		}
 	}
@@ -153,7 +155,9 @@ class PhpConverter extends AbstractConverter
 				$this->visitSequence($class, $schema, $choiceOption);
 			} else {
 				$property = $this->visitElement($class, $schema, $choiceOption);
-				$class->addProperty($property);
+				if($property) {
+					$class->addProperty($property);
+				}
 			}
         }
     }
@@ -165,7 +169,9 @@ class PhpConverter extends AbstractConverter
                 $this->visitGroup($class, $schema, $childGroup);
             } else {
                 $property = $this->visitElement($class, $schema, $childGroup);
-                $class->addProperty($property);
+				if($property) {
+					$class->addProperty($property);
+				}
             }
         }
     }
@@ -339,7 +345,7 @@ class PhpConverter extends AbstractConverter
 
         return $this->classes[spl_object_hash($type)]['class'];
     }
-
+ 
     private function visitComplexType(PHPClass $class, ComplexType $type)
     {
         $schema = $type->getSchema();
@@ -350,9 +356,13 @@ class PhpConverter extends AbstractConverter
                 $this->visitChoice($class, $schema, $element);
             } elseif ($element instanceof Group) {
                 $this->visitGroup($class, $schema, $element);
+            } elseif ($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
+                // ignore lol
             } else {
                 $property = $this->visitElement($class, $schema, $element);
-                $class->addProperty($property);
+                if($property) {
+                	$class->addProperty($property);
+                }
             }
         }
     }
@@ -451,8 +461,13 @@ class PhpConverter extends AbstractConverter
      *
      * @return \GoetasWebservices\Xsd\XsdToPhp\Php\Structure\PHPProperty
      */
-    private function visitElement(PHPClass $class, Schema $schema, ElementSingle $element, $arrayize = true)
+    //private function visitElement(PHPClass $class, Schema $schema, ElementSingle $element, $arrayize = true)
+    private function visitElement(PHPClass $class, Schema $schema, $element, $arrayize = true)
     {
+    	if($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
+    		return false;
+    	}
+
         $property = new PHPProperty();
         $property->setName($this->getNamingStrategy()->getPropertyName($element));
         $property->setDoc($element->getDoc());
@@ -499,7 +514,9 @@ class PhpConverter extends AbstractConverter
                     $classType = $this->visitType($t, true);
                 }
                 $elementProp = $this->visitElement($classType, $schema, $itemOfArray, false);
-                $property->setType(new PHPClassOf($elementProp));
+                if($elementProp) {
+                	$property->setType(new PHPClassOf($elementProp));
+                }
 
                 return $property;
             } elseif ($this->isArrayElement($element)) {
