@@ -1,0 +1,9 @@
+DDEX\PIE\PIE_100\ImageType:
+    properties:
+        file:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

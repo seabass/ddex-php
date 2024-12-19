@@ -1,0 +1,16 @@
+DDEX\MEAD\MEAD_100\DurationType:
+    properties:
+        unitOfDuration:
+            -
+                Choice:
+                    choices:
+                        - Day
+                        - Month
+                        - UserDefined
+                        - Week
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

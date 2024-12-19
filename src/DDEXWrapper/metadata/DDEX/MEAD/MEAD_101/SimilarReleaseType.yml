@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_101\SimilarReleaseType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        release:
+            expose: true
+            access_type: public_method
+            serialized_name: Release
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelease
+                setter: setRelease
+            type: DDEX\MEAD\MEAD_101\ReleaseType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\MEAD\MEAD_101\AnnotationType>

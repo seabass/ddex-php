@@ -1,0 +1,91 @@
+DDEX\MEAD\MEAD_110\WorkHierarchyType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        isDescribedElement:
+            expose: true
+            access_type: public_method
+            serialized_name: IsDescribedElement
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsDescribedElement
+                setter: setIsDescribedElement
+            type: bool
+        isComplete:
+            expose: true
+            access_type: public_method
+            serialized_name: IsComplete
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsComplete
+                setter: setIsComplete
+            type: bool
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        workId:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkId
+                setter: setWorkId
+            type: DDEX\MEAD\MEAD_110\MusicalWorkIdWithoutFlagType
+        workTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkTitle
+                setter: setWorkTitle
+            xml_list:
+                inline: true
+                entry_name: WorkTitle
+            type: array<DDEX\MEAD\MEAD_110\WorkTitleType>
+        child:
+            expose: true
+            access_type: public_method
+            serialized_name: Child
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChild
+                setter: setChild
+            xml_list:
+                inline: true
+                entry_name: Child
+            type: array<DDEX\MEAD\MEAD_110\ChildWorkHierarchyType>
+        form:
+            expose: true
+            access_type: public_method
+            serialized_name: Form
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getForm
+                setter: setForm
+            type: DDEX\MEAD\MEAD_110\FormType

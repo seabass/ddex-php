@@ -1,0 +1,14 @@
+DDEX\MEAD\MEAD_110\RelatedCreationType:
+    properties:
+        releaseId:
+            -
+                Valid: null
+        resourceId:
+            -
+                Valid: null
+        musicalWorkId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null

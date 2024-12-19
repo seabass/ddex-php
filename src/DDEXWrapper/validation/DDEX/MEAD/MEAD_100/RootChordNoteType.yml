@@ -1,0 +1,21 @@
+DDEX\MEAD\MEAD_100\RootChordNoteType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - A
+                        - 'Ab/G#'
+                        - B
+                        - 'Bb/A#'
+                        - C
+                        - 'C#/Db'
+                        - D
+                        - E
+                        - 'Eb/D#'
+                        - F
+                        - G
+                        - 'Gb/F#'
+                        - UserDefined
+                    groups:
+                        - xsd_rules

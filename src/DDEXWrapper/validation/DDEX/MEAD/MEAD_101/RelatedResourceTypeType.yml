@@ -1,0 +1,24 @@
+DDEX\MEAD\MEAD_101\RelatedResourceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ACappellaVersion
+                        - AcousticVersion
+                        - AlbumVersion
+                        - AlternativeVersion
+                        - CleanVersion
+                        - Cover
+                        - DemoVersion
+                        - InstrumentalVersion
+                        - LiveVersion
+                        - Medley
+                        - OriginalRecording
+                        - RadioVersion
+                        - SingleVersion
+                        - StudioVersion
+                        - TvTrack
+                        - UserDefined
+                    groups:
+                        - xsd_rules

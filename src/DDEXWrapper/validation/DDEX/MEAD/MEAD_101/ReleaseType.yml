@@ -1,0 +1,10 @@
+DDEX\MEAD\MEAD_101\ReleaseType:
+    properties:
+        releaseTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                Valid: null

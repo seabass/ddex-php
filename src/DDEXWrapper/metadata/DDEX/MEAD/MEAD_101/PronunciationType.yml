@@ -1,0 +1,57 @@
+DDEX\MEAD\MEAD_101\PronunciationType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        isCanonical:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCanonical
+            accessor:
+                getter: getIsCanonical
+                setter: setIsCanonical
+            xml_attribute: true
+            type: bool
+        languageCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageCode
+            accessor:
+                getter: getLanguageCode
+                setter: setLanguageCode
+            xml_attribute: true
+            type: string
+        encodingType:
+            expose: true
+            access_type: public_method
+            serialized_name: EncodingType
+            accessor:
+                getter: getEncodingType
+                setter: setEncodingType
+            xml_attribute: true
+            type: string
+        encodingNamespace:
+            expose: true
+            access_type: public_method
+            serialized_name: EncodingNamespace
+            accessor:
+                getter: getEncodingNamespace
+                setter: setEncodingNamespace
+            xml_attribute: true
+            type: string
+        encodingUserDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: EncodingUserDefinedValue
+            accessor:
+                getter: getEncodingUserDefinedValue
+                setter: setEncodingUserDefinedValue
+            xml_attribute: true
+            type: string

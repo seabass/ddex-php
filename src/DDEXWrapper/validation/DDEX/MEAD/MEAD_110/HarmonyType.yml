@@ -1,0 +1,10 @@
+DDEX\MEAD\MEAD_110\HarmonyType:
+    properties:
+        rootChordNote:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        modulation:
+            -
+                Valid: null

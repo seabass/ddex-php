@@ -1,0 +1,71 @@
+DDEX\MEAD\MEAD_110\ReleaseType:
+    properties:
+        gRid:
+            expose: true
+            access_type: public_method
+            serialized_name: GRid
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGRid
+                setter: setGRid
+            type: string
+        iCPN:
+            expose: true
+            access_type: public_method
+            serialized_name: ICPN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getICPN
+                setter: setICPN
+            type: string
+        proprietaryReleaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryReleaseId
+                setter: setProprietaryReleaseId
+            type: string
+        releaseTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseTitle
+                setter: setReleaseTitle
+            xml_list:
+                inline: true
+                entry_name: ReleaseTitle
+            type: array<DDEX\MEAD\MEAD_110\ReleaseTitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\MEAD\MEAD_110\DisplayArtistNameWithPronunciationType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\MEAD\MEAD_110\PartyDescriptorWithPronunciationType>

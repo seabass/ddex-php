@@ -1,0 +1,8 @@
+DDEX\PIE\PIE_100\PersonType:
+    properties:
+        email:
+            -
+                Regex:
+                    pattern: ~\w+@(\w+\.)+\w+~u
+                    groups:
+                        - xsd_rules

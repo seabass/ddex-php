@@ -1,0 +1,7 @@
+DDEX\PIE\PIE_100\NameWithScriptCodeType:
+    properties:
+        name:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

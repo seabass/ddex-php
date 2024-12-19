@@ -1,0 +1,11 @@
+DDEX\MEAD\MEAD_110\SampleType:
+    properties:
+        relatedResource:
+            -
+                Valid: null
+        hostTiming:
+            -
+                Valid: null
+        sampleTiming:
+            -
+                Valid: null

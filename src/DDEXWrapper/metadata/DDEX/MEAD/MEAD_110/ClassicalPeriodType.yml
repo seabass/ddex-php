@@ -1,0 +1,51 @@
+DDEX\MEAD\MEAD_110\ClassicalPeriodType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getName
+                setter: setName
+            type: DDEX\MEAD\MEAD_110\PeriodValueType
+        languageAndScriptOfClassicalPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptOfClassicalPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageAndScriptOfClassicalPeriod
+                setter: setLanguageAndScriptOfClassicalPeriod
+            xml_list:
+                inline: true
+                entry_name: LanguageAndScriptOfClassicalPeriod
+            type: array<string>
+        territoryOfClassicalPeriodDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfClassicalPeriodDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfClassicalPeriodDescription
+                setter: setTerritoryOfClassicalPeriodDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfClassicalPeriodDescription
+            type: array<string>

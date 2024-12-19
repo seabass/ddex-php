@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_100\ResourceSummaryType:
+    properties:
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            type: DDEX\MEAD\MEAD_100\ResourceIdType
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\MEAD\MEAD_100\DisplayTitleType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\MEAD\MEAD_100\PartyNameWithTerritoryType>

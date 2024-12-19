@@ -1,0 +1,163 @@
+DDEX\PIE\PIE_100\EntryType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        author:
+            expose: true
+            access_type: public_method
+            serialized_name: author
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAuthor
+                setter: setAuthor
+            xml_list:
+                inline: true
+                entry_name: author
+            type: array<DDEX\PIE\PIE_100\PersonType>
+        category:
+            expose: true
+            access_type: public_method
+            serialized_name: category
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCategory
+                setter: setCategory
+            xml_list:
+                inline: true
+                entry_name: category
+            type: array<DDEX\PIE\PIE_100\CategoryType>
+        content:
+            expose: true
+            access_type: public_method
+            serialized_name: content
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContent
+                setter: setContent
+            type: DDEX\PIE\PIE_100\ContentType
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: contributor
+            type: array<DDEX\PIE\PIE_100\PersonType>
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getId
+                setter: setId
+            type: string
+        link:
+            expose: true
+            access_type: public_method
+            serialized_name: link
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLink
+                setter: setLink
+            xml_list:
+                inline: true
+                entry_name: link
+            type: array<DDEX\PIE\PIE_100\LinkType>
+        published:
+            expose: true
+            access_type: public_method
+            serialized_name: published
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPublished
+                setter: setPublished
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        rights:
+            expose: true
+            access_type: public_method
+            serialized_name: rights
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRights
+                setter: setRights
+            type: DDEX\PIE\PIE_100\TextType
+        source:
+            expose: true
+            access_type: public_method
+            serialized_name: source
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSource
+                setter: setSource
+            type: DDEX\PIE\PIE_100\SourceType
+        summary:
+            expose: true
+            access_type: public_method
+            serialized_name: summary
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSummary
+                setter: setSummary
+            type: DDEX\PIE\PIE_100\TextType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: DDEX\PIE\PIE_100\TextType
+        updated:
+            expose: true
+            access_type: public_method
+            serialized_name: updated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUpdated
+                setter: setUpdated
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        subscriptionId:
+            expose: true
+            access_type: public_method
+            serialized_name: SubscriptionId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubscriptionId
+                setter: setSubscriptionId
+            type: string
+        party:
+            expose: true
+            access_type: public_method
+            serialized_name: Party
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParty
+                setter: setParty
+            type: DDEX\PIE\PIE_100\PartyDescriptorForEntryType

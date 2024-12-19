@@ -1,0 +1,7 @@
+DDEX\PIE\PIE_100\ContributionType:
+    properties:
+        role:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

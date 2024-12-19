@@ -1,0 +1,9 @@
+DDEX\PIE\PIE_100\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

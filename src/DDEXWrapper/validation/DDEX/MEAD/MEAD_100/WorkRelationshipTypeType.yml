@@ -1,0 +1,14 @@
+DDEX\MEAD\MEAD_100\WorkRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ArrangementOf
+                        - BasisForArrangement
+                        - MelodyBorrowedFrom
+                        - ReimaginingOf
+                        - TakenFrom
+                        - UserDefined
+                    groups:
+                        - xsd_rules

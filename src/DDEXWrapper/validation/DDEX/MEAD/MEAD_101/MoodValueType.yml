@@ -1,0 +1,36 @@
+DDEX\MEAD\MEAD_101\MoodValueType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Angry
+                        - Anticipation
+                        - Chill
+                        - Confident
+                        - Dark
+                        - Disgust
+                        - Dramatic
+                        - Empowered
+                        - Energized
+                        - Evil
+                        - FeelingDown
+                        - FeelingGood
+                        - Free
+                        - Happy
+                        - Hungover
+                        - Inspiring
+                        - LowKey
+                        - Mellow
+                        - Motivated
+                        - Peaceful
+                        - Quiet
+                        - RainyDay
+                        - Romantic
+                        - Sad
+                        - Soulful
+                        - Surprise
+                        - Swagger
+                        - UserDefined
+                    groups:
+                        - xsd_rules

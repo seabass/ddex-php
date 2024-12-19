@@ -1,0 +1,51 @@
+DDEX\PIE\PIE_100\ResourceSummaryType:
+    properties:
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            type: DDEX\PIE\PIE_100\ResourceIdWithoutFlagType
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\PIE\PIE_100\DisplayTitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\PIE\PIE_100\DisplayArtistNameWithPronunciationType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\PIE\PIE_100\PartyDescriptorWithPronunciationType>

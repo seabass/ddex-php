@@ -1,0 +1,132 @@
+DDEX\PIE\PIE_100\RelatedPartyType:
+    properties:
+        isFalse:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFalse
+            accessor:
+                getter: getIsFalse
+                setter: setIsFalse
+            xml_attribute: true
+            type: bool
+        isConfidential:
+            expose: true
+            access_type: public_method
+            serialized_name: IsConfidential
+            accessor:
+                getter: getIsConfidential
+                setter: setIsConfidential
+            xml_attribute: true
+            type: bool
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\PIE\PIE_100\MetadataSourceReferenceType>
+        partyRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyRelationshipType
+                setter: setPartyRelationshipType
+            type: DDEX\PIE\PIE_100\PartyRelationshipTypeType
+        businessPurpose:
+            expose: true
+            access_type: public_method
+            serialized_name: BusinessPurpose
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBusinessPurpose
+                setter: setBusinessPurpose
+            type: string
+        partyRelatedPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyRelatedPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyRelatedPartyReference
+                setter: setPartyRelatedPartyReference
+            type: string
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            type: DDEX\PIE\PIE_100\DetailedPartyIdForPartyType
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            type: DDEX\PIE\PIE_100\PartyNameType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\PIE\PIE_100\DescriptionType>
+        contract:
+            expose: true
+            access_type: public_method
+            serialized_name: Contract
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContract
+                setter: setContract
+            type: string
+        validityPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidityPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValidityPeriod
+                setter: setValidityPeriod
+            xml_list:
+                inline: true
+                entry_name: ValidityPeriod
+            type: array<DDEX\PIE\PIE_100\ValidityPeriodType>
+        relatedCreation:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedCreation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedCreation
+                setter: setRelatedCreation
+            xml_list:
+                inline: true
+                entry_name: RelatedCreation
+            type: array<DDEX\PIE\PIE_100\RelatedCreationForPartyType>

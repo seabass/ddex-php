@@ -1,0 +1,17 @@
+DDEX\MEAD\MEAD_100\TimeSignatureType:
+    properties:
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        meter:
+            -
+                Valid: null
+        modulation:
+            -
+                Valid: null

@@ -1,0 +1,58 @@
+DDEX\MEAD\MEAD_100\HarmonyType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        rootChordNote:
+            expose: true
+            access_type: public_method
+            serialized_name: RootChordNote
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRootChordNote
+                setter: setRootChordNote
+            type: DDEX\MEAD\MEAD_100\RootChordNoteType
+        rootChordQuality:
+            expose: true
+            access_type: public_method
+            serialized_name: RootChordQuality
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRootChordQuality
+                setter: setRootChordQuality
+            type: DDEX\MEAD\MEAD_100\RootChordQualityType
+        mode:
+            expose: true
+            access_type: public_method
+            serialized_name: Mode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMode
+                setter: setMode
+            type: DDEX\MEAD\MEAD_100\ModeType
+        modulation:
+            expose: true
+            access_type: public_method
+            serialized_name: Modulation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getModulation
+                setter: setModulation
+            xml_list:
+                inline: true
+                entry_name: Modulation
+            type: array<DDEX\MEAD\MEAD_100\HarmonyModulationType>

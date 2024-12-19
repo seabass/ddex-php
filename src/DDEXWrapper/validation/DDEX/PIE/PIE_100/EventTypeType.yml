@@ -1,0 +1,17 @@
+DDEX\PIE\PIE_100\EventTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ActivityPeriod
+                        - Birth
+                        - Conceptualize
+                        - Death
+                        - Dissolution
+                        - FirstPerformance
+                        - Incorporation
+                        - LastPerformance
+                        - UserDefined
+                    groups:
+                        - xsd_rules

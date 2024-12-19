@@ -1,0 +1,9 @@
+DDEX\MEAD\MEAD_101\ResourceInformationListType:
+    properties:
+        resourceInformation:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

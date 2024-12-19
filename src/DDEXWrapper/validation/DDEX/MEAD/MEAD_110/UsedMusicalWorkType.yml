@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_110\UsedMusicalWorkType:
+    properties:
+        resourceMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

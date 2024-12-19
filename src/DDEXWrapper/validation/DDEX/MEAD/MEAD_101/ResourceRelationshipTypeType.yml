@@ -1,0 +1,16 @@
+DDEX\MEAD\MEAD_101\ResourceRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ContainsSamplesFrom
+                        - HasContentFrom
+                        - IsCoveredBy
+                        - IsCoverOf
+                        - IsPartOf
+                        - IsSampledBy
+                        - UserDefined
+                        - IsDifferentEncoding
+                    groups:
+                        - xsd_rules

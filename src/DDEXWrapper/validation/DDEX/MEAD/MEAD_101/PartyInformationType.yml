@@ -1,0 +1,51 @@
+DDEX\MEAD\MEAD_101\PartyInformationType:
+    properties:
+        party:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        vocalRegister:
+            -
+                Valid: null
+        focusTrack:
+            -
+                Valid: null
+        commentaryNote:
+            -
+                Valid: null
+        pseudonym:
+            -
+                Valid: null
+        artistType:
+            -
+                Valid: null
+        classicalPeriod:
+            -
+                Valid: null
+        epoch:
+            -
+                Valid: null
+        artisticInfluence:
+            -
+                Valid: null
+        isSimilar:
+            -
+                Valid: null
+        historicChartingInformation:
+            -
+                Valid: null
+        award:
+            -
+                Valid: null
+        biography:
+            -
+                Valid: null
+        image:
+            -
+                Valid: null
+        relatedCreation:
+            -
+                Valid: null

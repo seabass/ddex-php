@@ -1,0 +1,25 @@
+DDEX\MEAD\MEAD_110\ResourceRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ContainsSamplesFrom
+                        - HasClip
+                        - HasContentFrom
+                        - HasPart
+                        - IsClipFrom
+                        - IsCoveredBy
+                        - IsCoverOf
+                        - IsDifferentEncoding
+                        - IsEditedVersionOf
+                        - IsImmersiveEditionOf
+                        - IsNonImmersiveEditionOf
+                        - IsPartOf
+                        - IsSampledBy
+                        - IsSlowedDownOf
+                        - IsSourceOfEditedVersion
+                        - IsSpedUpOf
+                        - UserDefined
+                    groups:
+                        - xsd_rules

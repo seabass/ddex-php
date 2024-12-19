@@ -1,0 +1,13 @@
+DDEX\PIE\PIE_100\ResourceType:
+    properties:
+        resourceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtistName:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null

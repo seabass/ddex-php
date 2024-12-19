@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_101\MessagingPartyWithoutCodeType:
+    properties:
+        partyId:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null

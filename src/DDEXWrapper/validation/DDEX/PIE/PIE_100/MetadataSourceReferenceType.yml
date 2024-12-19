@@ -1,0 +1,15 @@
+DDEX\PIE\PIE_100\MetadataSourceReferenceType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        status:
+            -
+                Choice:
+                    choices:
+                        - Verified
+                    groups:
+                        - xsd_rules

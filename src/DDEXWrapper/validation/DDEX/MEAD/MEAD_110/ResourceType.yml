@@ -1,0 +1,13 @@
+DDEX\MEAD\MEAD_110\ResourceType:
+    properties:
+        resourceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtistName:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null

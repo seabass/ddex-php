@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_110\ArtisticStyleType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: DDEX\MEAD\MEAD_110\ArtistTypeValueType
+        territoryOfArtisticStyleDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfArtisticStyleDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfArtisticStyleDescription
+                setter: setTerritoryOfArtisticStyleDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfArtisticStyleDescription
+            type: array<string>

@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_100\PartyInformationListType:
+    properties:
+        partyInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyInformation
+                setter: setPartyInformation
+            xml_list:
+                inline: true
+                entry_name: PartyInformation
+            type: array<DDEX\MEAD\MEAD_100\PartyInformationType>

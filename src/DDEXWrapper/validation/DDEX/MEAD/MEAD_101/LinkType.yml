@@ -1,0 +1,19 @@
+DDEX\MEAD\MEAD_101\LinkType:
+    properties:
+        href:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hreflang:
+            -
+                Regex:
+                    pattern: ~\c+~u
+                    groups:
+                        - xsd_rules
+        length:
+            -
+                GreaterThanOrEqual:
+                    value: '1'
+                    groups:
+                        - xsd_rules

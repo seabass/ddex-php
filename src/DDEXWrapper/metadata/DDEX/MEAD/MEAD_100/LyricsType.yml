@@ -1,0 +1,83 @@
+DDEX\MEAD\MEAD_100\LyricsType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        lyricsType:
+            expose: true
+            access_type: public_method
+            serialized_name: LyricsType
+            accessor:
+                getter: getLyricsType
+                setter: setLyricsType
+            xml_attribute: true
+            type: string
+        lyricsTypeNamespace:
+            expose: true
+            access_type: public_method
+            serialized_name: LyricsTypeNamespace
+            accessor:
+                getter: getLyricsTypeNamespace
+                setter: setLyricsTypeNamespace
+            xml_attribute: true
+            type: string
+        lyricsTypeUserDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: LyricsTypeUserDefinedValue
+            accessor:
+                getter: getLyricsTypeUserDefinedValue
+                setter: setLyricsTypeUserDefinedValue
+            xml_attribute: true
+            type: string
+        isMisquoted:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMisquoted
+            accessor:
+                getter: getIsMisquoted
+                setter: setIsMisquoted
+            xml_attribute: true
+            type: bool
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        text:
+            expose: true
+            access_type: public_method
+            serialized_name: Text
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getText
+                setter: setText
+            type: DDEX\MEAD\MEAD_100\LyricsTextType
+        pronunciation:
+            expose: true
+            access_type: public_method
+            serialized_name: Pronunciation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPronunciation
+                setter: setPronunciation
+            xml_list:
+                inline: true
+                entry_name: Pronunciation
+            type: array<DDEX\MEAD\MEAD_100\PronunciationType>

@@ -1,0 +1,55 @@
+DDEX\MEAD\MEAD_101\ReleaseIdType:
+    properties:
+        gRid:
+            expose: true
+            access_type: public_method
+            serialized_name: GRid
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGRid
+                setter: setGRid
+            type: string
+        iSRC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISRC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISRC
+                setter: setISRC
+            type: string
+        iCPN:
+            expose: true
+            access_type: public_method
+            serialized_name: ICPN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getICPN
+                setter: setICPN
+            type: string
+        catalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogNumber
+                setter: setCatalogNumber
+            type: DDEX\MEAD\MEAD_101\CatalogNumberType
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\MEAD\MEAD_101\ProprietaryIdType>

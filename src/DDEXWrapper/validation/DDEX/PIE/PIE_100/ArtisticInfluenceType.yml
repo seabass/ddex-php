@@ -1,0 +1,14 @@
+DDEX\PIE\PIE_100\ArtisticInfluenceType:
+    properties:
+        party:
+            -
+                Valid: null
+        work:
+            -
+                Valid: null
+        resource:
+            -
+                Valid: null
+        release:
+            -
+                Valid: null

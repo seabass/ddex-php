@@ -468,6 +468,10 @@ class PhpConverter extends AbstractConverter
     		return false;
     	}
 
+    	if(!method_exists($element, 'getType') || !method_exists($element, 'isNil')) {
+    		return false;
+    	}
+
         $property = new PHPProperty();
         $property->setName($this->getNamingStrategy()->getPropertyName($element));
         $property->setDoc($element->getDoc());

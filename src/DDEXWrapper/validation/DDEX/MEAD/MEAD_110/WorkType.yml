@@ -1,0 +1,10 @@
+DDEX\MEAD\MEAD_110\WorkType:
+    properties:
+        workTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        writer:
+            -
+                Valid: null

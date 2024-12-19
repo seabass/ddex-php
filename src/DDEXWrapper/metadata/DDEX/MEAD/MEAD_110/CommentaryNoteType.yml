@@ -1,0 +1,80 @@
+DDEX\MEAD\MEAD_110\CommentaryNoteType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        text:
+            expose: true
+            access_type: public_method
+            serialized_name: Text
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getText
+                setter: setText
+            xml_list:
+                inline: true
+                entry_name: Text
+            type: array<DDEX\MEAD\MEAD_110\TextWithoutTerritoryType>
+        commentaryNoteType:
+            expose: true
+            access_type: public_method
+            serialized_name: CommentaryNoteType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCommentaryNoteType
+                setter: setCommentaryNoteType
+            xml_list:
+                inline: true
+                entry_name: CommentaryNoteType
+            type: array<DDEX\MEAD\MEAD_110\CommentaryNoteTypeType>
+        languageAndScriptOfCommentaryNote:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptOfCommentaryNote
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageAndScriptOfCommentaryNote
+                setter: setLanguageAndScriptOfCommentaryNote
+            xml_list:
+                inline: true
+                entry_name: LanguageAndScriptOfCommentaryNote
+            type: array<string>
+        territoryOfCommentaryNoteDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfCommentaryNoteDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfCommentaryNoteDescription
+                setter: setTerritoryOfCommentaryNoteDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfCommentaryNoteDescription
+            type: array<string>
+        author:
+            expose: true
+            access_type: public_method
+            serialized_name: Author
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAuthor
+                setter: setAuthor
+            xml_list:
+                inline: true
+                entry_name: Author
+            type: array<DDEX\MEAD\MEAD_110\PartyDescriptorWithPronunciationType>

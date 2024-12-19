@@ -1,0 +1,7 @@
+DDEX\MEAD\MEAD_110\DisplayArtistNameWithPronunciationType:
+    properties:
+        name:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

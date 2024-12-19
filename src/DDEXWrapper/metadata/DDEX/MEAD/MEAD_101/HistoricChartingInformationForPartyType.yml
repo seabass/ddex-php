@@ -1,0 +1,114 @@
+DDEX\MEAD\MEAD_101\HistoricChartingInformationForPartyType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            type: DDEX\MEAD\MEAD_101\CurrentTerritoryCodeType
+        chartName:
+            expose: true
+            access_type: public_method
+            serialized_name: ChartName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChartName
+                setter: setChartName
+            xml_list:
+                inline: true
+                entry_name: ChartName
+            type: array<DDEX\MEAD\MEAD_101\ChartNameType>
+        durationInCharts:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationInCharts
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationInCharts
+                setter: setDurationInCharts
+            type: DDEX\MEAD\MEAD_101\DurationType
+        topPosition:
+            expose: true
+            access_type: public_method
+            serialized_name: TopPosition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTopPosition
+                setter: setTopPosition
+            type: int
+        chartEntry:
+            expose: true
+            access_type: public_method
+            serialized_name: ChartEntry
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChartEntry
+                setter: setChartEntry
+            xml_list:
+                inline: true
+                entry_name: ChartEntry
+            type: array<DDEX\MEAD\MEAD_101\ChartEntryType>
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            xml_list:
+                inline: true
+                entry_name: Comment
+            type: array<DDEX\MEAD\MEAD_101\TextWithFormatType>
+        chartedWork:
+            expose: true
+            access_type: public_method
+            serialized_name: ChartedWork
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChartedWork
+                setter: setChartedWork
+            type: DDEX\MEAD\MEAD_101\WorkType
+        chartedResource:
+            expose: true
+            access_type: public_method
+            serialized_name: ChartedResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChartedResource
+                setter: setChartedResource
+            type: DDEX\MEAD\MEAD_101\ResourceType
+        chartedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: ChartedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChartedRelease
+                setter: setChartedRelease
+            type: DDEX\MEAD\MEAD_101\ReleaseType

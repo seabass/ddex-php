@@ -1,0 +1,22 @@
+DDEX\PIE\PIE_100\WorkForRequestType:
+    properties:
+        workId:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkId
+                setter: setWorkId
+            type: DDEX\PIE\PIE_100\MusicalWorkIdWithoutFlagType
+        workTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkTitle
+                setter: setWorkTitle
+            type: DDEX\PIE\PIE_100\WorkTitleType

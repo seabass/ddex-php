@@ -1,0 +1,11 @@
+DDEX\PIE\PIE_100\TextType:
+    properties:
+        type:
+            -
+                Choice:
+                    choices:
+                        - text
+                        - html
+                        - xhtml
+                    groups:
+                        - xsd_rules

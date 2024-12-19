@@ -1,0 +1,7 @@
+DDEX\MEAD\MEAD_100\NameWithPronunciationType:
+    properties:
+        name:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,68 @@
+DDEX\PIE\PIE_100\EventType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\PIE\PIE_100\MetadataSourceReferenceType>
+        date:
+            expose: true
+            access_type: public_method
+            serialized_name: Date
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDate
+                setter: setDate
+            type: DDEX\PIE\PIE_100\EventDateType
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: DDEX\PIE\PIE_100\EventDateType
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: DDEX\PIE\PIE_100\EventDateType
+        eventType:
+            expose: true
+            access_type: public_method
+            serialized_name: EventType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEventType
+                setter: setEventType
+            type: DDEX\PIE\PIE_100\EventTypeType
+        eventDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: EventDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEventDescription
+                setter: setEventDescription
+            xml_list:
+                inline: true
+                entry_name: EventDescription
+            type: array<DDEX\PIE\PIE_100\DescriptionType>

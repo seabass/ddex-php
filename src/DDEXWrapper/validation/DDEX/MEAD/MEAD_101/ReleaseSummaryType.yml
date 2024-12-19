@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_101\ReleaseSummaryType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null

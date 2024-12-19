@@ -1,0 +1,25 @@
+DDEX\MEAD\MEAD_101\DisplayArtistNameWithPronunciationType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: Name
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getName
+                setter: setName
+            type: DDEX\MEAD\MEAD_101\DisplayArtistNameWithDefaultType
+        pronunciation:
+            expose: true
+            access_type: public_method
+            serialized_name: Pronunciation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPronunciation
+                setter: setPronunciation
+            xml_list:
+                inline: true
+                entry_name: Pronunciation
+            type: array<DDEX\MEAD\MEAD_101\PronunciationType>

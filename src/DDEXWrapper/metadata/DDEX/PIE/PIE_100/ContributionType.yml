@@ -1,0 +1,55 @@
+DDEX\PIE\PIE_100\ContributionType:
+    properties:
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+            type: array<DDEX\PIE\PIE_100\ContributorRoleType>
+        isPrimaryRole:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPrimaryRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPrimaryRole
+                setter: setIsPrimaryRole
+            type: bool
+        hasMadeFeaturedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeFeaturedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeFeaturedContribution
+                setter: setHasMadeFeaturedContribution
+            type: bool
+        hasMadeContractedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeContractedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeContractedContribution
+                setter: setHasMadeContractedContribution
+            type: bool
+        event:
+            expose: true
+            access_type: public_method
+            serialized_name: Event
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEvent
+                setter: setEvent
+            type: DDEX\PIE\PIE_100\EventDateType

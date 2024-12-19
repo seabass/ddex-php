@@ -1,0 +1,22 @@
+DDEX\MEAD\MEAD_110\TimeSignatureModulationType:
+    properties:
+        startBar:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        endBar:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        meter:
+            -
+                Valid: null
+        value:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

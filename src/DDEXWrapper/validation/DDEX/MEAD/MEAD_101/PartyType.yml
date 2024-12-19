@@ -1,0 +1,14 @@
+DDEX\MEAD\MEAD_101\PartyType:
+    properties:
+        dPID:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+        ipiNameNumber:
+            -
+                Regex:
+                    pattern: '~[0-9]{11}~u'
+                    groups:
+                        - xsd_rules

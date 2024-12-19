@@ -1,0 +1,7 @@
+DDEX\PIE\PIE_100\NationalityType:
+    properties:
+        value:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

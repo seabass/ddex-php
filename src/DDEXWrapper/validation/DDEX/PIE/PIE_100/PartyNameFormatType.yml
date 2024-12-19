@@ -1,0 +1,14 @@
+DDEX\PIE\PIE_100\PartyNameFormatType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Abbreviation
+                        - AsciiTranscribed
+                        - MisspelledName
+                        - NameIndexed
+                        - TranslatedName
+                        - UserDefined
+                    groups:
+                        - xsd_rules

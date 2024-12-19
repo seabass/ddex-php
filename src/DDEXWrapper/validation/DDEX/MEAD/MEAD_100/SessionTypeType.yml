@@ -1,0 +1,27 @@
+DDEX\MEAD\MEAD_100\SessionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ArtistVocals
+                        - Demo
+                        - DigitalEditing
+                        - Editing
+                        - LivePerformance
+                        - Mastering
+                        - Mixing
+                        - Overdub
+                        - PreProduction
+                        - Preservation
+                        - Production
+                        - Project
+                        - Recording
+                        - Remixing
+                        - Tracking
+                        - Transfer
+                        - TransfersAndSafeties
+                        - UserDefined
+                        - Vocal
+                    groups:
+                        - xsd_rules

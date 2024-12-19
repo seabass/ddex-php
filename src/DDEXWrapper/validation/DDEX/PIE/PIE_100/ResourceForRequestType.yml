@@ -1,0 +1,19 @@
+DDEX\PIE\PIE_100\ResourceForRequestType:
+    properties:
+        resourceId:
+            -
+                Valid: null
+        resourceType:
+            -
+                Choice:
+                    choices:
+                        - Image
+                        - MIDI
+                        - SheetMusic
+                        - Software
+                        - SoundRecording
+                        - Text
+                        - UserDefinedResource
+                        - Video
+                    groups:
+                        - xsd_rules

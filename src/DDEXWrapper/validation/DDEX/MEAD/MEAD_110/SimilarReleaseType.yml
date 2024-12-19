@@ -1,0 +1,16 @@
+DDEX\MEAD\MEAD_110\SimilarReleaseType:
+    properties:
+        release:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        description:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

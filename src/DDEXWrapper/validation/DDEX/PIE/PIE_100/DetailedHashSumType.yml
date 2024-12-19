@@ -1,0 +1,20 @@
+DDEX\PIE\PIE_100\DetailedHashSumType:
+    properties:
+        algorithm:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        dataType:
+            -
+                Choice:
+                    choices:
+                        - Binary64
+                        - HexBinary
+                    groups:
+                        - xsd_rules
+        hashSumValue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

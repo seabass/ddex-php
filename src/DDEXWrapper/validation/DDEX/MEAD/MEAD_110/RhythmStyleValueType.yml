@@ -1,0 +1,27 @@
+DDEX\MEAD\MEAD_110\RhythmStyleValueType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - 4OnTheFloor
+                        - Blues
+                        - BoogieWoogie
+                        - Calypso
+                        - Cumbia
+                        - Dembow
+                        - Disco
+                        - Flamenco
+                        - Merengue
+                        - Nyabinghi
+                        - OneDrop
+                        - Polyrhythm
+                        - RockAndRoll
+                        - Rumba
+                        - Shuffle
+                        - Skank
+                        - Tala
+                        - Tejano
+                        - UserDefined
+                    groups:
+                        - xsd_rules

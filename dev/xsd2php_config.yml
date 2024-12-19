@@ -39,6 +39,12 @@ xsd2php:
 
     'http://ddex.net/xml/ct/10': 'DDEX\CT\CT_100'
 
+    'http://ddex.net/xml/pie/10': 'DDEX\PIE\PIE_100'
+
+    'http://ddex.net/xml/mead/10': 'DDEX\MEAD\MEAD_100'
+    'http://ddex.net/xml/mead/101': 'DDEX\MEAD\MEAD_101'
+    'http://ddex.net/xml/mead/11': 'DDEX\MEAD\MEAD_110'
+
 
 
     # avs
@@ -116,6 +122,13 @@ xsd2php:
 
     'DDEX\CT\CT_100': ..\src\DDEXWrapper\schema\DDEX\CT\CT_100
 
+    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\schema\DDEX\PIE\PIE_100
+    
+    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_110
+
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_jms:
@@ -155,6 +168,12 @@ xsd2php:
     'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN_210
 
     'DDEX\CT\CT_100': ..\src\DDEXWrapper\metadata\DDEX\CT\CT_100
+
+    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\metadata\DDEX\PIE\PIE_100
+
+    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_110
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
@@ -196,6 +215,12 @@ xsd2php:
 
     'DDEX\CT\CT_100': ..\src\DDEXWrapper\validation\DDEX\CT\CT_100
 
+    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\validation\DDEX\PIE\PIE_100
+
+    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_110
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     
 
@@ -236,6 +261,12 @@ xsd2php:
     'http://ddex.net/xml/rin/21': 'rin'
 
     'http://ddex.net/xml/ct/10': 'ct'
+
+    'http://ddex.net/xml/pie/10': 'pie'
+
+    'http://ddex.net/xml/mead/100': 'mead'
+    'http://ddex.net/xml/mead/101': 'mead'
+    'http://ddex.net/xml/mead/110': 'mead'
 
   aliases:
     '':

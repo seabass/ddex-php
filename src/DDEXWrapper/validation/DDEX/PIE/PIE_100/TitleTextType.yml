@@ -1,0 +1,7 @@
+DDEX\PIE\PIE_100\TitleTextType:
+    properties:
+        title:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

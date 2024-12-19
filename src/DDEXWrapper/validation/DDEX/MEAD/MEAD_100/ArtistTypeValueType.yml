@@ -1,0 +1,41 @@
+DDEX\MEAD\MEAD_100\ArtistTypeValueType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ACappellaEnsemble
+                        - BarbershopEnsemble
+                        - BigBand
+                        - BrassBand
+                        - ChamberOrchestra
+                        - CountryGroup
+                        - Duet
+                        - ElectronicGroup
+                        - FifeAndDrumCorps
+                        - FolkGroup
+                        - InstrumentAndAccompaniment
+                        - JazzCombo
+                        - LatinGroup
+                        - MarchingBand
+                        - MariachiBand
+                        - Orchestra
+                        - PianoEnsemble
+                        - PianoTrio
+                        - PianoQuartet
+                        - PianoQuintet
+                        - PipeAndDrumGroup
+                        - PopBand
+                        - ReggaeBand
+                        - RockBand
+                        - SoloInstrument
+                        - SoloVoice
+                        - StringEnsemble
+                        - StringQuartet
+                        - StringQuintet
+                        - Trio
+                        - UserDefined
+                        - VoiceAndAccompaniment
+                        - WindEnsemble
+                    groups:
+                        - xsd_rules

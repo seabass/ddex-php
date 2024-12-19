@@ -1,0 +1,39 @@
+DDEX\PIE\PIE_100\MetadataSourceReferenceType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        assertionDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: AssertionDateTime
+            accessor:
+                getter: getAssertionDateTime
+                setter: setAssertionDateTime
+            xml_attribute: true
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_attribute: true
+            type: string
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            xml_attribute: true
+            type: float

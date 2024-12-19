@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_101\ImageType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            type: DDEX\MEAD\MEAD_101\FileType
+        imageType:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageType
+                setter: setImageType
+            xml_list:
+                inline: true
+                entry_name: ImageType
+            type: array<DDEX\MEAD\MEAD_101\ImageTypeType>

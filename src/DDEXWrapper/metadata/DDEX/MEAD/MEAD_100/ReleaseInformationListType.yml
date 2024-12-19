@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_100\ReleaseInformationListType:
+    properties:
+        releaseInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseInformation
+                setter: setReleaseInformation
+            xml_list:
+                inline: true
+                entry_name: ReleaseInformation
+            type: array<DDEX\MEAD\MEAD_100\ReleaseInformationType>

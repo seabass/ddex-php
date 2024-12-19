@@ -1,0 +1,33 @@
+DDEX\MEAD\MEAD_101\PersonType:
+    properties:
+        name:
+            expose: true
+            access_type: public_method
+            serialized_name: name
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getName
+                setter: setName
+            type: string
+        uri:
+            expose: true
+            access_type: public_method
+            serialized_name: uri
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUri
+                setter: setUri
+            type: string
+        email:
+            expose: true
+            access_type: public_method
+            serialized_name: email
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEmail
+                setter: setEmail
+            type: string
+        any: false

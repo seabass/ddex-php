@@ -1,0 +1,7 @@
+DDEX\PIE\PIE_100\EventType:
+    properties:
+        eventType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

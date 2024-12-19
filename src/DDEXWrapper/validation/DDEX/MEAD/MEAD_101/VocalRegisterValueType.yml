@@ -1,0 +1,26 @@
+DDEX\MEAD\MEAD_101\VocalRegisterValueType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Alto
+                        - Baritone
+                        - BassBaritone
+                        - Bass
+                        - Castrati
+                        - Contrabass
+                        - Contralto
+                        - Countertenor
+                        - Falsetto
+                        - MezzoSoprano
+                        - Paradon
+                        - Piccolo
+                        - Sopranino
+                        - Soprano
+                        - Tenor
+                        - Treble
+                        - ViolaParadon
+                        - UserDefined
+                    groups:
+                        - xsd_rules

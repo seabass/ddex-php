@@ -1,0 +1,24 @@
+DDEX\MEAD\MEAD_110\RootChordQualityType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AugmentedSeventh
+                        - AugmentedTriad
+                        - DiminishedSeventh
+                        - DiminishedTriad
+                        - DominantSeventh
+                        - Fifth
+                        - HalfDiminishedSeventh
+                        - MajorSeventh
+                        - MajorSixth
+                        - MajorTriad
+                        - MajorMinorSeventh
+                        - MinorSeventh
+                        - MinorSixth
+                        - MinorTriad
+                        - Suspended
+                        - UserDefined
+                    groups:
+                        - xsd_rules

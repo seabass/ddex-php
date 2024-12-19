@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_100\WorkSummaryType:
+    properties:
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            type: DDEX\MEAD\MEAD_100\MusicalWorkIdType
+        workTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkTitle
+                setter: setWorkTitle
+            xml_list:
+                inline: true
+                entry_name: WorkTitle
+            type: array<DDEX\MEAD\MEAD_100\TitleWithPronunciationType>
+        writer:
+            expose: true
+            access_type: public_method
+            serialized_name: Writer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWriter
+                setter: setWriter
+            xml_list:
+                inline: true
+                entry_name: Writer
+            type: array<DDEX\MEAD\MEAD_100\PartyNameWithTerritoryType>

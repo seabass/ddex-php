@@ -1,0 +1,96 @@
+DDEX\MEAD\MEAD_110\MeadMessage\MeadMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\MEAD\MEAD_110\MessageHeaderType
+        subscriptionId:
+            expose: true
+            access_type: public_method
+            serialized_name: SubscriptionId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubscriptionId
+                setter: setSubscriptionId
+            type: string
+        metadataSourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceList
+                setter: setMetadataSourceList
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceType>
+            xml_list:
+                inline: false
+                entry_name: MetadataSource
+                skip_when_empty: true
+        workInformationList:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkInformationList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkInformationList
+                setter: setWorkInformationList
+            type: array<DDEX\MEAD\MEAD_110\WorkInformationType>
+            xml_list:
+                inline: false
+                entry_name: WorkInformation
+                skip_when_empty: true
+        resourceInformationList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceInformationList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceInformationList
+                setter: setResourceInformationList
+            type: array<DDEX\MEAD\MEAD_110\ResourceInformationType>
+            xml_list:
+                inline: false
+                entry_name: ResourceInformation
+                skip_when_empty: true
+        releaseInformationList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseInformationList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseInformationList
+                setter: setReleaseInformationList
+            type: array<DDEX\MEAD\MEAD_110\ReleaseInformationType>
+            xml_list:
+                inline: false
+                entry_name: ReleaseInformation
+                skip_when_empty: true

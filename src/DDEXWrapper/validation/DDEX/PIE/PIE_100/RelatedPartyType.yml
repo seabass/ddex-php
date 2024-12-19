@@ -1,0 +1,25 @@
+DDEX\PIE\PIE_100\RelatedPartyType:
+    properties:
+        partyRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyRelatedPartyReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        validityPeriod:
+            -
+                Valid: null
+        relatedCreation:
+            -
+                Valid: null

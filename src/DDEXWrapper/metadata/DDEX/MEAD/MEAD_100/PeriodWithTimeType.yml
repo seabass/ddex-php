@@ -1,0 +1,22 @@
+DDEX\MEAD\MEAD_100\PeriodWithTimeType:
+    properties:
+        startDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDateTime
+                setter: setStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        endDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDateTime
+                setter: setEndDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

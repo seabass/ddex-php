@@ -1,0 +1,31 @@
+DDEX\PIE\PIE_100\TitleWithUDVType:
+    properties:
+        titleType:
+            -
+                Choice:
+                    choices:
+                        - AbbreviatedDisplayTitle
+                        - AlternativeTitle
+                        - DisplayTitle
+                        - FirstLineOfText
+                        - FormalTitle
+                        - GroupingTitle
+                        - IncorrectTitle
+                        - MisspelledTitle
+                        - MusicalWorkTitle
+                        - OriginalTitle
+                        - SearchTitle
+                        - SortingTitle
+                        - TitleAsPart
+                        - TitleWithoutPunctuation
+                        - TranslatedTitle
+                        - TransliteratedTitle
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

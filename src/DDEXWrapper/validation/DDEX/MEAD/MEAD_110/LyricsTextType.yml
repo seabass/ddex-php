@@ -1,0 +1,36 @@
+DDEX\MEAD\MEAD_110\LyricsTextType:
+    properties:
+        format:
+            -
+                Choice:
+                    choices:
+                        - ASCII
+                        - AsciiOrIso8859nText
+                        - DdexLyricsFile
+                        - EBU-TT
+                        - EnhancedLRC
+                        - EPUB
+                        - HTML
+                        - LRC
+                        - MicrosoftWord
+                        - OpenDocumentText
+                        - OOXML
+                        - PDF
+                        - PostScript
+                        - RTF
+                        - SimpleLRC
+                        - SRT
+                        - TTML
+                        - Unknown
+                        - UserDefined
+                        - UTF8Text
+                        - VTT
+                        - WindowsText
+                        - XHTML
+                        - XML
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

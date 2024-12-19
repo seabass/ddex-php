@@ -1,0 +1,25 @@
+DDEX\MEAD\MEAD_101\RecordingPartTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Breakdown
+                        - Bridge
+                        - Chorus
+                        - Coda
+                        - Drop
+                        - Head
+                        - Hook
+                        - Intro
+                        - KeyChange
+                        - MiddleEighth
+                        - Outro
+                        - PreChorus
+                        - Preview
+                        - SoloSection
+                        - Used
+                        - UserDefined
+                        - Verse
+                    groups:
+                        - xsd_rules

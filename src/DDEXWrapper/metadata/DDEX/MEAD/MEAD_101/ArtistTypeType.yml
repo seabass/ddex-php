@@ -1,0 +1,34 @@
+DDEX\MEAD\MEAD_101\ArtistTypeType:
+    properties:
+        applicableTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableTerritoryCode
+            accessor:
+                getter: getApplicableTerritoryCode
+                setter: setApplicableTerritoryCode
+            xml_attribute: true
+            type: string
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: DDEX\MEAD\MEAD_101\ArtistTypeValueType

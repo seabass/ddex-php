@@ -1,0 +1,30 @@
+DDEX\MEAD\MEAD_100\DerivedRecordingType:
+    properties:
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        title:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayArtistName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

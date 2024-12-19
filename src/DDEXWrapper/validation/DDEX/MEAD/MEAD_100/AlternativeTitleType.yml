@@ -1,0 +1,44 @@
+DDEX\MEAD\MEAD_100\AlternativeTitleType:
+    properties:
+        titleType:
+            -
+                Choice:
+                    choices:
+                        - AbbreviatedDisplayTitle
+                        - AlternativeTitle
+                        - DisplayTitle
+                        - FirstLineOfText
+                        - FormalTitle
+                        - GroupingTitle
+                        - IncorrectTitle
+                        - MisspelledTitle
+                        - OriginalTitle
+                        - SearchTitle
+                        - SortingTitle
+                        - TitleAsPart
+                        - TitleWithoutPunctuation
+                        - TranslatedTitle
+                        - Unknown
+                        - UserDefined
+                        - MusicalWorkTitle
+                    groups:
+                        - xsd_rules
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        subTitle:
+            -
+                Valid: null

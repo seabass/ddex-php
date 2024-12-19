@@ -1,0 +1,73 @@
+DDEX\MEAD\MEAD_110\ThemeType:
+    properties:
+        themeType:
+            expose: true
+            access_type: public_method
+            serialized_name: ThemeType
+            accessor:
+                getter: getThemeType
+                setter: setThemeType
+            xml_attribute: true
+            type: string
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: DDEX\MEAD\MEAD_110\ThemeValueType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\MEAD\MEAD_110\TextWithoutTerritoryType>
+        languageAndScriptOfTheme:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptOfTheme
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageAndScriptOfTheme
+                setter: setLanguageAndScriptOfTheme
+            xml_list:
+                inline: true
+                entry_name: LanguageAndScriptOfTheme
+            type: array<string>
+        territoryOfThemeDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfThemeDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfThemeDescription
+                setter: setTerritoryOfThemeDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfThemeDescription
+            type: array<string>

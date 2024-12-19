@@ -1,0 +1,64 @@
+DDEX\MEAD\MEAD_110\DanceStyleType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: DDEX\MEAD\MEAD_110\DanceStyleValueType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\MEAD\MEAD_110\TextWithoutTerritoryType>
+        languageAndScriptOfDanceStyle:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptOfDanceStyle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageAndScriptOfDanceStyle
+                setter: setLanguageAndScriptOfDanceStyle
+            xml_list:
+                inline: true
+                entry_name: LanguageAndScriptOfDanceStyle
+            type: array<string>
+        territoryOfDanceStyleDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfDanceStyleDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfDanceStyleDescription
+                setter: setTerritoryOfDanceStyleDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfDanceStyleDescription
+            type: array<string>

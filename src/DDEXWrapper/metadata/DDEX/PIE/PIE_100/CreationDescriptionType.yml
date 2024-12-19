@@ -1,0 +1,35 @@
+DDEX\PIE\PIE_100\CreationDescriptionType:
+    properties:
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\PIE\PIE_100\TitleWithUDVType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            type: DDEX\PIE\PIE_100\DisplayArtistNameType
+        publicationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: PublicationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPublicationDate
+                setter: setPublicationDate
+            type: DDEX\PIE\PIE_100\EventDateType

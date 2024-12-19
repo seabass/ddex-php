@@ -1,0 +1,100 @@
+DDEX\MEAD\MEAD_110\EpochType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_list:
+                inline: true
+                entry_name: Value
+            type: array<DDEX\MEAD\MEAD_110\NameType>
+        relatedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedArtist
+                setter: setRelatedArtist
+            xml_list:
+                inline: true
+                entry_name: RelatedArtist
+            type: array<DDEX\MEAD\MEAD_110\PartyDescriptorWithPronunciationType>
+        relatedCreation:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedCreation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedCreation
+                setter: setRelatedCreation
+            xml_list:
+                inline: true
+                entry_name: RelatedCreation
+            type: array<DDEX\MEAD\MEAD_110\RelatedCreationType>
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: DDEX\MEAD\MEAD_110\DateType
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: DDEX\MEAD\MEAD_110\DateType
+        languageAndScriptOfEpoch:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptOfEpoch
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageAndScriptOfEpoch
+                setter: setLanguageAndScriptOfEpoch
+            xml_list:
+                inline: true
+                entry_name: LanguageAndScriptOfEpoch
+            type: array<string>
+        territoryOfEpochDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfEpochDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfEpochDescription
+                setter: setTerritoryOfEpochDescription
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfEpochDescription
+            type: array<string>

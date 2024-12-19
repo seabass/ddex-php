@@ -1,0 +1,7 @@
+DDEX\MEAD\MEAD_110\ProprietaryIdType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

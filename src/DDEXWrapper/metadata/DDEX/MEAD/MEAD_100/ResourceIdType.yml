@@ -1,0 +1,95 @@
+DDEX\MEAD\MEAD_100\ResourceIdType:
+    properties:
+        iSRC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISRC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISRC
+                setter: setISRC
+            type: string
+        iSMN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISMN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISMN
+                setter: setISMN
+            type: string
+        iSAN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISAN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISAN
+                setter: setISAN
+            type: string
+        vISAN:
+            expose: true
+            access_type: public_method
+            serialized_name: VISAN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVISAN
+                setter: setVISAN
+            type: string
+        iSBN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISBN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISBN
+                setter: setISBN
+            type: string
+        iSSN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISSN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISSN
+                setter: setISSN
+            type: string
+        sICI:
+            expose: true
+            access_type: public_method
+            serialized_name: SICI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSICI
+                setter: setSICI
+            type: string
+        catalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogNumber
+                setter: setCatalogNumber
+            type: DDEX\MEAD\MEAD_100\CatalogNumberType
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\MEAD\MEAD_100\ProprietaryIdType>

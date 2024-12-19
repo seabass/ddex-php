@@ -1,0 +1,75 @@
+DDEX\MEAD\MEAD_101\WorkInformationType:
+    properties:
+        musicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        workSummary:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        subGenreCategory:
+            -
+                Valid: null
+        form:
+            -
+                Valid: null
+        vocalRegister:
+            -
+                Valid: null
+        timeSignature:
+            -
+                Valid: null
+        targetInstrument:
+            -
+                Valid: null
+        harmony:
+            -
+                Valid: null
+        lyricsMood:
+            -
+                Valid: null
+        danceAndRhythmStyle:
+            -
+                Valid: null
+        theme:
+            -
+                Valid: null
+        workHierarchy:
+            -
+                Valid: null
+        relatedWork:
+            -
+                Valid: null
+        derivedRecording:
+            -
+                Valid: null
+        lyrics:
+            -
+                Valid: null
+        commentaryNote:
+            -
+                Valid: null
+        classicalPeriod:
+            -
+                Valid: null
+        epoch:
+            -
+                Valid: null
+        artisticInfluence:
+            -
+                Valid: null
+        isSimilar:
+            -
+                Valid: null
+        award:
+            -
+                Valid: null
+        alternativeTitle:
+            -
+                Valid: null

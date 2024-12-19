@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_110\AbsolutePitchType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: float
+        modulation:
+            expose: true
+            access_type: public_method
+            serialized_name: Modulation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getModulation
+                setter: setModulation
+            xml_list:
+                inline: true
+                entry_name: Modulation
+            type: array<DDEX\MEAD\MEAD_110\ModulationType>

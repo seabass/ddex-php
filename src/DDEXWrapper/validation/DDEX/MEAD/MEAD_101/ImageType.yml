@@ -1,0 +1,18 @@
+DDEX\MEAD\MEAD_101\ImageType:
+    properties:
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        file:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

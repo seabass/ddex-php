@@ -1,0 +1,90 @@
+DDEX\MEAD\MEAD_100\PartyNameWithTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        applicableTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableTerritoryCode
+            accessor:
+                getter: getApplicableTerritoryCode
+                setter: setApplicableTerritoryCode
+            xml_attribute: true
+            type: string
+        fullName:
+            expose: true
+            access_type: public_method
+            serialized_name: FullName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullName
+                setter: setFullName
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType
+        fullNameAsciiTranscribed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameAsciiTranscribed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameAsciiTranscribed
+                setter: setFullNameAsciiTranscribed
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationType
+        fullNameIndexed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameIndexed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameIndexed
+                setter: setFullNameIndexed
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType
+        namesBeforeKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesBeforeKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesBeforeKeyName
+                setter: setNamesBeforeKeyName
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType
+        keyName:
+            expose: true
+            access_type: public_method
+            serialized_name: KeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getKeyName
+                setter: setKeyName
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType
+        namesAfterKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesAfterKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesAfterKeyName
+                setter: setNamesAfterKeyName
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType
+        abbreviatedName:
+            expose: true
+            access_type: public_method
+            serialized_name: AbbreviatedName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAbbreviatedName
+                setter: setAbbreviatedName
+            type: DDEX\MEAD\MEAD_100\NameWithPronunciationAndScriptCodeType

@@ -1,0 +1,17 @@
+DDEX\MEAD\MEAD_110\RelatedWorkType:
+    properties:
+        workId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        workRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        writer:
+            -
+                Valid: null

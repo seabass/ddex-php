@@ -1,0 +1,509 @@
+DDEX\MEAD\MEAD_110\ResourceInformationType:
+    properties:
+        priorityPeriodStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: PriorityPeriodStartDate
+            accessor:
+                getter: getPriorityPeriodStartDate
+                setter: setPriorityPeriodStartDate
+            xml_attribute: true
+            type: string
+        priorityPeriodEndDate:
+            expose: true
+            access_type: public_method
+            serialized_name: PriorityPeriodEndDate
+            accessor:
+                getter: getPriorityPeriodEndDate
+                setter: setPriorityPeriodEndDate
+            xml_attribute: true
+            type: string
+        applicableTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableTerritoryCode
+            accessor:
+                getter: getApplicableTerritoryCode
+                setter: setApplicableTerritoryCode
+            xml_attribute: true
+            type: string
+        resourceSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceSummary
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceSummary
+                setter: setResourceSummary
+            type: DDEX\MEAD\MEAD_110\ResourceSummaryType
+        genreCategory:
+            expose: true
+            access_type: public_method
+            serialized_name: GenreCategory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenreCategory
+                setter: setGenreCategory
+            xml_list:
+                inline: true
+                entry_name: GenreCategory
+            type: array<DDEX\MEAD\MEAD_110\GenreCategoryType>
+        subGenreCategory:
+            expose: true
+            access_type: public_method
+            serialized_name: SubGenreCategory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubGenreCategory
+                setter: setSubGenreCategory
+            xml_list:
+                inline: true
+                entry_name: SubGenreCategory
+            type: array<DDEX\MEAD\MEAD_110\SubGenreCategoryType>
+        form:
+            expose: true
+            access_type: public_method
+            serialized_name: Form
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getForm
+                setter: setForm
+            type: DDEX\MEAD\MEAD_110\FormType
+        vocalRegister:
+            expose: true
+            access_type: public_method
+            serialized_name: VocalRegister
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVocalRegister
+                setter: setVocalRegister
+            xml_list:
+                inline: true
+                entry_name: VocalRegister
+            type: array<DDEX\MEAD\MEAD_110\VocalRegisterType>
+        focus:
+            expose: true
+            access_type: public_method
+            serialized_name: Focus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFocus
+                setter: setFocus
+            xml_list:
+                inline: true
+                entry_name: Focus
+            type: array<DDEX\MEAD\MEAD_110\FocusType>
+        absolutePitch:
+            expose: true
+            access_type: public_method
+            serialized_name: AbsolutePitch
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAbsolutePitch
+                setter: setAbsolutePitch
+            xml_list:
+                inline: true
+                entry_name: AbsolutePitch
+            type: array<DDEX\MEAD\MEAD_110\AbsolutePitchType>
+        timeSignature:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeSignature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTimeSignature
+                setter: setTimeSignature
+            xml_list:
+                inline: true
+                entry_name: TimeSignature
+            type: array<DDEX\MEAD\MEAD_110\TimeSignatureType>
+        tempo:
+            expose: true
+            access_type: public_method
+            serialized_name: Tempo
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTempo
+                setter: setTempo
+            xml_list:
+                inline: true
+                entry_name: Tempo
+            type: array<DDEX\MEAD\MEAD_110\TempoValueType>
+        beatsPerMinute:
+            expose: true
+            access_type: public_method
+            serialized_name: BeatsPerMinute
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBeatsPerMinute
+                setter: setBeatsPerMinute
+            xml_list:
+                inline: true
+                entry_name: BeatsPerMinute
+            type: array<DDEX\MEAD\MEAD_110\BeatsPerMinuteType>
+        intensity:
+            expose: true
+            access_type: public_method
+            serialized_name: Intensity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIntensity
+                setter: setIntensity
+            xml_list:
+                inline: true
+                entry_name: Intensity
+            type: array<DDEX\MEAD\MEAD_110\IntensityType>
+        instrumentUsed:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentUsed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentUsed
+                setter: setInstrumentUsed
+            xml_list:
+                inline: true
+                entry_name: InstrumentUsed
+            type: array<DDEX\MEAD\MEAD_110\InstrumentUsedType>
+        harmony:
+            expose: true
+            access_type: public_method
+            serialized_name: Harmony
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHarmony
+                setter: setHarmony
+            xml_list:
+                inline: true
+                entry_name: Harmony
+            type: array<DDEX\MEAD\MEAD_110\HarmonyType>
+        isOriginal:
+            expose: true
+            access_type: public_method
+            serialized_name: IsOriginal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsOriginal
+                setter: setIsOriginal
+            type: DDEX\MEAD\MEAD_110\FlagType
+        isCover:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCover
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCover
+                setter: setIsCover
+            type: DDEX\MEAD\MEAD_110\FlagType
+        mood:
+            expose: true
+            access_type: public_method
+            serialized_name: Mood
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMood
+                setter: setMood
+            xml_list:
+                inline: true
+                entry_name: Mood
+            type: array<DDEX\MEAD\MEAD_110\MoodType>
+        danceStyle:
+            expose: true
+            access_type: public_method
+            serialized_name: DanceStyle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDanceStyle
+                setter: setDanceStyle
+            xml_list:
+                inline: true
+                entry_name: DanceStyle
+            type: array<DDEX\MEAD\MEAD_110\DanceStyleType>
+        rhythmStyle:
+            expose: true
+            access_type: public_method
+            serialized_name: RhythmStyle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRhythmStyle
+                setter: setRhythmStyle
+            xml_list:
+                inline: true
+                entry_name: RhythmStyle
+            type: array<DDEX\MEAD\MEAD_110\RhythmStyleType>
+        artisticStyle:
+            expose: true
+            access_type: public_method
+            serialized_name: ArtisticStyle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getArtisticStyle
+                setter: setArtisticStyle
+            xml_list:
+                inline: true
+                entry_name: ArtisticStyle
+            type: array<DDEX\MEAD\MEAD_110\ArtisticStyleType>
+        theme:
+            expose: true
+            access_type: public_method
+            serialized_name: Theme
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTheme
+                setter: setTheme
+            xml_list:
+                inline: true
+                entry_name: Theme
+            type: array<DDEX\MEAD\MEAD_110\ThemeType>
+        activity:
+            expose: true
+            access_type: public_method
+            serialized_name: Activity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getActivity
+                setter: setActivity
+            xml_list:
+                inline: true
+                entry_name: Activity
+            type: array<DDEX\MEAD\MEAD_110\ActivityType>
+        usedMusicalWork:
+            expose: true
+            access_type: public_method
+            serialized_name: UsedMusicalWork
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsedMusicalWork
+                setter: setUsedMusicalWork
+            xml_list:
+                inline: true
+                entry_name: UsedMusicalWork
+            type: array<DDEX\MEAD\MEAD_110\UsedMusicalWorkType>
+        relatedResource:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedResource
+                setter: setRelatedResource
+            xml_list:
+                inline: true
+                entry_name: RelatedResource
+            type: array<DDEX\MEAD\MEAD_110\ResourceRelationshipType>
+        lyrics:
+            expose: true
+            access_type: public_method
+            serialized_name: Lyrics
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLyrics
+                setter: setLyrics
+            xml_list:
+                inline: true
+                entry_name: Lyrics
+            type: array<DDEX\MEAD\MEAD_110\LyricsType>
+        commentaryNote:
+            expose: true
+            access_type: public_method
+            serialized_name: CommentaryNote
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCommentaryNote
+                setter: setCommentaryNote
+            xml_list:
+                inline: true
+                entry_name: CommentaryNote
+            type: array<DDEX\MEAD\MEAD_110\CommentaryNoteType>
+        sample:
+            expose: true
+            access_type: public_method
+            serialized_name: Sample
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSample
+                setter: setSample
+            xml_list:
+                inline: true
+                entry_name: Sample
+            type: array<DDEX\MEAD\MEAD_110\SampleType>
+        recordingPart:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordingPart
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecordingPart
+                setter: setRecordingPart
+            xml_list:
+                inline: true
+                entry_name: RecordingPart
+            type: array<DDEX\MEAD\MEAD_110\RecordingPartType>
+        usage:
+            expose: true
+            access_type: public_method
+            serialized_name: Usage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsage
+                setter: setUsage
+            xml_list:
+                inline: true
+                entry_name: Usage
+            type: array<DDEX\MEAD\MEAD_110\UsageType>
+        impactDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ImpactDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImpactDate
+                setter: setImpactDate
+            xml_list:
+                inline: true
+                entry_name: ImpactDate
+            type: array<DDEX\MEAD\MEAD_110\ImpactDateType>
+        classicalPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ClassicalPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClassicalPeriod
+                setter: setClassicalPeriod
+            type: DDEX\MEAD\MEAD_110\ClassicalPeriodType
+        epoch:
+            expose: true
+            access_type: public_method
+            serialized_name: Epoch
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEpoch
+                setter: setEpoch
+            xml_list:
+                inline: true
+                entry_name: Epoch
+            type: array<DDEX\MEAD\MEAD_110\EpochType>
+        artisticInfluence:
+            expose: true
+            access_type: public_method
+            serialized_name: ArtisticInfluence
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getArtisticInfluence
+                setter: setArtisticInfluence
+            xml_list:
+                inline: true
+                entry_name: ArtisticInfluence
+            type: array<DDEX\MEAD\MEAD_110\ArtisticInfluenceType>
+        isSimilar:
+            expose: true
+            access_type: public_method
+            serialized_name: IsSimilar
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsSimilar
+                setter: setIsSimilar
+            xml_list:
+                inline: true
+                entry_name: IsSimilar
+            type: array<DDEX\MEAD\MEAD_110\SimilarResourceType>
+        historicChartingInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: HistoricChartingInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHistoricChartingInformation
+                setter: setHistoricChartingInformation
+            xml_list:
+                inline: true
+                entry_name: HistoricChartingInformation
+            type: array<DDEX\MEAD\MEAD_110\HistoricChartingInformationType>
+        award:
+            expose: true
+            access_type: public_method
+            serialized_name: Award
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAward
+                setter: setAward
+            xml_list:
+                inline: true
+                entry_name: Award
+            type: array<DDEX\MEAD\MEAD_110\AwardType>
+        locationAndDateOfSession:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationAndDateOfSession
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLocationAndDateOfSession
+                setter: setLocationAndDateOfSession
+            xml_list:
+                inline: true
+                entry_name: LocationAndDateOfSession
+            type: array<DDEX\MEAD\MEAD_110\LocationAndDateOfSessionType>
+        alternativeTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: AlternativeTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAlternativeTitle
+                setter: setAlternativeTitle
+            xml_list:
+                inline: true
+                entry_name: AlternativeTitle
+            type: array<DDEX\MEAD\MEAD_110\AlternativeTitleType>
+        image:
+            expose: true
+            access_type: public_method
+            serialized_name: Image
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImage
+                setter: setImage
+            xml_list:
+                inline: true
+                entry_name: Image
+            type: array<DDEX\MEAD\MEAD_110\ImageType>
+        any: false

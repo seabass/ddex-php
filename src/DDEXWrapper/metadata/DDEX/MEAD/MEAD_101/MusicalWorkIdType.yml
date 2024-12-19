@@ -1,0 +1,48 @@
+DDEX\MEAD\MEAD_101\MusicalWorkIdType:
+    properties:
+        iSWC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISWC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISWC
+                setter: setISWC
+            type: string
+        opusNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: OpusNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOpusNumber
+                setter: setOpusNumber
+            type: string
+        composerCatalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: ComposerCatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComposerCatalogNumber
+                setter: setComposerCatalogNumber
+            xml_list:
+                inline: true
+                entry_name: ComposerCatalogNumber
+            type: array<string>
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\MEAD\MEAD_101\ProprietaryIdType>

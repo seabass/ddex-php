@@ -1,0 +1,15 @@
+DDEX\MEAD\MEAD_101\WorkInformationListType:
+    properties:
+        workInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkInformation
+                setter: setWorkInformation
+            xml_list:
+                inline: true
+                entry_name: WorkInformation
+            type: array<DDEX\MEAD\MEAD_101\WorkInformationType>

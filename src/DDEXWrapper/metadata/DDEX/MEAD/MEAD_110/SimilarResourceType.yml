@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_110\SimilarResourceType:
+    properties:
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<DDEX\MEAD\MEAD_110\MetadataSourceReferenceType>
+        resource:
+            expose: true
+            access_type: public_method
+            serialized_name: Resource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResource
+                setter: setResource
+            type: DDEX\MEAD\MEAD_110\ResourceType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\MEAD\MEAD_110\AnnotationType>

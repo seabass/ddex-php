@@ -1,0 +1,10 @@
+DDEX\PIE\PIE_100\BiographyType:
+    properties:
+        text:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        author:
+            -
+                Valid: null

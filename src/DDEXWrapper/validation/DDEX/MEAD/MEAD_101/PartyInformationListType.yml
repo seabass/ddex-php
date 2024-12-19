@@ -1,0 +1,9 @@
+DDEX\MEAD\MEAD_101\PartyInformationListType:
+    properties:
+        partyInformation:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

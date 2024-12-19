@@ -1,0 +1,90 @@
+DDEX\MEAD\MEAD_101\RecordingPartType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        metadataSourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MetadataSourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMetadataSourceReference
+                setter: setMetadataSourceReference
+            xml_list:
+                inline: true
+                entry_name: MetadataSourceReference
+            type: array<string>
+        unit:
+            expose: true
+            access_type: public_method
+            serialized_name: Unit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUnit
+                setter: setUnit
+            type: string
+        startPoint:
+            expose: true
+            access_type: public_method
+            serialized_name: StartPoint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartPoint
+                setter: setStartPoint
+            type: float
+        endPoint:
+            expose: true
+            access_type: public_method
+            serialized_name: EndPoint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndPoint
+                setter: setEndPoint
+            type: float
+        recordingPartType:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordingPartType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecordingPartType
+                setter: setRecordingPartType
+            type: DDEX\MEAD\MEAD_101\RecordingPartTypeType
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            xml_list:
+                inline: true
+                entry_name: Comment
+            type: array<DDEX\MEAD\MEAD_101\AnnotationType>
+        usageInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: UsageInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsageInformation
+                setter: setUsageInformation
+            xml_list:
+                inline: true
+                entry_name: UsageInformation
+            type: array<DDEX\MEAD\MEAD_101\TextWithFormatType>

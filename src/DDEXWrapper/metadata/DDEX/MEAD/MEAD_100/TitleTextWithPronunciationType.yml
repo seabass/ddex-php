@@ -1,0 +1,25 @@
+DDEX\MEAD\MEAD_100\TitleTextWithPronunciationType:
+    properties:
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: string
+        pronunciation:
+            expose: true
+            access_type: public_method
+            serialized_name: Pronunciation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPronunciation
+                setter: setPronunciation
+            xml_list:
+                inline: true
+                entry_name: Pronunciation
+            type: array<DDEX\MEAD\MEAD_100\PronunciationType>

@@ -1,0 +1,28 @@
+DDEX\MEAD\MEAD_110\PartyDescriptorWithPronunciationType:
+    properties:
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\MEAD\MEAD_110\DetailedPartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\MEAD\MEAD_110\PartyNameWithPronunciationType>

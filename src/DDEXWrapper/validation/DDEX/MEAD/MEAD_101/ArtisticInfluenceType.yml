@@ -1,0 +1,23 @@
+DDEX\MEAD\MEAD_101\ArtisticInfluenceType:
+    properties:
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        party:
+            -
+                Valid: null
+        work:
+            -
+                Valid: null
+        resource:
+            -
+                Valid: null
+        release:
+            -
+                Valid: null

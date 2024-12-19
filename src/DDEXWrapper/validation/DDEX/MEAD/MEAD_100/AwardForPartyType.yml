@@ -1,0 +1,51 @@
+DDEX\MEAD\MEAD_100\AwardForPartyType:
+    properties:
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        awardingBody:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        awardedParty:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        awardName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        date:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        isWinner:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        awardedWork:
+            -
+                Valid: null
+        awardedResource:
+            -
+                Valid: null
+        awardedRelease:
+            -
+                Valid: null

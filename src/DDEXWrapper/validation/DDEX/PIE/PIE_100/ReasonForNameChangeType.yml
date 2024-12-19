@@ -1,0 +1,13 @@
+DDEX\PIE\PIE_100\ReasonForNameChangeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Deed
+                        - Marriage
+                        - Religion
+                        - SexChange
+                        - UserDefined
+                    groups:
+                        - xsd_rules

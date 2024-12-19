@@ -1,0 +1,12 @@
+DDEX\PIE\PIE_100\MetadataSourceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Journalist
+                        - MetadataProvider
+                        - RightsController
+                        - UserDefined
+                    groups:
+                        - xsd_rules

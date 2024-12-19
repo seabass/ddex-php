@@ -1,0 +1,37 @@
+DDEX\PIE\PIE_100\PartyRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HasAffiliateMember
+                        - HasFullMember
+                        - HasMember
+                        - HasPart
+                        - IsAffiliateMemberOf
+                        - IsCharacterPlayedBy
+                        - IsChildOf
+                        - IsChildOrganizationOf
+                        - IsCoAuthorOf
+                        - IsCoContributorOf
+                        - IsConsideredTheSameAs
+                        - IsCoPerformerOf
+                        - IsDuplicateOf
+                        - IsFullMemberOf
+                        - IsHomonymOf
+                        - IsInfluencedBy
+                        - IsInfluencerOf
+                        - IsMarriedTo
+                        - IsMemberOf
+                        - IsNaturalPersonOf
+                        - IsParentOf
+                        - IsParentOrganizationOf
+                        - IsPartOf
+                        - IsPlayingCharacter
+                        - IsPseudonymOf
+                        - IsRelatedTo
+                        - IsRelatedStagePersonaOf
+                        - IsStagePersonaOf
+                        - UserDefined
+                    groups:
+                        - xsd_rules

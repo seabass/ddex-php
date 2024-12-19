@@ -1,0 +1,20 @@
+DDEX\PIE\PIE_100\PartyTypeValueType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Anthropomorph
+                        - AuthorPersona
+                        - Brand
+                        - Character
+                        - ComposingPersona
+                        - Department
+                        - Group
+                        - LegalOrganization
+                        - NaturalPerson
+                        - Persona
+                        - StagePersona
+                        - UserDefined
+                    groups:
+                        - xsd_rules

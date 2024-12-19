@@ -1,0 +1,14 @@
+DDEX\MEAD\MEAD_101\RelatedResourceType:
+    properties:
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        resourceRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

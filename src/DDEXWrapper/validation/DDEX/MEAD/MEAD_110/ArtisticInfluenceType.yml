@@ -1,0 +1,14 @@
+DDEX\MEAD\MEAD_110\ArtisticInfluenceType:
+    properties:
+        party:
+            -
+                Valid: null
+        work:
+            -
+                Valid: null
+        resource:
+            -
+                Valid: null
+        release:
+            -
+                Valid: null

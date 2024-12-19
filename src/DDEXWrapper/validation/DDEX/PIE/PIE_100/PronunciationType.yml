@@ -1,0 +1,10 @@
+DDEX\PIE\PIE_100\PronunciationType:
+    properties:
+        encodingType:
+            -
+                Choice:
+                    choices:
+                        - IPA
+                        - UserDefined
+                    groups:
+                        - xsd_rules

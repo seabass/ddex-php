@@ -1,0 +1,37 @@
+DDEX\PIE\PIE_100\EntryType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        author:
+            -
+                Valid: null
+        category:
+            -
+                Valid: null
+        content:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        link:
+            -
+                Valid: null
+        rights:
+            -
+                Valid: null
+        source:
+            -
+                Valid: null
+        summary:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        party:
+            -
+                Valid: null

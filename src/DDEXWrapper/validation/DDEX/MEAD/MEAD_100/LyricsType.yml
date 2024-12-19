@@ -1,0 +1,38 @@
+DDEX\MEAD\MEAD_100\LyricsType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        lyricsType:
+            -
+                Choice:
+                    choices:
+                        - Chorus
+                        - ChorusAndVerse
+                        - Complete
+                        - FirstLineOfText
+                        - Hook
+                        - JazzScats
+                        - Stanza
+                        - Unknown
+                        - UserDefined
+                        - Verse
+                    groups:
+                        - xsd_rules
+        metadataSourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~U[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        text:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

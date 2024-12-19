@@ -1,0 +1,9 @@
+DDEX\PIE\PIE_100\CommentaryNoteTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                    groups:
+                        - xsd_rules
