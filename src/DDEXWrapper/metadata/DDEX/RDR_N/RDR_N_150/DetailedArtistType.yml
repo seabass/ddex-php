@@ -1,0 +1,182 @@
+DDEX\RDR_N\RDR_N_150\DetailedArtistType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\RDR_N\RDR_N_150\ExtendedPartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\RDR_N\RDR_N_150\PartyNameType>
+        artistDelegatedUsageRights:
+            expose: true
+            access_type: public_method
+            serialized_name: ArtistDelegatedUsageRights
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getArtistDelegatedUsageRights
+                setter: setArtistDelegatedUsageRights
+            type: DDEX\RDR_N\RDR_N_150\ArtistDelegatedUsageRightsType
+        gender:
+            expose: true
+            access_type: public_method
+            serialized_name: Gender
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGender
+                setter: setGender
+            type: string
+        nationality:
+            expose: true
+            access_type: public_method
+            serialized_name: Nationality
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNationality
+                setter: setNationality
+            xml_list:
+                inline: true
+                entry_name: Nationality
+            type: array<DDEX\RDR_N\RDR_N_150\AllTerritoryCodeNoWorldwideType>
+        dateAndPlaceOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: DateAndPlaceOfBirth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDateAndPlaceOfBirth
+                setter: setDateAndPlaceOfBirth
+            type: DDEX\RDR_N\RDR_N_150\EventDateNoWorldwideType
+        dateAndPlaceOfDeath:
+            expose: true
+            access_type: public_method
+            serialized_name: DateAndPlaceOfDeath
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDateAndPlaceOfDeath
+                setter: setDateAndPlaceOfDeath
+            type: DDEX\RDR_N\RDR_N_150\EventDateNoWorldwideType
+        governingAgreementType:
+            expose: true
+            access_type: public_method
+            serialized_name: GoverningAgreementType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGoverningAgreementType
+                setter: setGoverningAgreementType
+            type: DDEX\RDR_N\RDR_N_150\GoverningAgreementTypeType
+        contactInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ContactInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContactInformation
+                setter: setContactInformation
+            type: DDEX\RDR_N\RDR_N_150\ContactIdType
+        territoryOfResidency:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfResidency
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfResidency
+                setter: setTerritoryOfResidency
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfResidency
+            type: array<DDEX\RDR_N\RDR_N_150\AllTerritoryCodeNoWorldwideType>
+        additionalRoles:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalRoles
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalRoles
+                setter: setAdditionalRoles
+            xml_list:
+                inline: true
+                entry_name: AdditionalRoles
+            type: array<DDEX\RDR_N\RDR_N_150\ContributorRoleType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\RDR_N\RDR_N_150\GenreType>
+        displayCredits:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayCredits
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayCredits
+                setter: setDisplayCredits
+            xml_list:
+                inline: true
+                entry_name: DisplayCredits
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayCreditsType>
+        primaryRole:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryRole
+                setter: setPrimaryRole
+            type: DDEX\RDR_N\RDR_N_150\ContributorRoleType
+        date:
+            expose: true
+            access_type: public_method
+            serialized_name: Date
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDate
+                setter: setDate
+            type: DDEX\RDR_N\RDR_N_150\EventDateType

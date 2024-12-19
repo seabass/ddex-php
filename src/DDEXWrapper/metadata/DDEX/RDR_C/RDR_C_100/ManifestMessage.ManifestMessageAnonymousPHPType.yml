@@ -1,0 +1,65 @@
+DDEX\RDR_C\RDR_C_100\ManifestMessage\ManifestMessageAnonymousPHPType:
+    properties:
+        ftpMessageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: FtpMessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFtpMessageHeader
+                setter: setFtpMessageHeader
+            type: DDEX\RDR_C\RDR_C_100\FtpMessageHeaderType
+        isTestFlag:
+            expose: true
+            access_type: public_method
+            serialized_name: IsTestFlag
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsTestFlag
+                setter: setIsTestFlag
+            type: bool
+        rootDirectory:
+            expose: true
+            access_type: public_method
+            serialized_name: RootDirectory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRootDirectory
+                setter: setRootDirectory
+            type: string
+        numberOfMessages:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfMessages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfMessages
+                setter: setNumberOfMessages
+            type: int
+        messageNotificationPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageNotificationPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageNotificationPeriod
+                setter: setMessageNotificationPeriod
+            type: DDEX\RDR_C\RDR_C_100\MessageNotificationPeriodType
+        messageInBatch:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageInBatch
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageInBatch
+                setter: setMessageInBatch
+            xml_list:
+                inline: true
+                entry_name: MessageInBatch
+            type: array<DDEX\RDR_C\RDR_C_100\MessageInBatchType>

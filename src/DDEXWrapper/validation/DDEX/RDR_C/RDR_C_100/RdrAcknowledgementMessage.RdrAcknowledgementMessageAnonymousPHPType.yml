@@ -1,0 +1,15 @@
+DDEX\RDR_C\RDR_C_100\RdrAcknowledgementMessage\RdrAcknowledgementMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        batchAcknowledgement:
+            -
+                Valid: null
+        messageAcknowledgement:
+            -
+                Valid: null

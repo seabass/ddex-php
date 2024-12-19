@@ -1,0 +1,36 @@
+DDEX\RDR_N\RDR_N_150\RightsControllerType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        rightsControlType:
+            -
+                Choice:
+                    choices:
+                        - ExclusiveLicensee
+                        - LocalPayee
+                        - OriginalOwner
+                        - RightsAdministrator
+                        - SuccessorInTitle
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rightsStatement:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

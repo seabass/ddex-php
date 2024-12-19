@@ -1,0 +1,17 @@
+DDEX\RDR_N\RDR_N_150\ContainerFormatType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AIFF
+                        - AVI
+                        - MP4
+                        - Ogg
+                        - QuickTime
+                        - RealMedia
+                        - RMF
+                        - UserDefined
+                        - WAV
+                    groups:
+                        - xsd_rules

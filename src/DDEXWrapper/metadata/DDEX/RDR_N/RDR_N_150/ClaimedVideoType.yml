@@ -1,0 +1,41 @@
+DDEX\RDR_N\RDR_N_150\ClaimedVideoType:
+    properties:
+        videoId:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoId
+                setter: setVideoId
+            xml_list:
+                inline: true
+                entry_name: VideoId
+            type: array<DDEX\RDR_N\RDR_N_150\VideoIdType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RDR_N\RDR_N_150\TitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>

@@ -1,0 +1,5 @@
+DDEX\RDR_C\RDR_C_110\X509DataType:
+    properties:
+        x509IssuerSerial:
+            -
+                Valid: null

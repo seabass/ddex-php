@@ -1,0 +1,40 @@
+DDEX\RDR_N\RDR_N_150\GenreWithClassicalType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        isClassical:
+            expose: true
+            access_type: public_method
+            serialized_name: IsClassical
+            accessor:
+                getter: getIsClassical
+                setter: setIsClassical
+            xml_attribute: true
+            type: bool
+        genreText:
+            expose: true
+            access_type: public_method
+            serialized_name: GenreText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenreText
+                setter: setGenreText
+            type: string
+        subGenre:
+            expose: true
+            access_type: public_method
+            serialized_name: SubGenre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubGenre
+                setter: setSubGenre
+            type: string

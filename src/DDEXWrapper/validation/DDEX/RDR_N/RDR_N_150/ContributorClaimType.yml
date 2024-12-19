@@ -1,0 +1,24 @@
+DDEX\RDR_N\RDR_N_150\ContributorClaimType:
+    properties:
+        contributorClaimStatus:
+            -
+                Choice:
+                    choices:
+                        - Accepted
+                        - Conflict
+                        - DataInconsistent
+                        - NoConflict
+                        - PendingReview
+                        - Rejected
+                        - Revoked
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

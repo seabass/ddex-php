@@ -1,0 +1,28 @@
+DDEX\RDR_N\RDR_N_150\RequestSoundRecordingRightsClaimMessage\RequestSoundRecordingRightsClaimMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageNotificationPeriod:
+            -
+                Valid: null
+        requestedSoundRecording:
+            -
+                Valid: null
+        requestedVideo:
+            -
+                Valid: null

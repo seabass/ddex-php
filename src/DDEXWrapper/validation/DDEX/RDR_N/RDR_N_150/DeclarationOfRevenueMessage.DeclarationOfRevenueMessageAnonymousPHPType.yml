@@ -1,0 +1,36 @@
+DDEX\RDR_N\RDR_N_150\DeclarationOfRevenueMessage\DeclarationOfRevenueMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        revenueDeclaration:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        numberOfRevenueByUsageRecords:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

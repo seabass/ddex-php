@@ -1,0 +1,59 @@
+DDEX\RDR_N\RDR_N_150\DeclarationOfSoundRecordingRightsClaimMessage\DeclarationOfSoundRecordingRightsClaimMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        rightsStatementProfile:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsStatementProfile
+            accessor:
+                getter: getRightsStatementProfile
+                setter: setRightsStatementProfile
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\RDR_N\RDR_N_150\MessageHeaderType
+        messageNotificationPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageNotificationPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageNotificationPeriod
+                setter: setMessageNotificationPeriod
+            type: DDEX\RDR_N\RDR_N_150\MessageNotificationPeriodType
+        resourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceList
+                setter: setResourceList
+            type: DDEX\RDR_N\RDR_N_150\ResourceListType

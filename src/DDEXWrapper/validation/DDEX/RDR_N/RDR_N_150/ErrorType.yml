@@ -1,0 +1,11 @@
+DDEX\RDR_N\RDR_N_150\ErrorType:
+    properties:
+        errorSeverity:
+            -
+                Choice:
+                    choices:
+                        - Critical
+                        - Information
+                        - Warning
+                    groups:
+                        - xsd_rules

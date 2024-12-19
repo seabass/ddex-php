@@ -1,0 +1,72 @@
+DDEX\RDR_N\RDR_N_150\ErrorType:
+    properties:
+        errorType:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErrorType
+                setter: setErrorType
+            type: DDEX\RDR_N\RDR_N_150\ErrorTypeType
+        errorSeverity:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorSeverity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErrorSeverity
+                setter: setErrorSeverity
+            type: string
+        recommendedAction:
+            expose: true
+            access_type: public_method
+            serialized_name: RecommendedAction
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecommendedAction
+                setter: setRecommendedAction
+            type: string
+        erroneousElement:
+            expose: true
+            access_type: public_method
+            serialized_name: ErroneousElement
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErroneousElement
+                setter: setErroneousElement
+            type: string
+        errorDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErrorDescription
+                setter: setErrorDescription
+            type: string
+        dataFound:
+            expose: true
+            access_type: public_method
+            serialized_name: DataFound
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataFound
+                setter: setDataFound
+            type: string
+        dataExpected:
+            expose: true
+            access_type: public_method
+            serialized_name: DataExpected
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataExpected
+                setter: setDataExpected
+            type: string

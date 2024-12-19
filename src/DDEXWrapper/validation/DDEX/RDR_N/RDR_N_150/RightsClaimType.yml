@@ -1,0 +1,50 @@
+DDEX\RDR_N\RDR_N_150\RightsClaimType:
+    properties:
+        claimedSoundRecording:
+            -
+                Valid: null
+        claimedVideo:
+            -
+                Valid: null
+        registrationStatus:
+            -
+                Choice:
+                    choices:
+                        - ClaimMeetsCoreDataProfile
+                        - ClaimMeetsRecommendedProfile
+                        - PendingReview
+                        - ResourceRegisteredInvalid
+                        - ResourceRegisteredValid
+                        - RegistrationRejected
+                    groups:
+                        - xsd_rules
+        registrationError:
+            -
+                Valid: null
+        claimStatus:
+            -
+                Choice:
+                    choices:
+                        - Conflict
+                        - DataInconsistent
+                        - NoConflict
+                        - PendingReview
+                        - Rejected
+                        - Revoked
+                    groups:
+                        - xsd_rules
+        contributorClaim:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        rightsConflict:
+            -
+                Valid: null
+        weight:
+            -
+                Regex:
+                    pattern: '~[0-9]|10~u'
+                    groups:
+                        - xsd_rules

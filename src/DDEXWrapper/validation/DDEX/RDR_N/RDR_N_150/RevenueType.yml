@@ -1,0 +1,27 @@
+DDEX\RDR_N\RDR_N_150\RevenueType:
+    properties:
+        grossRevenue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        adminFee:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        netRevenueBeforeWithholdingTax:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        withholdingTax:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        netRevenue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

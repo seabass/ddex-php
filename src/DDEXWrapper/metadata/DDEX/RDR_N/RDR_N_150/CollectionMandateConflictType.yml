@@ -1,0 +1,54 @@
+DDEX\RDR_N\RDR_N_150\CollectionMandateConflictType:
+    properties:
+        conflictingParty:
+            expose: true
+            access_type: public_method
+            serialized_name: ConflictingParty
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConflictingParty
+                setter: setConflictingParty
+            xml_list:
+                inline: true
+                entry_name: ConflictingParty
+            type: array<DDEX\RDR_N\RDR_N_150\ConflictingPartyType>
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\RDR_N\RDR_N_150\UseTypeType>
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\RDR_N\RDR_N_150\AllTerritoryCodeType>
+        period:
+            expose: true
+            access_type: public_method
+            serialized_name: Period
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPeriod
+                setter: setPeriod
+            xml_list:
+                inline: true
+                entry_name: Period
+            type: array<DDEX\RDR_N\RDR_N_150\PeriodType>

@@ -1,0 +1,9 @@
+DDEX\RDR_C\RDR_C_100\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

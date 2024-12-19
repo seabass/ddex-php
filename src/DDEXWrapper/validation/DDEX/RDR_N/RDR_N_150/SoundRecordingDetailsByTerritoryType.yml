@@ -1,0 +1,32 @@
+DDEX\RDR_N\RDR_N_150\SoundRecordingDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        displayConductor:
+            -
+                Valid: null
+        displayComposer:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        licensor:
+            -
+                Valid: null
+        hostSoundCarrier:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null

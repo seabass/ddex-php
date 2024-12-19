@@ -1,0 +1,36 @@
+DDEX\RDR_N\RDR_N_150\DetailedArtistType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        artistDelegatedUsageRights:
+            -
+                Valid: null
+        gender:
+            -
+                Choice:
+                    choices:
+                        - Androgynous
+                        - Feminine
+                        - Masculine
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        contactInformation:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        displayCredits:
+            -
+                Valid: null

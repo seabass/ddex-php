@@ -1,0 +1,44 @@
+DDEX\RDR_N\RDR_N_150\ReportedUsageType:
+    properties:
+        recipientRevenueType:
+            -
+                Choice:
+                    choices:
+                        - PerformerAndProducerRevenue
+                        - PerformerRevenue
+                        - ProducerRevenue
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        revenueSourceType:
+            -
+                Choice:
+                    choices:
+                        - FinancialRevenue
+                        - IndemnityRevenue
+                        - PaymentFromUnclaimedRevenue
+                        - RoyaltyRevenue
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        usagePeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        revenueByUsage:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,240 @@
+DDEX\RDR_N\RDR_N_150\SoundRecordingDetailsByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\RDR_N\RDR_N_150\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\RDR_N\RDR_N_150\CurrentTerritoryCodeType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RDR_N\RDR_N_150\TitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\RDR_N\RDR_N_150\ArtistType>
+        displayConductor:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayConductor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayConductor
+                setter: setDisplayConductor
+            xml_list:
+                inline: true
+                entry_name: DisplayConductor
+            type: array<DDEX\RDR_N\RDR_N_150\DetailedArtistType>
+        displayComposer:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayComposer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayComposer
+                setter: setDisplayComposer
+            xml_list:
+                inline: true
+                entry_name: DisplayComposer
+            type: array<DDEX\RDR_N\RDR_N_150\DetailedArtistType>
+        labelName:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabelName
+                setter: setLabelName
+            xml_list:
+                inline: true
+                entry_name: LabelName
+            type: array<DDEX\RDR_N\RDR_N_150\LabelNameType>
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\RDR_N\RDR_N_150\PLineType>
+        licensor:
+            expose: true
+            access_type: public_method
+            serialized_name: Licensor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicensor
+                setter: setLicensor
+            type: DDEX\RDR_N\RDR_N_150\PartyDescriptorType
+        courtesyLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CourtesyLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCourtesyLine
+                setter: setCourtesyLine
+            type: DDEX\RDR_N\RDR_N_150\CourtesyLineType
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: string
+        hostSoundCarrier:
+            expose: true
+            access_type: public_method
+            serialized_name: HostSoundCarrier
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHostSoundCarrier
+                setter: setHostSoundCarrier
+            xml_list:
+                inline: true
+                entry_name: HostSoundCarrier
+            type: array<DDEX\RDR_N\RDR_N_150\HostSoundCarrierType>
+        marketingComment:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingComment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMarketingComment
+                setter: setMarketingComment
+            type: DDEX\RDR_N\RDR_N_150\CommentType
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\RDR_N\RDR_N_150\GenreWithClassicalType>
+        parentalWarningType:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentalWarningType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParentalWarningType
+                setter: setParentalWarningType
+            xml_list:
+                inline: true
+                entry_name: ParentalWarningType
+            type: array<DDEX\RDR_N\RDR_N_150\ParentalWarningTypeType>
+        avRating:
+            expose: true
+            access_type: public_method
+            serialized_name: AvRating
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAvRating
+                setter: setAvRating
+            xml_list:
+                inline: true
+                entry_name: AvRating
+            type: array<DDEX\RDR_N\RDR_N_150\AvRatingType>
+        fulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFulfillmentDate
+                setter: setFulfillmentDate
+            type: DDEX\RDR_N\RDR_N_150\FulfillmentDateType
+        governingAgreementType:
+            expose: true
+            access_type: public_method
+            serialized_name: GoverningAgreementType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGoverningAgreementType
+                setter: setGoverningAgreementType
+            type: DDEX\RDR_N\RDR_N_150\GoverningAgreementTypeType

@@ -1,0 +1,25 @@
+DDEX\RDR_N\RDR_N_150\RevenueByUsageType:
+    properties:
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            type: DDEX\RDR_N\RDR_N_150\UseTypeType
+        revenueByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevenueByTerritory
+                setter: setRevenueByTerritory
+            xml_list:
+                inline: true
+                entry_name: RevenueByTerritory
+            type: array<DDEX\RDR_N\RDR_N_150\RevenueByTerritoryType>

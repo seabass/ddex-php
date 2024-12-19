@@ -1,0 +1,53 @@
+DDEX\RDR_N\RDR_N_150\DeclarationOfRevenueMessage\DeclarationOfRevenueMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\RDR_N\RDR_N_150\MessageHeaderType
+        revenueDeclaration:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueDeclaration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevenueDeclaration
+                setter: setRevenueDeclaration
+            xml_list:
+                inline: true
+                entry_name: RevenueDeclaration
+            type: array<DDEX\RDR_N\RDR_N_150\RevenueDeclarationType>
+        numberOfRevenueByUsageRecords:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfRevenueByUsageRecords
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfRevenueByUsageRecords
+                setter: setNumberOfRevenueByUsageRecords
+            type: int

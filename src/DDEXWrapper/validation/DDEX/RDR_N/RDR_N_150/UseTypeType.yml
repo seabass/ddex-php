@@ -1,0 +1,47 @@
+DDEX\RDR_N\RDR_N_150\UseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - All
+                        - Broadcast
+                        - BroadcastRadio
+                        - BroadcastTV
+                        - CableRetransmission
+                        - CableRetransmissionRadio
+                        - CableRetransmissionTV
+                        - CatchUp
+                        - CatchUpRadio
+                        - CatchUpTV
+                        - CommercialRent
+                        - ConditionalDownload
+                        - Download
+                        - Dub
+                        - DubForDistribution
+                        - DubForOnDemandStreaming
+                        - DubForPublicPerformance
+                        - DubForRadio
+                        - DubForTV
+                        - Lend
+                        - NonInteractiveStream
+                        - OnDemandStream
+                        - PerformInPublic
+                        - PermanentDownload
+                        - Podcast
+                        - PrivateCopy
+                        - Retransmission
+                        - RingbackTone
+                        - Simulcast
+                        - SimulcastRadio
+                        - SimulcastTV
+                        - Stream
+                        - UseForDataMining
+                        - UseForEducationAndOrSocialPurposes
+                        - UseForGenerativeAI
+                        - UseForIdentification
+                        - UseForNonGenerativeAI
+                        - UserDefined
+                        - Webcast
+                    groups:
+                        - xsd_rules

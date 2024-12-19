@@ -1,0 +1,64 @@
+DDEX\RDR_N\RDR_N_150\RightsStatementType:
+    properties:
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\RDR_N\RDR_N_150\UseTypeType>
+        excludedUseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedUseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedUseType
+                setter: setExcludedUseType
+            xml_list:
+                inline: true
+                entry_name: ExcludedUseType
+            type: array<DDEX\RDR_N\RDR_N_150\UseTypeType>
+        period:
+            expose: true
+            access_type: public_method
+            serialized_name: Period
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPeriod
+                setter: setPeriod
+            type: DDEX\RDR_N\RDR_N_150\PeriodType
+        territory:
+            expose: true
+            access_type: public_method
+            serialized_name: Territory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritory
+                setter: setTerritory
+            xml_list:
+                inline: true
+                entry_name: Territory
+            type: array<string>
+        excludedTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritory
+                setter: setExcludedTerritory
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritory
+            type: array<string>

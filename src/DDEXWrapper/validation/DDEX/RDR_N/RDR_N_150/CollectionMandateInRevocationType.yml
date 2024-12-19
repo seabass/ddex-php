@@ -1,0 +1,21 @@
+DDEX\RDR_N\RDR_N_150\CollectionMandateInRevocationType:
+    properties:
+        collectionMandateAssignee:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        collectionMandateType:
+            -
+                Choice:
+                    choices:
+                        - Performer
+                        - RightsOrganization
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

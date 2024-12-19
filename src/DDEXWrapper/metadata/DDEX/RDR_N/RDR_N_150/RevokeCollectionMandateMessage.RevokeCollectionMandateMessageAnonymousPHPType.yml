@@ -1,0 +1,43 @@
+DDEX\RDR_N\RDR_N_150\RevokeCollectionMandateMessage\RevokeCollectionMandateMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\RDR_N\RDR_N_150\MessageHeaderType
+        collectionMandateAssertion:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateAssertion
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateAssertion
+                setter: setCollectionMandateAssertion
+            xml_list:
+                inline: true
+                entry_name: CollectionMandateAssertion
+            type: array<DDEX\RDR_N\RDR_N_150\RevokedCollectionMandateAssertionType>

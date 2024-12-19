@@ -1,0 +1,21 @@
+DDEX\RDR_N\RDR_N_150\SalesReportType:
+    properties:
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageNotificationPeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        salesTransaction:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

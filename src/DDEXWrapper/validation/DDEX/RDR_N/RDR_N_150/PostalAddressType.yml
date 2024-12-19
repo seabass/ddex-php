@@ -1,0 +1,22 @@
+DDEX\RDR_N\RDR_N_150\PostalAddressType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        postalAddressLine:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        cityName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

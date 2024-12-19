@@ -1,0 +1,23 @@
+DDEX\RDR_N\RDR_N_150\RequestedSoundRecordingType:
+    properties:
+        soundRecordingId:
+            -
+                Valid: null
+        referenceTitle:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        performingContributor:
+            -
+                Valid: null
+        hostSoundCarrier:
+            -
+                Valid: null
+        weight:
+            -
+                Regex:
+                    pattern: '~[0-9]|10~u'
+                    groups:
+                        - xsd_rules

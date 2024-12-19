@@ -1,0 +1,15 @@
+DDEX\RDR_N\RDR_N_150\PLineType:
+    properties:
+        pLineType:
+            -
+                Choice:
+                    choices:
+                        - OriginalPLine
+                        - RemasteringPLine
+                    groups:
+                        - xsd_rules
+        pLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

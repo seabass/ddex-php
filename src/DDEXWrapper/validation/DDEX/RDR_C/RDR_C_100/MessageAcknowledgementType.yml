@@ -1,0 +1,34 @@
+DDEX\RDR_C\RDR_C_100\MessageAcknowledgementType:
+    properties:
+        messageType:
+            -
+                Choice:
+                    choices:
+                        - DeclarationOfSoundRecordingRightsClaimMessage
+                        - RequestSoundRecordingRightsClaimMessage
+                        - RevokeSoundRecordingRightsClaimMessage
+                        - SalesReportMessage
+                        - DeclarationOfRevenueMessage
+                        - RightsClaimStatusUpdateMessage
+                        - AssertionOfCollectionMandateMessage
+                        - AssertionOfCollectionMandateStatusUpdateMessage
+                        - RevokeCollectionMandateMessage
+                        - RevenueDeclarationMessage
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageStatus:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

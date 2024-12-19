@@ -1,0 +1,75 @@
+DDEX\RDR_N\RDR_N_150\ContributionWithInstrumentType:
+    properties:
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            type: DDEX\RDR_N\RDR_N_150\ResourceContributorRoleType
+        isPrimaryRole:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPrimaryRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPrimaryRole
+                setter: setIsPrimaryRole
+            type: bool
+        hasMadeFeaturedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeFeaturedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeFeaturedContribution
+                setter: setHasMadeFeaturedContribution
+            type: bool
+        hasMadeContractedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeContractedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeContractedContribution
+                setter: setHasMadeContractedContribution
+            type: bool
+        event:
+            expose: true
+            access_type: public_method
+            serialized_name: Event
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEvent
+                setter: setEvent
+            type: DDEX\RDR_N\RDR_N_150\EventDateType
+        primaryInstrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryInstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryInstrumentType
+                setter: setPrimaryInstrumentType
+            type: DDEX\RDR_N\RDR_N_150\InstrumentTypeType
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            xml_list:
+                inline: true
+                entry_name: InstrumentType
+            type: array<DDEX\RDR_N\RDR_N_150\InstrumentTypeType>

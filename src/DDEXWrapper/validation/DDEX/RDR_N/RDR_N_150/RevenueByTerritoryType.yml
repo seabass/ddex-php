@@ -1,0 +1,38 @@
+DDEX\RDR_N\RDR_N_150\RevenueByTerritoryType:
+    properties:
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        userName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        userRole:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        numberOfUsages:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        isCredit:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        revenue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

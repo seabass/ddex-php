@@ -1,0 +1,52 @@
+DDEX\RDR_N\RDR_N_150\SalesTransactionType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\RDR_N\RDR_N_150\ReleaseIdType
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: Label
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            type: DDEX\RDR_N\RDR_N_150\PartyDescriptorType
+        isCompilation:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCompilation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCompilation
+                setter: setIsCompilation
+            type: bool
+        numberOfSoundRecordingsClaimedInCarrier:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfSoundRecordingsClaimedInCarrier
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfSoundRecordingsClaimedInCarrier
+                setter: setNumberOfSoundRecordingsClaimedInCarrier
+            type: int
+        numberOfUnitsSold:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUnitsSold
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUnitsSold
+                setter: setNumberOfUnitsSold
+            type: int

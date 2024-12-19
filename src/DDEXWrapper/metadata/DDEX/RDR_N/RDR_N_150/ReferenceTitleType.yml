@@ -1,0 +1,31 @@
+DDEX\RDR_N\RDR_N_150\ReferenceTitleType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        titleText:
+            expose: true
+            access_type: public_method
+            serialized_name: TitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitleText
+                setter: setTitleText
+            type: string
+        subTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: SubTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubTitle
+                setter: setSubTitle
+            type: string

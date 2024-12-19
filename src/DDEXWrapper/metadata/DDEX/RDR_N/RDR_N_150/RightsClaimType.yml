@@ -1,0 +1,121 @@
+DDEX\RDR_N\RDR_N_150\RightsClaimType:
+    properties:
+        claimedSoundRecording:
+            expose: true
+            access_type: public_method
+            serialized_name: ClaimedSoundRecording
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClaimedSoundRecording
+                setter: setClaimedSoundRecording
+            type: DDEX\RDR_N\RDR_N_150\ClaimedSoundRecordingType
+        claimedVideo:
+            expose: true
+            access_type: public_method
+            serialized_name: ClaimedVideo
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClaimedVideo
+                setter: setClaimedVideo
+            type: DDEX\RDR_N\RDR_N_150\ClaimedVideoType
+        messageId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageId
+                setter: setMessageId
+            type: string
+        registrationStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: RegistrationStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRegistrationStatus
+                setter: setRegistrationStatus
+            type: string
+        registrationError:
+            expose: true
+            access_type: public_method
+            serialized_name: RegistrationError
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRegistrationError
+                setter: setRegistrationError
+            xml_list:
+                inline: true
+                entry_name: RegistrationError
+            type: array<DDEX\RDR_N\RDR_N_150\ErrorType>
+        claimStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: ClaimStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClaimStatus
+                setter: setClaimStatus
+            type: string
+        contributorClaim:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorClaim
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorClaim
+                setter: setContributorClaim
+            xml_list:
+                inline: true
+                entry_name: ContributorClaim
+            type: array<DDEX\RDR_N\RDR_N_150\ContributorClaimType>
+        rightsController:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsController
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsController
+                setter: setRightsController
+            type: DDEX\RDR_N\RDR_N_150\RightsControllerType
+        rightsConflict:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsConflict
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsConflict
+                setter: setRightsConflict
+            xml_list:
+                inline: true
+                entry_name: RightsConflict
+            type: array<DDEX\RDR_N\RDR_N_150\RightsConflictType>
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            type: int
+        claimRegistrationDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ClaimRegistrationDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClaimRegistrationDateTime
+                setter: setClaimRegistrationDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

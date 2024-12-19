@@ -1,0 +1,17 @@
+DDEX\RDR_C\RDR_C_110\BatchAcknowledgementType:
+    properties:
+        batchId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        batchStatus:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageAcknowledgement:
+            -
+                Valid: null

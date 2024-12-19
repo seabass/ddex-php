@@ -1,0 +1,28 @@
+DDEX\RDR_N\RDR_N_150\SalesTransactionType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        label:
+            -
+                Valid: null
+        numberOfSoundRecordingsClaimedInCarrier:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        numberOfUnitsSold:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

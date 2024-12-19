@@ -1,0 +1,21 @@
+DDEX\RDR_C\RDR_C_110\DdexDigitalSignatureType:
+    properties:
+        signedInfo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        signatureValue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        keyInfo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,14 @@
+DDEX\RDR_N\RDR_N_150\OriginalPurposeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - CommercialRelease
+                        - Karaoke
+                        - LibraryMusic
+                        - SpeciallyCommissionedMusic
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

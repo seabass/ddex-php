@@ -1,0 +1,66 @@
+DDEX\RDR_N\RDR_N_150\RequestSoundRecordingRightsClaimMessage\RequestSoundRecordingRightsClaimMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\RDR_N\RDR_N_150\MessageHeaderType
+        messageNotificationPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageNotificationPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageNotificationPeriod
+                setter: setMessageNotificationPeriod
+            type: DDEX\RDR_N\RDR_N_150\MessageNotificationPeriodType
+        requestedSoundRecording:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestedSoundRecording
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestedSoundRecording
+                setter: setRequestedSoundRecording
+            xml_list:
+                inline: true
+                entry_name: RequestedSoundRecording
+            type: array<DDEX\RDR_N\RDR_N_150\RequestedSoundRecordingType>
+        requestedVideo:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestedVideo
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestedVideo
+                setter: setRequestedVideo
+            xml_list:
+                inline: true
+                entry_name: RequestedVideo
+            type: array<DDEX\RDR_N\RDR_N_150\RequestedVideoType>

@@ -1,0 +1,52 @@
+DDEX\RDR_N\RDR_N_150\RevenueType:
+    properties:
+        grossRevenue:
+            expose: true
+            access_type: public_method
+            serialized_name: GrossRevenue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGrossRevenue
+                setter: setGrossRevenue
+            type: float
+        adminFee:
+            expose: true
+            access_type: public_method
+            serialized_name: AdminFee
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdminFee
+                setter: setAdminFee
+            type: float
+        netRevenueBeforeWithholdingTax:
+            expose: true
+            access_type: public_method
+            serialized_name: NetRevenueBeforeWithholdingTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNetRevenueBeforeWithholdingTax
+                setter: setNetRevenueBeforeWithholdingTax
+            type: float
+        withholdingTax:
+            expose: true
+            access_type: public_method
+            serialized_name: WithholdingTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWithholdingTax
+                setter: setWithholdingTax
+            type: float
+        netRevenue:
+            expose: true
+            access_type: public_method
+            serialized_name: NetRevenue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNetRevenue
+                setter: setNetRevenue
+            type: float

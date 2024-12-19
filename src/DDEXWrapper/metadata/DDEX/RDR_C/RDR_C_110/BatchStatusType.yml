@@ -1,0 +1,32 @@
+DDEX\RDR_C\RDR_C_110\BatchStatusType:
+    properties:
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: DDEX\RDR_C\RDR_C_110\StatusType
+        information:
+            expose: true
+            access_type: public_method
+            serialized_name: Information
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInformation
+                setter: setInformation
+            type: string
+        errorDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErrorDescription
+                setter: setErrorDescription
+            type: string

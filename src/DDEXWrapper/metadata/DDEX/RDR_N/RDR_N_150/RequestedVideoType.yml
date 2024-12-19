@@ -1,0 +1,87 @@
+DDEX\RDR_N\RDR_N_150\RequestedVideoType:
+    properties:
+        videoId:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoId
+                setter: setVideoId
+            xml_list:
+                inline: true
+                entry_name: VideoId
+            type: array<DDEX\RDR_N\RDR_N_150\VideoIdType>
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\RDR_N\RDR_N_150\ReferenceTitleType
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\RDR_N\RDR_N_150\ArtistType>
+        performingContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: PerformingContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPerformingContributor
+                setter: setPerformingContributor
+            xml_list:
+                inline: true
+                entry_name: PerformingContributor
+            type: array<DDEX\RDR_N\RDR_N_150\PerformingContributorType>
+        hostSoundCarrier:
+            expose: true
+            access_type: public_method
+            serialized_name: HostSoundCarrier
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHostSoundCarrier
+                setter: setHostSoundCarrier
+            xml_list:
+                inline: true
+                entry_name: HostSoundCarrier
+            type: array<DDEX\RDR_N\RDR_N_150\SimpleHostSoundCarrierType>
+        weight:
+            expose: true
+            access_type: public_method
+            serialized_name: Weight
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWeight
+                setter: setWeight
+            type: int

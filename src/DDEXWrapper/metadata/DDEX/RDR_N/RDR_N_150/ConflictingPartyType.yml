@@ -1,0 +1,58 @@
+DDEX\RDR_N\RDR_N_150\ConflictingPartyType:
+    properties:
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\RDR_N\RDR_N_150\ExtendedPartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\RDR_N\RDR_N_150\PartyNameType>
+        postalAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: PostalAddress
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPostalAddress
+                setter: setPostalAddress
+            type: DDEX\RDR_N\RDR_N_150\PostalAddressType
+        phoneNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: PhoneNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPhoneNumber
+                setter: setPhoneNumber
+            type: DDEX\RDR_N\RDR_N_150\PhoneNumberType
+        emailAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: EmailAddress
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEmailAddress
+                setter: setEmailAddress
+            type: DDEX\RDR_N\RDR_N_150\EmailAddressType

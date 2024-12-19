@@ -1,0 +1,52 @@
+DDEX\RDR_N\RDR_N_150\ContributionType:
+    properties:
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            type: DDEX\RDR_N\RDR_N_150\ContributorRoleType
+        isPrimaryRole:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPrimaryRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPrimaryRole
+                setter: setIsPrimaryRole
+            type: bool
+        hasMadeFeaturedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeFeaturedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeFeaturedContribution
+                setter: setHasMadeFeaturedContribution
+            type: bool
+        hasMadeContractedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeContractedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeContractedContribution
+                setter: setHasMadeContractedContribution
+            type: bool
+        event:
+            expose: true
+            access_type: public_method
+            serialized_name: Event
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEvent
+                setter: setEvent
+            type: DDEX\RDR_N\RDR_N_150\EventDateType

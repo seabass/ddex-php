@@ -1,0 +1,35 @@
+DDEX\RDR_N\RDR_N_150\ContributorClaimType:
+    properties:
+        contributorClaimStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorClaimStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorClaimStatus
+                setter: setContributorClaimStatus
+            type: string
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\RDR_N\RDR_N_150\PartyIdType>
+        rejectionReason:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionReason
+                setter: setRejectionReason
+            type: string

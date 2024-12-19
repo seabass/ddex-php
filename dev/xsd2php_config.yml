@@ -56,6 +56,11 @@ xsd2php:
     'http://ddex.net/xml/mwl/212': 'DDEX\MWL\MWL_212'
 
 
+    'http://ddex.net/xml/rdr-c/10': 'DDEX\RDR_C\RDR_C_100'
+    'http://ddex.net/xml/rdr-c/11': 'DDEX\RDR_C\RDR_C_110'
+    'http://ddex.net/xml/rdr-n/15': 'DDEX\RDR_N\RDR_N_150'
+
+
 
     # avs
     'http://ddex.net/xml/avs/avs': 'DDEX\AVS'
@@ -148,6 +153,10 @@ xsd2php:
     'http://ddex.net/xml/mwl/211': 'mwl'
     'http://ddex.net/xml/mwl/212': 'mwl'
 
+    'http://ddex.net/xml/rdr-c/10': 'rdr-c'
+    'http://ddex.net/xml/rdr-c/11': 'rdr-c'
+    'http://ddex.net/xml/rdr-n/15': 'rdn-n'
+
 
 
   destinations_php:
@@ -202,6 +211,10 @@ xsd2php:
     'DDEX\MWL\MWL_200': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_200
     'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_211
     'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_212
+
+    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\schema\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\schema\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\schema\DDEX\RDR_N\RDR_N_150
 
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
@@ -259,6 +272,10 @@ xsd2php:
     'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\metadata\DDEX\MWL\MWL_211
     'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\metadata\DDEX\MWL\MWL_212
 
+    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\metadata\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\metadata\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\metadata\DDEX\RDR_N\RDR_N_150
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_validation:
@@ -313,6 +330,10 @@ xsd2php:
     'DDEX\MWL\MWL_200': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_200
     'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_211
     'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_212
+
+    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\validation\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\validation\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\validation\DDEX\RDR_N\RDR_N_150
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     

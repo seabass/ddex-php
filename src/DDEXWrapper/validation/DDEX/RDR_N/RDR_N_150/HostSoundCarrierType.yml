@@ -1,0 +1,84 @@
+DDEX\RDR_N\RDR_N_150\HostSoundCarrierType:
+    properties:
+        releaseId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        numberOfSoundRecordingsClaimedInCarrier:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        numberOfTracksInCarrier:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        numberOfDisks:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        compilationType:
+            -
+                Choice:
+                    choices:
+                        - InternalCompilation
+                        - NonInternalCompilation
+                        - NotCompiled
+                    groups:
+                        - xsd_rules
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        releasingCompany:
+            -
+                Valid: null
+        distributingCompany:
+            -
+                Valid: null
+        recordingMode:
+            -
+                Choice:
+                    choices:
+                        - BinauralAudio
+                        - ImmersiveAudio
+                        - LCR
+                        - Mono
+                        - MultichannelAudio
+                        - MultiTrack
+                        - Quad
+                        - Stems
+                        - Stereo
+                        - SurroundSound
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        digitizationMode:
+            -
+                Choice:
+                    choices:
+                        - AAD
+                        - ADD
+                        - DDD
+                        - Unknown
+                    groups:
+                        - xsd_rules

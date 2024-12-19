@@ -1,0 +1,54 @@
+DDEX\RDR_N\RDR_N_150\SampledSoundRecordingType:
+    properties:
+        soundRecordingId:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingId
+                setter: setSoundRecordingId
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingId
+            type: array<DDEX\RDR_N\RDR_N_150\SoundRecordingIdType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RDR_N\RDR_N_150\TitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\RDR_N\RDR_N_150\ArtistType>

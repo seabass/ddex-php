@@ -1,0 +1,25 @@
+DDEX\RDR_N\RDR_N_150\CollectionMandateType:
+    properties:
+        collectionMandateAssigner:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateAssigner
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateAssigner
+                setter: setCollectionMandateAssigner
+            type: DDEX\RDR_N\RDR_N_150\CollectionMandateAssignerType
+        assignedCollectionMandate:
+            expose: true
+            access_type: public_method
+            serialized_name: AssignedCollectionMandate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAssignedCollectionMandate
+                setter: setAssignedCollectionMandate
+            xml_list:
+                inline: true
+                entry_name: AssignedCollectionMandate
+            type: array<DDEX\RDR_N\RDR_N_150\ExtendedCollectionMandateType>

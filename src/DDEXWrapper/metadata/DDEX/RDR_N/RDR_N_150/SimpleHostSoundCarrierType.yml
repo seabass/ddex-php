@@ -1,0 +1,94 @@
+DDEX\RDR_N\RDR_N_150\SimpleHostSoundCarrierType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\RDR_N\RDR_N_150\ReleaseIdType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RDR_N\RDR_N_150\TitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\RDR_N\RDR_N_150\ArtistType>
+        trackNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackNumber
+                setter: setTrackNumber
+            type: string
+        volumeNumberInSet:
+            expose: true
+            access_type: public_method
+            serialized_name: VolumeNumberInSet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVolumeNumberInSet
+                setter: setVolumeNumberInSet
+            type: string
+        sideNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SideNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSideNumber
+                setter: setSideNumber
+            type: string
+        labelName:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabelName
+                setter: setLabelName
+            type: DDEX\RDR_N\RDR_N_150\LabelNameType

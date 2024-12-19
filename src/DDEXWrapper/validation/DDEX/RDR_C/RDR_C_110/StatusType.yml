@@ -1,0 +1,10 @@
+DDEX\RDR_C\RDR_C_110\StatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BatchOK
+                        - UserDefined
+                    groups:
+                        - xsd_rules

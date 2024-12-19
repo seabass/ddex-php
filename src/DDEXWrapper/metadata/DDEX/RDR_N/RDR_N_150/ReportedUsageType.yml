@@ -1,0 +1,45 @@
+DDEX\RDR_N\RDR_N_150\ReportedUsageType:
+    properties:
+        recipientRevenueType:
+            expose: true
+            access_type: public_method
+            serialized_name: RecipientRevenueType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecipientRevenueType
+                setter: setRecipientRevenueType
+            type: string
+        revenueSourceType:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueSourceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevenueSourceType
+                setter: setRevenueSourceType
+            type: string
+        usagePeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: UsagePeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsagePeriod
+                setter: setUsagePeriod
+            type: DDEX\RDR_N\RDR_N_150\PeriodType
+        revenueByUsage:
+            expose: true
+            access_type: public_method
+            serialized_name: RevenueByUsage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevenueByUsage
+                setter: setRevenueByUsage
+            xml_list:
+                inline: true
+                entry_name: RevenueByUsage
+            type: array<DDEX\RDR_N\RDR_N_150\RevenueByUsageType>

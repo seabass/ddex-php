@@ -1,0 +1,94 @@
+DDEX\RDR_N\RDR_N_150\AssignedCollectionMandateType:
+    properties:
+        mandateId:
+            expose: true
+            access_type: public_method
+            serialized_name: MandateId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMandateId
+                setter: setMandateId
+            xml_list:
+                inline: true
+                entry_name: MandateId
+            type: array<DDEX\RDR_N\RDR_N_150\ProprietaryIdType>
+        collectionMandateAssignee:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateAssignee
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateAssignee
+                setter: setCollectionMandateAssignee
+            type: DDEX\RDR_N\RDR_N_150\CollectionMandateAssigneeType
+        collectionMandateType:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateType
+                setter: setCollectionMandateType
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\RDR_N\RDR_N_150\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\RDR_N\RDR_N_150\CurrentTerritoryCodeType>
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\RDR_N\RDR_N_150\UseTypeType>
+        collectionMandateStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateStartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateStartDate
+                setter: setCollectionMandateStartDate
+            type: string
+        collectionMandateEndDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionMandateEndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionMandateEndDate
+                setter: setCollectionMandateEndDate
+            type: string

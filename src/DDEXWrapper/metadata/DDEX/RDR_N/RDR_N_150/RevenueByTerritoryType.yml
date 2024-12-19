@@ -1,0 +1,78 @@
+DDEX\RDR_N\RDR_N_150\RevenueByTerritoryType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            type: DDEX\RDR_N\RDR_N_150\AllTerritoryCodeType
+        userName:
+            expose: true
+            access_type: public_method
+            serialized_name: UserName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserName
+                setter: setUserName
+            type: string
+        userRole:
+            expose: true
+            access_type: public_method
+            serialized_name: UserRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserRole
+                setter: setUserRole
+            type: string
+        durationUsed:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationUsed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationUsed
+                setter: setDurationUsed
+            xml_list:
+                inline: true
+                entry_name: DurationUsed
+            type: array<DateInterval>
+        numberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUsages
+                setter: setNumberOfUsages
+            xml_list:
+                inline: true
+                entry_name: NumberOfUsages
+            type: array<int>
+        isCredit:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCredit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCredit
+                setter: setIsCredit
+            type: bool
+        revenue:
+            expose: true
+            access_type: public_method
+            serialized_name: Revenue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevenue
+                setter: setRevenue
+            type: DDEX\RDR_N\RDR_N_150\RevenueType

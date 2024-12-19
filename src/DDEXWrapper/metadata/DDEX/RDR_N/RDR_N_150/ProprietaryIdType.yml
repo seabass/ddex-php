@@ -1,0 +1,30 @@
+DDEX\RDR_N\RDR_N_150\ProprietaryIdType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: string
+            xml_element:
+                cdata: false
+        namespace:
+            expose: true
+            access_type: public_method
+            serialized_name: Namespace
+            accessor:
+                getter: getNamespace
+                setter: setNamespace
+            xml_attribute: true
+            type: string
+        isPreferred:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreferred
+            accessor:
+                getter: getIsPreferred
+                setter: setIsPreferred
+            xml_attribute: true
+            type: bool

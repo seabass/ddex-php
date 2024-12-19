@@ -1,0 +1,310 @@
+DDEX\RDR_N\RDR_N_150\HostSoundCarrierType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\RDR_N\RDR_N_150\ReleaseIdType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RDR_N\RDR_N_150\TitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\RDR_N\RDR_N_150\ArtistType>
+        administratingRecordCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: AdministratingRecordCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdministratingRecordCompany
+                setter: setAdministratingRecordCompany
+            xml_list:
+                inline: true
+                entry_name: AdministratingRecordCompany
+            type: array<DDEX\RDR_N\RDR_N_150\AdministratingRecordCompanyType>
+        trackNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackNumber
+                setter: setTrackNumber
+            type: string
+        volumeNumberInSet:
+            expose: true
+            access_type: public_method
+            serialized_name: VolumeNumberInSet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVolumeNumberInSet
+                setter: setVolumeNumberInSet
+            type: string
+        sideNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SideNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSideNumber
+                setter: setSideNumber
+            type: string
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            type: DDEX\RDR_N\RDR_N_150\CarrierTypeType
+        labelName:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabelName
+                setter: setLabelName
+            xml_list:
+                inline: true
+                entry_name: LabelName
+            type: array<DDEX\RDR_N\RDR_N_150\LabelNameType>
+        numberOfSoundRecordingsClaimedInCarrier:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfSoundRecordingsClaimedInCarrier
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfSoundRecordingsClaimedInCarrier
+                setter: setNumberOfSoundRecordingsClaimedInCarrier
+            type: int
+        numberOfTracksInCarrier:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfTracksInCarrier
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfTracksInCarrier
+                setter: setNumberOfTracksInCarrier
+            type: int
+        numberOfDisks:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfDisks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfDisks
+                setter: setNumberOfDisks
+            type: int
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        compilationType:
+            expose: true
+            access_type: public_method
+            serialized_name: CompilationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCompilationType
+                setter: setCompilationType
+            type: string
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            type: DDEX\RDR_N\RDR_N_150\ReleaseTypeType
+        isPhysicalDistribution:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPhysicalDistribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPhysicalDistribution
+                setter: setIsPhysicalDistribution
+            type: bool
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            type: DDEX\RDR_N\RDR_N_150\PLineType
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            type: DDEX\RDR_N\RDR_N_150\CLineType
+        releaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDate
+                setter: setReleaseDate
+            type: DDEX\RDR_N\RDR_N_150\EventDateType
+        releasingCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleasingCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleasingCompany
+                setter: setReleasingCompany
+            type: DDEX\RDR_N\RDR_N_150\PartyDescriptorType
+        distributingCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributingCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributingCompany
+                setter: setDistributingCompany
+            type: DDEX\RDR_N\RDR_N_150\PartyDescriptorType
+        cdProtectionType:
+            expose: true
+            access_type: public_method
+            serialized_name: CdProtectionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCdProtectionType
+                setter: setCdProtectionType
+            type: DDEX\RDR_N\RDR_N_150\CdProtectionTypeType
+        recordingMode:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordingMode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecordingMode
+                setter: setRecordingMode
+            type: string
+        digitizationMode:
+            expose: true
+            access_type: public_method
+            serialized_name: DigitizationMode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDigitizationMode
+                setter: setDigitizationMode
+            type: string
+        isHiddenResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsHiddenResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsHiddenResource
+                setter: setIsHiddenResource
+            type: bool
+        isBonusResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBonusResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsBonusResource
+                setter: setIsBonusResource
+            type: bool
+        isInternalCompilation:
+            expose: true
+            access_type: public_method
+            serialized_name: IsInternalCompilation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsInternalCompilation
+                setter: setIsInternalCompilation
+            type: bool
+        messageSenderIsCompilationCreator:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSenderIsCompilationCreator
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageSenderIsCompilationCreator
+                setter: setMessageSenderIsCompilationCreator
+            type: bool

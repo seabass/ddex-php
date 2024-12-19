@@ -1,0 +1,10 @@
+DDEX\RDR_C\RDR_C_110\MessagingPartyType:
+    properties:
+        partyId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null

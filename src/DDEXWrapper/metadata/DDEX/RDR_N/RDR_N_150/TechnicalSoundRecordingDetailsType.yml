@@ -1,0 +1,31 @@
+DDEX\RDR_N\RDR_N_150\TechnicalSoundRecordingDetailsType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        containerFormat:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainerFormat
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainerFormat
+                setter: setContainerFormat
+            type: DDEX\RDR_N\RDR_N_150\ContainerFormatType
+        audioCodecType:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioCodecType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioCodecType
+                setter: setAudioCodecType
+            type: DDEX\RDR_N\RDR_N_150\AudioCodecTypeType

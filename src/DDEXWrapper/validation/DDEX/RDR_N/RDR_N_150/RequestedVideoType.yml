@@ -1,0 +1,31 @@
+DDEX\RDR_N\RDR_N_150\RequestedVideoType:
+    properties:
+        videoId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        performingContributor:
+            -
+                Valid: null
+        hostSoundCarrier:
+            -
+                Valid: null
+        weight:
+            -
+                Regex:
+                    pattern: '~[0-9]|10~u'
+                    groups:
+                        - xsd_rules

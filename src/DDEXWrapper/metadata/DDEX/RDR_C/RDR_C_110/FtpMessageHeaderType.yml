@@ -1,0 +1,52 @@
+DDEX\RDR_C\RDR_C_110\FtpMessageHeaderType:
+    properties:
+        messageSender:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSender
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageSender
+                setter: setMessageSender
+            type: DDEX\RDR_C\RDR_C_110\MessagingPartyType
+        messageRecipient:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageRecipient
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageRecipient
+                setter: setMessageRecipient
+            type: DDEX\RDR_C\RDR_C_110\MessagingPartyType
+        messageCreatedDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageCreatedDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageCreatedDateTime
+                setter: setMessageCreatedDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\RDR_C\RDR_C_110\HashSumType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: DDEX\RDR_C\RDR_C_110\DdexDigitalSignatureType

@@ -1,0 +1,32 @@
+DDEX\RDR_C\RDR_C_110\HashSumType:
+    properties:
+        hashSumValue:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSumValue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSumValue
+                setter: setHashSumValue
+            type: string
+        hashSumAlgorithmType:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSumAlgorithmType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSumAlgorithmType
+                setter: setHashSumAlgorithmType
+            type: DDEX\RDR_C\RDR_C_110\HashSumAlgorithmTypeType
+        hashSumDataType:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSumDataType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSumDataType
+                setter: setHashSumDataType
+            type: string

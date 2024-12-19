@@ -1,0 +1,61 @@
+DDEX\RDR_N\RDR_N_150\ExtendedCollectionMandateType:
+    properties:
+        collectionMandateAssignee:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        collectionMandateType:
+            -
+                Choice:
+                    choices:
+                        - Performer
+                        - RightsOrganization
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        collectionMandateStartDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        collectionMandateEndDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+        collectionMandateStatus:
+            -
+                Choice:
+                    choices:
+                        - Conflict
+                        - DataInconsistent
+                        - NoConflict
+                        - PendingReview
+                        - Rejected
+                        - Revoked
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        collectionMandateConflict:
+            -
+                Valid: null

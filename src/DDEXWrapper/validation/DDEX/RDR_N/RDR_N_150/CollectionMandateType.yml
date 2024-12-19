@@ -1,0 +1,16 @@
+DDEX\RDR_N\RDR_N_150\CollectionMandateType:
+    properties:
+        collectionMandateAssigner:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        assignedCollectionMandate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

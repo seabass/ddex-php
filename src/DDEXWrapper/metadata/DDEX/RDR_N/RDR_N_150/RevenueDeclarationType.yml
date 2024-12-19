@@ -1,0 +1,58 @@
+DDEX\RDR_N\RDR_N_150\RevenueDeclarationType:
+    properties:
+        soundRecordingId:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingId
+                setter: setSoundRecordingId
+            type: DDEX\RDR_N\RDR_N_150\SoundRecordingIdType
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\RDR_N\RDR_N_150\ReferenceTitleType
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\RDR_N\RDR_N_150\DisplayArtistNameWithDefaultType>
+        currencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyOfAccounting
+                setter: setCurrencyOfAccounting
+            type: string
+        reportedUsage:
+            expose: true
+            access_type: public_method
+            serialized_name: ReportedUsage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReportedUsage
+                setter: setReportedUsage
+            xml_list:
+                inline: true
+                entry_name: ReportedUsage
+            type: array<DDEX\RDR_N\RDR_N_150\ReportedUsageType>

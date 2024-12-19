@@ -1,0 +1,61 @@
+DDEX\RDR_N\RDR_N_150\CollectionMandateAssignerType:
+    properties:
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\RDR_N\RDR_N_150\ExtendedPartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\RDR_N\RDR_N_150\PartyNameType>
+        gender:
+            expose: true
+            access_type: public_method
+            serialized_name: Gender
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGender
+                setter: setGender
+            type: string
+        dateAndPlaceOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: DateAndPlaceOfBirth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDateAndPlaceOfBirth
+                setter: setDateAndPlaceOfBirth
+            type: DDEX\RDR_N\RDR_N_150\EventDateNoWorldwideType
+        territoryOfResidency:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfResidency
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfResidency
+                setter: setTerritoryOfResidency
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfResidency
+            type: array<DDEX\RDR_N\RDR_N_150\AllTerritoryCodeNoWorldwideType>

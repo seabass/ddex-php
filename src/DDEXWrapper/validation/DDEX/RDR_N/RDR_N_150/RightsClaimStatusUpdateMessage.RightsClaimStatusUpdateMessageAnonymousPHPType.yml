@@ -1,0 +1,26 @@
+DDEX\RDR_N\RDR_N_150\RightsClaimStatusUpdateMessage\RightsClaimStatusUpdateMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsClaim:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
