@@ -1,0 +1,9 @@
+DDEX\MWN\MWN_US_LIC_101\ResourceMusicalWorkReferenceListType:
+    properties:
+        resourceMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

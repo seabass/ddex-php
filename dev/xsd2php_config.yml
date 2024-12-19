@@ -45,10 +45,17 @@ xsd2php:
     'http://ddex.net/xml/mead/101': 'DDEX\MEAD\MEAD_101'
     'http://ddex.net/xml/mead/11': 'DDEX\MEAD\MEAD_110'
 
+    'http://ddex.net/xml/mc-us-lic/10': 'DDEX\MWN\MWN_US_LIC_100'
+    'http://ddex.net/xml/mc-us-lic/101': 'DDEX\MWN\MWN_US_LIC_101'
+
+    'http://ddex.net/xml/mc-us-lod/10': 'DDEX\MWN\MWN_US_LOD_100'
+
 
 
     # avs
     'http://ddex.net/xml/avs/avs': 'DDEX\AVS'
+    'http://ddex.net/xml/avs/mwn_mwl': 'DDEX\AVS'
+    'http://ddex.net/xml/avs/avs-lod': 'DDEX\AVS'
     'http://ddex.net/xml/allowed-value-sets': 'DDEX\AVS'
 
     # ddexC, legacy
@@ -81,6 +88,56 @@ xsd2php:
     'http://www.w3.org/2000/09/xmldsig#': 'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA'
 
 
+
+
+  # XML namespaces for generated output
+  # https://github.com/zoliszabo/xsd2php/pull/1/commits/8a99036ae12f238fab79443fadf74c1a12a6fa30
+  xml_namespaces:
+    'http://ddex.net/xml/ern/34': 'ern'
+    'http://ddex.net/xml/ern/341': 'ern'
+    'http://ddex.net/xml/ern/35': 'ern'
+    'http://ddex.net/xml/ern/351': 'ern'
+    'http://ddex.net/xml/ern/36': 'ern'
+    'http://ddex.net/xml/ern/37': 'ern'
+    'http://ddex.net/xml/ern/371': 'ern'
+    'http://ddex.net/xml/ern/37D1': 'ern'
+    'http://ddex.net/xml/ern/37D2': 'ern'
+    'http://ddex.net/xml/ern/38': 'ern'
+    'http://ddex.net/xml/ern/381': 'ern'
+    'http://ddex.net/xml/ern/382': 'ern'
+    'http://ddex.net/xml/ern/383': 'ern'
+    'http://ddex.net/xml/ern/40': 'ern'
+    'http://ddex.net/xml/ern/41': 'ern'
+    'http://ddex.net/xml/ern/411': 'ern'
+    'http://ddex.net/xml/ern/42': 'ern'
+    'http://ddex.net/xml/ern/43': 'ern'
+    'http://ddex.net/xml/ern/431': 'ern'
+
+    'http://ddex.net/xml/dsr/40': 'dsr'
+    'http://ddex.net/xml/dsr/41': 'dsr'
+    'http://ddex.net/xml/dsr/42': 'dsr'
+    'http://ddex.net/xml/dsr/43': 'dsr'
+    'http://ddex.net/xml/dsr/43D1': 'dsr'
+
+    'http://ddex.net/xml/m-rin/10': 'rin'
+    'http://ddex.net/xml/f-rin/10': 'rin'
+    'http://ddex.net/xml/m-rin/11': 'rin'
+    'http://ddex.net/xml/f-rin/11': 'rin'
+    'http://ddex.net/xml/rin/20': 'rin'
+    'http://ddex.net/xml/rin/21': 'rin'
+
+    'http://ddex.net/xml/ct/10': 'ct'
+
+    'http://ddex.net/xml/pie/10': 'pie'
+
+    'http://ddex.net/xml/mead/100': 'mead'
+    'http://ddex.net/xml/mead/101': 'mead'
+    'http://ddex.net/xml/mead/110': 'mead'
+
+    'http://ddex.net/xml/mc-us-lic/10': 'mwn'
+    'http://ddex.net/xml/mc-us-lic/101': 'mwn'
+
+    'http://ddex.net/xml/mc-us-lod/10': 'mwn'
 
 
 
@@ -127,6 +184,11 @@ xsd2php:
     'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_100
     'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_101
     'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_110
+
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LIC_101
+    
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LOD_100
 
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
@@ -175,6 +237,11 @@ xsd2php:
     'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_101
     'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_110
 
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LIC_101
+
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LOD_100
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_validation:
@@ -221,53 +288,13 @@ xsd2php:
     'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_101
     'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_110
 
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LIC_101
+    
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LOD_100
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     
-
-  # XML namespaces for generated output
-  # https://github.com/zoliszabo/xsd2php/pull/1/commits/8a99036ae12f238fab79443fadf74c1a12a6fa30
-  xml_namespaces:
-    'http://ddex.net/xml/ern/34': 'ern'
-    'http://ddex.net/xml/ern/341': 'ern'
-    'http://ddex.net/xml/ern/35': 'ern'
-    'http://ddex.net/xml/ern/351': 'ern'
-    'http://ddex.net/xml/ern/36': 'ern'
-    'http://ddex.net/xml/ern/37': 'ern'
-    'http://ddex.net/xml/ern/371': 'ern'
-    'http://ddex.net/xml/ern/37D1': 'ern'
-    'http://ddex.net/xml/ern/37D2': 'ern'
-    'http://ddex.net/xml/ern/38': 'ern'
-    'http://ddex.net/xml/ern/381': 'ern'
-    'http://ddex.net/xml/ern/382': 'ern'
-    'http://ddex.net/xml/ern/383': 'ern'
-    'http://ddex.net/xml/ern/40': 'ern'
-    'http://ddex.net/xml/ern/41': 'ern'
-    'http://ddex.net/xml/ern/411': 'ern'
-    'http://ddex.net/xml/ern/42': 'ern'
-    'http://ddex.net/xml/ern/43': 'ern'
-    'http://ddex.net/xml/ern/431': 'ern'
-
-    'http://ddex.net/xml/dsr/40': 'dsr'
-    'http://ddex.net/xml/dsr/41': 'dsr'
-    'http://ddex.net/xml/dsr/42': 'dsr'
-    'http://ddex.net/xml/dsr/43': 'dsr'
-    'http://ddex.net/xml/dsr/43D1': 'dsr'
-
-    'http://ddex.net/xml/m-rin/10': 'rin'
-    'http://ddex.net/xml/f-rin/10': 'rin'
-    'http://ddex.net/xml/m-rin/11': 'rin'
-    'http://ddex.net/xml/f-rin/11': 'rin'
-    'http://ddex.net/xml/rin/20': 'rin'
-    'http://ddex.net/xml/rin/21': 'rin'
-
-    'http://ddex.net/xml/ct/10': 'ct'
-
-    'http://ddex.net/xml/pie/10': 'pie'
-
-    'http://ddex.net/xml/mead/100': 'mead'
-    'http://ddex.net/xml/mead/101': 'mead'
-    'http://ddex.net/xml/mead/110': 'mead'
-
   aliases:
     '':
       DateTime: 'DateTimeTypeHandler'

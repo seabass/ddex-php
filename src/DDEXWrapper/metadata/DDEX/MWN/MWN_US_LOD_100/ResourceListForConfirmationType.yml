@@ -1,0 +1,28 @@
+DDEX\MWN\MWN_US_LOD_100\ResourceListForConfirmationType:
+    properties:
+        soundRecording:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecording
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecording
+                setter: setSoundRecording
+            xml_list:
+                inline: true
+                entry_name: SoundRecording
+            type: array<DDEX\MWN\MWN_US_LOD_100\SoundRecordingForConfirmationType>
+        video:
+            expose: true
+            access_type: public_method
+            serialized_name: Video
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideo
+                setter: setVideo
+            xml_list:
+                inline: true
+                entry_name: Video
+            type: array<DDEX\MWN\MWN_US_LOD_100\VideoForConfirmationType>

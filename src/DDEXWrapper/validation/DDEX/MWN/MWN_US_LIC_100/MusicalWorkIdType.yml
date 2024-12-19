@@ -1,0 +1,7 @@
+DDEX\MWN\MWN_US_LIC_100\MusicalWorkIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

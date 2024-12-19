@@ -1,0 +1,50 @@
+DDEX\MWN\MWN_US_LOD_100\ConditionWithSupplementalDocumentType:
+    properties:
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        effectiveTransferDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        retention:
+            -
+                Valid: null
+        collectionPeriod:
+            -
+                Valid: null
+        rightsType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - MechanicalRight
+                                    - PerformingRight
+                                    - PrintRight
+                                    - SynchronizationRight
+                    groups:
+                        - xsd_rules
+        resourceType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - SheetMusic
+                                    - SoundRecording
+                                    - Video
+                    groups:
+                        - xsd_rules
+        supplementalDocument:
+            -
+                Valid: null

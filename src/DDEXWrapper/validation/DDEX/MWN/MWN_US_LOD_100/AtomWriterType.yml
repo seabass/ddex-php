@@ -1,0 +1,8 @@
+DDEX\MWN\MWN_US_LOD_100\AtomWriterType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

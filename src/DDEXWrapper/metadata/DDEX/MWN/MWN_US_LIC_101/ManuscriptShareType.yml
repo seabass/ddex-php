@@ -1,0 +1,32 @@
+DDEX\MWN\MWN_US_LIC_101\ManuscriptShareType:
+    properties:
+        baseRightShare:
+            expose: true
+            access_type: public_method
+            serialized_name: BaseRightShare
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBaseRightShare
+                setter: setBaseRightShare
+            type: string
+        rightShareUnknown:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareUnknown
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareUnknown
+                setter: setRightShareUnknown
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: DDEX\MWN\MWN_US_LIC_101\PercentageType

@@ -1,0 +1,135 @@
+DDEX\MWN\MWN_US_LIC_101\SourceType:
+    properties:
+        author:
+            expose: true
+            access_type: public_method
+            serialized_name: author
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAuthor
+                setter: setAuthor
+            xml_list:
+                inline: true
+                entry_name: author
+            type: array<DDEX\MWN\MWN_US_LIC_101\PersonType>
+        category:
+            expose: true
+            access_type: public_method
+            serialized_name: category
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCategory
+                setter: setCategory
+            xml_list:
+                inline: true
+                entry_name: category
+            type: array<DDEX\MWN\MWN_US_LIC_101\CategoryType>
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: contributor
+            type: array<DDEX\MWN\MWN_US_LIC_101\PersonType>
+        generator:
+            expose: true
+            access_type: public_method
+            serialized_name: generator
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenerator
+                setter: setGenerator
+            type: DDEX\MWN\MWN_US_LIC_101\GeneratorType
+        icon:
+            expose: true
+            access_type: public_method
+            serialized_name: icon
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIcon
+                setter: setIcon
+            type: string
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: id
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getId
+                setter: setId
+            type: string
+        link:
+            expose: true
+            access_type: public_method
+            serialized_name: link
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLink
+                setter: setLink
+            xml_list:
+                inline: true
+                entry_name: link
+            type: array<DDEX\MWN\MWN_US_LIC_101\LinkType>
+        logo:
+            expose: true
+            access_type: public_method
+            serialized_name: logo
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLogo
+                setter: setLogo
+            type: string
+        rights:
+            expose: true
+            access_type: public_method
+            serialized_name: rights
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRights
+                setter: setRights
+            type: DDEX\MWN\MWN_US_LIC_101\TextType
+        subtitle:
+            expose: true
+            access_type: public_method
+            serialized_name: subtitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubtitle
+                setter: setSubtitle
+            type: DDEX\MWN\MWN_US_LIC_101\TextType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: DDEX\MWN\MWN_US_LIC_101\TextType
+        updated:
+            expose: true
+            access_type: public_method
+            serialized_name: updated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUpdated
+                setter: setUpdated
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        any: false

@@ -1,0 +1,11 @@
+DDEX\MWN\MWN_US_LOD_100\CommercialModelTypeForWorksNotificationLicensingType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementSupportedModel
+                        - PayAsYouGoModel
+                        - SubscriptionModel
+                    groups:
+                        - xsd_rules

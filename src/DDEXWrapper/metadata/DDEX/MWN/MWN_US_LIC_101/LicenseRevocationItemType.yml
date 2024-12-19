@@ -1,0 +1,36 @@
+DDEX\MWN\MWN_US_LIC_101\LicenseRevocationItemType:
+    properties:
+        licenseId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseId
+                setter: setLicenseId
+            type: array<DDEX\MWN\MWN_US_LIC_101\ProprietaryIdType>
+            xml_list:
+                inline: false
+                entry_name: ProprietaryId
+                skip_when_empty: false
+        revocationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: RevocationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevocationDate
+                setter: setRevocationDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        reason:
+            expose: true
+            access_type: public_method
+            serialized_name: Reason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReason
+                setter: setReason
+            type: DDEX\MWN\MWN_US_LIC_101\LicenseRefusalReasonType

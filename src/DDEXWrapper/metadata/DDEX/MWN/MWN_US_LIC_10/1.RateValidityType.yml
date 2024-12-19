@@ -1,0 +1,62 @@
+DDEX\MWN\MWN_US_LIC_101\RateValidityType:
+    properties:
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: string
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: string
+        maximumNumberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: MaximumNumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMaximumNumberOfUsages
+                setter: setMaximumNumberOfUsages
+            type: int
+        minimumNumberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumNumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumNumberOfUsages
+                setter: setMinimumNumberOfUsages
+            type: int
+        maxNumberOfRoyaltyPaidResources:
+            expose: true
+            access_type: public_method
+            serialized_name: MaxNumberOfRoyaltyPaidResources
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMaxNumberOfRoyaltyPaidResources
+                setter: setMaxNumberOfRoyaltyPaidResources
+            type: int
+        minNumberOfRoyaltyPaidResources:
+            expose: true
+            access_type: public_method
+            serialized_name: MinNumberOfRoyaltyPaidResources
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinNumberOfRoyaltyPaidResources
+                setter: setMinNumberOfRoyaltyPaidResources
+            type: int

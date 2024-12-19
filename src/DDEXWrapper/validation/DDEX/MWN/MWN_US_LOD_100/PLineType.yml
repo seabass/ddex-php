@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LOD_100\PLineType:
+    properties:
+        pLineType:
+            -
+                Choice:
+                    choices:
+                        - OriginalPLine
+                        - RemasteringPLine
+                    groups:
+                        - xsd_rules
+        pLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

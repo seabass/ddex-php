@@ -1,0 +1,12 @@
+DDEX\MWN\MWN_US_LOD_100\RightsControllerType:
+    properties:
+        rightsControllerPartyReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

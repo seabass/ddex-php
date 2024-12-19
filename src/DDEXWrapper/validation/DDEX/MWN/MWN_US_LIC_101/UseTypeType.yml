@@ -1,0 +1,64 @@
+DDEX\MWN\MWN_US_LIC_101\UseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - Broadcast
+                        - Cable
+                        - ConditionalDownload
+                        - ContentInfluencedStream
+                        - Display
+                        - Download
+                        - Dub
+                        - DubForAdvertisement
+                        - DubForLivePerformance
+                        - DubForMovies
+                        - DubForMusicOnHold
+                        - DubForPublicPerformance
+                        - DubForRadio
+                        - DubForTV
+                        - ExtractForInternet
+                        - KioskDownload
+                        - Narrowcast
+                        - NonInteractiveStream
+                        - OnDemandStream
+                        - Perform
+                        - PerformAsMusicOnHold
+                        - PerformInLivePerformance
+                        - PerformInPublic
+                        - PermanentDownload
+                        - Playback
+                        - PlayInPublic
+                        - Podcast
+                        - Print
+                        - PrivateCopy
+                        - PurchaseAsPhysicalProduct
+                        - Rent
+                        - Simulcast
+                        - Stream
+                        - TetheredDownload
+                        - TimeInfluencedStream
+                        - Unknown
+                        - Use
+                        - UseAsAlertTone
+                        - UseAsDevice
+                        - UseAsKaraoke
+                        - UseAsRingbackTone
+                        - UseAsRingbackTune
+                        - UseAsRingtone
+                        - UseAsRingtune
+                        - UseAsScreensaver
+                        - UseAsVoiceMail
+                        - UseAsWallpaper
+                        - UseForIdentification
+                        - UseInMobilePhoneMessaging
+                        - UseInPhoneListening
+                        - UserDefined
+                        - UserMakeAvailableLabelProvided
+                        - UserMakeAvailableUserProvided
+                        - Webcast
+                        - DubForOnDemandStreaming
+                    groups:
+                        - xsd_rules

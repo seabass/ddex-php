@@ -1,0 +1,68 @@
+DDEX\MWN\MWN_US_LOD_100\MusicalWorkType:
+    properties:
+        musicalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkReference
+                setter: setMusicalWorkReference
+            type: string
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            type: DDEX\MWN\MWN_US_LOD_100\MusicalWorkIdType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: DDEX\MWN\MWN_US_LOD_100\ReferenceTitleType
+        disambiguationDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: DisambiguationDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisambiguationDescription
+                setter: setDisambiguationDescription
+            type: string
+        writer:
+            expose: true
+            access_type: public_method
+            serialized_name: Writer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWriter
+                setter: setWriter
+            xml_list:
+                inline: true
+                entry_name: Writer
+            type: array<DDEX\MWN\MWN_US_LOD_100\WriterType>
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            xml_list:
+                inline: true
+                entry_name: Status
+            type: array<DDEX\MWN\MWN_US_LOD_100\StatusType>

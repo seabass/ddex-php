@@ -1,0 +1,43 @@
+DDEX\MWN\MWN_US_LIC_100\CreativeMusicalWorkContributorRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Adapter
+                        - Architect
+                        - Arranger
+                        - Author
+                        - AuthorInQuotations
+                        - AuthorOfAfterword
+                        - Compiler
+                        - Composer
+                        - ComposerLyricist
+                        - Conceptor
+                        - Creator
+                        - DialogueAuthor
+                        - Dissertant
+                        - Engraver
+                        - Etcher
+                        - Journalist
+                        - LandscapeArchitect
+                        - Librettist
+                        - Lithographer
+                        - Lyricist
+                        - MetalEngraver
+                        - NonLyricAuthor
+                        - PlateMaker
+                        - Playwright
+                        - Reporter
+                        - Reviewer
+                        - Rubricator
+                        - ScreenplayAuthor
+                        - Sculptor
+                        - SubArranger
+                        - SubLyricist
+                        - Translator
+                        - Woodcutter
+                        - WoodEngraver
+                        - WriterOfAccompanyingMaterial
+                    groups:
+                        - xsd_rules

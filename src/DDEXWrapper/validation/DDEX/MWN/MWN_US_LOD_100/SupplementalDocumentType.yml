@@ -1,0 +1,10 @@
+DDEX\MWN\MWN_US_LOD_100\SupplementalDocumentType:
+    properties:
+        documentType:
+            -
+                Choice:
+                    choices:
+                        - LetterOfDirection
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,7 @@
+DDEX\MWN\MWN_US_LOD_100\ReleaseIdForNotificationType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,30 @@
+DDEX\MWN\MWN_US_LIC_101\RightsControllerType:
+    properties:
+        isOwner:
+            expose: true
+            access_type: public_method
+            serialized_name: IsOwner
+            accessor:
+                getter: getIsOwner
+                setter: setIsOwner
+            xml_attribute: true
+            type: bool
+        isAgent:
+            expose: true
+            access_type: public_method
+            serialized_name: IsAgent
+            accessor:
+                getter: getIsAgent
+                setter: setIsAgent
+            xml_attribute: true
+            type: bool
+        rightsControllerPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerPartyReference
+                setter: setRightsControllerPartyReference
+            type: string

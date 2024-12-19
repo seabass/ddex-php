@@ -1,0 +1,48 @@
+DDEX\MWN\MWN_US_LIC_101\PercentageRateType:
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: float
+            xml_element:
+                cdata: false
+        percentageType:
+            expose: true
+            access_type: public_method
+            serialized_name: PercentageType
+            accessor:
+                getter: getPercentageType
+                setter: setPercentageType
+            xml_attribute: true
+            type: string
+        namespace:
+            expose: true
+            access_type: public_method
+            serialized_name: Namespace
+            accessor:
+                getter: getNamespace
+                setter: setNamespace
+            xml_attribute: true
+            type: string
+        userDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: UserDefinedValue
+            accessor:
+                getter: getUserDefinedValue
+                setter: setUserDefinedValue
+            xml_attribute: true
+            type: string
+        hasMaxValueOfOne:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMaxValueOfOne
+            accessor:
+                getter: getHasMaxValueOfOne
+                setter: setHasMaxValueOfOne
+            xml_attribute: true
+            type: bool

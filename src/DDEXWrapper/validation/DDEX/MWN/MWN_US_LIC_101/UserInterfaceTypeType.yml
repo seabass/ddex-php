@@ -1,0 +1,22 @@
+DDEX\MWN\MWN_US_LIC_101\UserInterfaceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - ConnectedDevice
+                        - GameConsole
+                        - Jukebox
+                        - KaraokeMachine
+                        - Kiosk
+                        - LocalStorageJukebox
+                        - PersonalComputer
+                        - PhysicalMediaWriter
+                        - PortableDevice
+                        - RemoteStorageJukebox
+                        - SmartSpeakers
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

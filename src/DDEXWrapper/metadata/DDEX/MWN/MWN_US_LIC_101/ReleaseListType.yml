@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LIC_101\ReleaseListType:
+    properties:
+        release:
+            expose: true
+            access_type: public_method
+            serialized_name: Release
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelease
+                setter: setRelease
+            xml_list:
+                inline: true
+                entry_name: Release
+            type: array<DDEX\MWN\MWN_US_LIC_101\ReleaseType>

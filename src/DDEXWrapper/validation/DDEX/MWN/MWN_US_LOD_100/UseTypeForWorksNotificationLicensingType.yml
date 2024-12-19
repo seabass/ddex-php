@@ -1,0 +1,12 @@
+DDEX\MWN\MWN_US_LOD_100\UseTypeForWorksNotificationLicensingType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - OnDemandStream
+                        - PermanentDownload
+                        - PurchaseAsPhysicalProduct
+                        - UseAsRingtone
+                    groups:
+                        - xsd_rules

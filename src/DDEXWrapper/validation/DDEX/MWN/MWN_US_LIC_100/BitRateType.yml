@@ -1,0 +1,12 @@
+DDEX\MWN\MWN_US_LIC_100\BitRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - bps
+                        - Gbps
+                        - kbps
+                        - Mbps
+                    groups:
+                        - xsd_rules

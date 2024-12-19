@@ -1,0 +1,184 @@
+DDEX\MWN\MWN_US_LIC_101\LicenseConditionType:
+    properties:
+        licenseConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseConditionReference
+                setter: setLicenseConditionReference
+            type: string
+        rightsType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsType
+                setter: setRightsType
+            xml_list:
+                inline: true
+                entry_name: RightsType
+            type: array<string>
+        usage:
+            expose: true
+            access_type: public_method
+            serialized_name: Usage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsage
+                setter: setUsage
+            xml_list:
+                inline: true
+                entry_name: Usage
+            type: array<DDEX\MWN\MWN_US_LIC_101\UsageType>
+        royaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRate
+                setter: setRoyaltyRate
+            xml_list:
+                inline: true
+                entry_name: RoyaltyRate
+            type: array<DDEX\MWN\MWN_US_LIC_101\RoyaltyRateType>
+        advanceAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: AdvanceAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdvanceAmount
+                setter: setAdvanceAmount
+            type: DDEX\MWN\MWN_US_LIC_101\RoyaltyAmountType
+        guaranteedAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: GuaranteedAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGuaranteedAmount
+                setter: setGuaranteedAmount
+            type: DDEX\MWN\MWN_US_LIC_101\GuaranteedAmountType
+        minimumFeePerUse:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumFeePerUse
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumFeePerUse
+                setter: setMinimumFeePerUse
+            type: float
+        isPdArrangement:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPdArrangement
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPdArrangement
+                setter: setIsPdArrangement
+            type: bool
+        isControlledCompositionClause:
+            expose: true
+            access_type: public_method
+            serialized_name: IsControlledCompositionClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsControlledCompositionClause
+                setter: setIsControlledCompositionClause
+            type: bool
+        isNdmaClause:
+            expose: true
+            access_type: public_method
+            serialized_name: IsNdmaClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsNdmaClause
+                setter: setIsNdmaClause
+            type: bool
+        isPerUseRoyaltyPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPerUseRoyaltyPayment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPerUseRoyaltyPayment
+                setter: setIsPerUseRoyaltyPayment
+            type: bool
+        isFavoredNationClause:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFavoredNationClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFavoredNationClause
+                setter: setIsFavoredNationClause
+            type: bool
+        supplementalDocument:
+            expose: true
+            access_type: public_method
+            serialized_name: SupplementalDocument
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSupplementalDocument
+                setter: setSupplementalDocument
+            xml_list:
+                inline: true
+                entry_name: SupplementalDocument
+            type: array<DDEX\MWN\MWN_US_LIC_101\SupplementalDocumentType>
+        rateValidity:
+            expose: true
+            access_type: public_method
+            serialized_name: RateValidity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRateValidity
+                setter: setRateValidity
+            type: DDEX\MWN\MWN_US_LIC_101\RateValidityType
+        tariffReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TariffReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTariffReference
+                setter: setTariffReference
+            type: DDEX\MWN\MWN_US_LIC_101\TariffReferenceType
+        priceInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceInformation
+                setter: setPriceInformation
+            type: DDEX\MWN\MWN_US_LIC_101\PriceInformationType
+        technicalInstantiation:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalInstantiation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalInstantiation
+                setter: setTechnicalInstantiation
+            type: DDEX\MWN\MWN_US_LIC_101\TechnicalInstantiationType

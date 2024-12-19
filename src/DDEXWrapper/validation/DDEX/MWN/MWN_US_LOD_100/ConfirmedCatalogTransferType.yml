@@ -1,0 +1,49 @@
+DDEX\MWN\MWN_US_LOD_100\ConfirmedCatalogTransferType:
+    properties:
+        catalogTransferId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        confirmingLicensee:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+        resourceList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        retention:
+            -
+                Valid: null
+        collectionPeriod:
+            -
+                Valid: null
+        exception:
+            -
+                Valid: null

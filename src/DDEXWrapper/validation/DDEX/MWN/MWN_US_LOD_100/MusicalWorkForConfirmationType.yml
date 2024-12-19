@@ -1,0 +1,25 @@
+DDEX\MWN\MWN_US_LOD_100\MusicalWorkForConfirmationType:
+    properties:
+        musicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        musicalWorkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        status:
+            -
+                Valid: null

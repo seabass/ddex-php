@@ -1,0 +1,28 @@
+DDEX\MWN\MWN_US_LIC_10\LicenseType:
+    properties:
+        licenseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        licenseRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        licenseRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,36 @@
+DDEX\MWN\MWN_US_LIC_100\LicenseRequestType:
+    properties:
+        licenseRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        requestRightShareReference:
+            -
+                Regex:
+                    pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        requestReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestConditionReference:
+            -
+                Regex:
+                    pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,69 @@
+DDEX\MWN\MWN_US_LOD_100\LoDConfirmationMessage\LoDConfirmationMessageAnonymousPHPType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\MWN\MWN_US_LOD_100\MessageHeaderType
+        workList:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkList
+                setter: setWorkList
+            type: array<DDEX\MWN\MWN_US_LOD_100\MusicalWorkForConfirmationType>
+            xml_list:
+                inline: false
+                entry_name: MusicalWork
+                skip_when_empty: true
+        resourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceList
+                setter: setResourceList
+            type: DDEX\MWN\MWN_US_LOD_100\ResourceListForConfirmationType
+        releaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseList
+                setter: setReleaseList
+            type: array<DDEX\MWN\MWN_US_LOD_100\ReleaseForConfirmationType>
+            xml_list:
+                inline: false
+                entry_name: Release
+                skip_when_empty: true
+        catalogTransferList:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferList
+                setter: setCatalogTransferList
+            type: DDEX\MWN\MWN_US_LOD_100\CatalogTransferListForConfirmationType

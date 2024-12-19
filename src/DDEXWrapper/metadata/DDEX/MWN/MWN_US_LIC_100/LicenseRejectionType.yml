@@ -1,0 +1,42 @@
+DDEX\MWN\MWN_US_LIC_100\LicenseRejectionType:
+    properties:
+        licenseRejectionId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRejectionId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRejectionId
+                setter: setLicenseRejectionId
+            type: DDEX\MWN\MWN_US_LIC_100\ProprietaryIdType
+        licenseRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRequestId
+                setter: setLicenseRequestId
+            type: DDEX\MWN\MWN_US_LIC_100\ProprietaryIdType
+        licenseRejectionReason:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRejectionReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRejectionReason
+                setter: setLicenseRejectionReason
+            type: DDEX\MWN\MWN_US_LIC_100\LicenseRejectionReasonType
+        additionalInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalInformation
+                setter: setAdditionalInformation
+            type: string

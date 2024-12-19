@@ -1,0 +1,10 @@
+DDEX\MWN\MWN_US_LOD_100\FileStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - FileOK
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,19 @@
+DDEX\MWN\MWN_US_LIC_10\PartyIdForNotificationType:
+    properties:
+        dPID:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+        ipiNameNumber:
+            -
+                Regex:
+                    pattern: '~[0-9]{11}~u'
+                    groups:
+                        - xsd_rules
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

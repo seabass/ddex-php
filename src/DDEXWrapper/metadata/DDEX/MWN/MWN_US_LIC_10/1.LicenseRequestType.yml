@@ -1,0 +1,58 @@
+DDEX\MWN\MWN_US_LIC_101\LicenseRequestType:
+    properties:
+        licenseRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRequestId
+                setter: setLicenseRequestId
+            type: DDEX\MWN\MWN_US_LIC_101\ProprietaryIdType
+        relatedLicenseRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedLicenseRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedLicenseRequestId
+                setter: setRelatedLicenseRequestId
+            xml_list:
+                inline: true
+                entry_name: RelatedLicenseRequestId
+            type: array<DDEX\MWN\MWN_US_LIC_101\ProprietaryIdType>
+        requestRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestRightShareReference
+                setter: setRequestRightShareReference
+            type: string
+        requestReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestReleaseReference
+                setter: setRequestReleaseReference
+            xml_list:
+                inline: true
+                entry_name: RequestReleaseReference
+            type: array<string>
+        requestConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestConditionReference
+                setter: setRequestConditionReference
+            type: string

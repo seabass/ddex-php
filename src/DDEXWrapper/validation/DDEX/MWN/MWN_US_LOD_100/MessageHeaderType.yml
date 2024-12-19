@@ -1,0 +1,40 @@
+DDEX\MWN\MWN_US_LOD_100\MessageHeaderType:
+    properties:
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageSender:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        sentOnBehalfOf:
+            -
+                Valid: null
+        messageRecipient:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageCreatedDateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageAuditTrail:
+            -
+                Valid: null
+        messageControlType:
+            -
+                Choice:
+                    choices:
+                        - LiveMessage
+                        - TestMessage
+                    groups:
+                        - xsd_rules

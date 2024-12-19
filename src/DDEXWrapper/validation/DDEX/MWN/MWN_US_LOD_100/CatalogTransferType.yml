@@ -1,0 +1,52 @@
+DDEX\MWN\MWN_US_LOD_100\CatalogTransferType:
+    properties:
+        catalogTransferId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        catalogTransferType:
+            -
+                Choice:
+                    choices:
+                        - StandardCatalogTransfer
+                        - UsStatutoryReversion
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        catalogName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        relinquishingPublisher:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        transferredRightShareList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        condition:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        restrictingResourceList:
+            -
+                Valid: null
+        restrictingReleaseList:
+            -
+                Valid: null

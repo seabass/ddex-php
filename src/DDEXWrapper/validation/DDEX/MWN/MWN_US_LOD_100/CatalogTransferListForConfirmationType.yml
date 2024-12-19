@@ -1,0 +1,8 @@
+DDEX\MWN\MWN_US_LOD_100\CatalogTransferListForConfirmationType:
+    properties:
+        confirmedCatalogTransfer:
+            -
+                Valid: null
+        catalogTransferException:
+            -
+                Valid: null

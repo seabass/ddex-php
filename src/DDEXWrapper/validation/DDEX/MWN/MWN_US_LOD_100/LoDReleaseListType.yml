@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LOD_100\LoDReleaseListType:
+    properties:
+        catalogReleaseReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

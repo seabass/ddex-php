@@ -1,0 +1,28 @@
+DDEX\MWN\MWN_US_LIC_101\LicenseListType:
+    properties:
+        license:
+            expose: true
+            access_type: public_method
+            serialized_name: License
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicense
+                setter: setLicense
+            xml_list:
+                inline: true
+                entry_name: License
+            type: array<DDEX\MWN\MWN_US_LIC_101\LicenseType>
+        licenseRejection:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRejection
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRejection
+                setter: setLicenseRejection
+            xml_list:
+                inline: true
+                entry_name: LicenseRejection
+            type: array<DDEX\MWN\MWN_US_LIC_101\LicenseRejectionType>

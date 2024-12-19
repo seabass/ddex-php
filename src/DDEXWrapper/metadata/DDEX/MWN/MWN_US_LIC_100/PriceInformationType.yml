@@ -1,0 +1,52 @@
+DDEX\MWN\MWN_US_LIC_100\PriceInformationType:
+    properties:
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: DDEX\MWN\MWN_US_LIC_100\DescriptionType
+        priceType:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceType
+                setter: setPriceType
+            type: DDEX\MWN\MWN_US_LIC_100\PriceTypeType
+        wholesalePricePerUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: WholesalePricePerUnit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWholesalePricePerUnit
+                setter: setWholesalePricePerUnit
+            type: DDEX\MWN\MWN_US_LIC_100\PriceType
+        bulkOrderWholesalePricePerUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: BulkOrderWholesalePricePerUnit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBulkOrderWholesalePricePerUnit
+                setter: setBulkOrderWholesalePricePerUnit
+            type: DDEX\MWN\MWN_US_LIC_100\PriceType
+        suggestedRetailPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SuggestedRetailPrice
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSuggestedRetailPrice
+                setter: setSuggestedRetailPrice
+            type: DDEX\MWN\MWN_US_LIC_100\PriceType

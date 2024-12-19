@@ -1,0 +1,35 @@
+DDEX\MWN\MWN_US_LOD_100\SoundRecordingIdType:
+    properties:
+        iSRC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISRC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISRC
+                setter: setISRC
+            type: string
+        catalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogNumber
+                setter: setCatalogNumber
+            type: DDEX\MWN\MWN_US_LOD_100\CatalogNumberType
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType>

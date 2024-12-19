@@ -1,0 +1,14 @@
+DDEX\MWN\MWN_US_LOD_100\TransferredRightShareListType:
+    properties:
+        isPartial:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        transferredRightShare:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,101 @@
+DDEX\MWN\MWN_US_LOD_100\LoDMessage\LoDMessageAnonymousPHPType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\MWN\MWN_US_LOD_100\MessageHeaderType
+        partyList:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyList
+                setter: setPartyList
+            type: array<DDEX\MWN\MWN_US_LOD_100\PartyType>
+            xml_list:
+                inline: false
+                entry_name: Party
+                skip_when_empty: false
+        workList:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkList
+                setter: setWorkList
+            type: array<DDEX\MWN\MWN_US_LOD_100\MusicalWorkType>
+            xml_list:
+                inline: false
+                entry_name: MusicalWork
+                skip_when_empty: false
+        resourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceList
+                setter: setResourceList
+            type: DDEX\MWN\MWN_US_LOD_100\ResourceListType
+        releaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseList
+                setter: setReleaseList
+            type: array<DDEX\MWN\MWN_US_LOD_100\ReleaseType>
+            xml_list:
+                inline: false
+                entry_name: Release
+                skip_when_empty: true
+        rightShareList:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareList
+                setter: setRightShareList
+            type: array<DDEX\MWN\MWN_US_LOD_100\RightShareType>
+            xml_list:
+                inline: false
+                entry_name: RightShare
+                skip_when_empty: false
+        catalogTransferList:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferList
+                setter: setCatalogTransferList
+            type: array<DDEX\MWN\MWN_US_LOD_100\CatalogTransferType>
+            xml_list:
+                inline: false
+                entry_name: CatalogTransfer
+                skip_when_empty: false

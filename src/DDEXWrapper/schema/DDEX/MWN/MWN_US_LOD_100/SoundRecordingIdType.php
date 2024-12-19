@@ -1,0 +1,154 @@
+<?php
+
+namespace DDEX\MWN\MWN_US_LOD_100;
+
+/**
+ * Class representing SoundRecordingIdType
+ *
+ * A Composite containing details of SoundRecordingIds.
+ * XSD Type: SoundRecordingId
+ */
+class SoundRecordingIdType
+{
+    /**
+     * The ISRC (International Standard Recording Code as defined in ISO 3901) for the SoundRecording. An ISRC comprises four parts: two characters, followed by three alphanumeric characters, then two digits and five digits. DDEX will enforce the syntax [a-zA-Z]{2}[a-zA-Z0-9]{3}[0-9]{7} using XML Schema in the future.
+     *
+     * @var string $iSRC
+     */
+    private $iSRC = null;
+
+    /**
+     * A Composite containing details of the CatalogNumber of the SoundRecording.
+     *
+     * @var \DDEX\MWN\MWN_US_LOD_100\CatalogNumberType $catalogNumber
+     */
+    private $catalogNumber = null;
+
+    /**
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @var \DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType[] $proprietaryId
+     */
+    private $proprietaryId = [
+        
+    ];
+
+    /**
+     * Gets as iSRC
+     *
+     * The ISRC (International Standard Recording Code as defined in ISO 3901) for the SoundRecording. An ISRC comprises four parts: two characters, followed by three alphanumeric characters, then two digits and five digits. DDEX will enforce the syntax [a-zA-Z]{2}[a-zA-Z0-9]{3}[0-9]{7} using XML Schema in the future.
+     *
+     * @return string
+     */
+    public function getISRC()
+    {
+        return $this->iSRC;
+    }
+
+    /**
+     * Sets a new iSRC
+     *
+     * The ISRC (International Standard Recording Code as defined in ISO 3901) for the SoundRecording. An ISRC comprises four parts: two characters, followed by three alphanumeric characters, then two digits and five digits. DDEX will enforce the syntax [a-zA-Z]{2}[a-zA-Z0-9]{3}[0-9]{7} using XML Schema in the future.
+     *
+     * @param string $iSRC
+     * @return self
+     */
+    public function setISRC($iSRC)
+    {
+        $this->iSRC = $iSRC;
+        return $this;
+    }
+
+    /**
+     * Gets as catalogNumber
+     *
+     * A Composite containing details of the CatalogNumber of the SoundRecording.
+     *
+     * @return \DDEX\MWN\MWN_US_LOD_100\CatalogNumberType
+     */
+    public function getCatalogNumber()
+    {
+        return $this->catalogNumber;
+    }
+
+    /**
+     * Sets a new catalogNumber
+     *
+     * A Composite containing details of the CatalogNumber of the SoundRecording.
+     *
+     * @param \DDEX\MWN\MWN_US_LOD_100\CatalogNumberType $catalogNumber
+     * @return self
+     */
+    public function setCatalogNumber(?\DDEX\MWN\MWN_US_LOD_100\CatalogNumberType $catalogNumber = null)
+    {
+        $this->catalogNumber = $catalogNumber;
+        return $this;
+    }
+
+    /**
+     * Adds as proprietaryId
+     *
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @return self
+     * @param \DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType $proprietaryId
+     */
+    public function addToProprietaryId(\DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType $proprietaryId)
+    {
+        $this->proprietaryId[] = $proprietaryId;
+        return $this;
+    }
+
+    /**
+     * isset proprietaryId
+     *
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetProprietaryId($index)
+    {
+        return isset($this->proprietaryId[$index]);
+    }
+
+    /**
+     * unset proprietaryId
+     *
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetProprietaryId($index)
+    {
+        unset($this->proprietaryId[$index]);
+    }
+
+    /**
+     * Gets as proprietaryId
+     *
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @return \DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType[]
+     */
+    public function getProprietaryId()
+    {
+        return $this->proprietaryId;
+    }
+
+    /**
+     * Sets a new proprietaryId
+     *
+     * A Composite containing details of a ProprietaryIdentifier of the SoundRecording (usually one per society involved in the messaging).
+     *
+     * @param \DDEX\MWN\MWN_US_LOD_100\ProprietaryIdType[] $proprietaryId
+     * @return self
+     */
+    public function setProprietaryId(array $proprietaryId)
+    {
+        $this->proprietaryId = $proprietaryId;
+        return $this;
+    }
+}
+

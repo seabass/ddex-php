@@ -1,0 +1,52 @@
+DDEX\MWN\MWN_US_LOD_100\MessageInBatchType:
+    properties:
+        messageType:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageType
+                setter: setMessageType
+            type: string
+        messageId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageId
+                setter: setMessageId
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\MWN\MWN_US_LOD_100\HashSumType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: string

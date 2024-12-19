@@ -1,0 +1,42 @@
+DDEX\MWN\MWN_US_LIC_10\ResourceMusicalWorkReferenceType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        durationUsed:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationUsed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationUsed
+                setter: setDurationUsed
+            type: DateInterval
+        isFragment:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFragment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFragment
+                setter: setIsFragment
+            type: bool
+        resourceMusicalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReference
+                setter: setResourceMusicalWorkReference
+            type: string

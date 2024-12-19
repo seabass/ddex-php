@@ -1,0 +1,20 @@
+DDEX\MWN\MWN_US_LOD_100\HashSumType:
+    properties:
+        hashSumValue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSumAlgorithmType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSumDataType:
+            -
+                Choice:
+                    choices:
+                        - Binary64
+                        - HexBinary
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,7 @@
+DDEX\MWN\MWN_US_LIC_10\CategoryType:
+    properties:
+        term:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

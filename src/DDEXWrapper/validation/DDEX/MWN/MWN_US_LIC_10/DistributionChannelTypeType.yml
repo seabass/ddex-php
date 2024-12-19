@@ -1,0 +1,24 @@
+DDEX\MWN\MWN_US_LIC_10\DistributionChannelTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - Broadcast
+                        - Cable
+                        - Internet
+                        - InternetAndMobile
+                        - IPTV
+                        - MobileTelephone
+                        - Narrowcast
+                        - OnDemandStream
+                        - PeerToPeer
+                        - Physical
+                        - Satellite
+                        - Simulcast
+                        - Unknown
+                        - UserDefined
+                        - Webcast
+                    groups:
+                        - xsd_rules

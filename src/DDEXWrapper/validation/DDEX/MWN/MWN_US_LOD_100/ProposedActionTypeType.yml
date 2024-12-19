@@ -1,0 +1,10 @@
+DDEX\MWN\MWN_US_LOD_100\ProposedActionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Resubmit
+                        - UserDefined
+                    groups:
+                        - xsd_rules

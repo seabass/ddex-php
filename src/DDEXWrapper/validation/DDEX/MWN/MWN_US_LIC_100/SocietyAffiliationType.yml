@@ -1,0 +1,20 @@
+DDEX\MWN\MWN_US_LIC_100\SocietyAffiliationType:
+    properties:
+        rightsType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        validityPeriod:
+            -
+                Valid: null
+        musicRightsSociety:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

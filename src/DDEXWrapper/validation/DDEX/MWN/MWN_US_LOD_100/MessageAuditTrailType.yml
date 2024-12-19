@@ -1,0 +1,9 @@
+DDEX\MWN\MWN_US_LOD_100\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,11 @@
+DDEX\MWN\MWN_US_LIC_101\SupplementalDocumentType:
+    properties:
+        documentType:
+            -
+                Choice:
+                    choices:
+                        - Contract
+                        - RateCalculation
+                        - UserDefined
+                    groups:
+                        - xsd_rules

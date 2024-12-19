@@ -1,0 +1,44 @@
+DDEX\MWN\MWN_US_LIC_101\MessagingPartyType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\MWN\MWN_US_LIC_101\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            type: DDEX\MWN\MWN_US_LIC_101\PartyNameType
+        tradingName:
+            expose: true
+            access_type: public_method
+            serialized_name: TradingName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTradingName
+                setter: setTradingName
+            type: DDEX\MWN\MWN_US_LIC_101\NameType

@@ -1,0 +1,19 @@
+DDEX\MWN\MWN_US_LOD_100\PhysicalCarrierTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BluRay
+                        - CD
+                        - CombiPack
+                        - CompactCassette
+                        - DualDisc
+                        - DVD
+                        - MemoryDevice
+                        - SACD
+                        - UserDefined
+                        - VideoCassette
+                        - VinylDisk
+                    groups:
+                        - xsd_rules

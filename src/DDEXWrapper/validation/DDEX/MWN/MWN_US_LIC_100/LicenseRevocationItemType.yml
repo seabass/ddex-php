@@ -1,0 +1,19 @@
+DDEX\MWN\MWN_US_LIC_100\LicenseRevocationItemType:
+    properties:
+        licenseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        revocationDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

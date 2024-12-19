@@ -1,0 +1,32 @@
+DDEX\MWN\MWN_US_LIC_10\MessageInBatchType:
+    properties:
+        messageType:
+            -
+                Choice:
+                    choices:
+                        - MusicalWorkClaimNotificationMessage
+                        - MusicalWorkClaimRequestMessage
+                        - LicenseRequestMessage
+                        - LicenseMessage
+                        - LicenseRevocationMessage
+                        - LoDMessage
+                        - LoDConfirmationMessage
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null

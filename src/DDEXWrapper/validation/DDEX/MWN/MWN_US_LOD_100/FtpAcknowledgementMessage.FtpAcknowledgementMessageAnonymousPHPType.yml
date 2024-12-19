@@ -1,0 +1,24 @@
+DDEX\MWN\MWN_US_LOD_100\FtpAcknowledgementMessage\FtpAcknowledgementMessageAnonymousPHPType:
+    properties:
+        messageVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        acknowledgedMessageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fileStatus:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

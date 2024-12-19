@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LIC_100\SimpleRightsTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MakeAvailableRight
+                        - MechanicalRight
+                        - PerformingRight
+                        - PrintRight
+                        - ReproductionRight
+                        - SynchronizationRight
+                        - UserDefined
+                    groups:
+                        - xsd_rules

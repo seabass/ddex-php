@@ -1,0 +1,9 @@
+DDEX\MWN\MWN_US_LIC_10\KeyInfoType:
+    properties:
+        x509Data:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

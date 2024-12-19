@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LIC_101\RightShareListType:
+    properties:
+        rightShare:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShare
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShare
+                setter: setRightShare
+            xml_list:
+                inline: true
+                entry_name: RightShare
+            type: array<DDEX\MWN\MWN_US_LIC_101\RightShareType>

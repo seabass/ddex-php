@@ -1,0 +1,23 @@
+DDEX\MWN\MWN_US_LIC_100\RoyaltyRateType:
+    properties:
+        royaltyRateCalculationType:
+            -
+                Choice:
+                    choices:
+                        - ControlledCompositionRoyaltyRate
+                        - MinimumStatutoryRoyaltyRate
+                        - NegotiatedRoyaltyRate
+                        - ReducedStatutoryRoyaltyRate
+                        - StatutoryRoyaltyRate
+                        - PPD
+                        - RetailPrice
+                    groups:
+                        - xsd_rules
+        royaltyRateType:
+            -
+                Choice:
+                    choices:
+                        - PennyRate
+                        - PercentageRoyaltyRate
+                    groups:
+                        - xsd_rules

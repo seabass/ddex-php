@@ -1,0 +1,12 @@
+DDEX\MWN\MWN_US_LIC_100\OriginalPublisherShareType:
+    properties:
+        originalPublisherShare:
+            -
+                Regex:
+                    pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

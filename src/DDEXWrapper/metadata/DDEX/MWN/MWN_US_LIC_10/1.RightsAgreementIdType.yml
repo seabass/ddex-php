@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LIC_101\RightsAgreementIdType:
+    properties:
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\MWN\MWN_US_LIC_101\ProprietaryIdType>

@@ -1,0 +1,108 @@
+DDEX\MWN\MWN_US_LIC_100\PartyNameForNotificationType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        isLegalName:
+            expose: true
+            access_type: public_method
+            serialized_name: IsLegalName
+            accessor:
+                getter: getIsLegalName
+                setter: setIsLegalName
+            xml_attribute: true
+            type: bool
+        isPseudonym:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPseudonym
+            accessor:
+                getter: getIsPseudonym
+                setter: setIsPseudonym
+            xml_attribute: true
+            type: bool
+        isNameUsedOnCreation:
+            expose: true
+            access_type: public_method
+            serialized_name: IsNameUsedOnCreation
+            accessor:
+                getter: getIsNameUsedOnCreation
+                setter: setIsNameUsedOnCreation
+            xml_attribute: true
+            type: bool
+        fullName:
+            expose: true
+            access_type: public_method
+            serialized_name: FullName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullName
+                setter: setFullName
+            type: DDEX\MWN\MWN_US_LIC_100\NameType
+        fullNameAsciiTranscribed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameAsciiTranscribed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameAsciiTranscribed
+                setter: setFullNameAsciiTranscribed
+            type: string
+        fullNameIndexed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameIndexed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameIndexed
+                setter: setFullNameIndexed
+            type: DDEX\MWN\MWN_US_LIC_100\NameType
+        namesBeforeKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesBeforeKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesBeforeKeyName
+                setter: setNamesBeforeKeyName
+            type: DDEX\MWN\MWN_US_LIC_100\NameType
+        keyName:
+            expose: true
+            access_type: public_method
+            serialized_name: KeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getKeyName
+                setter: setKeyName
+            type: DDEX\MWN\MWN_US_LIC_100\NameType
+        namesAfterKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesAfterKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesAfterKeyName
+                setter: setNamesAfterKeyName
+            type: DDEX\MWN\MWN_US_LIC_100\NameType
+        abbreviatedName:
+            expose: true
+            access_type: public_method
+            serialized_name: AbbreviatedName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAbbreviatedName
+                setter: setAbbreviatedName
+            type: DDEX\MWN\MWN_US_LIC_100\NameType

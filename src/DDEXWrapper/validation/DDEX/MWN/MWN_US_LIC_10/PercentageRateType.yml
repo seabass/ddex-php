@@ -1,0 +1,18 @@
+DDEX\MWN\MWN_US_LIC_10\PercentageRateType:
+    properties:
+        percentageType:
+            -
+                Choice:
+                    choices:
+                        - PercentageOfFreeGoodsPermitted
+                        - PercentageOfGrossRevenue
+                        - PercentageOfNetRevenue
+                        - PercentageOfNetSales
+                        - PercentageOfPriceConsumerPaid
+                        - PercentageOfStatutoryRoyaltyRate
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,12 @@
+DDEX\MWN\MWN_US_LOD_100\OriginalPublisherShareType:
+    properties:
+        originalPublisherShare:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalPublisherShare
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalPublisherShare
+                setter: setOriginalPublisherShare
+            type: string

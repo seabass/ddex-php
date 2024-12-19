@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_US_LOD_100\CatalogNameType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        name:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        subCatalog:
+            -
+                Valid: null

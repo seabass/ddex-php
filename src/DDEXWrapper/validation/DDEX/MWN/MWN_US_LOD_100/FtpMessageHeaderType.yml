@@ -1,0 +1,27 @@
+DDEX\MWN\MWN_US_LOD_100\FtpMessageHeaderType:
+    properties:
+        messageSender:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageRecipient:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageCreatedDateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null
+        signature:
+            -
+                Valid: null
