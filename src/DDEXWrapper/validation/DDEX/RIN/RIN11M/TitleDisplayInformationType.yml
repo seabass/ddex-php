@@ -1,0 +1,13 @@
+DDEX\RIN\RIN11M\TitleDisplayInformationType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        isDisplayedInTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

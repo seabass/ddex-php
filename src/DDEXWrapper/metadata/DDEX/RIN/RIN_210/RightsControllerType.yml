@@ -1,0 +1,65 @@
+DDEX\RIN\RIN_210\RightsControllerType:
+    properties:
+        partyPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyPartyReference
+                setter: setPartyPartyReference
+            type: string
+        rightsControllerRole:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerRole
+                setter: setRightsControllerRole
+            xml_list:
+                inline: true
+                entry_name: RightsControllerRole
+            type: array<string>
+        rightShareUnknown:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareUnknown
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareUnknown
+                setter: setRightShareUnknown
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: float
+        territory:
+            expose: true
+            access_type: public_method
+            serialized_name: Territory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritory
+                setter: setTerritory
+            type: DDEX\RIN\RIN_210\AllTerritoryCodeType
+        validityPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidityPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValidityPeriod
+                setter: setValidityPeriod
+            type: string

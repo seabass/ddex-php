@@ -1,0 +1,20 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\SignatureTypeType:
+    properties:
+        signedInfo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        signatureValue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        keyInfo:
+            -
+                Valid: null
+        object:
+            -
+                Valid: null

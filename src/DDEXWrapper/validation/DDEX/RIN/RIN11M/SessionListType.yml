@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11M\SessionListType:
+    properties:
+        session:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

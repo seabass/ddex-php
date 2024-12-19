@@ -1,0 +1,17 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\X509IssuerSerialTypeType:
+    properties:
+        x509IssuerName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        x509SerialNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

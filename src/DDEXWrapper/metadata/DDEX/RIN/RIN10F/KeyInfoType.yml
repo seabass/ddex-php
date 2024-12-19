@@ -1,0 +1,21 @@
+DDEX\RIN\RIN10F\KeyInfoType:
+    properties:
+        id:
+            expose: true
+            access_type: public_method
+            serialized_name: Id
+            accessor:
+                getter: getId
+                setter: setId
+            xml_attribute: true
+            type: string
+        x509Data:
+            expose: true
+            access_type: public_method
+            serialized_name: X509Data
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getX509Data
+                setter: setX509Data
+            type: DDEX\RIN\RIN10F\X509DataType

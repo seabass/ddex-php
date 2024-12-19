@@ -30,6 +30,14 @@ xsd2php:
     'http://ddex.net/xml/dsr/43':  'DDEX\DSR\DSR_430'
     'http://ddex.net/xml/dsr/43D1':  'DDEX\DSR\DSR_43D1'
 
+    'http://ddex.net/xml/f-rin/10': 'DDEX\RIN\RIN10F'
+    'http://ddex.net/xml/m-rin/10': 'DDEX\RIN\RIN10M'
+    'http://ddex.net/xml/f-rin/11': 'DDEX\RIN\RIN11F'
+    'http://ddex.net/xml/m-rin/11': 'DDEX\RIN\RIN11M'
+    'http://ddex.net/xml/rin/20': 'DDEX\RIN\RIN_200'
+    'http://ddex.net/xml/rin/21': 'DDEX\RIN\RIN_210'
+
+
 
     # avs
     'http://ddex.net/xml/avs/avs': 'DDEX\AVS'
@@ -60,6 +68,11 @@ xsd2php:
     'http://ddex.net/xml/20120404/iso639a2': 'ISO\iso639a2'
     'http://ddex.net/xml/20120719/iso639a2': 'ISO\iso639a2'
     'http://ddex.net/xml/20121219/iso639a2': 'ISO\iso639a2'
+
+    # w3
+    'http://www.w3.org/2000/09/xmldsig#': 'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA'
+
+
 
 
 
@@ -92,6 +105,15 @@ xsd2php:
     'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_430
     'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_43D1
 
+    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN_210
+
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
+
   destinations_jms:
     'DDEX\ddexC': ..\src\DDEXWrapper\metadata\DDEX\ddexC\
 
@@ -121,6 +143,15 @@ xsd2php:
     'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_430
     'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_43D1
 
+    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN_210
+
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
+
   destinations_validation:
     'DDEX\ddexC': ..\src\DDEXWrapper\validation\DDEX\ddexC\
 
@@ -149,7 +180,17 @@ xsd2php:
     'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_420
     'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_430
     'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_43D1
+
+    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN_210
+
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     
+
   # XML namespaces for generated output
   # https://github.com/zoliszabo/xsd2php/pull/1/commits/8a99036ae12f238fab79443fadf74c1a12a6fa30
   xml_namespaces:
@@ -179,9 +220,25 @@ xsd2php:
     'http://ddex.net/xml/dsr/43': 'dsr'
     'http://ddex.net/xml/dsr/43D1': 'dsr'
 
+    'http://ddex.net/xml/m-rin/10': 'rin'
+    'http://ddex.net/xml/f-rin/10': 'rin'
+    'http://ddex.net/xml/m-rin/11': 'rin'
+    'http://ddex.net/xml/f-rin/11': 'rin'
+    'http://ddex.net/xml/rin/20': 'rin'
+    'http://ddex.net/xml/rin/21': 'rin'
+
   aliases:
     '':
       DateTime: 'DateTimeTypeHandler'
+
+    # Not implemented; 2024-12-18
+    #'##other':
+    #  anyType: 'XsAnyTypeHandler'
+    #  anySimpleType: 'XsAnySimpleTypeHandler'
+    #  
+    #'http://ddex.net/xml/f-rin/10':
+    #  anyType: 'XsAnyTypeHandler'
+    #  anySimpleType: 'XsAnySimpleTypeHandler'
 
   naming_strategy: long # optional and default
   path_generator: psr4

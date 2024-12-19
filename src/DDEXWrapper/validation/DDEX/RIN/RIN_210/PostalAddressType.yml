@@ -1,0 +1,22 @@
+DDEX\RIN\RIN_210\PostalAddressType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        postalAddressLine:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        cityName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

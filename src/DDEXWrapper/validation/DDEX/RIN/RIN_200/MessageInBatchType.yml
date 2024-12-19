@@ -1,0 +1,26 @@
+DDEX\RIN\RIN_200\MessageInBatchType:
+    properties:
+        messageType:
+            -
+                Choice:
+                    choices:
+                        - RecordingInformationNotification
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null

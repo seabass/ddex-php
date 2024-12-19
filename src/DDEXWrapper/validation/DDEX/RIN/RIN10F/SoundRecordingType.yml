@@ -1,0 +1,97 @@
+DDEX\RIN\RIN10F\SoundRecordingType:
+    properties:
+        mainArtist:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        supplementalArtist:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        soundRecordingId:
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        title:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        pLine:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        soundRecordingMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        contributorReference:
+            -
+                Valid: null
+        soundRecordingProjectReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~J[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        soundRecordingSessionReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~O[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        soundRecordingRecordingComponentReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~K[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        sampledSoundRecording:
+            -
+                Valid: null

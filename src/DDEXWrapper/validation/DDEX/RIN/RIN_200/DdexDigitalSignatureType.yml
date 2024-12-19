@@ -1,0 +1,21 @@
+DDEX\RIN\RIN_200\DdexDigitalSignatureType:
+    properties:
+        signedInfo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        signatureValue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        keyInfo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

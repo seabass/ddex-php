@@ -1,0 +1,7 @@
+DDEX\RIN\RIN10M\PartyNameType:
+    properties:
+        fullName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

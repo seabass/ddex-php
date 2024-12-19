@@ -1,0 +1,169 @@
+DDEX\RIN\RIN_210\DataCarrierType:
+    properties:
+        dataCarrierId:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierId
+                setter: setDataCarrierId
+            type: array<DDEX\RIN\RIN_210\ProprietaryIdType>
+            xml_list:
+                inline: false
+                entry_name: ProprietaryId
+                skip_when_empty: true
+        dataCarrierReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierReference
+                setter: setDataCarrierReference
+            type: string
+        dataCarrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierType
+                setter: setDataCarrierType
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RIN\RIN_210\TitleWithUDVType>
+        manufacturerName:
+            expose: true
+            access_type: public_method
+            serialized_name: ManufacturerName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getManufacturerName
+                setter: setManufacturerName
+            type: string
+        modelName:
+            expose: true
+            access_type: public_method
+            serialized_name: ModelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getModelName
+                setter: setModelName
+            type: string
+        serialNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSerialNumber
+                setter: setSerialNumber
+            type: string
+        numberOfDataCarriersInSet:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfDataCarriersInSet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfDataCarriersInSet
+                setter: setNumberOfDataCarriersInSet
+            type: int
+        dataCarrierOfSet:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierOfSet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierOfSet
+                setter: setDataCarrierOfSet
+            type: int
+        contentSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: ContentSummary
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContentSummary
+                setter: setContentSummary
+            type: string
+        currentLocation:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrentLocation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrentLocation
+                setter: setCurrentLocation
+            type: string
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: DDEX\RIN\RIN_210\CommentType
+        dataCarrierProjectReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierProjectReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierProjectReference
+                setter: setDataCarrierProjectReference
+            xml_list:
+                inline: true
+                entry_name: DataCarrierProjectReference
+            type: array<string>
+        dataCarrierFileReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierFileReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierFileReference
+                setter: setDataCarrierFileReference
+            xml_list:
+                inline: true
+                entry_name: DataCarrierFileReference
+            type: array<string>
+        dataCarrierContent:
+            expose: true
+            access_type: public_method
+            serialized_name: DataCarrierContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataCarrierContent
+                setter: setDataCarrierContent
+            type: array<DDEX\RIN\RIN_210\DataCarrierContentItemType>
+            xml_list:
+                inline: false
+                entry_name: DataCarrierContentItem
+                skip_when_empty: true

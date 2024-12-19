@@ -1,0 +1,17 @@
+DDEX\RIN\RIN11F\DataCarrierContentItemType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        description:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

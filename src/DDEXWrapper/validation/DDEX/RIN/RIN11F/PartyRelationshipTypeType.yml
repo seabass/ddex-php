@@ -1,0 +1,15 @@
+DDEX\RIN\RIN11F\PartyRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HasMember
+                        - IsMemberOf
+                        - UserDefined
+                        - HasPart
+                        - IsChildOf
+                        - IsParentOf
+                        - IsPartOf
+                    groups:
+                        - xsd_rules

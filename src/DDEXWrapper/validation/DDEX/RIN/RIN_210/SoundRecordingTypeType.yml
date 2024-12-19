@@ -1,0 +1,17 @@
+DDEX\RIN\RIN_210\SoundRecordingTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AudioStem
+                        - Clip
+                        - MusicalWorkReadalongSoundRecording
+                        - MusicalWorkSoundRecording
+                        - NonMusicalWorkReadalongSoundRecording
+                        - NonMusicalWorkSoundRecording
+                        - SpokenWordSoundRecording
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

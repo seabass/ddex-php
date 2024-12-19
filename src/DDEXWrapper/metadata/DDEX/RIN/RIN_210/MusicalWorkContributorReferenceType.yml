@@ -1,0 +1,57 @@
+DDEX\RIN\RIN_210\MusicalWorkContributorReferenceType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        musicalWorkContributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkContributorReference
+                setter: setMusicalWorkContributorReference
+            type: string
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+            type: array<DDEX\RIN\RIN_210\MusicalWorkContributorRoleType>
+        displayCredits:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayCredits
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayCredits
+                setter: setDisplayCredits
+            xml_list:
+                inline: true
+                entry_name: DisplayCredits
+            type: array<DDEX\RIN\RIN_210\DisplayCreditsType>
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: float

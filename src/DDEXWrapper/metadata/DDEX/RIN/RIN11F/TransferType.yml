@@ -1,0 +1,94 @@
+DDEX\RIN\RIN11F\TransferType:
+    properties:
+        transferId:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferId
+                setter: setTransferId
+            xml_list:
+                inline: true
+                entry_name: TransferId
+            type: array<DDEX\RIN\RIN11F\ProprietaryIdType>
+        transferReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferReference
+                setter: setTransferReference
+            type: string
+        transferType:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferType
+                setter: setTransferType
+            type: string
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: DDEX\RIN\RIN11F\CommentType
+        transferEquipmentReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferEquipmentReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferEquipmentReference
+                setter: setTransferEquipmentReference
+            type: string
+        transferSessionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferSessionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferSessionReference
+                setter: setTransferSessionReference
+            xml_list:
+                inline: true
+                entry_name: TransferSessionReference
+            type: array<string>
+        transferSource:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferSource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferSource
+                setter: setTransferSource
+            xml_list:
+                inline: true
+                entry_name: TransferSource
+            type: array<DDEX\RIN\RIN11F\TransferSourceType>
+        transferDestination:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferDestination
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferDestination
+                setter: setTransferDestination
+            xml_list:
+                inline: true
+                entry_name: TransferDestination
+            type: array<DDEX\RIN\RIN11F\TransferDestinationType>

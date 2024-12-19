@@ -1,0 +1,10 @@
+DDEX\RIN\RIN_200\ProposedActionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Resubmit
+                        - UserDefined
+                    groups:
+                        - xsd_rules

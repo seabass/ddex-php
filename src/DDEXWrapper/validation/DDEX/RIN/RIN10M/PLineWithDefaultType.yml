@@ -1,0 +1,7 @@
+DDEX\RIN\RIN10M\PLineWithDefaultType:
+    properties:
+        pLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

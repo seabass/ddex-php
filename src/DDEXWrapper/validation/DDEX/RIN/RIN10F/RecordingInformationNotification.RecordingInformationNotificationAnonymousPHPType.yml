@@ -1,0 +1,48 @@
+DDEX\RIN\RIN10F\RecordingInformationNotification\RecordingInformationNotificationAnonymousPHPType:
+    properties:
+        schemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fileHeader:
+            -
+                Valid: null
+        partyList:
+            -
+                Valid: null
+        musicalWorkList:
+            -
+                Valid: null
+        resourceList:
+            -
+                Valid: null
+        recordingComponentList:
+            -
+                Valid: null
+        projectList:
+            -
+                Valid: null
+        sessionList:
+            -
+                Valid: null
+        equipmentList:
+            -
+                Valid: null
+        dataCarrierList:
+            -
+                Valid: null
+        elementList:
+            -
+                Valid: null
+        fileList:
+            -
+                Valid: null
+        importedRinFiles:
+            -
+                Valid: null

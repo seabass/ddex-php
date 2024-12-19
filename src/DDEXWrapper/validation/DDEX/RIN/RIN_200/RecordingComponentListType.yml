@@ -1,0 +1,9 @@
+DDEX\RIN\RIN_200\RecordingComponentListType:
+    properties:
+        recordingComponent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

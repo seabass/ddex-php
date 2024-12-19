@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11M\PartyListType:
+    properties:
+        party:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

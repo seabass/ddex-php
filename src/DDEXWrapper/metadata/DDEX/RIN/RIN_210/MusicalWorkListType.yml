@@ -1,0 +1,24 @@
+DDEX\RIN\RIN_210\MusicalWorkListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        musicalWork:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWork
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWork
+                setter: setMusicalWork
+            xml_list:
+                inline: true
+                entry_name: MusicalWork
+            type: array<DDEX\RIN\RIN_210\MusicalWorkType>

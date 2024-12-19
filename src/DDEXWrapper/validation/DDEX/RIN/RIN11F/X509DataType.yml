@@ -1,0 +1,5 @@
+DDEX\RIN\RIN11F\X509DataType:
+    properties:
+        x509IssuerSerial:
+            -
+                Valid: null

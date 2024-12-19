@@ -1,0 +1,138 @@
+DDEX\RIN\RIN10F\ProjectType:
+    properties:
+        projectId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProjectId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProjectId
+                setter: setProjectId
+            type: array<DDEX\RIN\RIN10F\ProprietaryIdType>
+            xml_list:
+                inline: false
+                entry_name: ProprietaryId
+                skip_when_empty: true
+        projectReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ProjectReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProjectReference
+                setter: setProjectReference
+            type: string
+        mainArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: MainArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMainArtist
+                setter: setMainArtist
+            xml_list:
+                inline: true
+                entry_name: MainArtist
+            type: array<string>
+        projectArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: ProjectArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProjectArtist
+                setter: setProjectArtist
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: string
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\RIN\RIN10F\GenreType>
+        label:
+            expose: true
+            access_type: public_method
+            serialized_name: Label
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabel
+                setter: setLabel
+            xml_list:
+                inline: true
+                entry_name: Label
+            type: array<string>
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\RIN\RIN10F\EventDateType
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: DDEX\RIN\RIN10F\CommentType
+        contributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorReference
+                setter: setContributorReference
+            xml_list:
+                inline: true
+                entry_name: ContributorReference
+            type: array<DDEX\RIN\RIN10F\ProjectContributorReferenceType>
+        projectFileReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ProjectFileReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProjectFileReference
+                setter: setProjectFileReference
+            type: string

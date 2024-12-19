@@ -1,0 +1,76 @@
+DDEX\RIN\RIN_210\InstrumentType:
+    properties:
+        instrumentId:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentId
+                setter: setInstrumentId
+            type: array<DDEX\RIN\RIN_210\ProprietaryIdType>
+            xml_list:
+                inline: false
+                entry_name: ProprietaryId
+                skip_when_empty: true
+        instrumentReference:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentReference
+                setter: setInstrumentReference
+            type: string
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            type: string
+        manufacturerName:
+            expose: true
+            access_type: public_method
+            serialized_name: ManufacturerName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getManufacturerName
+                setter: setManufacturerName
+            type: DDEX\RIN\RIN_210\InstrumentManufacturerType
+        modelName:
+            expose: true
+            access_type: public_method
+            serialized_name: ModelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getModelName
+                setter: setModelName
+            type: DDEX\RIN\RIN_210\InstrumentModelType
+        nickname:
+            expose: true
+            access_type: public_method
+            serialized_name: Nickname
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNickname
+                setter: setNickname
+            type: string
+        serialNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SerialNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSerialNumber
+                setter: setSerialNumber
+            type: string

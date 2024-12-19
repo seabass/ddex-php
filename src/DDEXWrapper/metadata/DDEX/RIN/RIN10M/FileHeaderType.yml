@@ -1,0 +1,101 @@
+DDEX\RIN\RIN10M\FileHeaderType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        fileId:
+            expose: true
+            access_type: public_method
+            serialized_name: FileId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileId
+                setter: setFileId
+            type: string
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: FileName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            type: string
+        fileCreatedDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: FileCreatedDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileCreatedDateTime
+                setter: setFileCreatedDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        fileControlType:
+            expose: true
+            access_type: public_method
+            serialized_name: FileControlType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileControlType
+                setter: setFileControlType
+            type: string
+        systemType:
+            expose: true
+            access_type: public_method
+            serialized_name: SystemType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSystemType
+                setter: setSystemType
+            type: string
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: Version
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            type: string
+        fileCreator:
+            expose: true
+            access_type: public_method
+            serialized_name: FileCreator
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileCreator
+                setter: setFileCreator
+            type: DDEX\RIN\RIN10M\PartyDescriptorType
+        createdOnBehalfOf:
+            expose: true
+            access_type: public_method
+            serialized_name: CreatedOnBehalfOf
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreatedOnBehalfOf
+                setter: setCreatedOnBehalfOf
+            type: DDEX\RIN\RIN10M\PartyDescriptorType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: DDEX\RIN\RIN10M\DdexDigitalSignatureType

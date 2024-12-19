@@ -1,0 +1,18 @@
+DDEX\RIN\RIN_210\TransferSourceType:
+    properties:
+        transferDataCarrierReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~D[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        details:
+            -
+                Valid: null

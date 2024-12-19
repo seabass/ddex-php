@@ -1,0 +1,37 @@
+DDEX\RIN\RIN_200\EquipmentType:
+    properties:
+        equipmentId:
+            -
+                Valid: null
+        equipmentReference:
+            -
+                Regex:
+                    pattern: '~I[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        equipmentType:
+            -
+                Choice:
+                    choices:
+                        - Computer
+                        - Loudspeaker
+                        - Microphone
+                        - MusicalInstrument
+                        - Recorder
+                        - SignalProcessor
+                        - Software
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        equipmentName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

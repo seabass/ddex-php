@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11F\KeyInfoType:
+    properties:
+        x509Data:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

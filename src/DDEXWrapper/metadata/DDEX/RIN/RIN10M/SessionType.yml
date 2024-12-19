@@ -1,0 +1,194 @@
+DDEX\RIN\RIN10M\SessionType:
+    properties:
+        sessionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionReference
+                setter: setSessionReference
+            type: string
+        sessionType:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionType
+                setter: setSessionType
+            type: string
+        startDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDateTime
+                setter: setStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        endDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDateTime
+                setter: setEndDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        venueName:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueName
+                setter: setVenueName
+            type: string
+        venueAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueAddress
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueAddress
+                setter: setVenueAddress
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            type: DDEX\RIN\RIN10M\AllTerritoryCodeType
+        venueRoom:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueRoom
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueRoom
+                setter: setVenueRoom
+            type: string
+        isUnionSession:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUnionSession
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsUnionSession
+                setter: setIsUnionSession
+            type: bool
+        isAnalogSession:
+            expose: true
+            access_type: public_method
+            serialized_name: IsAnalogSession
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsAnalogSession
+                setter: setIsAnalogSession
+            type: bool
+        bitDepth:
+            expose: true
+            access_type: public_method
+            serialized_name: BitDepth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitDepth
+                setter: setBitDepth
+            type: int
+        samplingRate:
+            expose: true
+            access_type: public_method
+            serialized_name: SamplingRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSamplingRate
+                setter: setSamplingRate
+            type: float
+        timecode:
+            expose: true
+            access_type: public_method
+            serialized_name: Timecode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTimecode
+                setter: setTimecode
+            type: DDEX\RIN\RIN10M\TimecodeType
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: string
+        contributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorReference
+                setter: setContributorReference
+            xml_list:
+                inline: true
+                entry_name: ContributorReference
+            type: array<DDEX\RIN\RIN10M\SessionContributorReferenceType>
+        sessionProjectReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionProjectReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionProjectReference
+                setter: setSessionProjectReference
+            xml_list:
+                inline: true
+                entry_name: SessionProjectReference
+            type: array<string>
+        sessionSoundRecordingReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionSoundRecordingReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionSoundRecordingReference
+                setter: setSessionSoundRecordingReference
+            xml_list:
+                inline: true
+                entry_name: SessionSoundRecordingReference
+            type: array<string>
+        sessionRecordingComponentReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionRecordingComponentReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionRecordingComponentReference
+                setter: setSessionRecordingComponentReference
+            xml_list:
+                inline: true
+                entry_name: SessionRecordingComponentReference
+            type: array<string>

@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11F\ImportedRinFilesType:
+    properties:
+        incorporatedRecordingInformationNotificationFile:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11F\ElementListType:
+    properties:
+        element:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

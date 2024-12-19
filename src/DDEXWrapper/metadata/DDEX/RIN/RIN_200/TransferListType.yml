@@ -1,0 +1,15 @@
+DDEX\RIN\RIN_200\TransferListType:
+    properties:
+        transfer:
+            expose: true
+            access_type: public_method
+            serialized_name: Transfer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransfer
+                setter: setTransfer
+            xml_list:
+                inline: true
+                entry_name: Transfer
+            type: array<DDEX\RIN\RIN_200\TransferType>

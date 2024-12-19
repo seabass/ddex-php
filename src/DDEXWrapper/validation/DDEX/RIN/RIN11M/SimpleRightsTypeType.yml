@@ -1,0 +1,15 @@
+DDEX\RIN\RIN11M\SimpleRightsTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MakeAvailableRight
+                        - MechanicalRight
+                        - PerformingRight
+                        - PrintRight
+                        - ReproductionRight
+                        - SynchronizationRight
+                        - UserDefined
+                    groups:
+                        - xsd_rules

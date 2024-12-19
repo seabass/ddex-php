@@ -1,0 +1,26 @@
+DDEX\RIN\RIN_210\AffiliationType:
+    properties:
+        partyAffiliateReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        type:
+            -
+                Choice:
+                    choices:
+                        - MusicLicensingCompany
+                        - MusicPublisher
+                        - MusicRightsSociety
+                        - RecordCompany
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        validityPeriod:
+            -
+                Valid: null

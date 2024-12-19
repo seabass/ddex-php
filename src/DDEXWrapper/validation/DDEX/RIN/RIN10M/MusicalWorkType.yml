@@ -1,0 +1,21 @@
+DDEX\RIN\RIN10M\MusicalWorkType:
+    properties:
+        musicalWorkId:
+            -
+                Valid: null
+        musicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        title:
+            -
+                Valid: null
+        contributorReference:
+            -
+                Valid: null

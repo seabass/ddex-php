@@ -1,0 +1,32 @@
+DDEX\RIN\RIN10F\TimecodeType:
+    properties:
+        timecodeType:
+            expose: true
+            access_type: public_method
+            serialized_name: TimecodeType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTimecodeType
+                setter: setTimecodeType
+            type: string
+        frameRate:
+            expose: true
+            access_type: public_method
+            serialized_name: FrameRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFrameRate
+                setter: setFrameRate
+            type: string
+        isDropFrame:
+            expose: true
+            access_type: public_method
+            serialized_name: IsDropFrame
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsDropFrame
+                setter: setIsDropFrame
+            type: bool

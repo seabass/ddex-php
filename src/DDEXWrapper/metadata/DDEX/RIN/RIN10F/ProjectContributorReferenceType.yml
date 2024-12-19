@@ -1,0 +1,52 @@
+DDEX\RIN\RIN10F\ProjectContributorReferenceType:
+    properties:
+        projectContributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ProjectContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProjectContributorReference
+                setter: setProjectContributorReference
+            type: string
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            type: DDEX\RIN\RIN10F\StudioRoleType
+        isFeaturedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFeaturedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFeaturedArtist
+                setter: setIsFeaturedArtist
+            type: bool
+        isCreditedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCreditedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCreditedArtist
+                setter: setIsCreditedArtist
+            type: bool
+        isPrivateArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPrivateArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPrivateArtist
+                setter: setIsPrivateArtist
+            type: bool

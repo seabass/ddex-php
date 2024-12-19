@@ -1,0 +1,285 @@
+DDEX\RIN\RIN11F\DataCarrierType:
+    properties:
+        dataCarrierId:
+            -
+                Valid: null
+        dataCarrierReference:
+            -
+                Regex:
+                    pattern: '~D[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        dataCarrierType:
+            -
+                Choice:
+                    choices:
+                        - 1InchAnalogAudioTape_10.5InchReel
+                        - 1InchAnalogAudioTape_7InchReel
+                        - 1InchAnalogAudioTape_UnspecifiedReelSize
+                        - 1InchAnalogVideoTape_LargeReel
+                        - 1InchAnalogVideoTape_MediumReel
+                        - 1InchAnalogVideoTape_SmallReel
+                        - 1InchAnalogVideoTape_UnspecifiedReelSize
+                        - 1InchDigitalAudioTape_10.5InchReel
+                        - 1InchDigitalAudioTape_7InchReel
+                        - 1InchDigitalAudioTape_UnspecifiedReelSize
+                        - 1/2InchAnalogAudioTape_10.5InchReel
+                        - 1/2InchAnalogAudioTape_7InchReel
+                        - 1/2InchAnalogAudioTape_UnspecifiedReelSize
+                        - 1/2InchDigitalAudioTape_10.5InchReel
+                        - 1/2InchDigitalAudioTape_7InchReel
+                        - 1/2InchDigitalAudioTape_UnspecifiedReelSize
+                        - 1/2InchDigitalVideoTape_LargeCassette
+                        - 1/2InchDigitalVideoTape_MediumCassette
+                        - 1/2InchDigitalVideoTape_SmallCassette
+                        - 1/4InchAnalogAudioTape_10.5InchReel
+                        - 1/4InchAnalogAudioTape_7InchReel
+                        - 1/4InchAnalogAudioTape_UnspecifiedReelSize
+                        - 1/4InchDigitalAudioTape_10.5InchReel
+                        - 1/4InchDigitalAudioTape_7InchReel
+                        - 1/4InchDigitalAudioTape_UnspecifiedReelSize
+                        - 1/4InchDigitalVideoTape_ExtraLargeCassette
+                        - 1/4InchDigitalVideoTape_LargeCassette
+                        - 1/4InchDigitalVideoTape_MediumCassette
+                        - 1/4InchDigitalVideoTape_SmallCassette
+                        - 16mmSepmagAnalogAudioFilmReel
+                        - 16mmPictureAnalogVideoFilmReel
+                        - 2InchAnalogAudioTape_10.5InchReel
+                        - 2InchAnalogAudioTape_12InchReel
+                        - 2InchAnalogAudioTape_14InchReel
+                        - 2InchAnalogAudioTape_UnspecifiedReelSize
+                        - 2InchAnalogVideoTape_LargeReel
+                        - 2InchAnalogVideoTape_MediumReel
+                        - 2InchAnalogVideoTape_SmallReel
+                        - 2InchAnalogVideoTape_UnspecifiedReelSize
+                        - 3/4InchDigitalVideoTape_LargeCassette
+                        - 3/4InchDigitalVideoTape_MediumCassette
+                        - 3/4InchDigitalVideoTape_SmallCassette
+                        - 35mmSepmagAnalogAudioFilmReel
+                        - 35mmPictureAnalogVideoFilmReel
+                        - 8mmPictureAnalogVideoFilmReel
+                        - AIT-1DigitalDataTape
+                        - AIT-2DigitalDataTape
+                        - AIT-3DigitalDataTape
+                        - AIT-3EXDigitalDataTape
+                        - AIT-4DigitalDataTape
+                        - AIT-5DigitalDataTape
+                        - BernoulliDisk_20MB
+                        - BetacamSpAnalogVideoTape_LargeCassette
+                        - BetacamSpAnalogVideoTape_SmallCassette
+                        - BetacamSxDigitalVideoTape_LargeCassette
+                        - BetacamSxDigitalVideoTape_SmallCassette
+                        - BetacamAnalogVideoTape_LargeCassette
+                        - BetacamAnalogVideoTape_SmallCassette
+                        - Binder_1InchRing
+                        - Binder_1.5InchRing
+                        - Binder_0.5InchRing
+                        - Binder_2InchRing
+                        - BluRayRecordableOpticalDiskSingleSided_DoubleLayer_12cm
+                        - BluRayRecordableOpticalDiskSingleSided_SingleLayer_12cm
+                        - CdRRecordableOpticalDiskSingleSided_SingleLayer_12cm
+                        - CdRomDigitalDataDisk
+                        - CdIInteractiveMultimediaDigitalDataDisk
+                        - CompactCassetteAnalogAudioTape
+                        - DAT160DigitalStorageTape
+                        - DAT320DigitalStorageTape
+                        - DAT72DigitalStorageTape
+                        - DDS-1DigitalDataTape
+                        - DDS-2DigitalDataTape
+                        - DDS-3DigitalDataTape
+                        - DDS-4DigitalDataTape
+                        - DLT-IIIDigitalDataTape
+                        - DLT-IVDigitalDataTape
+                        - DvDigitalVideoTape_MiniCassette
+                        - DvDigitalVideoTape_NormalCassette
+                        - DvcamDigitalVideoTape
+                        - Dvcpro50DigitalVideoTape_LargeCassette
+                        - Dvcpro50DigitalVideoTape_MediumCassette
+                        - Dvcpro50DigitalVideoTape_SmallCassette
+                        - DvcproHdDigitalVideoTape_ExtraLargeCassette
+                        - DvcproHdDigitalVideoTape_LargeCassette
+                        - Dvd+RRecordableOpticalDiskSingleSided_DoubleLayer_12cm
+                        - Dvd+RRecordableOpticalDiskSingleSided_SingleLayer_12cm
+                        - Dvd+RwRewritableOpticalDiskSingleSided_SingleLayer_12cm
+                        - DvdRRecordableOpticalDiskSingleSided_DoubleLayer_12cm
+                        - DvdRRecordableOpticalDiskSingleSided_SingleLayer_12cm
+                        - DvdRamRecordableOpticalDiskDoubleSided
+                        - DvdRamRecordableOpticalDiskSingleSided
+                        - DigitalBetacamDigitalVideoTape_LargeCassette
+                        - DigitalBetacamDigitalVideoTape_SmallCassette
+                        - DigitalAudioTape
+                        - DigitalCompactCassette
+                        - DigitalSDigitalVideoTape_CompactCassette
+                        - DigitalSDigitalVideoTape_StandardCassette
+                        - DoubleSidedDoubleDensityFloppyDigitalDataDisk_3.5Inch
+                        - DoubleSidedDoubleDensityFloppyDigitalDataDisk_5.25Inch
+                        - Envelope
+                        - Exabyte8500SeriesDigitalDataTape
+                        - Exabyte8700SeriesDigitalDataTape
+                        - Exabyte8900SeriesDigitalDataTape
+                        - ExabyteMammothDigitalDataTape
+                        - FileSystem
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_10Inch
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_12Inch
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_14Inch
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_16Inch
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_7Inch
+                        - GlassBasedAcetatePhonographAnalogAudioDisk_UnspecifiedSize
+                        - HdDvdRecordableOpticalDiskDoubleSided_DoubleLayer_12cm
+                        - HdDvdRecordableOpticalDiskDoubleSided_DoubleLayer_8cm
+                        - HdDvdRecordableOpticalDiskDoubleSided_SingleLayer_12cm
+                        - HdDvdRecordableOpticalDiskDoubleSided_SingleLayer_8cm
+                        - HdDvdRecordableOpticalDiskSingleSided_DoubleLayer_12cm
+                        - HdDvdRecordableOpticalDiskSingleSided_DoubleLayer_8cm
+                        - HdDvdRecordableOpticalDiskSingleSided_SingleLayer_12cm
+                        - HdDvdRecordableOpticalDiskSingleSided_SingleLayer_8cm
+                        - HdcamSrDigitalVideoTape_LargeCassette
+                        - HdcamSrDigitalVideoTape_SmallCassette
+                        - HdcamDigitalVideoTape
+                        - HdvHdtvDigitalVideoTape
+                        - HardDiskDrive_ExternalUsb2.0Interface
+                        - HardDiskDrive_ExternalUsb3.0Interface
+                        - HardDiskDrive_ExternalUsbInterface
+                        - HardDiskDrive_ExternalFirewireInterface
+                        - HardDiskDrive_ExternalFirewire/UsbInterface
+                        - HardDiskDrive_InternalRibbonCableInterface
+                        - HardDiskDrive_UnspecifiedInterface
+                        - Hi-8AnalogVideoTape
+                        - IdeAtaHardDiskDrive_ExternalUsb2.0Interface
+                        - IdeAtaHardDiskDrive_ExternalUsb3.0Interface
+                        - IdeAtaHardDiskDrive_ExternalUsbInterface
+                        - IdeAtaHardDiskDrive_ExternalFirewireInterface
+                        - IdeAtaHardDiskDrive_ExternalFirewire/UsbInterface
+                        - IdeAtaHardDiskDrive_ExternalFirewire/Usb/SataInterface
+                        - IdeAtaHardDiskDrive_InternalRibbonCableInterface
+                        - IdeAtaHardDiskDrive_UnspecifiedExternalInterface
+                        - JazDigitalDataDisk
+                        - LTO-1UltriumDigitalDataTape
+                        - LTO-2UltriumDigitalDataTape
+                        - LTO-3UltriumDigitalDataTape
+                        - LTO-4UltriumDigitalDataTape
+                        - LTO-5UltriumDigitalDataTape
+                        - LTO-6UltriumDigitalDataTape
+                        - LTO-7UltriumDigitalDataTape
+                        - LacquerPhonographAnalogAudioDisk_10Inch
+                        - LacquerPhonographAnalogAudioDisk_12Inch
+                        - LacquerPhonographAnalogAudioDisk_14Inch
+                        - LacquerPhonographAnalogAudioDisk_16Inch
+                        - LacquerPhonographAnalogAudioDisk_7Inch
+                        - LacquerPhonographAnalogAudioDisk_UnspecifiedSize
+                        - LaserdiscOpticalDiskSingleSided
+                        - MiniDisk
+                        - MoDisk_1.3GB
+                        - MoDisk_1200MB
+                        - MoDisk_2.6GB
+                        - MoDisk_540MB
+                        - MoDisk_650MB
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_10Inch
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_12Inch
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_14Inch
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_16Inch
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_7Inch
+                        - MetalBasedAcetatePhonographAnalogAudioDisk_UnspecifiedSize
+                        - PreMasterCD
+                        - S-AtaHardDiskDrive_ExternalUsb2.0Interface
+                        - S-AtaHardDiskDrive_ExternalUsb3.0Interface
+                        - S-AtaHardDiskDrive_ExternalFirewireInterface
+                        - S-AtaHardDiskDrive_InternalRibbonCableInterface
+                        - S-AtaHardDiskDrive_UnspecifiedExternalInterface
+                        - S-VhsAnalogVideoTape_CompactCassette
+                        - S-VhsAnalogVideoTape_StandardCassette
+                        - ScsiIHardDiskDrive_ExternalDSubInterface
+                        - ScsiIHardDiskDrive_InternalRibbonCableInterface
+                        - ScsiIHardDiskDrive_UnspecifiedExternalInterface
+                        - ScsiIIHardDiskDrive_External50PinInterface
+                        - ScsiIIHardDiskDrive_External68PinInterface
+                        - ScsiIIHardDiskDrive_ExternalCentronixInterface
+                        - ScsiIIHardDiskDrive_ExternalDSubInterface
+                        - ScsiIIHardDiskDrive_InternalRibbonCableInterface
+                        - ScsiIIILvdHardDiskDrive_External50PinInterface
+                        - ScsiIIILvdHardDiskDrive_External68PinInterface
+                        - ScsiIIILvdHardDiskDrive_External80PinInterface
+                        - ScsiIIILvdHardDiskDrive_InternalRibbonCableInterface
+                        - ShellacPhonographAnalogAudioDisk_10Inch
+                        - ShellacPhonographAnalogAudioDisk_12Inch
+                        - ShellacPhonographAnalogAudioDisk_14Inch
+                        - ShellacPhonographAnalogAudioDisk_16Inch
+                        - ShellacPhonographAnalogAudioDisk_7Inch
+                        - ShellacPhonographAnalogAudioDisk_UnspecifiedSize
+                        - SingleSidedDoubleDensityFloppyDigitalDataDisk_3.5Inch
+                        - SingleSidedSingleDensityFloppyDigitalDataDisk_3.5Inch
+                        - SingleSidedSingleDensityFloppyDigitalDataDisk_5.25Inch
+                        - SingleSidedSingleDensityFloppyDigitalDataDisk_8Inch
+                        - SolidStateMemoryStorageCards
+                        - StorageBox_1.2CubicFeet
+                        - StorageBox_2.0CubicFeet
+                        - StorageBox_UnspecifiedDimensions
+                        - StorageContainer
+                        - StorageContainer_1.2CubicFeet
+                        - StorageContainer_2.0CubicFeet
+                        - Super16mmPictureAnalogVideoFilmReel
+                        - Super8mmPictureAnalogVideoFilmReel
+                        - UMaticSpAnalogVideoTape_SmallCassette
+                        - UMaticAnalogVideoTape_LargeCassette
+                        - UMaticAnalogVideoTape_SmallCassette
+                        - VhsAnalogVideoTape_CompactCassette
+                        - VhsAnalogVideoTape_StandardCassette
+                        - VinylPhonographAnalogAudioDisk_10Inch
+                        - VinylPhonographAnalogAudioDisk_12Inch
+                        - VinylPhonographAnalogAudioDisk_14Inch
+                        - VinylPhonographAnalogAudioDisk_16Inch
+                        - VinylPhonographAnalogAudioDisk_7Inch
+                        - VinylPhonographAnalogAudioDisk_UnspecifiedSize
+                        - VXA-1DigitalDataTape
+                        - VXA-2DigitalDataTape
+                        - VXA-3DigitalDataTape
+                        - WaxCylinderPhonogramAnalogAudioDisk
+                        - XdcamRewritableOpticalDisk
+                        - ZipDigitalDataDisk
+                        - StorageBox
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        title:
+            -
+                Valid: null
+        numberOfDataCarriersInSet:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        dataCarrierOfSet:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        dataCarrierProjectReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~J[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        dataCarrierFileReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~F[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        dataCarrierContent:
+            -
+                Valid: null

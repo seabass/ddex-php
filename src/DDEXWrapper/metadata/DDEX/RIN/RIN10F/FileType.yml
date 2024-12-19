@@ -1,0 +1,96 @@
+DDEX\RIN\RIN10F\FileType:
+    properties:
+        fileId:
+            expose: true
+            access_type: public_method
+            serialized_name: FileId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileId
+                setter: setFileId
+            type: array<DDEX\RIN\RIN10F\ProprietaryIdType>
+            xml_list:
+                inline: false
+                entry_name: ProprietaryId
+                skip_when_empty: true
+        fileReference:
+            expose: true
+            access_type: public_method
+            serialized_name: FileReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileReference
+                setter: setFileReference
+            type: string
+        fileType:
+            expose: true
+            access_type: public_method
+            serialized_name: FileType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileType
+                setter: setFileType
+            type: string
+        uRI:
+            expose: true
+            access_type: public_method
+            serialized_name: URI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURI
+                setter: setURI
+            type: string
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\RIN\RIN10F\DetailedHashSumType
+        size:
+            expose: true
+            access_type: public_method
+            serialized_name: Size
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSize
+                setter: setSize
+            type: float
+        bitDepth:
+            expose: true
+            access_type: public_method
+            serialized_name: BitDepth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitDepth
+                setter: setBitDepth
+            type: int
+        samplingRate:
+            expose: true
+            access_type: public_method
+            serialized_name: SamplingRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSamplingRate
+                setter: setSamplingRate
+            type: float
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: DDEX\RIN\RIN10F\CommentType

@@ -1,0 +1,8 @@
+DDEX\RIN\RIN10M\PartyDescriptorType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

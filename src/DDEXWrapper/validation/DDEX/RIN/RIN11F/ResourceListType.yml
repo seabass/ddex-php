@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11F\ResourceListType:
+    properties:
+        soundRecording:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

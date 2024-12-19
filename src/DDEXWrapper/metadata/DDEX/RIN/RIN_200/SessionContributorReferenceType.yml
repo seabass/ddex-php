@@ -1,0 +1,113 @@
+DDEX\RIN\RIN_200\SessionContributorReferenceType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        sessionContributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SessionContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSessionContributorReference
+                setter: setSessionContributorReference
+            type: string
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+            type: array<DDEX\RIN\RIN_200\ResourceContributorRoleType>
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            xml_list:
+                inline: true
+                entry_name: InstrumentType
+            type: array<DDEX\RIN\RIN_200\InstrumentTypeType>
+        contributorEquipmentReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorEquipmentReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorEquipmentReference
+                setter: setContributorEquipmentReference
+            xml_list:
+                inline: true
+                entry_name: ContributorEquipmentReference
+            type: array<DDEX\RIN\RIN_200\EquipmentReferenceType>
+        displayCredits:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayCredits
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayCredits
+                setter: setDisplayCredits
+            xml_list:
+                inline: true
+                entry_name: DisplayCredits
+            type: array<DDEX\RIN\RIN_200\DisplayCreditsType>
+        hasMadeFeaturedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeFeaturedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeFeaturedContribution
+                setter: setHasMadeFeaturedContribution
+            type: bool
+        hasMadeContractedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeContractedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeContractedContribution
+                setter: setHasMadeContractedContribution
+            type: bool
+        isCreditedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCreditedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCreditedArtist
+                setter: setIsCreditedArtist
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: float

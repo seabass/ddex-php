@@ -1,0 +1,9 @@
+DDEX\RIN\RIN10M\GoverningAgreementTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                    groups:
+                        - xsd_rules

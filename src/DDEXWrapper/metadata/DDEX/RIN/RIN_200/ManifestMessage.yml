@@ -1,0 +1,7 @@
+DDEX\RIN\RIN_200\ManifestMessage:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+        dsr: 'http://ddex.net/xml/dsr/43D1'
+        rin: 'http://ddex.net/xml/rin/21'
+    xml_root_name: 'ern:ManifestMessage'
+    xml_root_namespace: 'http://ddex.net/xml/rin/20'

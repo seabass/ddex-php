@@ -1,0 +1,198 @@
+DDEX\RIN\RIN10F\FileType:
+    properties:
+        fileId:
+            -
+                Valid: null
+        fileReference:
+            -
+                Regex:
+                    pattern: '~F[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fileType:
+            -
+                Choice:
+                    choices:
+                        - 3DmFile
+                        - 3G2File
+                        - 3GpFile
+                        - 7ZFile
+                        - 8BiFile
+                        - AacFile
+                        - AccdbFile
+                        - AifFile
+                        - AiFile
+                        - AnaFile
+                        - AppFile
+                        - AsfFile
+                        - AspFile
+                        - AsxFile
+                        - AudFile
+                        - AviFile
+                        - BakFile
+                        - BatFile
+                        - BinFile
+                        - BmpFile
+                        - BtFile
+                        - BwfFile
+                        - CabFile
+                        - CerFile
+                        - CfgFile
+                        - CFile
+                        - CgiFile
+                        - ClassFile
+                        - ComFile
+                        - CplFile
+                        - CppFile
+                        - CsFile
+                        - CsrFile
+                        - CssFile
+                        - CsvFile
+                        - CurFile
+                        - DatFile
+                        - DbFile
+                        - DbxFile
+                        - DebFile
+                        - DllFile
+                        - DmgFile
+                        - DmpFile
+                        - DocFile
+                        - DocxFile
+                        - DrvFile
+                        - DrwFile
+                        - DsdFile
+                        - DtdFile
+                        - DvFile
+                        - DwgFile
+                        - DxfFile
+                        - EfxFile
+                        - EpsFile
+                        - ExeFile
+                        - FlaFile
+                        - FlvFile
+                        - FntFile
+                        - FonFile
+                        - GadgetFile
+                        - GamFile
+                        - GhoFile
+                        - GifFile
+                        - GpxFile
+                        - GzFile
+                        - HqxFile
+                        - HtmFile
+                        - HtmlFile
+                        - IffFile
+                        - InddFile
+                        - IniFile
+                        - IsoFile
+                        - JarFile
+                        - JavaFile
+                        - JpgFile
+                        - JsFile
+                        - JspFile
+                        - KeychainFile
+                        - KeyFile
+                        - KmlFile
+                        - LnkFile
+                        - LogFile
+                        - M3UFile
+                        - MaxFile
+                        - MdbFile
+                        - MFile
+                        - MidFile
+                        - MimFile
+                        - MovFile
+                        - Mp3File
+                        - Mp4File
+                        - MpaFile
+                        - MpgFile
+                        - MsgFile
+                        - NesFile
+                        - NeuFile
+                        - OriFile
+                        - OtfFile
+                        - PagesFile
+                        - PcmFile
+                        - PctFile
+                        - PdbFile
+                        - PdfFile
+                        - PhpFile
+                        - PifFile
+                        - PkgFile
+                        - PlFile
+                        - PlnFile
+                        - PluginFile
+                        - PngFile
+                        - PpsFile
+                        - PptFile
+                        - PptxFile
+                        - PrfFile
+                        - PsdFile
+                        - PsFile
+                        - PspimageFile
+                        - PtsFile
+                        - QxdFile
+                        - QxpFile
+                        - RaFile
+                        - RarFile
+                        - RelsFile
+                        - RmFile
+                        - RomFile
+                        - RssFile
+                        - RtfFile
+                        - SavFile
+                        - Sd2File
+                        - SdfFile
+                        - SitFile
+                        - SitxFile
+                        - SqlFile
+                        - SvgFile
+                        - SwfFile
+                        - SysFile
+                        - TarFile
+                        - TarGzFile
+                        - ThmFile
+                        - TifFile
+                        - TmpFile
+                        - ToastFile
+                        - TtfFile
+                        - TxtFile
+                        - UueFile
+                        - VbFile
+                        - VcdFile
+                        - VcfFile
+                        - VobFile
+                        - WavFile
+                        - WksFile
+                        - WmaFile
+                        - WmvFile
+                        - WpdFile
+                        - WpsFile
+                        - WsfFile
+                        - XhtmlFile
+                        - XllFile
+                        - XlsFile
+                        - XlsxFile
+                        - XmlFile
+                        - YuvFile
+                        - ZipFile
+                        - ZipxFile
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null
+        bitDepth:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

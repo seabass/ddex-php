@@ -1,0 +1,54 @@
+DDEX\RIN\RIN_210\MusicalWorkContributorRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Adapter
+                        - Architect
+                        - Arranger
+                        - Author
+                        - AuthorInQuotations
+                        - AuthorOfAfterword
+                        - Compiler
+                        - Composer
+                        - ComposerLyricist
+                        - Conceptor
+                        - Creator
+                        - DialogueAuthor
+                        - Dissertant
+                        - Engraver
+                        - Etcher
+                        - Journalist
+                        - LandscapeArchitect
+                        - Librettist
+                        - Lithographer
+                        - Lyricist
+                        - MetalEngraver
+                        - NonLyricAuthor
+                        - PlateMaker
+                        - Playwright
+                        - Reporter
+                        - Reviewer
+                        - Rubricator
+                        - ScreenplayAuthor
+                        - Sculptor
+                        - SubArranger
+                        - SubLyricist
+                        - Translator
+                        - Woodcutter
+                        - WoodEngraver
+                        - WriterOfAccompanyingMaterial
+                        - BookPublisher
+                        - CopyrightClaimant
+                        - CopyrightHolder
+                        - MusicPublisher
+                        - NewspaperPublisher
+                        - OriginalPublisher
+                        - PeriodicalPublisher
+                        - SubPublisher
+                        - SubstitutedPublisher
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

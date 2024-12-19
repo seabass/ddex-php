@@ -1,0 +1,10 @@
+DDEX\RIN\RIN_200\FileStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - FileOK
+                        - UserDefined
+                    groups:
+                        - xsd_rules

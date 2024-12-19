@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11F\MusicalWorkListType:
+    properties:
+        musicalWork:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

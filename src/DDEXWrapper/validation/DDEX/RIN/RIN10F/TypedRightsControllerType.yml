@@ -1,0 +1,32 @@
+DDEX\RIN\RIN10F\TypedRightsControllerType:
+    properties:
+        partyPartyReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rightsControllerRole:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - AdministratingRecordCompany
+                                    - RightsAdministrator
+                                    - RightsController
+                                    - RoyaltyAdministrator
+                                    - Unknown
+                    groups:
+                        - xsd_rules
+        validityPeriod:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules

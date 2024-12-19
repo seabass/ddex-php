@@ -1,0 +1,59 @@
+DDEX\RIN\RIN10F\ProjectType:
+    properties:
+        projectId:
+            -
+                Valid: null
+        projectReference:
+            -
+                Regex:
+                    pattern: '~J[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        mainArtist:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        genre:
+            -
+                Valid: null
+        label:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        status:
+            -
+                Choice:
+                    choices:
+                        - AssetsNeeded
+                        - AwaitingMaterials
+                        - BackedUp
+                        - Canceled
+                        - Closed
+                        - Completed
+                        - InWork
+                        - NotStarted
+                    groups:
+                        - xsd_rules
+        contributorReference:
+            -
+                Valid: null
+        projectFileReference:
+            -
+                Regex:
+                    pattern: '~F[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

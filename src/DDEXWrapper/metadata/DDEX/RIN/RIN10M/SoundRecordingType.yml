@@ -1,0 +1,199 @@
+DDEX\RIN\RIN10M\SoundRecordingType:
+    properties:
+        soundRecordingType:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingType
+                setter: setSoundRecordingType
+            type: DDEX\RIN\RIN10M\SoundRecordingTypeType
+        mainArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: MainArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMainArtist
+                setter: setMainArtist
+            xml_list:
+                inline: true
+                entry_name: MainArtist
+            type: array<string>
+        soundRecordingId:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingId
+                setter: setSoundRecordingId
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingId
+            type: array<DDEX\RIN\RIN10M\SoundRecordingIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RIN\RIN10M\TitleType>
+        soundRecordingVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingVersion
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingVersion
+                setter: setSoundRecordingVersion
+            type: string
+        rightsController:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsController
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsController
+                setter: setRightsController
+            xml_list:
+                inline: true
+                entry_name: RightsController
+            type: array<DDEX\RIN\RIN10M\TypedRightsControllerType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            type: DDEX\RIN\RIN10M\PLineWithDefaultType
+        parentalWarningType:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentalWarningType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParentalWarningType
+                setter: setParentalWarningType
+            type: DDEX\RIN\RIN10M\ParentalWarningTypeWithTerritoryType
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\RIN\RIN10M\GenreWithTerritoryType>
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: string
+        soundRecordingMusicalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingMusicalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingMusicalWorkReference
+                setter: setSoundRecordingMusicalWorkReference
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingMusicalWorkReference
+            type: array<string>
+        contributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorReference
+                setter: setContributorReference
+            xml_list:
+                inline: true
+                entry_name: ContributorReference
+            type: array<DDEX\RIN\RIN10M\SoundRecordingContributorReferenceType>
+        soundRecordingProjectReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingProjectReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingProjectReference
+                setter: setSoundRecordingProjectReference
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingProjectReference
+            type: array<string>
+        soundRecordingSessionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingSessionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingSessionReference
+                setter: setSoundRecordingSessionReference
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingSessionReference
+            type: array<string>
+        isMedley:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMedley
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsMedley
+                setter: setIsMedley
+            type: bool

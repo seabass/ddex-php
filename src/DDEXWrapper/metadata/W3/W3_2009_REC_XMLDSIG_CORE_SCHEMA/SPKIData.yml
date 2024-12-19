@@ -1,0 +1,7 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\SPKIData:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+        dsr: 'http://ddex.net/xml/dsr/43D1'
+        rin: 'http://ddex.net/xml/rin/21'
+    xml_root_name: 'ern:SPKIData'
+    xml_root_namespace: 'http://www.w3.org/2000/09/xmldsig#'

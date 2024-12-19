@@ -1,0 +1,39 @@
+DDEX\RIN\RIN_200\ProjectType:
+    properties:
+        projectId:
+            -
+                Valid: null
+        projectReference:
+            -
+                Regex:
+                    pattern: '~J[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        projectLabelReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        contributor:
+            -
+                Valid: null
+        projectFileReference:
+            -
+                Regex:
+                    pattern: '~F[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

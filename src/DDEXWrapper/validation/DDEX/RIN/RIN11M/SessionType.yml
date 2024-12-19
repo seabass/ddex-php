@@ -1,0 +1,83 @@
+DDEX\RIN\RIN11M\SessionType:
+    properties:
+        sessionReference:
+            -
+                Regex:
+                    pattern: '~O[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        sessionType:
+            -
+                Choice:
+                    choices:
+                        - ArtistVocals
+                        - Demo
+                        - DigitalEditing
+                        - Editing
+                        - LivePerformance
+                        - Mastering
+                        - Mixing
+                        - Overdub
+                        - PreProduction
+                        - Preservation
+                        - Production
+                        - Project
+                        - Remixing
+                        - Tracking
+                        - Transfer
+                        - TransfersAndSafeties
+                        - Vocal
+                        - Recording
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        venue:
+            -
+                Valid: null
+        bitDepth:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        timecode:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        sessionProjectReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~J[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        sessionSoundRecordingReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        sessionRecordingComponentReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~K[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,9 @@
+DDEX\RIN\RIN_210\TransferListType:
+    properties:
+        transfer:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

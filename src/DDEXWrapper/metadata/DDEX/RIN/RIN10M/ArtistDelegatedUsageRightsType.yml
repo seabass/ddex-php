@@ -1,0 +1,61 @@
+DDEX\RIN\RIN10M\ArtistDelegatedUsageRightsType:
+    properties:
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\RIN\RIN10M\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\RIN\RIN10M\UserInterfaceTypeType>
+        periodOfRightsDelegation:
+            expose: true
+            access_type: public_method
+            serialized_name: PeriodOfRightsDelegation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPeriodOfRightsDelegation
+                setter: setPeriodOfRightsDelegation
+            type: DDEX\RIN\RIN10M\PeriodType
+        territoryOfRightsDelegation:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfRightsDelegation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfRightsDelegation
+                setter: setTerritoryOfRightsDelegation
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfRightsDelegation
+            type: array<DDEX\RIN\RIN10M\CurrentTerritoryCodeType>
+        membershipType:
+            expose: true
+            access_type: public_method
+            serialized_name: MembershipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMembershipType
+                setter: setMembershipType
+            type: string

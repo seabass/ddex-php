@@ -1,0 +1,83 @@
+DDEX\RIN\RIN10M\MusicalWorkType:
+    properties:
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkId
+            type: array<DDEX\RIN\RIN10M\MusicalWorkIdType>
+        musicalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkReference
+                setter: setMusicalWorkReference
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\RIN\RIN10M\TitleType>
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: string
+        musicalWorkType:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkType
+                setter: setMusicalWorkType
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkType
+            type: array<DDEX\RIN\RIN10M\MusicalWorkTypeType>
+        contributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorReference
+                setter: setContributorReference
+            xml_list:
+                inline: true
+                entry_name: ContributorReference
+            type: array<DDEX\RIN\RIN10M\MusicalWorkContributorReferenceType>

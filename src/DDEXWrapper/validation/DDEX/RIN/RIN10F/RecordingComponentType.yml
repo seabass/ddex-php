@@ -1,0 +1,34 @@
+DDEX\RIN\RIN10F\RecordingComponentType:
+    properties:
+        recordingComponentId:
+            -
+                Valid: null
+        recordingComponentReference:
+            -
+                Regex:
+                    pattern: '~K[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        sequenceNumber:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        title:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        contributorReference:
+            -
+                Valid: null
+        recordingComponentFileReference:
+            -
+                Regex:
+                    pattern: '~F[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

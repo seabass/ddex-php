@@ -1,0 +1,12 @@
+DDEX\RIN\RIN10M\ProjectContributorReferenceType:
+    properties:
+        projectContributorReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

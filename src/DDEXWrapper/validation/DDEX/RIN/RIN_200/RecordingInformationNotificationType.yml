@@ -1,0 +1,60 @@
+DDEX\RIN\RIN_200\RecordingInformationNotificationType:
+    properties:
+        schemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        partyList:
+            -
+                Valid: null
+        musicalWorkList:
+            -
+                Valid: null
+        resourceList:
+            -
+                Valid: null
+        recordingComponentList:
+            -
+                Valid: null
+        projectList:
+            -
+                Valid: null
+        sessionList:
+            -
+                Valid: null
+        equipmentList:
+            -
+                Valid: null
+        dataCarrierList:
+            -
+                Valid: null
+        elementList:
+            -
+                Valid: null
+        fileList:
+            -
+                Valid: null
+        transferList:
+            -
+                Valid: null
+        importedRinFiles:
+            -
+                Valid: null

@@ -1,0 +1,18 @@
+DDEX\RIN\RIN_200\StatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AssetsNeeded
+                        - AwaitingMaterials
+                        - BackedUp
+                        - Canceled
+                        - Closed
+                        - Completed
+                        - InWork
+                        - NotStarted
+                        - UserDefined
+                        - Verified
+                    groups:
+                        - xsd_rules

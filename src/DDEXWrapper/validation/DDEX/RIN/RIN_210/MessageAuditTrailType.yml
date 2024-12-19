@@ -1,0 +1,9 @@
+DDEX\RIN\RIN_210\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

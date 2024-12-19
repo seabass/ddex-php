@@ -1,0 +1,15 @@
+DDEX\RIN\RIN10M\SessionListType:
+    properties:
+        session:
+            expose: true
+            access_type: public_method
+            serialized_name: Session
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSession
+                setter: setSession
+            xml_list:
+                inline: true
+                entry_name: Session
+            type: array<DDEX\RIN\RIN10M\SessionType>

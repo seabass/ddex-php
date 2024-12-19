@@ -1,0 +1,8 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\KeyValueTypeType:
+    properties:
+        dSAKeyValue:
+            -
+                Valid: null
+        rSAKeyValue:
+            -
+                Valid: null

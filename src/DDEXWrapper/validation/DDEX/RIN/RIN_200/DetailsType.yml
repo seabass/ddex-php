@@ -1,0 +1,56 @@
+DDEX\RIN\RIN_200\DetailsType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        transferCategory:
+            -
+                Choice:
+                    choices:
+                        - AlignmentTones
+                        - AnalogToDigitalConverter
+                        - BitDepth
+                        - Cartridge
+                        - ClockSource
+                        - ConversionReferenceLevel
+                        - Emphasis
+                        - MaterialCondition
+                        - MicPreamp
+                        - NoiseReduction
+                        - NumberOfChannels
+                        - NumberOfSides
+                        - NumberOfTracks
+                        - PhonoPreamp
+                        - ReferenceClock
+                        - ReferenceTones
+                        - SamplingRate
+                        - Side1Condition
+                        - Side2Condition
+                        - SmpteFrameRate
+                        - SourceMachine
+                        - Speed
+                        - Storage
+                        - Stylus
+                        - StylusSize
+                        - TapeBakedDate
+                        - TapeBakedEquipment
+                        - TapeBakedHours
+                        - TapeBakedTemperature
+                        - TapeCoolHours
+                        - Tonearm
+                        - TrackConfiguration
+                        - TransferSoftware
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        description:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

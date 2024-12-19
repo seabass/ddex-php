@@ -1,0 +1,9 @@
+DDEX\RIN\RIN11M\ProjectListType:
+    properties:
+        project:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

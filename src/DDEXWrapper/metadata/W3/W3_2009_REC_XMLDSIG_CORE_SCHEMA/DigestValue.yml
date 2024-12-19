@@ -1,0 +1,18 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\DigestValue:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+        dsr: 'http://ddex.net/xml/dsr/43D1'
+        rin: 'http://ddex.net/xml/rin/21'
+    xml_root_name: 'ern:DigestValue'
+    xml_root_namespace: 'http://www.w3.org/2000/09/xmldsig#'
+    properties:
+        __value:
+            expose: true
+            xml_value: true
+            access_type: public_method
+            accessor:
+                getter: value
+                setter: value
+            type: GoetasWebservices\Xsd\XsdToPhp\Jms\Base64Encoded
+            xml_element:
+                cdata: false
