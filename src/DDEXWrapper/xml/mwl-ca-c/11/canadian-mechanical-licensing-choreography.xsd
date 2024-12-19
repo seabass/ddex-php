@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/mwl-ca-c/11" 
+    xmlns:ddex="http://ddex.net/xml/20111118/ddex" 
+    xmlns:ddexC="http://ddex.net/xml/20111118/ddexC"
+    xmlns:amep="http://ddex.net/xml/amep/12"
+    xmlns:iso3166a2="http://ddex.net/xml/20111118/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20111118/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20111118/iso639a2"
+    xmlns:mwl-ca-c="http://ddex.net/xml/mwl-ca-c/11" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20111118/ddex" schemaLocation="http://ddex.net/xml/20111118/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/ddexC" schemaLocation="http://ddex.net/xml/20111118/ddexC.xsd"/> 
+    <xs:import namespace="http://ddex.net/xml/amep/12" schemaLocation="http://ddex.net/xml/amep/12/automated-message-exchange-protocol.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso639a2" schemaLocation="http://ddex.net/xml/20111118/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso3166a2" schemaLocation="http://ddex.net/xml/20111118/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso4217a" schemaLocation="http://ddex.net/xml/20111118/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2011 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="DeletedReleaseDeal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Deals pertaining to one
+                or more Releases that are no longer available.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseSummary" type="ddexC:ReleaseSummary" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing summary details of a Release to which
+                        the Deal(s) apply.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseDeletionDate" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Date at which the Release(s) became or will become
+                        unavailable.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MessageInBatch">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Message in a
+                Batch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:MwlCaCMessageInBatchType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum of the File and
+                            information about the algorithm with which it has been
+                            generated.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature in accordance with
+                            DDEX-DSIG.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ContractDeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Choreography for the Mechanical Licensing of Musical
+                Works in Canada that is sent to inform about a contract delivery.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            mwl-ca-C_ContractDeliveryMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" minOccurs="0"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an Identifier of the
+                            License or Claim request that is being cancelled.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId" minOccurs="0"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of Identifiers of a License
+                            or Claim for the MusicalWork.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:choice>
+                    <xs:element name="ReferencedContractID" type="ddexC:ProprietaryId">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of an Identifier of a
+                                previously sent contract.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:sequence>
+                        <xs:element name="URL" type="xs:string">
+                            <xs:annotation>
+                                <xs:documentation>A URL of the PDF File of the
+                                    contract.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="ContractID" type="ddexC:ProprietaryId">
+                            <xs:annotation>
+                                <xs:documentation>A Composite containing details of the Identifier
+                                    of the contract sent in this Message, for future
+                                    reference.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Choreography for the Mechanical Licensing of Musical
+                Works in Canada that is sent to document the FTP transfer of a batch of Release
+                Notification Messages, potentially accompanied by Resource or Release
+                files.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            mwl-ca-C_ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsTestFlag" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                            (=True) or a LiveMessage (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfMessages" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Messages in the batch communicated through
+                            the mwl-ca-C_ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageInBatch" type="mwl-ca-c:MessageInBatch"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Message in the
+                            batch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ProductDeletionMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Choreography for the Mechanical Licensing of Musical
+                Works in Canada that is sent to inform about a Product deletion.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            mwl-ca-C_ContractDeliveryMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DeletedReleaseDeal" type="mwl-ca-c:DeletedReleaseDeal"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Deals
+                            pertaining to one or more Releases that are no longer available and for
+                            which no royalties are to be distributed.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

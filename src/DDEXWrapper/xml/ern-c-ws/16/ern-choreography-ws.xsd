@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ern-c-ws="http://ddex.net/xml/ern-c-ws/16" xmlns:avs="http://ddex.net/xml/avs/avs"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://ddex.net/xml/ern-c-ws/16" elementFormDefault="unqualified"
+   attributeFormDefault="unqualified">
+   <xs:import namespace="http://ddex.net/xml/avs/avs"
+      schemaLocation="http://ddex.net/xml/avs/avs_atom.xsd"/>
+   <xs:annotation>
+      <xs:documentation>© 2006-2017 Digital Data Exchange, LLC (DDEX)</xs:documentation>
+      <xs:documentation>This XML Schema Definition file is, together with all DDEX standards, subject to two licences: If you wish to evaluate whether the standard meets your needs please have a look at the Evaluation Licence at https://kb.ddex.net/display/HBK/Evaluation+Licence+for+DDEX+Standards. If you want to implement and use this DDEX standard, please take out an Implementation Licence. For details please go to http://ddex.net/apply-ddex-implementation-licence.</xs:documentation>
+   </xs:annotation>
+   <xs:element name="ReleaseStatusMessage">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Message in the ERN Choreography Standard (Part 2: Web Services Exchange).</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="MessageHeader" type="ern-c-ws:MessageHeader">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The MessageHeader for the ReleaseStatusMessage.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" type="ern-c-ws:ReleaseId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of ReleaseIds. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="Status" type="ern-c-ws:SupplyChainStatus">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of the status of the Release.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="StatusChangeDateTime" type="xs:dateTime">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A DateTime on which a status was changed.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="CatalogNumber">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a CatalogNumber.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="Namespace" type="xs:string" use="required">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Namespace of the CatalogNumber. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="MessageAuditTrail">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing information about Parties in between the original MessageSender and ultimate MessageRecipient.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="MessageAuditTrailEvent" maxOccurs="unbounded"
+            type="ern-c-ws:MessageAuditTrailEvent">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a Party handling the Message and the Time at which the handling took place.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MessageAuditTrailEvent">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a Party handling a Message and the Time at which the handling took place.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="MessagingPartyDescriptor" type="ern-c-ws:MessagingPartyWithoutCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a MessagingParty.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DateTime" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The DateTime at which the Message was handled by the MessagingParty (the only allowed format is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MessageHeader">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite placed at the beginning of each DdexMessage providing information about the Message, such as MessageSender, MessageRecipient and a Message creation time stamp.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="MessageThreadId" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A xs:string used to uniquely identify the thread of Messages of which the current Message is a part. The MessageThreadId shall be, in combination with the DdexPartyId (DPID) of the MessageSender, globally unique. Thus, a MessageSender shall never re-use a MessageThreadId. One example of such a 'thread' is the chain of NewReleaseMessages being sent from ReleaseCreator to wholesale ReleaseDistributor 1 to retail DSP when communicating information about the same Release(s). A common MessageThreadId will allow all these messages to be tied together.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A xs:string used to uniquely identify the current Message. The MessageId shall be, in combination with the DdexPartyId (DPID) of the MessageSender, globally unique. Thus, a MessageSender shall never re-use a MessageId.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageFileName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The FileName, possibly including the FilePath, of the XML File containing the current Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageSender" type="ern-c-ws:MessagingPartyWithoutCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the MessageSender.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="SentOnBehalfOf" minOccurs="0" type="ern-c-ws:MessagingPartyWithoutCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the Party on whose behalf the Message is sent.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageRecipient" maxOccurs="unbounded"
+            type="ern-c-ws:MessagingPartyWithoutCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the MessageRecipient. Note that if multiple MessageRecipients are provided, all of them will be able to read this information.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageCreatedDateTime" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The DateTime on which the Message was created (the only allowed format is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageAuditTrail" minOccurs="0" type="ern-c-ws:MessageAuditTrail">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing information about Parties in between the original MessageSender and ultimate MessageRecipient.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="MessageControlType" minOccurs="0" type="avs:MessageControlType">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The indicator used to distinguish a live Message from a test Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="MessagingPartyWithoutCode">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a MessagingParty.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="PartyId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Identifier of a Party according to the DdexPartyId standard DDEX-DPID.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:pattern value="PADPIDA[a-zA-Z0-9]+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="PartyName" minOccurs="0" type="ern-c-ws:PartyNameWithoutCode">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the PartyNames for the Party handling the Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="TradingName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing a TradingName for the Party handling the Message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PartyNameWithoutCode">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a PartyName. Name details for a Party typically either contain a FullName or a KeyName.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="FullName" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The complete Name of the Party, in its normal form of presentation (e.g. John H. Smith, Acme Music Inc, the Beatles).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="FullNameAsciiTranscribed" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The FullName transcribed using 7-bit ASCII code.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="FullNameIndexed" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The complete Name of the Party in the form in which it normally appears in an alphabetic index, with the KeyName first (e.g. Smith, John H.; Beatles, The).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NamesBeforeKeyName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Name(s) preceding the KeyName in the FullName (and that is placed after it in a FullNameIndexed). Examples: 'George' in 'George Michael'; 'John Fitzgerald' in 'John Fitzgerald Kennedy'. Not all PartyNames have a NamesBeforeKeyName (e.g. Madonna, EMI Music Inc).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="KeyName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Part of a Name of the Party normally used to index an entry in an alphabetical list, such as 'Smith' (in John Smith) or 'Garcia Marquez' or 'Madonna' or 'Francis de Sales' (in Saint Francis de Sales). For persons, this normally corresponds to the 'family name' or names, which in Western name forms usually comes as a surname at the end of a FullName, and in Asian name forms often at the beginning of a FullName. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="NamesAfterKeyName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Name(s) following the KeyName. Example:'Ibrahim' (in Anwar Ibrahim). This is common, e.g., in many Asian personal name forms where a FullName begins with the KeyName, which is followed by other names.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="AbbreviatedName" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A short version of the PartyName (e.g. for use on devices with a small display).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ProprietaryId">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a ProprietaryIdentifier.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="Namespace" type="xs:string" use="required">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Namespace of the ProprietaryIdentifier. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="ReleaseId">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a ReleaseId. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="GRid" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The GRid identifying the Release. This is the preferred Element and is mandatory if a GRid is available. A GRid comprises four parts: the xs:string 'A1', followed by five alphanumeric characters, ten alphanumeric characters and and one alphanumeric character. DDEX will enforce the syntax [a-zA-Z0-9]{18} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ISRC" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ISRC (International Standard Recording Code as defined in ISO 3901) used as proxy for identification of the Release. Only applicable when the Release only contains one SoundRecording or one MusicalWorkVideo. An ISRC comprises four parts: two characters, followed by three alphanumeric characters, then two digits and five digits. DDEX will enforce the syntax [a-zA-Z]{2}[a-zA-Z0-9]{3}[0-9]{7} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ICPN" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An ICPN used as proxy for identification of the Release. Only applicable when the Release is an abstraction of a complete PhysicalProduct. An ICPN comprises 12 or 13 digits, depending whether it is an EAN (13) or a UPC (12). DDEX will enforce the syntax [0-9]{12,13} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CatalogNumber" minOccurs="0" type="ern-c-ws:CatalogNumber">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the CatalogNumber of the Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ProprietaryId" minOccurs="0" maxOccurs="unbounded"
+            type="ern-c-ws:ProprietaryId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a ProprietaryIdentifier of the Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SupplyChainStatus">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a SupplyChainStatus.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="avs:SupplyChainStatus">
+            <xs:attribute name="Namespace" type="xs:string">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Namespace of the SupplyChainStatus. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="UserDefinedValue" type="xs:string">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A UserDefined value of the SupplyChainStatus. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="DisplayArtistNameWithDefault">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a DisplayArtistName.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Language and script of the Name as defined in IETF RfC 5646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ApplicableTerritoryCode" type="avs:CurrentTerritoryCode">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Territory to which the Name applies. The use of ISO TerritoryCodes (or the term 'Worldwide') is strongly encouraged; TIS TerritoryCodes should only be used if both MessageSender and MessageRecipient are familiar with this standard. </xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="IsDefault" type="xs:boolean">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Flag indicating whether this Composite provides default values (=true). This Flag should not be set if this is not the case. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+</xs:schema>

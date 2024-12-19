@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/2011/amep/12" xmlns:amep="http://ddex.net/xml/2011/amep/12"
+    xmlns:ddex="http://ddex.net/xml/20110630/ddex" xmlns:ddexC="http://ddex.net/xml/20110630/ddexC"
+    xmlns:iso3166a2="http://ddex.net/xml/20110630/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20110630/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20110630/iso639a2"
+    xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20110630/ddex"
+        schemaLocation="http://ddex.net/xml/20110630/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/ddexC"
+        schemaLocation="http://ddex.net/xml/20110630/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso639a2"
+        schemaLocation="http://ddex.net/xml/20110630/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso3166a2"
+        schemaLocation="http://ddex.net/xml/20110630/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso4217a"
+        schemaLocation="http://ddex.net/xml/20110630/iso4217a.xsd"/>
+    <xs:import namespace="http://www.w3.org/2000/09/xmldsig#"
+        schemaLocation="http://www.w3.org/TR/2002/REC-xmldsig-core-20020212/xmldsig-core-schema.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2011 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="FtpMessageHeader">
+        <xs:annotation>
+            <xs:documentation>A Composite placed at the beginning of each WsMessage providing
+                information about the WsMessage such as MessageSender, MessageRecipient and a
+                WsMessage creation time stamp.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageSender" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageSender.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageRecipient" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageCreatedDateTime" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which the Message was created (the only
+                        allowed format is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum and information about the
+                            algorithm with which it has been generated.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="amep:DdexDigitalSignature">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature in accordance with
+                            DDEX-DSIG.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReceivedFile">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a File received by FTP. A HashSum or
+                Signature is mandatory if the FileStatus is FileOK.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="FileName" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Name of the File.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FileStatus" type="ddex:FileStatus">
+                <xs:annotation>
+                    <xs:documentation>The status of the File in terms of its
+                        validity.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum of the File and
+                            information about the algorithm with which it has been generated. Either
+                            this Element or the Signature is required, but not
+                            both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="amep:DdexDigitalSignature">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature of the File in accordance with
+                            DDEX-DSIG. Either this Element or the HashSum is required, but not
+                            both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="WsMessageHeader">
+        <xs:annotation>
+            <xs:documentation>A Composite placed at the beginning of each WsMessage providing
+                information about the WsMessage such as MessageSender, MessageRecipient and a
+                WsMessage creation time stamp.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageSender" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageSender.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageRecipient" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                        MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WsMessageThreadId" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A string used to uniquely identify the thread of Messages of
+                        which the current Message is a part. This element should only be used in web
+                        service choreographies involving more than one pair of
+                        Messages.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WsMessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of a WsMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageCreatedDateTime" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which the Message was created (the only
+                        allowed format is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsSymmetric" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether the WsMessage has been sent in an
+                        environment where MessageSender and MessageRecipient publish a web service
+                        for the current choreography (=True) or whether only one Party publishes
+                        such a web service (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum and information about the
+                            algorithm with which it has been generated.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="amep:DdexDigitalSignature">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature in accordance with
+                            DDEX-DSIG.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="Priority" type="ddex:Priority" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The priority of a WsMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="FtpAcknowledgementMessage">
+        <xs:annotation>
+            <xs:documentation>A default response Message in the Automated Message Exchange Protocol
+                Standard that is sent to acknowledge the receipt of a manifest File via FTP. Note:
+                the default message may be replaced by choreography-specific acknowledgement
+                Messages.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedFile" type="amep:ReceivedFile" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Message Files whose
+                            receipt is acknowledged.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ErrorText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message. This is solely to aid the
+                            MessageRecipient of the Message to resolve the issues complained
+                            about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="WsAcknowledgementMessage">
+        <xs:annotation>
+            <xs:documentation>A default response Message in the Automated Message Exchange Protocol
+                Standard that is sent to acknowledge the receipt of a Web Service call. Note: the
+                default message may be replaced by choreography-specific acknowledgement Messages as
+                defined in, for instance, the DDEX ERN Choreography Standard.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AcknowledgedWsMessageId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedWsMessageStatus" type="ddexC:WsMessageStatus">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the status of a received
+                            WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedFile" type="amep:ReceivedFile" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Message Files whose
+                            receipt is acknowledged.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ErrorText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message. This is solely to aid the
+                            MessageRecipient of the Message to resolve the issues complained
+                            about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="DdexDigitalSignature">
+        <xs:sequence>
+            <xs:element name="SignedInfo" type="ds:SignedInfoType"/>
+            <xs:element name="SignatureValue" type="ds:SignatureValueType"/>
+            <xs:element name="KeyInfo" type="amep:KeyInfo"/>
+        </xs:sequence>
+        <xs:attribute name="Id" type="xs:ID" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="KeyInfo" mixed="true">
+        <xs:sequence>
+            <xs:element name="X509Data" type="amep:X509Data"/>
+        </xs:sequence>
+        <xs:attribute name="Id" type="xs:ID" use="optional"/>
+    </xs:complexType>
+    <xs:complexType name="X509Data">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:choice>
+                <xs:element name="X509IssuerSerial" type="ds:X509IssuerSerialType"/>
+                <xs:element name="X509SKI" type="xs:base64Binary"/>
+                <xs:element name="X509SubjectName" type="xs:string"/>
+                <xs:element name="X509Certificate" type="xs:base64Binary"/>
+                <xs:element name="X509CRL" type="xs:base64Binary"/>
+                <xs:element name="PartyId" type="ddexC:PartyId"/>
+                <xs:any namespace="##other" processContents="lax"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

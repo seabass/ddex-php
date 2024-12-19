@@ -1,0 +1,160 @@
+﻿<xs:schema targetNamespace="http://ddex.net/xml/2007/mepm/10" elementFormDefault="unqualified"
+    attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ddex="http://ddex.net/xml/20070606/ddex"
+    xmlns:ddexC="http://ddex.net/xml/20070606/ddexC"
+    xmlns:iso639a2="http://ddex.net/xml/20070606/iso639a2"
+    xmlns:iso3166a2="http://ddex.net/xml/20070606/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20070606/iso4217a"
+    xmlns:mep="http://ddex.net/xml/2007/mepm/10">
+    <xs:import namespace="http://ddex.net/xml/20070606/ddex" schemaLocation="http://ddex.net/xml/20070606/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20070606/ddexC" schemaLocation="http://ddex.net/xml/20070606/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20070606/iso639a2" schemaLocation="http://ddex.net/xml/20070606/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20070606/iso3166a2"
+        schemaLocation="http://ddex.net/xml/20070606/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20070606/iso4217a" schemaLocation="http://ddex.net/xml/20070606/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2007 DDEX LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="MessagingParty">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a MessagingParty.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="PartyId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A DdexPartyId (DPID) of the MessagingParty.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PartyName" type="ddexC:PartyName" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Names for the
+                        MessagingParty.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReceivedFile">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a File received by
+            FTP.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="FileName" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Name of the File.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FileStatus" type="ddex:FileStatus">
+                <xs:annotation>
+                    <xs:documentation>The Status of the File in terms of its
+                    validity.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SentFile">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a File sent by
+            FTP.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="FileName" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Name of the File.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="HashSum" type="ddex:HashSum">
+                <xs:annotation>
+                    <xs:documentation>The HashSum for the File.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageType" type="ddex:MessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsTestFlag" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                        (=True) or a LiveMessage (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="FtpAcknowledgementMessage">
+        <xs:annotation>
+            <xs:documentation>A Message that is sent to acknowledge the receipt of Message Files
+                transferred by FTP.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageSender" type="mep:MessagingParty">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Sender of the
+                            Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageRecipient" type="mep:MessagingParty">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Recipient of the
+                            Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedFile" type="mep:ReceivedFile" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Message Files whose
+                            receipt is acknowledged.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Comment" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="FtpManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message that is sent to document the transfer of Message Files by
+                FTP.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageSender" type="mep:MessagingParty">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Sender of the
+                            Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageRecipient" type="mep:MessagingParty">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Recipient of the
+                            Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfFiles" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Message Files that are
+                        transferred.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SentFile" type="mep:SentFile" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of Message Files that are
+                            transferred.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

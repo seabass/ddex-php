@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/2010/dcho/10"
+    xmlns:amep="http://ddex.net/xml/2010/amep/10"
+    xmlns:dcho="http://ddex.net/xml/2010/dcho/10" 
+    xmlns:ddex="http://ddex.net/xml/20100928/ddex"
+    xmlns:ddexC="http://ddex.net/xml/20100928/ddexC"
+    xmlns:iso3166a2="http://ddex.net/xml/20100928/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20100928/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20100928/iso639a2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20100928/ddex"
+        schemaLocation="http://ddex.net/xml/20100928/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20100928/ddexC"
+        schemaLocation="http://ddex.net/xml/20100928/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/2010/amep/10"
+        schemaLocation="http://ddex.net/xml/2010/amep/10/amep.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20100928/iso639a2"
+        schemaLocation="http://ddex.net/xml/20100928/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20100928/iso3166a2"
+        schemaLocation="http://ddex.net/xml/20100928/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20100928/iso4217a"
+        schemaLocation="http://ddex.net/xml/20100928/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2010 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="MessageInBatch">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an DSR Message in a
+                batch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:DsrMessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="HashSum" type="ddexC:HashSum">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a HashSum of the File and
+                            information about the algorithm with which it has been
+                            generated.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Signature" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>A digital signature in accordance with
+                            DDEX-DSIG.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="InvoiceAcknowledgementRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a InvoiceCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceDeliveryAcknowledgementMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in an InvoiceDeliveryAcknowledgementCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AcknowledgedWsMessageId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedWsMessageStatus" type="ddexC:WsMessageStatus">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the status of a received
+                            WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedFile" type="amep:ReceivedFile" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Message Files whose
+                            receipt is acknowledged.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ErrorText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message. This is solely to aid the
+                            MessageRecipient of the Message to resolve the issues complained
+                            about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceDeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in an InvoiceDeliveryCall or in an
+                InvoiceRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SalesReportMessageId" type="xs:string" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>An Identifier of the Messages containing sales reports
+                            addressed, at least in part, by this invoice.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Status" type="ddex:InvoiceAvailabilityStatus" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Status of the Invoice.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File">
+                    <xs:annotation>
+                        <xs:documentation>A Name of the File. FileName and FilePath together shall
+                            constitue a valid URL.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in an InvoiceRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the DCH DdexMessageSuite that is sent to document the FTP
+                transfer of a batch of ERN Messages, potentially accompanied by Resoure or Release
+                files.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            NewReleaseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsTestFlag" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                            (=True) or a LiveMessage (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfMessages" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Messages in the batch communicated through
+                            the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageInBatch" type="dcho:MessageInBatch" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an DSR Message in the
+                            batch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SalesReportDeliveryAcknowledgementMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in a SalesReportDeliveryCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AcknowledgedWsMessageId" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedWsMessageStatus" type="ddexC:WsMessageStatus">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the status of a received
+                            WsMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReceivedFile" type="amep:ReceivedFile" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Message Files whose
+                            receipt is acknowledged.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ErrorText" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Comment about the Message. This is solely to aid the
+                            MessageRecipient of the Message to resolve the issues complained
+                            about.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SalesReportDeliveryMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in a SalesReportDeliveryCall or in a
+                SalesReportRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TicketId" type="xs:string" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of a ticket to link different web service
+                            calls to one another.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Status" type="ddex:SalesReportAvailabilityStatus" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Status of the SalesReport.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="File" type="ddexC:File">
+                    <xs:annotation>
+                        <xs:documentation>A Name of the File. FileName and FilePath together shall
+                            constitue a valid URL.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SalesReportRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A request Message in a SalesReportRequestCall.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:WsMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Messages. It must contain at least one out of StartDate
+                            or EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

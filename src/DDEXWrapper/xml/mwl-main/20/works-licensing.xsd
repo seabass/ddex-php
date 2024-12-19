@@ -1,0 +1,2001 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ddex.net/xml/mwl-main/20" xmlns:ddex="http://ddex.net/xml/20111118/ddex" xmlns:ddexC="http://ddex.net/xml/20111118/ddexC" xmlns:iso3166a2="http://ddex.net/xml/20111118/iso3166a2" xmlns:iso4217a="http://ddex.net/xml/20111118/iso4217a" xmlns:iso639a2="http://ddex.net/xml/20111118/iso639a2" xmlns:mwl="http://ddex.net/xml/mwl-main/20" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20111118/ddex" schemaLocation="http://ddex.net/xml/20111118/ddex.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20111118/ddexC" schemaLocation="http://ddex.net/xml/20111118/ddexC.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20111118/iso639a2" schemaLocation="http://ddex.net/xml/20111118/iso639a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20111118/iso3166a2" schemaLocation="http://ddex.net/xml/20111118/iso3166a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20111118/iso4217a" schemaLocation="http://ddex.net/xml/20111118/iso4217a.xsd" />
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2011 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="ControlledCompositionClause">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a controlled composition clause.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="EventId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The system Identifier of the ControlledCompositionClause.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RateModificationType" type="ddex:RateModificationType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The type of the rate modification.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NonControlledWorkBaseRate" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The RoyaltyRate for a normal uncontrolled Work as in effect between the MessageSender and the MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WorkMinimumRate" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The lowest PennyRate (or 'floor') which can be paid for any copyrighted Work according to the contractual relationship between the MessageSender and the MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AgreementCCRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>According to a ControlledCompositionAgreement, the percentage of the normal NonControlledWorkBaseRate to be used for calculating royalties payable on RightShares controlled by the agreement.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AgreementCCCapRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>According to a ControlledCompositionAgreement, the percentage of the normal NonControlledWorkBaseRate to be used for calculating the total amount of royalties for all Tracks on an Album.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ApplicableCCRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The percentage of the normal NonControlledWorkBaseRate to be used for calculating royalties payable on RightShares controlled by the agreement.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ApplicableCCCapRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The percentage of the normal NonControlledWorkBaseRate to be used for calculating the total amount of royalties payable on all Tracks.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaximumNumberOfRoyaltyPaidTracks" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>According to the ControlledCompositionAgreement, the maximum number of Works recognised for the purposes of royalty calculation on an album.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumNumberOfRoyaltyPaidTracks" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Works recognised for the purposes of royalty calculation on an album according to the contractual relationship between the MessageSender and the MessageRecipient.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaximumNumberOfNonCCTracks" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>According to the ControlledCompositionAgreement, the maximum number of non-controlled Works recognised for the purposes of royalty calculation on an album.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LimitationOnDurationOfCCTracks" type="ddex:LimitationOnDurationOfControlledCompositionTracks" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The maximum permitted length of a Work before the longsong minute RoyaltyRate applies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmountForRelease" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The amount of Royalties payable for a Release calculated based on the following: ApplicableControlledCompositionRate, NumberOfRoyaltyPaidTracks, LimitationOnDurationOfControlledCompositionTracks, MaximumNumberOfNonControlledCompositionTracks.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfNonControlledWorks" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Works on the Product not controlled by the applicable Agreement. (Note that Works can be partially controlled for one writer who is party to the Agreement and partially non-controlled for additional writers.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfControlledWorks" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of Works on the Product controlled by the applicable Agreement. (Note that Works can be partially controlled for one writer who is party to the Agreement and partially non-controlled for additional writers.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmountForNonControlledRightShares" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The total Amount of royalties available for all non-controlled RightShares on a Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmountForControlledRightShares" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The total Amount of royalties available for all controlled RightShares on a Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UnadjustedControlledRightShareRoyaltyRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The calculated RoyaltyRate applicable to controlled RightShares before the application (if necessary) of 'ceilings' or 'floors'.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AdjustedControlledRightShareRoyaltyRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The calculated RoyaltyRate applicable to controlled RightShares after the application (if necessary) of 'ceilings' or 'floors'.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Image">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an Image.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:Image">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Image Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Image data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="InvoiceSupportInformation">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details to support invoicing.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="InvoiceSupportInformationIdentifier" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the InvoiceSupportInformation.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InvoiceSupportInformationLicenseOrClaimReference" type="ddex:LocalLicenseOrClaimAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference to a License or Claim (specific to the Message) which is contained within the specific InvoiceSupportInformation. This is a LocalLicenseOrClaimAnchorReference starting with the letter L. Either this Element or the LicenseOrClaimId has to be provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License or Claim for the MusicalWork in respect of which the InvoiceSupportInformation is provided. Either this Element or the InvoiceSupportInformationLicenseOrClaimReference has to be provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InvoicePeriod" type="ddexC:Period">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details about the Period of Time for which the InvoiceSupportInformation is provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesReportReference" type="ddexC:Annotation" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a reference to the sales report that was used as a basis for issuing the invoice. This may be used to point to the SalesReport message or to an individual line within such a SalesReport.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfUsages" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The number of times a Release has been used under the terms and conditions reported in the InvoiceSupportInformation.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseUsagePrice" type="ddexC:Price">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Price for each of the Usages of a Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AppliedTariff" type="ddexC:TariffReference" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Reference to a TextDocument containing details of a Tariff (in the form of an Identifier, Name or Description) in respect to which the InvoiceSupportInformation is provided.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AppliedRoyaltyRate" type="ddexC:AppliedRoyaltyRate">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the details of the RoyaltyRate that has been applied when issuing the invoice.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CalculatedRoyaltyAmountPerUse" type="ddexC:RoyaltyAmount">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the RoyaltyAmount that has been calculated to be due for the given Usage and ReleaseUsagePrice, based on the applied Tariff when issuing the invoice.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CalculatedTax" type="ddexC:Tax" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Tax applicable to the CalculatedRoyaltyAmountPerUse.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CalculatedRoyaltyAmountPerInvoice" type="ddexC:RoyaltyAmount">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the RoyaltyAmount that has been calculated for a given Invoice item.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the InvoiceSupportInformation as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="InvoiceSupportInformationList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of details to support invoicing.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="InvoiceSupportInformation" type="mwl:InvoiceSupportInformation" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details to support invoicing.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalRoyaltyAmount" type="ddexC:TotalRoyaltyAmount" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a total RoyaltyAmount.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the InvoiceSupportInformationList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaim">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a License or Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the License or Claim details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExcludedTerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the License or Claim details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RelatedLicenseOrClaimId" type="ddexC:RelatedLicenseOrClaimId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of a License or Claim replaced or updated by the present request.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim request that is referred to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimReference" type="ddex:LocalLicenseOrClaimAnchor" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the LicenseOrClaim within the Release or Creation which contains it. This is a LocalLicenseOrClaimAnchor starting with the letter L.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="LicenseOrClaimWorkReference" type="ddex:LocalMusicalWorkAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Work (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalMusicalWorkAnchorReference starting with the letter W.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MusicalWorkId" type="ddexC:MusicalWorkId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a MusicalWorkId of a MusicalWork that is part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:choice minOccurs="0">
+                <xs:element name="LicenseOrClaimResourceReference" type="ddex:LocalResourceAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Resource (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceId" type="ddexC:ResourceId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ResourceIds of a Resource that is part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:choice minOccurs="0">
+                <xs:element name="LicenseOrClaimReleaseReference" type="ddex:LocalReleaseAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Release (specific to this Message) that is referred to in the License or Claim. This is a LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds of a Release that is referred to in the License or Claim. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="LicenseOrClaimRightShareReference" type="ddex:LocalRightShareAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a RightShare (specific to this Message) that is referred to in the License or Claim. This is a LocalRightShareAnchorReference starting with the letter S.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimReferenceToLicenseOrClaimCondition" type="ddex:LocalLicenseOrClaimConditionAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a LicenseOrClaimCondition (specific to this Message) that is part of the License or Claim. This is a LocalLicenseOrClaimConditionAnchorReference starting with the letter E.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimCondition">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of conditions and/or limitations for Usages.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimConditionReference" type="ddex:LocalLicenseOrClaimConditionAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the LicenseOrClaimCondition within the Release or Creation which contains it. This is a LocalLicenseOrClaimConditionAnchor starting with the letter E.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UseType" type="ddexC:UseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyRate" type="mwl:RoyaltyRate" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a RoyaltyRate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PercentageRate" type="mwl:PercentageRate" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a PercentageRate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AdvanceAmount" type="ddexC:RoyaltyAmount" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An Amount which is paid in advance.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="GuaranteedAmount" type="ddexC:GuaranteedAmount" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>An Amount which is guaranteed,</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumFeePerUse" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A minimum fee to be paid per use.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPdArrangement" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether the MusicalWork is an Arrangement of a Work in the PublicDomain (=Yes) or not (=No).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="IsControlledCompositionClause" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>A Flag indicating whether a clause is a controlled composition clause (=True) or not (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ControlledCompositionClause" type="mwl:ControlledCompositionClause">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a controlled composition clause.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="IsPerUseRoyaltyPayment" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether all the rate fields are to be paid per use (=True) or as a one-off payment (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsFavouredNationClause" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether everything is overridden if someone else pays less (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsApplicableToPredominantlyMusicReleasesOnly" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether conditions are applicable to predominantly musical Releases only (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TaxRate" type="ddexC:TaxRate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a TaxRate applicable to the total Amount to be paid.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CalculationType" type="ddexC:CalculationType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of Calculation method used by which the royalties are to be determined. This is a text string with no prescribed allowed values.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DocumentationReference" type="ddexC:AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing an Annotation referring to documentation.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RateValidity" type="mwl:RateValidity" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the context (such as Dates, number of uses) in which the Rate is valid. The default is that the Rate applies indefinitely from the date of issue of the Licence.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TariffReference" type="ddexC:TariffReference" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Reference to a TextDocument containing details of a Tariff (in the form of an Identifier, Name or Description) regarding the Usage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceInformation" type="ddexC:PriceInformation" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Price at which the Release is to be offered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="IsPromotional" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether a special Deal is made between the Licensor and the Licensee (=True) or not (=False) regarding the royalties or payments due to be paid for Releases distributed under this Deal.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PromotionalCode" type="ddexC:PromotionalCode">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a PromotionalCode.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="AdditionalInformation" type="ddexC:AdditionalInformation" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing supporting information on the Usage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TechnicalInstantiation" type="ddexC:TechnicalInstantiation" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing technical details of the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimConditionReferenceList" type="mwl:LicenseOrClaimConditionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more References contained in the LicenseOrClaimCondition. The condition only applies when the Work is used in the context of the Releases or Resources referenced in this element.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the LicenseOrClaimCondition Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided LicenseOrClaimCondition data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the LicenseOrClaimCondition as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimConditionList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a list of conditions and/or limitations for Usages.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimCondition" type="mwl:LicenseOrClaimCondition" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of conditions and/or limitations for Usages.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the LicenseOrClaimConditionList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimConditionReferenceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of References in a LicenseOrClaimCondition.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimConditionResourceReference" type="ddex:LocalResourceAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Resource (specific to this Message). This is a LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimConditionReleaseReference" type="ddex:LocalReleaseAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Release (specific to this Message). This is a LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Licenses or Claims.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaim" type="mwl:LicenseOrClaim" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the License or Claim.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimRequest">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a request for a License or Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of LicenseOrClaimRequest.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RelatedLicenseOrClaimRequestId" type="ddexC:RelatedLicenseOrClaimRequestId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of a LicenseOrClaimRequest that is replaced or updated by the present LicenseOrClaimRequest.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestWorkReference" type="ddex:LocalMusicalWorkAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Work (specific to this Message). This is a LocalMusicalWorkAnchorReference starting with the letter W.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestResourceReference" type="ddex:LocalResourceAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Resource (specific to this Message). This is a LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestReleaseReference" type="ddex:LocalReleaseAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Release (specific to this Message). This is a LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestRightShareReference" type="ddex:LocalRightShareAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a RightShare (specific to this Message). This is a LocalRightShareAnchorReference starting with the letter S.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestConditionReference" type="ddex:LocalLicenseOrClaimConditionAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a LicenseOrClaimCondition (specific to this Message). This is a LocalLicenseOrClaimConditionAnchorReference starting with the letter E.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TimeFrame" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Date by which the requestor suggests the Licensor provides Licenses or Claims (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RelatedLicenseOrClaimId" type="ddexC:RightsAgreementId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of a License or Claim that has previously been granted and that may be relevant in the current licensing context.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimRequestList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more requests for a License or Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimRequest" type="mwl:LicenseOrClaimRequest" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a request for a License or Claim.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicenseOrClaimRevocationItem">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a License or Claim that is revoked.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim that is being revoked.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RevocationDate" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime at which the License is revoked (in ISO 8601:2004 format: YYYY-MM-DDThh:mm:ssZ).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Reason" type="ddexC:LicenseOrClaimRefusalReason" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the reason for the revocation.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LicensingInformationRequestItem">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a request for licensing information to be provided to augment any information previously communicated.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="InformationRequestItemId" type="ddexC:ProprietaryId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the LicensingInformationRequestItem.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim request for which additional information is requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightShareId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of a RightShare for which additional information is requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkId" type="ddexC:MusicalWorkId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWorkId of a MusicalWork for which additional information is requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceId" type="ddexC:ResourceId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceIds of a Resource for which additional information is requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of a Release for which additional information is requested. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InformationRequested" type="ddexC:Annotation">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a description of the nature of the additional information requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReasonForInformationRequest" type="ddexC:Reason">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a description of the reason for the additional information requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the LicensingInformationRequestItem as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="LicensingProcessStatusItem">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the status of a licensing process.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicensingProcessStatusId" type="ddexC:ProprietaryId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the process status item of the License or Claim request.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicensingProcessStatus" type="ddex:LicensingProcessStatus">
+                <xs:annotation>
+                    <xs:documentation>The operational status of the licensing process.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim request.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MIDI">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Set of computer instructions which enables a sound processor to generate generate sound (using the Musical Instrument Digital Interface as defined by the MIDI Manufacturers Association (MMA)).</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:MIDI">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the MIDI Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided MIDI data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="MusicalWork">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a MusicalWork.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MusicalWorkId" type="ddexC:MusicalWorkId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWorkId of the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkReference" type="ddex:LocalMusicalWorkAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the MusicalWork within the Release which contains it. This is a LocalMusicalWorkAnchor starting with the letter W.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a ReferenceTitle of the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the MusicalWork is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License or a Claim for the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WorkRightShareReferenceList" type="mwl:WorkRightShareReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more RightShares contained in the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkContributor" type="ddexC:MusicalWorkContributor" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details a MusicalWorkContributor to the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkType" type="ddexC:MusicalWorkType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Type of the RightsClaim related to the MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkDetailsByTerritory" type="ddexC:MusicalWorkDetailsByTerritory" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the MusicalWork which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the MusicalWork Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided MusicalWork data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the MusicalWork as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="PercentageRate">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a PercentageRate.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="PercentageType" type="ddex:PercentageType" use="required">
+                    <xs:annotation>
+                        <xs:documentation>A Type of the PercentageRate. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="Namespace" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Namespace of the PercentageRate. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>A UserDefined value of the PercentageRate. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="RateValidity">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the Dates and/or quantity of Use constraints within which the RoyaltyRate is valid. At least one Element must be present. If two or more RoyaltyRates apply to the same Use, Work or RightShare, their respective values for Date and NumberOfUses data must not overlap.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="StartDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Date from which the RoyaltyRate applies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Date until which the RoyaltyRate applies.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaximumNumberOfUsages" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The maximum number of Uses of a Resource for which this RoyaltyRate applies. Typically this refers to number of units sold, but the UseType is established by the UseType in the UseComposite. This element is used when there is a "trigger" for a change in RoyaltyRate as a result of quantity of Use: for example, if a ReducedRate applies after sales of 100,000 units, then the old RoyaltyRate Composite will include a MaxNumberOfUses of 99,999, and the new RoyaltyRate Composite a MinNumberOfUses of 100,000.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumNumberOfUsages" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The minimum number of Uses of a Resource for which this RoyaltyRate applies. Typically this refers to number of units sold, but the UseType is established by the UseType in the UseComposite. This element is used to show the "trigger" point at which a change in Rate applies as a result of quantity of Use: for example, if a ReducedRate applies after sales of 100,000 units, then the old RoyaltyRate Composite will include a MaxNumberOfUses of 99,999, and the new RoyaltyRate Composite a MinNumberOfUses of 100,000.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaxNumberOfRoyaltyPaidResources" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The maximum number of Resources on a Product on which Royalties are to be paid under the terms of the ControlledCompositionAgreement.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinNumberOfRoyaltyPaidResources" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The minimum number of Resources on a Product on which Royalties are to be paid under the terms of the ControlledCompositionAgreement.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RefusedLicenseOrClaim">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a License or Claim that is refused.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the License or Claim details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExcludedTerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the License or Claim details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the refused License or Claim.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RelatedLicenseOrClaimId" type="ddexC:RelatedLicenseOrClaimId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of a License or Claim replaced or updated by the present request.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim request that is referred to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0">
+                <xs:element name="RefusalWorkReference" type="ddex:LocalMusicalWorkAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Work (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalMusicalWorkAnchorReference starting with the letter W.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MusicalWorkId" type="ddexC:MusicalWorkId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a MusicalWorkId of a MusicalWork that is part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:choice minOccurs="0">
+                <xs:element name="RefusalResourceReference" type="ddex:LocalResourceAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Resource (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceId" type="ddexC:ResourceId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ResourceIds of a Resource that is part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:choice minOccurs="0">
+                <xs:element name="RefusalReleaseReference" type="ddex:LocalReleaseAnchorReference" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Reference for a Release (specific to this Message) that is referred to in the License or Claim. This is a LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseId" type="ddexC:ReleaseId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of ReleaseIds of a Release that is referred to in the License or Claim. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="RefusalRightShareReference" type="ddex:LocalRightShareAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a RightShare (specific to this Message) that is referred to in the License or Claim. This is a LocalRightShareAnchorReference starting with the letter S.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RefusalConditionReference" type="ddex:LocalLicenseOrClaimConditionAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a LicenseOrClaimCondition (specific to this Message) that is part of the License or Claim. This is a LocalLicenseOrClaimConditionAnchorReference starting with the letter E.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Reason" type="ddexC:LicenseOrClaimRefusalReason">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the reason for the refusal.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RefusedLicenseOrClaimList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Licenses or Claims that are refused.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="RefusedLicenseOrClaim" type="mwl:RefusedLicenseOrClaim" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the License or Claim that is refused.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RejectedLicenseOrClaim">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a License or Claim that is rejected.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="LicenseOrClaimId" type="ddexC:RightsAgreementId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the rejected License or Claim.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the License or Claim request that is referred to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RejectionWorkReference" type="ddex:LocalMusicalWorkAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Work (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalMusicalWorkAnchorReference starting with the letter W.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RejectionResourceReference" type="ddex:LocalResourceAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Resource (specific to this Message) that is part of the Release(s) referred to in the License or Claim. This is a LocalResourceAnchorReference starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RejectionReleaseReference" type="ddex:LocalReleaseAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a Release (specific to this Message) that is referred to in the License or Claim. This is a LocalReleaseAnchorReference starting with the letter R.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RejectionRightShareReference" type="ddex:LocalRightShareAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a RightShare (specific to this Message) that is referred to in the License or Claim. This is a LocalRightShareAnchorReference starting with the letter S.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RejectionConditionReference" type="ddex:LocalLicenseOrClaimConditionAnchorReference" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a LicenseOrClaimCondition (specific to this Message) that is part of the License or Claim. This is a LocalLicenseOrClaimConditionAnchorReference starting with the letter E.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Reason" type="ddexC:Reason">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the reason for the rejection.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPublicDomainWork" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating that all MusicalWorks subject to the rejected License or Claim are in the PublicDomain (=Yes) or not (=No).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RejectedLicenseOrClaimList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Licenses or Claims that are rejected.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="RejectedLicenseOrClaim" type="mwl:RejectedLicenseOrClaim" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the License or Claim that is rejected.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the RejectedLicenseOrClaimList as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Release">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a DDEX Release.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:Release">
+                <xs:sequence>
+                    <xs:element name="ReleaseReference" type="ddex:LocalReleaseAnchor">
+                        <xs:annotation>
+                            <xs:documentation>The Identifier (specific to the Message) of the Release. Used to link the Release to one or more Deal(s). This is a LocalReleaseAnchor starting with the letter R.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Release Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Release data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReleaseList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Release" type="mwl:Release" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a DDEX Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ReleaseList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="ResourceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Resources. ResourceList provides a simple means of aggregating Resources without any explicit sequencing or grouping: if it is needed, that is provided by the ResourceGroup Composite.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecording" type="mwl:SoundRecording" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MIDI" type="mwl:MIDI" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MIDI.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Video" type="mwl:Video" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Image" type="mwl:Image" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Image.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Text" type="mwl:Text" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Text.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SheetMusic" type="mwl:SheetMusic" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SheetMusic.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Software" type="mwl:Software" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an item of Software.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserDefinedResource" type="mwl:UserDefinedResource" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a UserDefinedResource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the ResourceList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="RightShare">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a RightShare.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:RightShare">
+                <xs:sequence>
+                    <xs:choice minOccurs="0">
+                        <xs:element name="IsAssumedPublicDomainWork" type="xs:boolean">
+                            <xs:annotation>
+                                <xs:documentation>A Flag indicating whether the MessageSender assumes that the Work is in the PublicDomain (=Yes) or not (=No) for the specified Territory.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="AssumedDateOfTransitionIntoPublicDomain" type="xs:date">
+                            <xs:annotation>
+                                <xs:documentation>The Date at which the the MessageSender assumes that the Work will be in the PublicDomain (in ISO 8601:2004 format: YYYY-MM-DD).</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:choice>
+                    <xs:element name="IsBestKnowledge" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether the RightShare description is provided as best knowledge by MessageSender (=Yes) or not (=No) in order to help the MessageRecipient in its licensing activities.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the RightShare Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided RightShare data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="RightShareList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more RightShares.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="RightShare" type="mwl:RightShare" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a RightShare.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the RightShareList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="RoyaltyRate">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a RoyaltyRate.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="RoyaltyCode" type="ddexC:RoyaltyCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the RoyaltyRate. Either this Element or RoyaltyAmount shall be present, but not both.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyAmount" type="ddexC:RoyaltyAmount" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a RoyaltyAmount. Either this Element or RoyaltyCode shall be present, but not both.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyRateType" type="ddex:RoyaltyRateCalculationType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Type of RoyaltyRate according to the License or Claim conditions.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SheetMusic">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SheetMusic.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:SheetMusic">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the SheetMusic Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided SheetMusic data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Software">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an item of Software.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:Software">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Software Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Software data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SoundRecording">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingType" type="ddexC:SoundRecordingType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of SoundRecordingIds.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IndirectSoundRecordingId" type="ddexC:MusicalWorkId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWorkId of a MusicalWork used in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the SoundRecording within the Release which contains it. This is a LocalResourceAnchor starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of instrumentation of the MusicalWork(s) in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether a Work used in the SoundRecording is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is a Potpourri (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is instrumental (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsComputerGenerated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is generated by a computer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PerformerInformationRequired" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether performer information is required (=True) or not (=False) when communicating details of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the SoundRecording (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the SoundRecording (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingCollectionReferenceList" type="ddexC:SoundRecordingCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections. The referenced Collection has to be of CollectionType AudioChapter.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the SoundRecording was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the SoundRecording was originally mastered (either in analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingDetailsByTerritory" type="ddexC:SoundRecordingDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the SoundRecording which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the SoundRecording as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="IsUpdated" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the SoundRecording Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided SoundRecording data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Text">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Text.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:Text">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Text Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Text data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="UserDefinedResource">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of a Resource whose Type is UserDefined.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:UserDefinedResource">
+                <xs:sequence>
+                    <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the UserDefinedResource Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided UserDefinedResource data with the now provided data.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Video">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Video.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="VideoType" type="ddexC:VideoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is related to an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoId" type="ddexC:VideoId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an Identifier of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IndirectVideoId" type="ddexC:MusicalWorkId" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWorkId of a MusicalWork used in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the Video within the Release which contains it. This is a LocalResourceAnchor starting with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoCueSheetReferenceList" type="ddexC:VideoCueSheetReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a list of VideoCueSheetReferences.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of instrumentation of the MusicalWork(s) in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether a Work used in the Video is a Medley (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is a Potpourri (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is instrumental (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is used as background to other audio or audiovisual material (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is hidden in some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Video is additional to those on the original Release of which this is a Version (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PerformerInformationRequired" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether performer information is required (=True) or not (=False) when communicating details of the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="xs:boolean" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the Video (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the Video (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License, Claim, RightShare or contract for the MusicalWork(s) used in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoCollectionReferenceList" type="ddexC:SoundRecordingCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections. The referenced Collection has to be of CollectionType VideoChapter.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList" type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks contained in the Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList" type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ResourceContainedResourceReferences referring to a Resource that is contained in the current Video.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Video was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the Event in which the Video was originally mastered (either in analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VideoDetailsByTerritory" type="ddexC:VideoDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other attributes of the Video which may vary according to Territory of release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MusicalWorkRightsClaimType" type="ddex:MusicalWorkRightsClaimType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Type of the RightsClaim related to a MusicalWork.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the Video as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="IsUpdated" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the Video Element was updated (=True) or not (=False). The Flag may only be used when the UpdateIndicator is set to UpdateMessage. When this Boolean Flag is set to true, the MessageRecipient is expected to replace any previously provided Video data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="WorkList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Works.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MusicalWork" type="mwl:MusicalWork" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWork contained in a Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the WorkList as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="WorkRightShareReferenceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a list of WorkRightShareReferences.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="WorkRightShareReference" type="ddex:LocalRightShareAnchorReference" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Reference for a RightShare (specific to this Message). This is a LocalRightShareAnchorReference starting with the letter S.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="LicenseOrClaimConfirmationMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which conveys that a Licensee confirms or rejects a License or Claim received from a Licensor.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicenseOrClaimConfirmationMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="UpdateIndicator" type="ddex:UpdateIndicator">
+                    <xs:annotation>
+                        <xs:documentation>The indicator which distinguishes whether the Message contains original data or updates to previously sent data.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ConfirmedLicenseOrClaimList" type="mwl:LicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims that are confirmed.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="PendingLicenseOrClaimList" type="mwl:LicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims that are pending.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RejectedLicenseOrClaimList" type="mwl:RejectedLicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims that are rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimForNegotiationList" type="mwl:RejectedLicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims that are pending because the Licensee wishes to negotiate T&amp;Cs.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WorkList" type="mwl:WorkList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Works being part of the Release(s) for which a License or Claim is rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CueSheetList" type="ddexC:CueSheetList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more CueSheets contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceList" type="mwl:ResourceList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Resources being part of the Release(s) for which a License or Claim is rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CollectionList" type="ddexC:CollectionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Collections contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseList" type="mwl:ReleaseList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Releases for which a License or Claim is rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RightShareList" type="mwl:RightShareList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of RightShares for which a License or Claim is rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimConditionList" type="mwl:LicenseOrClaimConditionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of conditions and/or limitations for Usages for which a License or Claim is rejected.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicenseOrClaimConfirmationMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicenseOrClaimMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which includes a License or Claim or a refusal thereof.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicenseOrClaimMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="UpdateIndicator" type="ddex:UpdateIndicator">
+                    <xs:annotation>
+                        <xs:documentation>The indicator which distinguishes whether the Message contains original data or updates to previously sent data.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimList" type="mwl:LicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RefusedLicenseOrClaimList" type="mwl:RefusedLicenseOrClaimList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Licenses or Claims that are refused.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WorkList" type="mwl:WorkList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Works being part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CueSheetList" type="ddexC:CueSheetList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more CueSheets contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceList" type="mwl:ResourceList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Resources being part of the Release(s) referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CollectionList" type="ddexC:CollectionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Collections contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseList" type="mwl:ReleaseList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Releases referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RightShareList" type="mwl:RightShareList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of RightShares referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimConditionList" type="mwl:LicenseOrClaimConditionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of conditions and/or limitations for Usages which are referred to in the License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="InvoiceSupportInformationList" type="mwl:InvoiceSupportInformationList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a list of details to support invoicing.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicenseOrClaimMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicenseOrClaimRequestCancellationMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which cancels a request for a License or Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicenseOrClaimRequestCancellationMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an Identifier of the License or Claim request that is being cancelled.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicenseOrClaimRequestCancellationMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicenseOrClaimRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which conveys information about a request for a License or Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicenseOrClaimRequestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="UpdateIndicator" type="ddex:UpdateIndicator">
+                    <xs:annotation>
+                        <xs:documentation>The indicator which distinguishes whether the Message contains original data or updates to previously sent data.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimRequestList" type="mwl:LicenseOrClaimRequestList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of requests for a License or Claim.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="WorkList" type="mwl:WorkList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Works being part of the Release(s) for which a License or Claim is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CueSheetList" type="ddexC:CueSheetList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more CueSheets contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceList" type="mwl:ResourceList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Resources being part of the Release(s) for which a License or Claim is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="CollectionList" type="ddexC:CollectionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Collections contained in Releases for which sales data is provided in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ReleaseList" type="mwl:ReleaseList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Releases for which a License or Claim is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RightShareList" type="mwl:RightShareList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of RightShares for which a License or Claim is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimConditionList" type="mwl:LicenseOrClaimConditionList" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of conditions and/or limitations for Usages for which a License or Claim is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicenseOrClaimRequestMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicenseOrClaimRevocationMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which conveys information about a License or Claim being invalidated.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicenseOrClaimRevocationMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimRevocationItem" type="mwl:LicenseOrClaimRevocationItem" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the License or Claim that is being revoked.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicenseOrClaimRevocationMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicensingInformationRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, in which a (prospective) Licensee asks a (prospective) Licensor to provide additional information in order to enable the (prospective) Licensee to grant a License or make a Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicensingInformationRequestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicensingInformationRequestItem" type="mwl:LicensingInformationRequestItem" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a request for additional information not previously contained in a LicenseOrClaimRequestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicensingInformationRequestMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicensingProcessStatusMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which conveys information about the status within the licensing process that a License or Claim request has reached.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicensingProcessStatusMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicensingProcessStatusItem" type="mwl:LicensingProcessStatusItem" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the process status of a License or Claim request.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicensingProcessStatusMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LicensingProcessStatusRequestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Musical Work Licensing Message Suite Standard, which conveys a request for information about the status within the licensing process that a License or Claim request has reached.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the LicensingProcessStatusRequestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="LicenseOrClaimRequestId" type="ddexC:ProprietaryId" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an Identifier of the License or Claim request whose licensing process status is requested.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for the Message. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the LicensingProcessStatusRequestMessage as defined in IETF RfC 4646. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

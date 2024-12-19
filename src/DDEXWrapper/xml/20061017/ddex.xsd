@@ -1,0 +1,464 @@
+﻿<xs:schema targetNamespace="http://ddex.net/xml/20061017/ddex" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ddex="http://ddex.net/xml/20061017/ddex" xmlns:iso639a2="http://ddex.net/xml/20061017/iso639a2" xmlns:iso3166a2="http://ddex.net/xml/20061017/iso3166a2" xmlns:iso4217a="http://ddex.net/xml/20061017/iso4217a">
+    <xs:import namespace="http://ddex.net/xml/20061017/iso3166a2" schemaLocation="http://ddex.net/xml/20061017/iso3166a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/iso4217a" schemaLocation="http://ddex.net/xml/20061017/iso4217a.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/iso639a2" schemaLocation="http://ddex.net/xml/20061017/iso639a2.xsd" />
+    <xs:annotation>
+        <xs:documentation>(c) 2006, DDEX</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="AdministratingRecordCompanyRole">
+        <xs:annotation>
+            <xs:documentation>A Role played by an AdministratingRecordCompany.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DesignatedDsrMessageRecipient" />
+            <xs:enumeration value="Payee" />
+            <xs:enumeration value="RightsAdministrator" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ArtistRole">
+        <xs:annotation>
+            <xs:documentation>A Role that an Artist plays in a Context.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Actor" />
+            <xs:enumeration value="Artist" />
+            <xs:enumeration value="Choir" />
+            <xs:enumeration value="Conductor" />
+            <xs:enumeration value="Ensemble" />
+            <xs:enumeration value="FeaturedArtist" />
+            <xs:enumeration value="MainArtist" />
+            <xs:enumeration value="Orchestra" />
+            <xs:enumeration value="PrimaryMusician" />
+            <xs:enumeration value="Soloist" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="CalculationType">
+        <xs:annotation>
+            <xs:documentation>A Type of Calculation used to determine an actual Amount paid.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="ClaimStatus">
+        <xs:annotation>
+            <xs:documentation>A Type of time-variable condition of a Claim.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="CommercialModelType">
+        <xs:annotation>
+            <xs:documentation>A Type of CommercialModel (e.g. SubscriptionModel and PayAsYouGoModel).</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FreeOfChargeModel" />
+            <xs:enumeration value="FreeTrialBeforeCommitment" />
+            <xs:enumeration value="HybridModel" />
+            <xs:enumeration value="PayAsYouGoModel" />
+            <xs:enumeration value="PortableSubscriptionModel" />
+            <xs:enumeration value="SubscriptionModel" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DeductionRateType">
+        <xs:annotation>
+            <xs:documentation>A Type of DeductionRate.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PennyRate" />
+            <xs:enumeration value="PercentageRate" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DistributionChannelType">
+        <xs:annotation>
+            <xs:documentation>A Type of DistributionChannel.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cable" />
+            <xs:enumeration value="DigitalJukebox" />
+            <xs:enumeration value="DigitalKiosk" />
+            <xs:enumeration value="DualDelivery" />
+            <xs:enumeration value="Internet" />
+            <xs:enumeration value="MobileTelecom" />
+            <xs:enumeration value="Physical" />
+            <xs:enumeration value="Satellite" />
+            <xs:enumeration value="Telecom" />
+            <xs:enumeration value="Terrestrial" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ExternallyLinkedResourceType">
+        <xs:annotation>
+            <xs:documentation>A Type of DigitalResource linked by an ExternalLink.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AdditionalMetadata" />
+            <xs:enumeration value="Logo" />
+            <xs:enumeration value="PromotionalImage" />
+            <xs:enumeration value="PromotionalInformation" />
+            <xs:enumeration value="PromotionalOffer" />
+            <xs:enumeration value="PromotionalSample" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="HashSumAlgorithmType">
+        <xs:annotation>
+            <xs:documentation>A Type of HashSumAlgorithm.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MD4" />
+            <xs:enumeration value="MD5" />
+            <xs:enumeration value="SHA" />
+            <xs:enumeration value="SHA1" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ImageType">
+        <xs:annotation>
+            <xs:documentation>A Type of Image.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BackCoverImage" />
+            <xs:enumeration value="BookletBackImage" />
+            <xs:enumeration value="BookletFrontImage" />
+            <xs:enumeration value="Document" />
+            <xs:enumeration value="Drawing" />
+            <xs:enumeration value="FrontCoverImage" />
+            <xs:enumeration value="GenericDigitalImage" />
+            <xs:enumeration value="GraphicImage" />
+            <xs:enumeration value="Logo" />
+            <xs:enumeration value="Photograph" />
+            <xs:enumeration value="Poster" />
+            <xs:enumeration value="TrayImage" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+            <xs:enumeration value="VideoScreenCapture" />
+            <xs:enumeration value="Wallpaper" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LinkDescription">
+        <xs:annotation>
+            <xs:documentation>A Description of a Link to a Resource.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="LyricsType">
+        <xs:annotation>
+            <xs:documentation>A Type of Lyrics.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lyrics" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MessageControlType">
+        <xs:annotation>
+            <xs:documentation>A Type of Message in a DDEX namespace according to its function.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="LiveMessage" />
+            <xs:enumeration value="TestMessage" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MusicalWorkContributorRole">
+        <xs:annotation>
+            <xs:documentation>A Role of a Contributor in relation to a MusicalWork.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Adapter" />
+            <xs:enumeration value="Arranger" />
+            <xs:enumeration value="AssociatedPerformer" />
+            <xs:enumeration value="Author" />
+            <xs:enumeration value="Composer" />
+            <xs:enumeration value="ComposerLyricist" />
+            <xs:enumeration value="Contributor" />
+            <xs:enumeration value="Lyricist" />
+            <xs:enumeration value="MusicPublisher" />
+            <xs:enumeration value="OriginalPublisher" />
+            <xs:enumeration value="SubArranger" />
+            <xs:enumeration value="SubLyricist" />
+            <xs:enumeration value="SubPublisher" />
+            <xs:enumeration value="SubstitutedPublisher" />
+            <xs:enumeration value="Translator" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MusicalWorkType">
+        <xs:annotation>
+            <xs:documentation>A Type of MusicalWork.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AdaptedInOriginalLanguage" />
+            <xs:enumeration value="AdaptedInstrumentalWork" />
+            <xs:enumeration value="AdaptedWithNewLyrics" />
+            <xs:enumeration value="ArrangedWithNewMusic" />
+            <xs:enumeration value="DramaticoMusicalWork" />
+            <xs:enumeration value="LyricRemoval" />
+            <xs:enumeration value="LyricReplacement" />
+            <xs:enumeration value="LyricTranslation" />
+            <xs:enumeration value="Medley" />
+            <xs:enumeration value="MusicalWork" />
+            <xs:enumeration value="MusicalWorkMovement" />
+            <xs:enumeration value="MusicalWorkWithSamples" />
+            <xs:enumeration value="MusicArrangement" />
+            <xs:enumeration value="MusicArrangementOfText" />
+            <xs:enumeration value="OriginalLyricsArrangement" />
+            <xs:enumeration value="OriginalMusicAdaptation" />
+            <xs:enumeration value="Potpourri" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UnspCompositeMusicalWork" />
+            <xs:enumeration value="UnspecifiedArrangement" />
+            <xs:enumeration value="UnspMusicalWorkExcerpt" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MusicSoundRecordingType">
+        <xs:annotation>
+            <xs:documentation>A Type of MusicSoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MusicSoundRecording" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MusicVideoType">
+        <xs:annotation>
+            <xs:documentation>A Type of MusicVideo.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Concert" />
+            <xs:enumeration value="ConcertClip" />
+            <xs:enumeration value="MovieClip" />
+            <xs:enumeration value="MusicVideo" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NonIsoTerritoryCode">
+        <xs:annotation>
+            <xs:documentation>A TerritoryID which is not a TerritoryID according to the ISO 3166-1 Standard.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Worldwide" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="NonMusicVideoType">
+        <xs:annotation>
+            <xs:documentation>A Type of NonMusicVideo.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Commentary" />
+            <xs:enumeration value="Interview" />
+            <xs:enumeration value="MovieClip" />
+            <xs:enumeration value="Speech" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ParentalWarningType">
+        <xs:annotation>
+            <xs:documentation>A Type of a Creation according to advice which it carries about explicit or offensive Content.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Explicit" />
+            <xs:enumeration value="ExplicitContentEdited" />
+            <xs:enumeration value="NoAdviceAvailable" />
+            <xs:enumeration value="NotExplicit" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="PriceRangeType">
+        <xs:annotation>
+            <xs:documentation>A Type of Price according to its value range.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="ReleaseDescription">
+        <xs:annotation>
+            <xs:documentation>A Description of a Release.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="ReleaseType">
+        <xs:annotation>
+            <xs:documentation>A Type of Release according to its Content, Duration and/or NumberOfComponents.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Album" />
+            <xs:enumeration value="AudioClip" />
+            <xs:enumeration value="Bundle" />
+            <xs:enumeration value="ClassicalWork" />
+            <xs:enumeration value="FullTrackVideo" />
+            <xs:enumeration value="MonophonicRingbacktone" />
+            <xs:enumeration value="MonophonicRingtone" />
+            <xs:enumeration value="PolyphonicRingbacktone" />
+            <xs:enumeration value="PolyphonicRingtone" />
+            <xs:enumeration value="Ringbacktone" />
+            <xs:enumeration value="Ringtone" />
+            <xs:enumeration value="Single" />
+            <xs:enumeration value="Track" />
+            <xs:enumeration value="UserDefined" />
+            <xs:enumeration value="VideoClip" />
+            <xs:enumeration value="VideoSingle" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RemittanceAdvice">
+        <xs:annotation>
+            <xs:documentation>A textual commentary about the method to settle payments between MessageSender and MessageReceiver (e.g. ‘international bank transfer initiated on 2006-09-18’).</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="ResourceContributorRole">
+        <xs:annotation>
+            <xs:documentation>A Role played by a Contributor to a Resource.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Adapter" />
+            <xs:enumeration value="Arranger" />
+            <xs:enumeration value="Artist" />
+            <xs:enumeration value="AssociatedPerformer" />
+            <xs:enumeration value="Author" />
+            <xs:enumeration value="Composer" />
+            <xs:enumeration value="ComposerLyricist" />
+            <xs:enumeration value="Contributor" />
+            <xs:enumeration value="Lyricist" />
+            <xs:enumeration value="Producer" />
+            <xs:enumeration value="StudioPersonnel" />
+            <xs:enumeration value="SubArranger" />
+            <xs:enumeration value="SubLyricist" />
+            <xs:enumeration value="Translator" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ResourceType">
+        <xs:annotation>
+            <xs:documentation>A Type of Resource.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Image" />
+            <xs:enumeration value="InteractiveResource" />
+            <xs:enumeration value="Lyrics" />
+            <xs:enumeration value="MusicSoundRecording" />
+            <xs:enumeration value="MusicVideo" />
+            <xs:enumeration value="NonMasteredSoundRecording" />
+            <xs:enumeration value="NonMusicSoundRecording" />
+            <xs:enumeration value="NonMusicVideo" />
+            <xs:enumeration value="Software" />
+            <xs:enumeration value="Text" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RightsClaimType">
+        <xs:annotation>
+            <xs:documentation>A Type of RightsClaim.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NonMemberClaim" />
+            <xs:enumeration value="PublicDomain" />
+            <xs:enumeration value="SocietyClaim" />
+            <xs:enumeration value="Unknown" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RightsControllerRole">
+        <xs:annotation>
+            <xs:documentation>A Role of a RightsController.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AdministratingRecordCompany" />
+            <xs:enumeration value="OriginalOwner" />
+            <xs:enumeration value="RightsController" />
+            <xs:enumeration value="RoyaltyAdministrator" />
+            <xs:enumeration value="Unknown" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RoyaltyRateType">
+        <xs:annotation>
+            <xs:documentation>A Type of RoyaltyRate.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PennyRate" />
+            <xs:enumeration value="PercentageRoyaltyRate" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="SoftwareType">
+        <xs:annotation>
+            <xs:documentation>A Type of Software.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Game" />
+            <xs:enumeration value="MediaPlayer" />
+            <xs:enumeration value="Screensaver" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TelecomType">
+        <xs:annotation>
+            <xs:documentation>A Type of Telecom.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="2GTelecom" />
+            <xs:enumeration value="3GTelecom" />
+            <xs:enumeration value="AnalogModemTelecom" />
+            <xs:enumeration value="Broadband" />
+            <xs:enumeration value="Cable" />
+            <xs:enumeration value="HighSpeedBroadband" />
+            <xs:enumeration value="ISDN" />
+            <xs:enumeration value="MobileTelecom" />
+            <xs:enumeration value="Unknown" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TextType">
+        <xs:annotation>
+            <xs:documentation>A Type of Text.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Biography" />
+            <xs:enumeration value="CriticalReview" />
+            <xs:enumeration value="Document" />
+            <xs:enumeration value="EBook" />
+            <xs:enumeration value="LinerNotes" />
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="TitleType">
+        <xs:annotation>
+            <xs:documentation>A Type of Title.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AlternativeTitle" />
+            <xs:enumeration value="DisplayTitle" />
+            <xs:enumeration value="FormalTitle" />
+            <xs:enumeration value="GroupingTitle" />
+            <xs:enumeration value="OriginalTitle" />
+            <xs:enumeration value="OriginalTitleTranslated" />
+            <xs:enumeration value="PartTitle" />
+            <xs:enumeration value="ReferenceTitle" />
+            <xs:enumeration value="SearchTitle" />
+            <xs:enumeration value="Unknown" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="UserRole">
+        <xs:annotation>
+            <xs:documentation>A Role that a User plays in a Context.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+    <xs:simpleType name="UseType">
+        <xs:annotation>
+            <xs:documentation>A Type of Use.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Broadcast" />
+            <xs:enumeration value="ConditionalDownload" />
+            <xs:enumeration value="PermanentDownload" />
+            <xs:enumeration value="PlayInPublic" />
+            <xs:enumeration value="ProgrammedStream" />
+            <xs:enumeration value="Stream" />
+            <xs:enumeration value="UseAsBackground" />
+            <xs:enumeration value="UseAsRingbackTone" />
+            <xs:enumeration value="UseAsRingtone" />
+            <xs:enumeration value="UserDefined" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

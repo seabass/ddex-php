@@ -1,0 +1,399 @@
+﻿<xs:schema targetNamespace="http://ddex.net/xml/2007/dmms/10/" elementFormDefault="unqualified"
+    attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ddex="http://ddex.net/xml/20080225/ddex" xmlns:ddexC="http://ddex.net/xml/20080225/ddexC"
+    xmlns:iso639a2="http://ddex.net/xml/20080225/iso639a2"
+    xmlns:iso3166a2="http://ddex.net/xml/20080225/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20080225/iso4217a"
+    xmlns:dmm="http://ddex.net/xml/2007/dmms/10/">
+    <xs:import namespace="http://ddex.net/xml/20080225/ddex" schemaLocation="http://ddex.net/xml/20080225/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20080225/ddexC" schemaLocation="http://ddex.net/xml/20080225/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20080225/iso639a2" schemaLocation="http://ddex.net/xml/20080225/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20080225/iso3166a2" schemaLocation="http://ddex.net/xml/20080225/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20080225/iso4217a" schemaLocation="http://ddex.net/xml/20080225/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2008 DDEX LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="DataMismatchItem">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a DataMismatch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DataMismatchItemId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the DataMismatchItem.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MismatchDetectionDateTime" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which the DataMismatch is
+                    discovered.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMismatchType" type="dmm:DataMismatchType">
+                <xs:annotation>
+                    <xs:documentation>A Type of the DataMismatch.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMismatchStatus" type="dmm:DataMismatchStatus">
+                <xs:annotation>
+                    <xs:documentation>A status of the DataMismatch.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RequestedActionType" type="dmm:RequestedActionType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Type of action requested.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMismatchLocation" type="dmm:DataMismatchLocation"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the location in which the
+                        DataMismatch occurs.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AdditionalInformation" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Additional information on the DataMismatchType, the
+                        DataMismatchStatus, the RequestedActionType or a commentary on the
+                        DataMismatchItem.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchItemResponse">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a response to a
+            DataMismatch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the DataMismatchMessage this is in response
+                        to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageCreatedDateTime" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which the DataMismatchMessage this is in
+                        response to was created (the only allowed format is ISO 8601:2004:
+                        YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMismatchItemId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the DataMismatchItem this is in response
+                    to.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMismatchResponseType" type="dmm:DataMismatchResponseType"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Type of action that has been performed as a response to the
+                        DataMismatch.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AdditionalInformation" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Additional information on the DataMismatchResponseType or a
+                        commentary on the DataMismatchItemResponse.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchLocation">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a location in which a DataMismatch
+                occurs.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="ExternalLocation" type="dmm:ExternalLocation">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Descriptor of the
+                            location (outside of the DdexMessage) of the data element that caused
+                            the DataMismatch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageLocation" type="dmm:MessageLocation">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a location of the data
+                            element in a DdexMessage that caused the
+                        DataMismatch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="ValueFound" type="xs:anyType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The value that has been found to cause the
+                    DataMismatch.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ValueExpected" type="xs:anyType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A value that has is expected to replace the
+                    valueFound.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchResponseType">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a
+            DataMismatchResponseType.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="ddex:DataMismatchResponseType">
+                <xs:attribute name="Version" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of the Version of the
+                            DataMismatchResponseType. This is represented in an XML schema as an XML
+                            Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="Namespace" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Namespace of the DataMismatchResponseType. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>A UserDefined value of the DataMismatchResponseType. This
+                            is represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchStatus">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a
+            DataMismatchStatus.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="ddex:DataMismatchStatus">
+                <xs:attribute name="Version" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of the Version of the DataMismatchStatus.
+                            This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="Namespace" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Namespace of the DataMismatchStatus. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>A UserDefined value of the DataMismatchStatus. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchSummary">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a summary of DataMismatches.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="NumberOfDataMismatchItems" type="ddexC:NumberOfDataMismatchItems"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a NumberOfDataMismatchItems. The number
+                        of DataMismatchItems ought to be given for each DataMismatchStatus. If no
+                        status is given, the number of DataMismatchItems applies to all
+                    statuses.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Comment" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Comment on the DataMismatch(es). This Comment does not
+                        override or augment code lists.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DataMismatchType">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a
+            DataMismatchType.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="ddex:DataMismatchType">
+                <xs:attribute name="Version" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of the Version of the DataMismatchType.
+                            This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="Namespace" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Namespace of the DataMismatchType. This is represented
+                            in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>A UserDefined value of the DataMismatchType. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ExternalLocation">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a location of a data element outside
+                of a DdexMessage.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="IsAccessibleToRecipient" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether the location described by the
+                        Descriptor is accessible to the MessageRecipient of the DataMismatchMessage
+                        (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ExternalLocationDescriptor" type="ddexC:ExternalLocationDescriptor"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an
+                        ExternalLocationDescriptor. It has to be understandable, preferably
+                        machine-readable, to both MessageSender and MessageRecipient of the
+                        DataMismatchMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MessageLocation">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a location of a data element in a
+                DdexMessage.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageSender" type="ddexC:MessagingParty">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the
+                    MessageSender.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageLocationDescriptor" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A Descriptor of the location of the data element within the
+                        DdexMessage. A MessageLocationDescriptor is an Xpath 2.0 expression (subject
+                        to certain character substitutions).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageCreatedDateTime" type="xs:dateTime" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The DateTime on which the Message was created (the only
+                        allowed format is ISO 8601:2004: YYYY-MM-DDThh:mm:ssTZD).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RequestedActionType">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a
+            RequestedActionType.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="ddex:RequestedActionType">
+                <xs:attribute name="Version" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Identifier of the Version of the RequestedActionType.
+                            This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="Namespace" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>The Namespace of the RequestedActionType. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                    <xs:annotation>
+                        <xs:documentation>A UserDefined value of the RequestedActionType. This is
+                            represented in an XML schema as an XML Attribute.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:element name="DataMismatchMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the DMM DdexMessageSuite which reports on
+            DataMismatch.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                        DataMismatchMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DataMismatchSummary" type="dmm:DataMismatchSummary" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing a summary of the DataMismatches
+                            described in the Message.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DataMismatchItem" type="dmm:DataMismatchItem"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a
+                        DataMismatch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                    Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DataMismatchResponseMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the DMM DdexMessageSuite which is a response to a
+                DataMismatchMessage.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                        DataMismatchResponseMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DataMismatchItemResponse" type="dmm:DataMismatchItemResponse"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a response to a
+                            DataMismatch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                    Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

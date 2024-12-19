@@ -1,0 +1,1538 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/mlc/10" xmlns:amep="http://ddex.net/xml/amep/12"
+    xmlns:ddex="http://ddex.net/xml/20111118/ddex" xmlns:ddexC="http://ddex.net/xml/20111118/ddexC"
+    xmlns:iso3166a2="http://ddex.net/xml/20111118/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20111118/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20111118/iso639a2" xmlns:mlc="http://ddex.net/xml/mlc/10"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20111118/ddex"
+        schemaLocation="http://ddex.net/xml/20111118/ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/ddexC"
+        schemaLocation="http://ddex.net/xml/20111118/ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/amep/12"
+        schemaLocation="http://ddex.net/xml/amep/12/automated-message-exchange-protocol.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso639a2"
+        schemaLocation="http://ddex.net/xml/20111118/iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso3166a2"
+        schemaLocation="http://ddex.net/xml/20111118/iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20111118/iso4217a"
+        schemaLocation="http://ddex.net/xml/20111118/iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2011 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="Artist">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of an Artist. An Artist may be
+                described through Name, Identifier and Roles.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:Artist">
+                <xs:sequence>
+                    <xs:element name="InstrumentType" type="xs:string" minOccurs="0"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Type of musical instrument played by the
+                                Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ArtistDelegatedUsageRights"
+                        type="mlc:ArtistDelegatedUsageRights" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the kinds of usage
+                                for which rights have been delegated by the
+                                Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Sex" type="ddex:Sex" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>Sex</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DateAndPlaceOfBirth" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of birth.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DateAndPlaceOfDeath" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of death.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="PrimaryRole" type="ddexC:ArtistRole" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the primary role
+                                played by the Artist in relation to other
+                                Artists.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="PrimaryInstrumentType" type="xs:string" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Type of (musical) instrument rpimarily played by the
+                                Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="GoverningAgreementType" type="ddexC:GoverningAgreementType"
+                        minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a Type of an
+                                agreement that covers the Artist’s participation in making a
+                                SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ContactInformation" type="mlc:ContactId" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of contact Identifiers
+                                of the Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TerritoryOfResidency" type="ddexC:TerritoryCode" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The country of main residency of the Artist
+                                (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalRoles" type="ddexC:ArtistRole" minOccurs="0"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the additional roles
+                                played by the Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a typical or main
+                                Genre relating to the Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Membership" type="mlc:Membership" minOccurs="0"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a membership in a
+                                collective rights management organization.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ArtistDelegatedUsageRights">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the kinds of usage for which rights
+                have been delegated by an Artist.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="mlc:DelegatedUsageRights">
+                <xs:sequence>
+                    <xs:element name="MembershipType" type="ddex:MembershipType">
+                        <xs:annotation>
+                            <xs:documentation>A Type of membership of the Artist.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ContactId">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of contact Identifiers of a
+                Party.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="EmailAddress" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>An EmailAddress of the Party.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A PhoneNumber of the Party.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FaxNumber" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A FaxNumber of the Party.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DelegatedUsageRights">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the kinds of usage for which rights
+                have been delegated.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="UseType" type="ddexC:UseType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the use for which rights are
+                        delegated.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserInterfaceType" type="ddexC:UserInterfaceType" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a physical interface by
+                        which a Consumer uses a Service or Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PeriodOfRightsDelegation" type="ddexC:Period">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details about a Period of Time for
+                        which the delegation of usage rights applies. Periods are typically
+                        described by at least a StartDate or EndDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TerritoryOfRightsDelegation" type="ddexC:TerritoryCode"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Territory for which the delegation of usage rights applies
+                        (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="HostSoundCarrier">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a HostSoundCarrier of a
+                SoundRecording. This Composite exists to support the identification and matching of
+                SoundRecording information.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:HostSoundCarrier">
+                <xs:sequence>
+                    <xs:element name="SideNumber" type="xs:integer" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The SideNumber of the SoundRecording within the
+                                Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CarrierType" type="ddexC:CarrierType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the
+                                HostSoundCarrier.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="LabelName" type="ddexC:LabelName" minOccurs="0"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing the Name of the Label for the
+                                Release.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="NumberOfSoundRecordingsClaimedInCarrier"
+                        type="ddex:NumberOfResources">
+                        <xs:annotation>
+                            <xs:documentation>The number of SoundRecordings that are
+                                claimed.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="NumberOfDisks" type="ddex:NumberOfDisks" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The number of disks comprised by the
+                                HostSoundCarrier.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CompilationType" type="ddex:CompilationType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Type of Compilation.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReleaseType" type="ddexC:ReleaseType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the form in which a
+                                ReleaseCreator anticipates offering the Release to
+                                Consumers.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IsPhysicalDistribution" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The Flag indicating whether the HostSoundCarrier is
+                                physical or digital/electronic (=True) or not
+                                (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="PLine" type="ddexC:PLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the PLine for the
+                                SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CLine" type="ddexC:CLine" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the CLine for the
+                                SoundRecording.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the Date and Place
+                                of the Event in which the Release is made available for
+                                Usage.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ReleasingCompany" type="ddexC:PartyDescriptor" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the company that is
+                                releasing the HostSoundCarrier.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DistributingCompany" type="ddexC:PartyDescriptor"
+                        minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the company that is
+                                distributing the HostSoundCarrier.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CdProtectionType" type="ddexC:CdProtectionType" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of a
+                                CdProtectionType.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="RecordingMode" type="ddex:RecordingMode" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A RecordingMode.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DigitizationMode" type="ddex:DigitizationMode" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A DigitizationMode.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The Flag indicating whether the SoundRecording is
+                                hidden in some way from the Consumer (=True) or not
+                                (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The Flag indicating whether the SoundRecording is
+                                additional to those on the original Release of which this is a
+                                Version (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IsInternalCompilation" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The Flag indicating whether the HostSoundCarrier is a
+                                compilation where all tracks are owned by the issuing record company
+                                (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Membership">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a membership in a collective rights
+                management organization.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Organization" type="ddexC:PartyDescriptor">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the collective rights
+                        management organization.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MembershipType" type="ddex:MembershipType">
+                <xs:annotation>
+                    <xs:documentation>A Type of membership.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="StartDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The StartDate of the membership.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The EndDate of the membership.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MessageInBatch">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Music Licensing Company Message in
+                a Batch.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="MessageType" type="ddex:MlcMessageType">
+                <xs:annotation>
+                    <xs:documentation>The Type of Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="URL" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A URL of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Producer">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Producer. A Producer may be
+                described through Name and Identifier.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:PartyDescriptor">
+                <xs:sequence>
+                    <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" minOccurs="0"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Territory of the Producer (represented by an ISO
+                                3166-1 TerritoryCode).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ReportedUsage">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Usages for a
+                Resource.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="RecipientRevenueType" type="ddex:RecipientRevenueType">
+                <xs:annotation>
+                    <xs:documentation>A Type of Revenue according to the recipient of the
+                        payment.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RevenueSourceType" type="ddex:RevenueSourceType">
+                <xs:annotation>
+                    <xs:documentation>A Type of Revenue earned by the SoundRecording, according to
+                        the way the Revenue is generated.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UsagePeriod" type="ddexC:Period">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details about the Period of Time for
+                        which a usage is reported.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RevenueByUsage" type="mlc:RevenueByUsage" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Revenue specified for a
+                        UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RequestedSoundRecording">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a requested
+                SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        SoundRecordingId.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContributor" type="ddexC:PartyDescriptor" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Contributor to the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ResourceList">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Resources. ResourceList
+                provides a simple means of aggregating Resources without any explicit sequencing or
+                grouping: if that is needed it is provided by the ResourceGroup
+                Composite.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecording" type="mlc:SoundRecording" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Revenue">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Revenue.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="GrossRevenue" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The Revenue without or before deductions.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AdminFee" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>An administrative fee to be paid.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NetRevenueBeforeWithholdingTax" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The Revenue without or before taking the WithholdingTax into
+                        account.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WithholdingTax" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>[missing definition]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NetRevenue" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The Revenue after deductions.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RevenueByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Revenue specified for a
+                Territory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TerritoryCode" type="ddexC:TerritoryCode">
+                <xs:annotation>
+                    <xs:documentation>A Territory for which Revenue is reported (represented by an
+                        ISO 3166-1 TerritoryCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserName" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>An Identifier of a user.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UserRole" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A Description providing information about the role the user of
+                        the SoundRecording. This Comment is used to further detail the
+                        UserName.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DurationUsed" type="xs:duration" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Duration of the SoundRecording that has been used in a
+                        specified context (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where
+                        lower case characters indicate variables, upper case characters are part of
+                        the string, e.g. one hour, two minutes and three seconds would be
+                        PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfUsages" type="xs:integer" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A number of times a SoundRecording has been
+                        used.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsCredit" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the Revenue is a credit (=True) or
+                        a debit (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Revenue" type="mlc:Revenue">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        Revenue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RevenueByUsage">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a Revenue specified for a
+                UseType.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="UseType" type="ddexC:UseType">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a nature of a
+                        usage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RevenueByTerritory" type="mlc:RevenueByTerritory"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Revenue specified for a
+                        Territory.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RevenueDeclaration">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of one or more Revenue
+                declarations.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SoundRecordingId of the
+                        SoundRecording for which Revenue is declared.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtist" type="ddexC:Artist" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DisplayArtist for the
+                        SoundRecording. The DisplayArtist may be described through Name, Identifier
+                        and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CurrencyOfAccounting" type="ddexC:CurrencyCode">
+                <xs:annotation>
+                    <xs:documentation>The Currency in which the Revenues are accounted (represented
+                        by an ISO 4217 CurrencyCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReportedUsage" type="mlc:ReportedUsage" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Usages for the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RightsController">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a RightsController.
+                RightsControllers are typicallydescribed by Name, Identifier and
+                role(s).</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:RightsController">
+                <xs:sequence>
+                    <xs:element name="DelegatedUsageRights" type="mlc:DelegatedUsageRights"
+                        maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Composite containing details of the kinds of usage
+                                for which rights have been delegated.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IsPayingOutRoyalties" type="xs:boolean" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>A Flag indicating whether the RightsController is
+                                paying out royalties for all other relevant RightsControllers
+                                (=True) or not (=False).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SalesReport">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of
+                SalesTransactions.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Territory for which SalesTransactions are reported
+                        (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the reporting Period covered
+                        by the SalesReportMessage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesTransaction" type="mlc:SalesTransaction" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SalesTransaction for
+                        specified Usages of the Release or Resource.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesTransaction">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a
+                SalesTransaction.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of ReleaseIds of the Release.
+                        If available, a GRid has to be used. If the Release contains only one
+                        SoundRecording, the ISRC of the SoundRecording may be used
+                        instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Label" type="ddexC:PartyDescriptor" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the label on which the
+                        Release was marketed.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsCompilation" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether the Release is a compilation (=True)
+                        or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfSoundRecordingsClaimedInCarrier" type="xs:integer"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number of SoundRecordings that are
+                        claimed.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfUnitsSold" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The number of unit sales of the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoundRecording">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SoundRecordingType" type="ddexC:SoundRecordingType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Type of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsArtistRelated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is related to
+                        an Artist (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        SoundRecordingId.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IndirectSoundRecordingId" type="ddexC:MusicalWorkId" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a MusicalWorkId of a
+                        MusicalWork used in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceReference" type="ddex:LocalResourceAnchor">
+                <xs:annotation>
+                    <xs:documentation>The Identifier (specific to the Message) of the SoundRecording
+                        within the Release which contains it. This is a LocalResourceAnchor starting
+                        with the letter A.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReferenceTitle" type="ddexC:ReferenceTitle">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the ReferenceTitle of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InstrumentationDescription" type="ddexC:Description" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Description of the Type of
+                        instrumentation of the MusicalWork(s) in the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsMedley" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is a Medley
+                        (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsPotpourri" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is a Potpourri
+                        (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsInstrumental" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is instrumental
+                        (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBackground" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is used as
+                        background to other audio or audiovisual material (=True) or not
+                        (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsHiddenResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is hidden in
+                        some way from the Consumer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsBonusResource" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is additional
+                        to those on the original Release of which this is a Version (=True) or not
+                        (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IsComputerGenerated" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is generated by
+                        a computer (=True) or not (=False).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceBefore" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is preceded by
+                        a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NoSilenceAfter" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Flag indicating whether the SoundRecording is followed by
+                        a period of silence (=False) or not (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PerformerInformationRequired" type="xs:boolean" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether performer information is required
+                        (=True) or not (=False) when communicating details of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LanguageOfPerformance" type="iso639a2:LanguageCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Language of the Performance recorded in the SoundRecording
+                        (represented by an ISO 639-2 LanguageCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Duration" type="xs:duration">
+                <xs:annotation>
+                    <xs:documentation>The Duration of the SoundRecording (using the ISO 8601:2004
+                        PT[[hhH]mmM]ssS format, where lower case characters indicate variables,
+                        upper case characters are part of the string, e.g. one hour, two minutes and
+                        three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License,
+                        Claim, RightShare or contract for the MusicalWork(s) used in the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingCollectionReferenceList"
+                type="ddexC:SoundRecordingCollectionReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more Collections. The
+                        referenced Collection has to be of CollectionType AudioChapter. (Note: this
+                        Composite is not required for communication to Music Licensing Companies but
+                        is included in this Message to maintain compatibility to the Release
+                        Notification Message Suite Standard.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceMusicalWorkReferenceList"
+                type="ddexC:ResourceMusicalWorkReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of one or more MusicalWorks
+                        contained in the SoundRecording. (Note: this Composite is not required for
+                        communication to Music Licensing Companies but is included in this Message
+                        to maintain compatibility to the Release Notification Message Suite
+                        Standard.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContainedResourceReferenceList"
+                type="ddexC:ResourceContainedResourceReferenceList" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of
+                        ResourceContainedResourceReferences referring to a Resource that is
+                        contained in the current SoundRecording. (Note: this Composite is not
+                        required for communication to Music Licensing Companies but is included in
+                        this Message to maintain compatibility to the Release Notification Message
+                        Suite Standard.)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CreationDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the
+                        Event in which the SoundRecording was created.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the
+                        Event in which the SoundRecording was originally mastered (in either
+                        analogue or digital form).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SoundRecordingDetailsByTerritory"
+                type="mlc:SoundRecordingDetailsByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Descriptors and other
+                        attributes of the SoundRecording which may vary according to
+                        Territory.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="IsUpdated" type="xs:boolean" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Flag indicating whether the SoundRecording Element was updated
+                    (=True) or not (=False). The Flag may only be used when the UpdateIndicator is
+                    set to UpdateMessage. When this Boolean Flag is set to true, the
+                    MessageRecipient is expected to replace any previously provided SoundRecording
+                    data with the now provided data.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the SoundRecording as
+                    defined in IETF RfC 4646. The default is the same as indicated for the
+                    containing composite. Language and Script are provided as
+                    lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML
+                    Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="SoundRecordingDetailsByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of Descriptors and other attributes of
+                a SoundRecording which may vary according to Territory of
+                release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the SoundRecording details apply
+                            (represented by an ISO 3166-1 TerritoryCode). Either this Element or
+                            ExcludedTerritory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExcludedTerritoryCode" type="ddexC:TerritoryCode"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Territory to which the SoundRecording details do not
+                            apply (represented by an ISO 3166-1 TerritoryCode). Either this Element
+                            or Territory shall be present, but not both.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:choice>
+            <xs:element name="Title" type="ddexC:Title" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Title of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtist" type="ddexC:Artist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a DisplayArtist for the
+                        SoundRecording. A DisplayArtist may be described through Name, Identifier
+                        and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayConductor" type="mlc:Artist" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a DisplayConductor for the
+                        SoundRecording. A DisplayConductor may be described through Name, Identifier
+                        and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayComposer" type="mlc:Artist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a DisplayComposer for the
+                        SoundRecording. A DisplayComposer may be described through Name, Identifier
+                        and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FeaturedArtist" type="mlc:Artist" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a FeaturedArtist for the
+                        SoundRecording. A FeaturedArtist may be described through Name, Identifier
+                        and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FeaturedNonContractedArtist" type="mlc:Artist" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a non-contracted
+                        FeaturedArtist for the SoundRecording. A non-contracted FeaturedArtist may
+                        be described through Name, Identifier and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NonFeaturedArtist" type="mlc:Artist" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a NonFeaturedArtist for the
+                        SoundRecording. A NonFeaturedArtist may be described through Name,
+                        Identifier and Roles.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="InitialProducer" type="mlc:Producer" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an initial Producer for the
+                        SoundRecording. An initial Producer may be described through Name and
+                        Identifier.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ResourceContributor" type="ddexC:ResourceContributor" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Contributor to the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="IndirectResourceContributor" type="ddexC:IndirectResourceContributor"
+                minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an indirect Contributor to
+                        the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsAgreementId" type="ddexC:RightsAgreementId" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of a License,
+                        Claim, RightShare or contract for the MusicalWork(s) used in the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="LabelName" type="ddexC:LabelName" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing the Name of the Label under which the
+                        Release is to be marketed.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RightsController" type="mlc:RightsController" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of RightsController of Rights
+                        in the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RemasteredDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the
+                        Event in which the SoundRecording was re-mastered (usually
+                        digitally).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="OriginalResourceReleaseDate" type="ddexC:EventDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Date and Place of the
+                        Event in which the SoundRecording was originally published, whether for
+                        physical or electronic/online distribution.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PLine" type="ddexC:PLine" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PLine for the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Licensor" type="ddexC:PartyDescriptor" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Party granting the
+                        permission for Usage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CourtesyLine" type="ddexC:CourtesyLine" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing an Annotation which acknowledges record
+                        companies and/or other Parties giving permission for guests Artists or
+                        others featured on the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SequenceNumber" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The number indicating the order of the SoundRecording in a
+                        group of SoundRecordings in a Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="HostSoundCarrier" type="mlc:HostSoundCarrier" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a HostSoundCarrier on which
+                        the SoundRecording appears (e.g., the CD on which it was originally
+                        released). This Composite exists in the Release Notification Message Suite
+                        Standard, to support the identification and matching of SoundRecording
+                        information.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MarketingComment" type="ddexC:Comment" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a Comment about the promotion and
+                        marketing of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Genre" type="ddexC:Genre" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Genre to which the
+                        SoundRecording belongs.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ParentalWarningType" type="ddexC:ParentalWarningType" minOccurs="0"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the classification of the
+                        SoundRecording according to advice which it carries about the level of
+                        explicitness or offensiveness of its content.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AvRating" type="ddexC:AvRating" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a rating for the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TechnicalSoundRecordingDetails"
+                type="mlc:TechnicalSoundRecordingDetails" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing technical details of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="FulfillmentDate" type="ddexC:FulfillmentDate" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        FulfillmentDate.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Keywords" type="ddexC:Keywords" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Description of the
+                        SoundRecording containing Keywords.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Synopsis" type="ddexC:Synopsis" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Synopsis of the
+                        SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="GoverningAgreementType" type="ddexC:GoverningAgreementType"
+                minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of an agreement that
+                        covers the making of the SoundRecording.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the
+                    SoundRecordingDetailsByTerritory as defined in IETF RfC 4646. The default is the
+                    same as indicated for the containing composite. Language and Script are provided
+                    as lang[-scipt][-region][-variant]. This is represented in an XML schema as an
+                    XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="TechnicalSoundRecordingDetails">
+        <xs:annotation>
+            <xs:documentation>A Composite containing technical details of a
+                SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ContainerFormat" type="ddexC:ContainerFormat" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a
+                        ContainerFormat.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AudioCodecType" type="ddexC:AudioCodecType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of
+                        AudioCodec.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>The Language and script for the Elements of the
+                    TechnicalSoundRecordingDetails as defined in IETF RfC 4646. The default is the
+                    same as indicated for the containing composite. Language and Script are provided
+                    as lang[-scipt][-region][-variant]. This is represented in an XML schema as an
+                    XML Attribute.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:element name="DeclarationOfRevenueMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard
+                containing a declaration of Revenue from the usage of Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            DeclarationOfRevenueMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RevenueDeclaration" type="mlc:RevenueDeclaration"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more Revenue
+                            declarations for a SoundRecording.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfRevenueByUsageRecords" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The check number which identifies the number of
+                            RevenueByUsage records contained in the
+                            DeclarationOfRevenueMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the
+                        DeclarationOfRevenueMessage as defined in IETF RfC 4646. Language and Script
+                        are provided as lang[-scipt][-region][-variant]. This is represented in an
+                        XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DeclarationOfSoundRecordingRightsClaimMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard
+                containing details of a SoundRecording.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            DeclarationOfSoundRecordingRightsClaimMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Message. It must contain at least one out of StartDate or
+                            EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ResourceList" type="mlc:ResourceList">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of one or more
+                            Resources.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the
+                        DeclarationOfSoundRecordingRightsClaimMessage as defined in IETF RfC 4646.
+                        Language and Script are provided as lang[-scipt][-region][-variant]. This is
+                        represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard that
+                is sent to document the FTP transfer of a batch of Messages.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="FtpMessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsTestFlag" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                            (=True) or a LiveMessage (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RootDirectory" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>An Identifier of the root directory of all Messages in the
+                            batch communicated through the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfMessages" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Messages in the batch communicated through
+                            the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageInBatch" type="mlc:MessageInBatch" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Message in the
+                            batch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RequestSoundRecordingInformationMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard
+                containing a request for a declaration of SoundRecordings.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            RequestSoundRecordingInformationMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Message. It must contain at least one out of StartDate or
+                            EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RequestedSoundRecording" type="mlc:RequestedSoundRecording"
+                    minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a requested
+                            SoundRecording.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the
+                        RequestSoundRecordingInformationMessage as defined in IETF RfC 4646.
+                        Language and Script are provided as lang[-scipt][-region][-variant]. This is
+                        represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RevokeSoundRecordingRightsClaimMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard in
+                which a claim, typically communicated via a
+                DeclarationOfSoundRecordingRightsClaimMessage, is revoked.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            RevokeSoundRecordingRightsClaimMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod"
+                    minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a reporting Period
+                            covered by the Message. It must contain at least one out of StartDate or
+                            EndDate. The StartDate must be earlier than the EndDate if both are
+                            provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SoundRecordingId" type="ddexC:SoundRecordingId" minOccurs="0"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a
+                            SoundRecordingId.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the
+                        RevokeSoundRecordingRightsClaimMessage as defined in IETF RfC 4646. Language
+                        and Script are provided as lang[-scipt][-region][-variant]. This is
+                        represented in an XML schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SalesReportMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the Music Licensing Company Message Suite Standard used
+                by one Music Licensing Company to inform a second Music Licensing Company about unit
+                sales of Releases in electronic or physical formats.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            SalesReportMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SalesReport" type="mlc:SalesReport" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of SalesTransactions by a
+                            distribution partner reported to a record company.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfSalesTransactionRecords" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The check number which identifies the number of
+                            SalesTransaction records contained in the
+                            SalesReportMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML schema used for the
+                        Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="BusinessProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the business profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ReleaseProfileVersionId" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the release profile used for
+                        the Message. This is represented in an XML schema as an XML
+                        Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string" use="optional">
+                <xs:annotation>
+                    <xs:documentation>The Language and script for the Elements of the
+                        SalesReportMessage as defined in IETF RfC 4646. Language and Script are
+                        provided as lang[-scipt][-region][-variant]. This is represented in an XML
+                        schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

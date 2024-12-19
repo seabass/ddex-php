@@ -1,0 +1,1114 @@
+﻿<xs:schema targetNamespace="http://ddex.net/xml/2006/dsrm/10" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ddex="http://ddex.net/xml/20061017/ddex" xmlns:ddexC="http://ddex.net/xml/20061017/ddexC" xmlns:iso639a2="http://ddex.net/xml/20061017/iso639a2" xmlns:iso3166a2="http://ddex.net/xml/20061017/iso3166a2" xmlns:iso4217a="http://ddex.net/xml/20061017/iso4217a" xmlns:dsr="http://ddex.net/xml/2006/dsrm/10">
+    <xs:import namespace="http://ddex.net/xml/20061017/ddex" schemaLocation="http://ddex.net/xml/20061017/ddex.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/ddexC" schemaLocation="http://ddex.net/xml/20061017/ddexC.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/iso639a2" schemaLocation="http://ddex.net/xml/20061017/iso639a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/iso3166a2" schemaLocation="http://ddex.net/xml/20061017/iso3166a2.xsd" />
+    <xs:import namespace="http://ddex.net/xml/20061017/iso4217a" schemaLocation="http://ddex.net/xml/20061017/iso4217a.xsd" />
+    <xs:annotation>
+        <xs:documentation>(c) 2006 DDEX</xs:documentation>
+    </xs:annotation>
+    <xs:complexType name="Deal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details (in full or in summary) of the terms and conditions of a Deal made between a DSP (as Licensee) and a Licensor of Works or Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="DetailedDeal" type="dsr:DetailedDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal. Either this element or the SummaryDeal are required, but not both.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SummaryDeal" type="dsr:SummaryDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing a summary of the terms and conditions of the Deal. Either this element or the DetailedDeal are required, but not both.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="DetailedDeal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the terms and conditions of a Deal made between a DSP (as Licensee) and a Licensor of Works or Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CurrencyCode" type="iso4217a:CurrencyCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Currency in which the Transactions are made (represented by an ISO 4217 CurrencyCode) if different from the CurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceRangeType" type="ddexC:PriceRangeType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the PriceCode applicable to the SalesTransaction.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DealReference" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Reference (in the form of an Identifier, Name or Description) to a Document containing details of the Deal governing the SalesTransaction.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WholesalePricePerUnit" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The PPD or Guaranteed Minimum Payment per unit.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VATRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The VATRate as a Percentage of the total amount to be paid as value added tax. VATRate may be the total of multiple tax rates. Within the DSR Message, only one of the two VATRate elements (here and in the SalesToRecordCompanyByTerritory or in the SalesToSocietyByTerritory Composite) may be filled.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceConsumerPaidExcVAT" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The RetailPrice excluding VAT.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CalculationType" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a Type of Calculation method used by which the royalties are to be determined. This is a text string with no prescribed allowed values.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyRateType" type="ddex:RoyaltyRateType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Type of RoyaltyRate upon which the per unit royalty is calculated.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RoyaltyRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The RoyaltyRate upon which the royalty payment is calculated. Note that when this Composite is used in a sales reporting message for a RecordCompany, the RoyaltyRate refers to the rate due to the RecordCompany, not the royalties due to individual Artists.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AgreedUnitPriceExcVAT" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Price per unit (excluding VAT) agreed between DSP and the RecordCompany as representing the notional unit price for Subscription sales, as a basis for Royalty and other calculations.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DeductionRate" type="ddexC:DeductionRate" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of an applicable DeductionRate  (if any).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EffectiveUnitRateNet" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The RoyaltyRate which applies after all calculations and deductions have been applied.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ProprietaryFinancialData" type="dsr:ProprietaryFinancialData" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing proprietary financial fields.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AmountPayable" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The extended Amount due to the RecordCompany or MusicalWorkLicensor for each SalesTransaction. (The Amount reported in this field is an estimate based on best knowledge on the side of the Message Sender with respect to the intellectual property rights controlled by the Message Receiver. The default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="AmountPayableInCurrencyOfAccounting" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The AmountPayable, measured in the Currency in which it has been accounted.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CurrencyExchangeRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The ConversionRate applicable to the AmountPayableInCurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DspDetailsForSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite (for use by WorkLicensors) containing details of a DSP acting as a Licensee in a commercial relationship.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ddexC:PartyDescriptor">
+                <xs:sequence>
+                    <xs:element name="URL" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A URL for the DSP's Website.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TerritoryCode" type="ddexC:TerritoryCode">
+                        <xs:annotation>
+                            <xs:documentation>The Territory from which the DSP operates (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="DistributionChannelDescriptor" type="xs:string" minOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>The Name and/or Description of the channel through which the DSP distributes Releases.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="MWLI" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation>A Musical Work License Identifier identifying a License existing between the Licensor and the DSP.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:simpleType name="MessageContentRevenueType">
+        <xs:annotation>
+            <xs:documentation>The Type of revenue contained within a message (transactional or non-transactional).</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NonTransactionalRevenue" />
+            <xs:enumeration value="TransactionalRevenue" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="ProprietaryFinancialData">
+        <xs:annotation>
+            <xs:documentation>A Composite containing an element of proprietary financial data.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Value" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>The value of the proprietary financial data.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Description" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Description of the proprietary financial data.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RecordCompanyMarketShareData">
+        <xs:annotation>
+            <xs:documentation>A Composite containing information to support the calculation of a RecordCompany's market share of all Releases provided by a DSP to Consumers for a specified UseType.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The Type of Release sold, according to its Content, Duration and/or number of components.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:ReleaseType">
+                            <xs:attribute name="IsSingleResourceRelease" type="xs:boolean" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A Flag indicating whether the Release contains only a single Resource (=True) or not (=False).</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the ReleaseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the ReleaseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="UnitsSoldTotal" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The total number of Releases sold of the ContentType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="UseType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is being used.  Conditional Download and Broadcasting are examples of UseType.  Not to be confused with DistributionType which describes the method in which the Release is made available.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:UseType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="DistributionChannelType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is made available.  Telecom and Internet are examples of Distribution Type.  Not to be confused with UseType which describes how a Release is being used.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:DistributionChannelType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReleaseTransactionsToRecordCompany">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales Transactions for a Release, reported by a DSP to a RecordCompany.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the Release.  If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete physical product (such as a CD Album), the ICPN of the physical product may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:DetailedDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. (Note: The Amount reported in this Composite is an estimate based on best knowledge on the side of the Message Sender with respect to the intellectual property rights controlled by the Message Receiver. The default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesTransactionToRecordCompany" type="dsr:SalesTransactionToRecordCompany" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SalesTransaction for specified Usages of the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Comment" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Comment about the ReleaseTransactionsToRecordCompany Composite.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DurationUsed" type="ddexC:DurationByUseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the total Duration of the Release that has been used (this may be less than the total Duration of the Release), specified for a UseType (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S). This applies only to single-Resource Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ReleaseTransactionsToSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales Transactions for a Release, reported by a DSP to a WorkLicensor.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseId" type="ddexC:ReleaseId">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of Identifiers of the Release.  If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete physical product (such as a CD Album), the ICPN of the physical product may be used instead.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesTransactionToSociety" type="dsr:SalesTransactionToSociety" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of a SalesTransaction for specified Usages of the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MWLI" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Musical Work License Identifier identifying a License for the Musical Work(s) used in the Release.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DurationUsed" type="ddexC:DurationByUseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the total Duration of the Release that has been used (this may be less than the total Duration of the Release), specified for a UseType (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S). This applies only to Release which are SingleResourceCreations.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesDataGroupingToRecordCompany">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the criteria by which sales reports to Record Companies are grouped.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="StartDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The StartDate or actual Date of the sales report.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The EndDate of the sales report if different from EndDate of the transaction Period which is given in the MessageHeader.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PostCode" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A PostCode or zip code of a Consumer of the Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumDuration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The MinimumDuration of the Release (applicable only to Release containing a single SoundRecording or MusicVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaximumDuration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The MaximumDuration of the Release (applicable only to Release containing a single SoundRecording or MusicVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TelecomType" type="ddex:TelecomType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Type of Telecom used by a Consumer of the Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CustomerId" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A DSP's Identifier for a Consumer of the Releases sold.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TransactionId" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The DSP's Identifier for the Transaction.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="StoreLocationDescriptor" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Descriptor (typically an ID assigned by the DSP) of the store in which the Kiosk is located.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PromotionalActivityDescription" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The freetext Description of a promotional activity.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:DetailedDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. (Note: The Amount reported in this Composite is an estimate based on best knowledge on the side of the Message Sender with respect to the intellectual property rights controlled by the Message Receiver. The default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesDataGroupingToSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of the criteria by which sales reports to societies are grouped.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="StartDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The StartDate or actual Date of the sales report.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="EndDate" type="xs:date" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The EndDate of the sales report if different from EndDate of the transaction Period which is given in the MessageHeader.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PostCode" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A PostCode or zip code of a Consumer of the Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumDuration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The MinimumDuration of the Release (applicable only to Release containing a single SoundRecording or MusicVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MaximumDuration" type="xs:duration" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The MaximumDuration of the Release (applicable only to Release containing a single SoundRecording or MusicVideo) (using the ISO 8601:2004 PT[[hhH]mmM]ssS format, where lower case characters indicate variables, upper case characters are part of the string, e.g. one hour, two minutes and three seconds would be PT1H2M3S).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TelecomType" type="ddex:TelecomType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Type of Telecom used by a Consumer of the Releases.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CustomerId" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A DSP's Identifier for a Consumer of the Releases sold.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TransactionId" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The DSP's Identifier for the Transaction.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="StoreLocationDescriptor" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Descriptor (typically an ID assigned by the DSP) of the store in which the Kiosk is located.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PromotionalActivityDescription" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The freetext Description of a promotional activity.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:Deal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the MessageSender with respect to the intellectual property rights controlled by the MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesDataToRecordCompany">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales of a Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SalesDataGrouping" type="dsr:SalesDataGroupingToRecordCompany" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the criteria by which sales reports to Record Companies are grouped.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfConsumerSalesGross" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The Number of unit sales of the Release from the DSP to Consumers, gross of returns (not including units made available free of charge).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfUnitsReturned" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Number of sold units of a Release returned (with refund) to the DSP.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfFreeUnitsToConsumers" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The gross Number of units of a Release provided free to Consumers.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfFreeUnitsReturned" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Number of free units of a Release returned to the DSP.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesDataToSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales of a Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="SalesDataGrouping" type="dsr:SalesDataGroupingToSociety" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the criteria by which sales reports to societies are grouped.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfConsumerSalesGross" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The Number of unit sales of the Release from the DSP to Consumers, gross of returns (not including units made available free of charge).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfUnitsReturned" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Number of sold units of a Release returned (with refund) to the DSP.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfFreeUnitsToConsumers" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The gross Number of units of a Release provided free to Consumers.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfFreeUnitsReturned" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Number of free units of a Release returned to the DSP.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceConsumerPaidExcVAT" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The net Price (that is, excluding VAT) paid by the Consumer. This element is to be used only when no Deal Composite is available which applies to the sales.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:decimal">
+                            <xs:attribute name="CurrencyCode" type="iso4217a:CurrencyCode" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Currency of the Price (represented by an ISO 4217 Currency Code). This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="ConsumerPriceGross" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The gross Price (that is, including VAT) paid by the Consumer. This element is to be used only when no Deal Composite is available which applies to the sales.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesReportToRecordCompany">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported to a RecordCompany.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DSP" type="ddexC:DSP">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DSP whose sales are being reported.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesToRecordCompanyByCommercialModel" type="dsr:SalesToRecordCompanyByCommercialModel" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales reported by the DSP to the RecordCompany for a specific CommercialModelType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesReportToSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported to a MusicalWork Licensor.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="DspDetailsForSociety" type="dsr:DspDetailsForSociety">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the DSP (as Licensee) whose sales are being reported.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Licensor" type="ddexC:PartyDescriptor">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Party granting the permission for Usage.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesToSocietyByCommercialModel" type="dsr:SalesToSocietyByCommercialModel" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales reported by the DSP to the MusicalWorkLicensor for a specific CommercialModelType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesToRecordCompanyByCommercialModel">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported by a DSP to a RecordCompany for a specific CommercialModelType.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CommercialModelType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The CommercialModelType for which sales are reported (e.g. SubscriptionModel and PayAsYouGoModel).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:CommercialModelType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the CommercialModelType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the CommercialModelType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="CurrencyOfAccounting" type="iso4217a:CurrencyCode">
+                <xs:annotation>
+                    <xs:documentation>The Currency in which the Sales are accounted (represented by an ISO 4217 CurrencyCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesToRecordCompanyByTerritory" type="dsr:SalesToRecordCompanyByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales reported by the DSP to the RecordCompany for a specific Territory.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesToRecordCompanyByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported by a DSP to a RecordCompany for a specific Territory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Territory for which sales are reported (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VATRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The VATRate as a Percentage of the total Amount to be paid. VATRate may be the total of multiple tax rates. Within the DSR Message, only one of the two VATRate elements (here and in dsr:Deal) may be filled.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SourceTaxRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The SourceTaxRate applicable for inter-Territory revenue flows.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:DetailedDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. (Note: The Amount reported in this Composite is an estimate based on best knowledge on the side of the Message Sender with respect to the intellectual property rights controlled by the Message Receiver. The default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="RecordCompanyMarketShareData" type="dsr:RecordCompanyMarketShareData" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing information to support the calculation of the RecordCompany's market share of all Releases provided by a DSP to Consumers for a specified UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseTransactionsToRecordCompany" type="dsr:ReleaseTransactionsToRecordCompany" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the sales Transactions for a Release, reported by the DSP to the RecordCompany.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfSubscribers" type="ddexC:NumberOfSubscribers" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Number of Subscribers for the UseType for the DSP (applicable only where a Subscription Service is employed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspGrossRevenue" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the GrossRevenue of the DSP for the Territory, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspNetRevenue" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the NetRevenue of the DSP for the Territory, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspDeductionsAmount" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Amount deducted by the DSP from NetRevenue, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PercentageNetRevenueShare" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Percentage which represents a share of a NetRevenue generated by the Licensee which is due to the Licensor, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumAmountPerCustomer" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The minimum Amount that has to be paid by each Customer to the DSP for a Subscription for the UseType (applicable only where a Subscription Service is employed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WholesaleAmountTotal" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Amount representing the total wholesale revenue.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="WholesaleAmountTotalInCurrencyOfAccounting" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Amount representing the total wholesale revenue reported in the CurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalAmountPayableInCurrencyOfAccounting" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The calculated Total of AmountPayables in the CurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CurrencyExchangeRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The ConversionRate applicable to the TotalAmountPayableInCurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesToSocietyByCommercialModel">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported by a DSP to a WorkLicensor for a specific CommercialModelType.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CommercialModelType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The CommercialModelType for which sales are reported (e.g. SubscriptionModel and PayAsYouGoModel).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:CommercialModelType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the CommercialModelType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the CommercialModelType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="CurrencyOfAccounting" type="iso4217a:CurrencyCode">
+                <xs:annotation>
+                    <xs:documentation>The Currency in which the Sales are accounted (represented by an ISO 4217 CurrencyCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesToSocietyByTerritory" type="dsr:SalesToSocietyByTerritory" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales reported by the DSP to the MusicalWork Licensor for a specific Territory.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesToSocietyByTerritory">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of sales reported by a DSP to a MusicalWork Licensor for a specific Territory.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="TerritoryCode" type="ddexC:TerritoryCode" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Territory for which sales are reported (represented by an ISO 3166-1 TerritoryCode).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="VATRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The VATRate as a Percentage of the total amount to be paid as value added tax. VATRate may be the total of multiple tax rates. Within the DSR Message, only one of the two VATRate elements (here and in the DetailedDeal Composite) may be filled.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SourceTaxRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The SourceTaxRate applicable for inter-territory revenue flows.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:Deal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the MessageSender with respect to the intellectual property rights controlled by the MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseTransactionsToSociety" type="dsr:ReleaseTransactionsToSociety" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the sales Transactions for a Release, reported by the DSP to the Society.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NumberOfSubscribers" type="ddexC:NumberOfSubscribers" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Number of Subscribers for the UseType for the DSP (applicable only where a Subscription Service is employed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspGrossRevenue" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the GrossRevenue of the DSP for the Territory, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspNetRevenue" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the NetRevenue of the DSP for the Territory, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DspDeductionsAmount" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Amount deducted by the DSP from NetRevenue, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PercentageNetRevenueShare" type="ddexC:DecimalQuantityByUseType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the Percentage which represents a share of a NetRevenue generated by the Licensee which is due to the Licensor, specified for a UseType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="MinimumAmountPerCustomer" type="xs:integer" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The minimum Amount that has to be paid by each Customer to the DSP for a Subscription for the UseType (applicable only where a Subscription Service is employed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalWholesalePricePerUnit" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The calculated Total of WholesalePricePerUnits (based on 100% of the shares of the Works or Releases involved).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalWholesalePricePerUnitInCurrencyOfAccounting" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The TotalWholesalePricePerUnit measured in the Currency in which they have been accounted (based on 100% of the shares of the Works or Releases involved).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TotalAmountPayableInCurrencyOfAccounting" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The calculated Total of AmountPayables in the CurrencyOfAccounting (based on 100% of the shares of the Works or Releases involved).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CurrencyExchangeRate" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The ConversionRate applicable to the TotalAmountPayableInCurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesTransactionToRecordCompany">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a SalesTransaction for specified Usages of a Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="UseType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is being used.  Conditional Download and Broadcasting are examples of UseType.  Not to be confused with DistributionType which describes the method in which the Release is made available.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:UseType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="DistributionChannelType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is made available.  Telecom and Internet are examples of Distribution Type.  Not to be confused with UseType which describes how a Release is being used.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:DistributionChannelType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:DetailedDeal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. (Note: The Amount reported in this Composite is an estimate based on best knowledge on the side of the Message Sender with respect to the intellectual property rights controlled by the Message Receiver. The default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesDataToRecordCompany" type="dsr:SalesDataToRecordCompany" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales of the Release governed by the Deal.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataToBeForwarded" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>A Flag indicating whether sales data will be forwarded by the DSP (or any Organization reporting on behalf of the DSP) to the appropriate MusicalWork Licensor (=False) or if this has to be done by the MessageRecipient (=True).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SalesTransactionToSociety">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of a sales Transaction for specified Usages of a Release.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="UseType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is being used.  Conditional Download and Broadcasting are examples of UseType.  Not to be confused with DistributionType which describes the method in which the Release is made available.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:UseType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the UseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="DistributionChannelType">
+                <xs:annotation>
+                    <xs:documentation>A code representing a method by which a Release is made available.  Telecom and Internet are examples of Distribution Type.  Not to be confused with UseType which describes how a Release is being used.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:DistributionChannelType">
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the DistributionType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Deal" type="dsr:Deal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of the terms and conditions of the Deal under which sales were transacted. The reported figures are based on best knowledge on the side of the MessageSender with respect to the intellectual property rights controlled by the MessageRecipient (the default is that 100% ownership is assumed).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SalesDataToSociety" type="dsr:SalesDataToSociety" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>A Composite containing details of sales of the Release governed by the Deal.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TariffReference" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Reference (in the form of an Identifier, Name or Description) to a Document containing details of the Tariff.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="TariffSubReference" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Reference (in the form of an Identifier, Name or Description) to a Document (subsidiary to a TariffReference) containing more specific details of a Tariff in respect to which the Claim is made.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SummaryDeal">
+        <xs:annotation>
+            <xs:documentation>A Composite containing a summary of the terms and conditions of a Deal made between a DSP (as Licensee) and a Licensor of Works or Releases.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="CurrencyCode" type="iso4217a:CurrencyCode" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Currency in which the Transactions are made (represented by an ISO 4217 CurrencyCode), if different from the CurrencyOfAccounting.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="PriceConsumerPaidExcVAT" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Price paid by Consumers, excluding VAT (Value Added Tax).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ConsumerPriceGross" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The Price paid by Consumers, including VAT (Value Added Tax).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TotalSalesByReleaseType">
+        <xs:annotation>
+            <xs:documentation>A Composite containing details of total sales of Releases of a specific Type.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ReleaseType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The Type of Release sold, according to its Content, Duration and/or NumberOfComponents.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="ddex:ReleaseType">
+                            <xs:attribute name="IsSingleResourceRelease" type="xs:boolean" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A Flag indicating whether the Release contains only a single Resource (=True) or not (=False).</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="Namespace" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>The Namespace of the ReleaseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                            <xs:attribute name="UserDefinedValue" type="xs:string" use="optional">
+                                <xs:annotation>
+                                    <xs:documentation>A UserDefined value of the ReleaseType. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="UnitsSoldTotal" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation>The total number of Releases sold of the ContentType.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SalesReportToRecordCompanyMessage">
+        <xs:annotation>
+            <xs:documentation>A sales reporting Message in the DSR Message Suite sent to a RecordCompany.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The Message Header for the SalesReportToRecordCompanyMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Period covered in the SalesReportToRecordCompanyMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RemittanceAdvice" type="ddex:RemittanceAdvice" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A textual commentary about the method to settle payments between MessageSender and MessageReceiver (e.g. ‘international bank transfer initiated on 2006-09-18’).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageContentRevenueType" type="dsr:MessageContentRevenueType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Type of revenue contained within the SalesReportToRecordCompanyMessage (transactional or non-transactional).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ContainedReleaseSummary" type="ddexC:ReleaseSummary" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing summary details of a Release for which sales data is provided in the SalesReportToRecordCompanyMessage. For each Release that is reported in a SalesReportToRecordCompanyMessage, exactly one ContainedReleaseSummary composite needs to be provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SalesReportToRecordCompany" type="dsr:SalesReportToRecordCompany" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of sales by a DistributionPartner reported to a RecordCompany.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="TotalSalesByReleaseType" type="dsr:TotalSalesByReleaseType" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of total sales of Releases of a specific Type.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RoyaltyAmount" type="ddexC:Amount" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the RoyaltyAmount due. This is an estimate based on best knowledge on the side of the MessageSender with respect to the intellectual property Rights controlled by the MessageRecipient (The default is that 100% ownership is assumed).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfSalesTransactionRecords" type="xs:integer" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Number of Sales TransactionRecords contained in the SalesReportToRecordCompanyMessage. TransactionRecords are SalesToRecordCompanyByTerritory Composites.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML Schema used for the Message. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SalesReportToSocietyMessage">
+        <xs:annotation>
+            <xs:documentation>A sales reporting Message in the DSR Message Suite sent to a MusicalWorkLicensor.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="ddexC:MessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The Message Header for the SalesReportToSocietyMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageNotificationPeriod" type="ddexC:MessageNotificationPeriod">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the Period covered in the SalesReportToSocietyMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RemittanceAdvice" type="ddex:RemittanceAdvice" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A textual commentary about the method to settle payments between MessageSender and MessageReceiver (e.g. ‘international bank transfer initiated on 2006-09-18’).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageContentRevenueType" type="dsr:MessageContentRevenueType" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Type of revenue contained within the SalesReportToSocietyMessage (transactional or non-transactional).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ContainedReleaseSummary" type="ddexC:ReleaseSummary" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing summary details of a Release for which sales data is provided in the SalesReportToSocietyMessage. For each Release that is reported in a SalesReportToSocietyMessage, exactly oneContainedReleaseSummary composite needs to be provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ContainedRelease" type="ddexC:Release" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of a Release for which sales data is provided in the SalesReportToSocietyMessage. For each Release that is reported in a SalesReportToSocietyMessage, exactly one ContainedRelease composite needs to be provided.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SalesReportToSociety" type="dsr:SalesReportToSociety" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of sales by a DSP reported to a MuscialWork Licensor.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RoyaltyAmount" type="ddexC:Amount" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of the RoyaltyAmount due. This is an estimate based on best knowledge on the side of the MessageSender with respect to the intellectual property Rights controlled by the MessageRecipient (The default is that 100% ownership is assumed).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfSalesTransactionRecords" type="xs:integer" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>The Number of Sales TransactionRecords contained in the SalesReportToSocietyMessage. TransactionRecords are SalesToSocietyByTerritory Composites.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageSchemaVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Identifier of the Version of the XML Schema used for the Message. This is represented in an XML Schema as an XML Attribute.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

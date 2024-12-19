@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:avs="http://ddex.net/xml/avs/avs"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://ddex.net/xml/avs/avs"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified">
+   <xs:annotation>
+      <xs:documentation>© 2006-2019 Digital Data Exchange, LLC (DDEX)</xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:documentation>This XML Schema Definition file is, together with all DDEX standards, subject to two licences: If you wish to evaluate whether the standard meets your needs please have a look at the Evaluation Licence at https://kb.ddex.net/display/HBK/Evaluation+Licence+for+DDEX+Standards. If you want to implement and use this DDEX standard, please take out an Implementation Licence. For details please go to http://ddex.net/apply-ddex-implementation-licence.</xs:documentation>
+   </xs:annotation>
+   <xs:simpleType name="AsserterType">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Type of an Asserter.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="CollectionSociety">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Organization for the collective management and licensing of Rights in MusicalWorks.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="InterestedPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Publisher with an interest in the Work.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MusicLicensingCompany">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Organization that is duly authorised to issue Licenses and collect and distribute royalties for the use of SoundRecordings and music Videos on behalf of the owners of the SoundRecordings and music Videos (usually a RecordCompany) and/or Performers. MusicLicensingCompanies may issue Licenses on behalf of phonogram producers, Performers or both. Note: MusicLicensingCompanies were previously referred to as Producers (and/or Performers) Collection Societies (PCSs).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Publisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Any Publisher, not necessarily with a specific interest in the Work.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="RecordCompanyWithInterestInResource">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A RecordCompany with an interest in the SoundRecording or Video.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ThirdParty">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party which is not one of the parties directly involved in a context.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="LinkAcknowledgementStatus">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Status for an Acknowledgement of a link.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Accepted">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Accepted.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Acknowledged">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Acknowledged, with no view on validity.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Conflict">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">Conflict detected.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UserDefined">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of an Entity which is defined by a sender of a DdexMessage in a manner acceptable to its recipient.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="MessageControlType">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Type of Message according to its operational status.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="LiveMessage">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Message containing data which is expected to be used for commercial purposes.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="TestMessage">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Message containing data which is expected to be used for testing purposes.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="MissingLinkReason">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A reason for a missing link.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="NoLinkFound">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value that applies in the generic case where the sender of the link message could not find a link (with no further details given).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NoMatchFound">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value that applies if the query was so vague that the sender of the link message could not find the entity described in the query.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UserDefined">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of an Entity which is defined by a sender of a DdexMessage in a manner acceptable to its recipient.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="MusicalWorkContributorRole">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Role played by a Contributor in relation to a MusicalWork.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Adapter">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Author of adapted Lyrics of a MusicalWork. Note: The adapted Lyrics may or may not result in a new copyright Creation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Architect">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Designer of a building.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Arranger">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A modifier of musical components of a Work. Note: The arranged MusicalWork may or may not result in a new copyright Creation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Author">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of written or spoken words which form part of a Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AuthorInQuotations">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party largely quoted in works, but which is not a direct Contributor.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AuthorOfAfterword">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Author of an afterword.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Compiler">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party creating a work by selecting, arranging, aggregating, and editing other works.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Composer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of the musical elements of a MusicalWork. </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ComposerLyricist">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator that plays the roles of Composer and Lyricist of a MusicalWork.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Conceptor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party on whose original idea a Work is based.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Creator">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Maker of a Creation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="DialogueAuthor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An Author of dialogues.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Dissertant">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Person presenting a thesis for an academic degree.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Engraver">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print from an engraved printing plate.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Etcher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print from an etched printing plate.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Journalist">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of an article for a magazine or a newspaper.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="LandscapeArchitect">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Designer of a land features and structures (e.g. in a park).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Librettist">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a libretto.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Lithographer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print using lithography.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Lyricist">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of the Lyrics of a MusicalWork.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MetalEngraver">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of an engraved piece of metal (mainly for decorative purposes).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NonLyricAuthor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of written or spoken words other than Lyrics. </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PlateMaker">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print using a plate.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Playwright">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a stageplay.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Reporter">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of an account of an Event.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Reviewer">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party who is responsible for the review of a Creation.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Rubricator">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Facsimilist specializing in rubrication.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="ScreenplayAuthor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a screenplay.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Sculptor">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a sculpture.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SubArranger">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of arrangements made on behalf of a SubPublisher.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SubLyricist">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator who substitutes or modifies the existing Lyrics of a MusicalWork.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Translator">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party that translates Lyrics and/or Text from one Language into another. This is also known as sub-Lyricist.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Woodcutter">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print using woodcuts.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="WoodEngraver">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of a print using wood engravings.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="WriterOfAccompanyingMaterial">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Creator of textual material that accompanies audio or audiovisual material.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BookPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Publisher of books.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CopyrightClaimant">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party listed as copyright owner at the time of registration.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="CopyrightHolder">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party to whom copyright has been granted or transferred.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MusicPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party that enters into contracts and/or assignments with composer(s) in respect of their copyright MusicalWorks and in return for a proportion of the royalties generated from their use, undertakes work on behalf of the composer(s) including but not limited to promoting the usage of the Works, licensing their use, collecting and distributing royalties and developing writing partnerships with other composer(s). This term includes OriginalPublisher and SubPublisher. </xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NewspaperPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Publisher of newspapers.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="OriginalPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party which has acquired, from a Creator, Rights in a Creation for a specified Territory and Period.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="PeriodicalPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Publisher of periodicals (e.g. magazines, journals).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SubPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party which has acquired, by Agreement with a MusicPublisher, Rights in one or more MusicalWorks for a specified Territory and Period. Note: This includes Rights which are passed to subsidiaries or affiliates of a larger Organization.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SubstitutedPublisher">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Party acting on behalf of a MusicPublisher or other controller of Rights in a MusicalWork.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Unknown">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of an Entity used when a sender of a DdexMessage wishes to indicate that the value within the allowed value set is unknown.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UserDefined">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of an Entity which is defined by a sender of a DdexMessage in a manner acceptable to its recipient.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ResourceWorkRelationshipType">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Type of relationship between a Resource and a Work.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="Interpellation">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Resource based on multiple Works where one of them is played by new musicians.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Medley">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Resource is the recording of a Medley.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MultipleWorkResource">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Resource based on multiple Works (or on a CompositeMusicalWork).</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="MusicalWorkWithSamples">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The Resource is the recording of a MusicalWorkWithSamples.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="SingleWorkResource">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Resource based on a single Work.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="Status">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Status.</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="AssetsNeeded">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that assets are needed.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="AwaitingMaterials">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that materials are pending.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="BackedUp">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that a back up has been made.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Canceled">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that a cancellation has been made.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Closed">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that the Status is 'closed'.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Completed">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that the Status is 'completed'.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="InWork">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating work in progress.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="NotStarted">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that the Status is 'not started'.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="UserDefined">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of an Entity which is defined by a sender of a DdexMessage in a manner acceptable to its recipient.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+         <xs:enumeration value="Verified">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A value indicating that the Status is 'verified'.</xs:documentation>
+            </xs:annotation>
+         </xs:enumeration>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

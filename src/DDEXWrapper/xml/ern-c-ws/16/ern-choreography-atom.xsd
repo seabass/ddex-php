@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:atom="http://www.w3.org/2005/Atom" xmlns:avs="http://ddex.net/xml/avs/avs"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.w3.org/2005/Atom" elementFormDefault="unqualified"
+   attributeFormDefault="unqualified">
+   <xs:import namespace="http://ddex.net/xml/avs/avs"
+      schemaLocation="http://ddex.net/xml/avs/avs_atom.xsd"/>
+   <xs:annotation>
+      <xs:documentation>© 2006-2017 Digital Data Exchange, LLC (DDEX)</xs:documentation>
+      <xs:documentation>This XML Schema Definition file is, together with all DDEX standards, subject to two licences: If you wish to evaluate whether the standard meets your needs please have a look at the Evaluation Licence at https://kb.ddex.net/display/HBK/Evaluation+Licence+for+DDEX+Standards. If you want to implement and use this DDEX standard, please take out an Implementation Licence. For details please go to http://ddex.net/apply-ddex-implementation-licence.</xs:documentation>
+   </xs:annotation>
+   <xs:element name="Feed">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Message in the ERN Choreography Standard for an atom feed defined by W3C/IETF. The Atom feed construct is defined in section 4.1.1 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:choice minOccurs="3" maxOccurs="unbounded">
+            <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of an author of a Resource.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="atom:Category">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a category.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of a contributor to a Resource.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="generator" minOccurs="0" type="atom:Generator">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a generator.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="icon" minOccurs="0" type="atom:Icon">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an icon.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="id" type="atom:Id">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an ID.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="link" minOccurs="0" maxOccurs="unbounded" type="atom:Link">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a link.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="logo" minOccurs="0" type="atom:Logo">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a logo.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="rights" minOccurs="0" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of rights.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="subtitle" minOccurs="0" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a subtitle.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a title.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="updated" type="atom:DateTime">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an update.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="entry" minOccurs="0" maxOccurs="unbounded" type="atom:Entry">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an entry.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+         </xs:choice>
+         <xs:anyAttribute namespace="##other"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:element name="Entry">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Message in the ERN Choreography Standard for an atom entry defined by W3C/IETF. The Atom entry construct is defined in section 4.1.2 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:choice maxOccurs="unbounded">
+            <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of an author of a Resource.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="atom:Category">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a category.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="content" minOccurs="0" type="atom:Content">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a content.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of a contributor to a Resource.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="id" type="atom:Id">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an ID.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="link" minOccurs="0" maxOccurs="unbounded" type="atom:Link">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a link.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="published" minOccurs="0" type="atom:DateTime">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a published.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="rights" minOccurs="0" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of rights.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="source" minOccurs="0" type="atom:Source">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a source.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="summary" minOccurs="0" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a summary.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="title" type="atom:Text">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of a title.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="updated" type="atom:DateTime">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of an update.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseType" minOccurs="0" type="avs:ReleaseType_ERN4">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Type of Release according to its content, Duration and/or number of components. Note: a ReleaseType is the form in which a ReleaseCreator anticipates offering a Release to Consumers.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ReleaseId" minOccurs="0" type="atom:ReleaseId">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing details of ReleaseIds. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayArtistName" minOccurs="0"
+               type="atom:DisplayArtistNameWithDefault">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Composite containing the Name to be used by a DSP when presenting Artist details of the Release to a Consumer.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+         <xs:anyAttribute namespace="##other"/>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="Category">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a category. The Atom cagegory construct is defined in section 4.2.2 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:attribute name="term" type="xs:string" use="required">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The term. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="scheme" type="xs:anyURI">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The scheme. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="label" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The label. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="Content" mixed="true">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a content. The Atom content construct is defined in section 4.1.3 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The type. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="src" type="xs:anyURI">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The source. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="DateTime">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a published.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:dateTime">
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="Entry">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Message in the ERN Choreography Standard for an atom entry defined by W3C/IETF. The Atom entry construct is defined in section 4.1.2 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:choice maxOccurs="unbounded">
+         <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of an author of a Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="atom:Category">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a category.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="content" minOccurs="0" type="atom:Content">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a content.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of a contributor to a Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="id" type="atom:Id">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an ID.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="link" minOccurs="0" maxOccurs="unbounded" type="atom:Link">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a link.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="published" minOccurs="0" type="atom:DateTime">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a published.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="rights" minOccurs="0" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of rights.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="source" minOccurs="0" type="atom:Source">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a source.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="summary" minOccurs="0" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a summary.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="title" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a title.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="updated" type="atom:DateTime">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an update.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseType" minOccurs="0" type="avs:ReleaseType_ERN4">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Type of Release according to its content, Duration and/or number of components. Note: a ReleaseType is the form in which a ReleaseCreator anticipates offering a Release to Consumers.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ReleaseId" minOccurs="0" type="atom:ReleaseId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of ReleaseIds. If available, a GRid has to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DisplayArtistName" minOccurs="0" type="atom:DisplayArtistNameWithDefault">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing the Name to be used by a DSP when presenting Artist details of the Release to a Consumer.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:choice>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="Generator">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a generator. The Atom generator element is defined in section 4.2.4 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="uri" type="xs:anyURI">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The URI. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="version" type="xs:string">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Identifier of the Version of the generator. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="Icon">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of an icon. The Atom icon construct is defined in section 4.2.5 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:anyURI">
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="Id">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of an ID. The Atom id construct is defined in section 4.2.6 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:anyURI">
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="Link" mixed="true">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a link. The Atom link construct is defined in section 3.4 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:attribute name="href" type="xs:anyURI" use="required">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The href. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="rel" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The rel. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="type" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The type. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="hreflang" type="xs:NMTOKEN">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The href lang. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="title" type="xs:string">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The title. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="length" type="xs:positiveInteger">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The length. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="Logo">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a logo. The Atom logo construct is defined in section 4.2.8 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:anyURI">
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="Person">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of a Party related to a Resource. The Atom person construct is defined in section 3.2 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:choice maxOccurs="unbounded">
+         <xs:element name="name" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Name of the person.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="uri" minOccurs="0" type="atom:URI">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a URI.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="email" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an email address.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:normalizedString">
+                  <xs:pattern value="\w+@(\w+\.)+\w+"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:any namespace="##other"/>
+      </xs:choice>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="Source">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a source. The Atom source construct is defined in section 4.2.11 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:choice maxOccurs="unbounded">
+         <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of an author of a Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="category" minOccurs="0" maxOccurs="unbounded" type="atom:Category">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a category.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="contributor" minOccurs="0" maxOccurs="unbounded" type="atom:Person">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the Name, Identifier and Role(s) of a contributor to a Resource.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="generator" minOccurs="0" type="atom:Generator">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a generator.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="icon" minOccurs="0" type="atom:Icon">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an icon.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="id" minOccurs="0" type="atom:Id">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an ID.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="link" minOccurs="0" maxOccurs="unbounded" type="atom:Link">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a link.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="logo" minOccurs="0" type="atom:Logo">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a logo.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="rights" minOccurs="0" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of rights.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="subtitle" minOccurs="0" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a subtitle.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="title" minOccurs="0" type="atom:Text">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a title.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="updated" minOccurs="0" type="atom:DateTime">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of an update.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="Text" mixed="true">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a text. The Atom text construct is defined in section 3.1 of the format spec.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:any namespace="http://www.w3.org/1999/xhtml" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="avs:TextType_ATOM">
+         <xs:annotation>
+            <xs:documentation source="ddex:Definition">The type. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+         </xs:annotation>
+      </xs:attribute>
+      <xs:anyAttribute namespace="##other"/>
+   </xs:complexType>
+   <xs:complexType name="URI">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a URI.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:anyURI">
+            <xs:anyAttribute namespace="##other"/>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="CatalogNumber">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a CatalogNumber.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="Namespace" type="xs:string" use="required">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Namespace of the CatalogNumber. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="ProprietaryId">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a ProprietaryIdentifier.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="Namespace" type="xs:string" use="required">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Namespace of the ProprietaryIdentifier. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="ReleaseId">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a ReleaseId. If available, a GRid should always to be used. If the Release contains only one SoundRecording, the ISRC of the SoundRecording may be used instead. If the Release is an abstraction of a complete PhysicalProduct (such as a CD Album), the ICPN of the PhysicalProduct may be used instead.</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+         <xs:element name="GRid" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The GRid identifying the Release. This is the preferred Element and is mandatory if a GRid is available. A GRid comprises four parts: the xs:string 'A1', followed by five alphanumeric characters, ten alphanumeric characters and and one alphanumeric character. DDEX will enforce the syntax [a-zA-Z0-9]{18} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ISRC" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">The ISRC (International Standard Recording Code as defined in ISO 3901) used as proxy for identification of the Release. Only applicable when the Release only contains one SoundRecording or one MusicalWorkVideo. An ISRC comprises four parts: two characters, followed by three alphanumeric characters, then two digits and five digits. DDEX will enforce the syntax [a-zA-Z]{2}[a-zA-Z0-9]{3}[0-9]{7} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ICPN" minOccurs="0" type="xs:string">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">An ICPN used as proxy for identification of the Release. Only applicable when the Release is an abstraction of a complete PhysicalProduct. An ICPN comprises 12 or 13 digits, depending whether it is an EAN (13) or a UPC (12). DDEX will enforce the syntax [0-9]{12,13} using XML Schema in the future.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="CatalogNumber" minOccurs="0" type="atom:CatalogNumber">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of the CatalogNumber of the Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ProprietaryId" minOccurs="0" maxOccurs="unbounded"
+            type="atom:ProprietaryId">
+            <xs:annotation>
+               <xs:documentation source="ddex:Definition">A Composite containing details of a ProprietaryIdentifier of the Release.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="DisplayArtistNameWithDefault">
+      <xs:annotation>
+         <xs:documentation source="ddex:Definition">A Composite containing details of a DisplayArtistName.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="LanguageAndScriptCode" type="xs:string">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Language and script of the Name as defined in IETF RfC 5646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="ApplicableTerritoryCode" type="avs:CurrentTerritoryCode">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">A Territory to which the Name applies. The use of ISO TerritoryCodes (or the term 'Worldwide') is strongly encouraged; TIS TerritoryCodes should only be used if both MessageSender and MessageRecipient are familiar with this standard. </xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="IsDefault" type="xs:boolean">
+               <xs:annotation>
+                  <xs:documentation source="ddex:Definition">The Flag indicating whether this Composite provides default values (=true). This Flag should not be set if this is not the case. This is represented in an XML schema as an XML Attribute.</xs:documentation>
+               </xs:annotation>
+            </xs:attribute>
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+</xs:schema>

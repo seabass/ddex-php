@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified"
+    targetNamespace="http://ddex.net/xml/2011/ccho/10" 
+    xmlns:amep="http://ddex.net/xml/2011/amep/12"
+    xmlns:ccho="http://ddex.net/xml/2011/ccho/10" 
+    xmlns:ddex="http://ddex.net/xml/20110630/ddex"
+    xmlns:ddexC="http://ddex.net/xml/20110630/ddexC"
+    xmlns:iso3166a2="http://ddex.net/xml/20110630/iso3166a2"
+    xmlns:iso4217a="http://ddex.net/xml/20110630/iso4217a"
+    xmlns:iso639a2="http://ddex.net/xml/20110630/iso639a2"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://ddex.net/xml/20110630/ddex" schemaLocation="ddex.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/ddexC" schemaLocation="ddexC.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/2011/amep/12" schemaLocation="amep.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso639a2" schemaLocation="iso639a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso3166a2" schemaLocation="iso3166a2.xsd"/>
+    <xs:import namespace="http://ddex.net/xml/20110630/iso4217a" schemaLocation="iso4217a.xsd"/>
+    <xs:annotation>
+        <xs:documentation>(c) 2006-2011 DDEX, LLC</xs:documentation>
+    </xs:annotation>
+    <xs:element name="ManifestMessage">
+        <xs:annotation>
+            <xs:documentation>A Message in the CCHO DdexMessageSuite that is sent to document the
+                FTP transfer of a batch of Messages.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MessageHeader" type="amep:FtpMessageHeader">
+                    <xs:annotation>
+                        <xs:documentation>The MessageHeader for the
+                            ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="IsTestFlag" type="xs:boolean">
+                    <xs:annotation>
+                        <xs:documentation>The Flag indicating whether the Message is a TestMessage
+                            (=True) or a LiveMessage (=False).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="RootDirectory" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>An Identifier of the root directory of all Messages in the
+                            batch communicated through the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="NumberOfMessages" type="xs:integer">
+                    <xs:annotation>
+                        <xs:documentation>The number of Messages in the batch communicated through
+                            the ManifestMessage.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="MessageInBatch" type="ddexC:ErnMessageInBatch"
+                    maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>A Composite containing details of an ERN Message in the
+                            batch.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="MessageVersionId" type="xs:string" use="required">
+                <xs:annotation>
+                    <xs:documentation>The Version of the Message.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
