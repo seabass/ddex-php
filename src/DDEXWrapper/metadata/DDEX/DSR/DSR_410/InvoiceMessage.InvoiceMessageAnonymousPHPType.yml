@@ -1,0 +1,107 @@
+DDEX\DSR\DSR_410\InvoiceMessage\InvoiceMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSchemaVersionId
+            accessor:
+                getter: getMessageSchemaVersionId
+                setter: setMessageSchemaVersionId
+            xml_attribute: true
+            type: string
+        businessProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: BusinessProfileVersionId
+            accessor:
+                getter: getBusinessProfileVersionId
+                setter: setBusinessProfileVersionId
+            xml_attribute: true
+            type: string
+        releaseProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseProfileVersionId
+            accessor:
+                getter: getReleaseProfileVersionId
+                setter: setReleaseProfileVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\ddexC\MessageHeaderType
+        invoiceId:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceId
+                setter: setInvoiceId
+            type: DDEX\ddexC\ProprietaryIdType
+        containedReleaseSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainedReleaseSummary
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainedReleaseSummary
+                setter: setContainedReleaseSummary
+            xml_list:
+                inline: true
+                entry_name: ContainedReleaseSummary
+            type: array<DDEX\DSR\DSR_410\ContainedReleaseSummaryType>
+        currency:
+            expose: true
+            access_type: public_method
+            serialized_name: Currency
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrency
+                setter: setCurrency
+            type: string
+        invoiceItem:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceItem
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceItem
+                setter: setInvoiceItem
+            xml_list:
+                inline: true
+                entry_name: InvoiceItem
+            type: array<DDEX\DSR\DSR_410\InvoiceItemType>
+        totalRoyaltyAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalRoyaltyAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalRoyaltyAmount
+                setter: setTotalRoyaltyAmount
+            xml_list:
+                inline: true
+                entry_name: TotalRoyaltyAmount
+            type: array<DDEX\DSR\DSR_410\TotalRoyaltyAmountType>

@@ -1,0 +1,22 @@
+DDEX\DSR\DSR_400\ProprietaryFinancialDataType:
+    properties:
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: float
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            type: DDEX\ddexC\DescriptionType

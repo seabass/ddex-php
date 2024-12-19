@@ -1,0 +1,19 @@
+DDEX\DSR\DSR_410\SalesReportToSocietyType:
+    properties:
+        dSP:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        licensor:
+            -
+                Valid: null
+        salesByCommercialModel:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

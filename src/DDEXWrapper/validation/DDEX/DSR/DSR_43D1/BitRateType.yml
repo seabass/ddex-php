@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\BitRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - bps
+                        - Gbps
+                        - kbps
+                        - Mbps
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,42 @@
+DDEX\DSR\DSR_43D1\PeriodType:
+    properties:
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: DDEX\DSR\DSR_43D1\EventDateType
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: DDEX\DSR\DSR_43D1\EventDateType
+        startDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDateTime
+                setter: setStartDateTime
+            type: DDEX\DSR\DSR_43D1\EventDateTimeType
+        endDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDateTime
+                setter: setEndDateTime
+            type: DDEX\DSR\DSR_43D1\EventDateTimeType

@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_430\CollectionWorkReferenceListType:
+    properties:
+        collectionWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

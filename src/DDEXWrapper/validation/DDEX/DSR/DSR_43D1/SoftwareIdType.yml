@@ -1,0 +1,7 @@
+DDEX\DSR\DSR_43D1\SoftwareIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

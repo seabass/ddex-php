@@ -1,0 +1,106 @@
+DDEX\DSR\DSR_420\SalesTransactionToSocietyType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\DSR\DSR_420\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\DSR\DSR_420\UserInterfaceTypeType>
+        distributionChannelType:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelType
+                setter: setDistributionChannelType
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelType
+            type: array<DDEX\DSR\DSR_420\DistributionChannelTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\DSR\DSR_420\CarrierTypeType>
+        deal:
+            expose: true
+            access_type: public_method
+            serialized_name: Deal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDeal
+                setter: setDeal
+            type: DDEX\DSR\DSR_420\DealForSocietiesType
+        salesData:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesData
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesData
+                setter: setSalesData
+            xml_list:
+                inline: true
+                entry_name: SalesData
+            type: array<DDEX\DSR\DSR_420\SalesDataToSocietyType>
+        isUpgrade:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpgrade
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsUpgrade
+                setter: setIsUpgrade
+            type: bool
+        tariffReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TariffReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTariffReference
+                setter: setTariffReference
+            type: DDEX\DSR\DSR_420\TariffReferenceType

@@ -1,0 +1,7 @@
+DDEX\DSR\DSR_430\PriceTypeType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

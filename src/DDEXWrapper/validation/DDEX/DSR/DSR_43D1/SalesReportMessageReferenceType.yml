@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\SalesReportMessageReferenceType:
+    properties:
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageThreadId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

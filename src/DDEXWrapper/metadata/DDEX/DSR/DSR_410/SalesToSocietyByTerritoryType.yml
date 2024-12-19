@@ -1,0 +1,199 @@
+DDEX\DSR\DSR_410\SalesToSocietyByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        taxRate:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTaxRate
+                setter: setTaxRate
+            xml_list:
+                inline: true
+                entry_name: TaxRate
+            type: array<DDEX\ddexC\TaxRateType>
+        deal:
+            expose: true
+            access_type: public_method
+            serialized_name: Deal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDeal
+                setter: setDeal
+            type: DDEX\DSR\DSR_410\DealForSocietiesType
+        releaseTransactions:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseTransactions
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseTransactions
+                setter: setReleaseTransactions
+            xml_list:
+                inline: true
+                entry_name: ReleaseTransactions
+            type: array<DDEX\DSR\DSR_410\ReleaseTransactionsToSocietyType>
+        numberOfSubscribers:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfSubscribers
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfSubscribers
+                setter: setNumberOfSubscribers
+            type: DDEX\ddexC\NumberOfSubscribersType
+        dspGrossRevenue:
+            expose: true
+            access_type: public_method
+            serialized_name: DspGrossRevenue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDspGrossRevenue
+                setter: setDspGrossRevenue
+            type: DDEX\ddexC\AmountByUseAndDistributionChannelTypeType
+        dspNetRevenue:
+            expose: true
+            access_type: public_method
+            serialized_name: DspNetRevenue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDspNetRevenue
+                setter: setDspNetRevenue
+            type: DDEX\ddexC\AmountByUseAndDistributionChannelTypeType
+        dspDeductionsAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: DspDeductionsAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDspDeductionsAmount
+                setter: setDspDeductionsAmount
+            type: DDEX\ddexC\AmountByUseAndDistributionChannelTypeType
+        percentageNetRevenueShare:
+            expose: true
+            access_type: public_method
+            serialized_name: PercentageNetRevenueShare
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPercentageNetRevenueShare
+                setter: setPercentageNetRevenueShare
+            type: DDEX\ddexC\AmountByUseAndDistributionChannelTypeType
+        minimumAmountPerCustomer:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumAmountPerCustomer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumAmountPerCustomer
+                setter: setMinimumAmountPerCustomer
+            type: float
+        minimumAmountPerCollection:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumAmountPerCollection
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumAmountPerCollection
+                setter: setMinimumAmountPerCollection
+            xml_list:
+                inline: true
+                entry_name: MinimumAmountPerCollection
+            type: array<DDEX\ddexC\AmountPerCollectionType>
+        maximumAmountPerCollection:
+            expose: true
+            access_type: public_method
+            serialized_name: MaximumAmountPerCollection
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMaximumAmountPerCollection
+                setter: setMaximumAmountPerCollection
+            xml_list:
+                inline: true
+                entry_name: MaximumAmountPerCollection
+            type: array<DDEX\ddexC\AmountPerCollectionType>
+        totalWholesalePricePerUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalWholesalePricePerUnit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalWholesalePricePerUnit
+                setter: setTotalWholesalePricePerUnit
+            type: float
+        totalWholesalePricePerUnitInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalWholesalePricePerUnitInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalWholesalePricePerUnitInCurrencyOfAccounting
+                setter: setTotalWholesalePricePerUnitInCurrencyOfAccounting
+            type: float
+        totalAmountPayableInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalAmountPayableInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalAmountPayableInCurrencyOfAccounting
+                setter: setTotalAmountPayableInCurrencyOfAccounting
+            type: float
+        currencyExchangeRate:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyExchangeRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyExchangeRate
+                setter: setCurrencyExchangeRate
+            type: float
+        alternativeConversionRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AlternativeConversionRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAlternativeConversionRate
+                setter: setAlternativeConversionRate
+            xml_list:
+                inline: true
+                entry_name: AlternativeConversionRate
+            type: array<DDEX\ddexC\ConversionRateType>

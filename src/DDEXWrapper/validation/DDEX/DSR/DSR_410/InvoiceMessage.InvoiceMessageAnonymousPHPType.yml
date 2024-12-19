@@ -1,0 +1,37 @@
+DDEX\DSR\DSR_410\InvoiceMessage\InvoiceMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        invoiceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        containedReleaseSummary:
+            -
+                Valid: null
+        currency:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        invoiceItem:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        totalRoyaltyAmount:
+            -
+                Valid: null

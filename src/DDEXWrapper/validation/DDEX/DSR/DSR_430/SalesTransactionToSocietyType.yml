@@ -1,0 +1,17 @@
+DDEX\DSR\DSR_430\SalesTransactionToSocietyType:
+    properties:
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        deal:
+            -
+                Valid: null
+        salesData:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

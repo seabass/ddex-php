@@ -1,0 +1,51 @@
+DDEX\DSR\DSR_43D1\TotalRoyaltyAmountType:
+    properties:
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<DDEX\DSR\DSR_43D1\ReleaseTypeType>
+        rightsType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsType
+                setter: setRightsType
+            xml_list:
+                inline: true
+                entry_name: RightsType
+            type: array<DDEX\DSR\DSR_43D1\RightsTypeType>
+        royaltyAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmount
+                setter: setRoyaltyAmount
+            type: DDEX\DSR\DSR_43D1\RoyaltyAmountType
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\DSR\DSR_43D1\UseTypeType>

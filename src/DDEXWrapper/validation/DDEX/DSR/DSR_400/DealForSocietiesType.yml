@@ -1,0 +1,8 @@
+DDEX\DSR\DSR_400\DealForSocietiesType:
+    properties:
+        detailedDeal:
+            -
+                Valid: null
+        summaryDeal:
+            -
+                Valid: null

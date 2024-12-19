@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_43D1\WorkListType:
+    properties:
+        musicalWork:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

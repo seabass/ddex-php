@@ -1,0 +1,14 @@
+DDEX\DSR\DSR_43D1\TaxScopeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - CombinedTax
+                        - FederalTax
+                        - LocalTax
+                        - ProvincialTax
+                        - StateTax
+                        - UserDefined
+                    groups:
+                        - xsd_rules

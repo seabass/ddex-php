@@ -1,0 +1,47 @@
+DDEX\DSR\DSR_410\SalesToSocietyByCommercialModelType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        commercialModelType:
+            expose: true
+            access_type: public_method
+            serialized_name: CommercialModelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCommercialModelType
+                setter: setCommercialModelType
+            xml_list:
+                inline: true
+                entry_name: CommercialModelType
+            type: array<DDEX\ddexC\CommercialModelTypeType>
+        currencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyOfAccounting
+                setter: setCurrencyOfAccounting
+            type: string
+        salesByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesByTerritory
+                setter: setSalesByTerritory
+            xml_list:
+                inline: true
+                entry_name: SalesByTerritory
+            type: array<DDEX\DSR\DSR_410\SalesToSocietyByTerritoryType>

@@ -1,0 +1,35 @@
+DDEX\DSR\DSR_430\ResourceGroupContentItemType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        resourceType:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceType
+                setter: setResourceType
+            xml_list:
+                inline: true
+                entry_name: ResourceType
+            type: array<DDEX\DSR\DSR_430\ResourceTypeType>
+        releaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReference
+                setter: setReleaseResourceReference
+            type: DDEX\DSR\DSR_430\ReleaseResourceReferenceType

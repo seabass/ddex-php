@@ -1,0 +1,47 @@
+DDEX\DSR\DSR_430\RightShareType:
+    properties:
+        rightShareId:
+            -
+                Valid: null
+        rightShareReference:
+            -
+                Regex:
+                    pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rightShareCreationReferenceList:
+            -
+                Valid: null
+        musicalWorkRightsClaimType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - CopyrightControl
+                                    - NonMemberClaim
+                                    - PublicDomain
+                                    - SocietyClaim
+                                    - Unknown
+                    groups:
+                        - xsd_rules
+        rightsController:
+            -
+                Valid: null
+        validityPeriod:
+            -
+                Valid: null
+        licenseStatus:
+            -
+                Choice:
+                    choices:
+                        - Active
+                        - Pending
+                        - Revoked
+                    groups:
+                        - xsd_rules

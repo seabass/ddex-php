@@ -1,0 +1,15 @@
+DDEX\DSR\DSR_43D1\PurposeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackgroundMusic
+                        - ChannelTrailerMusic
+                        - Extract
+                        - FilmTrailerMusic
+                        - ForegroundMusic
+                        - TrailerMusic
+                        - UserDefined
+                    groups:
+                        - xsd_rules

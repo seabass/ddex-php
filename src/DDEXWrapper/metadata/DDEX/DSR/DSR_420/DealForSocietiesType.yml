@@ -1,0 +1,22 @@
+DDEX\DSR\DSR_420\DealForSocietiesType:
+    properties:
+        detailedDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: DetailedDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDetailedDeal
+                setter: setDetailedDeal
+            type: DDEX\DSR\DSR_420\DetailedDealType
+        summaryDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: SummaryDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSummaryDeal
+                setter: setSummaryDeal
+            type: DDEX\DSR\DSR_420\SummaryDealType

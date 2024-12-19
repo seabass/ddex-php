@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_43D1\ResourceMusicalWorkReferenceListType:
+    properties:
+        resourceMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

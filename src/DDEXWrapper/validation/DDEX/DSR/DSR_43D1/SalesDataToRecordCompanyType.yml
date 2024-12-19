@@ -1,0 +1,37 @@
+DDEX\DSR\DSR_43D1\SalesDataToRecordCompanyType:
+    properties:
+        salesDataGrouping:
+            -
+                Valid: null
+        numberOfConsumerSalesGross:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        numberOfUnitAdjustments:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        numberOfFreeUnitsToConsumers:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        numberOfUnitAdjustmentsToFreeUnits:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

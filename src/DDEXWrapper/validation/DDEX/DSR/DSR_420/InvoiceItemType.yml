@@ -1,0 +1,153 @@
+DDEX\DSR\DSR_420\InvoiceItemType:
+    properties:
+        invoiceItemId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        licenseOrClaimId:
+            -
+                Valid: null
+        invoicePeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        salesReportMessageReference:
+            -
+                Valid: null
+        releaseId:
+            -
+                Valid: null
+        invoiceReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        numberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseUsagePrice:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        appliedRoyaltyRate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        calculatedRoyaltyAmountPerUse:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        calculatedRoyaltyAmountPerInvoice:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - AdvertisementVideo
+                                    - Album
+                                    - AlertToneRelease
+                                    - Animation
+                                    - AsPerContract
+                                    - AudioBookRelease
+                                    - AudioClipRelease
+                                    - BackCoverImageRelease
+                                    - BookletBackImageRelease
+                                    - BookletFrontImageRelease
+                                    - BookletRelease
+                                    - Bundle
+                                    - ClassicalAlbum
+                                    - ConcertVideo
+                                    - CorporateFilm
+                                    - DigitalBoxSetRelease
+                                    - Documentary
+                                    - DocumentImageRelease
+                                    - EBookRelease
+                                    - EP
+                                    - Episode
+                                    - FeatureFilm
+                                    - FilmBundle
+                                    - FrontCoverImageRelease
+                                    - IconRelease
+                                    - InfomercialVideo
+                                    - InteractiveBookletRelease
+                                    - KaraokeRelease
+                                    - LiveEventVideo
+                                    - LogoRelease
+                                    - LongFormMusicalWorkVideoRelease
+                                    - LongFormNonMusicalWorkVideoRelease
+                                    - LyricSheetRelease
+                                    - MultimediaAlbum
+                                    - MultimediaSingle
+                                    - MusicalWorkBasedGameRelease
+                                    - MusicalWorkClipRelease
+                                    - MusicalWorkReadalongVideoRelease
+                                    - MusicalWorkTrailerRelease
+                                    - MusicalWorkVideoChapterRelease
+                                    - News
+                                    - NonMusicalWorkBasedGameRelease
+                                    - NonMusicalWorkClipRelease
+                                    - NonMusicalWorkReadalongVideoRelease
+                                    - NonMusicalWorkTrailerRelease
+                                    - NonMusicalWorkVideoChapterRelease
+                                    - NonSerialAudioVisualRecording
+                                    - PhotographRelease
+                                    - RingbackToneRelease
+                                    - RingtoneRelease
+                                    - ScreensaverRelease
+                                    - Season
+                                    - Series
+                                    - SheetMusicRelease
+                                    - ShortFormMusicalWorkVideoRelease
+                                    - ShortFormNonMusicalWorkVideoRelease
+                                    - Single
+                                    - SingleResourceRelease
+                                    - SingleResourceReleaseWithCoverArt
+                                    - TrackRelease
+                                    - TrailerVideo
+                                    - TrayImageRelease
+                                    - Unknown
+                                    - UserDefined
+                                    - VideoAlbum
+                                    - VideoChapterRelease
+                                    - VideoClipRelease
+                                    - VideoScreenCaptureRelease
+                                    - VideoSingle
+                                    - VideoTrackRelease
+                                    - WallpaperRelease
+                                    - AudioDramaRelease
+                                    - ClassicalDigitalBoxedSet
+                                    - ClassicalMultimediaAlbum
+                                    - DjMix
+                                    - Drama
+                                    - DramaticoMusicalVideoRelease
+                                    - MultimediaDigitalBoxedSet
+                                    - PlayList
+                                    - ShortFilm
+                                    - StemBundle
+                                    - VideoMastertoneRelease
+                    groups:
+                        - xsd_rules

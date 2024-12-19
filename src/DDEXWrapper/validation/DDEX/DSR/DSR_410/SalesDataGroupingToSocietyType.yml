@@ -1,0 +1,30 @@
+DDEX\DSR\DSR_410\SalesDataGroupingToSocietyType:
+    properties:
+        distributionChannelType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - AsPerContract
+                                    - Broadcast
+                                    - Cable
+                                    - Internet
+                                    - InternetAndMobile
+                                    - IPTV
+                                    - MobileTelephone
+                                    - Narrowcast
+                                    - OnDemandStream
+                                    - PeerToPeer
+                                    - Physical
+                                    - Satellite
+                                    - Simulcast
+                                    - Unknown
+                                    - UserDefined
+                                    - Webcast
+                    groups:
+                        - xsd_rules
+        deal:
+            -
+                Valid: null

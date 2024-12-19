@@ -1,0 +1,11 @@
+DDEX\DSR\DSR_43D1\CueVisualPerceptionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Background
+                        - UserDefined
+                        - Visual
+                    groups:
+                        - xsd_rules

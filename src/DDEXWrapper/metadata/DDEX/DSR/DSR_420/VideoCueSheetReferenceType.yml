@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_420\VideoCueSheetReferenceType:
+    properties:
+        videoCueSheetReference:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoCueSheetReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoCueSheetReference
+                setter: setVideoCueSheetReference
+            type: string

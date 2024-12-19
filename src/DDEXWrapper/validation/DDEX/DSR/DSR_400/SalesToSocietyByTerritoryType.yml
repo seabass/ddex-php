@@ -1,0 +1,41 @@
+DDEX\DSR\DSR_400\SalesToSocietyByTerritoryType:
+    properties:
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        taxRate:
+            -
+                Valid: null
+        deal:
+            -
+                Valid: null
+        releaseTransactions:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        numberOfSubscribers:
+            -
+                Valid: null
+        dspGrossRevenue:
+            -
+                Valid: null
+        dspNetRevenue:
+            -
+                Valid: null
+        dspDeductionsAmount:
+            -
+                Valid: null
+        percentageNetRevenueShare:
+            -
+                Valid: null
+        minimumAmountPerCollection:
+            -
+                Valid: null
+        maximumAmountPerCollection:
+            -
+                Valid: null

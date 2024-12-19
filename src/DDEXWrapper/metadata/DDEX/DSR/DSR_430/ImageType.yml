@@ -1,0 +1,100 @@
+DDEX\DSR\DSR_430\ImageType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        imageType:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageType
+                setter: setImageType
+            type: DDEX\DSR\DSR_430\ImageTypeType
+        isArtistRelated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsArtistRelated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsArtistRelated
+                setter: setIsArtistRelated
+            type: bool
+        imageId:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageId
+                setter: setImageId
+            xml_list:
+                inline: true
+                entry_name: ImageId
+            type: array<DDEX\DSR\DSR_430\ResourceProprietaryIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\DSR\DSR_430\TitleType>
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\DSR\DSR_430\EventDateType
+        imageDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageDetailsByTerritory
+                setter: setImageDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: ImageDetailsByTerritory
+            type: array<DDEX\DSR\DSR_430\ImageDetailsByTerritoryType>
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string

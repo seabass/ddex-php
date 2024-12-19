@@ -1,0 +1,11 @@
+DDEX\DSR\DSR_420\ResourceContributorType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null

@@ -1,0 +1,562 @@
+<?php
+
+namespace DDEX\DSR\DSR_420;
+
+/**
+ * Class representing SheetMusicDetailsByTerritoryType
+ *
+ * A Composite containing details of Descriptors, Dates and other attributes of a SheetMusic which may vary according to Territory of release.
+ * XSD Type: SheetMusicDetailsByTerritory
+ */
+class SheetMusicDetailsByTerritoryType
+{
+    /**
+     * The Language and script for the Elements of the SheetMusicDetailsByTerritory as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.
+     *
+     * @var string $languageAndScriptCode
+     */
+    private $languageAndScriptCode = null;
+
+    /**
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @var string[] $territoryCode
+     */
+    private $territoryCode = [
+        
+    ];
+
+    /**
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @var string[] $excludedTerritoryCode
+     */
+    private $excludedTerritoryCode = [
+        
+    ];
+
+    /**
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @var \DDEX\DSR\DSR_420\TitleType[] $title
+     */
+    private $title = [
+        
+    ];
+
+    /**
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @var \DDEX\DSR\DSR_420\ResourceContributorType[] $resourceContributor
+     */
+    private $resourceContributor = [
+        
+    ];
+
+    /**
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @var \DDEX\DSR\DSR_420\IndirectResourceContributorType[] $indirectResourceContributor
+     */
+    private $indirectResourceContributor = [
+        
+    ];
+
+    /**
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @var \DDEX\DSR\DSR_420\CLineType[] $cLine
+     */
+    private $cLine = [
+        
+    ];
+
+    /**
+     * A Composite containing an Annotation which acknowledges record companies and/or other Parties giving permission for Artists or others featured in the SheetMusic.
+     *
+     * @var \DDEX\DSR\DSR_420\CourtesyLineType $courtesyLine
+     */
+    private $courtesyLine = null;
+
+    /**
+     * A Composite containing details of the Date and Place of the Event in which the SheetMusic was originally published, whether for physical or electronic/online distribution.
+     *
+     * @var \DDEX\DSR\DSR_420\EventDateType $originalResourceReleaseDate
+     */
+    private $originalResourceReleaseDate = null;
+
+    /**
+     * Gets as languageAndScriptCode
+     *
+     * The Language and script for the Elements of the SheetMusicDetailsByTerritory as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.
+     *
+     * @return string
+     */
+    public function getLanguageAndScriptCode()
+    {
+        return $this->languageAndScriptCode;
+    }
+
+    /**
+     * Sets a new languageAndScriptCode
+     *
+     * The Language and script for the Elements of the SheetMusicDetailsByTerritory as defined in IETF RfC 4646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-scipt][-region][-variant]. This is represented in an XML schema as an XML Attribute.
+     *
+     * @param string $languageAndScriptCode
+     * @return self
+     */
+    public function setLanguageAndScriptCode($languageAndScriptCode)
+    {
+        $this->languageAndScriptCode = $languageAndScriptCode;
+        return $this;
+    }
+
+    /**
+     * Adds as territoryCode
+     *
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @return self
+     * @param string $territoryCode
+     */
+    public function addToTerritoryCode($territoryCode)
+    {
+        $this->territoryCode[] = $territoryCode;
+        return $this;
+    }
+
+    /**
+     * isset territoryCode
+     *
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetTerritoryCode($index)
+    {
+        return isset($this->territoryCode[$index]);
+    }
+
+    /**
+     * unset territoryCode
+     *
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetTerritoryCode($index)
+    {
+        unset($this->territoryCode[$index]);
+    }
+
+    /**
+     * Gets as territoryCode
+     *
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @return string[]
+     */
+    public function getTerritoryCode()
+    {
+        return $this->territoryCode;
+    }
+
+    /**
+     * Sets a new territoryCode
+     *
+     * A Territory to which the SheetMusic details apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or ExcludedTerritory shall be present, but not both.
+     *
+     * @param string $territoryCode
+     * @return self
+     */
+    public function setTerritoryCode(array $territoryCode = null)
+    {
+        $this->territoryCode = $territoryCode;
+        return $this;
+    }
+
+    /**
+     * Adds as excludedTerritoryCode
+     *
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @return self
+     * @param string $excludedTerritoryCode
+     */
+    public function addToExcludedTerritoryCode($excludedTerritoryCode)
+    {
+        $this->excludedTerritoryCode[] = $excludedTerritoryCode;
+        return $this;
+    }
+
+    /**
+     * isset excludedTerritoryCode
+     *
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetExcludedTerritoryCode($index)
+    {
+        return isset($this->excludedTerritoryCode[$index]);
+    }
+
+    /**
+     * unset excludedTerritoryCode
+     *
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetExcludedTerritoryCode($index)
+    {
+        unset($this->excludedTerritoryCode[$index]);
+    }
+
+    /**
+     * Gets as excludedTerritoryCode
+     *
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @return string[]
+     */
+    public function getExcludedTerritoryCode()
+    {
+        return $this->excludedTerritoryCode;
+    }
+
+    /**
+     * Sets a new excludedTerritoryCode
+     *
+     * A Territory to which the SheetMusic details do not apply (represented by an ISO 3166-1 TerritoryCode). Either this Element or Territory shall be present, but not both.
+     *
+     * @param string $excludedTerritoryCode
+     * @return self
+     */
+    public function setExcludedTerritoryCode(array $excludedTerritoryCode = null)
+    {
+        $this->excludedTerritoryCode = $excludedTerritoryCode;
+        return $this;
+    }
+
+    /**
+     * Adds as title
+     *
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @return self
+     * @param \DDEX\DSR\DSR_420\TitleType $title
+     */
+    public function addToTitle(\DDEX\DSR\DSR_420\TitleType $title)
+    {
+        $this->title[] = $title;
+        return $this;
+    }
+
+    /**
+     * isset title
+     *
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetTitle($index)
+    {
+        return isset($this->title[$index]);
+    }
+
+    /**
+     * unset title
+     *
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetTitle($index)
+    {
+        unset($this->title[$index]);
+    }
+
+    /**
+     * Gets as title
+     *
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @return \DDEX\DSR\DSR_420\TitleType[]
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Sets a new title
+     *
+     * A Composite containing details of a Title of the SheetMusic.
+     *
+     * @param \DDEX\DSR\DSR_420\TitleType[] $title
+     * @return self
+     */
+    public function setTitle(array $title = null)
+    {
+        $this->title = $title;
+        return $this;
+    }
+
+    /**
+     * Adds as resourceContributor
+     *
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @return self
+     * @param \DDEX\DSR\DSR_420\ResourceContributorType $resourceContributor
+     */
+    public function addToResourceContributor(\DDEX\DSR\DSR_420\ResourceContributorType $resourceContributor)
+    {
+        $this->resourceContributor[] = $resourceContributor;
+        return $this;
+    }
+
+    /**
+     * isset resourceContributor
+     *
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetResourceContributor($index)
+    {
+        return isset($this->resourceContributor[$index]);
+    }
+
+    /**
+     * unset resourceContributor
+     *
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetResourceContributor($index)
+    {
+        unset($this->resourceContributor[$index]);
+    }
+
+    /**
+     * Gets as resourceContributor
+     *
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @return \DDEX\DSR\DSR_420\ResourceContributorType[]
+     */
+    public function getResourceContributor()
+    {
+        return $this->resourceContributor;
+    }
+
+    /**
+     * Sets a new resourceContributor
+     *
+     * A Composite containing details of a Contributor to the SheetMusic.
+     *
+     * @param \DDEX\DSR\DSR_420\ResourceContributorType[] $resourceContributor
+     * @return self
+     */
+    public function setResourceContributor(array $resourceContributor = null)
+    {
+        $this->resourceContributor = $resourceContributor;
+        return $this;
+    }
+
+    /**
+     * Adds as indirectResourceContributor
+     *
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @return self
+     * @param \DDEX\DSR\DSR_420\IndirectResourceContributorType $indirectResourceContributor
+     */
+    public function addToIndirectResourceContributor(\DDEX\DSR\DSR_420\IndirectResourceContributorType $indirectResourceContributor)
+    {
+        $this->indirectResourceContributor[] = $indirectResourceContributor;
+        return $this;
+    }
+
+    /**
+     * isset indirectResourceContributor
+     *
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetIndirectResourceContributor($index)
+    {
+        return isset($this->indirectResourceContributor[$index]);
+    }
+
+    /**
+     * unset indirectResourceContributor
+     *
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetIndirectResourceContributor($index)
+    {
+        unset($this->indirectResourceContributor[$index]);
+    }
+
+    /**
+     * Gets as indirectResourceContributor
+     *
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @return \DDEX\DSR\DSR_420\IndirectResourceContributorType[]
+     */
+    public function getIndirectResourceContributor()
+    {
+        return $this->indirectResourceContributor;
+    }
+
+    /**
+     * Sets a new indirectResourceContributor
+     *
+     * A Composite containing details of an indirect Contributor to the SheetMusic.
+     *
+     * @param \DDEX\DSR\DSR_420\IndirectResourceContributorType[] $indirectResourceContributor
+     * @return self
+     */
+    public function setIndirectResourceContributor(array $indirectResourceContributor = null)
+    {
+        $this->indirectResourceContributor = $indirectResourceContributor;
+        return $this;
+    }
+
+    /**
+     * Adds as cLine
+     *
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @return self
+     * @param \DDEX\DSR\DSR_420\CLineType $cLine
+     */
+    public function addToCLine(\DDEX\DSR\DSR_420\CLineType $cLine)
+    {
+        $this->cLine[] = $cLine;
+        return $this;
+    }
+
+    /**
+     * isset cLine
+     *
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetCLine($index)
+    {
+        return isset($this->cLine[$index]);
+    }
+
+    /**
+     * unset cLine
+     *
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetCLine($index)
+    {
+        unset($this->cLine[$index]);
+    }
+
+    /**
+     * Gets as cLine
+     *
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @return \DDEX\DSR\DSR_420\CLineType[]
+     */
+    public function getCLine()
+    {
+        return $this->cLine;
+    }
+
+    /**
+     * Sets a new cLine
+     *
+     * A Composite containing details of the CLine for the SheetMusic.
+     *
+     * @param \DDEX\DSR\DSR_420\CLineType[] $cLine
+     * @return self
+     */
+    public function setCLine(array $cLine = null)
+    {
+        $this->cLine = $cLine;
+        return $this;
+    }
+
+    /**
+     * Gets as courtesyLine
+     *
+     * A Composite containing an Annotation which acknowledges record companies and/or other Parties giving permission for Artists or others featured in the SheetMusic.
+     *
+     * @return \DDEX\DSR\DSR_420\CourtesyLineType
+     */
+    public function getCourtesyLine()
+    {
+        return $this->courtesyLine;
+    }
+
+    /**
+     * Sets a new courtesyLine
+     *
+     * A Composite containing an Annotation which acknowledges record companies and/or other Parties giving permission for Artists or others featured in the SheetMusic.
+     *
+     * @param \DDEX\DSR\DSR_420\CourtesyLineType $courtesyLine
+     * @return self
+     */
+    public function setCourtesyLine(?\DDEX\DSR\DSR_420\CourtesyLineType $courtesyLine = null)
+    {
+        $this->courtesyLine = $courtesyLine;
+        return $this;
+    }
+
+    /**
+     * Gets as originalResourceReleaseDate
+     *
+     * A Composite containing details of the Date and Place of the Event in which the SheetMusic was originally published, whether for physical or electronic/online distribution.
+     *
+     * @return \DDEX\DSR\DSR_420\EventDateType
+     */
+    public function getOriginalResourceReleaseDate()
+    {
+        return $this->originalResourceReleaseDate;
+    }
+
+    /**
+     * Sets a new originalResourceReleaseDate
+     *
+     * A Composite containing details of the Date and Place of the Event in which the SheetMusic was originally published, whether for physical or electronic/online distribution.
+     *
+     * @param \DDEX\DSR\DSR_420\EventDateType $originalResourceReleaseDate
+     * @return self
+     */
+    public function setOriginalResourceReleaseDate(?\DDEX\DSR\DSR_420\EventDateType $originalResourceReleaseDate = null)
+    {
+        $this->originalResourceReleaseDate = $originalResourceReleaseDate;
+        return $this;
+    }
+}
+

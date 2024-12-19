@@ -1,0 +1,22 @@
+DDEX\DSR\DSR_430\MessageNotificationPeriodType:
+    properties:
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: string
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: string

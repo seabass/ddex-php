@@ -1,0 +1,7 @@
+DDEX\DSR\DSR_420\TotalRoyaltyAmountType:
+    properties:
+        royaltyAmount:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,47 @@
+DDEX\DSR\DSR_43D1\CharacterType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\DSR\DSR_43D1\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\DSR\DSR_43D1\PartyNameType>
+        resourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributor
+                setter: setResourceContributor
+            type: DDEX\DSR\DSR_43D1\DetailedResourceContributorType

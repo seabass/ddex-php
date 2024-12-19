@@ -24,6 +24,12 @@ xsd2php:
     'http://ddex.net/xml/ern/411':  'DDEX\ERN\ERN_411'
     'http://ddex.net/xml/ern/431':  'DDEX\ERN\ERN_431'
 
+    'http://ddex.net/xml/dsr/40':  'DDEX\DSR\DSR_400'
+    'http://ddex.net/xml/dsr/41':  'DDEX\DSR\DSR_410'
+    'http://ddex.net/xml/dsr/42':  'DDEX\DSR\DSR_420'
+    'http://ddex.net/xml/dsr/43':  'DDEX\DSR\DSR_430'
+    'http://ddex.net/xml/dsr/43D1':  'DDEX\DSR\DSR_43D1'
+
 
     # avs
     'http://ddex.net/xml/avs/avs': 'DDEX\AVS'
@@ -80,6 +86,12 @@ xsd2php:
     'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_431
 
+    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_43D1
+
   destinations_jms:
     'DDEX\ddexC': ..\src\DDEXWrapper\metadata\DDEX\ddexC\
 
@@ -103,6 +115,12 @@ xsd2php:
     'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_431
 
+    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_43D1
+
   destinations_validation:
     'DDEX\ddexC': ..\src\DDEXWrapper\validation\DDEX\ddexC\
 
@@ -125,6 +143,12 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_431
+
+    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_43D1
     
   # XML namespaces for generated output
   # https://github.com/zoliszabo/xsd2php/pull/1/commits/8a99036ae12f238fab79443fadf74c1a12a6fa30
@@ -148,6 +172,12 @@ xsd2php:
     'http://ddex.net/xml/ern/42': 'ern'
     'http://ddex.net/xml/ern/43': 'ern'
     'http://ddex.net/xml/ern/431': 'ern'
+
+    'http://ddex.net/xml/dsr/40': 'dsr'
+    'http://ddex.net/xml/dsr/41': 'dsr'
+    'http://ddex.net/xml/dsr/42': 'dsr'
+    'http://ddex.net/xml/dsr/43': 'dsr'
+    'http://ddex.net/xml/dsr/43D1': 'dsr'
 
   aliases:
     '':

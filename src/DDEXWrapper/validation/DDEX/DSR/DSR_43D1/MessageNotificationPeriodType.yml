@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\MessageNotificationPeriodType:
+    properties:
+        startDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        endDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

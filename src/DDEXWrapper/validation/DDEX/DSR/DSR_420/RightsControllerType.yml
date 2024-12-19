@@ -1,0 +1,26 @@
+DDEX\DSR\DSR_420\RightsControllerType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null
+        rightsControllerRole:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - AdministratingRecordCompany
+                                    - RightsAdministrator
+                                    - RightsController
+                                    - RoyaltyAdministrator
+                                    - Unknown
+                                    - LocalPayee
+                    groups:
+                        - xsd_rules

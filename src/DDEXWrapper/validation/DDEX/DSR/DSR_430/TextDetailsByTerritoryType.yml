@@ -1,0 +1,14 @@
+DDEX\DSR\DSR_430\TextDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

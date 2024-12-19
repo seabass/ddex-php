@@ -1,0 +1,16 @@
+DDEX\DSR\DSR_400\SalesReportToRecordCompanyType:
+    properties:
+        dSP:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        salesByCommercialModel:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

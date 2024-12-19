@@ -1,0 +1,15 @@
+DDEX\DSR\DSR_420\PLineType:
+    properties:
+        pLineType:
+            -
+                Choice:
+                    choices:
+                        - OriginalPLine
+                        - RemasteringPLine
+                    groups:
+                        - xsd_rules
+        pLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,437 @@
+DDEX\DSR\DSR_400\VideoType:
+    properties:
+        videoId:
+            -
+                Valid: null
+        indirectVideoId:
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        videoCueSheetReference:
+            -
+                Valid: null
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        languageOfPerformance:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - aa
+                                    - ab
+                                    - af
+                                    - ak
+                                    - sq
+                                    - am
+                                    - ar
+                                    - an
+                                    - hy
+                                    - as
+                                    - av
+                                    - ae
+                                    - ay
+                                    - az
+                                    - ba
+                                    - bm
+                                    - eu
+                                    - be
+                                    - bn
+                                    - bh
+                                    - bi
+                                    - bo
+                                    - bs
+                                    - br
+                                    - bg
+                                    - my
+                                    - ca
+                                    - cs
+                                    - ch
+                                    - ce
+                                    - zh
+                                    - cu
+                                    - cv
+                                    - kw
+                                    - co
+                                    - cr
+                                    - cy
+                                    - da
+                                    - de
+                                    - dv
+                                    - nl
+                                    - dz
+                                    - el
+                                    - en
+                                    - eo
+                                    - et
+                                    - ee
+                                    - fo
+                                    - fa
+                                    - fj
+                                    - fi
+                                    - fr
+                                    - fy
+                                    - ff
+                                    - ka
+                                    - gd
+                                    - ga
+                                    - gl
+                                    - gv
+                                    - gn
+                                    - gu
+                                    - ht
+                                    - ha
+                                    - he
+                                    - hz
+                                    - hi
+                                    - ho
+                                    - hr
+                                    - hu
+                                    - ig
+                                    - is
+                                    - io
+                                    - ii
+                                    - iu
+                                    - ie
+                                    - ia
+                                    - id
+                                    - ik
+                                    - it
+                                    - jv
+                                    - ja
+                                    - kl
+                                    - kn
+                                    - ks
+                                    - kr
+                                    - kk
+                                    - km
+                                    - ki
+                                    - rw
+                                    - ky
+                                    - kv
+                                    - kg
+                                    - ko
+                                    - kj
+                                    - ku
+                                    - lo
+                                    - la
+                                    - lv
+                                    - li
+                                    - ln
+                                    - lt
+                                    - lb
+                                    - lu
+                                    - lg
+                                    - mk
+                                    - mh
+                                    - ml
+                                    - mi
+                                    - mr
+                                    - ms
+                                    - mg
+                                    - mt
+                                    - mo
+                                    - mn
+                                    - na
+                                    - nv
+                                    - nr
+                                    - nd
+                                    - ng
+                                    - ne
+                                    - nn
+                                    - nb
+                                    - 'no'
+                                    - ny
+                                    - oc
+                                    - oj
+                                    - or
+                                    - om
+                                    - os
+                                    - pa
+                                    - pi
+                                    - pl
+                                    - pt
+                                    - ps
+                                    - qu
+                                    - rm
+                                    - ro
+                                    - rn
+                                    - ru
+                                    - sg
+                                    - sa
+                                    - sr
+                                    - si
+                                    - sk
+                                    - sl
+                                    - se
+                                    - sm
+                                    - sn
+                                    - sd
+                                    - so
+                                    - st
+                                    - es
+                                    - sc
+                                    - ss
+                                    - su
+                                    - sw
+                                    - sv
+                                    - ty
+                                    - ta
+                                    - tt
+                                    - te
+                                    - tg
+                                    - tl
+                                    - th
+                                    - ti
+                                    - to
+                                    - tn
+                                    - ts
+                                    - tk
+                                    - tr
+                                    - tw
+                                    - ug
+                                    - uk
+                                    - ur
+                                    - uz
+                                    - ve
+                                    - vi
+                                    - vo
+                                    - wa
+                                    - wo
+                                    - xh
+                                    - yi
+                                    - yo
+                                    - za
+                                    - zu
+                    groups:
+                        - xsd_rules
+        duration:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rightsAgreementId:
+            -
+                Valid: null
+        resourceMusicalWorkReferenceList:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        videoDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        originalLanguage:
+            -
+                Choice:
+                    choices:
+                        - aa
+                        - ab
+                        - af
+                        - ak
+                        - sq
+                        - am
+                        - ar
+                        - an
+                        - hy
+                        - as
+                        - av
+                        - ae
+                        - ay
+                        - az
+                        - ba
+                        - bm
+                        - eu
+                        - be
+                        - bn
+                        - bh
+                        - bi
+                        - bo
+                        - bs
+                        - br
+                        - bg
+                        - my
+                        - ca
+                        - cs
+                        - ch
+                        - ce
+                        - zh
+                        - cu
+                        - cv
+                        - kw
+                        - co
+                        - cr
+                        - cy
+                        - da
+                        - de
+                        - dv
+                        - nl
+                        - dz
+                        - el
+                        - en
+                        - eo
+                        - et
+                        - ee
+                        - fo
+                        - fa
+                        - fj
+                        - fi
+                        - fr
+                        - fy
+                        - ff
+                        - ka
+                        - gd
+                        - ga
+                        - gl
+                        - gv
+                        - gn
+                        - gu
+                        - ht
+                        - ha
+                        - he
+                        - hz
+                        - hi
+                        - ho
+                        - hr
+                        - hu
+                        - ig
+                        - is
+                        - io
+                        - ii
+                        - iu
+                        - ie
+                        - ia
+                        - id
+                        - ik
+                        - it
+                        - jv
+                        - ja
+                        - kl
+                        - kn
+                        - ks
+                        - kr
+                        - kk
+                        - km
+                        - ki
+                        - rw
+                        - ky
+                        - kv
+                        - kg
+                        - ko
+                        - kj
+                        - ku
+                        - lo
+                        - la
+                        - lv
+                        - li
+                        - ln
+                        - lt
+                        - lb
+                        - lu
+                        - lg
+                        - mk
+                        - mh
+                        - ml
+                        - mi
+                        - mr
+                        - ms
+                        - mg
+                        - mt
+                        - mo
+                        - mn
+                        - na
+                        - nv
+                        - nr
+                        - nd
+                        - ng
+                        - ne
+                        - nn
+                        - nb
+                        - 'no'
+                        - ny
+                        - oc
+                        - oj
+                        - or
+                        - om
+                        - os
+                        - pa
+                        - pi
+                        - pl
+                        - pt
+                        - ps
+                        - qu
+                        - rm
+                        - ro
+                        - rn
+                        - ru
+                        - sg
+                        - sa
+                        - sr
+                        - si
+                        - sk
+                        - sl
+                        - se
+                        - sm
+                        - sn
+                        - sd
+                        - so
+                        - st
+                        - es
+                        - sc
+                        - ss
+                        - su
+                        - sw
+                        - sv
+                        - ty
+                        - ta
+                        - tt
+                        - te
+                        - tg
+                        - tl
+                        - th
+                        - ti
+                        - to
+                        - tn
+                        - ts
+                        - tk
+                        - tr
+                        - tw
+                        - ug
+                        - uk
+                        - ur
+                        - uz
+                        - ve
+                        - vi
+                        - vo
+                        - wa
+                        - wo
+                        - xh
+                        - yi
+                        - yo
+                        - za
+                        - zu
+                    groups:
+                        - xsd_rules

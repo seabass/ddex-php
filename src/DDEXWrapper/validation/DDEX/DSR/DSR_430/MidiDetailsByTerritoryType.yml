@@ -1,0 +1,23 @@
+DDEX\DSR\DSR_430\MidiDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

@@ -1,0 +1,13 @@
+DDEX\DSR\DSR_430\CueOriginType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - LibraryMusic
+                        - PreexistingMusic
+                        - SpeciallyCommissionedMusic
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

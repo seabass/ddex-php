@@ -1,0 +1,80 @@
+DDEX\DSR\DSR_400\ContainedReleaseSummaryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ddexC\ReleaseIdType>
+        releaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseReference
+                setter: setReleaseReference
+            type: string
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\ddexC\ReferenceTitleType
+        releaseSummaryDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseSummaryDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseSummaryDetailsByTerritory
+                setter: setReleaseSummaryDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: ReleaseSummaryDetailsByTerritory
+            type: array<DDEX\ddexC\ReleaseSummaryDetailsByTerritoryType>
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\ddexC\RightsAgreementIdType
+        relatedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedRelease
+                setter: setRelatedRelease
+            xml_list:
+                inline: true
+                entry_name: RelatedRelease
+            type: array<DDEX\ddexC\RelatedReleaseType>

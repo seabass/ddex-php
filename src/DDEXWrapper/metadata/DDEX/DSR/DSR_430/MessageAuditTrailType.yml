@@ -1,0 +1,24 @@
+DDEX\DSR\DSR_430\MessageAuditTrailType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageAuditTrailEvent:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageAuditTrailEvent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageAuditTrailEvent
+                setter: setMessageAuditTrailEvent
+            xml_list:
+                inline: true
+                entry_name: MessageAuditTrailEvent
+            type: array<DDEX\DSR\DSR_430\MessageAuditTrailEventType>

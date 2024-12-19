@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_430\CollectionListType:
+    properties:
+        collection:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

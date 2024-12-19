@@ -1,0 +1,14 @@
+DDEX\DSR\DSR_430\CharacterType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null

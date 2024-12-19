@@ -1,0 +1,52 @@
+DDEX\DSR\DSR_430\SalesDataToRecordCompanyType:
+    properties:
+        salesDataGrouping:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesDataGrouping
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesDataGrouping
+                setter: setSalesDataGrouping
+            type: DDEX\DSR\DSR_430\SalesDataGroupingToRecordCompanyType
+        numberOfConsumerSalesGross:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfConsumerSalesGross
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfConsumerSalesGross
+                setter: setNumberOfConsumerSalesGross
+            type: int
+        numberOfUnitAdjustments:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUnitAdjustments
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUnitAdjustments
+                setter: setNumberOfUnitAdjustments
+            type: int
+        numberOfFreeUnitsToConsumers:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfFreeUnitsToConsumers
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfFreeUnitsToConsumers
+                setter: setNumberOfFreeUnitsToConsumers
+            type: int
+        numberOfUnitAdjustmentsToFreeUnits:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUnitAdjustmentsToFreeUnits
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUnitAdjustmentsToFreeUnits
+                setter: setNumberOfUnitAdjustmentsToFreeUnits
+            type: int

@@ -1,0 +1,15 @@
+DDEX\DSR\DSR_420\ResourceMusicalWorkReferenceListType:
+    properties:
+        resourceMusicalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReference
+                setter: setResourceMusicalWorkReference
+            xml_list:
+                inline: true
+                entry_name: ResourceMusicalWorkReference
+            type: array<DDEX\DSR\DSR_420\ResourceMusicalWorkReferenceType>

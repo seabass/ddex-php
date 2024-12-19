@@ -1,0 +1,10 @@
+DDEX\DSR\DSR_43D1\GoverningAgreementTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                        - SessionMusicUnionAgreement
+                    groups:
+                        - xsd_rules

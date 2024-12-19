@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_400\TotalSalesByReleaseTypeType:
+    properties:
+        unitsSoldTotal:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

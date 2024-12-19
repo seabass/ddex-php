@@ -1,0 +1,73 @@
+DDEX\DSR\DSR_430\ResourceGroupType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\DSR\DSR_430\TitleType>
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\DSR\DSR_430\ArtistType>
+        resourceGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroup
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroup
+                setter: setResourceGroup
+            xml_list:
+                inline: true
+                entry_name: ResourceGroup
+            type: array<DDEX\DSR\DSR_430\ResourceGroupType>
+        resourceGroupContentItem:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupContentItem
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupContentItem
+                setter: setResourceGroupContentItem
+            xml_list:
+                inline: true
+                entry_name: ResourceGroupContentItem
+            type: array<DDEX\DSR\DSR_430\ResourceGroupContentItemType>

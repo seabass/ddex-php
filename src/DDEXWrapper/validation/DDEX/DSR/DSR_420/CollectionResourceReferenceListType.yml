@@ -1,0 +1,15 @@
+DDEX\DSR\DSR_420\CollectionResourceReferenceListType:
+    properties:
+        collectionResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,26 @@
+DDEX\DSR\DSR_410\DetailedDealType:
+    properties:
+        priceInformation:
+            -
+                Valid: null
+        taxRate:
+            -
+                Valid: null
+        royaltyRateType:
+            -
+                Choice:
+                    choices:
+                        - PennyRate
+                        - PercentageRoyaltyRate
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        proprietaryFinancialData:
+            -
+                Valid: null
+        proprietaryFinancialDataInCurrencyOfAccounting:
+            -
+                Valid: null
+        technicalInstantiation:
+            -
+                Valid: null

@@ -1,0 +1,44 @@
+DDEX\DSR\DSR_420\SalesReportToSocietyType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        dSP:
+            expose: true
+            access_type: public_method
+            serialized_name: DSP
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDSP
+                setter: setDSP
+            type: DDEX\DSR\DSR_420\DspDetailsForSocietyType
+        licensor:
+            expose: true
+            access_type: public_method
+            serialized_name: Licensor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicensor
+                setter: setLicensor
+            type: DDEX\DSR\DSR_420\PartyDescriptorType
+        salesByCommercialModel:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesByCommercialModel
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesByCommercialModel
+                setter: setSalesByCommercialModel
+            xml_list:
+                inline: true
+                entry_name: SalesByCommercialModel
+            type: array<DDEX\DSR\DSR_420\SalesToSocietyByCommercialModelType>

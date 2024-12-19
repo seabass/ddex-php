@@ -1,0 +1,36 @@
+DDEX\DSR\DSR_43D1\ReleaseTransactionsToSocietyType:
+    properties:
+        transactionReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        transactionResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        deal:
+            -
+                Valid: null
+        salesTransaction:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        durationUsed:
+            -
+                Valid: null

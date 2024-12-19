@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\AmountByUseAndDistributionChannelTypeType:
+    properties:
+        amount:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

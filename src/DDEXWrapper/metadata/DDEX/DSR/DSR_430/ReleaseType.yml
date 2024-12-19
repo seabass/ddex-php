@@ -1,0 +1,216 @@
+DDEX\DSR\DSR_430\ReleaseType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        isMainRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMainRelease
+            accessor:
+                getter: getIsMainRelease
+                setter: setIsMainRelease
+            xml_attribute: true
+            type: bool
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\DSR\DSR_430\ReleaseIdType>
+        releaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseReference
+                setter: setReleaseReference
+            xml_list:
+                inline: true
+                entry_name: ReleaseReference
+            type: array<string>
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\DSR\DSR_430\ReferenceTitleType
+        releaseResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReferenceList
+                setter: setReleaseResourceReferenceList
+            type: array<DDEX\DSR\DSR_430\ReleaseResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ReleaseResourceReference
+                skip_when_empty: true
+        releaseCollectionReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseCollectionReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseCollectionReferenceList
+                setter: setReleaseCollectionReferenceList
+            type: array<DDEX\DSR\DSR_430\ReleaseCollectionReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ReleaseCollectionReference
+                skip_when_empty: true
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<DDEX\DSR\DSR_430\ReleaseTypeType>
+        releaseDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDetailsByTerritory
+                setter: setReleaseDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: ReleaseDetailsByTerritory
+            type: array<DDEX\DSR\DSR_430\ReleaseDetailsByTerritoryType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        durationOfMusicalContent:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationOfMusicalContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationOfMusicalContent
+                setter: setDurationOfMusicalContent
+            type: DateInterval
+        durationOfVideoContent:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationOfVideoContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationOfVideoContent
+                setter: setDurationOfVideoContent
+            type: DateInterval
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\DSR\DSR_430\RightsAgreementIdType
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\DSR\DSR_430\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\DSR\DSR_430\CLineType>
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\DSR\DSR_430\EventDateType
+        originalReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalReleaseDate
+                setter: setOriginalReleaseDate
+            type: DDEX\DSR\DSR_430\EventDateType
+        originalLanguage:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalLanguage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalLanguage
+                setter: setOriginalLanguage
+            type: string

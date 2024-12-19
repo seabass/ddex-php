@@ -1,0 +1,323 @@
+DDEX\DSR\DSR_430\DetailedDealType:
+    properties:
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            type: string
+        priceInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceInformation
+                setter: setPriceInformation
+            type: DDEX\DSR\DSR_430\PriceInformationType
+        isPromotional:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPromotional
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPromotional
+                setter: setIsPromotional
+            type: bool
+        promotionalCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionalCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPromotionalCode
+                setter: setPromotionalCode
+            type: DDEX\DSR\DSR_430\PromotionalCodeType
+        dealReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DealReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealReference
+                setter: setDealReference
+            type: DDEX\DSR\DSR_430\DealReferenceType
+        campaignName:
+            expose: true
+            access_type: public_method
+            serialized_name: CampaignName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCampaignName
+                setter: setCampaignName
+            xml_list:
+                inline: true
+                entry_name: CampaignName
+            type: array<string>
+        taxRate:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTaxRate
+                setter: setTaxRate
+            xml_list:
+                inline: true
+                entry_name: TaxRate
+            type: array<DDEX\DSR\DSR_430\TaxRateType>
+        priceConsumerPaidExcSalesTax:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceConsumerPaidExcSalesTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceConsumerPaidExcSalesTax
+                setter: setPriceConsumerPaidExcSalesTax
+            type: float
+        priceConsumerPaidExcSalesTaxInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+                setter: setPriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+            type: float
+        primaryResourcePriceConsumerPaidExcSalesTax:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryResourcePriceConsumerPaidExcSalesTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryResourcePriceConsumerPaidExcSalesTax
+                setter: setPrimaryResourcePriceConsumerPaidExcSalesTax
+            type: float
+        primaryResourcePriceConsumerPaidExcSalesTaxInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryResourcePriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryResourcePriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+                setter: setPrimaryResourcePriceConsumerPaidExcSalesTaxInCurrencyOfAccounting
+            type: float
+        calculationType:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCalculationType
+                setter: setCalculationType
+            xml_list:
+                inline: true
+                entry_name: CalculationType
+            type: array<DDEX\DSR\DSR_430\CalculationTypeType>
+        royaltyRateType:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRateType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRateType
+                setter: setRoyaltyRateType
+            type: string
+        royaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRate
+                setter: setRoyaltyRate
+            type: float
+        royaltyRateInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRateInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRateInCurrencyOfAccounting
+                setter: setRoyaltyRateInCurrencyOfAccounting
+            type: float
+        agreedUnitPriceExcSalesTax:
+            expose: true
+            access_type: public_method
+            serialized_name: AgreedUnitPriceExcSalesTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAgreedUnitPriceExcSalesTax
+                setter: setAgreedUnitPriceExcSalesTax
+            type: float
+        agreedUnitPriceExcSalesTaxInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: AgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+                setter: setAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+            type: float
+        primaryResourceAgreedUnitPriceExcSalesTax:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryResourceAgreedUnitPriceExcSalesTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryResourceAgreedUnitPriceExcSalesTax
+                setter: setPrimaryResourceAgreedUnitPriceExcSalesTax
+            type: float
+        primaryResourceAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryResourceAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryResourceAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+                setter: setPrimaryResourceAgreedUnitPriceExcSalesTaxInCurrencyOfAccounting
+            type: float
+        deductionRate:
+            expose: true
+            access_type: public_method
+            serialized_name: DeductionRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDeductionRate
+                setter: setDeductionRate
+            xml_list:
+                inline: true
+                entry_name: DeductionRate
+            type: array<DDEX\DSR\DSR_430\DeductionRateType>
+        deductionRateInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: DeductionRateInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDeductionRateInCurrencyOfAccounting
+                setter: setDeductionRateInCurrencyOfAccounting
+            xml_list:
+                inline: true
+                entry_name: DeductionRateInCurrencyOfAccounting
+            type: array<DDEX\DSR\DSR_430\DeductionRateType>
+        effectiveUnitRoyaltyRateNet:
+            expose: true
+            access_type: public_method
+            serialized_name: EffectiveUnitRoyaltyRateNet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEffectiveUnitRoyaltyRateNet
+                setter: setEffectiveUnitRoyaltyRateNet
+            type: float
+        effectiveUnitRoyaltyRateNetInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: EffectiveUnitRoyaltyRateNetInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEffectiveUnitRoyaltyRateNetInCurrencyOfAccounting
+                setter: setEffectiveUnitRoyaltyRateNetInCurrencyOfAccounting
+            type: float
+        proprietaryFinancialData:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryFinancialData
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryFinancialData
+                setter: setProprietaryFinancialData
+            xml_list:
+                inline: true
+                entry_name: ProprietaryFinancialData
+            type: array<DDEX\DSR\DSR_430\ProprietaryFinancialDataType>
+        proprietaryFinancialDataInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryFinancialDataInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryFinancialDataInCurrencyOfAccounting
+                setter: setProprietaryFinancialDataInCurrencyOfAccounting
+            xml_list:
+                inline: true
+                entry_name: ProprietaryFinancialDataInCurrencyOfAccounting
+            type: array<DDEX\DSR\DSR_430\ProprietaryFinancialDataType>
+        amountPayable:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountPayable
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAmountPayable
+                setter: setAmountPayable
+            type: float
+        amountPayableInCurrencyOfAccounting:
+            expose: true
+            access_type: public_method
+            serialized_name: AmountPayableInCurrencyOfAccounting
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAmountPayableInCurrencyOfAccounting
+                setter: setAmountPayableInCurrencyOfAccounting
+            type: float
+        currencyExchangeRate:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyExchangeRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyExchangeRate
+                setter: setCurrencyExchangeRate
+            type: float
+        isReplacementPurchase:
+            expose: true
+            access_type: public_method
+            serialized_name: IsReplacementPurchase
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsReplacementPurchase
+                setter: setIsReplacementPurchase
+            type: bool
+        technicalInstantiation:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalInstantiation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalInstantiation
+                setter: setTechnicalInstantiation
+            type: DDEX\DSR\DSR_430\TechnicalInstantiationType

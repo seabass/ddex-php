@@ -1,0 +1,32 @@
+DDEX\DSR\DSR_400\SummaryDealType:
+    properties:
+        currencyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: CurrencyCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCurrencyCode
+                setter: setCurrencyCode
+            type: string
+        priceConsumerPaidExcSalesTax:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceConsumerPaidExcSalesTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceConsumerPaidExcSalesTax
+                setter: setPriceConsumerPaidExcSalesTax
+            type: float
+        consumerPriceGross:
+            expose: true
+            access_type: public_method
+            serialized_name: ConsumerPriceGross
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConsumerPriceGross
+                setter: setConsumerPriceGross
+            type: float

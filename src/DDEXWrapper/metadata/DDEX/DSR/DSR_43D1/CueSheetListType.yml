@@ -1,0 +1,15 @@
+DDEX\DSR\DSR_43D1\CueSheetListType:
+    properties:
+        cueSheet:
+            expose: true
+            access_type: public_method
+            serialized_name: CueSheet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueSheet
+                setter: setCueSheet
+            xml_list:
+                inline: true
+                entry_name: CueSheet
+            type: array<DDEX\DSR\DSR_43D1\CueSheetType>

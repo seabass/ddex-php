@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\MidiTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MonophonicMidi
+                        - PolyphonicMidi
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

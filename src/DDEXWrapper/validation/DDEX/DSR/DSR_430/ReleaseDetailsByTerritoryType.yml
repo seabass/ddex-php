@@ -1,0 +1,20 @@
+DDEX\DSR\DSR_430\ReleaseDetailsByTerritoryType:
+    properties:
+        rightsAgreementId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null

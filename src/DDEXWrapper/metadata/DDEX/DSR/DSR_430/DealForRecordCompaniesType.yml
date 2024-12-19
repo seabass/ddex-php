@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_430\DealForRecordCompaniesType:
+    properties:
+        detailedDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: DetailedDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDetailedDeal
+                setter: setDetailedDeal
+            type: DDEX\DSR\DSR_430\DetailedDealType

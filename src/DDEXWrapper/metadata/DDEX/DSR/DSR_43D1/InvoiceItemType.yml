@@ -1,0 +1,186 @@
+DDEX\DSR\DSR_43D1\InvoiceItemType:
+    properties:
+        invoiceItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceItemId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceItemId
+                setter: setInvoiceItemId
+            type: DDEX\DSR\DSR_43D1\ProprietaryIdType
+        licenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimId
+                setter: setLicenseOrClaimId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimId
+            type: array<DDEX\DSR\DSR_43D1\RightsAgreementIdType>
+        invoicePeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoicePeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoicePeriod
+                setter: setInvoicePeriod
+            type: DDEX\DSR\DSR_43D1\PeriodType
+        salesReportMessageReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesReportMessageReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesReportMessageReference
+                setter: setSalesReportMessageReference
+            xml_list:
+                inline: true
+                entry_name: SalesReportMessageReference
+            type: array<DDEX\DSR\DSR_43D1\SalesReportMessageReferenceType>
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\DSR\DSR_43D1\ReleaseIdType>
+        invoiceReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceReleaseReference
+                setter: setInvoiceReleaseReference
+            xml_list:
+                inline: true
+                entry_name: InvoiceReleaseReference
+            type: array<string>
+        numberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUsages
+                setter: setNumberOfUsages
+            type: int
+        releaseUsagePrice:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseUsagePrice
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseUsagePrice
+                setter: setReleaseUsagePrice
+            type: DDEX\DSR\DSR_43D1\PriceType
+        appliedTariff:
+            expose: true
+            access_type: public_method
+            serialized_name: AppliedTariff
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAppliedTariff
+                setter: setAppliedTariff
+            type: DDEX\DSR\DSR_43D1\TariffReferenceType
+        appliedRoyaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AppliedRoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAppliedRoyaltyRate
+                setter: setAppliedRoyaltyRate
+            type: DDEX\DSR\DSR_43D1\AppliedRoyaltyRateType
+        calculatedRoyaltyAmountPerUse:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculatedRoyaltyAmountPerUse
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCalculatedRoyaltyAmountPerUse
+                setter: setCalculatedRoyaltyAmountPerUse
+            type: DDEX\DSR\DSR_43D1\RoyaltyAmountType
+        calculatedTax:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculatedTax
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCalculatedTax
+                setter: setCalculatedTax
+            xml_list:
+                inline: true
+                entry_name: CalculatedTax
+            type: array<DDEX\DSR\DSR_43D1\TaxType>
+        calculatedRoyaltyAmountPerInvoice:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculatedRoyaltyAmountPerInvoice
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCalculatedRoyaltyAmountPerInvoice
+                setter: setCalculatedRoyaltyAmountPerInvoice
+            type: DDEX\DSR\DSR_43D1\RoyaltyAmountType
+        rightsType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsType
+                setter: setRightsType
+            xml_list:
+                inline: true
+                entry_name: RightsType
+            type: array<DDEX\DSR\DSR_43D1\RightsTypeType>
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<string>
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\DSR\DSR_43D1\UseTypeType>

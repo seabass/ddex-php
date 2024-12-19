@@ -1,0 +1,25 @@
+DDEX\DSR\DSR_43D1\TotalSalesByReleaseTypeType:
+    properties:
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<DDEX\DSR\DSR_43D1\ReleaseTypeType>
+        unitsSoldTotal:
+            expose: true
+            access_type: public_method
+            serialized_name: UnitsSoldTotal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUnitsSoldTotal
+                setter: setUnitsSoldTotal
+            type: int

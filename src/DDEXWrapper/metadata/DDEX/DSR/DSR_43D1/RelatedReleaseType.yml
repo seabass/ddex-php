@@ -1,0 +1,87 @@
+DDEX\DSR\DSR_43D1\RelatedReleaseType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\DSR\DSR_43D1\ReleaseIdType>
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\DSR\DSR_43D1\ReferenceTitleType
+        releaseSummaryDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseSummaryDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseSummaryDetailsByTerritory
+                setter: setReleaseSummaryDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: ReleaseSummaryDetailsByTerritory
+            type: array<DDEX\DSR\DSR_43D1\ReleaseSummaryDetailsByTerritoryType>
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\DSR\DSR_43D1\RightsAgreementIdType
+        releaseRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseRelationshipType
+                setter: setReleaseRelationshipType
+            type: DDEX\DSR\DSR_43D1\ReleaseRelationshipTypeType
+        releaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDate
+                setter: setReleaseDate
+            type: DDEX\DSR\DSR_43D1\EventDateType
+        originalReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalReleaseDate
+                setter: setOriginalReleaseDate
+            type: DDEX\DSR\DSR_43D1\EventDateType

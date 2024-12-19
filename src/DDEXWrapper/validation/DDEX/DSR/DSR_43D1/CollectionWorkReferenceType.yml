@@ -1,0 +1,12 @@
+DDEX\DSR\DSR_43D1\CollectionWorkReferenceType:
+    properties:
+        collectionWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

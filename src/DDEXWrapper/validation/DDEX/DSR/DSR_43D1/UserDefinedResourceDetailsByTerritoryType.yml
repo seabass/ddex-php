@@ -1,0 +1,14 @@
+DDEX\DSR\DSR_43D1\UserDefinedResourceDetailsByTerritoryType:
+    properties:
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

@@ -1,0 +1,35 @@
+DDEX\DSR\DSR_400\ContainedReleaseSummaryType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseSummaryDetailsByTerritory:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null

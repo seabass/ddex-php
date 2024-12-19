@@ -1,0 +1,24 @@
+DDEX\DSR\DSR_430\ResourceGroupType:
+    properties:
+        title:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null
+        resourceGroupContentItem:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

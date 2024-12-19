@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_410\ReleaseListType:
+    properties:
+        release:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

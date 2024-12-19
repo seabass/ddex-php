@@ -1,0 +1,64 @@
+DDEX\DSR\DSR_430\NumberOfSubscribersType:
+    properties:
+        quantity:
+            expose: true
+            access_type: public_method
+            serialized_name: Quantity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getQuantity
+                setter: setQuantity
+            type: int
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\DSR\DSR_430\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\DSR\DSR_430\UserInterfaceTypeType>
+        distributionChannelType:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelType
+                setter: setDistributionChannelType
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelType
+            type: array<DDEX\DSR\DSR_430\DistributionChannelTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\DSR\DSR_430\CarrierTypeType>

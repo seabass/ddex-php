@@ -1,0 +1,65 @@
+DDEX\DSR\DSR_43D1\SalesReportToRecordCompanyMessage\SalesReportToRecordCompanyMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageNotificationPeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        messageContentRevenueType:
+            -
+                Choice:
+                    choices:
+                        - NonTransactionalRevenue
+                        - TransactionalRevenue
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        rightsCoverage:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - MakeAvailableRight
+                                    - MechanicalRight
+                                    - PerformingRight
+                                    - PrintRight
+                                    - ReproductionRight
+                                    - SynchronizationRight
+                                    - UserDefined
+                    groups:
+                        - xsd_rules
+        containedReleaseSummary:
+            -
+                Valid: null
+        salesReport:
+            -
+                Valid: null
+        totalSalesByReleaseType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        numberOfSalesTransactionRecords:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

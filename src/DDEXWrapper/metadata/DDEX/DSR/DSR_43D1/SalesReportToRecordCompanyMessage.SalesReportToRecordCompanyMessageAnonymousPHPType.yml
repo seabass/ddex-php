@@ -1,0 +1,150 @@
+DDEX\DSR\DSR_43D1\SalesReportToRecordCompanyMessage\SalesReportToRecordCompanyMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSchemaVersionId
+            accessor:
+                getter: getMessageSchemaVersionId
+                setter: setMessageSchemaVersionId
+            xml_attribute: true
+            type: string
+        businessProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: BusinessProfileVersionId
+            accessor:
+                getter: getBusinessProfileVersionId
+                setter: setBusinessProfileVersionId
+            xml_attribute: true
+            type: string
+        releaseProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseProfileVersionId
+            accessor:
+                getter: getReleaseProfileVersionId
+                setter: setReleaseProfileVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\DSR\DSR_43D1\MessageHeaderType
+        messageNotificationPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageNotificationPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageNotificationPeriod
+                setter: setMessageNotificationPeriod
+            type: DDEX\DSR\DSR_43D1\MessageNotificationPeriodType
+        remittanceAdvice:
+            expose: true
+            access_type: public_method
+            serialized_name: RemittanceAdvice
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRemittanceAdvice
+                setter: setRemittanceAdvice
+            type: DDEX\DSR\DSR_43D1\RemittanceAdviceType
+        messageContentRevenueType:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageContentRevenueType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageContentRevenueType
+                setter: setMessageContentRevenueType
+            type: string
+        rightsCoverage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsCoverage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsCoverage
+                setter: setRightsCoverage
+            xml_list:
+                inline: true
+                entry_name: RightsCoverage
+            type: array<string>
+        containedReleaseSummary:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainedReleaseSummary
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainedReleaseSummary
+                setter: setContainedReleaseSummary
+            xml_list:
+                inline: true
+                entry_name: ContainedReleaseSummary
+            type: array<DDEX\DSR\DSR_43D1\ContainedReleaseSummaryType>
+        salesReport:
+            expose: true
+            access_type: public_method
+            serialized_name: SalesReport
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSalesReport
+                setter: setSalesReport
+            xml_list:
+                inline: true
+                entry_name: SalesReport
+            type: array<DDEX\DSR\DSR_43D1\SalesReportToRecordCompanyType>
+        totalSalesByReleaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalSalesByReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalSalesByReleaseType
+                setter: setTotalSalesByReleaseType
+            xml_list:
+                inline: true
+                entry_name: TotalSalesByReleaseType
+            type: array<DDEX\DSR\DSR_43D1\TotalSalesByReleaseTypeType>
+        royaltyAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmount
+                setter: setRoyaltyAmount
+            type: DDEX\DSR\DSR_43D1\RoyaltyAmountType
+        numberOfSalesTransactionRecords:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfSalesTransactionRecords
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfSalesTransactionRecords
+                setter: setNumberOfSalesTransactionRecords
+            type: int

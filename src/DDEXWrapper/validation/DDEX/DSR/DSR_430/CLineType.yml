@@ -1,0 +1,7 @@
+DDEX\DSR\DSR_430\CLineType:
+    properties:
+        cLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

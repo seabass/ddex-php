@@ -1,0 +1,11 @@
+DDEX\DSR\DSR_43D1\CueVocalTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Instrumental
+                        - UserDefined
+                        - Vocal
+                    groups:
+                        - xsd_rules

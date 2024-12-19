@@ -1,0 +1,158 @@
+DDEX\DSR\DSR_410\SheetMusicType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        sheetMusicType:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusicType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusicType
+                setter: setSheetMusicType
+            type: DDEX\ddexC\SheetMusicTypeType
+        isArtistRelated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsArtistRelated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsArtistRelated
+                setter: setIsArtistRelated
+            type: bool
+        sheetMusicId:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusicId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusicId
+                setter: setSheetMusicId
+            xml_list:
+                inline: true
+                entry_name: SheetMusicId
+            type: array<DDEX\ddexC\SheetMusicIdType>
+        indirectSheetMusicId:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectSheetMusicId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectSheetMusicId
+                setter: setIndirectSheetMusicId
+            xml_list:
+                inline: true
+                entry_name: IndirectSheetMusicId
+            type: array<DDEX\ddexC\MusicalWorkIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        languageOfLyrics:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageOfLyrics
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageOfLyrics
+                setter: setLanguageOfLyrics
+            type: string
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\ddexC\RightsAgreementIdType
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\ddexC\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        resourceContainedResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReferenceList
+                setter: setResourceContainedResourceReferenceList
+            type: array<DDEX\ddexC\ResourceContainedResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceContainedResourceReference
+                skip_when_empty: true
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\ddexC\ReferenceTitleType
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ddexC\EventDateType
+        sheetMusicDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusicDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusicDetailsByTerritory
+                setter: setSheetMusicDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: SheetMusicDetailsByTerritory
+            type: array<DDEX\ddexC\SheetMusicDetailsByTerritoryType>
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string

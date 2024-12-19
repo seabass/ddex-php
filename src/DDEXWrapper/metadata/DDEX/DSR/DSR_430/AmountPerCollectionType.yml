@@ -1,0 +1,22 @@
+DDEX\DSR\DSR_430\AmountPerCollectionType:
+    properties:
+        amount:
+            expose: true
+            access_type: public_method
+            serialized_name: Amount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAmount
+                setter: setAmount
+            type: float
+        collectionType:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionType
+                setter: setCollectionType
+            type: DDEX\DSR\DSR_430\CollectionTypeType

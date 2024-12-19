@@ -1,0 +1,22 @@
+DDEX\DSR\DSR_430\SalesReportMessageReferenceType:
+    properties:
+        messageId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageId
+                setter: setMessageId
+            type: string
+        messageThreadId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageThreadId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageThreadId
+                setter: setMessageThreadId
+            type: string

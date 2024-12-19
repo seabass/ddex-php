@@ -1,0 +1,9 @@
+DDEX\DSR\DSR_43D1\DealForRecordCompaniesType:
+    properties:
+        detailedDeal:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

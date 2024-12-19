@@ -1,0 +1,6 @@
+DDEX\DSR\DSR_410\SalesReportToSocietyMessage:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+        dsr: 'http://ddex.net/xml/dsr/43D1'
+    xml_root_name: 'ern:SalesReportToSocietyMessage'
+    xml_root_namespace: 'http://ddex.net/xml/dsr/41'

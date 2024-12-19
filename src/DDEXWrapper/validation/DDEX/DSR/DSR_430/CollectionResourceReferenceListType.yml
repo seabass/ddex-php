@@ -1,0 +1,7 @@
+DDEX\DSR\DSR_430\CollectionResourceReferenceListType:
+    properties:
+        collectionResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

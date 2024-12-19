@@ -1,0 +1,90 @@
+DDEX\DSR\DSR_43D1\DspDetailsForSocietyType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        distributionChannelDescriptor:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelDescriptor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelDescriptor
+                setter: setDistributionChannelDescriptor
+            type: DDEX\DSR\DSR_43D1\DistributionChannelDescriptorType
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\DSR\DSR_43D1\RightsAgreementIdType
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\DSR\DSR_43D1\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\DSR\DSR_43D1\PartyNameType>
+        tradingName:
+            expose: true
+            access_type: public_method
+            serialized_name: TradingName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTradingName
+                setter: setTradingName
+            type: DDEX\DSR\DSR_43D1\NameType
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            xml_list:
+                inline: true
+                entry_name: URL
+            type: array<string>
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            type: DDEX\DSR\DSR_43D1\CurrentTerritoryCodeType
