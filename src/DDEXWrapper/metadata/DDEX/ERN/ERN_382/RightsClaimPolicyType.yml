@@ -1,0 +1,25 @@
+DDEX\ERN\ERN_382\RightsClaimPolicyType:
+    properties:
+        condition:
+            expose: true
+            access_type: public_method
+            serialized_name: Condition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCondition
+                setter: setCondition
+            xml_list:
+                inline: true
+                entry_name: Condition
+            type: array<DDEX\ERN\ERN_382\ConditionType>
+        rightsClaimPolicyType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsClaimPolicyType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsClaimPolicyType
+                setter: setRightsClaimPolicyType
+            type: string

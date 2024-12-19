@@ -1,0 +1,13 @@
+DDEX\ddexC\CueOriginType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - LibraryMusic
+                        - PreexistingMusic
+                        - SpeciallyCommissionedMusic
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

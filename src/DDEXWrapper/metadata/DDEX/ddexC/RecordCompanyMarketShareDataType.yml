@@ -1,0 +1,77 @@
+DDEX\ddexC\RecordCompanyMarketShareDataType:
+    properties:
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<DDEX\ddexC\ReleaseTypeType>
+        unitsSoldTotal:
+            expose: true
+            access_type: public_method
+            serialized_name: UnitsSoldTotal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUnitsSoldTotal
+                setter: setUnitsSoldTotal
+            type: int
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\ddexC\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\ddexC\UserInterfaceTypeType>
+        distributionChannelType:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelType
+                setter: setDistributionChannelType
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelType
+            type: array<DDEX\ddexC\DistributionChannelTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\ddexC\CarrierTypeType>

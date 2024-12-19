@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_431\DisplayArtistRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Artist
+                        - Brand
+                        - Composer
+                        - FeaturedArtist
+                        - MainArtist
+                        - UserDefined
+                    groups:
+                        - xsd_rules

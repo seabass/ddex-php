@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_431\RelatedReleaseType:
+    properties:
+        releaseRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        formalTitle:
+            -
+                Valid: null
+        groupingTitle:
+            -
+                Valid: null

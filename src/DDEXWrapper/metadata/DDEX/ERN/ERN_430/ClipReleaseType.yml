@@ -1,0 +1,110 @@
+DDEX\ERN\ERN_430\ClipReleaseType:
+    properties:
+        releaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseReference
+                setter: setReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_430\ReleaseIdType
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_430\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_430\DisplayTitleType>
+        additionalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalTitle
+                setter: setAdditionalTitle
+            xml_list:
+                inline: true
+                entry_name: AdditionalTitle
+            type: array<DDEX\ERN\ERN_430\AdditionalTitleType>
+        releaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReference
+                setter: setReleaseResourceReference
+            type: string
+        releaseLabelReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseLabelReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseLabelReference
+                setter: setReleaseLabelReference
+            xml_list:
+                inline: true
+                entry_name: ReleaseLabelReference
+            type: array<DDEX\ERN\ERN_430\ReleaseLabelReferenceWithPartyType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ERN\ERN_430\GenreWithTerritoryType>
+        relatedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedRelease
+                setter: setRelatedRelease
+            xml_list:
+                inline: true
+                entry_name: RelatedRelease
+            type: array<DDEX\ERN\ERN_430\RelatedReleaseType>

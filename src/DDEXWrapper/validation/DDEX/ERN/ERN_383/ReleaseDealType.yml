@@ -1,0 +1,28 @@
+DDEX\ERN\ERN_383\ReleaseDealType:
+    properties:
+        dealReleaseReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        deal:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        effectiveDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules

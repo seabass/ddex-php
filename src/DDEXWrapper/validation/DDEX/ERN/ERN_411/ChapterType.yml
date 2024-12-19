@@ -1,0 +1,36 @@
+DDEX\ERN\ERN_411\ChapterType:
+    properties:
+        chapterReference:
+            -
+                Regex:
+                    pattern: '~X[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        contributor:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null
+        representativeImageReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,10 @@
+DDEX\ddexC\FrameRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - Hz(interlaced)
+                        - Hz(non-interlaced)
+                    groups:
+                        - xsd_rules

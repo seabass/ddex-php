@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_380\SoftwareDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        technicalSoftwareDetails:
+            -
+                Valid: null

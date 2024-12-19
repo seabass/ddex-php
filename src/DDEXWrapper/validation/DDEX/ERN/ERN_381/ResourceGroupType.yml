@@ -1,0 +1,44 @@
+DDEX\ERN\ERN_381\ResourceGroupType:
+    properties:
+        title:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                Valid: null
+        displayConductor:
+            -
+                Valid: null
+        displayComposer:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null
+        resourceGroupContentItem:
+            -
+                Valid: null
+        resourceGroupResourceReferenceList:
+            -
+                Valid: null
+        resourceGroupReleaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                Valid: null

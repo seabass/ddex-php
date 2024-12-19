@@ -1,0 +1,24 @@
+DDEX\ERN\ERN_431\ResourceProprietaryIdType:
+    properties:
+        isReplaced:
+            expose: true
+            access_type: public_method
+            serialized_name: IsReplaced
+            accessor:
+                getter: getIsReplaced
+                setter: setIsReplaced
+            xml_attribute: true
+            type: bool
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\ERN\ERN_431\ProprietaryIdType>

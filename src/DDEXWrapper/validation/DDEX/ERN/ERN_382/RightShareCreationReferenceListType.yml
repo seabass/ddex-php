@@ -1,0 +1,29 @@
+DDEX\ERN\ERN_382\RightShareCreationReferenceListType:
+    properties:
+        rightShareWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rightShareResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rightShareReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

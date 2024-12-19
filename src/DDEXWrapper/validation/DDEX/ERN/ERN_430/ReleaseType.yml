@@ -1,0 +1,111 @@
+DDEX\ERN\ERN_430\ReleaseType:
+    properties:
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtistName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseLabelReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        administratingRecordCompany:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        genre:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseVisibilityReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~V[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        parentalWarningType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        avRating:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        relatedResource:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        externalResourceLink:
+            -
+                Valid: null

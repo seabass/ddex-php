@@ -1,0 +1,71 @@
+DDEX\ERN\ERN_380\DealType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        dealReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DealReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealReference
+                setter: setDealReference
+            xml_list:
+                inline: true
+                entry_name: DealReference
+            type: array<DDEX\ERN\ERN_380\DealReferenceType>
+        dealTerms:
+            expose: true
+            access_type: public_method
+            serialized_name: DealTerms
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealTerms
+                setter: setDealTerms
+            type: DDEX\ERN\ERN_380\DealTermsType
+        resourceUsage:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceUsage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceUsage
+                setter: setResourceUsage
+            type: DDEX\ERN\ERN_380\ResourceUsageType
+        dealTechnicalResourceDetailsReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: DealTechnicalResourceDetailsReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealTechnicalResourceDetailsReferenceList
+                setter: setDealTechnicalResourceDetailsReferenceList
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: DealTechnicalResourceDetailsReference
+                skip_when_empty: true
+        distributionChannelPage:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelPage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelPage
+                setter: setDistributionChannelPage
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelPage
+            type: array<DDEX\ERN\ERN_380\WebPageType>

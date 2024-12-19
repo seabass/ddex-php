@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_371\DealTechnicalResourceDetailsReferenceListType:
+    properties:
+        dealTechnicalResourceDetailsReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~T[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

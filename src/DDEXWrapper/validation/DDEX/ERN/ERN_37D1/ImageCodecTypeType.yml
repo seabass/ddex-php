@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_37D1\ImageCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - GIF
+                        - JPEG
+                        - JPEG2000
+                        - PNG
+                        - TIFF
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

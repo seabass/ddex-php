@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_360\ReferenceTitleType:
+    properties:
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

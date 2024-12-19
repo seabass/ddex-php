@@ -1,0 +1,29 @@
+DDEX\ERN\ERN_341\ImageType:
+    properties:
+        imageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        title:
+            -
+                Valid: null
+        imageDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

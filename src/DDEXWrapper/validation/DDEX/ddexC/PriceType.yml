@@ -1,0 +1,7 @@
+DDEX\ddexC\PriceType:
+    properties:
+        currencyCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,66 @@
+DDEX\ERN\ERN_410\DealTermsType:
+    properties:
+        validityPeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        technicalInstantiation:
+            -
+                Valid: null
+        numberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        distributionChannel:
+            -
+                Valid: null
+        excludedDistributionChannel:
+            -
+                Valid: null
+        rightsClaimPolicy:
+            -
+                Valid: null
+        priceInformation:
+            -
+                Valid: null
+        releaseDisplayStartDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+        trackListingPreviewStartDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+        coverArtPreviewStartDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+        clipPreviewStartDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+        instantGratificationResourceList:
+            -
+                Valid: null
+        physicalReturns:
+            -
+                Valid: null
+        numberOfProductsPerCarton:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

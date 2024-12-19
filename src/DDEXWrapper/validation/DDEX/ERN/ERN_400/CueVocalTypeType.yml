@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_400\CueVocalTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Instrumental
+                        - UserDefined
+                        - Vocal
+                    groups:
+                        - xsd_rules

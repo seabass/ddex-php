@@ -1,0 +1,65 @@
+DDEX\ERN\ERN_400\ResourceGroupContentItemType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        releaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReference
+                setter: setReleaseResourceReference
+            type: string
+        linkedReleaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkedReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkedReleaseResourceReference
+                setter: setLinkedReleaseResourceReference
+            xml_list:
+                inline: true
+                entry_name: LinkedReleaseResourceReference
+            type: array<DDEX\ERN\ERN_400\LinkedReleaseResourceReferenceType>
+        isBonusResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBonusResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsBonusResource
+                setter: setIsBonusResource
+            type: bool
+        isInstantGratificationResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsInstantGratificationResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsInstantGratificationResource
+                setter: setIsInstantGratificationResource
+            type: bool
+        isPreOrderIncentiveResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreOrderIncentiveResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreOrderIncentiveResource
+                setter: setIsPreOrderIncentiveResource
+            type: bool

@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_400\DisplayArtistRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - FeaturedArtist
+                        - MainArtist
+                        - Artist
+                    groups:
+                        - xsd_rules

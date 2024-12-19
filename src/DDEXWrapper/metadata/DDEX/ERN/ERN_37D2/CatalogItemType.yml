@@ -1,0 +1,133 @@
+DDEX\ERN\ERN_37D2\CatalogItemType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\ERN\ERN_37D2\AllTerritoryCodeType>
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ERN\ERN_37D2\ReleaseIdType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            type: DDEX\ERN\ERN_37D2\TitleType
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            type: DDEX\ERN\ERN_37D2\NameType
+        contributorName:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorName
+                setter: setContributorName
+            xml_list:
+                inline: true
+                entry_name: ContributorName
+            type: array<DDEX\ERN\ERN_37D2\NameType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            type: DDEX\ERN\ERN_37D2\ReferenceTitleType
+        labelName:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabelName
+                setter: setLabelName
+            xml_list:
+                inline: true
+                entry_name: LabelName
+            type: array<DDEX\ERN\ERN_37D2\LabelNameType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ERN\ERN_37D2\GenreType>
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ERN\ERN_37D2\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_37D2\CLineType>
+        releaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDate
+                setter: setReleaseDate
+            type: DDEX\ERN\ERN_37D2\EventDateType

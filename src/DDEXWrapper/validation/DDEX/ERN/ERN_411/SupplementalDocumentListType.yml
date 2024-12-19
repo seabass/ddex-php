@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_411\SupplementalDocumentListType:
+    properties:
+        supplementalDocument:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

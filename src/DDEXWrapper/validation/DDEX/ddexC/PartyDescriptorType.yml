@@ -1,0 +1,5 @@
+DDEX\ddexC\PartyDescriptorType:
+    properties:
+        partyName:
+            -
+                Valid: null

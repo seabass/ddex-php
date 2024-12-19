@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_431\SegmentType:
+    properties:
+        startTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

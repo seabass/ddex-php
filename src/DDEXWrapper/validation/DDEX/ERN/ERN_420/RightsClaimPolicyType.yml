@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_420\RightsClaimPolicyType:
+    properties:
+        condition:
+            -
+                Valid: null
+        rightsClaimPolicyType:
+            -
+                Choice:
+                    choices:
+                        - BlockAccess
+                        - Monetize
+                        - ReportUsage
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

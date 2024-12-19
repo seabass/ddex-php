@@ -1,0 +1,22 @@
+DDEX\ddexC\RelatedLicenseOrClaimRequestIdType:
+    properties:
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            type: DDEX\ddexC\ProprietaryIdType
+        licenseOrClaimRequestUpdateReason:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestUpdateReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestUpdateReason
+                setter: setLicenseOrClaimRequestUpdateReason
+            type: DDEX\ddexC\LicenseOrClaimRequestUpdateReasonType

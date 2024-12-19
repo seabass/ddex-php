@@ -1,0 +1,74 @@
+DDEX\ERN\ERN_37D1\UsageType:
+    properties:
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\ERN\ERN_37D1\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\ERN\ERN_37D1\UserInterfaceTypeType>
+        distributionChannelType:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelType
+                setter: setDistributionChannelType
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelType
+            type: array<DDEX\ERN\ERN_37D1\DistributionChannelTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\ERN\ERN_37D1\CarrierTypeType>
+        technicalInstantiation:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalInstantiation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalInstantiation
+                setter: setTechnicalInstantiation
+            type: DDEX\ERN\ERN_37D1\TechnicalInstantiationType
+        numberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUsages
+                setter: setNumberOfUsages
+            type: int

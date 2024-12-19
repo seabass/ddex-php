@@ -1,0 +1,290 @@
+DDEX\ERN\ERN_371\TechnicalVideoDetailsType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        technicalResourceDetailsReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalResourceDetailsReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalResourceDetailsReference
+                setter: setTechnicalResourceDetailsReference
+            type: string
+        drmPlatformType:
+            expose: true
+            access_type: public_method
+            serialized_name: DrmPlatformType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDrmPlatformType
+                setter: setDrmPlatformType
+            type: DDEX\ERN\ERN_371\DrmPlatformTypeType
+        overallBitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: OverallBitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOverallBitRate
+                setter: setOverallBitRate
+            type: DDEX\ERN\ERN_371\BitRateType
+        containerFormat:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainerFormat
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainerFormat
+                setter: setContainerFormat
+            type: DDEX\ERN\ERN_371\ContainerFormatType
+        videoCodecType:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoCodecType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoCodecType
+                setter: setVideoCodecType
+            type: DDEX\ERN\ERN_371\VideoCodecTypeType
+        videoBitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoBitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoBitRate
+                setter: setVideoBitRate
+            type: DDEX\ERN\ERN_371\BitRateType
+        frameRate:
+            expose: true
+            access_type: public_method
+            serialized_name: FrameRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFrameRate
+                setter: setFrameRate
+            type: DDEX\ERN\ERN_371\FrameRateType
+        imageHeight:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageHeight
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageHeight
+                setter: setImageHeight
+            type: DDEX\ERN\ERN_371\ExtentType
+        imageWidth:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageWidth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageWidth
+                setter: setImageWidth
+            type: DDEX\ERN\ERN_371\ExtentType
+        aspectRatio:
+            expose: true
+            access_type: public_method
+            serialized_name: AspectRatio
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAspectRatio
+                setter: setAspectRatio
+            type: DDEX\ERN\ERN_371\AspectRatioType
+        colorDepth:
+            expose: true
+            access_type: public_method
+            serialized_name: ColorDepth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getColorDepth
+                setter: setColorDepth
+            type: int
+        videoDefinitionType:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoDefinitionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoDefinitionType
+                setter: setVideoDefinitionType
+            type: string
+        audioCodecType:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioCodecType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioCodecType
+                setter: setAudioCodecType
+            type: DDEX\ERN\ERN_371\AudioCodecTypeType
+        audioBitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioBitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioBitRate
+                setter: setAudioBitRate
+            type: DDEX\ERN\ERN_371\BitRateType
+        numberOfAudioChannels:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfAudioChannels
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfAudioChannels
+                setter: setNumberOfAudioChannels
+            type: int
+        audioSamplingRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioSamplingRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioSamplingRate
+                setter: setAudioSamplingRate
+            type: DDEX\ERN\ERN_371\SamplingRateType
+        audioBitsPerSample:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioBitsPerSample
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioBitsPerSample
+                setter: setAudioBitsPerSample
+            type: int
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        resourceProcessingRequired:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceProcessingRequired
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceProcessingRequired
+                setter: setResourceProcessingRequired
+            type: bool
+        usableResourceDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: UsableResourceDuration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsableResourceDuration
+                setter: setUsableResourceDuration
+            type: DateInterval
+        isPreview:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreview
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreview
+                setter: setIsPreview
+            type: bool
+        previewDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PreviewDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPreviewDetails
+                setter: setPreviewDetails
+            type: DDEX\ERN\ERN_371\SoundRecordingPreviewDetailsType
+        fulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFulfillmentDate
+                setter: setFulfillmentDate
+            type: DDEX\ERN\ERN_371\FulfillmentDateType
+        consumerFulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ConsumerFulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConsumerFulfillmentDate
+                setter: setConsumerFulfillmentDate
+            type: DDEX\ERN\ERN_371\FulfillmentDateType
+        fileAvailabilityDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: FileAvailabilityDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileAvailabilityDescription
+                setter: setFileAvailabilityDescription
+            xml_list:
+                inline: true
+                entry_name: FileAvailabilityDescription
+            type: array<DDEX\ERN\ERN_371\DescriptionType>
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            xml_list:
+                inline: true
+                entry_name: File
+            type: array<DDEX\ERN\ERN_371\FileType>
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            xml_list:
+                inline: true
+                entry_name: Fingerprint
+            type: array<DDEX\ERN\ERN_371\FingerprintType>

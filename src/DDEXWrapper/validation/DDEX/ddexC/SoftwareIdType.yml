@@ -1,0 +1,7 @@
+DDEX\ddexC\SoftwareIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

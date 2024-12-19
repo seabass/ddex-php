@@ -1,0 +1,13 @@
+DDEX\ddexC\HashSumAlgorithmTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MD4
+                        - MD5
+                        - SHA
+                        - SHA1
+                        - UserDefined
+                    groups:
+                        - xsd_rules

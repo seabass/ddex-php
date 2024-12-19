@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_37D1\ResourceContainedResourceReferenceListType:
+    properties:
+        resourceContainedResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReference
+                setter: setResourceContainedResourceReference
+            xml_list:
+                inline: true
+                entry_name: ResourceContainedResourceReference
+            type: array<DDEX\ERN\ERN_37D1\ResourceContainedResourceReferenceType>

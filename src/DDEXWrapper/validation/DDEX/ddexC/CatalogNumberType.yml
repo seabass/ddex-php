@@ -1,0 +1,7 @@
+DDEX\ddexC\CatalogNumberType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

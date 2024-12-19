@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_371\MidiTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MonophonicMidi
+                        - PolyphonicMidi
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

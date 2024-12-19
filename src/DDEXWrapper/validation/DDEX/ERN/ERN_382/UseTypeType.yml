@@ -1,0 +1,64 @@
+DDEX\ERN\ERN_382\UseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - Broadcast
+                        - ConditionalDownload
+                        - ContentInfluencedStream
+                        - Display
+                        - Download
+                        - DubForAdvertisement
+                        - DubForLivePerformance
+                        - DubForMovies
+                        - DubForMusicOnHold
+                        - DubForPublicPerformance
+                        - DubForRadio
+                        - DubForTV
+                        - ExtractForInternet
+                        - KioskDownload
+                        - Narrowcast
+                        - NonInteractiveStream
+                        - OnDemandStream
+                        - PerformAsMusicOnHold
+                        - PerformInLivePerformance
+                        - PerformInPublic
+                        - PermanentDownload
+                        - Playback
+                        - PlayInPublic
+                        - Podcast
+                        - Print
+                        - PrivateCopy
+                        - PurchaseAsPhysicalProduct
+                        - Rent
+                        - Simulcast
+                        - Stream
+                        - TetheredDownload
+                        - TimeInfluencedStream
+                        - Unknown
+                        - UseAsAlertTone
+                        - UseAsDevice
+                        - UseAsKaraoke
+                        - UseAsRingbackTone
+                        - UseAsRingbackTune
+                        - UseAsRingtone
+                        - UseAsRingtune
+                        - UseAsScreensaver
+                        - UseAsVoiceMail
+                        - UseAsWallpaper
+                        - UseForIdentification
+                        - UseInMobilePhoneMessaging
+                        - UseInPhoneListening
+                        - UserDefined
+                        - UserMakeAvailableLabelProvided
+                        - UserMakeAvailableUserProvided
+                        - Webcast
+                        - Cable
+                        - Dub
+                        - DubForOnDemandStreaming
+                        - Perform
+                        - Use
+                    groups:
+                        - xsd_rules

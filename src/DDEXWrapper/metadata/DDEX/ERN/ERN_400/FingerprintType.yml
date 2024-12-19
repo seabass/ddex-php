@@ -1,0 +1,62 @@
+DDEX\ERN\ERN_400\FingerprintType:
+    properties:
+        algorithm:
+            expose: true
+            access_type: public_method
+            serialized_name: Algorithm
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAlgorithm
+                setter: setAlgorithm
+            type: DDEX\ERN\ERN_400\FingerprintAlgorithmTypeType
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: Version
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            type: string
+        parameter:
+            expose: true
+            access_type: public_method
+            serialized_name: Parameter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParameter
+                setter: setParameter
+            type: string
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            type: DDEX\ERN\ERN_400\FileType
+        dataType:
+            expose: true
+            access_type: public_method
+            serialized_name: DataType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataType
+                setter: setDataType
+            type: string
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            type: string

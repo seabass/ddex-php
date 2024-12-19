@@ -1,0 +1,263 @@
+DDEX\ERN\ERN_371\CollectionType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        collectionId:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionId
+                setter: setCollectionId
+            xml_list:
+                inline: true
+                entry_name: CollectionId
+            type: array<DDEX\ERN\ERN_371\CollectionIdType>
+        collectionType:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionType
+                setter: setCollectionType
+            xml_list:
+                inline: true
+                entry_name: CollectionType
+            type: array<DDEX\ERN\ERN_371\CollectionTypeType>
+        collectionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionReference
+                setter: setCollectionReference
+            type: string
+        equivalentReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: EquivalentReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEquivalentReleaseReference
+                setter: setEquivalentReleaseReference
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_371\TitleType>
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: Contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: Contributor
+            type: array<DDEX\ERN\ERN_371\DetailedResourceContributorType>
+        character:
+            expose: true
+            access_type: public_method
+            serialized_name: Character
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCharacter
+                setter: setCharacter
+            xml_list:
+                inline: true
+                entry_name: Character
+            type: array<DDEX\ERN\ERN_371\CharacterType>
+        collectionCollectionReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionCollectionReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionCollectionReferenceList
+                setter: setCollectionCollectionReferenceList
+            type: DDEX\ERN\ERN_371\CollectionCollectionReferenceListType
+        isComplete:
+            expose: true
+            access_type: public_method
+            serialized_name: IsComplete
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsComplete
+                setter: setIsComplete
+            type: bool
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        durationOfMusicalContent:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationOfMusicalContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationOfMusicalContent
+                setter: setDurationOfMusicalContent
+            type: DateInterval
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ERN\ERN_371\EventDateType
+        releaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDate
+                setter: setReleaseDate
+            type: DDEX\ERN\ERN_371\EventDateType
+        originalReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalReleaseDate
+                setter: setOriginalReleaseDate
+            type: DDEX\ERN\ERN_371\EventDateType
+        originalLanguage:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalLanguage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalLanguage
+                setter: setOriginalLanguage
+            type: string
+        collectionDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionDetailsByTerritory
+                setter: setCollectionDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: CollectionDetailsByTerritory
+            type: array<DDEX\ERN\ERN_371\CollectionDetailsByTerritoryType>
+        collectionResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionResourceReferenceList
+                setter: setCollectionResourceReferenceList
+            type: array<DDEX\ERN\ERN_371\CollectionResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: CollectionResourceReference
+                skip_when_empty: true
+        collectionWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionWorkReferenceList
+                setter: setCollectionWorkReferenceList
+            type: array<DDEX\ERN\ERN_371\CollectionWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: CollectionWorkReference
+                skip_when_empty: true
+        representativeImageReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RepresentativeImageReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRepresentativeImageReference
+                setter: setRepresentativeImageReference
+            type: string
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ERN\ERN_371\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_371\CLineType>

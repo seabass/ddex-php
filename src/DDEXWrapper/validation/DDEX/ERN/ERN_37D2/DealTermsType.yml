@@ -1,0 +1,39 @@
+DDEX\ERN\ERN_37D2\DealTermsType:
+    properties:
+        usage:
+            -
+                Valid: null
+        distributionChannel:
+            -
+                Valid: null
+        excludedDistributionChannel:
+            -
+                Valid: null
+        priceInformation:
+            -
+                Valid: null
+        validityPeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        relatedReleaseOfferSet:
+            -
+                Valid: null
+        physicalReturns:
+            -
+                Valid: null
+        numberOfProductsPerCarton:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        rightsClaimPolicy:
+            -
+                Valid: null
+        webPolicy:
+            -
+                Valid: null

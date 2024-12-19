@@ -1,0 +1,15 @@
+DDEX\ddexC\VideoCueSheetReferenceListType:
+    properties:
+        videoCueSheetReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~Q[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

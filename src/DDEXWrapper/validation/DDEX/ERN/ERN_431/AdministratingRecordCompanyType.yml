@@ -1,0 +1,17 @@
+DDEX\ERN\ERN_431\AdministratingRecordCompanyType:
+    properties:
+        recordCompanyPartyReference:
+            -
+                Regex:
+                    pattern: '~P[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        role:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

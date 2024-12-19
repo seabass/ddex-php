@@ -1,0 +1,12 @@
+DDEX\ddexC\MessageNotificationPeriodType:
+    properties:
+        startDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        endDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

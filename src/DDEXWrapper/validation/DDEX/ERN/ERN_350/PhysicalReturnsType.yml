@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_350\PhysicalReturnsType:
+    properties:
+        physicalReturnsAllowed:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

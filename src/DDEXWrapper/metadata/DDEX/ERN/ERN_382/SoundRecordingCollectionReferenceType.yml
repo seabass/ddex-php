@@ -1,0 +1,62 @@
+DDEX\ERN\ERN_382\SoundRecordingCollectionReferenceType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        soundRecordingCollectionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingCollectionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingCollectionReference
+                setter: setSoundRecordingCollectionReference
+            type: string
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            type: DateInterval
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        endTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndTime
+                setter: setEndTime
+            type: DateInterval
+        releaseResourceType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceType
+                setter: setReleaseResourceType
+            type: string

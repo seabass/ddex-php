@@ -1,0 +1,36 @@
+DDEX\ERN\ERN_430\ReleaseRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HasArtistFromEnsemble
+                        - HasArtistFromSameEnsemble
+                        - HasContentFrom
+                        - HasEnsembleWithArtist
+                        - HasSameArtist
+                        - HasSameRecordingProject
+                        - HasSimilarContent
+                        - IsAudioUsedFor
+                        - IsDifferentEncoding
+                        - IsDigitalEquivalentToPhysical
+                        - IsEditedVersionOf
+                        - IsEquivalentToAudio
+                        - IsEquivalentToVideo
+                        - IsExtendedFromAlbum
+                        - IsFromAudio
+                        - IsFromVideo
+                        - IsImmersiveEditionOf
+                        - IsNonImmersiveEditionOf
+                        - IsParentRelease
+                        - IsPhysicalEquivalentToDigital
+                        - IsReleaseFromRelease
+                        - IsShortenedFromAlbum
+                        - IsSlowedDownOf
+                        - IsSourceOfEditedVersion
+                        - IsSpedUpOf
+                        - IsVideoUsedFor
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

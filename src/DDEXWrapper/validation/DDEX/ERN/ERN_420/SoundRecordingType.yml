@@ -1,0 +1,143 @@
+DDEX\ERN\ERN_420\SoundRecordingType:
+    properties:
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        type:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        workId:
+            -
+                Valid: null
+        displayTitleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtistName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null
+        resourceRightsController:
+            -
+                Valid: null
+        workRightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        duration:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        locationAndDateOfSession:
+            -
+                Valid: null
+        parentalWarningType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        relatedRelease:
+            -
+                Valid: null
+        relatedResource:
+            -
+                Valid: null
+        compositeMusicalWorkType:
+            -
+                Choice:
+                    choices:
+                        - Medley
+                        - Neither
+                        - Potpourri
+                    groups:
+                        - xsd_rules
+        displayCredits:
+            -
+                Valid: null
+        languageOfPerformance:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        audioChannelConfiguration:
+            -
+                Choice:
+                    choices:
+                        - BinauralAudio
+                        - LCR
+                        - Mono
+                        - MultichannelAudio
+                        - MultiTrack
+                        - Quad
+                        - Stems
+                        - Stereo
+                        - SurroundSound
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        technicalDetails:
+            -
+                Valid: null
+        audioChapterReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~X[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_382\AspectRatioType:
+    properties:
+        aspectRatioType:
+            -
+                Choice:
+                    choices:
+                        - Hz(interlaced)
+                        - Hz(non-interlaced)
+                    groups:
+                        - xsd_rules

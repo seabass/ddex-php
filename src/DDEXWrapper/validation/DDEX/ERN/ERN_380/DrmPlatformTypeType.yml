@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_380\DrmPlatformTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - 3Day
+                        - Fairplay
+                        - OMA
+                        - Unknown
+                        - UserDefined
+                        - WindowsMediaDRM
+                    groups:
+                        - xsd_rules

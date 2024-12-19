@@ -1,0 +1,21 @@
+DDEX\ddexC\ReleaseDetailsByTerritoryType:
+    properties:
+        rightsAgreementId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null

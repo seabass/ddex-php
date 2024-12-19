@@ -1,0 +1,63 @@
+DDEX\ERN\ERN_382\MusicalWorkContributorType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\ERN\ERN_382\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\ERN\ERN_382\PartyNameType>
+        musicalWorkContributorRole:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkContributorRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkContributorRole
+                setter: setMusicalWorkContributorRole
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkContributorRole
+            type: array<DDEX\ERN\ERN_382\MusicalWorkContributorRoleType>
+        societyAffiliation:
+            expose: true
+            access_type: public_method
+            serialized_name: SocietyAffiliation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSocietyAffiliation
+                setter: setSocietyAffiliation
+            xml_list:
+                inline: true
+                entry_name: SocietyAffiliation
+            type: array<DDEX\ERN\ERN_382\SocietyAffiliationType>

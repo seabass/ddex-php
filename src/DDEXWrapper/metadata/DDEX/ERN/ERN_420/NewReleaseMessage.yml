@@ -1,0 +1,5 @@
+DDEX\ERN\ERN_420\NewReleaseMessage:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+    xml_root_name: 'ern:NewReleaseMessage'
+    xml_root_namespace: 'http://ddex.net/xml/ern/42'

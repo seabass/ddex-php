@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_380\FileType:
+    properties:
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: FileName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            type: string
+        filePath:
+            expose: true
+            access_type: public_method
+            serialized_name: FilePath
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFilePath
+                setter: setFilePath
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\ERN\ERN_380\HashSumType

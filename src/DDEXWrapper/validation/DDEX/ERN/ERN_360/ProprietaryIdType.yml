@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_360\ProprietaryIdType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

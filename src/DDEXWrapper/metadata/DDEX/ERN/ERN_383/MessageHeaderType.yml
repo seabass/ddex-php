@@ -1,0 +1,114 @@
+DDEX\ERN\ERN_383\MessageHeaderType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageThreadId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageThreadId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageThreadId
+                setter: setMessageThreadId
+            type: string
+        messageId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageId
+                setter: setMessageId
+            type: string
+        messageFileName:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageFileName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageFileName
+                setter: setMessageFileName
+            type: string
+        messageSender:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSender
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageSender
+                setter: setMessageSender
+            type: DDEX\ERN\ERN_383\MessagingPartyType
+        sentOnBehalfOf:
+            expose: true
+            access_type: public_method
+            serialized_name: SentOnBehalfOf
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSentOnBehalfOf
+                setter: setSentOnBehalfOf
+            type: DDEX\ERN\ERN_383\MessagingPartyType
+        messageRecipient:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageRecipient
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageRecipient
+                setter: setMessageRecipient
+            xml_list:
+                inline: true
+                entry_name: MessageRecipient
+            type: array<DDEX\ERN\ERN_383\MessagingPartyType>
+        messageCreatedDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageCreatedDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageCreatedDateTime
+                setter: setMessageCreatedDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        messageAuditTrail:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageAuditTrail
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageAuditTrail
+                setter: setMessageAuditTrail
+            type: DDEX\ERN\ERN_383\MessageAuditTrailType
+        comment:
+            expose: true
+            access_type: public_method
+            serialized_name: Comment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getComment
+                setter: setComment
+            type: DDEX\ERN\ERN_383\CommentType
+        messageControlType:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageControlType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageControlType
+                setter: setMessageControlType
+            type: string

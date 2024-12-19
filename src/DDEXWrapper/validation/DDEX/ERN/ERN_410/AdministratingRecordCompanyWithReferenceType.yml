@@ -1,0 +1,17 @@
+DDEX\ERN\ERN_410\AdministratingRecordCompanyWithReferenceType:
+    properties:
+        recordCompanyPartyReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        role:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

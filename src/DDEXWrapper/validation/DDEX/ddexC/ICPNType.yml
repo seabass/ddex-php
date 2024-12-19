@@ -1,0 +1,7 @@
+DDEX\ddexC\ICPNType:
+    properties:
+        isEan:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

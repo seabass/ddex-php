@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_37D2\AvRatingType:
+    properties:
+        ratingText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        ratingAgency:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

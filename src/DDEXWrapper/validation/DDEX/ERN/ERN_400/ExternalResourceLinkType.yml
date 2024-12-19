@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_400\ExternalResourceLinkType:
+    properties:
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        validityPeriod:
+            -
+                Valid: null

@@ -1,0 +1,207 @@
+DDEX\ERN\ERN_430\TrackReleaseType:
+    properties:
+        isMainRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMainRelease
+            accessor:
+                getter: getIsMainRelease
+                setter: setIsMainRelease
+            xml_attribute: true
+            type: bool
+        releaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseReference
+                setter: setReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_430\ReleaseIdType
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_430\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_430\DisplayTitleType>
+        additionalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalTitle
+                setter: setAdditionalTitle
+            xml_list:
+                inline: true
+                entry_name: AdditionalTitle
+            type: array<DDEX\ERN\ERN_430\AdditionalTitleType>
+        releaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReference
+                setter: setReleaseResourceReference
+            type: string
+        linkedReleaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkedReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkedReleaseResourceReference
+                setter: setLinkedReleaseResourceReference
+            xml_list:
+                inline: true
+                entry_name: LinkedReleaseResourceReference
+            type: array<DDEX\ERN\ERN_430\LinkedReleaseResourceReferenceType>
+        releaseLabelReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseLabelReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseLabelReference
+                setter: setReleaseLabelReference
+            xml_list:
+                inline: true
+                entry_name: ReleaseLabelReference
+            type: array<DDEX\ERN\ERN_430\ReleaseLabelReferenceWithPartyType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ERN\ERN_430\GenreWithTerritoryType>
+        releaseVisibilityReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseVisibilityReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseVisibilityReference
+                setter: setReleaseVisibilityReference
+            xml_list:
+                inline: true
+                entry_name: ReleaseVisibilityReference
+            type: array<string>
+        relatedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedRelease
+                setter: setRelatedRelease
+            xml_list:
+                inline: true
+                entry_name: RelatedRelease
+            type: array<DDEX\ERN\ERN_430\RelatedReleaseType>
+        relatedResource:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedResource
+                setter: setRelatedResource
+            xml_list:
+                inline: true
+                entry_name: RelatedResource
+            type: array<DDEX\ERN\ERN_430\RelatedResourceType>
+        targetURL:
+            expose: true
+            access_type: public_method
+            serialized_name: TargetURL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTargetURL
+                setter: setTargetURL
+            type: string
+        keywords:
+            expose: true
+            access_type: public_method
+            serialized_name: Keywords
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getKeywords
+                setter: setKeywords
+            xml_list:
+                inline: true
+                entry_name: Keywords
+            type: array<DDEX\ERN\ERN_430\KeywordsWithTerritoryType>
+        synopsis:
+            expose: true
+            access_type: public_method
+            serialized_name: Synopsis
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSynopsis
+                setter: setSynopsis
+            xml_list:
+                inline: true
+                entry_name: Synopsis
+            type: array<DDEX\ERN\ERN_430\SynopsisWithTerritoryType>
+        marketingComment:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingComment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMarketingComment
+                setter: setMarketingComment
+            xml_list:
+                inline: true
+                entry_name: MarketingComment
+            type: array<DDEX\ERN\ERN_430\MarketingCommentType>

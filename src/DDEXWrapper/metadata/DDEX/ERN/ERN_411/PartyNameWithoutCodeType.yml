@@ -1,0 +1,72 @@
+DDEX\ERN\ERN_411\PartyNameWithoutCodeType:
+    properties:
+        fullName:
+            expose: true
+            access_type: public_method
+            serialized_name: FullName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullName
+                setter: setFullName
+            type: string
+        fullNameAsciiTranscribed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameAsciiTranscribed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameAsciiTranscribed
+                setter: setFullNameAsciiTranscribed
+            type: string
+        fullNameIndexed:
+            expose: true
+            access_type: public_method
+            serialized_name: FullNameIndexed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullNameIndexed
+                setter: setFullNameIndexed
+            type: string
+        namesBeforeKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesBeforeKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesBeforeKeyName
+                setter: setNamesBeforeKeyName
+            type: string
+        keyName:
+            expose: true
+            access_type: public_method
+            serialized_name: KeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getKeyName
+                setter: setKeyName
+            type: string
+        namesAfterKeyName:
+            expose: true
+            access_type: public_method
+            serialized_name: NamesAfterKeyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNamesAfterKeyName
+                setter: setNamesAfterKeyName
+            type: string
+        abbreviatedName:
+            expose: true
+            access_type: public_method
+            serialized_name: AbbreviatedName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAbbreviatedName
+                setter: setAbbreviatedName
+            type: string

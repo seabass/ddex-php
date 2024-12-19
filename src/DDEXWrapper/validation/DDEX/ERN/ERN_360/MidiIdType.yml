@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_360\MidiIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

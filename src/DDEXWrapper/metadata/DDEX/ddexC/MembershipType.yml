@@ -1,0 +1,42 @@
+DDEX\ddexC\MembershipType:
+    properties:
+        organization:
+            expose: true
+            access_type: public_method
+            serialized_name: Organization
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOrganization
+                setter: setOrganization
+            type: DDEX\ddexC\PartyDescriptorType
+        membershipType:
+            expose: true
+            access_type: public_method
+            serialized_name: MembershipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMembershipType
+                setter: setMembershipType
+            type: string
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date

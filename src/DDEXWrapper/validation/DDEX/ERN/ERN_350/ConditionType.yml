@@ -1,0 +1,38 @@
+DDEX\ERN\ERN_350\ConditionType:
+    properties:
+        value:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        unit:
+            -
+                Choice:
+                    choices:
+                        - Millisecond
+                        - Minute
+                        - Percent
+                        - Pixel
+                        - Second
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        relationalRelator:
+            -
+                Choice:
+                    choices:
+                        - EqualTo
+                        - LessThan
+                        - LessThanOrEqualTo
+                        - MoreThan
+                        - MoreThanOrEqualTo
+                        - NotEqualTo
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

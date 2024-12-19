@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_383\SoftwareTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - InteractiveBooklet
+                        - MusicalWorkBasedGame
+                        - NonMusicalWorkBasedGame
+                        - Screensaver
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

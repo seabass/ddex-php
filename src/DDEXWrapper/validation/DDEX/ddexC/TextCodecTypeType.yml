@@ -1,0 +1,15 @@
+DDEX\ddexC\TextCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ASCII
+                        - HTML
+                        - PDF
+                        - PostScript
+                        - RTF
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

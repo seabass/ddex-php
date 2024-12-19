@@ -1,0 +1,7 @@
+DDEX\ddexC\ProprietaryIdType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

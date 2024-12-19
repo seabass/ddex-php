@@ -1,0 +1,14 @@
+DDEX\ddexC\ProductTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AudioProduct
+                        - GraphicsProduct
+                        - MixedMediaBundleProduct
+                        - MobileProduct
+                        - UserDefined
+                        - VideoProduct
+                    groups:
+                        - xsd_rules

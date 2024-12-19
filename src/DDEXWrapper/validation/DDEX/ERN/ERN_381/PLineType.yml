@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_381\PLineType:
+    properties:
+        pLineType:
+            -
+                Choice:
+                    choices:
+                        - OriginalPLine
+                        - RemasteringPLine
+                    groups:
+                        - xsd_rules
+        pLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

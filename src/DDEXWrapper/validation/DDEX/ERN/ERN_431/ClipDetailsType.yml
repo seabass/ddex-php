@@ -1,0 +1,31 @@
+DDEX\ERN\ERN_431\ClipDetailsType:
+    properties:
+        clipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        topLeftCorner:
+            -
+                Regex:
+                    pattern: '~[0-9]+,[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        bottomRightCorner:
+            -
+                Regex:
+                    pattern: '~[0-9]+,[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        expressionType:
+            -
+                Choice:
+                    choices:
+                        - Informative
+                        - Instructive
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

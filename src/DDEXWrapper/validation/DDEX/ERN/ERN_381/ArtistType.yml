@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_381\ArtistType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null
+        artistRole:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        nationality:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - IdentifierType
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_380\PreviewDetailsType:
+    properties:
+        expressionType:
+            -
+                Choice:
+                    choices:
+                        - Informative
+                        - Instructive
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

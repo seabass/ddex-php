@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_431\TimingType:
+    properties:
+        startPoint:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

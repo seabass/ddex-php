@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_431\ServiceExceptionType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        channel:
+            -
+                Valid: null

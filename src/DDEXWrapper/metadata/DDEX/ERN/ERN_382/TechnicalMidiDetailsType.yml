@@ -1,0 +1,150 @@
+DDEX\ERN\ERN_382\TechnicalMidiDetailsType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        technicalResourceDetailsReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalResourceDetailsReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalResourceDetailsReference
+                setter: setTechnicalResourceDetailsReference
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        resourceProcessingRequired:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceProcessingRequired
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceProcessingRequired
+                setter: setResourceProcessingRequired
+            type: bool
+        usableResourceDuration:
+            expose: true
+            access_type: public_method
+            serialized_name: UsableResourceDuration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsableResourceDuration
+                setter: setUsableResourceDuration
+            type: DateInterval
+        isPreview:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreview
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreview
+                setter: setIsPreview
+            type: bool
+        previewDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PreviewDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPreviewDetails
+                setter: setPreviewDetails
+            type: DDEX\ERN\ERN_382\SoundRecordingPreviewDetailsType
+        fulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFulfillmentDate
+                setter: setFulfillmentDate
+            type: DDEX\ERN\ERN_382\FulfillmentDateType
+        consumerFulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ConsumerFulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConsumerFulfillmentDate
+                setter: setConsumerFulfillmentDate
+            type: DDEX\ERN\ERN_382\FulfillmentDateType
+        fileAvailabilityDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: FileAvailabilityDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileAvailabilityDescription
+                setter: setFileAvailabilityDescription
+            xml_list:
+                inline: true
+                entry_name: FileAvailabilityDescription
+            type: array<DDEX\ERN\ERN_382\DescriptionType>
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            xml_list:
+                inline: true
+                entry_name: File
+            type: array<DDEX\ERN\ERN_382\FileType>
+        numberOfVoices:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfVoices
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfVoices
+                setter: setNumberOfVoices
+            type: int
+        soundProcessorType:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundProcessorType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundProcessorType
+                setter: setSoundProcessorType
+            type: DDEX\ERN\ERN_382\SoundProcessorTypeType
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            xml_list:
+                inline: true
+                entry_name: Fingerprint
+            type: array<DDEX\ERN\ERN_382\FingerprintType>

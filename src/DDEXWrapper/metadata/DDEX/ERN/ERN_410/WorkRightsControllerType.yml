@@ -1,0 +1,88 @@
+DDEX\ERN\ERN_410\WorkRightsControllerType:
+    properties:
+        rightsControllerPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerPartyReference
+                setter: setRightsControllerPartyReference
+            type: string
+        rightsControllerRole:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerRole
+                setter: setRightsControllerRole
+            xml_list:
+                inline: true
+                entry_name: RightsControllerRole
+            type: array<string>
+        rightsControllerType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerType
+                setter: setRightsControllerType
+            type: string
+        rightShareUnknown:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareUnknown
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareUnknown
+                setter: setRightShareUnknown
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: float
+        territory:
+            expose: true
+            access_type: public_method
+            serialized_name: Territory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritory
+                setter: setTerritory
+            xml_list:
+                inline: true
+                entry_name: Territory
+            type: array<DDEX\ERN\ERN_410\AllTerritoryCodeType>
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: string
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: string

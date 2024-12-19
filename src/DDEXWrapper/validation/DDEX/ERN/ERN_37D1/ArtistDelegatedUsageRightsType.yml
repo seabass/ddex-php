@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_37D1\ArtistDelegatedUsageRightsType:
+    properties:
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        periodOfRightsDelegation:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        territoryOfRightsDelegation:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        membershipType:
+            -
+                Choice:
+                    choices:
+                        - NationalMember
+                        - RegionalMember
+                        - WorldwideMember
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

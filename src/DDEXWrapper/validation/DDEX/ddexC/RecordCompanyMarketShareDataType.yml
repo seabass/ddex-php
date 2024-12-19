@@ -1,0 +1,12 @@
+DDEX\ddexC\RecordCompanyMarketShareDataType:
+    properties:
+        unitsSoldTotal:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

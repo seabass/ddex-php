@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_400\DetailedResourceContributorType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_360\CollectionWorkReferenceListType:
+    properties:
+        collectionWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

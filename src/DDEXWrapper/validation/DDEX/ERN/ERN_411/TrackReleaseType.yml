@@ -1,0 +1,47 @@
+DDEX\ERN\ERN_411\TrackReleaseType:
+    properties:
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        releaseResourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseLabelReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        genre:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

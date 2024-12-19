@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_37D1\FulfillmentDateType:
+    properties:
+        fulfillmentDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

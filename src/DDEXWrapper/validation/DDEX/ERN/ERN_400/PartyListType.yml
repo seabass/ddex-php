@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_400\PartyListType:
+    properties:
+        party:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

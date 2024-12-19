@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_420\DealListType:
+    properties:
+        releaseDeal:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseVisibility:
+            -
+                Valid: null
+        trackReleaseVisibility:
+            -
+                Valid: null

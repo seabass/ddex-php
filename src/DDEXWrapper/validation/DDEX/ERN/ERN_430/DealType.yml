@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_430\DealType:
+    properties:
+        dealTerms:
+            -
+                Valid: null
+        dealTechnicalResourceDetailsReferenceList:
+            -
+                Valid: null
+        distributionChannelPage:
+            -
+                Valid: null

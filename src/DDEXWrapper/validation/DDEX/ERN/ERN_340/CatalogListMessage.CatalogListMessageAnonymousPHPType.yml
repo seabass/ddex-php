@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_340\CatalogListMessage\CatalogListMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        publicationDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        catalogItem:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

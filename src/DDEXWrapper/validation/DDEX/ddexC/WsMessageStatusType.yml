@@ -1,0 +1,12 @@
+DDEX\ddexC\WsMessageStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackendProcessingError
+                        - NoValidMessageReceived
+                        - ValidMessageQueuedForProcessing
+                        - ValidMessageReceived
+                    groups:
+                        - xsd_rules

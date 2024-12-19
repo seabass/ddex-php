@@ -1,0 +1,57 @@
+DDEX\ERN\ERN_341\CatalogItemType:
+    properties:
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        title:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayArtistName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        contributorName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        labelName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        genre:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        releaseDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

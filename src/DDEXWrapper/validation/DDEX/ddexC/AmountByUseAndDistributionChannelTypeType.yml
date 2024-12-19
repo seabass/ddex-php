@@ -1,0 +1,12 @@
+DDEX\ddexC\AmountByUseAndDistributionChannelTypeType:
+    properties:
+        amount:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

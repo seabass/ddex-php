@@ -1,0 +1,51 @@
+DDEX\ERN\ERN_370\NewReleaseMessage\NewReleaseMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        updateIndicator:
+            -
+                Choice:
+                    choices:
+                        - OriginalMessage
+                        - UpdateMessage
+                    groups:
+                        - xsd_rules
+        catalogTransfer:
+            -
+                Valid: null
+        workList:
+            -
+                Valid: null
+        cueSheetList:
+            -
+                Valid: null
+        resourceList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        collectionList:
+            -
+                Valid: null
+        releaseList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        dealList:
+            -
+                Valid: null

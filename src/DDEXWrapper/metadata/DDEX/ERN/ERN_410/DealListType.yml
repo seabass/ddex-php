@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_410\DealListType:
+    properties:
+        releaseDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDeal
+                setter: setReleaseDeal
+            xml_list:
+                inline: true
+                entry_name: ReleaseDeal
+            type: array<DDEX\ERN\ERN_410\ReleaseDealType>

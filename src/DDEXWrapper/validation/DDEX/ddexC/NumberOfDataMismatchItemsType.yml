@@ -1,0 +1,13 @@
+DDEX\ddexC\NumberOfDataMismatchItemsType:
+    properties:
+        dataMismatchStatus:
+            -
+                Choice:
+                    choices:
+                        - AdditionalInformationOnly
+                        - Corrected
+                        - Fatal
+                        - NotCorrected
+                        - UserDefined
+                    groups:
+                        - xsd_rules

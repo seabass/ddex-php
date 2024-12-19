@@ -1,0 +1,44 @@
+DDEX\ERN\ERN_371\SoundRecordingIdType:
+    properties:
+        isReplaced:
+            expose: true
+            access_type: public_method
+            serialized_name: IsReplaced
+            accessor:
+                getter: getIsReplaced
+                setter: setIsReplaced
+            xml_attribute: true
+            type: bool
+        iSRC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISRC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISRC
+                setter: setISRC
+            type: string
+        catalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogNumber
+                setter: setCatalogNumber
+            type: DDEX\ERN\ERN_371\CatalogNumberType
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\ERN\ERN_371\ProprietaryIdType>

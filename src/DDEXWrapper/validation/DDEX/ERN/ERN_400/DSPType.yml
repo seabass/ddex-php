@@ -1,0 +1,8 @@
+DDEX\ERN\ERN_400\DSPType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_37D1\UsageType:
+    properties:
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        technicalInstantiation:
+            -
+                Valid: null
+        numberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

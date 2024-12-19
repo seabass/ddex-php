@@ -1,0 +1,41 @@
+DDEX\ERN\ERN_430\RelatedResourceType:
+    properties:
+        resourceRelationshipType:
+            -
+                Choice:
+                    choices:
+                        - ContainsSamplesFrom
+                        - HasClip
+                        - HasContentFrom
+                        - HasPart
+                        - IsClipFrom
+                        - IsCoveredBy
+                        - IsCoverOf
+                        - IsDifferentEncoding
+                        - IsEditedVersionOf
+                        - IsImmersiveEditionOf
+                        - IsNonImmersiveEditionOf
+                        - IsPartOf
+                        - IsSampledBy
+                        - IsSlowedDownOf
+                        - IsSourceOfEditedVersion
+                        - IsSpedUpOf
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceRelatedResourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                Valid: null
+        timing:
+            -
+                Valid: null

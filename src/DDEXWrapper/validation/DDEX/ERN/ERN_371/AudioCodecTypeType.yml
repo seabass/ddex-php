@@ -1,0 +1,30 @@
+DDEX\ERN\ERN_371\AudioCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AAC
+                        - ADPCM
+                        - ALaw
+                        - AMR-NB
+                        - AMR-WB
+                        - FLAC
+                        - MP2
+                        - MP3
+                        - MuLaw
+                        - PCM
+                        - PDM
+                        - QCELP
+                        - RealAudio
+                        - Shockwave
+                        - Unknown
+                        - UserDefined
+                        - Vorbis
+                        - WMA
+                        - AMR
+                        - Atmos
+                        - MP
+                        - MQA
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_430\ChapterType:
+    properties:
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        chapterReference:
+            -
+                Regex:
+                    pattern: '~X[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        contributor:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null
+        representativeImageReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

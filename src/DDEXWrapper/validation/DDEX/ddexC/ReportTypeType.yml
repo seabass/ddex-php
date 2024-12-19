@@ -1,0 +1,21 @@
+DDEX\ddexC\ReportTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DeliveryFrequencyRequestCall
+                        - InformationAboutDeliveredAndAvailableReleasesCall
+                        - OrderedReleasesInQueueRequestCall
+                        - RedeliveryRequestCall
+                        - ReleaseAvailabilityCall
+                        - ReleaseAvailabilityRequestCall
+                        - ReleaseStatusInformationCall
+                        - ReleaseStatusRequestCall
+                        - ReleaseSupplyChainRequestCall
+                        - ReportDeliveryCall
+                        - ReportRequestCall
+                        - SupplyChainStatusCall
+                        - UserDefined
+                    groups:
+                        - xsd_rules

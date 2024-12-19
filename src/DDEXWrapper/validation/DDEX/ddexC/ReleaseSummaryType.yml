@@ -1,0 +1,22 @@
+DDEX\ddexC\ReleaseSummaryType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseSummaryDetailsByTerritory:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null

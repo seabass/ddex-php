@@ -1,0 +1,21 @@
+DDEX\ERN\ERN_430\TitleType:
+    properties:
+        titleType:
+            -
+                Choice:
+                    choices:
+                        - AlternativeTitle
+                        - FormalTitle
+                        - GroupingTitle
+                        - MusicalWorkTitle
+                        - OriginalTitle
+                        - TranslatedTitle
+                        - TransliteratedTitle
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

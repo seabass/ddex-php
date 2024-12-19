@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_400\DealListType:
+    properties:
+        releaseDeal:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

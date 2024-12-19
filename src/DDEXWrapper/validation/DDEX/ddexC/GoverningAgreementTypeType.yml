@@ -1,0 +1,9 @@
+DDEX\ddexC\GoverningAgreementTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                    groups:
+                        - xsd_rules

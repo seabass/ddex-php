@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_400\CueThemeTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ClosingTheme
+                        - MainTheme
+                        - OpeningTheme
+                        - SegmentTheme
+                        - TitleTheme
+                        - UserDefined
+                    groups:
+                        - xsd_rules

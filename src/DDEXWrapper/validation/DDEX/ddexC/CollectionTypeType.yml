@@ -1,0 +1,15 @@
+DDEX\ddexC\CollectionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AudioChapter
+                        - Episode
+                        - MedleySegment
+                        - PotpourriSegment
+                        - Season
+                        - Series
+                        - VideoChapter
+                    groups:
+                        - xsd_rules

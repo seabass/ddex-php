@@ -1,0 +1,213 @@
+DDEX\ERN\ERN_431\CueType:
+    properties:
+        cueUseType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueUseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueUseType
+                setter: setCueUseType
+            type: DDEX\ERN\ERN_431\CueUseTypeType
+        cueThemeType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueThemeType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueThemeType
+                setter: setCueThemeType
+            type: DDEX\ERN\ERN_431\CueThemeTypeType
+        cueVocalType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueVocalType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueVocalType
+                setter: setCueVocalType
+            type: DDEX\ERN\ERN_431\CueVocalTypeType
+        cueVisualPerceptionType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueVisualPerceptionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueVisualPerceptionType
+                setter: setCueVisualPerceptionType
+            type: DDEX\ERN\ERN_431\CueVisualPerceptionTypeType
+        cueOrigin:
+            expose: true
+            access_type: public_method
+            serialized_name: CueOrigin
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueOrigin
+                setter: setCueOrigin
+            type: DDEX\ERN\ERN_431\CueOriginType
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            type: DDEX\ERN\ERN_431\ResourceIdType
+        workId:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkId
+                setter: setWorkId
+            type: DDEX\ERN\ERN_431\MusicalWorkIdType
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_431\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        formalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: FormalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFormalTitle
+                setter: setFormalTitle
+            xml_list:
+                inline: true
+                entry_name: FormalTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        groupingTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupingTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGroupingTitle
+                setter: setGroupingTitle
+            xml_list:
+                inline: true
+                entry_name: GroupingTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: Contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: Contributor
+            type: array<DDEX\ERN\ERN_431\ContributorType>
+        isDance:
+            expose: true
+            access_type: public_method
+            serialized_name: IsDance
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsDance
+                setter: setIsDance
+            type: bool
+        hasMusicalContent:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMusicalContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMusicalContent
+                setter: setHasMusicalContent
+            type: bool
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ERN\ERN_431\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_431\CLineType>
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            type: DateInterval
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        endTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndTime
+                setter: setEndTime
+            type: DateInterval

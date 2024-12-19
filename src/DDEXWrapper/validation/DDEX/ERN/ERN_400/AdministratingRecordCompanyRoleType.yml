@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_400\AdministratingRecordCompanyRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DesignatedDsrMessageRecipient
+                        - RightsAdministrator
+                        - RoyaltyAdministrator
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

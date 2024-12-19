@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_37D2\CLineType:
+    properties:
+        cLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

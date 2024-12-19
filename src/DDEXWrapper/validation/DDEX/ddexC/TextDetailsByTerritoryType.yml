@@ -1,0 +1,11 @@
+DDEX\ddexC\TextDetailsByTerritoryType:
+    properties:
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

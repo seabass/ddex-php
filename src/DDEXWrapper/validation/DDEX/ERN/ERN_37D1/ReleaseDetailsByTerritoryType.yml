@@ -1,0 +1,41 @@
+DDEX\ERN\ERN_37D1\ReleaseDetailsByTerritoryType:
+    properties:
+        rightsAgreementId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        file:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null
+        numberOfUnitsPerPhysicalRelease:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        displayConductor:
+            -
+                Valid: null

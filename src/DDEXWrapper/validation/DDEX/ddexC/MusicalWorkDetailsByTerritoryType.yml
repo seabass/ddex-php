@@ -1,0 +1,9 @@
+DDEX\ddexC\MusicalWorkDetailsByTerritoryType:
+    properties:
+        musicalWorkContributor:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

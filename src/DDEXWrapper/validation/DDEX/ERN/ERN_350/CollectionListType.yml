@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_350\CollectionListType:
+    properties:
+        collection:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

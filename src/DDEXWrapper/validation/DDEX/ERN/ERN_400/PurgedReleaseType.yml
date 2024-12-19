@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_400\PurgedReleaseType:
+    properties:
+        releaseId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null

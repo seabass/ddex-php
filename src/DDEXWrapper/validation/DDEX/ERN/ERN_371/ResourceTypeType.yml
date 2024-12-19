@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_371\ResourceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Image
+                        - MIDI
+                        - SheetMusic
+                        - Software
+                        - SoundRecording
+                        - Text
+                        - UserDefinedResource
+                        - Video
+                    groups:
+                        - xsd_rules

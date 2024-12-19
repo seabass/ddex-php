@@ -1,0 +1,77 @@
+DDEX\ERN\ERN_340\CollectionDetailsByTerritoryType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ddexC\TitleType>
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: Contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: Contributor
+            type: array<DDEX\ddexC\ResourceContributorType>
+        isComplete:
+            expose: true
+            access_type: public_method
+            serialized_name: IsComplete
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsComplete
+                setter: setIsComplete
+            type: bool
+        character:
+            expose: true
+            access_type: public_method
+            serialized_name: Character
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCharacter
+                setter: setCharacter
+            xml_list:
+                inline: true
+                entry_name: Character
+            type: array<DDEX\ddexC\CharacterType>

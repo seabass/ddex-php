@@ -1,0 +1,56 @@
+DDEX\ERN\ERN_380\MusicalWorkContributorRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Adapter
+                        - Arranger
+                        - AssociatedPerformer
+                        - Author
+                        - Composer
+                        - ComposerLyricist
+                        - Librettist
+                        - Lyricist
+                        - NonLyricAuthor
+                        - SubArranger
+                        - SubLyricist
+                        - Translator
+                        - Contributor
+                        - MusicPublisher
+                        - OriginalPublisher
+                        - SubPublisher
+                        - SubstitutedPublisher
+                        - Unknown
+                        - UserDefined
+                        - Architect
+                        - AuthorInQuotations
+                        - AuthorOfAfterword
+                        - Compiler
+                        - Conceptor
+                        - Creator
+                        - DialogueAuthor
+                        - Dissertant
+                        - Engraver
+                        - Etcher
+                        - Journalist
+                        - LandscapeArchitect
+                        - Lithographer
+                        - MetalEngraver
+                        - PlateMaker
+                        - Playwright
+                        - Reporter
+                        - Reviewer
+                        - Rubricator
+                        - ScreenplayAuthor
+                        - Sculptor
+                        - Woodcutter
+                        - WoodEngraver
+                        - WriterOfAccompanyingMaterial
+                        - BookPublisher
+                        - CopyrightClaimant
+                        - CopyrightHolder
+                        - NewspaperPublisher
+                        - PeriodicalPublisher
+                    groups:
+                        - xsd_rules

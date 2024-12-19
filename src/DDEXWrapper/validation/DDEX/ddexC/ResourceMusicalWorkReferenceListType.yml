@@ -1,0 +1,9 @@
+DDEX\ddexC\ResourceMusicalWorkReferenceListType:
+    properties:
+        resourceMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

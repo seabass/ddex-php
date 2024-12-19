@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_37D2\SalesReportingProxyReleaseIdType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_37D2\ReleaseIdType
+        reason:
+            expose: true
+            access_type: public_method
+            serialized_name: Reason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReason
+                setter: setReason
+            type: DDEX\ERN\ERN_37D2\ReasonType
+        reasonType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReasonType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReasonType
+                setter: setReasonType
+            type: DDEX\ERN\ERN_37D2\ReasonTypeType

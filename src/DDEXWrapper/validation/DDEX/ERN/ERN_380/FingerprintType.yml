@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_380\FingerprintType:
+    properties:
+        fingerprint:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fingerprintAlgorithmType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fingerprintDataType:
+            -
+                Choice:
+                    choices:
+                        - Binary64
+                        - HexBinary
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,12 @@
+DDEX\ddexC\AmountPerCollectionType:
+    properties:
+        amount:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        collectionType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_37D1\CueSheetTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AverageCueSheet
+                        - CompositeCueSheet
+                        - StandardCueSheet
+                        - SummarisedCueSheet
+                        - SurrogateCueSheet
+                    groups:
+                        - xsd_rules

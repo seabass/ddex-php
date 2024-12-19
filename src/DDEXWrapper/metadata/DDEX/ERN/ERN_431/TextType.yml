@@ -1,0 +1,344 @@
+DDEX\ERN\ERN_431\TextType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        isSupplemental:
+            expose: true
+            access_type: public_method
+            serialized_name: IsSupplemental
+            accessor:
+                getter: getIsSupplemental
+                setter: setIsSupplemental
+            xml_attribute: true
+            type: bool
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getType
+                setter: setType
+            type: DDEX\ERN\ERN_431\TextTypeType
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\ERN\ERN_431\TextIdType>
+        workId:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkId
+                setter: setWorkId
+            xml_list:
+                inline: true
+                entry_name: WorkId
+            type: array<DDEX\ERN\ERN_431\MusicalWorkIdType>
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_431\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        formalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: FormalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFormalTitle
+                setter: setFormalTitle
+            xml_list:
+                inline: true
+                entry_name: FormalTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        groupingTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupingTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGroupingTitle
+                setter: setGroupingTitle
+            xml_list:
+                inline: true
+                entry_name: GroupingTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        versionType:
+            expose: true
+            access_type: public_method
+            serialized_name: VersionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVersionType
+                setter: setVersionType
+            xml_list:
+                inline: true
+                entry_name: VersionType
+            type: array<DDEX\ERN\ERN_431\VersionTypeType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\ERN\ERN_431\DisplayArtistNameWithOriginalLanguageType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\ERN\ERN_431\DisplayArtistType>
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: Contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: Contributor
+            type: array<DDEX\ERN\ERN_431\ContributorType>
+        resourceRightsController:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceRightsController
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceRightsController
+                setter: setResourceRightsController
+            xml_list:
+                inline: true
+                entry_name: ResourceRightsController
+            type: array<DDEX\ERN\ERN_431\ResourceRightsControllerType>
+        workRightsController:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkRightsController
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkRightsController
+                setter: setWorkRightsController
+            xml_list:
+                inline: true
+                entry_name: WorkRightsController
+            type: array<DDEX\ERN\ERN_431\WorkRightsControllerType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_431\CLineType>
+        courtesyLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CourtesyLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCourtesyLine
+                setter: setCourtesyLine
+            xml_list:
+                inline: true
+                entry_name: CourtesyLine
+            type: array<DDEX\ERN\ERN_431\CourtesyLineType>
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ERN\ERN_431\EventDateWithoutFlagsType
+        firstPublicationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FirstPublicationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFirstPublicationDate
+                setter: setFirstPublicationDate
+            xml_list:
+                inline: true
+                entry_name: FirstPublicationDate
+            type: array<DDEX\ERN\ERN_431\FulfillmentDateType>
+        parentalWarningType:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentalWarningType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParentalWarningType
+                setter: setParentalWarningType
+            xml_list:
+                inline: true
+                entry_name: ParentalWarningType
+            type: array<DDEX\ERN\ERN_431\ParentalWarningTypeWithStandardType>
+        relatedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedRelease
+                setter: setRelatedRelease
+            xml_list:
+                inline: true
+                entry_name: RelatedRelease
+            type: array<DDEX\ERN\ERN_431\RelatedReleaseType>
+        relatedResource:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedResource
+                setter: setRelatedResource
+            xml_list:
+                inline: true
+                entry_name: RelatedResource
+            type: array<DDEX\ERN\ERN_431\RelatedResourceType>
+        containsAI:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainsAI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainsAI
+                setter: setContainsAI
+            type: string
+        containsHiddenContent:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainsHiddenContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainsHiddenContent
+                setter: setContainsHiddenContent
+            type: bool
+        resourceContainedResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReferenceList
+                setter: setResourceContainedResourceReferenceList
+            type: array<DDEX\ERN\ERN_431\ResourceContainedResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceContainedResourceReference
+                skip_when_empty: true
+        technicalDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalDetails
+                setter: setTechnicalDetails
+            xml_list:
+                inline: true
+                entry_name: TechnicalDetails
+            type: array<DDEX\ERN\ERN_431\TechnicalTextDetailsType>
+        languageOfText:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageOfText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageOfText
+                setter: setLanguageOfText
+            xml_list:
+                inline: true
+                entry_name: LanguageOfText
+            type: array<DDEX\ERN\ERN_431\LanguageType>

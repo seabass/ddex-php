@@ -1,0 +1,111 @@
+DDEX\ERN\ERN_400\NewReleaseMessage\NewReleaseMessageAnonymousPHPType:
+    properties:
+        releaseProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseProfileVersionId
+            accessor:
+                getter: getReleaseProfileVersionId
+                setter: setReleaseProfileVersionId
+            xml_attribute: true
+            type: string
+        releaseProfileVariantVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseProfileVariantVersionId
+            accessor:
+                getter: getReleaseProfileVariantVersionId
+                setter: setReleaseProfileVariantVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\ERN\ERN_400\MessageHeaderType
+        partyList:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyList
+                setter: setPartyList
+            type: array<DDEX\ERN\ERN_400\PartyType>
+            xml_list:
+                inline: false
+                entry_name: Party
+                skip_when_empty: false
+        cueSheetList:
+            expose: true
+            access_type: public_method
+            serialized_name: CueSheetList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueSheetList
+                setter: setCueSheetList
+            type: array<DDEX\ERN\ERN_400\DetailedCueSheetType>
+            xml_list:
+                inline: false
+                entry_name: CueSheet
+                skip_when_empty: true
+        resourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceList
+                setter: setResourceList
+            type: DDEX\ERN\ERN_400\ResourceListType
+        chapterList:
+            expose: true
+            access_type: public_method
+            serialized_name: ChapterList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChapterList
+                setter: setChapterList
+            type: DDEX\ERN\ERN_400\ChapterListType
+        releaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseList
+                setter: setReleaseList
+            type: DDEX\ERN\ERN_400\ReleaseListType
+        dealList:
+            expose: true
+            access_type: public_method
+            serialized_name: DealList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealList
+                setter: setDealList
+            type: array<DDEX\ERN\ERN_400\ReleaseDealType>
+            xml_list:
+                inline: false
+                entry_name: ReleaseDeal
+                skip_when_empty: true

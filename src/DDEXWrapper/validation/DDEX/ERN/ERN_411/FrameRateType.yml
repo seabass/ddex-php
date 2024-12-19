@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_411\FrameRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - Hz(interlaced)
+                        - Hz(non-interlaced)
+                    groups:
+                        - xsd_rules

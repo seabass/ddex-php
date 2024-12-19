@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_430\ResourceListType:
+    properties:
+        soundRecording:
+            -
+                Valid: null
+        video:
+            -
+                Valid: null
+        image:
+            -
+                Valid: null
+        text:
+            -
+                Valid: null
+        sheetMusic:
+            -
+                Valid: null
+        software:
+            -
+                Valid: null

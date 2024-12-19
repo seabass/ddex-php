@@ -1,0 +1,213 @@
+DDEX\ERN\ERN_383\CueType:
+    properties:
+        cueUseType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueUseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueUseType
+                setter: setCueUseType
+            type: DDEX\ERN\ERN_383\CueUseTypeType
+        cueThemeType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueThemeType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueThemeType
+                setter: setCueThemeType
+            type: DDEX\ERN\ERN_383\CueThemeTypeType
+        cueVocalType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueVocalType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueVocalType
+                setter: setCueVocalType
+            type: DDEX\ERN\ERN_383\CueVocalTypeType
+        isDance:
+            expose: true
+            access_type: public_method
+            serialized_name: IsDance
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsDance
+                setter: setIsDance
+            type: bool
+        cueVisualPerceptionType:
+            expose: true
+            access_type: public_method
+            serialized_name: CueVisualPerceptionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueVisualPerceptionType
+                setter: setCueVisualPerceptionType
+            type: DDEX\ERN\ERN_383\CueVisualPerceptionTypeType
+        cueOrigin:
+            expose: true
+            access_type: public_method
+            serialized_name: CueOrigin
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueOrigin
+                setter: setCueOrigin
+            type: DDEX\ERN\ERN_383\CueOriginType
+        cueCreationReference:
+            expose: true
+            access_type: public_method
+            serialized_name: CueCreationReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueCreationReference
+                setter: setCueCreationReference
+            xml_list:
+                inline: true
+                entry_name: CueCreationReference
+            type: array<DDEX\ERN\ERN_383\CueCreationReferenceType>
+        referencedCreationType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedCreationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedCreationType
+                setter: setReferencedCreationType
+            type: string
+        referencedCreationId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedCreationId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedCreationId
+                setter: setReferencedCreationId
+            type: DDEX\ERN\ERN_383\CreationIdType
+        referencedCreationTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedCreationTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedCreationTitle
+                setter: setReferencedCreationTitle
+            xml_list:
+                inline: true
+                entry_name: ReferencedCreationTitle
+            type: array<DDEX\ERN\ERN_383\TitleType>
+        referencedCreationContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedCreationContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedCreationContributor
+                setter: setReferencedCreationContributor
+            xml_list:
+                inline: true
+                entry_name: ReferencedCreationContributor
+            type: array<DDEX\ERN\ERN_383\DetailedResourceContributorType>
+        referencedIndirectCreationContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedIndirectCreationContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedIndirectCreationContributor
+                setter: setReferencedIndirectCreationContributor
+            xml_list:
+                inline: true
+                entry_name: ReferencedIndirectCreationContributor
+            type: array<DDEX\ERN\ERN_383\MusicalWorkContributorType>
+        referencedCreationCharacter:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferencedCreationCharacter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferencedCreationCharacter
+                setter: setReferencedCreationCharacter
+            xml_list:
+                inline: true
+                entry_name: ReferencedCreationCharacter
+            type: array<DDEX\ERN\ERN_383\CharacterType>
+        hasMusicalContent:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMusicalContent
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMusicalContent
+                setter: setHasMusicalContent
+            type: bool
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            type: DateInterval
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        endTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndTime
+                setter: setEndTime
+            type: DateInterval
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ERN\ERN_383\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_383\CLineType>

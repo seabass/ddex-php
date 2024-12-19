@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_431\HdrVideoDynamicMetadataTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DolbyVisionEmbedded
+                        - DolbyVisionStandAlone
+                    groups:
+                        - xsd_rules

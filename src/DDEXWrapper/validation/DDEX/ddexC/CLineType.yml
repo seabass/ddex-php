@@ -1,0 +1,7 @@
+DDEX\ddexC\CLineType:
+    properties:
+        cLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

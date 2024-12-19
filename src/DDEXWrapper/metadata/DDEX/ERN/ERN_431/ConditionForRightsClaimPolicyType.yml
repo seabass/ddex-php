@@ -1,0 +1,78 @@
+DDEX\ERN\ERN_431\ConditionForRightsClaimPolicyType:
+    properties:
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: float
+        unit:
+            expose: true
+            access_type: public_method
+            serialized_name: Unit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUnit
+                setter: setUnit
+            type: string
+        referenceCreation:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceCreation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceCreation
+                setter: setReferenceCreation
+            type: string
+        relationalRelator:
+            expose: true
+            access_type: public_method
+            serialized_name: RelationalRelator
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelationalRelator
+                setter: setRelationalRelator
+            type: string
+        measurementType:
+            expose: true
+            access_type: public_method
+            serialized_name: MeasurementType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMeasurementType
+                setter: setMeasurementType
+            type: string
+        segment:
+            expose: true
+            access_type: public_method
+            serialized_name: Segment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSegment
+                setter: setSegment
+            xml_list:
+                inline: true
+                entry_name: Segment
+            type: array<DDEX\ERN\ERN_431\SegmentType>
+        serviceException:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceException
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getServiceException
+                setter: setServiceException
+            xml_list:
+                inline: true
+                entry_name: ServiceException
+            type: array<DDEX\ERN\ERN_431\ServiceExceptionType>

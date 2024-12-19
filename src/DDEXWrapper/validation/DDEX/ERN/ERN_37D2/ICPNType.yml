@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_37D2\ICPNType:
+    properties:
+        isEan:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

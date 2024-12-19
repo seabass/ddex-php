@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_371\ReleaseResourceReferenceListType:
+    properties:
+        releaseResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

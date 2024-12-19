@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_380\ImageDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        technicalImageDetails:
+            -
+                Valid: null

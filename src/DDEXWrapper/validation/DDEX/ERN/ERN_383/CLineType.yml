@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_383\CLineType:
+    properties:
+        cLineText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

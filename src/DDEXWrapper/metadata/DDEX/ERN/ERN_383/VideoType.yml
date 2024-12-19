@@ -1,0 +1,432 @@
+DDEX\ERN\ERN_383\VideoType:
+    properties:
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        videoType:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoType
+                setter: setVideoType
+            type: DDEX\ERN\ERN_383\VideoTypeType
+        isArtistRelated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsArtistRelated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsArtistRelated
+                setter: setIsArtistRelated
+            type: bool
+        videoId:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoId
+                setter: setVideoId
+            xml_list:
+                inline: true
+                entry_name: VideoId
+            type: array<DDEX\ERN\ERN_383\VideoIdType>
+        indirectVideoId:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectVideoId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectVideoId
+                setter: setIndirectVideoId
+            xml_list:
+                inline: true
+                entry_name: IndirectVideoId
+            type: array<DDEX\ERN\ERN_383\MusicalWorkIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        videoCueSheetReference:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoCueSheetReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoCueSheetReference
+                setter: setVideoCueSheetReference
+            xml_list:
+                inline: true
+                entry_name: VideoCueSheetReference
+            type: array<DDEX\ERN\ERN_383\VideoCueSheetReferenceType>
+        reasonForCueSheetAbsence:
+            expose: true
+            access_type: public_method
+            serialized_name: ReasonForCueSheetAbsence
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReasonForCueSheetAbsence
+                setter: setReasonForCueSheetAbsence
+            type: DDEX\ERN\ERN_383\ReasonType
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\ERN\ERN_383\ReferenceTitleType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_383\TitleType>
+        instrumentationDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentationDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentationDescription
+                setter: setInstrumentationDescription
+            type: DDEX\ERN\ERN_383\DescriptionType
+        isMedley:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMedley
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsMedley
+                setter: setIsMedley
+            type: bool
+        isPotpourri:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPotpourri
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPotpourri
+                setter: setIsPotpourri
+            type: bool
+        isInstrumental:
+            expose: true
+            access_type: public_method
+            serialized_name: IsInstrumental
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsInstrumental
+                setter: setIsInstrumental
+            type: bool
+        isBackground:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBackground
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsBackground
+                setter: setIsBackground
+            type: bool
+        isHiddenResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsHiddenResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsHiddenResource
+                setter: setIsHiddenResource
+            type: bool
+        isBonusResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBonusResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsBonusResource
+                setter: setIsBonusResource
+            type: bool
+        hasPreOrderFulfillment:
+            expose: true
+            access_type: public_method
+            serialized_name: HasPreOrderFulfillment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasPreOrderFulfillment
+                setter: setHasPreOrderFulfillment
+            type: bool
+        isRemastered:
+            expose: true
+            access_type: public_method
+            serialized_name: IsRemastered
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsRemastered
+                setter: setIsRemastered
+            type: bool
+        noSilenceBefore:
+            expose: true
+            access_type: public_method
+            serialized_name: NoSilenceBefore
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNoSilenceBefore
+                setter: setNoSilenceBefore
+            type: bool
+        noSilenceAfter:
+            expose: true
+            access_type: public_method
+            serialized_name: NoSilenceAfter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNoSilenceAfter
+                setter: setNoSilenceAfter
+            type: bool
+        performerInformationRequired:
+            expose: true
+            access_type: public_method
+            serialized_name: PerformerInformationRequired
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPerformerInformationRequired
+                setter: setPerformerInformationRequired
+            type: bool
+        languageOfPerformance:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageOfPerformance
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageOfPerformance
+                setter: setLanguageOfPerformance
+            xml_list:
+                inline: true
+                entry_name: LanguageOfPerformance
+            type: array<string>
+        languageOfDubbing:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageOfDubbing
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLanguageOfDubbing
+                setter: setLanguageOfDubbing
+            xml_list:
+                inline: true
+                entry_name: LanguageOfDubbing
+            type: array<string>
+        subTitleLanguage:
+            expose: true
+            access_type: public_method
+            serialized_name: SubTitleLanguage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSubTitleLanguage
+                setter: setSubTitleLanguage
+            xml_list:
+                inline: true
+                entry_name: SubTitleLanguage
+            type: array<string>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\ERN\ERN_383\RightsAgreementIdType
+        videoCollectionReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoCollectionReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoCollectionReferenceList
+                setter: setVideoCollectionReferenceList
+            type: DDEX\ERN\ERN_383\SoundRecordingCollectionReferenceListType
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\ERN\ERN_383\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        resourceContainedResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReferenceList
+                setter: setResourceContainedResourceReferenceList
+            type: array<DDEX\ERN\ERN_383\ResourceContainedResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceContainedResourceReference
+                skip_when_empty: true
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ERN\ERN_383\EventDateType
+        masteredDate:
+            expose: true
+            access_type: public_method
+            serialized_name: MasteredDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMasteredDate
+                setter: setMasteredDate
+            type: DDEX\ERN\ERN_383\EventDateType
+        remasteredDate:
+            expose: true
+            access_type: public_method
+            serialized_name: RemasteredDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRemasteredDate
+                setter: setRemasteredDate
+            type: DDEX\ERN\ERN_383\EventDateType
+        videoDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoDetailsByTerritory
+                setter: setVideoDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: VideoDetailsByTerritory
+            type: array<DDEX\ERN\ERN_383\VideoDetailsByTerritoryType>
+        territoryOfCommissioning:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfCommissioning
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfCommissioning
+                setter: setTerritoryOfCommissioning
+            type: DDEX\ERN\ERN_383\AllTerritoryCodeType
+        numberOfFeaturedArtists:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfFeaturedArtists
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfFeaturedArtists
+                setter: setNumberOfFeaturedArtists
+            type: int
+        numberOfNonFeaturedArtists:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfNonFeaturedArtists
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfNonFeaturedArtists
+                setter: setNumberOfNonFeaturedArtists
+            type: int
+        numberOfContractedArtists:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfContractedArtists
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfContractedArtists
+                setter: setNumberOfContractedArtists
+            type: int
+        numberOfNonContractedArtists:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfNonContractedArtists
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfNonContractedArtists
+                setter: setNumberOfNonContractedArtists
+            type: int

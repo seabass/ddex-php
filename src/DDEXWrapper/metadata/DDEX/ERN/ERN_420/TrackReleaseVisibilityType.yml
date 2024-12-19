@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_420\TrackReleaseVisibilityType:
+    properties:
+        visibilityReference:
+            expose: true
+            access_type: public_method
+            serialized_name: VisibilityReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVisibilityReference
+                setter: setVisibilityReference
+            type: string
+        trackListingPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackListingPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackListingPreviewStartDateTime
+                setter: setTrackListingPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        clipPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ClipPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClipPreviewStartDateTime
+                setter: setClipPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

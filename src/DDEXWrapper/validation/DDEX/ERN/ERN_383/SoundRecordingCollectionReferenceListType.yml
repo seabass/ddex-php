@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_383\SoundRecordingCollectionReferenceListType:
+    properties:
+        numberOfCollections:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        soundRecordingCollectionReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

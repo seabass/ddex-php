@@ -1,0 +1,31 @@
+DDEX\ERN\ERN_410\PurgeReleaseMessage\PurgeReleaseMessageAnonymousPHPType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\ERN\ERN_410\MessageHeaderType
+        purgedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: PurgedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPurgedRelease
+                setter: setPurgedRelease
+            type: DDEX\ERN\ERN_410\PurgedReleaseType

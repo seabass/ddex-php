@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_381\CollectionCollectionReferenceListType:
+    properties:
+        numberOfCollections:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        collectionCollectionReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

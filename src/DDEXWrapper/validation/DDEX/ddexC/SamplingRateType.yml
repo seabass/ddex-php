@@ -1,0 +1,12 @@
+DDEX\ddexC\SamplingRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - GHz
+                        - Hz
+                        - kHz
+                        - MHz
+                    groups:
+                        - xsd_rules

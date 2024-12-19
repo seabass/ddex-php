@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_383\GoverningAgreementTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                        - SessionMusicUnionAgreement
+                    groups:
+                        - xsd_rules

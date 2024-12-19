@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_370\HashSumType:
+    properties:
+        hashSum:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSumAlgorithmType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSumDataType:
+            -
+                Choice:
+                    choices:
+                        - Binary64
+                        - HexBinary
+                    groups:
+                        - xsd_rules

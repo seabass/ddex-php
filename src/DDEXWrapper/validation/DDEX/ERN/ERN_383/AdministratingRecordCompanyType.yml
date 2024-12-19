@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_383\AdministratingRecordCompanyType:
+    properties:
+        role:
+            -
+                Choice:
+                    choices:
+                        - DesignatedDsrMessageRecipient
+                        - RightsAdministrator
+                        - RoyaltyAdministrator
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null

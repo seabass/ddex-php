@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_400\PriceInformationWithTypeType:
+    properties:
+        priceType:
+            -
+                Choice:
+                    choices:
+                        - StandardRetailPrice
+                        - PreOrderPrice
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,38 @@
+DDEX\ERN\ERN_380\PurgedReleaseType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_380\ReleaseIdType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_380\TitleType>
+        resourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributor
+                setter: setResourceContributor
+            xml_list:
+                inline: true
+                entry_name: ResourceContributor
+            type: array<DDEX\ERN\ERN_380\DetailedResourceContributorType>

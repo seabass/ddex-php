@@ -1,0 +1,20 @@
+DDEX\ddexC\SupplyChainStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DeliveredToReleaseDistributor
+                        - InDeliveryToReleaseDistributor
+                        - InPreparationForDeliveryToReleaseDistributor
+                        - OrderPlacedForReleaseDistributor
+                        - ProcessingErrorAtReleaseCreator
+                        - ProcessingErrorAtReleaseDistributor
+                        - ReleaseMadeAvailableToConsumers
+                        - ReleaseNotAvailable
+                        - ReleaseReceivedByReleaseDistributor
+                        - ReleaseStagedForPublication
+                        - SuccessfullyIngestedByReleaseDistributor
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,16 @@
+DDEX\ddexC\CdProtectionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - CDS100
+                        - CDS200
+                        - CDS300
+                        - Key2Audio
+                        - MediaMaxCD3
+                        - NotProtected
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

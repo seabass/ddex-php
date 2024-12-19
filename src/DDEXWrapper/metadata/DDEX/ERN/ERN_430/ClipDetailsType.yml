@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_430\ClipDetailsType:
+    properties:
+        clipType:
+            expose: true
+            access_type: public_method
+            serialized_name: ClipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClipType
+                setter: setClipType
+            type: DDEX\ERN\ERN_430\ClipTypeType
+        topLeftCorner:
+            expose: true
+            access_type: public_method
+            serialized_name: TopLeftCorner
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTopLeftCorner
+                setter: setTopLeftCorner
+            type: string
+        bottomRightCorner:
+            expose: true
+            access_type: public_method
+            serialized_name: BottomRightCorner
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBottomRightCorner
+                setter: setBottomRightCorner
+            type: string
+        expressionType:
+            expose: true
+            access_type: public_method
+            serialized_name: ExpressionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExpressionType
+                setter: setExpressionType
+            type: string

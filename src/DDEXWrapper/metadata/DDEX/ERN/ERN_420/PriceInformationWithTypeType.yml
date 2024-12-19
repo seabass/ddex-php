@@ -1,0 +1,69 @@
+DDEX\ERN\ERN_420\PriceInformationWithTypeType:
+    properties:
+        priceType:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceType
+            accessor:
+                getter: getPriceType
+                setter: setPriceType
+            xml_attribute: true
+            type: string
+        namespace:
+            expose: true
+            access_type: public_method
+            serialized_name: Namespace
+            accessor:
+                getter: getNamespace
+                setter: setNamespace
+            xml_attribute: true
+            type: string
+        userDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: UserDefinedValue
+            accessor:
+                getter: getUserDefinedValue
+                setter: setUserDefinedValue
+            xml_attribute: true
+            type: string
+        priceCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceCode
+                setter: setPriceCode
+            type: DDEX\ERN\ERN_420\PriceTypeType
+        wholesalePricePerUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: WholesalePricePerUnit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWholesalePricePerUnit
+                setter: setWholesalePricePerUnit
+            type: DDEX\ERN\ERN_420\PriceType
+        bulkOrderWholesalePricePerUnit:
+            expose: true
+            access_type: public_method
+            serialized_name: BulkOrderWholesalePricePerUnit
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBulkOrderWholesalePricePerUnit
+                setter: setBulkOrderWholesalePricePerUnit
+            type: DDEX\ERN\ERN_420\PriceType
+        suggestedRetailPrice:
+            expose: true
+            access_type: public_method
+            serialized_name: SuggestedRetailPrice
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSuggestedRetailPrice
+                setter: setSuggestedRetailPrice
+            type: DDEX\ERN\ERN_420\PriceType

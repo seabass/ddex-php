@@ -1,0 +1,27 @@
+DDEX\ERN\ERN_430\RatingReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Behaviour
+                        - Blasphemy
+                        - Crime
+                        - DiscriminationOrPrejudice
+                        - Drugs
+                        - ExplicitSex
+                        - ExtremeViolence
+                        - FearOrHorror
+                        - Gambling
+                        - IllegalDrugs
+                        - Language
+                        - LegalDrugs
+                        - Nudity
+                        - OnlineGameplay
+                        - Sex
+                        - SexualViolence
+                        - Theme
+                        - UserDefined
+                        - Violence
+                    groups:
+                        - xsd_rules

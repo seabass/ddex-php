@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_430\VideoDefinitionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HighDefinition
+                        - StandardDefinition
+                        - UserDefined
+                    groups:
+                        - xsd_rules

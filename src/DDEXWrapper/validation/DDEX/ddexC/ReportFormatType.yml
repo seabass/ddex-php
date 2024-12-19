@@ -1,0 +1,15 @@
+DDEX\ddexC\ReportFormatType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ASCII
+                        - CSV
+                        - Excel2000
+                        - Excel2007
+                        - Excel2010
+                        - UserDefined
+                        - XML
+                    groups:
+                        - xsd_rules

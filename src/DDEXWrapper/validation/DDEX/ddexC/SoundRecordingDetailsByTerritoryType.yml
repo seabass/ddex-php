@@ -1,0 +1,23 @@
+DDEX\ddexC\SoundRecordingDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null

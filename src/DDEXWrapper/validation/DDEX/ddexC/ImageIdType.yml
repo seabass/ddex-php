@@ -1,0 +1,7 @@
+DDEX\ddexC\ImageIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

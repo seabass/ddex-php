@@ -1,0 +1,24 @@
+DDEX\ERN\ERN_370\DistributionChannelTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - Broadcast
+                        - Cable
+                        - Internet
+                        - InternetAndMobile
+                        - IPTV
+                        - MobileTelephone
+                        - Narrowcast
+                        - OnDemandStream
+                        - PeerToPeer
+                        - Physical
+                        - Satellite
+                        - Simulcast
+                        - Unknown
+                        - UserDefined
+                        - Webcast
+                    groups:
+                        - xsd_rules

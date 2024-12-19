@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_430\ReleaseVisibilityType:
+    properties:
+        visibilityReference:
+            -
+                Regex:
+                    pattern: '~V[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

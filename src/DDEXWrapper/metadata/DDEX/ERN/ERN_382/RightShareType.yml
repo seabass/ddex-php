@@ -1,0 +1,231 @@
+DDEX\ERN\ERN_382\RightShareType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        rightShareId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareId
+                setter: setRightShareId
+            type: DDEX\ERN\ERN_382\RightsAgreementIdType
+        rightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareReference
+                setter: setRightShareReference
+            type: string
+        rightShareCreationReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareCreationReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareCreationReferenceList
+                setter: setRightShareCreationReferenceList
+            type: DDEX\ERN\ERN_382\RightShareCreationReferenceListType
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\ERN\ERN_382\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\ERN\ERN_382\CurrentTerritoryCodeType>
+        rightsType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsType
+                setter: setRightsType
+            xml_list:
+                inline: true
+                entry_name: RightsType
+            type: array<DDEX\ERN\ERN_382\RightsTypeType>
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\ERN\ERN_382\UseTypeType>
+        userInterfaceType:
+            expose: true
+            access_type: public_method
+            serialized_name: UserInterfaceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserInterfaceType
+                setter: setUserInterfaceType
+            xml_list:
+                inline: true
+                entry_name: UserInterfaceType
+            type: array<DDEX\ERN\ERN_382\UserInterfaceTypeType>
+        distributionChannelType:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannelType
+                setter: setDistributionChannelType
+            xml_list:
+                inline: true
+                entry_name: DistributionChannelType
+            type: array<DDEX\ERN\ERN_382\DistributionChannelTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\ERN\ERN_382\CarrierTypeType>
+        commercialModelType:
+            expose: true
+            access_type: public_method
+            serialized_name: CommercialModelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCommercialModelType
+                setter: setCommercialModelType
+            xml_list:
+                inline: true
+                entry_name: CommercialModelType
+            type: array<DDEX\ERN\ERN_382\CommercialModelTypeType>
+        musicalWorkRightsClaimType:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkRightsClaimType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkRightsClaimType
+                setter: setMusicalWorkRightsClaimType
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkRightsClaimType
+            type: array<string>
+        rightsController:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsController
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsController
+                setter: setRightsController
+            xml_list:
+                inline: true
+                entry_name: RightsController
+            type: array<DDEX\ERN\ERN_382\RightsControllerType>
+        validityPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidityPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValidityPeriod
+                setter: setValidityPeriod
+            type: DDEX\ERN\ERN_382\PeriodType
+        rightShareUnknown:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareUnknown
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareUnknown
+                setter: setRightShareUnknown
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: DDEX\ERN\ERN_382\PercentageType
+        tariffReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TariffReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTariffReference
+                setter: setTariffReference
+            type: DDEX\ERN\ERN_382\TariffReferenceType
+        licenseStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseStatus
+                setter: setLicenseStatus
+            type: string
+        hasFirstLicenseRefusal:
+            expose: true
+            access_type: public_method
+            serialized_name: HasFirstLicenseRefusal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasFirstLicenseRefusal
+                setter: setHasFirstLicenseRefusal
+            type: bool

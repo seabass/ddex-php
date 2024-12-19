@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_37D1\GenreType:
+    properties:
+        genreText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

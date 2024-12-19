@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_381\CollectionCollectionReferenceType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        collectionCollectionReference:
+            -
+                Regex:
+                    pattern: '~X[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

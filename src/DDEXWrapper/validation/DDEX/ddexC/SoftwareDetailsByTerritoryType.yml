@@ -1,0 +1,14 @@
+DDEX\ddexC\SoftwareDetailsByTerritoryType:
+    properties:
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

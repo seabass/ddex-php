@@ -1,0 +1,41 @@
+DDEX\ERN\ERN_431\DealListType:
+    properties:
+        releaseDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDeal
+                setter: setReleaseDeal
+            xml_list:
+                inline: true
+                entry_name: ReleaseDeal
+            type: array<DDEX\ERN\ERN_431\ReleaseDealType>
+        releaseVisibility:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseVisibility
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseVisibility
+                setter: setReleaseVisibility
+            xml_list:
+                inline: true
+                entry_name: ReleaseVisibility
+            type: array<DDEX\ERN\ERN_431\ReleaseVisibilityType>
+        trackReleaseVisibility:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackReleaseVisibility
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackReleaseVisibility
+                setter: setTrackReleaseVisibility
+            xml_list:
+                inline: true
+                entry_name: TrackReleaseVisibility
+            type: array<DDEX\ERN\ERN_431\TrackReleaseVisibilityType>

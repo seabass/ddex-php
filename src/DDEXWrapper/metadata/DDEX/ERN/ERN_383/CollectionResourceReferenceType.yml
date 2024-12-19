@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_383\CollectionResourceReferenceType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        collectionResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionResourceReference
+                setter: setCollectionResourceReference
+            type: string
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval

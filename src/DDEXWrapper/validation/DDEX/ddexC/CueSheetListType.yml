@@ -1,0 +1,9 @@
+DDEX\ddexC\CueSheetListType:
+    properties:
+        cueSheet:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

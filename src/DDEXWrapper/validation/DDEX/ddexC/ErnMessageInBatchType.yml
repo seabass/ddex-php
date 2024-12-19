@@ -1,0 +1,43 @@
+DDEX\ddexC\ErnMessageInBatchType:
+    properties:
+        messageType:
+            -
+                Choice:
+                    choices:
+                        - NewReleaseMessage
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        includedReleaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        deliveryType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        productType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null

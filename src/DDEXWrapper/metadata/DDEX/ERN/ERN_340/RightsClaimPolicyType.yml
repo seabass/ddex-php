@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_340\RightsClaimPolicyType:
+    properties:
+        condition:
+            expose: true
+            access_type: public_method
+            serialized_name: Condition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCondition
+                setter: setCondition
+            type: DDEX\ERN\ERN_340\ConditionType
+        rightsClaimPolicyType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsClaimPolicyType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsClaimPolicyType
+                setter: setRightsClaimPolicyType
+            type: string
+        webPolicy:
+            expose: true
+            access_type: public_method
+            serialized_name: WebPolicy
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWebPolicy
+                setter: setWebPolicy
+            type: DDEX\ERN\ERN_340\WebPolicyType

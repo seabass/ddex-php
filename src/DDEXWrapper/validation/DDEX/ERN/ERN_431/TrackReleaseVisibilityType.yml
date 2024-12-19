@@ -1,0 +1,17 @@
+DDEX\ERN\ERN_431\TrackReleaseVisibilityType:
+    properties:
+        visibilityReference:
+            -
+                Regex:
+                    pattern: '~V[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        trackListingPreviewStartDateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

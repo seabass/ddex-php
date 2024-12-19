@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_381\BitRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - bps
+                        - Gbps
+                        - kbps
+                        - Mbps
+                    groups:
+                        - xsd_rules

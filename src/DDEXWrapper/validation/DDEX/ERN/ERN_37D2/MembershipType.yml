@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_37D2\MembershipType:
+    properties:
+        organization:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        membershipType:
+            -
+                Choice:
+                    choices:
+                        - NationalMember
+                        - RegionalMember
+                        - WorldwideMember
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

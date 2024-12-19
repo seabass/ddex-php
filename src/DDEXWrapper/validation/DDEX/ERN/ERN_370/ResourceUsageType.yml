@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_370\ResourceUsageType:
+    properties:
+        dealResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        usage:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

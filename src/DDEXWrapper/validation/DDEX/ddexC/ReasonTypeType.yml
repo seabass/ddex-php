@@ -1,0 +1,11 @@
+DDEX\ddexC\ReasonTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ChartReporting
+                        - RoyaltyReporting
+                        - UserDefined
+                    groups:
+                        - xsd_rules

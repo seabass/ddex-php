@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_420\PeriodWithoutFlagsType:
+    properties:
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: DDEX\ERN\ERN_420\EventDateWithCurrentTerritoryType
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: DDEX\ERN\ERN_420\EventDateWithCurrentTerritoryType
+        startDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDateTime
+                setter: setStartDateTime
+            type: DDEX\ERN\ERN_420\EventDateTimeWithoutFlagsType
+        endDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDateTime
+                setter: setEndDateTime
+            type: DDEX\ERN\ERN_420\EventDateTimeWithoutFlagsType

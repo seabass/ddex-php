@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_382\LabelNameType:
+    properties:
+        labelNameType:
+            -
+                Choice:
+                    choices:
+                        - DisplayLabelName
+                        - UserDefined
+                    groups:
+                        - xsd_rules

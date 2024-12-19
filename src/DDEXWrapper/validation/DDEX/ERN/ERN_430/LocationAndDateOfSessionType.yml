@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_430\LocationAndDateOfSessionType:
+    properties:
+        period:
+            -
+                Valid: null
+        venue:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null

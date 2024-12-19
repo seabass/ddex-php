@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_370\ReleaseCollectionReferenceType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~X[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        releaseResourceType:
+            -
+                Choice:
+                    choices:
+                        - PrimaryResource
+                        - SecondaryResource
+                    groups:
+                        - xsd_rules

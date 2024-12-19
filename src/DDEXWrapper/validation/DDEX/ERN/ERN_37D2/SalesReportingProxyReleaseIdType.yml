@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_37D2\SalesReportingProxyReleaseIdType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        reasonType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

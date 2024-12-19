@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_410\CueOriginType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - LibraryMusic
+                        - PreexistingMusic
+                        - SpeciallyCommissionedMusic
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

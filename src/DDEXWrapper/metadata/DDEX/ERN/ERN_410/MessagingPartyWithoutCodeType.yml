@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_410\MessagingPartyWithoutCodeType:
+    properties:
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            type: string
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            type: DDEX\ERN\ERN_410\PartyNameWithoutCodeType
+        tradingName:
+            expose: true
+            access_type: public_method
+            serialized_name: TradingName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTradingName
+                setter: setTradingName
+            type: string

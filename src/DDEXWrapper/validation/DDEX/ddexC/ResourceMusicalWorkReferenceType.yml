@@ -1,0 +1,18 @@
+DDEX\ddexC\ResourceMusicalWorkReferenceType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        resourceMusicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

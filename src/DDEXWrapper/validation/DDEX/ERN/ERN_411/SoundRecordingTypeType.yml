@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_411\SoundRecordingTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MusicalWorkReadalongSoundRecording
+                        - MusicalWorkSoundRecording
+                        - NonMusicalWorkReadalongSoundRecording
+                        - NonMusicalWorkSoundRecording
+                        - SpokenWordSoundRecording
+                        - Unknown
+                        - UserDefined
+                        - AudioStem
+                    groups:
+                        - xsd_rules

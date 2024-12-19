@@ -1,0 +1,14 @@
+DDEX\ddexC\ReleaseAvailabilityStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AvailableForDSP
+                        - NotAvailableForDSP
+                        - NotClearedForDSP
+                        - NotClearedForTerritory
+                        - NotYetPrepared
+                        - UserDefined
+                    groups:
+                        - xsd_rules

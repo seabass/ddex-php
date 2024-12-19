@@ -1,0 +1,72 @@
+DDEX\ERN\ERN_400\NewReleaseMessage\NewReleaseMessageAnonymousPHPType:
+    properties:
+        releaseProfileVersionId:
+            -
+                Choice:
+                    choices:
+                        - Audio
+                        - DjMix
+                        - LongFormMusicalWorkVideo
+                        - MixedMedia
+                        - Ringtone
+                        - SimpleAudioSingle
+                        - SimpleVideoSingle
+                        - Video
+                    groups:
+                        - xsd_rules
+        releaseProfileVariantVersionId:
+            -
+                Choice:
+                    choices:
+                        - BoxedSet
+                        - 'BoxedSet Classical'
+                        - Classical
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        partyList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        cueSheetList:
+            -
+                Valid: null
+        resourceList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        chapterList:
+            -
+                Valid: null
+        releaseList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        dealList:
+            -
+                Valid: null

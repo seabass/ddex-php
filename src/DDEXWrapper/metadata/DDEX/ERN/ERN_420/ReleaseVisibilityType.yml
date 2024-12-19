@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_420\ReleaseVisibilityType:
+    properties:
+        visibilityReference:
+            expose: true
+            access_type: public_method
+            serialized_name: VisibilityReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVisibilityReference
+                setter: setVisibilityReference
+            type: string
+        releaseDisplayStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDisplayStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDisplayStartDateTime
+                setter: setReleaseDisplayStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        coverArtPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: CoverArtPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCoverArtPreviewStartDateTime
+                setter: setCoverArtPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        fullTrackListingPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: FullTrackListingPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFullTrackListingPreviewStartDateTime
+                setter: setFullTrackListingPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

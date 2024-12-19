@@ -1,0 +1,28 @@
+DDEX\ddexC\AppliedRoyaltyRateType:
+    properties:
+        valueType:
+            -
+                Choice:
+                    choices:
+                        - Calculated
+                        - Maximum
+                        - Minimum
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        royaltyRateType:
+            -
+                Choice:
+                    choices:
+                        - PennyRate
+                        - PercentageRoyaltyRate
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,41 @@
+DDEX\ERN\ERN_370\SoundRecordingDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        displayConductor:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        hostSoundCarrier:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        technicalSoundRecordingDetails:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null

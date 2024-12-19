@@ -1,0 +1,84 @@
+DDEX\ERN\ERN_370\HostSoundCarrierType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ERN\ERN_370\ReleaseIdType>
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\ERN\ERN_370\RightsAgreementIdType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_370\TitleType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\ERN\ERN_370\ArtistType>
+        administratingRecordCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: AdministratingRecordCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdministratingRecordCompany
+                setter: setAdministratingRecordCompany
+            xml_list:
+                inline: true
+                entry_name: AdministratingRecordCompany
+            type: array<DDEX\ERN\ERN_370\AdministratingRecordCompanyType>
+        trackNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackNumber
+                setter: setTrackNumber
+            type: string
+        volumeNumberInSet:
+            expose: true
+            access_type: public_method
+            serialized_name: VolumeNumberInSet
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVolumeNumberInSet
+                setter: setVolumeNumberInSet
+            type: string

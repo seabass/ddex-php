@@ -1,0 +1,52 @@
+DDEX\ERN\ERN_37D2\FingerprintType:
+    properties:
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            type: string
+        fingerprintAlgorithmType:
+            expose: true
+            access_type: public_method
+            serialized_name: FingerprintAlgorithmType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprintAlgorithmType
+                setter: setFingerprintAlgorithmType
+            type: DDEX\ERN\ERN_37D2\FingerprintAlgorithmTypeType
+        fingerprintAlgorithmVersion:
+            expose: true
+            access_type: public_method
+            serialized_name: FingerprintAlgorithmVersion
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprintAlgorithmVersion
+                setter: setFingerprintAlgorithmVersion
+            type: string
+        fingerprintAlgorithmParameter:
+            expose: true
+            access_type: public_method
+            serialized_name: FingerprintAlgorithmParameter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprintAlgorithmParameter
+                setter: setFingerprintAlgorithmParameter
+            type: string
+        fingerprintDataType:
+            expose: true
+            access_type: public_method
+            serialized_name: FingerprintDataType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprintDataType
+                setter: setFingerprintDataType
+            type: string

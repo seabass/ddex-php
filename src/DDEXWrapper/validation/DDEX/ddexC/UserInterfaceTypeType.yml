@@ -1,0 +1,21 @@
+DDEX\ddexC\UserInterfaceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - ConnectedDevice
+                        - GameConsole
+                        - Jukebox
+                        - KaraokeMachine
+                        - Kiosk
+                        - LocalStorageJukebox
+                        - PersonalComputer
+                        - PhysicalMediaWriter
+                        - PortableDevice
+                        - RemoteStorageJukebox
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

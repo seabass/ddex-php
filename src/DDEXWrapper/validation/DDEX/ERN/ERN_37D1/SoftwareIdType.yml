@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_37D1\SoftwareIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,24 @@
+DDEX\ERN\ERN_371\HashSumAlgorithmTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MD4
+                        - MD5
+                        - SHA
+                        - SHA1
+                        - UserDefined
+                        - CRC32
+                        - MD2
+                        - MD4(MLNET)
+                        - MDC2
+                        - RMD160
+                        - SHA2
+                        - SHA-224
+                        - SHA-256
+                        - SHA3
+                        - SHA-384
+                        - SHA-512
+                    groups:
+                        - xsd_rules

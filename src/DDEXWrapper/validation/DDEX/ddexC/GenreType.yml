@@ -1,0 +1,7 @@
+DDEX\ddexC\GenreType:
+    properties:
+        genreText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

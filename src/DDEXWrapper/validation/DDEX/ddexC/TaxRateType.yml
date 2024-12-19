@@ -1,0 +1,17 @@
+DDEX\ddexC\TaxRateType:
+    properties:
+        rate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        taxType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        taxScope:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

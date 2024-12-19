@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_431\OperatingSystemTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MacOS
+                        - MsWindows
+                        - Symbian
+                        - Unknown
+                    groups:
+                        - xsd_rules

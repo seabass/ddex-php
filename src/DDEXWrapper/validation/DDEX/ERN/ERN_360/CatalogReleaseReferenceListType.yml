@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_360\CatalogReleaseReferenceListType:
+    properties:
+        catalogReleaseReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

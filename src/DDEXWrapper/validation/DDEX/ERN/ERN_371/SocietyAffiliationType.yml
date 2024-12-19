@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_371\SocietyAffiliationType:
+    properties:
+        musicRightsSociety:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

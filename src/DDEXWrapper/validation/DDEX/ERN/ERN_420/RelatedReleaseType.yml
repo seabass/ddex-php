@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_420\RelatedReleaseType:
+    properties:
+        releaseRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null

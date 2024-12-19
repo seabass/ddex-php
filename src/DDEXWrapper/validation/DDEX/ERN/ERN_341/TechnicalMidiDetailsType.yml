@@ -1,0 +1,33 @@
+DDEX\ERN\ERN_341\TechnicalMidiDetailsType:
+    properties:
+        technicalResourceDetailsReference:
+            -
+                Regex:
+                    pattern: '~T[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        previewDetails:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        consumerFulfillmentDate:
+            -
+                Valid: null
+        file:
+            -
+                Valid: null
+        numberOfVoices:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        fingerprint:
+            -
+                Valid: null

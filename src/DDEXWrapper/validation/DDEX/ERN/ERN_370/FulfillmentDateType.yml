@@ -1,0 +1,21 @@
+DDEX\ERN\ERN_370\FulfillmentDateType:
+    properties:
+        fulfillmentDate:
+            -
+                Regex:
+                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

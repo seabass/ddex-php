@@ -1,0 +1,296 @@
+DDEX\ERN\ERN_411\DealTermsType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\ERN\ERN_411\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\ERN\ERN_411\CurrentTerritoryCodeType>
+        validityPeriod:
+            expose: true
+            access_type: public_method
+            serialized_name: ValidityPeriod
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValidityPeriod
+                setter: setValidityPeriod
+            xml_list:
+                inline: true
+                entry_name: ValidityPeriod
+            type: array<DDEX\ERN\ERN_411\PeriodWithoutFlagsType>
+        commercialModelType:
+            expose: true
+            access_type: public_method
+            serialized_name: CommercialModelType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCommercialModelType
+                setter: setCommercialModelType
+            xml_list:
+                inline: true
+                entry_name: CommercialModelType
+            type: array<DDEX\ERN\ERN_411\CommercialModelTypeType>
+        useType:
+            expose: true
+            access_type: public_method
+            serialized_name: UseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUseType
+                setter: setUseType
+            xml_list:
+                inline: true
+                entry_name: UseType
+            type: array<DDEX\ERN\ERN_411\DiscoverableUseTypeType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\ERN\ERN_411\CarrierTypeType>
+        technicalInstantiation:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalInstantiation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalInstantiation
+                setter: setTechnicalInstantiation
+            type: DDEX\ERN\ERN_411\DealTermsTechnicalInstantiationType
+        numberOfUsages:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUsages
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUsages
+                setter: setNumberOfUsages
+            type: int
+        distributionChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: DistributionChannel
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDistributionChannel
+                setter: setDistributionChannel
+            xml_list:
+                inline: true
+                entry_name: DistributionChannel
+            type: array<DDEX\ERN\ERN_411\DSPType>
+        excludedDistributionChannel:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedDistributionChannel
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedDistributionChannel
+                setter: setExcludedDistributionChannel
+            xml_list:
+                inline: true
+                entry_name: ExcludedDistributionChannel
+            type: array<DDEX\ERN\ERN_411\DSPType>
+        rightsClaimPolicy:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsClaimPolicy
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsClaimPolicy
+                setter: setRightsClaimPolicy
+            xml_list:
+                inline: true
+                entry_name: RightsClaimPolicy
+            type: array<DDEX\ERN\ERN_411\RightsClaimPolicyType>
+        priceInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceInformation
+                setter: setPriceInformation
+            xml_list:
+                inline: true
+                entry_name: PriceInformation
+            type: array<DDEX\ERN\ERN_411\PriceInformationWithTypeType>
+        isPromotional:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPromotional
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPromotional
+                setter: setIsPromotional
+            type: bool
+        promotionalCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionalCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPromotionalCode
+                setter: setPromotionalCode
+            type: DDEX\ERN\ERN_411\PromotionalCodeType
+        isPreOrderDeal:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreOrderDeal
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreOrderDeal
+                setter: setIsPreOrderDeal
+            type: bool
+        releaseDisplayStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDisplayStartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDisplayStartDate
+                setter: setReleaseDisplayStartDate
+            type: string
+        trackListingPreviewStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackListingPreviewStartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackListingPreviewStartDate
+                setter: setTrackListingPreviewStartDate
+            type: string
+        coverArtPreviewStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CoverArtPreviewStartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCoverArtPreviewStartDate
+                setter: setCoverArtPreviewStartDate
+            type: string
+        clipPreviewStartDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ClipPreviewStartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClipPreviewStartDate
+                setter: setClipPreviewStartDate
+            type: string
+        releaseDisplayStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseDisplayStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseDisplayStartDateTime
+                setter: setReleaseDisplayStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        trackListingPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: TrackListingPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTrackListingPreviewStartDateTime
+                setter: setTrackListingPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        coverArtPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: CoverArtPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCoverArtPreviewStartDateTime
+                setter: setCoverArtPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        clipPreviewStartDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: ClipPreviewStartDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getClipPreviewStartDateTime
+                setter: setClipPreviewStartDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        instantGratificationResourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: InstantGratificationResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstantGratificationResourceList
+                setter: setInstantGratificationResourceList
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: DealResourceReference
+                skip_when_empty: true
+        physicalReturns:
+            expose: true
+            access_type: public_method
+            serialized_name: PhysicalReturns
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPhysicalReturns
+                setter: setPhysicalReturns
+            type: DDEX\ERN\ERN_411\PhysicalReturnsType
+        numberOfProductsPerCarton:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfProductsPerCarton
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfProductsPerCarton
+                setter: setNumberOfProductsPerCarton
+            type: int

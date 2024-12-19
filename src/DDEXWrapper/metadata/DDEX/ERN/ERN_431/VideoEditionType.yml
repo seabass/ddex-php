@@ -1,0 +1,87 @@
+DDEX\ERN\ERN_431\VideoEditionType:
+    properties:
+        type:
+            expose: true
+            access_type: public_method
+            serialized_name: Type
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getType
+                setter: setType
+            type: string
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\ERN\ERN_431\VideoIdType>
+        editionContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: EditionContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEditionContributor
+                setter: setEditionContributor
+            xml_list:
+                inline: true
+                entry_name: EditionContributor
+            type: array<DDEX\ERN\ERN_431\EditionContributorType>
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ERN\ERN_431\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_431\CLineType>
+        recordingMode:
+            expose: true
+            access_type: public_method
+            serialized_name: RecordingMode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRecordingMode
+                setter: setRecordingMode
+            type: string
+        technicalDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalDetails
+                setter: setTechnicalDetails
+            xml_list:
+                inline: true
+                entry_name: TechnicalDetails
+            type: array<DDEX\ERN\ERN_431\TechnicalVideoDetailsType>

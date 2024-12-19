@@ -1,0 +1,32 @@
+DDEX\ddexC\SalesReportingProxyReleaseIdType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ddexC\ReleaseIdType
+        reason:
+            expose: true
+            access_type: public_method
+            serialized_name: Reason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReason
+                setter: setReason
+            type: DDEX\ddexC\ReasonType
+        reasonType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReasonType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReasonType
+                setter: setReasonType
+            type: DDEX\ddexC\ReasonTypeType

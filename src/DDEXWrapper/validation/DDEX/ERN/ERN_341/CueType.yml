@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_341\CueType:
+    properties:
+        cueCreationReference:
+            -
+                Valid: null
+        referencedCreationType:
+            -
+                Choice:
+                    choices:
+                        - MusicalWork
+                        - Release
+                        - Resource
+                    groups:
+                        - xsd_rules
+        referencedCreationId:
+            -
+                Valid: null
+        referencedCreationTitle:
+            -
+                Valid: null
+        referencedCreationContributor:
+            -
+                Valid: null
+        referencedCreationCharacter:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

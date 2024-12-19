@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_37D2\MessageAuditTrailEventType:
+    properties:
+        messagingPartyDescriptor:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        dateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

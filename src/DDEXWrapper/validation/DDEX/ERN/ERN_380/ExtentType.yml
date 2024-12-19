@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_380\ExtentType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - cm
+                        - Inch
+                        - mm
+                        - PercentOfScreen
+                        - Pixel
+                    groups:
+                        - xsd_rules

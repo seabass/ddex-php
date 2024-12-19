@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_381\TechnicalInstantiationType:
+    properties:
+        drmEnforcementType:
+            expose: true
+            access_type: public_method
+            serialized_name: DrmEnforcementType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDrmEnforcementType
+                setter: setDrmEnforcementType
+            type: string
+        videoDefinitionType:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoDefinitionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoDefinitionType
+                setter: setVideoDefinitionType
+            type: string
+        codingType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCodingType
+                setter: setCodingType
+            type: string
+        bitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: BitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitRate
+                setter: setBitRate
+            type: DDEX\ERN\ERN_381\BitRateType

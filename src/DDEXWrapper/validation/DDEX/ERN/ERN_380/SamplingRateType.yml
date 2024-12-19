@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_380\SamplingRateType:
+    properties:
+        unitOfMeasure:
+            -
+                Choice:
+                    choices:
+                        - GHz
+                        - Hz
+                        - kHz
+                        - MHz
+                    groups:
+                        - xsd_rules

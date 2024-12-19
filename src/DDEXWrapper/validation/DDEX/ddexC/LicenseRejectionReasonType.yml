@@ -1,0 +1,15 @@
+DDEX\ddexC\LicenseRejectionReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DisagreementOverRoyalties
+                        - DisagreementOverScopeOfLicense
+                        - LicenseExists
+                        - LicenseNotNeeded
+                        - WrongAddressee
+                        - UserDefined
+                        - WorkInPublicDomain
+                    groups:
+                        - xsd_rules

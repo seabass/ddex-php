@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_360\FingerprintType:
+    properties:
+        fingerprint:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        fingerprintAlgorithmType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

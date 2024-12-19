@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_37D1\SoundRecordingPreviewDetailsType:
+    properties:
+        expressionType:
+            -
+                Choice:
+                    choices:
+                        - Informative
+                        - Instructive
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,25 @@
+DDEX\ERN\ERN_371\SoundRecordingCollectionReferenceListType:
+    properties:
+        numberOfCollections:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfCollections
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfCollections
+                setter: setNumberOfCollections
+            type: int
+        soundRecordingCollectionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecordingCollectionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecordingCollectionReference
+                setter: setSoundRecordingCollectionReference
+            xml_list:
+                inline: true
+                entry_name: SoundRecordingCollectionReference
+            type: array<DDEX\ERN\ERN_371\SoundRecordingCollectionReferenceType>

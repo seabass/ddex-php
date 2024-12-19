@@ -1,0 +1,17 @@
+DDEX\ERN\ERN_371\WebPolicyType:
+    properties:
+        condition:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        accessLimitation:
+            -
+                Choice:
+                    choices:
+                        - NoLimitation
+                        - PrivateAccessOnly
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,82 @@
+DDEX\ERN\ERN_360\CatalogTransferType:
+    properties:
+        catalogTransferCompleted:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferCompleted
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferCompleted
+                setter: setCatalogTransferCompleted
+            type: bool
+        effectiveTransferDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EffectiveTransferDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEffectiveTransferDate
+                setter: setEffectiveTransferDate
+            type: DDEX\ERN\ERN_360\EventDateType
+        catalogReleaseReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogReleaseReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogReleaseReferenceList
+                setter: setCatalogReleaseReferenceList
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: CatalogReleaseReference
+                skip_when_empty: false
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        transferringFrom:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferringFrom
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferringFrom
+                setter: setTransferringFrom
+            type: DDEX\ERN\ERN_360\PartyDescriptorType
+        transferringTo:
+            expose: true
+            access_type: public_method
+            serialized_name: TransferringTo
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTransferringTo
+                setter: setTransferringTo
+            type: DDEX\ERN\ERN_360\PartyDescriptorType

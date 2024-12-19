@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_400\RelatedReleaseWithReferenceType:
+    properties:
+        releaseRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtistName:
+            -
+                Valid: null

@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_360\ReasonTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ChartReporting
+                        - RoyaltyReporting
+                        - UserDefined
+                    groups:
+                        - xsd_rules

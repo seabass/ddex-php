@@ -1,0 +1,84 @@
+DDEX\ERN\ERN_370\CollectionIdType:
+    properties:
+        isReplaced:
+            expose: true
+            access_type: public_method
+            serialized_name: IsReplaced
+            accessor:
+                getter: getIsReplaced
+                setter: setIsReplaced
+            xml_attribute: true
+            type: bool
+        gRid:
+            expose: true
+            access_type: public_method
+            serialized_name: GRid
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGRid
+                setter: setGRid
+            type: string
+        iSRC:
+            expose: true
+            access_type: public_method
+            serialized_name: ISRC
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISRC
+                setter: setISRC
+            type: string
+        iSAN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISAN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISAN
+                setter: setISAN
+            type: string
+        vISAN:
+            expose: true
+            access_type: public_method
+            serialized_name: VISAN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVISAN
+                setter: setVISAN
+            type: string
+        iCPN:
+            expose: true
+            access_type: public_method
+            serialized_name: ICPN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getICPN
+                setter: setICPN
+            type: DDEX\ERN\ERN_370\ICPNType
+        catalogNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogNumber
+                setter: setCatalogNumber
+            type: DDEX\ERN\ERN_370\CatalogNumberType
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\ERN\ERN_370\ProprietaryIdType>

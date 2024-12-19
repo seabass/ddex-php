@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_381\VideoCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AVC
+                        - H.261
+                        - H.263
+                        - MPEG-1
+                        - MPEG-2
+                        - MPEG-4
+                        - QuickTime
+                        - RealVideo
+                        - Shockwave
+                        - Unknown
+                        - UserDefined
+                        - WMV
+                    groups:
+                        - xsd_rules

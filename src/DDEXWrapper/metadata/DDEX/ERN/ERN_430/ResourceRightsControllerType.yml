@@ -1,0 +1,67 @@
+DDEX\ERN\ERN_430\ResourceRightsControllerType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        rightsControllerPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerPartyReference
+                setter: setRightsControllerPartyReference
+            type: string
+        rightsControlType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControlType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControlType
+                setter: setRightsControlType
+            xml_list:
+                inline: true
+                entry_name: RightsControlType
+            type: array<string>
+        rightShareUnknown:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareUnknown
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareUnknown
+                setter: setRightShareUnknown
+            type: bool
+        rightSharePercentage:
+            expose: true
+            access_type: public_method
+            serialized_name: RightSharePercentage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightSharePercentage
+                setter: setRightSharePercentage
+            type: DDEX\ERN\ERN_430\PercentageType
+        delegatedUsageRights:
+            expose: true
+            access_type: public_method
+            serialized_name: DelegatedUsageRights
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDelegatedUsageRights
+                setter: setDelegatedUsageRights
+            xml_list:
+                inline: true
+                entry_name: DelegatedUsageRights
+            type: array<DDEX\ERN\ERN_430\DelegatedUsageRightsType>

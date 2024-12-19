@@ -1,0 +1,65 @@
+DDEX\ERN\ERN_430\TextType:
+    properties:
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        type:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                Valid: null
+        workId:
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        resourceRightsController:
+            -
+                Valid: null
+        workRightsController:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        firstPublicationDate:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        relatedResource:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        technicalDetails:
+            -
+                Valid: null

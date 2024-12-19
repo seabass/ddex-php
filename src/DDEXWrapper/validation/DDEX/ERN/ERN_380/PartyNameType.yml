@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_380\PartyNameType:
+    properties:
+        fullName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,25 @@
+DDEX\ERN\ERN_430\VersionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ACappellaVersion
+                        - AlbumVersion
+                        - AlternativeVersion
+                        - CleanVersion
+                        - DemoVersion
+                        - EditedVersion
+                        - InstrumentalVersion
+                        - KaraokeVersion
+                        - LiveVersion
+                        - MixVersion
+                        - MonoVersion
+                        - RadioVersion
+                        - RemixVersion
+                        - SessionVersion
+                        - SingleVersion
+                        - StereoVersion
+                        - UserDefined
+                    groups:
+                        - xsd_rules

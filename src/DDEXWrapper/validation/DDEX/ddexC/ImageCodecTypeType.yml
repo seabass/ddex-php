@@ -1,0 +1,15 @@
+DDEX\ddexC\ImageCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - GIF
+                        - JPEG
+                        - JPEG2000
+                        - PNG
+                        - TIFF
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

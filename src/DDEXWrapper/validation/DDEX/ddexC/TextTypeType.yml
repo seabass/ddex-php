@@ -1,0 +1,15 @@
+DDEX\ddexC\TextTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - EBook
+                        - LinerNotes
+                        - LyricText
+                        - NonInteractiveBooklet
+                        - TextDocument
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

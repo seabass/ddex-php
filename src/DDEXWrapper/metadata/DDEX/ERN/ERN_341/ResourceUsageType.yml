@@ -1,0 +1,28 @@
+DDEX\ERN\ERN_341\ResourceUsageType:
+    properties:
+        dealResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DealResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealResourceReference
+                setter: setDealResourceReference
+            xml_list:
+                inline: true
+                entry_name: DealResourceReference
+            type: array<string>
+        usage:
+            expose: true
+            access_type: public_method
+            serialized_name: Usage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsage
+                setter: setUsage
+            xml_list:
+                inline: true
+                entry_name: Usage
+            type: array<DDEX\ddexC\UsageType>

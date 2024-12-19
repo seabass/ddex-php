@@ -1,0 +1,74 @@
+DDEX\ddexC\ReleaseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementVideo
+                        - Album
+                        - AlertToneRelease
+                        - Animation
+                        - AsPerContract
+                        - AudioBookRelease
+                        - AudioClipRelease
+                        - BackCoverImageRelease
+                        - BookletBackImageRelease
+                        - BookletFrontImageRelease
+                        - BookletRelease
+                        - Bundle
+                        - ClassicalAlbum
+                        - ConcertVideo
+                        - CorporateFilm
+                        - DigitalBoxSetRelease
+                        - Documentary
+                        - DocumentImageRelease
+                        - EBookRelease
+                        - Episode
+                        - FeatureFilm
+                        - FrontCoverImageRelease
+                        - IconRelease
+                        - InfomercialVideo
+                        - InteractiveBookletRelease
+                        - KaraokeRelease
+                        - LiveEventVideo
+                        - LogoRelease
+                        - LongFormMusicalWorkVideoRelease
+                        - LongFormNonMusicalWorkVideoRelease
+                        - LyricSheetRelease
+                        - MusicalWorkBasedGameRelease
+                        - MusicalWorkClipRelease
+                        - MusicalWorkReadalongVideoRelease
+                        - MusicalWorkTrailerRelease
+                        - MusicalWorkVideoChapterRelease
+                        - News
+                        - NonMusicalWorkBasedGameRelease
+                        - NonMusicalWorkClipRelease
+                        - NonMusicalWorkReadalongVideoRelease
+                        - NonMusicalWorkTrailerRelease
+                        - NonMusicalWorkVideoChapterRelease
+                        - NonSerialAudioVisualRecording
+                        - PhotographRelease
+                        - RingbackToneRelease
+                        - RingtoneRelease
+                        - ScreensaverRelease
+                        - Season
+                        - Series
+                        - SheetMusicRelease
+                        - ShortFormMusicalWorkVideoRelease
+                        - ShortFormNonMusicalWorkVideoRelease
+                        - Single
+                        - SingleResourceRelease
+                        - TrackRelease
+                        - TrailerVideo
+                        - TrayImageRelease
+                        - Unknown
+                        - UserDefined
+                        - VideoAlbum
+                        - VideoChapterRelease
+                        - VideoClipRelease
+                        - VideoScreenCaptureRelease
+                        - VideoSingle
+                        - VideoTrackRelease
+                        - WallpaperRelease
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,11 @@
+DDEX\ddexC\LicenseOrClaimRequestUpdateReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdditionalInformationProvided
+                        - AdditionalInformationProvidedAsRequested
+                        - UserDefined
+                    groups:
+                        - xsd_rules

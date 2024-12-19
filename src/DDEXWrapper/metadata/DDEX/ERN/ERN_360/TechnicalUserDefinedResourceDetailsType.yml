@@ -1,0 +1,113 @@
+DDEX\ERN\ERN_360\TechnicalUserDefinedResourceDetailsType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        technicalResourceDetailsReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalResourceDetailsReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalResourceDetailsReference
+                setter: setTechnicalResourceDetailsReference
+            type: string
+        userDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: UserDefinedValue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserDefinedValue
+                setter: setUserDefinedValue
+            xml_list:
+                inline: true
+                entry_name: UserDefinedValue
+            type: array<DDEX\ERN\ERN_360\UserDefinedValueType>
+        isPreview:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreview
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreview
+                setter: setIsPreview
+            type: bool
+        previewDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PreviewDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPreviewDetails
+                setter: setPreviewDetails
+            type: DDEX\ERN\ERN_360\PreviewDetailsType
+        fulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFulfillmentDate
+                setter: setFulfillmentDate
+            type: DDEX\ERN\ERN_360\FulfillmentDateType
+        consumerFulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: ConsumerFulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConsumerFulfillmentDate
+                setter: setConsumerFulfillmentDate
+            type: DDEX\ERN\ERN_360\FulfillmentDateType
+        fileAvailabilityDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: FileAvailabilityDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileAvailabilityDescription
+                setter: setFileAvailabilityDescription
+            xml_list:
+                inline: true
+                entry_name: FileAvailabilityDescription
+            type: array<DDEX\ERN\ERN_360\DescriptionType>
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            xml_list:
+                inline: true
+                entry_name: File
+            type: array<DDEX\ERN\ERN_360\FileType>
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            xml_list:
+                inline: true
+                entry_name: Fingerprint
+            type: array<DDEX\ERN\ERN_360\FingerprintType>

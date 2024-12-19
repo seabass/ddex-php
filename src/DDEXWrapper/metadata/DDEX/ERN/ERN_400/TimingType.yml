@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_400\TimingType:
+    properties:
+        startPoint:
+            expose: true
+            access_type: public_method
+            serialized_name: StartPoint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartPoint
+                setter: setStartPoint
+            type: DateInterval
+        durationUsed:
+            expose: true
+            access_type: public_method
+            serialized_name: DurationUsed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDurationUsed
+                setter: setDurationUsed
+            type: DateInterval

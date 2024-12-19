@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_351\ResourceContributorType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null
+        artistDelegatedUsageRights:
+            -
+                Valid: null
+        sex:
+            -
+                Choice:
+                    choices:
+                        - Female
+                        - Male
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        contactInformation:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        membership:
+            -
+                Valid: null

@@ -1,0 +1,33 @@
+DDEX\ERN\ERN_371\CatalogTransferType:
+    properties:
+        catalogTransferCompleted:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        catalogReleaseReferenceList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        transferringFrom:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        transferringTo:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

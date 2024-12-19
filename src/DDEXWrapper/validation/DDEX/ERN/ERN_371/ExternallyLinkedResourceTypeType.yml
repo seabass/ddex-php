@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_371\ExternallyLinkedResourceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdditionalMetadata
+                        - Logo
+                        - PromotionalImage
+                        - PromotionalInformation
+                        - PromotionalItem
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

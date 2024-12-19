@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_383\MembershipType:
+    properties:
+        organization:
+            expose: true
+            access_type: public_method
+            serialized_name: Organization
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOrganization
+                setter: setOrganization
+            type: DDEX\ERN\ERN_383\PartyDescriptorType
+        membershipType:
+            expose: true
+            access_type: public_method
+            serialized_name: MembershipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMembershipType
+                setter: setMembershipType
+            type: string
+        startDate:
+            expose: true
+            access_type: public_method
+            serialized_name: StartDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartDate
+                setter: setStartDate
+            type: string
+        endDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EndDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndDate
+                setter: setEndDate
+            type: string

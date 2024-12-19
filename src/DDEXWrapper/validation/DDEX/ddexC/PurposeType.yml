@@ -1,0 +1,15 @@
+DDEX\ddexC\PurposeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackgroundMusic
+                        - ChannelTrailerMusic
+                        - Extract
+                        - FilmTrailerMusic
+                        - ForegroundMusic
+                        - TrailerMusic
+                        - UserDefined
+                    groups:
+                        - xsd_rules

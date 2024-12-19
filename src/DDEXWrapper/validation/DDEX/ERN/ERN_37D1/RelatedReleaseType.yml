@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_37D1\RelatedReleaseType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitle:
+            -
+                Valid: null
+        releaseSummaryDetailsByTerritory:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        releaseRelationshipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

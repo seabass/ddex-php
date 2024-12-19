@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_37D1\PhysicalReturnsType:
+    properties:
+        physicalReturnsAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: PhysicalReturnsAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPhysicalReturnsAllowed
+                setter: setPhysicalReturnsAllowed
+            type: bool
+        latestDateForPhysicalReturns:
+            expose: true
+            access_type: public_method
+            serialized_name: LatestDateForPhysicalReturns
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLatestDateForPhysicalReturns
+                setter: setLatestDateForPhysicalReturns
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date

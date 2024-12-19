@@ -1,0 +1,29 @@
+DDEX\ddexC\TitleType:
+    properties:
+        titleType:
+            -
+                Choice:
+                    choices:
+                        - AbbreviatedDisplayTitle
+                        - AlternativeTitle
+                        - DisplayTitle
+                        - FirstLineOfText
+                        - FormalTitle
+                        - GroupingTitle
+                        - IncorrectTitle
+                        - MisspelledTitle
+                        - OriginalTitle
+                        - SearchTitle
+                        - SortingTitle
+                        - TitleAsPart
+                        - TitleWithoutPunctuation
+                        - TranslatedTitle
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

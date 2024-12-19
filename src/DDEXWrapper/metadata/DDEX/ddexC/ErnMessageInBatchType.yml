@@ -1,0 +1,85 @@
+DDEX\ddexC\ErnMessageInBatchType:
+    properties:
+        messageType:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageType
+                setter: setMessageType
+            type: string
+        messageId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageId
+                setter: setMessageId
+            type: string
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        includedReleaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: IncludedReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIncludedReleaseId
+                setter: setIncludedReleaseId
+            xml_list:
+                inline: true
+                entry_name: IncludedReleaseId
+            type: array<DDEX\ddexC\ReleaseIdType>
+        deliveryType:
+            expose: true
+            access_type: public_method
+            serialized_name: DeliveryType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDeliveryType
+                setter: setDeliveryType
+            type: DDEX\ddexC\MessageActionTypeType
+        productType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProductType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProductType
+                setter: setProductType
+            type: DDEX\ddexC\ProductTypeType
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\ddexC\HashSumType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: string

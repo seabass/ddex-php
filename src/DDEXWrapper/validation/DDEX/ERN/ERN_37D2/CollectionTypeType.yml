@@ -1,0 +1,16 @@
+DDEX\ERN\ERN_37D2\CollectionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AudioChapter
+                        - Episode
+                        - FilmBundle
+                        - MedleySegment
+                        - PotpourriSegment
+                        - Season
+                        - Series
+                        - VideoChapter
+                    groups:
+                        - xsd_rules

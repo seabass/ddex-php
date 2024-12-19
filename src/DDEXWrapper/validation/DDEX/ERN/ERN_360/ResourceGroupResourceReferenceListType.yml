@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_360\ResourceGroupResourceReferenceListType:
+    properties:
+        resourceGroupResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

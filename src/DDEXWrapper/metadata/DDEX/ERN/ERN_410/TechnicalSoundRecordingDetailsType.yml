@@ -1,0 +1,172 @@
+DDEX\ERN\ERN_410\TechnicalSoundRecordingDetailsType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        applicableTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableTerritoryCode
+            accessor:
+                getter: getApplicableTerritoryCode
+                setter: setApplicableTerritoryCode
+            xml_attribute: true
+            type: string
+        isDefault:
+            expose: true
+            access_type: public_method
+            serialized_name: IsDefault
+            accessor:
+                getter: getIsDefault
+                setter: setIsDefault
+            xml_attribute: true
+            type: bool
+        technicalResourceDetailsReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalResourceDetailsReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalResourceDetailsReference
+                setter: setTechnicalResourceDetailsReference
+            type: string
+        audioCodecType:
+            expose: true
+            access_type: public_method
+            serialized_name: AudioCodecType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAudioCodecType
+                setter: setAudioCodecType
+            type: DDEX\ERN\ERN_410\AudioCodecTypeType
+        bitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: BitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitRate
+                setter: setBitRate
+            type: DDEX\ERN\ERN_410\BitRateType
+        originalBitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalBitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalBitRate
+                setter: setOriginalBitRate
+            type: DDEX\ERN\ERN_410\BitRateType
+        numberOfChannels:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfChannels
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfChannels
+                setter: setNumberOfChannels
+            type: int
+        samplingRate:
+            expose: true
+            access_type: public_method
+            serialized_name: SamplingRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSamplingRate
+                setter: setSamplingRate
+            type: DDEX\ERN\ERN_410\SamplingRateType
+        originalSamplingRate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalSamplingRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalSamplingRate
+                setter: setOriginalSamplingRate
+            type: DDEX\ERN\ERN_410\SamplingRateType
+        bitsPerSample:
+            expose: true
+            access_type: public_method
+            serialized_name: BitsPerSample
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitsPerSample
+                setter: setBitsPerSample
+            type: int
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        bitDepth:
+            expose: true
+            access_type: public_method
+            serialized_name: BitDepth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitDepth
+                setter: setBitDepth
+            type: int
+        isPreview:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPreview
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPreview
+                setter: setIsPreview
+            type: bool
+        previewDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: PreviewDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPreviewDetails
+                setter: setPreviewDetails
+            type: DDEX\ERN\ERN_410\SoundRecordingPreviewDetailsType
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            type: DDEX\ERN\ERN_410\FileType
+        fingerprint:
+            expose: true
+            access_type: public_method
+            serialized_name: Fingerprint
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFingerprint
+                setter: setFingerprint
+            xml_list:
+                inline: true
+                entry_name: Fingerprint
+            type: array<DDEX\ERN\ERN_410\FingerprintType>

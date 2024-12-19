@@ -1,0 +1,179 @@
+DDEX\ERN\ERN_431\ResourceGroupType:
+    properties:
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_431\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        formalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: FormalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFormalTitle
+                setter: setFormalTitle
+            xml_list:
+                inline: true
+                entry_name: FormalTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        groupingTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: GroupingTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGroupingTitle
+                setter: setGroupingTitle
+            xml_list:
+                inline: true
+                entry_name: GroupingTitle
+            type: array<DDEX\ERN\ERN_431\DisplayTitleType>
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        noDisplaySequence:
+            expose: true
+            access_type: public_method
+            serialized_name: NoDisplaySequence
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNoDisplaySequence
+                setter: setNoDisplaySequence
+            type: bool
+        displaySequence:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplaySequence
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplaySequence
+                setter: setDisplaySequence
+            type: string
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\ERN\ERN_431\DisplayArtistType>
+        carrierType:
+            expose: true
+            access_type: public_method
+            serialized_name: CarrierType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCarrierType
+                setter: setCarrierType
+            xml_list:
+                inline: true
+                entry_name: CarrierType
+            type: array<DDEX\ERN\ERN_431\CarrierTypeType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        resourceGroupReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupReleaseReference
+                setter: setResourceGroupReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_431\ReleaseIdType
+        resourceGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroup
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroup
+                setter: setResourceGroup
+            xml_list:
+                inline: true
+                entry_name: ResourceGroup
+            type: array<DDEX\ERN\ERN_431\ResourceSubGroupType>
+        resourceGroupContentItem:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupContentItem
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupContentItem
+                setter: setResourceGroupContentItem
+            xml_list:
+                inline: true
+                entry_name: ResourceGroupContentItem
+            type: array<DDEX\ERN\ERN_431\ResourceGroupContentItemType>
+        linkedReleaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkedReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkedReleaseResourceReference
+                setter: setLinkedReleaseResourceReference
+            xml_list:
+                inline: true
+                entry_name: LinkedReleaseResourceReference
+            type: array<DDEX\ERN\ERN_431\LinkedReleaseResourceReferenceType>

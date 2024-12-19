@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_431\PartyListType:
+    properties:
+        party:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        brand:
+            -
+                Valid: null

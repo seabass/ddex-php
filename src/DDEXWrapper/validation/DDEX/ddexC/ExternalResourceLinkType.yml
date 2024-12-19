@@ -1,0 +1,10 @@
+DDEX\ddexC\ExternalResourceLinkType:
+    properties:
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        validityPeriod:
+            -
+                Valid: null

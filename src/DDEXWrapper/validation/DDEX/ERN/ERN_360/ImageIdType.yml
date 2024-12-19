@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_360\ImageIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

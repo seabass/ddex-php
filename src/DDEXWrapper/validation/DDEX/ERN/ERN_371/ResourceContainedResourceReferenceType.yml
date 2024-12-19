@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_371\ResourceContainedResourceReferenceType:
+    properties:
+        resourceContainedResourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

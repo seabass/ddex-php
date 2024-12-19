@@ -1,0 +1,112 @@
+DDEX\ddexC\UserDefinedResourceDetailsByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        resourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributor
+                setter: setResourceContributor
+            xml_list:
+                inline: true
+                entry_name: ResourceContributor
+            type: array<DDEX\ddexC\ResourceContributorType>
+        indirectResourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectResourceContributor
+                setter: setIndirectResourceContributor
+            xml_list:
+                inline: true
+                entry_name: IndirectResourceContributor
+            type: array<DDEX\ddexC\IndirectResourceContributorType>
+        userDefinedValue:
+            expose: true
+            access_type: public_method
+            serialized_name: UserDefinedValue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserDefinedValue
+                setter: setUserDefinedValue
+            xml_list:
+                inline: true
+                entry_name: UserDefinedValue
+            type: array<DDEX\ddexC\UserDefinedValueType>
+        pLine:
+            expose: true
+            access_type: public_method
+            serialized_name: PLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLine
+                setter: setPLine
+            xml_list:
+                inline: true
+                entry_name: PLine
+            type: array<DDEX\ddexC\PLineType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ddexC\CLineType>
+        originalResourceReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalResourceReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalResourceReleaseDate
+                setter: setOriginalResourceReleaseDate
+            type: DDEX\ddexC\EventDateType

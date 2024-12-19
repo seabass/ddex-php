@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_411\ChapterListType:
+    properties:
+        chapter:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

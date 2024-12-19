@@ -1,0 +1,18 @@
+DDEX\ddexC\RightsTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MakeAvailableRight
+                        - MechanicalRight
+                        - PerformingRight
+                        - ReproductionRight
+                        - SynchronizationRight
+                    groups:
+                        - xsd_rules
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,34 @@
+DDEX\ERN\ERN_360\TextType:
+    properties:
+        textId:
+            -
+                Valid: null
+        indirectTextId:
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceMusicalWorkReferenceList:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        textDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

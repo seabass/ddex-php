@@ -1,0 +1,235 @@
+DDEX\ERN\ERN_37D1\DetailedResourceContributorType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\ERN\ERN_37D1\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\ERN\ERN_37D1\PartyNameType>
+        resourceContributorRole:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributorRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributorRole
+                setter: setResourceContributorRole
+            xml_list:
+                inline: true
+                entry_name: ResourceContributorRole
+            type: array<DDEX\ERN\ERN_37D1\ResourceContributorRoleType>
+        isFeaturedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFeaturedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFeaturedArtist
+                setter: setIsFeaturedArtist
+            type: bool
+        isContractedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsContractedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsContractedArtist
+                setter: setIsContractedArtist
+            type: bool
+        territoryOfPerformance:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfPerformance
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfPerformance
+                setter: setTerritoryOfPerformance
+            xml_list:
+                inline: true
+                entry_name: TerritoryOfPerformance
+            type: array<DDEX\ERN\ERN_37D1\AllTerritoryCodeType>
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            xml_list:
+                inline: true
+                entry_name: InstrumentType
+            type: array<string>
+        artistDelegatedUsageRights:
+            expose: true
+            access_type: public_method
+            serialized_name: ArtistDelegatedUsageRights
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getArtistDelegatedUsageRights
+                setter: setArtistDelegatedUsageRights
+            type: DDEX\ERN\ERN_37D1\ArtistDelegatedUsageRightsType
+        sex:
+            expose: true
+            access_type: public_method
+            serialized_name: Sex
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSex
+                setter: setSex
+            type: string
+        dateAndPlaceOfBirth:
+            expose: true
+            access_type: public_method
+            serialized_name: DateAndPlaceOfBirth
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDateAndPlaceOfBirth
+                setter: setDateAndPlaceOfBirth
+            type: DDEX\ERN\ERN_37D1\EventDateType
+        dateAndPlaceOfDeath:
+            expose: true
+            access_type: public_method
+            serialized_name: DateAndPlaceOfDeath
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDateAndPlaceOfDeath
+                setter: setDateAndPlaceOfDeath
+            type: DDEX\ERN\ERN_37D1\EventDateType
+        primaryRole:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryRole
+                setter: setPrimaryRole
+            type: DDEX\ERN\ERN_37D1\ArtistRoleType
+        primaryInstrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: PrimaryInstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPrimaryInstrumentType
+                setter: setPrimaryInstrumentType
+            type: string
+        governingAgreementType:
+            expose: true
+            access_type: public_method
+            serialized_name: GoverningAgreementType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGoverningAgreementType
+                setter: setGoverningAgreementType
+            type: DDEX\ERN\ERN_37D1\GoverningAgreementTypeType
+        contactInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: ContactInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContactInformation
+                setter: setContactInformation
+            type: DDEX\ERN\ERN_37D1\ContactIdType
+        territoryOfResidency:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryOfResidency
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryOfResidency
+                setter: setTerritoryOfResidency
+            type: DDEX\ERN\ERN_37D1\AllTerritoryCodeType
+        citizenship:
+            expose: true
+            access_type: public_method
+            serialized_name: Citizenship
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCitizenship
+                setter: setCitizenship
+            type: DDEX\ERN\ERN_37D1\CurrentTerritoryCodeType
+        additionalRoles:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalRoles
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalRoles
+                setter: setAdditionalRoles
+            xml_list:
+                inline: true
+                entry_name: AdditionalRoles
+            type: array<DDEX\ERN\ERN_37D1\ArtistRoleType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ERN\ERN_37D1\GenreType>
+        membership:
+            expose: true
+            access_type: public_method
+            serialized_name: Membership
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMembership
+                setter: setMembership
+            xml_list:
+                inline: true
+                entry_name: Membership
+            type: array<DDEX\ERN\ERN_37D1\MembershipType>

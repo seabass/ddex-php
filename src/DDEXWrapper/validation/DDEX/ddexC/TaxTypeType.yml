@@ -1,0 +1,13 @@
+DDEX\ddexC\TaxTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - CombinedTax
+                        - SalesTax
+                        - ServiceTax
+                        - SourceTax
+                        - UserDefined
+                    groups:
+                        - xsd_rules

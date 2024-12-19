@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_371\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

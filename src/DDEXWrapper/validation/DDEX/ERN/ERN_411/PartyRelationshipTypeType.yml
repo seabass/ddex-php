@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_411\PartyRelationshipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HasMember
+                        - IsChildOf
+                        - IsMemberOf
+                        - IsParentOf
+                        - UserDefined
+                        - HasPart
+                        - IsPartOf
+                    groups:
+                        - xsd_rules

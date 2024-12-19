@@ -1,0 +1,77 @@
+DDEX\ERN\ERN_371\VideoTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementVideo
+                        - Animation
+                        - BehindTheScenes
+                        - ConcertClip
+                        - ConcertVideo
+                        - CorporateFilm
+                        - Credits
+                        - Documentary
+                        - EducationalVideo
+                        - Episode
+                        - FeatureFilm
+                        - InfomercialVideo
+                        - Interview
+                        - Karaoke
+                        - LiveEventVideo
+                        - LongFormMusicalWorkVideo
+                        - LongFormNonMusicalWorkVideo
+                        - LyricVideo
+                        - Menu
+                        - MultimediaVideo
+                        - MusicalWorkClip
+                        - MusicalWorkReadalongVideo
+                        - MusicalWorkTrailer
+                        - MusicalWorkVideoChapter
+                        - News
+                        - NonMusicalWorkClip
+                        - NonMusicalWorkReadalongVideo
+                        - NonMusicalWorkTrailer
+                        - NonMusicalWorkVideoChapter
+                        - NonSerialAudioVisualRecording
+                        - OperaVideo
+                        - Performance
+                        - Season
+                        - Series
+                        - ShortFilm
+                        - ShortFormMusicalWorkVideo
+                        - ShortFormNonMusicalWorkVideo
+                        - SpecialEvent
+                        - Sport
+                        - TheatricalWorkVideo
+                        - TrailerVideo
+                        - TvFilm
+                        - TvShowVideo
+                        - Unknown
+                        - UserDefined
+                        - VideoChapter
+                        - VideoStem
+                        - AdultContent
+                        - AdviceMagazine
+                        - BalletVideo
+                        - BlackAndWhiteVideo
+                        - ChildrensFilm
+                        - ColorizedVideo
+                        - ColumnVideo
+                        - Fiction
+                        - Magazine
+                        - ReadalongVideo
+                        - RealityTvShowVideo
+                        - SerialAudioVisualRecording
+                        - SilentVideo
+                        - SketchVideo
+                        - SoapSitcom
+                        - TvProgram
+                        - VideoClip
+                        - VideoReport
+                        - Drama
+                        - DramaticoMusicalVideo
+                        - InteractiveResource
+                        - WebResource
+                    groups:
+                        - xsd_rules

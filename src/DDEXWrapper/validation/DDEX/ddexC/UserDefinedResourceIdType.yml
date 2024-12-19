@@ -1,0 +1,7 @@
+DDEX\ddexC\UserDefinedResourceIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,80 @@
+DDEX\ERN\ERN_431\VideoDeliveryFileType:
+    properties:
+        type:
+            -
+                Choice:
+                    choices:
+                        - AudioFile
+                        - AudioVisualFile
+                        - ColorInformationFile
+                        - VisualFile
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        coreArea:
+            -
+                Valid: null
+        colorDepth:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        electroOpticalTransferFunctionType:
+            -
+                Choice:
+                    choices:
+                        - BT.1886
+                        - ST2084
+                    groups:
+                        - xsd_rules
+        primaryColorType:
+            -
+                Choice:
+                    choices:
+                        - BT.601
+                        - BT.709
+                        - BT.2020
+                    groups:
+                        - xsd_rules
+        hdrVideoStaticMetadataType:
+            -
+                Choice:
+                    choices:
+                        - MaxCLL
+                        - MaxFALL
+                    groups:
+                        - xsd_rules
+        numberOfAudioChannels:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        numberOfAudioObjects:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        audioBitsPerSample:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        bitDepth:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        file:
+            -
+                Valid: null
+        fingerprint:
+            -
+                Valid: null

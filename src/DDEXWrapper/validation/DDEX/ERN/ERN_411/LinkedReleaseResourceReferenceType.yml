@@ -1,0 +1,17 @@
+DDEX\ERN\ERN_411\LinkedReleaseResourceReferenceType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        linkDescription:
+            -
+                Choice:
+                    choices:
+                        - CoverArt
+                        - VideoScreenCapture
+                        - UserDefined
+                    groups:
+                        - xsd_rules

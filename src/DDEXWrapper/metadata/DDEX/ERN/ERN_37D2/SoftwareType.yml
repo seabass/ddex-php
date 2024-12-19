@@ -1,0 +1,140 @@
+DDEX\ERN\ERN_37D2\SoftwareType:
+    properties:
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        softwareType:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareType
+                setter: setSoftwareType
+            type: DDEX\ERN\ERN_37D2\SoftwareTypeType
+        isArtistRelated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsArtistRelated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsArtistRelated
+                setter: setIsArtistRelated
+            type: bool
+        softwareId:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareId
+                setter: setSoftwareId
+            xml_list:
+                inline: true
+                entry_name: SoftwareId
+            type: array<DDEX\ERN\ERN_37D2\SoftwareIdType>
+        indirectSoftwareId:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectSoftwareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectSoftwareId
+                setter: setIndirectSoftwareId
+            xml_list:
+                inline: true
+                entry_name: IndirectSoftwareId
+            type: array<DDEX\ERN\ERN_37D2\MusicalWorkIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\ERN\ERN_37D2\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        resourceContainedResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReferenceList
+                setter: setResourceContainedResourceReferenceList
+            type: array<DDEX\ERN\ERN_37D2\ResourceContainedResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceContainedResourceReference
+                skip_when_empty: true
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_37D2\TitleType>
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ERN\ERN_37D2\EventDateType
+        softwareDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareDetailsByTerritory
+                setter: setSoftwareDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: SoftwareDetailsByTerritory
+            type: array<DDEX\ERN\ERN_37D2\SoftwareDetailsByTerritoryType>

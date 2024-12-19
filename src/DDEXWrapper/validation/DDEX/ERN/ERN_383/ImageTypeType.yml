@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_383\ImageTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackCoverImage
+                        - BookletBackImage
+                        - BookletFrontImage
+                        - DocumentImage
+                        - FrontCoverImage
+                        - Icon
+                        - Logo
+                        - Photograph
+                        - Poster
+                        - TrayImage
+                        - Unknown
+                        - UserDefined
+                        - VideoScreenCapture
+                        - Wallpaper
+                        - Portrait
+                    groups:
+                        - xsd_rules

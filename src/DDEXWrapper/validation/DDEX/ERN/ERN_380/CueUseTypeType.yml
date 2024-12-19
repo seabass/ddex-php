@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_380\CueUseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AudioLogo
+                        - Background
+                        - Bumper
+                        - EssentialPart
+                        - FilmTheme
+                        - IndistinguishableBackground
+                        - OnScreenMusic
+                        - RolledUpCue
+                        - Theme
+                        - UserDefined
+                    groups:
+                        - xsd_rules

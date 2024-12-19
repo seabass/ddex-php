@@ -1,0 +1,9 @@
+DDEX\ddexC\WorkListType:
+    properties:
+        musicalWork:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

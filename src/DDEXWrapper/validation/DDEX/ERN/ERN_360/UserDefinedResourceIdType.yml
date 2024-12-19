@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_360\UserDefinedResourceIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

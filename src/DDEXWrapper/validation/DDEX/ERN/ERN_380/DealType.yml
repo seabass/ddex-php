@@ -1,0 +1,14 @@
+DDEX\ERN\ERN_380\DealType:
+    properties:
+        dealTerms:
+            -
+                Valid: null
+        resourceUsage:
+            -
+                Valid: null
+        dealTechnicalResourceDetailsReferenceList:
+            -
+                Valid: null
+        distributionChannelPage:
+            -
+                Valid: null

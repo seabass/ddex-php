@@ -1,0 +1,57 @@
+DDEX\ERN\ERN_411\ImageType:
+    properties:
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        type:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        resourceRightsController:
+            -
+                Valid: null
+        workRightsController:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        firstPublicationDate:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        relatedResource:
+            -
+                Valid: null
+        technicalDetails:
+            -
+                Valid: null

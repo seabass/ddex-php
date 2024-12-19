@@ -1,0 +1,12 @@
+DDEX\ddexC\HashSumType:
+    properties:
+        hashSum:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSumAlgorithmType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

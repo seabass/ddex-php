@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_351\RightsClaimPolicyType:
+    properties:
+        condition:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsClaimPolicyType:
+            -
+                Choice:
+                    choices:
+                        - ReportUsage
+                        - BlockAccess
+                        - Monetize
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

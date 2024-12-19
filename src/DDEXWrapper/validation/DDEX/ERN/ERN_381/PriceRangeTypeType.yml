@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_381\PriceRangeTypeType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

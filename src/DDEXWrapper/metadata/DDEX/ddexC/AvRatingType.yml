@@ -1,0 +1,22 @@
+DDEX\ddexC\AvRatingType:
+    properties:
+        ratingText:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRatingText
+                setter: setRatingText
+            type: string
+        ratingAgency:
+            expose: true
+            access_type: public_method
+            serialized_name: RatingAgency
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRatingAgency
+                setter: setRatingAgency
+            type: DDEX\ddexC\RatingAgencyType

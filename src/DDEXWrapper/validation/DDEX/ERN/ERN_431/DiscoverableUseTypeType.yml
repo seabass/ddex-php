@@ -1,0 +1,64 @@
+DDEX\ERN\ERN_431\DiscoverableUseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Broadcast
+                        - Cable
+                        - ConditionalDownload
+                        - ContentInfluencedStream
+                        - Display
+                        - Download
+                        - Dub
+                        - DubForOnDemandStreaming
+                        - DubForLivePerformance
+                        - DubForMovies
+                        - DubForMusicOnHold
+                        - DubForPublicPerformance
+                        - DubForRadio
+                        - DubForTV
+                        - ExtractForInternet
+                        - KioskDownload
+                        - Narrowcast
+                        - NonInteractiveStream
+                        - OnDemandStream
+                        - Perform
+                        - PerformAsMusicOnHold
+                        - PerformInLivePerformance
+                        - PerformInPublic
+                        - PermanentDownload
+                        - Playback
+                        - PlayInPublic
+                        - Podcast
+                        - Print
+                        - PrivateCopy
+                        - PurchaseAsPhysicalProduct
+                        - Rent
+                        - Simulcast
+                        - Stream
+                        - TetheredDownload
+                        - TimeInfluencedStream
+                        - Use
+                        - UseAsAlertTone
+                        - UseAsDevice
+                        - UseAsKaraoke
+                        - UseAsRingbackTone
+                        - UseAsRingbackTune
+                        - UseAsRingtone
+                        - UseAsRingtune
+                        - UseAsScreensaver
+                        - UseAsVoiceMail
+                        - UseAsWallpaper
+                        - UseForDataMining
+                        - UseForGenerativeAI
+                        - UseForIdentification
+                        - UseForNonGenerativeAI
+                        - UseInMobilePhoneMessaging
+                        - UseInPhoneListening
+                        - UserDefined
+                        - UserMakeAvailableLabelProvided
+                        - UserMakeAvailableUserProvided
+                        - Webcast
+                    groups:
+                        - xsd_rules

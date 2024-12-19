@@ -1,0 +1,83 @@
+DDEX\ERN\ERN_400\DetailedResourceContributorType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\ERN\ERN_400\DetailedPartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\ERN\ERN_400\PartyNameType>
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+            type: array<DDEX\ERN\ERN_400\ContributorRoleType>
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            xml_list:
+                inline: true
+                entry_name: InstrumentType
+            type: array<DDEX\ERN\ERN_400\InstrumentTypeType>
+        isFeaturedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFeaturedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFeaturedArtist
+                setter: setIsFeaturedArtist
+            type: bool
+        isContractedArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: IsContractedArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsContractedArtist
+                setter: setIsContractedArtist
+            type: bool

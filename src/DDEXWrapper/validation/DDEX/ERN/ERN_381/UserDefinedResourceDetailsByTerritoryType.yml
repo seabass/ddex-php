@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_381\UserDefinedResourceDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        technicalUserDefinedResourceDetails:
+            -
+                Valid: null

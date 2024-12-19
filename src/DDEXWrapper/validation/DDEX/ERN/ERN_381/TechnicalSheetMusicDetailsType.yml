@@ -1,0 +1,27 @@
+DDEX\ERN\ERN_381\TechnicalSheetMusicDetailsType:
+    properties:
+        technicalResourceDetailsReference:
+            -
+                Regex:
+                    pattern: '~T[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        previewDetails:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        consumerFulfillmentDate:
+            -
+                Valid: null
+        file:
+            -
+                Valid: null
+        fingerprint:
+            -
+                Valid: null

@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_420\TitleType:
+    properties:
+        titleType:
+            -
+                Choice:
+                    choices:
+                        - AlternativeTitle
+                        - FormalTitle
+                        - GroupingTitle
+                        - OriginalTitle
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

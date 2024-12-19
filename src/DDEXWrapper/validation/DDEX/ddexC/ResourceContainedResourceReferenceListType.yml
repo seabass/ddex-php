@@ -1,0 +1,9 @@
+DDEX\ddexC\ResourceContainedResourceReferenceListType:
+    properties:
+        resourceContainedResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

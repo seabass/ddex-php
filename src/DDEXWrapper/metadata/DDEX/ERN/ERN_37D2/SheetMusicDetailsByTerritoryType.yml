@@ -1,0 +1,171 @@
+DDEX\ERN\ERN_37D2\SheetMusicDetailsByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\ERN\ERN_37D2\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\ERN\ERN_37D2\CurrentTerritoryCodeType>
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ERN\ERN_37D2\TitleType>
+        resourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributor
+                setter: setResourceContributor
+            xml_list:
+                inline: true
+                entry_name: ResourceContributor
+            type: array<DDEX\ERN\ERN_37D2\DetailedResourceContributorType>
+        indirectResourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectResourceContributor
+                setter: setIndirectResourceContributor
+            xml_list:
+                inline: true
+                entry_name: IndirectResourceContributor
+            type: array<DDEX\ERN\ERN_37D2\IndirectResourceContributorType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\ERN\ERN_37D2\NameType>
+        cLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCLine
+                setter: setCLine
+            xml_list:
+                inline: true
+                entry_name: CLine
+            type: array<DDEX\ERN\ERN_37D2\CLineType>
+        courtesyLine:
+            expose: true
+            access_type: public_method
+            serialized_name: CourtesyLine
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCourtesyLine
+                setter: setCourtesyLine
+            type: DDEX\ERN\ERN_37D2\CourtesyLineType
+        originalResourceReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalResourceReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalResourceReleaseDate
+                setter: setOriginalResourceReleaseDate
+            type: DDEX\ERN\ERN_37D2\EventDateType
+        fulfillmentDate:
+            expose: true
+            access_type: public_method
+            serialized_name: FulfillmentDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFulfillmentDate
+                setter: setFulfillmentDate
+            type: DDEX\ERN\ERN_37D2\FulfillmentDateType
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ERN\ERN_37D2\GenreType>
+        parentalWarningType:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentalWarningType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParentalWarningType
+                setter: setParentalWarningType
+            xml_list:
+                inline: true
+                entry_name: ParentalWarningType
+            type: array<DDEX\ERN\ERN_37D2\ParentalWarningTypeType>
+        technicalSheetMusicDetails:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalSheetMusicDetails
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalSheetMusicDetails
+                setter: setTechnicalSheetMusicDetails
+            xml_list:
+                inline: true
+                entry_name: TechnicalSheetMusicDetails
+            type: array<DDEX\ERN\ERN_37D2\TechnicalSheetMusicDetailsType>

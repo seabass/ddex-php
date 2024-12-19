@@ -1,0 +1,23 @@
+DDEX\ERN\ERN_411\DetailedCueType:
+    properties:
+        resourceId:
+            -
+                Valid: null
+        workId:
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

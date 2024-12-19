@@ -1,0 +1,5 @@
+DDEX\ERN\ERN_410\PurgeReleaseMessage:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+    xml_root_name: 'ern:PurgeReleaseMessage'
+    xml_root_namespace: 'http://ddex.net/xml/ern/41'

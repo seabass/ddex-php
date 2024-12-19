@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_37D1\ResourceContainedResourceReferenceListType:
+    properties:
+        resourceContainedResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

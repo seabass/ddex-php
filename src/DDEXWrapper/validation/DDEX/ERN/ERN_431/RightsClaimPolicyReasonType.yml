@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_431\RightsClaimPolicyReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - PreReleaseTime
+                        - ThirdPartyRequest
+                        - UserDefined
+                    groups:
+                        - xsd_rules

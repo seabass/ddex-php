@@ -1,0 +1,50 @@
+DDEX\ERN\ERN_370\IndirectResourceContributorType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\ERN\ERN_370\PartyIdType>
+        partyName:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyName
+                setter: setPartyName
+            xml_list:
+                inline: true
+                entry_name: PartyName
+            type: array<DDEX\ERN\ERN_370\PartyNameType>
+        indirectResourceContributorRole:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectResourceContributorRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectResourceContributorRole
+                setter: setIndirectResourceContributorRole
+            xml_list:
+                inline: true
+                entry_name: IndirectResourceContributorRole
+            type: array<DDEX\ERN\ERN_370\MusicalWorkContributorRoleType>

@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_382\PerformanceType:
+    properties:
+        territory:
+            expose: true
+            access_type: public_method
+            serialized_name: Territory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritory
+                setter: setTerritory
+            type: DDEX\ERN\ERN_382\AllTerritoryCodeType
+        date:
+            expose: true
+            access_type: public_method
+            serialized_name: Date
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDate
+                setter: setDate
+            type: DDEX\ERN\ERN_382\EventDateType

@@ -1,0 +1,19 @@
+DDEX\ddexC\GuaranteedAmountType:
+    properties:
+        currencyCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceUnit:
+            -
+                Choice:
+                    choices:
+                        - PerLicense
+                        - PerUse
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

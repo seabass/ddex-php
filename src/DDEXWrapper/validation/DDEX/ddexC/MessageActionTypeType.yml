@@ -1,0 +1,14 @@
+DDEX\ddexC\MessageActionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackCatalogDelivery
+                        - HighPriorityDelivery
+                        - NewReleaseDelivery
+                        - ReDelivery
+                        - TakeDown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

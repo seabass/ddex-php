@@ -1,0 +1,25 @@
+DDEX\ERN\ERN_431\ImageTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackCoverImage
+                        - BookletBackImage
+                        - BookletFrontImage
+                        - DocumentImage
+                        - FrontCoverImage
+                        - Icon
+                        - Logo
+                        - Photograph
+                        - Portrait
+                        - Poster
+                        - ProfilePicture
+                        - SocialBannerImage
+                        - TrayImage
+                        - Unknown
+                        - UserDefined
+                        - VideoScreenCapture
+                        - Wallpaper
+                    groups:
+                        - xsd_rules

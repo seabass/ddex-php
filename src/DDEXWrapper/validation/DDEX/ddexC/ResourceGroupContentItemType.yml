@@ -1,0 +1,28 @@
+DDEX\ddexC\ResourceGroupContentItemType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        sequenceSubNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        releaseResourceReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceGroupContentItemReleaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                Valid: null

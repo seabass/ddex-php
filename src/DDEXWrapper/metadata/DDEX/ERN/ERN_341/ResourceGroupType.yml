@@ -1,0 +1,133 @@
+DDEX\ERN\ERN_341\ResourceGroupType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ddexC\TitleType>
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\ddexC\ArtistType>
+        resourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContributor
+                setter: setResourceContributor
+            xml_list:
+                inline: true
+                entry_name: ResourceContributor
+            type: array<DDEX\ddexC\ResourceContributorType>
+        indirectResourceContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectResourceContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectResourceContributor
+                setter: setIndirectResourceContributor
+            xml_list:
+                inline: true
+                entry_name: IndirectResourceContributor
+            type: array<DDEX\ddexC\IndirectResourceContributorType>
+        resourceGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroup
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroup
+                setter: setResourceGroup
+            xml_list:
+                inline: true
+                entry_name: ResourceGroup
+            type: array<DDEX\ERN\ERN_341\ResourceGroupType>
+        resourceGroupContentItem:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupContentItem
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupContentItem
+                setter: setResourceGroupContentItem
+            xml_list:
+                inline: true
+                entry_name: ResourceGroupContentItem
+            type: array<DDEX\ERN\ERN_341\ResourceGroupContentItemType>
+        resourceGroupResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupResourceReferenceList
+                setter: setResourceGroupResourceReferenceList
+            type: array<string>
+            xml_list:
+                inline: false
+                entry_name: ResourceGroupResourceReference
+                skip_when_empty: true
+        resourceGroupReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupReleaseReference
+                setter: setResourceGroupReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ddexC\ReleaseIdType

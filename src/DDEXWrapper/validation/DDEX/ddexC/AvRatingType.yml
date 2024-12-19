@@ -1,0 +1,12 @@
+DDEX\ddexC\AvRatingType:
+    properties:
+        ratingText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        ratingAgency:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

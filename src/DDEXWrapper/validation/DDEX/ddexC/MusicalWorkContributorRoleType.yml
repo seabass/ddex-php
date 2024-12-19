@@ -1,0 +1,26 @@
+DDEX\ddexC\MusicalWorkContributorRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Adapter
+                        - Arranger
+                        - AssociatedPerformer
+                        - Author
+                        - Composer
+                        - ComposerLyricist
+                        - Contributor
+                        - Librettist
+                        - Lyricist
+                        - MusicPublisher
+                        - NonLyricAuthor
+                        - OriginalPublisher
+                        - SubArranger
+                        - SubPublisher
+                        - SubstitutedPublisher
+                        - Translator
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

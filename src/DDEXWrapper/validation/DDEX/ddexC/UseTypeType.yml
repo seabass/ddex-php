@@ -1,0 +1,45 @@
+DDEX\ddexC\UseTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AsPerContract
+                        - Broadcast
+                        - ConditionalDownload
+                        - ContentInfluencedStream
+                        - Display
+                        - Download
+                        - KioskDownload
+                        - Narrowcast
+                        - NonInteractiveStream
+                        - OnDemandStream
+                        - PerformInPublic
+                        - PermanentDownload
+                        - Playback
+                        - PlayInPublic
+                        - Podcast
+                        - Print
+                        - PrivateCopy
+                        - PurchaseAsPhysicalProduct
+                        - Rent
+                        - Simulcast
+                        - Stream
+                        - TetheredDownload
+                        - TimeInfluencedStream
+                        - Unknown
+                        - UseAsAlertTone
+                        - UseAsDevice
+                        - UseAsKaraoke
+                        - UseAsRingbackTone
+                        - UseAsRingbackTune
+                        - UseAsRingtone
+                        - UseAsRingtune
+                        - UseAsScreensaver
+                        - UseAsVoiceMail
+                        - UserDefined
+                        - UserMakeAvailableLabelProvided
+                        - UserMakeAvailableUserProvided
+                        - Webcast
+                    groups:
+                        - xsd_rules

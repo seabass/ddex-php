@@ -1,0 +1,18 @@
+DDEX\ddexC\OrderTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BackCatalogOrder
+                        - ExpressOrder
+                        - HardDiskOrder
+                        - MetadataOnlyOrder
+                        - NewReleaseOrder
+                        - OffCycleRushOrder
+                        - PreOrder
+                        - ReDeliveryOrder
+                        - TakeDownOrder
+                        - UserDefined
+                    groups:
+                        - xsd_rules

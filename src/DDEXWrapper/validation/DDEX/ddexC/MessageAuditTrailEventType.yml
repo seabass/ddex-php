@@ -1,0 +1,14 @@
+DDEX\ddexC\MessageAuditTrailEventType:
+    properties:
+        messagingPartyDescriptor:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        dateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

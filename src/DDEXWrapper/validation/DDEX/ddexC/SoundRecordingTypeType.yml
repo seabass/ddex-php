@@ -1,0 +1,14 @@
+DDEX\ddexC\SoundRecordingTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MusicalWorkReadalongSoundRecording
+                        - MusicalWorkSoundRecording
+                        - NonMusicalWorkReadalongSoundRecording
+                        - NonMusicalWorkSoundRecording
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

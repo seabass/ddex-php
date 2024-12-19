@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_430\DealTermsTechnicalInstantiationType:
+    properties:
+        codingType:
+            -
+                Choice:
+                    choices:
+                        - Lossless
+                        - Lossy
+                    groups:
+                        - xsd_rules

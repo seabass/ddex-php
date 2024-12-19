@@ -1,0 +1,82 @@
+DDEX\ERN\ERN_360\WebPolicyType:
+    properties:
+        condition:
+            expose: true
+            access_type: public_method
+            serialized_name: Condition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCondition
+                setter: setCondition
+            type: DDEX\ERN\ERN_360\ConditionType
+        accessBlockingRequested:
+            expose: true
+            access_type: public_method
+            serialized_name: AccessBlockingRequested
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAccessBlockingRequested
+                setter: setAccessBlockingRequested
+            type: bool
+        accessLimitation:
+            expose: true
+            access_type: public_method
+            serialized_name: AccessLimitation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAccessLimitation
+                setter: setAccessLimitation
+            type: string
+        embeddingAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: EmbeddingAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEmbeddingAllowed
+                setter: setEmbeddingAllowed
+            type: bool
+        userRatingAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: UserRatingAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserRatingAllowed
+                setter: setUserRatingAllowed
+            type: bool
+        userCommentAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: UserCommentAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserCommentAllowed
+                setter: setUserCommentAllowed
+            type: bool
+        userResponsesAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: UserResponsesAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserResponsesAllowed
+                setter: setUserResponsesAllowed
+            type: bool
+        syndicationAllowed:
+            expose: true
+            access_type: public_method
+            serialized_name: SyndicationAllowed
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSyndicationAllowed
+                setter: setSyndicationAllowed
+            type: bool

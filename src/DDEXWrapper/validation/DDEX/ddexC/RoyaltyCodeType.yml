@@ -1,0 +1,7 @@
+DDEX\ddexC\RoyaltyCodeType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

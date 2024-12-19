@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_371\ReleaseCollectionReferenceListType:
+    properties:
+        numberOfCollections:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        releaseCollectionReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

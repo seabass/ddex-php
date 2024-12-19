@@ -1,0 +1,14 @@
+DDEX\ddexC\LicenseOrClaimUpdateReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - NewLicenseIssued
+                        - NewRightShareIdentified
+                        - NewRightsholderIdentified
+                        - NewWorkIdentified
+                        - Revoked
+                        - UserDefined
+                    groups:
+                        - xsd_rules

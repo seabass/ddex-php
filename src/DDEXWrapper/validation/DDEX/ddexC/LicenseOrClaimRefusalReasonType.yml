@@ -1,0 +1,48 @@
+DDEX\ddexC\LicenseOrClaimRefusalReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AgreementOfAdditionalProvisionsRequired
+                        - CorrectionOfAdvancePaymentRequired
+                        - CorrectionOfGuaranteeRequired
+                        - CorrectionOfLicenseeRequired
+                        - CorrectionOfMostFavoredNationClauseRequired
+                        - CorrectionOfNumberOfResourcesRequired
+                        - CorrectionOfPlayingTimeRequired
+                        - CorrectionOfPublisherInformationRequired
+                        - CorrectionOfPublisherPercentageRequired
+                        - CorrectionOfRateRequired
+                        - CorrectionOfReleaseCreatorInformationRequired
+                        - CorrectionOfReleaseDateRequired
+                        - CorrectionOfReleaseTitleRequired
+                        - CorrectionOfWorkContributorRequired
+                        - CorrectionOfWorkTitleRequired
+                        - DealExpired
+                        - DifferentWork
+                        - DirectLicense
+                        - DuplicateLicense
+                        - DuplicateRequest
+                        - ImportLicenseExists
+                        - IncorrectClaim
+                        - IncorrectControlledCompositionRate
+                        - InHouseLicenseExists
+                        - InsufficientInformation
+                        - LicenseeNotAuthorized
+                        - MedleyRequest
+                        - NoOptIn
+                        - NoPublisherClaim
+                        - OwnershipUnconfirmed
+                        - ProductUnavailable
+                        - PublisherNotRepresented
+                        - ReleaseWithdrawn
+                        - RelinquishedClaim
+                        - UserDefined
+                        - WorkDeletedFromRelease
+                        - WorkIncorrectlyIdentified
+                        - WorkInPublicDomain
+                        - WorkNotUsed
+                        - WorkUnknown
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,47 @@
+DDEX\ERN\ERN_370\ReleaseDetailsByTerritoryType:
+    properties:
+        rightsAgreementId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        file:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null
+        numberOfUnitsPerPhysicalRelease:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        displayConductor:
+            -
+                Valid: null

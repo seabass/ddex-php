@@ -1,0 +1,40 @@
+DDEX\ddexC\VideoTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementVideo
+                        - Animation
+                        - ConcertClip
+                        - ConcertVideo
+                        - CorporateFilm
+                        - Documentary
+                        - Episode
+                        - FeatureFilm
+                        - InfomercialVideo
+                        - Karaoke
+                        - LiveEventVideo
+                        - LongFormMusicalWorkVideo
+                        - LongFormNonMusicalWorkVideo
+                        - Menu
+                        - MusicalWorkClip
+                        - MusicalWorkReadalongVideo
+                        - MusicalWorkTrailer
+                        - MusicalWorkVideoChapter
+                        - News
+                        - NonMusicalWorkClip
+                        - NonMusicalWorkReadalongVideo
+                        - NonMusicalWorkTrailer
+                        - NonMusicalWorkVideoChapter
+                        - NonSerialAudioVisualRecording
+                        - Season
+                        - Series
+                        - ShortFormMusicalWorkVideo
+                        - ShortFormNonMusicalWorkVideo
+                        - TrailerVideo
+                        - Unknown
+                        - UserDefined
+                        - VideoChapter
+                    groups:
+                        - xsd_rules

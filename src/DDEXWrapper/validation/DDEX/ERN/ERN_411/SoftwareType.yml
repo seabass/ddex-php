@@ -1,0 +1,66 @@
+DDEX\ERN\ERN_411\SoftwareType:
+    properties:
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        type:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        workId:
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        additionalTitle:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        resourceRightsController:
+            -
+                Valid: null
+        workRightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        firstPublicationDate:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
+        relatedResource:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        technicalDetails:
+            -
+                Valid: null

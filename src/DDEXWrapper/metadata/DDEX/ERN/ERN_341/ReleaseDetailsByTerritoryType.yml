@@ -1,0 +1,302 @@
+DDEX\ERN\ERN_341\ReleaseDetailsByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\ddexC\NameType>
+        labelName:
+            expose: true
+            access_type: public_method
+            serialized_name: LabelName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLabelName
+                setter: setLabelName
+            xml_list:
+                inline: true
+                entry_name: LabelName
+            type: array<DDEX\ddexC\LabelNameType>
+        rightsAgreementId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsAgreementId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsAgreementId
+                setter: setRightsAgreementId
+            type: DDEX\ddexC\RightsAgreementIdType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ddexC\TitleType>
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\ddexC\ArtistType>
+        isMultiArtistCompilation:
+            expose: true
+            access_type: public_method
+            serialized_name: IsMultiArtistCompilation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsMultiArtistCompilation
+                setter: setIsMultiArtistCompilation
+            type: bool
+        administratingRecordCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: AdministratingRecordCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdministratingRecordCompany
+                setter: setAdministratingRecordCompany
+            xml_list:
+                inline: true
+                entry_name: AdministratingRecordCompany
+            type: array<DDEX\ddexC\AdministratingRecordCompanyType>
+        releaseType:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseType
+                setter: setReleaseType
+            xml_list:
+                inline: true
+                entry_name: ReleaseType
+            type: array<DDEX\ddexC\ReleaseTypeType>
+        relatedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedRelease
+                setter: setRelatedRelease
+            xml_list:
+                inline: true
+                entry_name: RelatedRelease
+            type: array<DDEX\ddexC\RelatedReleaseType>
+        parentalWarningType:
+            expose: true
+            access_type: public_method
+            serialized_name: ParentalWarningType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParentalWarningType
+                setter: setParentalWarningType
+            xml_list:
+                inline: true
+                entry_name: ParentalWarningType
+            type: array<DDEX\ddexC\ParentalWarningTypeType>
+        avRating:
+            expose: true
+            access_type: public_method
+            serialized_name: AvRating
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAvRating
+                setter: setAvRating
+            xml_list:
+                inline: true
+                entry_name: AvRating
+            type: array<DDEX\ddexC\AvRatingType>
+        marketingComment:
+            expose: true
+            access_type: public_method
+            serialized_name: MarketingComment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMarketingComment
+                setter: setMarketingComment
+            type: DDEX\ddexC\CommentType
+        resourceGroup:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroup
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroup
+                setter: setResourceGroup
+            xml_list:
+                inline: true
+                entry_name: ResourceGroup
+            type: array<DDEX\ERN\ERN_341\ResourceGroupType>
+        genre:
+            expose: true
+            access_type: public_method
+            serialized_name: Genre
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGenre
+                setter: setGenre
+            xml_list:
+                inline: true
+                entry_name: Genre
+            type: array<DDEX\ddexC\GenreType>
+        originalReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalReleaseDate
+                setter: setOriginalReleaseDate
+            type: DDEX\ddexC\EventDateType
+        originalDigitalReleaseDate:
+            expose: true
+            access_type: public_method
+            serialized_name: OriginalDigitalReleaseDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getOriginalDigitalReleaseDate
+                setter: setOriginalDigitalReleaseDate
+            type: DDEX\ddexC\EventDateType
+        fileAvailabilityDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: FileAvailabilityDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileAvailabilityDescription
+                setter: setFileAvailabilityDescription
+            xml_list:
+                inline: true
+                entry_name: FileAvailabilityDescription
+            type: array<DDEX\ddexC\DescriptionType>
+        file:
+            expose: true
+            access_type: public_method
+            serialized_name: File
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFile
+                setter: setFile
+            xml_list:
+                inline: true
+                entry_name: File
+            type: array<DDEX\ddexC\FileType>
+        keywords:
+            expose: true
+            access_type: public_method
+            serialized_name: Keywords
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getKeywords
+                setter: setKeywords
+            xml_list:
+                inline: true
+                entry_name: Keywords
+            type: array<DDEX\ddexC\KeywordsType>
+        synopsis:
+            expose: true
+            access_type: public_method
+            serialized_name: Synopsis
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSynopsis
+                setter: setSynopsis
+            type: DDEX\ddexC\SynopsisType
+        character:
+            expose: true
+            access_type: public_method
+            serialized_name: Character
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCharacter
+                setter: setCharacter
+            xml_list:
+                inline: true
+                entry_name: Character
+            type: array<DDEX\ddexC\CharacterType>
+        numberOfUnitsPerPhysicalRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfUnitsPerPhysicalRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfUnitsPerPhysicalRelease
+                setter: setNumberOfUnitsPerPhysicalRelease
+            type: int

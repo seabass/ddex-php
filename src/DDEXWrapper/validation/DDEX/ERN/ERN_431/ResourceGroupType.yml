@@ -1,0 +1,35 @@
+DDEX\ERN\ERN_431\ResourceGroupType:
+    properties:
+        displayTitle:
+            -
+                Valid: null
+        formalTitle:
+            -
+                Valid: null
+        groupingTitle:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        displayArtist:
+            -
+                Valid: null
+        resourceGroupReleaseReference:
+            -
+                Regex:
+                    pattern: '~R[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                Valid: null
+        resourceGroup:
+            -
+                Valid: null
+        resourceGroupContentItem:
+            -
+                Valid: null

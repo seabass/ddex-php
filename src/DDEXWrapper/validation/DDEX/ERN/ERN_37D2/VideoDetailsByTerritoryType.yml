@@ -1,0 +1,47 @@
+DDEX\ERN\ERN_37D2\VideoDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        displayConductor:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        hostSoundCarrier:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        technicalVideoDetails:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null

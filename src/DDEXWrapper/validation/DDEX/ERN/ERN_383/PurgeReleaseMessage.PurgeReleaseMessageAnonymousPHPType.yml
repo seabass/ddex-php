@@ -1,0 +1,21 @@
+DDEX\ERN\ERN_383\PurgeReleaseMessage\PurgeReleaseMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        purgedRelease:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

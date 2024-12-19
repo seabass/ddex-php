@@ -1,0 +1,37 @@
+DDEX\ERN\ERN_381\MusicalWorkTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdaptedInOriginalLanguage
+                        - AdaptedInstrumentalWork
+                        - AdaptedWithNewLyrics
+                        - ArrangedWithNewMusic
+                        - CompositeMusicalWork
+                        - DramaticoMusicalWork
+                        - LyricRemoval
+                        - LyricReplacement
+                        - LyricTranslation
+                        - Mashup
+                        - Medley
+                        - MultimediaProductionWork
+                        - MusicalWorkMovement
+                        - MusicalWorkWithSamples
+                        - MusicArrangement
+                        - MusicArrangementOfText
+                        - OriginalLyricsArrangement
+                        - OriginalMusicAdaptation
+                        - OriginalMusicalWork
+                        - Potpourri
+                        - ProductionMusicLibraryWork
+                        - RadioProductionWork
+                        - TheaterProductionWork
+                        - TvProductionWork
+                        - Unknown
+                        - UnspecifiedArrangement
+                        - UnspecifiedMusicalWorkExcerpt
+                        - UserDefined
+                        - VideoProductionWork
+                    groups:
+                        - xsd_rules

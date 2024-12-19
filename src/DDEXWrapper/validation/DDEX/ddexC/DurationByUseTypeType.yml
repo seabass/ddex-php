@@ -1,0 +1,12 @@
+DDEX\ddexC\DurationByUseTypeType:
+    properties:
+        duration:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

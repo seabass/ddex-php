@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_383\ResourceListType:
+    properties:
+        soundRecording:
+            -
+                Valid: null
+        mIDI:
+            -
+                Valid: null
+        video:
+            -
+                Valid: null
+        image:
+            -
+                Valid: null
+        text:
+            -
+                Valid: null
+        sheetMusic:
+            -
+                Valid: null
+        software:
+            -
+                Valid: null
+        userDefinedResource:
+            -
+                Valid: null

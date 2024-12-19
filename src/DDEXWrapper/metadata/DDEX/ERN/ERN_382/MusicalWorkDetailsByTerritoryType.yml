@@ -1,0 +1,63 @@
+DDEX\ERN\ERN_382\MusicalWorkDetailsByTerritoryType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<DDEX\ERN\ERN_382\CurrentTerritoryCodeType>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<DDEX\ERN\ERN_382\CurrentTerritoryCodeType>
+        musicalWorkContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkContributor
+                setter: setMusicalWorkContributor
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkContributor
+            type: array<DDEX\ERN\ERN_382\MusicalWorkContributorType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\ERN\ERN_382\NameType>

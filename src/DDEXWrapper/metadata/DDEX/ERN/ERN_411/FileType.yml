@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_411\FileType:
+    properties:
+        uRI:
+            expose: true
+            access_type: public_method
+            serialized_name: URI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURI
+                setter: setURI
+            type: string
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\ERN\ERN_411\DetailedHashSumType
+        fileSize:
+            expose: true
+            access_type: public_method
+            serialized_name: FileSize
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileSize
+                setter: setFileSize
+            type: float

@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_380\CatalogNumberType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

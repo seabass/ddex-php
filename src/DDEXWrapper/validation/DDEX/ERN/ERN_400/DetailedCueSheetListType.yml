@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_400\DetailedCueSheetListType:
+    properties:
+        cueSheet:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

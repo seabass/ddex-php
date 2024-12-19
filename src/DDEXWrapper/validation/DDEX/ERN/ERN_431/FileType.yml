@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_431\FileType:
+    properties:
+        uRI:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        hashSum:
+            -
+                Valid: null

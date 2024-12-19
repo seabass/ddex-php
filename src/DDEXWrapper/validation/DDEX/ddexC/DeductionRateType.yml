@@ -1,0 +1,15 @@
+DDEX\ddexC\DeductionRateType:
+    properties:
+        deductionRateType:
+            -
+                Choice:
+                    choices:
+                        - PennyRate
+                        - PercentageRate
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

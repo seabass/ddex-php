@@ -1,0 +1,108 @@
+DDEX\ERN\ERN_340\ResourceGroupContentItemType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        sequenceSubNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceSubNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceSubNumber
+                setter: setSequenceSubNumber
+            type: int
+        resourceType:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceType
+                setter: setResourceType
+            xml_list:
+                inline: true
+                entry_name: ResourceType
+            type: array<DDEX\ddexC\ResourceTypeType>
+        releaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseResourceReference
+                setter: setReleaseResourceReference
+            type: DDEX\ddexC\ReleaseResourceReferenceType
+        linkedReleaseResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkedReleaseResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkedReleaseResourceReference
+                setter: setLinkedReleaseResourceReference
+            xml_list:
+                inline: true
+                entry_name: LinkedReleaseResourceReference
+            type: array<DDEX\ddexC\LinkedReleaseResourceReferenceType>
+        resourceGroupContentItemReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceGroupContentItemReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceGroupContentItemReleaseReference
+                setter: setResourceGroupContentItemReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ddexC\ReleaseIdType
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        isHiddenResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsHiddenResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsHiddenResource
+                setter: setIsHiddenResource
+            type: bool
+        isBonusResource:
+            expose: true
+            access_type: public_method
+            serialized_name: IsBonusResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsBonusResource
+                setter: setIsBonusResource
+            type: bool

@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_381\ResourceOmissionReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - PassportServiceRelease
+                        - PreRelease
+                        - UserDefined
+                        - VirtualRelease
+                    groups:
+                        - xsd_rules

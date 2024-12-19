@@ -1,0 +1,23 @@
+DDEX\ddexC\CueType:
+    properties:
+        cueCreationReference:
+            -
+                Valid: null
+        referencedCreationType:
+            -
+                Choice:
+                    choices:
+                        - MusicalWork
+                        - Release
+                        - Resource
+                    groups:
+                        - xsd_rules
+        referencedCreationId:
+            -
+                Valid: null
+        referencedCreationTitle:
+            -
+                Valid: null
+        referencedCreationContributor:
+            -
+                Valid: null

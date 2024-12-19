@@ -1,0 +1,66 @@
+DDEX\ERN\ERN_370\ArtistRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Actor
+                        - Adapter
+                        - Architect
+                        - Arranger
+                        - Artist
+                        - AssociatedPerformer
+                        - Author
+                        - Band
+                        - Cartoonist
+                        - Choir
+                        - Choreographer
+                        - Composer
+                        - ComposerLyricist
+                        - ComputerGraphicCreator
+                        - Conductor
+                        - Contributor
+                        - Dancer
+                        - Designer
+                        - Director
+                        - Ensemble
+                        - FeaturedArtist
+                        - FilmDirector
+                        - GraphicArtist
+                        - GraphicDesigner
+                        - Journalist
+                        - Librettist
+                        - Lyricist
+                        - MainArtist
+                        - Narrator
+                        - NonLyricAuthor
+                        - Orchestra
+                        - OriginalPublisher
+                        - Painter
+                        - Photographer
+                        - PhotographyDirector
+                        - Playwright
+                        - PrimaryMusician
+                        - Producer
+                        - Programmer
+                        - ScreenplayAuthor
+                        - Soloist
+                        - StudioMusician
+                        - StudioPersonnel
+                        - SubArranger
+                        - Translator
+                        - Unknown
+                        - UserDefined
+                        - ArtCopyist
+                        - Calligrapher
+                        - Cartographer
+                        - ComputerProgrammer
+                        - Delineator
+                        - Draughtsman
+                        - Facsimilist
+                        - Illustrator
+                        - MusicCopyist
+                        - NotSpecified
+                        - TypeDesigner
+                    groups:
+                        - xsd_rules

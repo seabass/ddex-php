@@ -1,0 +1,34 @@
+DDEX\ERN\ERN_420\SheetMusicIdType:
+    properties:
+        isReplaced:
+            expose: true
+            access_type: public_method
+            serialized_name: IsReplaced
+            accessor:
+                getter: getIsReplaced
+                setter: setIsReplaced
+            xml_attribute: true
+            type: bool
+        iSMN:
+            expose: true
+            access_type: public_method
+            serialized_name: ISMN
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISMN
+                setter: setISMN
+            type: string
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\ERN\ERN_420\ProprietaryIdType>

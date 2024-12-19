@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_431\AspectRatioType:
+    properties:
+        aspectRatioType:
+            -
+                Choice:
+                    choices:
+                        - DAR
+                        - PAR
+                        - SAR
+                    groups:
+                        - xsd_rules

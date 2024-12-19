@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_400\FingerprintType:
+    properties:
+        algorithm:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        file:
+            -
+                Valid: null
+        dataType:
+            -
+                Choice:
+                    choices:
+                        - Binary64
+                        - HexBinary
+                    groups:
+                        - xsd_rules

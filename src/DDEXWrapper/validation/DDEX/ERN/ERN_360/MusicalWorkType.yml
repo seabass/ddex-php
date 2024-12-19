@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_360\MusicalWorkType:
+    properties:
+        musicalWorkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        musicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        musicalWorkContributor:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightShare:
+            -
+                Valid: null
+        musicalWorkDetailsByTerritory:
+            -
+                Valid: null

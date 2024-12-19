@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_383\SoundProcessorTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MidiProcessor
+                        - SMAF-MA2
+                        - SMAF-MA3
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

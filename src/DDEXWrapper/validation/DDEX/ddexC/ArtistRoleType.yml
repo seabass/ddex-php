@@ -1,0 +1,57 @@
+DDEX\ddexC\ArtistRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Actor
+                        - Adapter
+                        - Architect
+                        - Arranger
+                        - Artist
+                        - AssociatedPerformer
+                        - Author
+                        - Band
+                        - Cartoonist
+                        - Choir
+                        - Choreographer
+                        - Composer
+                        - ComposerLyricist
+                        - ComputerGraphicCreator
+                        - Conductor
+                        - Contributor
+                        - Dancer
+                        - Designer
+                        - Director
+                        - Ensemble
+                        - FeaturedArtist
+                        - FilmDirector
+                        - GraphicArtist
+                        - GraphicDesigner
+                        - Journalist
+                        - Librettist
+                        - Lyricist
+                        - MainArtist
+                        - MusicPublisher
+                        - NonLyricAuthor
+                        - Orchestra
+                        - OriginalPublisher
+                        - Painter
+                        - Photographer
+                        - PhotographyDirector
+                        - Playwright
+                        - PrimaryMusician
+                        - Producer
+                        - Programmer
+                        - ScreenplayAuthor
+                        - Soloist
+                        - StudioMusician
+                        - StudioPersonnel
+                        - SubArranger
+                        - SubPublisher
+                        - SubstitutedPublisher
+                        - Translator
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

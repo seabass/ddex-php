@@ -1,0 +1,9 @@
+DDEX\ERN\ERN_382\ResourceMusicalWorkReferenceListType:
+    properties:
+        resourceMusicalWorkReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_431\ResourceGroupContentItemType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        releaseResourceReference:
+            -
+                Regex:
+                    pattern: '~A[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

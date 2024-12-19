@@ -1,0 +1,31 @@
+DDEX\ERN\ERN_420\CharacterType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        characterPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: CharacterPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCharacterPartyReference
+                setter: setCharacterPartyReference
+            type: string
+        performer:
+            expose: true
+            access_type: public_method
+            serialized_name: Performer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPerformer
+                setter: setPerformer
+            type: DDEX\ERN\ERN_420\ContributorType

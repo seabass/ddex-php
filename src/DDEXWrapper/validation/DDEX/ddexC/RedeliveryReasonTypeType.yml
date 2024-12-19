@@ -1,0 +1,13 @@
+DDEX\ddexC\RedeliveryReasonTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - BinaryCorrupted
+                        - MetadataInadequate
+                        - PackageIncomplete
+                        - ProcessingErrorAtReleaseDistributor
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_380\RightsTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MakeAvailableRight
+                        - MechanicalRight
+                        - PerformingRight
+                        - PrintRight
+                        - ReproductionRight
+                        - SynchronizationRight
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        territoryCode:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

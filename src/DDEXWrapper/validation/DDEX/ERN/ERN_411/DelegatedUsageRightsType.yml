@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_411\DelegatedUsageRightsType:
+    properties:
+        useType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        periodOfRightsDelegation:
+            -
+                Valid: null

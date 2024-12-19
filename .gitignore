@@ -1,6 +1,4 @@
 /composer.lock
 /vendor/
+/dev/XSD_list.log
 /dev/wget.exe
-/src/DDEXWrapper/metadata/
-/src/DDEXWrapper/schema/
-/src/DDEXWrapper/validation/

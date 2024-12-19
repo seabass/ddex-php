@@ -1,0 +1,53 @@
+DDEX\ERN\ERN_381\VideoDetailsByTerritoryType:
+    properties:
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        displayConductor:
+            -
+                Valid: null
+        resourceContributor:
+            -
+                Valid: null
+        indirectResourceContributor:
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        rightsController:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        hostSoundCarrier:
+            -
+                Valid: null
+        genre:
+            -
+                Valid: null
+        avRating:
+            -
+                Valid: null
+        fulfillmentDate:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        technicalVideoDetails:
+            -
+                Valid: null
+        character:
+            -
+                Valid: null

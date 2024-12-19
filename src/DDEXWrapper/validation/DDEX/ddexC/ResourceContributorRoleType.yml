@@ -1,0 +1,52 @@
+DDEX\ddexC\ResourceContributorRoleType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Actor
+                        - Architect
+                        - Artist
+                        - AssociatedPerformer
+                        - Band
+                        - BookPublisher
+                        - Cartoonist
+                        - Choir
+                        - Choreographer
+                        - ComputerGraphicCreator
+                        - Conductor
+                        - Contributor
+                        - CostumeDesigner
+                        - Designer
+                        - Ensemble
+                        - FeaturedArtist
+                        - FilmDirector
+                        - FilmDistributor
+                        - FilmEditor
+                        - FilmProducer
+                        - FilmSoundEngineer
+                        - GraphicArtist
+                        - GraphicDesigner
+                        - Journalist
+                        - MainArtist
+                        - NewspaperPublisher
+                        - Orchestra
+                        - Painter
+                        - PeriodicalPublisher
+                        - Photographer
+                        - PhotographyDirector
+                        - PrimaryMusician
+                        - Producer
+                        - Programmer
+                        - RightsControllerOnProduct
+                        - ScreenplayAuthor
+                        - SetDesigner
+                        - Soloist
+                        - StageDirector
+                        - StudioPersonnel
+                        - SubtitlesEditor
+                        - SubtitlesTranslator
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

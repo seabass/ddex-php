@@ -1,0 +1,77 @@
+DDEX\ERN\ERN_400\VideoTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementVideo
+                        - AdviceMagazine
+                        - Animation
+                        - BalletVideo
+                        - BehindTheScenes
+                        - BlackAndWhiteVideo
+                        - ChildrensFilm
+                        - ColorizedVideo
+                        - ColumnVideo
+                        - ConcertClip
+                        - ConcertVideo
+                        - CorporateFilm
+                        - Credits
+                        - Documentary
+                        - EducationalVideo
+                        - Episode
+                        - FeatureFilm
+                        - Fiction
+                        - InfomercialVideo
+                        - Interview
+                        - Karaoke
+                        - LiveEventVideo
+                        - LongFormMusicalWorkVideo
+                        - LongFormNonMusicalWorkVideo
+                        - LyricVideo
+                        - Magazine
+                        - Menu
+                        - MultimediaVideo
+                        - MusicalWorkClip
+                        - MusicalWorkReadalongVideo
+                        - MusicalWorkTrailer
+                        - MusicalWorkVideoChapter
+                        - News
+                        - NonMusicalWorkClip
+                        - NonMusicalWorkReadalongVideo
+                        - NonMusicalWorkTrailer
+                        - NonMusicalWorkVideoChapter
+                        - NonSerialAudioVisualRecording
+                        - OperaVideo
+                        - Performance
+                        - ReadalongVideo
+                        - RealityTvShowVideo
+                        - Season
+                        - SerialAudioVisualRecording
+                        - Series
+                        - ShortFilm
+                        - SilentVideo
+                        - SketchVideo
+                        - SoapSitcom
+                        - SpecialEvent
+                        - Sport
+                        - TheatricalWorkVideo
+                        - TrailerVideo
+                        - TvFilm
+                        - TvProgram
+                        - TvShowVideo
+                        - Unknown
+                        - VideoChapter
+                        - VideoClip
+                        - VideoReport
+                        - VideoStem
+                        - ShortFormMusicalWorkVideo
+                        - ShortFormNonMusicalWorkVideo
+                        - UserDefined
+                        - AdultContent
+                        - Drama
+                        - DramaticoMusicalVideo
+                        - InteractiveResource
+                        - WebResource
+                    groups:
+                        - xsd_rules

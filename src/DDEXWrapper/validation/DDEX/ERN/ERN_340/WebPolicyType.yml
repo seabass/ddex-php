@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_340\WebPolicyType:
+    properties:
+        accessLimitation:
+            -
+                Choice:
+                    choices:
+                        - NoLimitation
+                        - PrivateAccessOnly
+                    groups:
+                        - xsd_rules

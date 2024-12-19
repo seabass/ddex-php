@@ -1,0 +1,8 @@
+DDEX\ERN\ERN_381\LinkedReleaseResourceReferenceType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

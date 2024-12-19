@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_411\RelatedPartyType:
+    properties:
+        partyRelatedPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyRelatedPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyRelatedPartyReference
+                setter: setPartyRelatedPartyReference
+            type: string
+        partyRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyRelationshipType
+                setter: setPartyRelationshipType
+            type: DDEX\ERN\ERN_411\PartyRelationshipTypeType

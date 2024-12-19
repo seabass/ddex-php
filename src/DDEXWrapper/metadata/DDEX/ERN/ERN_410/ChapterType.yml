@@ -1,0 +1,149 @@
+DDEX\ERN\ERN_410\ChapterType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        chapterReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ChapterReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChapterReference
+                setter: setChapterReference
+            type: string
+        chapterId:
+            expose: true
+            access_type: public_method
+            serialized_name: ChapterId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getChapterId
+                setter: setChapterId
+            xml_list:
+                inline: true
+                entry_name: ChapterId
+            type: array<DDEX\ERN\ERN_410\ProprietaryIdType>
+        displayTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitleText
+                setter: setDisplayTitleText
+            xml_list:
+                inline: true
+                entry_name: DisplayTitleText
+            type: array<DDEX\ERN\ERN_410\DisplayTitleTextType>
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\ERN\ERN_410\DisplayTitleType>
+        additionalTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalTitle
+                setter: setAdditionalTitle
+            xml_list:
+                inline: true
+                entry_name: AdditionalTitle
+            type: array<DDEX\ERN\ERN_410\AdditionalTitleType>
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            type: int
+        contributor:
+            expose: true
+            access_type: public_method
+            serialized_name: Contributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributor
+                setter: setContributor
+            xml_list:
+                inline: true
+                entry_name: Contributor
+            type: array<DDEX\ERN\ERN_410\ContributorType>
+        character:
+            expose: true
+            access_type: public_method
+            serialized_name: Character
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCharacter
+                setter: setCharacter
+            xml_list:
+                inline: true
+                entry_name: Character
+            type: array<DDEX\ERN\ERN_410\CharacterType>
+        representativeImageReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RepresentativeImageReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRepresentativeImageReference
+                setter: setRepresentativeImageReference
+            type: string
+        startTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StartTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStartTime
+                setter: setStartTime
+            type: DateInterval
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        endTime:
+            expose: true
+            access_type: public_method
+            serialized_name: EndTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEndTime
+                setter: setEndTime
+            type: DateInterval

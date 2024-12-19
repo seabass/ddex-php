@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_420\DealTermsTechnicalInstantiationType:
+    properties:
+        videoDefinitionType:
+            expose: true
+            access_type: public_method
+            serialized_name: VideoDefinitionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideoDefinitionType
+                setter: setVideoDefinitionType
+            type: DDEX\ERN\ERN_420\VideoDefinitionTypeType
+        codingType:
+            expose: true
+            access_type: public_method
+            serialized_name: CodingType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCodingType
+                setter: setCodingType
+            type: string
+        bitRate:
+            expose: true
+            access_type: public_method
+            serialized_name: BitRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getBitRate
+                setter: setBitRate
+            type: DDEX\ERN\ERN_420\BitRateType

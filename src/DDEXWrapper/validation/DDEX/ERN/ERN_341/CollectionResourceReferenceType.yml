@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_341\CollectionResourceReferenceType:
+    properties:
+        collectionResourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

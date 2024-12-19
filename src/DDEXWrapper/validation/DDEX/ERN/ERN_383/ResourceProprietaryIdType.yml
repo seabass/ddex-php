@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_383\ResourceProprietaryIdType:
+    properties:
+        proprietaryId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
