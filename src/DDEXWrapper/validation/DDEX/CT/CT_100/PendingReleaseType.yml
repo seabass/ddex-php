@@ -1,0 +1,22 @@
+DDEX\CT\CT_100\PendingReleaseType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        pendingReason:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        proposedActionType:
+            -
+                Choice:
+                    choices:
+                        - HandleOutsideOfThread
+                        - SendUpdate
+                    groups:
+                        - xsd_rules

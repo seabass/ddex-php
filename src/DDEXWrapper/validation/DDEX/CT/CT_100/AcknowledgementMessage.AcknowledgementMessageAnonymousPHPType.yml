@@ -1,0 +1,31 @@
+DDEX\CT\CT_100\AcknowledgementMessage\AcknowledgementMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        fileName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        status:
+            -
+                Choice:
+                    choices:
+                        - Error
+                        - FileReceived
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

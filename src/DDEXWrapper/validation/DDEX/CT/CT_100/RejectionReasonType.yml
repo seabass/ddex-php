@@ -1,0 +1,12 @@
+DDEX\CT\CT_100\RejectionReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - NotFoundByDSP
+                        - NotFoundByRelinquishingRecordCompany
+                        - RejectedByRelinquishingRecordCompany
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,5 @@
+DDEX\CT\CT_100\DistributionChannelPageType:
+    properties:
+        partyId:
+            -
+                Valid: null

@@ -1,0 +1,16 @@
+DDEX\CT\CT_100\CommercialModelTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementSupportedModel
+                        - DeviceFeeModel
+                        - FreeOfChargeModel
+                        - PayAsYouGoModel
+                        - PerformanceRoyaltiesModel
+                        - RightsClaimModel
+                        - SubscriptionModel
+                        - UserDefined
+                    groups:
+                        - xsd_rules

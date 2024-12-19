@@ -1,0 +1,32 @@
+DDEX\CT\CT_100\PendingReleaseType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\CT\CT_100\ReleaseIdType
+        pendingReason:
+            expose: true
+            access_type: public_method
+            serialized_name: PendingReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPendingReason
+                setter: setPendingReason
+            type: DDEX\CT\CT_100\PendingReasonType
+        proposedActionType:
+            expose: true
+            access_type: public_method
+            serialized_name: ProposedActionType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProposedActionType
+                setter: setProposedActionType
+            type: string

@@ -1,0 +1,45 @@
+DDEX\CT\CT_100\DistributionChannelPageType:
+    properties:
+        partyId:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyId
+                setter: setPartyId
+            xml_list:
+                inline: true
+                entry_name: PartyId
+            type: array<DDEX\CT\CT_100\DetailedPartyIdType>
+        pageName:
+            expose: true
+            access_type: public_method
+            serialized_name: PageName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPageName
+                setter: setPageName
+            type: DDEX\CT\CT_100\NameType
+        uRL:
+            expose: true
+            access_type: public_method
+            serialized_name: URL
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getURL
+                setter: setURL
+            type: string
+        userName:
+            expose: true
+            access_type: public_method
+            serialized_name: UserName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserName
+                setter: setUserName
+            type: string

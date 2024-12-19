@@ -1,0 +1,71 @@
+DDEX\CT\CT_100\CatalogTransferConfirmation\CatalogTransferConfirmationAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\CT\CT_100\MessageHeaderType
+        catalogTransferId:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferId
+                setter: setCatalogTransferId
+            type: DDEX\CT\CT_100\ProprietaryIdType
+        catalogTransferStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferStatus
+                setter: setCatalogTransferStatus
+            type: string
+        confirmedReleaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ConfirmedReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConfirmedReleaseList
+                setter: setConfirmedReleaseList
+            type: DDEX\CT\CT_100\ConfirmedReleaseListType
+        rejectedReleaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectedReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectedReleaseList
+                setter: setRejectedReleaseList
+            type: DDEX\CT\CT_100\RejectedReleaseListType
+        pendingReleaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: PendingReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPendingReleaseList
+                setter: setPendingReleaseList
+            type: DDEX\CT\CT_100\PendingReleaseListType

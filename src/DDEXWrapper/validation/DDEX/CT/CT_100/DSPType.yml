@@ -1,0 +1,8 @@
+DDEX\CT\CT_100\DSPType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

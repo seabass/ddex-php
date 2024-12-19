@@ -1,0 +1,41 @@
+DDEX\CT\CT_100\ConfirmedReleaseListType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        confirmedRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: ConfirmedRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConfirmedRelease
+                setter: setConfirmedRelease
+            xml_list:
+                inline: true
+                entry_name: ConfirmedRelease
+            type: array<DDEX\CT\CT_100\ConfirmedReleaseType>

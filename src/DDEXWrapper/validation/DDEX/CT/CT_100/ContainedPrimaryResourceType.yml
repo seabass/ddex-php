@@ -1,0 +1,12 @@
+DDEX\CT\CT_100\ContainedPrimaryResourceType:
+    properties:
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null

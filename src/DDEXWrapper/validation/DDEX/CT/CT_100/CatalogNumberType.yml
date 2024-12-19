@@ -1,0 +1,7 @@
+DDEX\CT\CT_100\CatalogNumberType:
+    properties:
+        namespace:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

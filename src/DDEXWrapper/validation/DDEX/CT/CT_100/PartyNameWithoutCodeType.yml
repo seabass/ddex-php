@@ -1,0 +1,7 @@
+DDEX\CT\CT_100\PartyNameWithoutCodeType:
+    properties:
+        fullName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

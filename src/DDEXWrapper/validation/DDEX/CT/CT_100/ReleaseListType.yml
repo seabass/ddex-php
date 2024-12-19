@@ -1,0 +1,9 @@
+DDEX\CT\CT_100\ReleaseListType:
+    properties:
+        release:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

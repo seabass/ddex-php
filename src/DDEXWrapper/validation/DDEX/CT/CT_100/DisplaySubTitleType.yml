@@ -1,0 +1,16 @@
+DDEX\CT\CT_100\DisplaySubTitleType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        subTitleType:
+            -
+                Choice:
+                    choices:
+                        - Location
+                        - Version
+                    groups:
+                        - xsd_rules

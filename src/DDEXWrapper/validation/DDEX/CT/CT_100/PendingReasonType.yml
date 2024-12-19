@@ -1,0 +1,11 @@
+DDEX\CT\CT_100\PendingReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - NotYetProcessedByDSP
+                        - NotYetProcessedByRelinquishingRecordCompany
+                        - UserDefined
+                    groups:
+                        - xsd_rules

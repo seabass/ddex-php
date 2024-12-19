@@ -1,0 +1,11 @@
+DDEX\CT\CT_100\VideoDefinitionTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - HighDefinition
+                        - StandardDefinition
+                        - UserDefined
+                    groups:
+                        - xsd_rules

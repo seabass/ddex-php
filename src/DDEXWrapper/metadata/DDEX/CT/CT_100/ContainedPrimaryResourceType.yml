@@ -1,0 +1,38 @@
+DDEX\CT\CT_100\ContainedPrimaryResourceType:
+    properties:
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            type: DDEX\CT\CT_100\ResourceIdType
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\CT\CT_100\DisplayTitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\CT\CT_100\DisplayArtistNameWithDefaultType>

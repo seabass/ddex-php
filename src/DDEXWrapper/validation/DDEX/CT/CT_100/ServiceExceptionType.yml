@@ -1,0 +1,11 @@
+DDEX\CT\CT_100\ServiceExceptionType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        channel:
+            -
+                Valid: null

@@ -1,0 +1,41 @@
+DDEX\CT\CT_100\AcknowledgementMessage\AcknowledgementMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\CT\CT_100\MessageHeaderType
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: FileName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            type: string
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string

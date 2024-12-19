@@ -1,0 +1,12 @@
+DDEX\CT\CT_100\ConfirmedReleaseType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\CT\CT_100\ReleaseIdType

@@ -1,0 +1,37 @@
+DDEX\CT\CT_100\CatalogTransferConfirmation\CatalogTransferConfirmationAnonymousPHPType:
+    properties:
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        catalogTransferId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        catalogTransferStatus:
+            -
+                Choice:
+                    choices:
+                        - Confirmed
+                        - Pending
+                        - Rejected
+                    groups:
+                        - xsd_rules
+        confirmedReleaseList:
+            -
+                Valid: null
+        rejectedReleaseList:
+            -
+                Valid: null
+        pendingReleaseList:
+            -
+                Valid: null

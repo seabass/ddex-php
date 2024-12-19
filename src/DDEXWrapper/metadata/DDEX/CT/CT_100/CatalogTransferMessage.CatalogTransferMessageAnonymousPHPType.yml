@@ -1,0 +1,124 @@
+DDEX\CT\CT_100\CatalogTransferMessage\CatalogTransferMessageAnonymousPHPType:
+    properties:
+        avsVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: AvsVersionId
+            accessor:
+                getter: getAvsVersionId
+                setter: setAvsVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\CT\CT_100\MessageHeaderType
+        catalogTransferId:
+            expose: true
+            access_type: public_method
+            serialized_name: CatalogTransferId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCatalogTransferId
+                setter: setCatalogTransferId
+            type: DDEX\CT\CT_100\ProprietaryIdType
+        relinquishingRecordCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: RelinquishingRecordCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelinquishingRecordCompany
+                setter: setRelinquishingRecordCompany
+            type: DDEX\CT\CT_100\PartyDescriptorType
+        acquiringRecordCompany:
+            expose: true
+            access_type: public_method
+            serialized_name: AcquiringRecordCompany
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAcquiringRecordCompany
+                setter: setAcquiringRecordCompany
+            type: DDEX\CT\CT_100\PartyDescriptorType
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        effectiveTransferDate:
+            expose: true
+            access_type: public_method
+            serialized_name: EffectiveTransferDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEffectiveTransferDate
+                setter: setEffectiveTransferDate
+            type: string
+        releaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseList
+                setter: setReleaseList
+            type: array<DDEX\CT\CT_100\ReleaseType>
+            xml_list:
+                inline: false
+                entry_name: Release
+                skip_when_empty: true
+        dealList:
+            expose: true
+            access_type: public_method
+            serialized_name: DealList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDealList
+                setter: setDealList
+            type: array<DDEX\CT\CT_100\ReleaseDealType>
+            xml_list:
+                inline: false
+                entry_name: ReleaseDeal
+                skip_when_empty: true

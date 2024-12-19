@@ -1,0 +1,22 @@
+DDEX\CT\CT_100\RejectedReleaseType:
+    properties:
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\CT\CT_100\ReleaseIdType
+        rejectionReason:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionReason
+                setter: setRejectionReason
+            type: DDEX\CT\CT_100\RejectionReasonType

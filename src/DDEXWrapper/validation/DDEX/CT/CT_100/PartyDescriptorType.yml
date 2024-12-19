@@ -1,0 +1,8 @@
+DDEX\CT\CT_100\PartyDescriptorType:
+    properties:
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

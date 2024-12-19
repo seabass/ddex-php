@@ -1,0 +1,70 @@
+DDEX\CT\CT_100\ReleaseType:
+    properties:
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        releaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseReference
+                setter: setReleaseReference
+            type: string
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\CT\CT_100\ReleaseIdType
+        displayTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayTitle
+                setter: setDisplayTitle
+            xml_list:
+                inline: true
+                entry_name: DisplayTitle
+            type: array<DDEX\CT\CT_100\DisplayTitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            xml_list:
+                inline: true
+                entry_name: DisplayArtistName
+            type: array<DDEX\CT\CT_100\DisplayArtistNameWithDefaultType>
+        containedPrimaryResource:
+            expose: true
+            access_type: public_method
+            serialized_name: ContainedPrimaryResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContainedPrimaryResource
+                setter: setContainedPrimaryResource
+            xml_list:
+                inline: true
+                entry_name: ContainedPrimaryResource
+            type: array<DDEX\CT\CT_100\ContainedPrimaryResourceType>

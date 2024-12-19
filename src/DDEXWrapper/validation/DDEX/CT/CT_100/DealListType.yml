@@ -1,0 +1,9 @@
+DDEX\CT\CT_100\DealListType:
+    properties:
+        releaseDeal:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

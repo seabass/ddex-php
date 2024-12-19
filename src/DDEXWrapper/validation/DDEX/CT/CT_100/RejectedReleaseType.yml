@@ -1,0 +1,14 @@
+DDEX\CT\CT_100\RejectedReleaseType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rejectionReason:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

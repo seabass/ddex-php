@@ -1,0 +1,25 @@
+DDEX\CT\CT_100\ReleaseType:
+    properties:
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        containedPrimaryResource:
+            -
+                Valid: null
