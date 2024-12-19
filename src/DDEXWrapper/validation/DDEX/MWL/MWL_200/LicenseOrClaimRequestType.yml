@@ -1,0 +1,55 @@
+DDEX\MWL\MWL_200\LicenseOrClaimRequestType:
+    properties:
+        licenseOrClaimRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        requestWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestConditionReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        relatedLicenseOrClaimId:
+            -
+                Valid: null

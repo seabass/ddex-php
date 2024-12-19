@@ -1,0 +1,14 @@
+DDEX\MWL\MWL_200\LicenseOrClaimRevocationItemType:
+    properties:
+        licenseOrClaimId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        revocationDate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,15 @@
+DDEX\MWL\MWL_212\LicenseOrClaimListType:
+    properties:
+        licenseOrClaim:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaim
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaim
+                setter: setLicenseOrClaim
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaim
+            type: array<DDEX\MWL\MWL_212\LicenseOrClaimType>

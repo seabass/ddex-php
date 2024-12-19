@@ -1,0 +1,100 @@
+DDEX\MWL\MWL_200\LicenseOrClaimRequestType:
+    properties:
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            type: DDEX\ddexC\ProprietaryIdType
+        requestWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestWorkReference
+                setter: setRequestWorkReference
+            xml_list:
+                inline: true
+                entry_name: RequestWorkReference
+            type: array<string>
+        requestResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestResourceReference
+                setter: setRequestResourceReference
+            xml_list:
+                inline: true
+                entry_name: RequestResourceReference
+            type: array<string>
+        requestReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestReleaseReference
+                setter: setRequestReleaseReference
+            xml_list:
+                inline: true
+                entry_name: RequestReleaseReference
+            type: array<string>
+        requestRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestRightShareReference
+                setter: setRequestRightShareReference
+            xml_list:
+                inline: true
+                entry_name: RequestRightShareReference
+            type: array<string>
+        requestConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RequestConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequestConditionReference
+                setter: setRequestConditionReference
+            xml_list:
+                inline: true
+                entry_name: RequestConditionReference
+            type: array<string>
+        timeFrame:
+            expose: true
+            access_type: public_method
+            serialized_name: TimeFrame
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTimeFrame
+                setter: setTimeFrame
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\Date
+        relatedLicenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedLicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedLicenseOrClaimId
+                setter: setRelatedLicenseOrClaimId
+            xml_list:
+                inline: true
+                entry_name: RelatedLicenseOrClaimId
+            type: array<DDEX\ddexC\RightsAgreementIdType>

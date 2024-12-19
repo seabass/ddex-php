@@ -1,0 +1,26 @@
+DDEX\MWL\MWL_211\RateValidityType:
+    properties:
+        maximumNumberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        minimumNumberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        maxNumberOfRoyaltyPaidResources:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        minNumberOfRoyaltyPaidResources:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

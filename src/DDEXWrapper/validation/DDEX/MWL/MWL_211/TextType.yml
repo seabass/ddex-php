@@ -1,0 +1,48 @@
+DDEX\MWL\MWL_211\TextType:
+    properties:
+        textId:
+            -
+                Valid: null
+        indirectTextId:
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceMusicalWorkReferenceList:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        textDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        musicalWorkRightsClaimType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - CopyrightControl
+                                    - NonMemberClaim
+                                    - PublicDomain
+                                    - SocietyClaim
+                                    - Unknown
+                    groups:
+                        - xsd_rules

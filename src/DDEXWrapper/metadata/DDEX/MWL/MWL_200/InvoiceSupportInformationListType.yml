@@ -1,0 +1,37 @@
+DDEX\MWL\MWL_200\InvoiceSupportInformationListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        invoiceSupportInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceSupportInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceSupportInformation
+                setter: setInvoiceSupportInformation
+            xml_list:
+                inline: true
+                entry_name: InvoiceSupportInformation
+            type: array<DDEX\MWL\MWL_200\InvoiceSupportInformationType>
+        totalRoyaltyAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: TotalRoyaltyAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTotalRoyaltyAmount
+                setter: setTotalRoyaltyAmount
+            xml_list:
+                inline: true
+                entry_name: TotalRoyaltyAmount
+            type: array<DDEX\ddexC\TotalRoyaltyAmountType>

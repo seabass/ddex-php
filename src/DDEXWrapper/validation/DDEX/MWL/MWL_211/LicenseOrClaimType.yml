@@ -1,0 +1,72 @@
+DDEX\MWL\MWL_211\LicenseOrClaimType:
+    properties:
+        relatedLicenseOrClaimId:
+            -
+                Valid: null
+        licenseOrClaimId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        licenseOrClaimReference:
+            -
+                Regex:
+                    pattern: '~L[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        musicalWorkId:
+            -
+                Valid: null
+        licenseOrClaimResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                Valid: null
+        licenseOrClaimReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                Valid: null
+        licenseOrClaimRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimReferenceToLicenseOrClaimCondition:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

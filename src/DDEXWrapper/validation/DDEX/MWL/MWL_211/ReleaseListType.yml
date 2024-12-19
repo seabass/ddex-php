@@ -1,0 +1,9 @@
+DDEX\MWL\MWL_211\ReleaseListType:
+    properties:
+        release:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,24 @@
+DDEX\MWL\MWL_212\LicenseOrClaimConditionListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        licenseOrClaimCondition:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimCondition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimCondition
+                setter: setLicenseOrClaimCondition
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimCondition
+            type: array<DDEX\MWL\MWL_212\LicenseOrClaimConditionType>

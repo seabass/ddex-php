@@ -1,0 +1,178 @@
+DDEX\MWL\MWL_211\RefusedLicenseOrClaimType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        relatedLicenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedLicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedLicenseOrClaimId
+                setter: setRelatedLicenseOrClaimId
+            xml_list:
+                inline: true
+                entry_name: RelatedLicenseOrClaimId
+            type: array<DDEX\ddexC\RelatedLicenseOrClaimIdType>
+        licenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimId
+                setter: setLicenseOrClaimId
+            type: DDEX\ddexC\RightsAgreementIdType
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequestId
+            type: array<DDEX\ddexC\ProprietaryIdType>
+        refusalWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusalWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusalWorkReference
+                setter: setRefusalWorkReference
+            xml_list:
+                inline: true
+                entry_name: RefusalWorkReference
+            type: array<string>
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkId
+            type: array<DDEX\ddexC\MusicalWorkIdType>
+        refusalResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusalResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusalResourceReference
+                setter: setRefusalResourceReference
+            xml_list:
+                inline: true
+                entry_name: RefusalResourceReference
+            type: array<string>
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\ddexC\ResourceIdType>
+        refusalReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusalReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusalReleaseReference
+                setter: setRefusalReleaseReference
+            xml_list:
+                inline: true
+                entry_name: RefusalReleaseReference
+            type: array<string>
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ddexC\ReleaseIdType>
+        refusalRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusalRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusalRightShareReference
+                setter: setRefusalRightShareReference
+            xml_list:
+                inline: true
+                entry_name: RefusalRightShareReference
+            type: array<string>
+        refusalConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusalConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusalConditionReference
+                setter: setRefusalConditionReference
+            xml_list:
+                inline: true
+                entry_name: RefusalConditionReference
+            type: array<string>
+        reason:
+            expose: true
+            access_type: public_method
+            serialized_name: Reason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReason
+                setter: setReason
+            type: DDEX\ddexC\LicenseOrClaimRefusalReasonType

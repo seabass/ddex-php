@@ -1,0 +1,42 @@
+DDEX\MWL\MWL_212\RoyaltyRateType:
+    properties:
+        royaltyCode:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyCode
+                setter: setRoyaltyCode
+            type: DDEX\ddexC\RoyaltyCodeType
+        royaltyAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmount
+                setter: setRoyaltyAmount
+            type: DDEX\ddexC\RoyaltyAmountType
+        royaltyRateCalculationType:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRateCalculationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRateCalculationType
+                setter: setRoyaltyRateCalculationType
+            type: string
+        royaltyRateType:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRateType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRateType
+                setter: setRoyaltyRateType
+            type: string

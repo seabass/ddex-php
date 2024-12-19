@@ -1,0 +1,71 @@
+DDEX\MWL\MWL_200\RefusedLicenseOrClaimType:
+    properties:
+        relatedLicenseOrClaimId:
+            -
+                Valid: null
+        licenseOrClaimId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        refusalWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        musicalWorkId:
+            -
+                Valid: null
+        refusalResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                Valid: null
+        refusalReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                Valid: null
+        refusalRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        refusalConditionReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        reason:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

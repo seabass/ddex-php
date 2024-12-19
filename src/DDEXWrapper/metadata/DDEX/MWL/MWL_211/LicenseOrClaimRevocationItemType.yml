@@ -1,0 +1,32 @@
+DDEX\MWL\MWL_211\LicenseOrClaimRevocationItemType:
+    properties:
+        licenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimId
+                setter: setLicenseOrClaimId
+            type: DDEX\ddexC\RightsAgreementIdType
+        revocationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: RevocationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRevocationDate
+                setter: setRevocationDate
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime
+        reason:
+            expose: true
+            access_type: public_method
+            serialized_name: Reason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReason
+                setter: setReason
+            type: DDEX\ddexC\LicenseOrClaimRefusalReasonType

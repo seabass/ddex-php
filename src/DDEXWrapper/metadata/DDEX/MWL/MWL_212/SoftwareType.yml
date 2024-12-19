@@ -1,0 +1,153 @@
+DDEX\MWL\MWL_212\SoftwareType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        softwareType:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareType
+                setter: setSoftwareType
+            type: DDEX\ddexC\SoftwareTypeType
+        isArtistRelated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsArtistRelated
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsArtistRelated
+                setter: setIsArtistRelated
+            type: bool
+        softwareId:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareId
+                setter: setSoftwareId
+            xml_list:
+                inline: true
+                entry_name: SoftwareId
+            type: array<DDEX\ddexC\SoftwareIdType>
+        indirectSoftwareId:
+            expose: true
+            access_type: public_method
+            serialized_name: IndirectSoftwareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIndirectSoftwareId
+                setter: setIndirectSoftwareId
+            xml_list:
+                inline: true
+                entry_name: IndirectSoftwareId
+            type: array<DDEX\ddexC\MusicalWorkIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\ddexC\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        resourceContainedResourceReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceContainedResourceReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceContainedResourceReferenceList
+                setter: setResourceContainedResourceReferenceList
+            type: array<DDEX\ddexC\ResourceContainedResourceReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceContainedResourceReference
+                skip_when_empty: true
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\ddexC\TitleType>
+        creationDate:
+            expose: true
+            access_type: public_method
+            serialized_name: CreationDate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCreationDate
+                setter: setCreationDate
+            type: DDEX\ddexC\EventDateType
+        softwareDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: SoftwareDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftwareDetailsByTerritory
+                setter: setSoftwareDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: SoftwareDetailsByTerritory
+            type: array<DDEX\ddexC\SoftwareDetailsByTerritoryType>
+        musicalWorkRightsClaimType:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkRightsClaimType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkRightsClaimType
+                setter: setMusicalWorkRightsClaimType
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkRightsClaimType
+            type: array<string>

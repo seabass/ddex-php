@@ -1,0 +1,52 @@
+DDEX\MWL\MWL_200\SoftwareType:
+    properties:
+        softwareId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        indirectSoftwareId:
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        resourceMusicalWorkReferenceList:
+            -
+                Valid: null
+        resourceContainedResourceReferenceList:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        softwareDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        musicalWorkRightsClaimType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - CopyrightControl
+                                    - NonMemberClaim
+                                    - PublicDomain
+                                    - SocietyClaim
+                                    - Unknown
+                    groups:
+                        - xsd_rules

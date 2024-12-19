@@ -1,0 +1,21 @@
+DDEX\MWL\MWL_211\LicenseOrClaimRevocationMessage\LicenseOrClaimRevocationMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        licenseOrClaimRevocationItem:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

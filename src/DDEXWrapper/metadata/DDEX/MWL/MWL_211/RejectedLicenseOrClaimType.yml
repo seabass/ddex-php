@@ -1,0 +1,110 @@
+DDEX\MWL\MWL_211\RejectedLicenseOrClaimType:
+    properties:
+        licenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimId
+                setter: setLicenseOrClaimId
+            type: DDEX\ddexC\RightsAgreementIdType
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequestId
+            type: array<DDEX\ddexC\ProprietaryIdType>
+        rejectionWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionWorkReference
+                setter: setRejectionWorkReference
+            xml_list:
+                inline: true
+                entry_name: RejectionWorkReference
+            type: array<string>
+        rejectionResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionResourceReference
+                setter: setRejectionResourceReference
+            xml_list:
+                inline: true
+                entry_name: RejectionResourceReference
+            type: array<string>
+        rejectionReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionReleaseReference
+                setter: setRejectionReleaseReference
+            xml_list:
+                inline: true
+                entry_name: RejectionReleaseReference
+            type: array<string>
+        rejectionRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionRightShareReference
+                setter: setRejectionRightShareReference
+            xml_list:
+                inline: true
+                entry_name: RejectionRightShareReference
+            type: array<string>
+        rejectionConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectionConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectionConditionReference
+                setter: setRejectionConditionReference
+            xml_list:
+                inline: true
+                entry_name: RejectionConditionReference
+            type: array<string>
+        licenseRejectionReason:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRejectionReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRejectionReason
+                setter: setLicenseRejectionReason
+            type: DDEX\ddexC\LicenseRejectionReasonType
+        isPublicDomainWork:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPublicDomainWork
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPublicDomainWork
+                setter: setIsPublicDomainWork
+            type: bool

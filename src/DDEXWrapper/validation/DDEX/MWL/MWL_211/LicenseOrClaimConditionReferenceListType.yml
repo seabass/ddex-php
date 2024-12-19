@@ -1,0 +1,38 @@
+DDEX\MWL\MWL_211\LicenseOrClaimConditionReferenceListType:
+    properties:
+        licenseOrClaimConditionReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimConditionResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimConditionWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimConditionRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

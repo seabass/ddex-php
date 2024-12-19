@@ -1,0 +1,56 @@
+DDEX\MWL\MWL_200\MusicalWorkType:
+    properties:
+        musicalWorkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        musicalWorkReference:
+            -
+                Regex:
+                    pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        workRightShareReferenceList:
+            -
+                Valid: null
+        musicalWorkContributor:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        musicalWorkRightsClaimType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - CopyrightControl
+                                    - NonMemberClaim
+                                    - PublicDomain
+                                    - SocietyClaim
+                                    - Unknown
+                    groups:
+                        - xsd_rules
+        musicalWorkDetailsByTerritory:
+            -
+                Valid: null

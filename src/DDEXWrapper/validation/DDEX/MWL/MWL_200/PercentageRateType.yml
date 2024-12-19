@@ -1,0 +1,18 @@
+DDEX\MWL\MWL_200\PercentageRateType:
+    properties:
+        percentageType:
+            -
+                Choice:
+                    choices:
+                        - PercentageOfFreeGoodsPermitted
+                        - PercentageOfGrossRevenue
+                        - PercentageOfNetRevenue
+                        - PercentageOfNetSales
+                        - PercentageOfPriceConsumerPaid
+                        - PercentageOfStatutoryRoyaltyRate
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

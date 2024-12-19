@@ -1,0 +1,24 @@
+DDEX\MWL\MWL_212\RightShareListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        rightShare:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShare
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShare
+                setter: setRightShare
+            xml_list:
+                inline: true
+                entry_name: RightShare
+            type: array<DDEX\MWL\MWL_212\RightShareType>

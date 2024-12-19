@@ -1,0 +1,15 @@
+DDEX\MWL\MWL_212\WorkRightShareReferenceListType:
+    properties:
+        workRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkRightShareReference
+                setter: setWorkRightShareReference
+            xml_list:
+                inline: true
+                entry_name: WorkRightShareReference
+            type: array<string>

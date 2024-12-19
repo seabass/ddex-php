@@ -1,0 +1,15 @@
+DDEX\MWL\MWL_200\LicenseOrClaimRequestListType:
+    properties:
+        licenseOrClaimRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequest
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequest
+                setter: setLicenseOrClaimRequest
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequest
+            type: array<DDEX\MWL\MWL_200\LicenseOrClaimRequestType>

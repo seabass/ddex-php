@@ -1,0 +1,9 @@
+DDEX\MWL\MWL_212\RightShareListType:
+    properties:
+        rightShare:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,9 @@
+DDEX\MWL\MWL_200\LicenseOrClaimListType:
+    properties:
+        licenseOrClaim:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

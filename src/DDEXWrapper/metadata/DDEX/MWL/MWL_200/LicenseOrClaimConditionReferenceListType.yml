@@ -1,0 +1,54 @@
+DDEX\MWL\MWL_200\LicenseOrClaimConditionReferenceListType:
+    properties:
+        licenseOrClaimConditionReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionReleaseReference
+                setter: setLicenseOrClaimConditionReleaseReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimConditionReleaseReference
+            type: array<string>
+        licenseOrClaimConditionResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionResourceReference
+                setter: setLicenseOrClaimConditionResourceReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimConditionResourceReference
+            type: array<string>
+        licenseOrClaimConditionWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionWorkReference
+                setter: setLicenseOrClaimConditionWorkReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimConditionWorkReference
+            type: array<string>
+        licenseOrClaimConditionRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionRightShareReference
+                setter: setLicenseOrClaimConditionRightShareReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimConditionRightShareReference
+            type: array<string>

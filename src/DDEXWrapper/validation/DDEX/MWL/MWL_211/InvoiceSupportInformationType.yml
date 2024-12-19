@@ -1,0 +1,51 @@
+DDEX\MWL\MWL_211\InvoiceSupportInformationType:
+    properties:
+        invoiceSupportInformationLicenseOrClaimReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~L[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseOrClaimId:
+            -
+                Valid: null
+        invoicePeriod:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        numberOfUsages:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseUsagePrice:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        appliedRoyaltyRate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        calculatedRoyaltyAmountPerUse:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        calculatedRoyaltyAmountPerInvoice:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

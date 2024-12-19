@@ -1,0 +1,35 @@
+DDEX\MWL\MWL_212\LicensingProcessStatusItemType:
+    properties:
+        licensingProcessStatusId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicensingProcessStatusId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicensingProcessStatusId
+                setter: setLicensingProcessStatusId
+            type: DDEX\ddexC\ProprietaryIdType
+        licensingProcessStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: LicensingProcessStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicensingProcessStatus
+                setter: setLicensingProcessStatus
+            type: string
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequestId
+            type: array<DDEX\ddexC\ProprietaryIdType>

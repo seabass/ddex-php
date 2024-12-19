@@ -1,0 +1,25 @@
+DDEX\MWL\MWL_211\ControlledCompositionClauseType:
+    properties:
+        eventId:
+            expose: true
+            access_type: public_method
+            serialized_name: EventId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEventId
+                setter: setEventId
+            type: string
+        rateModificationType:
+            expose: true
+            access_type: public_method
+            serialized_name: RateModificationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRateModificationType
+                setter: setRateModificationType
+            xml_list:
+                inline: true
+                entry_name: RateModificationType
+            type: array<string>

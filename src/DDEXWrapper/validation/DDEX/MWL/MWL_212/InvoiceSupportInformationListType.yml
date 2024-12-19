@@ -1,0 +1,12 @@
+DDEX\MWL\MWL_212\InvoiceSupportInformationListType:
+    properties:
+        invoiceSupportInformation:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        totalRoyaltyAmount:
+            -
+                Valid: null

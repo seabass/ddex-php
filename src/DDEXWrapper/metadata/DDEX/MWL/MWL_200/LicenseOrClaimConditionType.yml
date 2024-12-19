@@ -1,0 +1,275 @@
+DDEX\MWL\MWL_200\LicenseOrClaimConditionType:
+    properties:
+        isUpdated:
+            expose: true
+            access_type: public_method
+            serialized_name: IsUpdated
+            accessor:
+                getter: getIsUpdated
+                setter: setIsUpdated
+            xml_attribute: true
+            type: bool
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        licenseOrClaimConditionReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionReference
+                setter: setLicenseOrClaimConditionReference
+            type: string
+        usage:
+            expose: true
+            access_type: public_method
+            serialized_name: Usage
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUsage
+                setter: setUsage
+            xml_list:
+                inline: true
+                entry_name: Usage
+            type: array<DDEX\ddexC\UsageType>
+        royaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyRate
+                setter: setRoyaltyRate
+            xml_list:
+                inline: true
+                entry_name: RoyaltyRate
+            type: array<DDEX\MWL\MWL_200\RoyaltyRateType>
+        percentageRate:
+            expose: true
+            access_type: public_method
+            serialized_name: PercentageRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPercentageRate
+                setter: setPercentageRate
+            xml_list:
+                inline: true
+                entry_name: PercentageRate
+            type: array<DDEX\MWL\MWL_200\PercentageRateType>
+        advanceAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: AdvanceAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdvanceAmount
+                setter: setAdvanceAmount
+            type: DDEX\ddexC\RoyaltyAmountType
+        guaranteedAmount:
+            expose: true
+            access_type: public_method
+            serialized_name: GuaranteedAmount
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getGuaranteedAmount
+                setter: setGuaranteedAmount
+            type: DDEX\ddexC\GuaranteedAmountType
+        minimumFeePerUse:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumFeePerUse
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumFeePerUse
+                setter: setMinimumFeePerUse
+            type: float
+        isPdArrangement:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPdArrangement
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPdArrangement
+                setter: setIsPdArrangement
+            type: bool
+        isControlledCompositionClause:
+            expose: true
+            access_type: public_method
+            serialized_name: IsControlledCompositionClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsControlledCompositionClause
+                setter: setIsControlledCompositionClause
+            type: bool
+        controlledCompositionClause:
+            expose: true
+            access_type: public_method
+            serialized_name: ControlledCompositionClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getControlledCompositionClause
+                setter: setControlledCompositionClause
+            type: DDEX\MWL\MWL_200\ControlledCompositionClauseType
+        isPerUseRoyaltyPayment:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPerUseRoyaltyPayment
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPerUseRoyaltyPayment
+                setter: setIsPerUseRoyaltyPayment
+            type: bool
+        isFavoredNationClause:
+            expose: true
+            access_type: public_method
+            serialized_name: IsFavoredNationClause
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsFavoredNationClause
+                setter: setIsFavoredNationClause
+            type: bool
+        isApplicableToPredominantlyMusicReleasesOnly:
+            expose: true
+            access_type: public_method
+            serialized_name: IsApplicableToPredominantlyMusicReleasesOnly
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsApplicableToPredominantlyMusicReleasesOnly
+                setter: setIsApplicableToPredominantlyMusicReleasesOnly
+            type: bool
+        taxRate:
+            expose: true
+            access_type: public_method
+            serialized_name: TaxRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTaxRate
+                setter: setTaxRate
+            type: DDEX\ddexC\TaxRateType
+        calculationType:
+            expose: true
+            access_type: public_method
+            serialized_name: CalculationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCalculationType
+                setter: setCalculationType
+            xml_list:
+                inline: true
+                entry_name: CalculationType
+            type: array<DDEX\ddexC\CalculationTypeType>
+        documentationReference:
+            expose: true
+            access_type: public_method
+            serialized_name: DocumentationReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDocumentationReference
+                setter: setDocumentationReference
+            xml_list:
+                inline: true
+                entry_name: DocumentationReference
+            type: array<DDEX\ddexC\AdditionalInformationType>
+        rateValidity:
+            expose: true
+            access_type: public_method
+            serialized_name: RateValidity
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRateValidity
+                setter: setRateValidity
+            type: DDEX\MWL\MWL_200\RateValidityType
+        tariffReference:
+            expose: true
+            access_type: public_method
+            serialized_name: TariffReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTariffReference
+                setter: setTariffReference
+            type: DDEX\ddexC\TariffReferenceType
+        priceInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: PriceInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPriceInformation
+                setter: setPriceInformation
+            type: DDEX\ddexC\PriceInformationType
+        isPromotional:
+            expose: true
+            access_type: public_method
+            serialized_name: IsPromotional
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsPromotional
+                setter: setIsPromotional
+            type: bool
+        promotionalCode:
+            expose: true
+            access_type: public_method
+            serialized_name: PromotionalCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPromotionalCode
+                setter: setPromotionalCode
+            type: DDEX\ddexC\PromotionalCodeType
+        additionalInformation:
+            expose: true
+            access_type: public_method
+            serialized_name: AdditionalInformation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdditionalInformation
+                setter: setAdditionalInformation
+            type: DDEX\ddexC\AdditionalInformationType
+        technicalInstantiation:
+            expose: true
+            access_type: public_method
+            serialized_name: TechnicalInstantiation
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTechnicalInstantiation
+                setter: setTechnicalInstantiation
+            type: DDEX\ddexC\TechnicalInstantiationType
+        licenseOrClaimConditionReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionReferenceList
+                setter: setLicenseOrClaimConditionReferenceList
+            type: DDEX\MWL\MWL_200\LicenseOrClaimConditionReferenceListType

@@ -1,0 +1,20 @@
+DDEX\MWL\MWL_200\LicensingProcessStatusItemType:
+    properties:
+        licensingProcessStatusId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        licensingProcessStatus:
+            -
+                Choice:
+                    choices:
+                        - Pending
+                        - Processed
+                        - ThirdPartyInformationRequested
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

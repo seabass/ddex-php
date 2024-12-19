@@ -1,0 +1,19 @@
+DDEX\MWL\MWL_200\LicensingProcessStatusRequestMessage\LicensingProcessStatusRequestMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        licenseOrClaimRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

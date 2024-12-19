@@ -1,0 +1,31 @@
+DDEX\MWL\MWL_211\LicensingInformationRequestItemType:
+    properties:
+        informationRequestItemId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        licenseOrClaimRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        musicalWorkId:
+            -
+                Valid: null
+        resourceId:
+            -
+                Valid: null
+        releaseId:
+            -
+                Valid: null
+        informationRequested:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        reasonForInformationRequest:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

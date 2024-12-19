@@ -1,0 +1,170 @@
+DDEX\MWL\MWL_212\LicenseOrClaimMessage\LicenseOrClaimMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageSchemaVersionId
+            accessor:
+                getter: getMessageSchemaVersionId
+                setter: setMessageSchemaVersionId
+            xml_attribute: true
+            type: string
+        businessProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: BusinessProfileVersionId
+            accessor:
+                getter: getBusinessProfileVersionId
+                setter: setBusinessProfileVersionId
+            xml_attribute: true
+            type: string
+        releaseProfileVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseProfileVersionId
+            accessor:
+                getter: getReleaseProfileVersionId
+                setter: setReleaseProfileVersionId
+            xml_attribute: true
+            type: string
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\ddexC\MessageHeaderType
+        updateIndicator:
+            expose: true
+            access_type: public_method
+            serialized_name: UpdateIndicator
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUpdateIndicator
+                setter: setUpdateIndicator
+            type: string
+        licenseOrClaimList:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimList
+                setter: setLicenseOrClaimList
+            type: array<DDEX\MWL\MWL_212\LicenseOrClaimType>
+            xml_list:
+                inline: false
+                entry_name: LicenseOrClaim
+                skip_when_empty: true
+        refusedLicenseOrClaimList:
+            expose: true
+            access_type: public_method
+            serialized_name: RefusedLicenseOrClaimList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRefusedLicenseOrClaimList
+                setter: setRefusedLicenseOrClaimList
+            type: array<DDEX\MWL\MWL_212\RefusedLicenseOrClaimType>
+            xml_list:
+                inline: false
+                entry_name: RefusedLicenseOrClaim
+                skip_when_empty: true
+        workList:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkList
+                setter: setWorkList
+            type: DDEX\MWL\MWL_212\WorkListType
+        cueSheetList:
+            expose: true
+            access_type: public_method
+            serialized_name: CueSheetList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCueSheetList
+                setter: setCueSheetList
+            type: array<DDEX\ddexC\CueSheetType>
+            xml_list:
+                inline: false
+                entry_name: CueSheet
+                skip_when_empty: true
+        resourceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceList
+                setter: setResourceList
+            type: DDEX\MWL\MWL_212\ResourceListType
+        collectionList:
+            expose: true
+            access_type: public_method
+            serialized_name: CollectionList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCollectionList
+                setter: setCollectionList
+            type: DDEX\ddexC\CollectionListType
+        releaseList:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseList
+                setter: setReleaseList
+            type: DDEX\MWL\MWL_212\ReleaseListType
+        rightShareList:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareList
+                setter: setRightShareList
+            type: DDEX\MWL\MWL_212\RightShareListType
+        licenseOrClaimConditionList:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimConditionList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimConditionList
+                setter: setLicenseOrClaimConditionList
+            type: DDEX\MWL\MWL_212\LicenseOrClaimConditionListType
+        invoiceSupportInformationList:
+            expose: true
+            access_type: public_method
+            serialized_name: InvoiceSupportInformationList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInvoiceSupportInformationList
+                setter: setInvoiceSupportInformationList
+            type: DDEX\MWL\MWL_212\InvoiceSupportInformationListType

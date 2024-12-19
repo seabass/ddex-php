@@ -1,0 +1,62 @@
+DDEX\MWL\MWL_212\ReleaseType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseResourceReferenceList:
+            -
+                Valid: null
+        releaseCollectionReferenceList:
+            -
+                Valid: null
+        releaseDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        musicalWorkRightsClaimType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - CopyrightControl
+                                    - NonMemberClaim
+                                    - PublicDomain
+                                    - SocietyClaim
+                                    - Unknown
+                    groups:
+                        - xsd_rules

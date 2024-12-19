@@ -1,0 +1,115 @@
+DDEX\MWL\MWL_212\ResourceListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        soundRecording:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecording
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecording
+                setter: setSoundRecording
+            xml_list:
+                inline: true
+                entry_name: SoundRecording
+            type: array<DDEX\MWL\MWL_212\SoundRecordingType>
+        mIDI:
+            expose: true
+            access_type: public_method
+            serialized_name: MIDI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMIDI
+                setter: setMIDI
+            xml_list:
+                inline: true
+                entry_name: MIDI
+            type: array<DDEX\MWL\MWL_212\MIDIType>
+        video:
+            expose: true
+            access_type: public_method
+            serialized_name: Video
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideo
+                setter: setVideo
+            xml_list:
+                inline: true
+                entry_name: Video
+            type: array<DDEX\MWL\MWL_212\VideoType>
+        image:
+            expose: true
+            access_type: public_method
+            serialized_name: Image
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImage
+                setter: setImage
+            xml_list:
+                inline: true
+                entry_name: Image
+            type: array<DDEX\MWL\MWL_212\ImageType>
+        text:
+            expose: true
+            access_type: public_method
+            serialized_name: Text
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getText
+                setter: setText
+            xml_list:
+                inline: true
+                entry_name: Text
+            type: array<DDEX\MWL\MWL_212\TextType>
+        sheetMusic:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusic
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusic
+                setter: setSheetMusic
+            xml_list:
+                inline: true
+                entry_name: SheetMusic
+            type: array<DDEX\MWL\MWL_212\SheetMusicType>
+        software:
+            expose: true
+            access_type: public_method
+            serialized_name: Software
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoftware
+                setter: setSoftware
+            xml_list:
+                inline: true
+                entry_name: Software
+            type: array<DDEX\MWL\MWL_212\SoftwareType>
+        userDefinedResource:
+            expose: true
+            access_type: public_method
+            serialized_name: UserDefinedResource
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUserDefinedResource
+                setter: setUserDefinedResource
+            xml_list:
+                inline: true
+                entry_name: UserDefinedResource
+            type: array<DDEX\MWL\MWL_212\UserDefinedResourceType>

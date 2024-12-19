@@ -1,0 +1,20 @@
+DDEX\MWL\MWL_200\ControlledCompositionClauseType:
+    properties:
+        eventId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rateModificationType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - MultipleDiscProvision
+                                    - OtherProvision
+                                    - SalesVolumeProvision
+                                    - VideoProvision
+                    groups:
+                        - xsd_rules

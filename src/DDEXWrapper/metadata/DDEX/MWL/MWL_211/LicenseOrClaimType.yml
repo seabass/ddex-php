@@ -1,0 +1,178 @@
+DDEX\MWL\MWL_211\LicenseOrClaimType:
+    properties:
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: TerritoryCode
+            type: array<string>
+        excludedTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ExcludedTerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getExcludedTerritoryCode
+                setter: setExcludedTerritoryCode
+            xml_list:
+                inline: true
+                entry_name: ExcludedTerritoryCode
+            type: array<string>
+        relatedLicenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: RelatedLicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRelatedLicenseOrClaimId
+                setter: setRelatedLicenseOrClaimId
+            xml_list:
+                inline: true
+                entry_name: RelatedLicenseOrClaimId
+            type: array<DDEX\ddexC\RelatedLicenseOrClaimIdType>
+        licenseOrClaimId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimId
+                setter: setLicenseOrClaimId
+            type: DDEX\ddexC\RightsAgreementIdType
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequestId
+            type: array<DDEX\ddexC\ProprietaryIdType>
+        licenseOrClaimReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimReference
+                setter: setLicenseOrClaimReference
+            type: string
+        licenseOrClaimWorkReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimWorkReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimWorkReference
+                setter: setLicenseOrClaimWorkReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimWorkReference
+            type: array<string>
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkId
+            type: array<DDEX\ddexC\MusicalWorkIdType>
+        licenseOrClaimResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimResourceReference
+                setter: setLicenseOrClaimResourceReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimResourceReference
+            type: array<string>
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\ddexC\ResourceIdType>
+        licenseOrClaimReleaseReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimReleaseReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimReleaseReference
+                setter: setLicenseOrClaimReleaseReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimReleaseReference
+            type: array<string>
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ddexC\ReleaseIdType>
+        licenseOrClaimRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRightShareReference
+                setter: setLicenseOrClaimRightShareReference
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRightShareReference
+            type: array<string>
+        licenseOrClaimReferenceToLicenseOrClaimCondition:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimReferenceToLicenseOrClaimCondition
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimReferenceToLicenseOrClaimCondition
+                setter: setLicenseOrClaimReferenceToLicenseOrClaimCondition
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimReferenceToLicenseOrClaimCondition
+            type: array<string>

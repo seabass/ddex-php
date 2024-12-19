@@ -1,0 +1,36 @@
+DDEX\MWL\MWL_211\LicenseOrClaimConditionType:
+    properties:
+        licenseOrClaimConditionReference:
+            -
+                Regex:
+                    pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        usage:
+            -
+                Valid: null
+        royaltyRate:
+            -
+                Valid: null
+        controlledCompositionClause:
+            -
+                Valid: null
+        taxRate:
+            -
+                Valid: null
+        rateValidity:
+            -
+                Valid: null
+        priceInformation:
+            -
+                Valid: null
+        technicalInstantiation:
+            -
+                Valid: null
+        licenseOrClaimConditionReferenceList:
+            -
+                Valid: null

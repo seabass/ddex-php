@@ -1,0 +1,106 @@
+DDEX\MWL\MWL_200\LicensingInformationRequestItemType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        informationRequestItemId:
+            expose: true
+            access_type: public_method
+            serialized_name: InformationRequestItemId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInformationRequestItemId
+                setter: setInformationRequestItemId
+            type: DDEX\ddexC\ProprietaryIdType
+        licenseOrClaimRequestId:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseOrClaimRequestId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseOrClaimRequestId
+                setter: setLicenseOrClaimRequestId
+            xml_list:
+                inline: true
+                entry_name: LicenseOrClaimRequestId
+            type: array<DDEX\ddexC\ProprietaryIdType>
+        rightShareId:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareId
+                setter: setRightShareId
+            xml_list:
+                inline: true
+                entry_name: RightShareId
+            type: array<DDEX\ddexC\ProprietaryIdType>
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkId
+            type: array<DDEX\ddexC\MusicalWorkIdType>
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\ddexC\ResourceIdType>
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            xml_list:
+                inline: true
+                entry_name: ReleaseId
+            type: array<DDEX\ddexC\ReleaseIdType>
+        informationRequested:
+            expose: true
+            access_type: public_method
+            serialized_name: InformationRequested
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInformationRequested
+                setter: setInformationRequested
+            type: DDEX\ddexC\AnnotationType
+        reasonForInformationRequest:
+            expose: true
+            access_type: public_method
+            serialized_name: ReasonForInformationRequest
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReasonForInformationRequest
+                setter: setReasonForInformationRequest
+            type: DDEX\ddexC\ReasonType

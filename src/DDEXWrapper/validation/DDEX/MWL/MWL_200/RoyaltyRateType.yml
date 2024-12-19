@@ -1,0 +1,25 @@
+DDEX\MWL\MWL_200\RoyaltyRateType:
+    properties:
+        royaltyRateCalculationType:
+            -
+                Choice:
+                    choices:
+                        - BudgetRoyaltyRate
+                        - ControlledCompositionRoyaltyRate
+                        - ControlledShareRoyaltyRate
+                        - MinimumStatutoryRoyaltyRate
+                        - NegotiatedRoyaltyRate
+                        - ReducedRoyaltyRate
+                        - ReducedStatutoryRoyaltyRate
+                        - StatutoryRoyaltyRate
+                    groups:
+                        - xsd_rules
+        royaltyRateType:
+            -
+                Choice:
+                    choices:
+                        - PennyRate
+                        - PercentageRoyaltyRate
+                        - UserDefined
+                    groups:
+                        - xsd_rules

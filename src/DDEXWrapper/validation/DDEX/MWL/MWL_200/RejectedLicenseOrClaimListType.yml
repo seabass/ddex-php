@@ -1,0 +1,9 @@
+DDEX\MWL\MWL_200\RejectedLicenseOrClaimListType:
+    properties:
+        rejectedLicenseOrClaim:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

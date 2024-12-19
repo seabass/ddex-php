@@ -1,0 +1,48 @@
+DDEX\MWL\MWL_212\ControlledCompositionClauseType:
+    properties:
+        eventId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        rateModificationType:
+            -
+                All:
+                    constraints:
+                        -
+                            Choice:
+                                choices:
+                                    - MultipleDiscProvision
+                                    - OtherProvision
+                                    - SalesVolumeProvision
+                                    - VideoProvision
+                    groups:
+                        - xsd_rules
+        nonControlledWorkBaseRate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        workMinimumRate:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        maximumNumberOfRoyaltyPaidTracks:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        minimumNumberOfRoyaltyPaidTracks:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        maximumNumberOfNonCCTracks:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

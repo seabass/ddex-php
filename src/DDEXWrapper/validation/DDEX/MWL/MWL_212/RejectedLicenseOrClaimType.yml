@@ -1,0 +1,59 @@
+DDEX\MWL\MWL_212\RejectedLicenseOrClaimType:
+    properties:
+        licenseOrClaimId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rejectionWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rejectionResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rejectionReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rejectionRightShareReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        rejectionConditionReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~E[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        licenseRejectionReason:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

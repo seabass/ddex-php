@@ -1,0 +1,24 @@
+DDEX\MWL\MWL_200\RejectedLicenseOrClaimListType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        rejectedLicenseOrClaim:
+            expose: true
+            access_type: public_method
+            serialized_name: RejectedLicenseOrClaim
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRejectedLicenseOrClaim
+                setter: setRejectedLicenseOrClaim
+            xml_list:
+                inline: true
+                entry_name: RejectedLicenseOrClaim
+            type: array<DDEX\MWL\MWL_200\RejectedLicenseOrClaimType>

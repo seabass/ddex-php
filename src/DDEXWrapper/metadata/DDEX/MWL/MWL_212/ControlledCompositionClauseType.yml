@@ -1,0 +1,195 @@
+DDEX\MWL\MWL_212\ControlledCompositionClauseType:
+    properties:
+        eventId:
+            expose: true
+            access_type: public_method
+            serialized_name: EventId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getEventId
+                setter: setEventId
+            type: string
+        rateModificationType:
+            expose: true
+            access_type: public_method
+            serialized_name: RateModificationType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRateModificationType
+                setter: setRateModificationType
+            xml_list:
+                inline: true
+                entry_name: RateModificationType
+            type: array<string>
+        nonControlledWorkBaseRate:
+            expose: true
+            access_type: public_method
+            serialized_name: NonControlledWorkBaseRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNonControlledWorkBaseRate
+                setter: setNonControlledWorkBaseRate
+            type: float
+        workMinimumRate:
+            expose: true
+            access_type: public_method
+            serialized_name: WorkMinimumRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWorkMinimumRate
+                setter: setWorkMinimumRate
+            type: float
+        agreementCCRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AgreementCCRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAgreementCCRate
+                setter: setAgreementCCRate
+            type: float
+        agreementCCCapRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AgreementCCCapRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAgreementCCCapRate
+                setter: setAgreementCCCapRate
+            type: float
+        applicableCCRate:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableCCRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getApplicableCCRate
+                setter: setApplicableCCRate
+            type: float
+        applicableCCCapRate:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableCCCapRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getApplicableCCCapRate
+                setter: setApplicableCCCapRate
+            type: float
+        maximumNumberOfRoyaltyPaidTracks:
+            expose: true
+            access_type: public_method
+            serialized_name: MaximumNumberOfRoyaltyPaidTracks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMaximumNumberOfRoyaltyPaidTracks
+                setter: setMaximumNumberOfRoyaltyPaidTracks
+            type: int
+        minimumNumberOfRoyaltyPaidTracks:
+            expose: true
+            access_type: public_method
+            serialized_name: MinimumNumberOfRoyaltyPaidTracks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMinimumNumberOfRoyaltyPaidTracks
+                setter: setMinimumNumberOfRoyaltyPaidTracks
+            type: int
+        maximumNumberOfNonCCTracks:
+            expose: true
+            access_type: public_method
+            serialized_name: MaximumNumberOfNonCCTracks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMaximumNumberOfNonCCTracks
+                setter: setMaximumNumberOfNonCCTracks
+            type: int
+        limitationOnDurationOfCCTracks:
+            expose: true
+            access_type: public_method
+            serialized_name: LimitationOnDurationOfCCTracks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLimitationOnDurationOfCCTracks
+                setter: setLimitationOnDurationOfCCTracks
+            type: string
+        royaltyAmountForRelease:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmountForRelease
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmountForRelease
+                setter: setRoyaltyAmountForRelease
+            type: float
+        numberOfNonControlledWorks:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfNonControlledWorks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfNonControlledWorks
+                setter: setNumberOfNonControlledWorks
+            type: float
+        numberOfControlledWorks:
+            expose: true
+            access_type: public_method
+            serialized_name: NumberOfControlledWorks
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getNumberOfControlledWorks
+                setter: setNumberOfControlledWorks
+            type: float
+        royaltyAmountForNonControlledRightShares:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmountForNonControlledRightShares
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmountForNonControlledRightShares
+                setter: setRoyaltyAmountForNonControlledRightShares
+            type: float
+        royaltyAmountForControlledRightShares:
+            expose: true
+            access_type: public_method
+            serialized_name: RoyaltyAmountForControlledRightShares
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRoyaltyAmountForControlledRightShares
+                setter: setRoyaltyAmountForControlledRightShares
+            type: float
+        unadjustedControlledRightShareRoyaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: UnadjustedControlledRightShareRoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getUnadjustedControlledRightShareRoyaltyRate
+                setter: setUnadjustedControlledRightShareRoyaltyRate
+            type: float
+        adjustedControlledRightShareRoyaltyRate:
+            expose: true
+            access_type: public_method
+            serialized_name: AdjustedControlledRightShareRoyaltyRate
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAdjustedControlledRightShareRoyaltyRate
+                setter: setAdjustedControlledRightShareRoyaltyRate
+            type: float
