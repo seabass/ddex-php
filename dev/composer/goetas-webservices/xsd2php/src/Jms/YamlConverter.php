@@ -6,6 +6,7 @@ use Doctrine\Inflector\InflectorFactory;
 use Exception;
 use GoetasWebservices\XML\XSDReader\Schema\Attribute\AttributeContainer;
 use GoetasWebservices\XML\XSDReader\Schema\Attribute\AttributeItem;
+use GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any;
 use GoetasWebservices\XML\XSDReader\Schema\Element\Element;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementContainer;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementDef;
@@ -47,11 +48,10 @@ class YamlConverter extends AbstractConverter
         });
     }
 
-    public function setUseCdata($value)
+    public function setUseCdata(bool $value)
     {
         $this->logger->info("Set useCdata $value");
-        $this->useCdata = $value;
-
+        $this->useCdata = $value === true ? true : false;
         return $this;
     }
 
@@ -361,6 +361,7 @@ class YamlConverter extends AbstractConverter
             if (!$this->useCdata) {
                 $property['xml_element']['cdata'] = $this->useCdata;
             }
+            $property['xml_element']['cdata'] = false;
 
             $data['properties']['__value'] = $property;
 
@@ -494,24 +495,30 @@ class YamlConverter extends AbstractConverter
      *
      * @return array
      */
-    protected function &visitElement(&$class, Schema $schema, ElementItem $element, $arrayize = true)
+    protected function &visitElement(&$class, Schema $schema, ElementItem|Any $element, $arrayize = true)
     {
 
-    	if($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
-    		return false;
-    	}
         $property = [];
         $property['expose'] = true;
         $property['access_type'] = 'public_method';
         $property['serialized_name'] = $element->getName();
 
-        if (!$this->useCdata) {
-            $property['xml_element']['cdata'] = $this->useCdata;
-        }
+
         $elementNamespace = $this->getElementNamespace($schema, $element);
         if ($elementNamespace) {
             $property['xml_element']['namespace'] = $elementNamespace;
         }
+
+
+        if (!$this->useCdata) {
+            $property['xml_element']['cdata'] = $this->useCdata;
+        }
+        $property['xml_element']['cdata'] = false;
+
+        if($element instanceof Any) {
+        	return $property;
+        }
+
 
         $inflector = InflectorFactory::create()->build();
         $property['accessor']['getter'] = 'get' . $inflector->classify($this->getNamingStrategy()->getPropertyName($element));

@@ -60,7 +60,7 @@ class Xsd2PhpExtension extends Extension
         }
 
         if ($config['configs_jms']) {
-            //$converter = $container->getDefinition('goetas_webservices.xsd2php.converter.jms');
+            $converter = $container->getDefinition('goetas_webservices.xsd2php.converter.jms');
             $converter->addMethodCall('setUseCdata', [$config['configs_jms']['xml_cdata']]);
         }
 

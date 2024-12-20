@@ -45,7 +45,7 @@ class Configuration implements ConfigurationInterface
                     ->addDefaultsIfNotSet()
                     ->children()
                         ->booleanNode('xml_cdata')
-                            ->defaultTrue()
+                            ->defaultFalse()
                         ->end()
                     ->end()
                 ->end()

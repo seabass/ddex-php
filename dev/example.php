@@ -16,6 +16,8 @@ use Symfony\Component\Validator\Validation;
 use \JMS\Serializer\XmlSerializationVisitor;
 use \JMS\Serializer\XmlDeserializationVisitor;
 
+use \JMS\Serializer\Annotation\XmlElement;
+
 use \JMS\Serializer\Handler\SubscribingHandlerInterface;
 use \JMS\Serializer\GraphNavigator;
 use \JMS\Serializer\VisitorInterface;
@@ -35,13 +37,11 @@ if (!defined('DDEX_APP_ROOT')) {
 require_once DDEX_APP_ROOT . 'App.php';
 */
 
-\DDEX\App::init();
-
-
-
 
 
 class ERN_app {
+
+	protected $DDexApp;
 
 	const NAMESPACE = 'DDEX';
 	const APP = 'ERN';
@@ -52,6 +52,9 @@ class ERN_app {
 
 	public function __construct($VERSION)
 	{
+		$this->DDexApp = new \DDEX\App();
+		$this->DDexApp->init();
+
 		$this->VERSION = $VERSION;
 
 		$this->__version_check();
@@ -61,7 +64,6 @@ class ERN_app {
 	private function init()
 	{
 		$this->CLASS_NAME = 
-			"\\" .
 			$this::NAMESPACE . "\\" .
 			$this::APP . "\\" .
 			$this::APP . "_" .
@@ -153,9 +155,10 @@ class ERN_app {
 		// Create serializer. Second argument ensures existing xds-generated yml settings are loaded
 		$serializerBuilder = SerializerBuilder::create()
 			->addMetadataDir(
-				__DIR__ . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['..', 'src', 'metadata', $this->CLASS_NAME]),
+				$this->DDexApp->getMetadataDir() . DIRECTORY_SEPARATOR . $this->CLASS_NAME,
 				$this->CLASS_NAME
 			);
+
 
 
 		// Required for global handlers like DateTime

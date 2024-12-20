@@ -5,7 +5,7 @@ namespace GoetasWebservices\Xsd\XsdToPhp\Php;
 use Exception;
 use GoetasWebservices\XML\XSDReader\Schema\Attribute\AttributeItem;
 use GoetasWebservices\XML\XSDReader\Schema\Attribute\Group as AttributeGroup;
-use GoetasWebservices\XML\XSDReader\Schema\Element\Element;
+use GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementDef;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementItem;
 use GoetasWebservices\XML\XSDReader\Schema\Element\ElementRef;
@@ -462,19 +462,22 @@ class PhpConverter extends AbstractConverter
      * @return \GoetasWebservices\Xsd\XsdToPhp\Php\Structure\PHPProperty
      */
     //private function visitElement(PHPClass $class, Schema $schema, ElementSingle $element, $arrayize = true)
-    private function visitElement(PHPClass $class, Schema $schema, $element, $arrayize = true)
+    private function visitElement(PHPClass $class, Schema $schema, ElementSingle|Any $element, $arrayize = true)
     {
-    	if($element instanceof \GoetasWebservices\XML\XSDReader\Schema\Element\Any\Any) {
-    		return false;
-    	}
-
-    	if(!method_exists($element, 'getType') || !method_exists($element, 'isNil')) {
-    		return false;
-    	}
 
         $property = new PHPProperty();
         $property->setName($this->getNamingStrategy()->getPropertyName($element));
         $property->setDoc($element->getDoc());
+
+        if($element instanceof Any) {
+        	return $property;
+        }
+
+        if(!method_exists($element, 'getType') || !method_exists($element, 'isNil')) {
+        	return $property;
+        }
+
+
         if ($element->isNil() || $element->getMin() === 0) {
             $property->setNullable(true);
         }

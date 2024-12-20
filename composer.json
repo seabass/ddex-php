@@ -32,7 +32,8 @@
         "jms/serializer": "^3.32",
         "symfony/validator": "^6.4",
         "goetas-webservices/xsd2php": "@dev",
-        "goetas-webservices/xsd2php-runtime": "@dev"
+        "goetas-webservices/xsd2php-runtime": "@dev",
+        "goetas-webservices/xsd-reader": "^0.4.8"
     },
     "require-dev": {
         "goetas-webservices/xsd2php": "@dev",
