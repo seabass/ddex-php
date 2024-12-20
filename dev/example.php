@@ -7,7 +7,7 @@
  */
 
 
-namespace DDEXWrapper;
+namespace DDEX;
 
 require_once('../vendor/autoload.php');
 
@@ -27,13 +27,15 @@ use \JMS\Serializer\Handler\HandlerRegistryInterface;
 use \GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\BaseTypesHandler;
 use \GoetasWebservices\Xsd\XsdToPhpRuntime\Jms\Handler\XmlSchemaDateHandler;
 
+/*
 
 if (!defined('DDEX_APP_ROOT')) {
-	define('DDEX_APP_ROOT', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'DDEXWrapper' . DIRECTORY_SEPARATOR);
+	define('DDEX_APP_ROOT', __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR);
 }
+require_once DDEX_APP_ROOT . 'App.php';
+*/
 
-require_once DDEX_APP_ROOT . 'Bootstrap.php';
-\DDEXWrapper\Bootstrap::init();
+\DDEX\App::init();
 
 
 
@@ -151,7 +153,7 @@ class ERN_app {
 		// Create serializer. Second argument ensures existing xds-generated yml settings are loaded
 		$serializerBuilder = SerializerBuilder::create()
 			->addMetadataDir(
-				__DIR__ . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['..', 'src', 'DDEXWrapper', 'metadata', $this->CLASS_NAME]),
+				__DIR__ . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['..', 'src', 'metadata', $this->CLASS_NAME]),
 				$this->CLASS_NAME
 			);
 

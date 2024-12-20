@@ -1,0 +1,9 @@
+DDEX\MWN\MWN_100\RequestListType:
+    properties:
+        request:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

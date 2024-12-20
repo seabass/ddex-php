@@ -1,6 +1,26 @@
 {
     "name": "seabass/ddex-php",
     "description": "ddex",
+    "keywords": [
+        "ddex",
+        "digital data exchange",
+        "music rights",
+        "music tech",
+        "Electronic Release Notification Message Suite (ERN)",
+        "Bulk communication of Work And Recording Metadata (BWARM)",
+        "Recording Data and Rights (RDR)",
+        "Musical Works Data and Rights communication (MWDR)",
+        "Musical Work Right Share Notification Choreography (MWN)",
+        "Musical Work Licensing Choreography (MWL)",
+        "Letters of Direction Choreography (LoD)",
+        "Claim Detail Message Suite (CDM)",
+        "Digital Sales Reporting Message Suite (DSR)",
+        "Media Enrichment and Description (MEAD)",
+        "Party Identification and Enrichment (PIE)",
+        "Catalogue Transfer (CT)",
+        "Recording Information Notification (RIN)"
+    ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Sebastian Wolff",
@@ -8,6 +28,7 @@
         }
     ],
     "require": {
+        "php": ">=7.4.0",
         "jms/serializer": "^3.32",
         "symfony/validator": "^6.4",
         "goetas-webservices/xsd2php": "@dev",
@@ -17,20 +38,22 @@
         "goetas-webservices/xsd2php": "@dev",
         "goetas-webservices/xsd2php-runtime": "@dev"
     },
-    "repositories": [{
-        "type": "path",
-        "url": "./dev/composer/goetas-webservices/xsd2php"
-    },{
-        "type": "path",
-        "url": "./dev/composer/goetas-webservices/xsd2php-runtime"
-    }],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./dev/composer/goetas-webservices/xsd2php"
+        },
+        {
+            "type": "path",
+            "url": "./dev/composer/goetas-webservices/xsd2php-runtime"
+        }
+    ],
     "autoload": {
-      "psr-4": {
-        "DDEX\\": "src/"
-      }
-    },
-    "autoload-dev": {
-    "psr-4": {
-      "DDEX\\Tests\\": "tests/"
+        "psr-0": {
+            "DDEX": "src/"
+        },
+        "files": [
+            "src/App.php"
+        ]
     }
 }

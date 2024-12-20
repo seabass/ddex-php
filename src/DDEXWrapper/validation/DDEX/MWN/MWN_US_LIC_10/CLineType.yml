@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_US_LIC_10\CLineType:
-    properties:
-        cLineText:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

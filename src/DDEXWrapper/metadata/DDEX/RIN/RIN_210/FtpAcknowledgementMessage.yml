@@ -1,7 +1,0 @@
-DDEX\RIN\RIN_210\FtpAcknowledgementMessage:
-    xml_namespaces:
-        ern: 'http://ddex.net/xml/ern/431'
-        dsr: 'http://ddex.net/xml/dsr/43D1'
-        rin: 'http://ddex.net/xml/rin/21'
-    xml_root_name: 'ern:FtpAcknowledgementMessage'
-    xml_root_namespace: 'http://ddex.net/xml/rin/21'

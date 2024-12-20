@@ -1,0 +1,44 @@
+DDEX\MWN\MWN_100\FtpAcknowledgementMessage\FtpAcknowledgementMessageAnonymousPHPType:
+    properties:
+        messageVersionId:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageVersionId
+            accessor:
+                getter: getMessageVersionId
+                setter: setMessageVersionId
+            xml_attribute: true
+            type: string
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\MWN\MWN_100\FtpMessageHeaderType
+        receivedFile:
+            expose: true
+            access_type: public_method
+            serialized_name: ReceivedFile
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReceivedFile
+                setter: setReceivedFile
+            xml_list:
+                inline: true
+                entry_name: ReceivedFile
+            type: array<DDEX\MWN\MWN_100\ReceivedFileType>
+        errorText:
+            expose: true
+            access_type: public_method
+            serialized_name: ErrorText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getErrorText
+                setter: setErrorText
+            type: string

@@ -1,0 +1,94 @@
+DDEX\MWN\MWN_100\ImageType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        resourceProprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceProprietaryId
+                setter: setResourceProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ResourceProprietaryId
+            type: array<DDEX\MWN\MWN_100\ResourceProprietaryIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\MWN\MWN_100\ReferenceTitleType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\MWN\MWN_100\TitleType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\MWN\MWN_100\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        imageDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: ImageDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getImageDetailsByTerritory
+                setter: setImageDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: ImageDetailsByTerritory
+            type: array<DDEX\MWN\MWN_100\ResourceDetailsByTerritoryType>

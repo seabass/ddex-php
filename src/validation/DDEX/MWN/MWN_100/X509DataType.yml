@@ -1,0 +1,8 @@
+DDEX\MWN\MWN_100\X509DataType:
+    properties:
+        x509IssuerSerial:
+            -
+                Valid: null
+        partyId:
+            -
+                Valid: null

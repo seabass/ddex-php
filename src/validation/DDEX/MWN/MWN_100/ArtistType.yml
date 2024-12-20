@@ -1,0 +1,19 @@
+DDEX\MWN\MWN_100\ArtistType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null
+        artistRole:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

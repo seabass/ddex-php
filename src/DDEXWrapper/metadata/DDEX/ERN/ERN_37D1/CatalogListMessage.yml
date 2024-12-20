@@ -1,5 +1,0 @@
-DDEX\ERN\ERN_37D1\CatalogListMessage:
-    xml_namespaces:
-        ern: 'http://ddex.net/xml/ern/431'
-    xml_root_name: 'ern:CatalogListMessage'
-    xml_root_namespace: 'http://ddex.net/xml/ern/37D1'

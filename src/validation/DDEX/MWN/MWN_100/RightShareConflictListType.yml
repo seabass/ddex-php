@@ -1,0 +1,14 @@
+DDEX\MWN\MWN_100\RightShareConflictListType:
+    properties:
+        conflict:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

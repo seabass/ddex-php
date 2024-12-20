@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_100\RightShareConflictType:
+    properties:
+        conflictRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ConflictRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getConflictRightShareReference
+                setter: setConflictRightShareReference
+            xml_list:
+                inline: true
+                entry_name: ConflictRightShareReference
+            type: array<string>

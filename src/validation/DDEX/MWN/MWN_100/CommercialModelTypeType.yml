@@ -1,0 +1,18 @@
+DDEX\MWN\MWN_100\CommercialModelTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AdvertisementSupportedModel
+                        - AsPerContract
+                        - DeviceFeeModel
+                        - FreeOfChargeModel
+                        - PayAsYouGoModel
+                        - PerformanceRoyaltiesModel
+                        - RightsClaimModel
+                        - SubscriptionModel
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,38 @@
+DDEX\MWN\MWN_100\ReleaseType:
+    properties:
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitle:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseResourceReferenceList:
+            -
+                Valid: null
+        releaseCollectionReferenceList:
+            -
+                Valid: null
+        releaseDetailsByTerritory:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        rightsAgreementId:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

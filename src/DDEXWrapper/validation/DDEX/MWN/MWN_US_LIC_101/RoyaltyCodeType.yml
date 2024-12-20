@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_US_LIC_101\RoyaltyCodeType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

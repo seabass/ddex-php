@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_100\RequestListType:
+    properties:
+        request:
+            expose: true
+            access_type: public_method
+            serialized_name: Request
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRequest
+                setter: setRequest
+            xml_list:
+                inline: true
+                entry_name: Request
+            type: array<DDEX\MWN\MWN_100\RequestType>

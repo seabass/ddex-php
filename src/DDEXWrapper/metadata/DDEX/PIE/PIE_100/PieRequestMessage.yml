@@ -1,8 +1,0 @@
-DDEX\PIE\PIE_100\PieRequestMessage:
-    xml_namespaces:
-        ern: 'http://ddex.net/xml/ern/431'
-        dsr: 'http://ddex.net/xml/dsr/43D1'
-        rin: 'http://ddex.net/xml/rin/21'
-        ct: 'http://ddex.net/xml/ct/10'
-    xml_root_name: 'ern:PieRequestMessage'
-    xml_root_namespace: 'http://ddex.net/xml/pie/10'

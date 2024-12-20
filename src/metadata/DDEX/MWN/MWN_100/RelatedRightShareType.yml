@@ -1,0 +1,25 @@
+DDEX\MWN\MWN_100\RelatedRightShareType:
+    properties:
+        rightShareRightShareReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareRightShareReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareRightShareReference
+                setter: setRightShareRightShareReference
+            xml_list:
+                inline: true
+                entry_name: RightShareRightShareReference
+            type: array<string>
+        rightShareRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightShareRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightShareRelationshipType
+                setter: setRightShareRelationshipType
+            type: string

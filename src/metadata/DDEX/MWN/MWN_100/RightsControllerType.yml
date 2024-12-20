@@ -1,0 +1,44 @@
+DDEX\MWN\MWN_100\RightsControllerType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        rightsControllerPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerPartyReference
+                setter: setRightsControllerPartyReference
+            type: string
+        rightsControllerRole:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerRole
+                setter: setRightsControllerRole
+            xml_list:
+                inline: true
+                entry_name: RightsControllerRole
+            type: array<string>
+        rightsControllerType:
+            expose: true
+            access_type: public_method
+            serialized_name: RightsControllerType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRightsControllerType
+                setter: setRightsControllerType
+            type: string

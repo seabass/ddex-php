@@ -1,0 +1,42 @@
+DDEX\MWN\MWN_100\ReceivedFileType:
+    properties:
+        fileName:
+            expose: true
+            access_type: public_method
+            serialized_name: FileName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileName
+                setter: setFileName
+            type: string
+        fileStatus:
+            expose: true
+            access_type: public_method
+            serialized_name: FileStatus
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getFileStatus
+                setter: setFileStatus
+            type: string
+        hashSum:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSum
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSum
+                setter: setHashSum
+            type: DDEX\MWN\MWN_100\HashSumType
+        signature:
+            expose: true
+            access_type: public_method
+            serialized_name: Signature
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSignature
+                setter: setSignature
+            type: DDEX\MWN\MWN_100\DdexDigitalSignatureType

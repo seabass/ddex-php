@@ -1,0 +1,10 @@
+DDEX\MWN\MWN_100\LabelNameType:
+    properties:
+        labelNameType:
+            -
+                Choice:
+                    choices:
+                        - DisplayLabelName
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,31 @@
+DDEX\MWN\MWN_100\UserDefinedResourceType:
+    properties:
+        userDefinedResourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        resourceReference:
+            -
+                Regex:
+                    pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceTitle:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        resourceMusicalWorkReferenceList:
+            -
+                Valid: null
+        userDefinedResourceDetailsByTerritory:
+            -
+                Valid: null

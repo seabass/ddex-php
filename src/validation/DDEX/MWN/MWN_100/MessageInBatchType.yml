@@ -1,0 +1,27 @@
+DDEX\MWN\MWN_100\MessageInBatchType:
+    properties:
+        messageType:
+            -
+                Choice:
+                    choices:
+                        - MusicalWorkClaimNotificationMessage
+                        - MusicalWorkClaimConflictNotificationMessage
+                        - MusicalWorkClaimRequestMessage
+                        - FtpAcknowledgementMessage
+                        - ManifestMessage
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        uRL:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

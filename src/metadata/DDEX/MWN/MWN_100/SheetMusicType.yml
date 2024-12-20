@@ -1,0 +1,94 @@
+DDEX\MWN\MWN_100\SheetMusicType:
+    properties:
+        languageAndScriptCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LanguageAndScriptCode
+            accessor:
+                getter: getLanguageAndScriptCode
+                setter: setLanguageAndScriptCode
+            xml_attribute: true
+            type: string
+        sheetMusicId:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusicId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusicId
+                setter: setSheetMusicId
+            xml_list:
+                inline: true
+                entry_name: SheetMusicId
+            type: array<DDEX\MWN\MWN_100\SheetMusicIdType>
+        resourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceReference
+                setter: setResourceReference
+            type: string
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            type: DDEX\MWN\MWN_100\ReferenceTitleType
+        title:
+            expose: true
+            access_type: public_method
+            serialized_name: Title
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTitle
+                setter: setTitle
+            xml_list:
+                inline: true
+                entry_name: Title
+            type: array<DDEX\MWN\MWN_100\TitleType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        resourceMusicalWorkReferenceList:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceMusicalWorkReferenceList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceMusicalWorkReferenceList
+                setter: setResourceMusicalWorkReferenceList
+            type: array<DDEX\MWN\MWN_100\ResourceMusicalWorkReferenceType>
+            xml_list:
+                inline: false
+                entry_name: ResourceMusicalWorkReference
+                skip_when_empty: true
+        sheetMusicDetailsByTerritory:
+            expose: true
+            access_type: public_method
+            serialized_name: SheetMusicDetailsByTerritory
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSheetMusicDetailsByTerritory
+                setter: setSheetMusicDetailsByTerritory
+            xml_list:
+                inline: true
+                entry_name: SheetMusicDetailsByTerritory
+            type: array<DDEX\MWN\MWN_100\ResourceDetailsByTerritoryType>

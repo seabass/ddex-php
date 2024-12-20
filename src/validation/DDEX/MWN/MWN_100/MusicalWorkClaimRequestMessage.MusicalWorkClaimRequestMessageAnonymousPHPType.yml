@@ -1,0 +1,38 @@
+DDEX\MWN\MWN_100\MusicalWorkClaimRequestMessage\MusicalWorkClaimRequestMessageAnonymousPHPType:
+    properties:
+        messageSchemaVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        partyList:
+            -
+                Valid: null
+        workList:
+            -
+                Valid: null
+        resourceList:
+            -
+                Valid: null
+        releaseList:
+            -
+                Valid: null
+        requestList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

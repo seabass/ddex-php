@@ -22,16 +22,29 @@ process {
 
 		#Cleanup
 		$XSDListFile = '.\XSD_list.log'
-		$xsd2phpGeneratorFile = '.\xsd2php_generator.bat'
 		$ConfigYamlFile = '.\xsd2php_config.yml'
 		$DownloadUrl = "https://service.ddex.net/xml/"
-		$XmlPath = "..\src\DDEXWrapper\xml"
+		$XmlPaths = @(
+			
+			"..\src\xml\ct"
+			"..\src\xml\dsr"
+			"..\src\xml\ern"
+			"..\src\xml\mead"
+
+			"..\src\xml\pie"
+			"..\src\xml\rdr-n"
+			"..\src\xml\rdr-c"
+			"..\src\xml\rin"
+			"..\src\xml\mwl"
+
+			"..\src\xml\mc-us-lic"
+			"..\src\xml\mc-us-lod"
+			
+			"..\src\xml\mwn\10"
+		)
 
 		if(Test-Path $XSDListFile) {
 			$XSDListFile | Remove-Item
-		}
-		if(Test-Path $xsd2phpGeneratorFile) {
-			$xsd2phpGeneratorFile | Remove-Item
 		}
 
 
@@ -92,16 +105,17 @@ process {
 		#dig through files, create generator and config
 		Write-Host Finding XSD files and creating generator script
 
-		foreach($FullName in (gci -Path $XmlPath -Filter *.xsd -Recurse -Force).FullName) {
-			$FullNameParts = $FullName -split '\\'
-			$XSDFileName = $FullNameParts[-1]
+		foreach($XmlPath in $XmlPaths) {
+			foreach($FullName in (gci -Path $XmlPath -Filter *.xsd -Recurse -Force).FullName) {
+				$FullNameParts = $FullName -split '\\'
+				$XSDFileName = $FullNameParts[-1]
 
-			Write-Host Found $FullNameParts
+				Write-Host Found $FullNameParts
 
-			Add-Content -Path $XSDListFile -Value $FullName
+				Add-Content -Path $XSDListFile -Value $FullName
 
-			#Add-Content -Path $xsd2phpGeneratorFile -Value "php ..\vendor\bin\xsd2php convert $ConfigYamlFile `"$FullName`""
-			php ..\vendor\bin\xsd2php convert $ConfigYamlFile "$FullName"
+				php ..\vendor\bin\xsd2php convert $ConfigYamlFile "$FullName"
+			}
 		}
 
 

@@ -49,6 +49,8 @@ xsd2php:
     'http://ddex.net/xml/mc-us-lic/101': 'DDEX\MWN\MWN_US_LIC_101'
 
     'http://ddex.net/xml/mc-us-lod/10': 'DDEX\MWN\MWN_US_LOD_100'
+    'http://ddex.net/xml/mwn/10': 'DDEX\MWN\MWN_100'
+    #'http://ddex.net/xml/mwn/12Draft': 'DDEX\MWN\MWN_100'
 
 
     'http://ddex.net/xml/mwl/21': 'DDEX\MWL\MWL_200'
@@ -153,6 +155,8 @@ xsd2php:
     'http://ddex.net/xml/mwl/211': 'mwl'
     'http://ddex.net/xml/mwl/212': 'mwl'
 
+    'http://ddex.net/xml/mwn/10': 'mwn'
+
     'http://ddex.net/xml/rdr-c/10': 'rdr-c'
     'http://ddex.net/xml/rdr-c/11': 'rdr-c'
     'http://ddex.net/xml/rdr-n/15': 'rdn-n'
@@ -160,182 +164,188 @@ xsd2php:
 
 
   destinations_php:
-    'DDEX\ddexC': ..\src\DDEXWrapper\schema\DDEX\ddexC\
+    'DDEX\ddexC': ..\src\schema\DDEX\ddexC\
     
-    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_340
-    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_341
-    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_350
-    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_351
-    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_360
-    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_370
-    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_371
-    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_37D1
-    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_37D2
-    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_380
-    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_381
-    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_382
-    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_383
-    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_400
-    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_410
-    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_411
-    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_420
-    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_430
-    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\schema\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_340': ..\src\schema\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\schema\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\schema\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\schema\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\schema\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\schema\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\schema\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\schema\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\schema\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\schema\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\schema\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\schema\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\schema\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\schema\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\schema\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\schema\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\schema\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\schema\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\schema\DDEX\ERN\ERN_431
 
-    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_400
-    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_410
-    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_420
-    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_430
-    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\schema\DDEX\DSR\DSR_43D1
+    'DDEX\DSR\DSR_400': ..\src\schema\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\schema\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\schema\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\schema\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\schema\DDEX\DSR\DSR_43D1
 
-    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN10F
-    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN10M
-    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN11F
-    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN11M
-    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN_200
-    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\schema\DDEX\RIN\RIN_210
+    'DDEX\RIN\RIN10F': ..\src\schema\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\schema\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\schema\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\schema\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\schema\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\schema\DDEX\RIN\RIN_210
 
-    'DDEX\CT\CT_100': ..\src\DDEXWrapper\schema\DDEX\CT\CT_100
+    'DDEX\CT\CT_100': ..\src\schema\DDEX\CT\CT_100
 
-    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\schema\DDEX\PIE\PIE_100
+    'DDEX\PIE\PIE_100': ..\src\schema\DDEX\PIE\PIE_100
     
-    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_100
-    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_101
-    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\schema\DDEX\MEAD\MEAD_110
+    'DDEX\MEAD\MEAD_100': ..\src\schema\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\schema\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\schema\DDEX\MEAD\MEAD_110
 
-    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LIC_100
-    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LIC_101
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\schema\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\schema\DDEX\MWN\MWN_US_LIC_101
     
-    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\schema\DDEX\MWN\MWN_US_LOD_100
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\schema\DDEX\MWN\MWN_US_LOD_100
 
-    'DDEX\MWL\MWL_200': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_200
-    'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_211
-    'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\schema\DDEX\MWL\MWL_212
+    'DDEX\MWN\MWN_100': ..\src\schema\DDEX\MWN\MWN_100
 
-    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\schema\DDEX\RDR_C\RDR_C_100
-    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\schema\DDEX\RDR_C\RDR_C_110
-    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\schema\DDEX\RDR_N\RDR_N_150
+    'DDEX\MWL\MWL_200': ..\src\schema\DDEX\MWL\MWL_200
+    'DDEX\MWL\MWL_211': ..\src\schema\DDEX\MWL\MWL_211
+    'DDEX\MWL\MWL_212': ..\src\schema\DDEX\MWL\MWL_212
+
+    'DDEX\RDR_C\RDR_C_100': ..\src\schema\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\schema\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\schema\DDEX\RDR_N\RDR_N_150
 
 
-    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_jms:
-    'DDEX\ddexC': ..\src\DDEXWrapper\metadata\DDEX\ddexC\
+    'DDEX\ddexC': ..\src\metadata\DDEX\ddexC\
 
-    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_340
-    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_341
-    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_350
-    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_351
-    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_360
-    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_370
-    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_371
-    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_37D1
-    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_37D2
-    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_380
-    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_381
-    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_382
-    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_383
-    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_400
-    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_410
-    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_411
-    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_420
-    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_430
-    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\metadata\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_340': ..\src\metadata\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\metadata\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\metadata\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\metadata\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\metadata\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\metadata\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\metadata\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\metadata\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\metadata\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\metadata\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\metadata\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\metadata\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\metadata\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\metadata\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\metadata\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\metadata\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\metadata\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\metadata\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\metadata\DDEX\ERN\ERN_431
 
-    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_400
-    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_410
-    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_420
-    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_430
-    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\metadata\DDEX\DSR\DSR_43D1
+    'DDEX\DSR\DSR_400': ..\src\metadata\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\metadata\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\metadata\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\metadata\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\metadata\DDEX\DSR\DSR_43D1
 
-    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN10F
-    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN10M
-    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN11F
-    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN11M
-    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN_200
-    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\metadata\DDEX\RIN\RIN_210
+    'DDEX\RIN\RIN10F': ..\src\metadata\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\metadata\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\metadata\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\metadata\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\metadata\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\metadata\DDEX\RIN\RIN_210
 
-    'DDEX\CT\CT_100': ..\src\DDEXWrapper\metadata\DDEX\CT\CT_100
+    'DDEX\CT\CT_100': ..\src\metadata\DDEX\CT\CT_100
 
-    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\metadata\DDEX\PIE\PIE_100
+    'DDEX\PIE\PIE_100': ..\src\metadata\DDEX\PIE\PIE_100
 
-    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_100
-    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_101
-    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\metadata\DDEX\MEAD\MEAD_110
+    'DDEX\MEAD\MEAD_100': ..\src\metadata\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\metadata\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\metadata\DDEX\MEAD\MEAD_110
 
-    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LIC_100
-    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LIC_101
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\metadata\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\metadata\DDEX\MWN\MWN_US_LIC_101
 
-    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\metadata\DDEX\MWN\MWN_US_LOD_100
+    'DDEX\MWN\MWN_100': ..\src\metadata\DDEX\MWN\MWN_100
 
-    'DDEX\MWL\MWL_200': ..\src\DDEXWrapper\metadata\DDEX\MWL\MWL_200
-    'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\metadata\DDEX\MWL\MWL_211
-    'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\metadata\DDEX\MWL\MWL_212
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\metadata\DDEX\MWN\MWN_US_LOD_100
 
-    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\metadata\DDEX\RDR_C\RDR_C_100
-    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\metadata\DDEX\RDR_C\RDR_C_110
-    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\metadata\DDEX\RDR_N\RDR_N_150
+    'DDEX\MWL\MWL_200': ..\src\metadata\DDEX\MWL\MWL_200
+    'DDEX\MWL\MWL_211': ..\src\metadata\DDEX\MWL\MWL_211
+    'DDEX\MWL\MWL_212': ..\src\metadata\DDEX\MWL\MWL_212
 
-    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
+    'DDEX\RDR_C\RDR_C_100': ..\src\metadata\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\metadata\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\metadata\DDEX\RDR_N\RDR_N_150
+
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_validation:
-    'DDEX\ddexC': ..\src\DDEXWrapper\validation\DDEX\ddexC\
+    'DDEX\ddexC': ..\src\validation\DDEX\ddexC\
 
-    'DDEX\ERN\ERN_340': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_340
-    'DDEX\ERN\ERN_341': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_341
-    'DDEX\ERN\ERN_350': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_350
-    'DDEX\ERN\ERN_351': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_351
-    'DDEX\ERN\ERN_360': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_360
-    'DDEX\ERN\ERN_370': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_370
-    'DDEX\ERN\ERN_371': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_371
-    'DDEX\ERN\ERN_37D1': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_37D1
-    'DDEX\ERN\ERN_37D2': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_37D2
-    'DDEX\ERN\ERN_380': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_380
-    'DDEX\ERN\ERN_381': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_381
-    'DDEX\ERN\ERN_382': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_382
-    'DDEX\ERN\ERN_383': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_383
-    'DDEX\ERN\ERN_400': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_400
-    'DDEX\ERN\ERN_410': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_410
-    'DDEX\ERN\ERN_411': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_411
-    'DDEX\ERN\ERN_420': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_420
-    'DDEX\ERN\ERN_430': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_430
-    'DDEX\ERN\ERN_431': ..\src\DDEXWrapper\validation\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_340': ..\src\validation\DDEX\ERN\ERN_340
+    'DDEX\ERN\ERN_341': ..\src\validation\DDEX\ERN\ERN_341
+    'DDEX\ERN\ERN_350': ..\src\validation\DDEX\ERN\ERN_350
+    'DDEX\ERN\ERN_351': ..\src\validation\DDEX\ERN\ERN_351
+    'DDEX\ERN\ERN_360': ..\src\validation\DDEX\ERN\ERN_360
+    'DDEX\ERN\ERN_370': ..\src\validation\DDEX\ERN\ERN_370
+    'DDEX\ERN\ERN_371': ..\src\validation\DDEX\ERN\ERN_371
+    'DDEX\ERN\ERN_37D1': ..\src\validation\DDEX\ERN\ERN_37D1
+    'DDEX\ERN\ERN_37D2': ..\src\validation\DDEX\ERN\ERN_37D2
+    'DDEX\ERN\ERN_380': ..\src\validation\DDEX\ERN\ERN_380
+    'DDEX\ERN\ERN_381': ..\src\validation\DDEX\ERN\ERN_381
+    'DDEX\ERN\ERN_382': ..\src\validation\DDEX\ERN\ERN_382
+    'DDEX\ERN\ERN_383': ..\src\validation\DDEX\ERN\ERN_383
+    'DDEX\ERN\ERN_400': ..\src\validation\DDEX\ERN\ERN_400
+    'DDEX\ERN\ERN_410': ..\src\validation\DDEX\ERN\ERN_410
+    'DDEX\ERN\ERN_411': ..\src\validation\DDEX\ERN\ERN_411
+    'DDEX\ERN\ERN_420': ..\src\validation\DDEX\ERN\ERN_420
+    'DDEX\ERN\ERN_430': ..\src\validation\DDEX\ERN\ERN_430
+    'DDEX\ERN\ERN_431': ..\src\validation\DDEX\ERN\ERN_431
 
-    'DDEX\DSR\DSR_400': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_400
-    'DDEX\DSR\DSR_410': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_410
-    'DDEX\DSR\DSR_420': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_420
-    'DDEX\DSR\DSR_430': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_430
-    'DDEX\DSR\DSR_43D1': ..\src\DDEXWrapper\validation\DDEX\DSR\DSR_43D1
+    'DDEX\DSR\DSR_400': ..\src\validation\DDEX\DSR\DSR_400
+    'DDEX\DSR\DSR_410': ..\src\validation\DDEX\DSR\DSR_410
+    'DDEX\DSR\DSR_420': ..\src\validation\DDEX\DSR\DSR_420
+    'DDEX\DSR\DSR_430': ..\src\validation\DDEX\DSR\DSR_430
+    'DDEX\DSR\DSR_43D1': ..\src\validation\DDEX\DSR\DSR_43D1
 
-    'DDEX\RIN\RIN10F': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN10F
-    'DDEX\RIN\RIN10M': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN10M
-    'DDEX\RIN\RIN11F': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN11F
-    'DDEX\RIN\RIN11M': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN11M
-    'DDEX\RIN\RIN_200': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN_200
-    'DDEX\RIN\RIN_210': ..\src\DDEXWrapper\validation\DDEX\RIN\RIN_210
+    'DDEX\RIN\RIN10F': ..\src\validation\DDEX\RIN\RIN10F
+    'DDEX\RIN\RIN10M': ..\src\validation\DDEX\RIN\RIN10M
+    'DDEX\RIN\RIN11F': ..\src\validation\DDEX\RIN\RIN11F
+    'DDEX\RIN\RIN11M': ..\src\validation\DDEX\RIN\RIN11M
+    'DDEX\RIN\RIN_200': ..\src\validation\DDEX\RIN\RIN_200
+    'DDEX\RIN\RIN_210': ..\src\validation\DDEX\RIN\RIN_210
 
-    'DDEX\CT\CT_100': ..\src\DDEXWrapper\validation\DDEX\CT\CT_100
+    'DDEX\CT\CT_100': ..\src\validation\DDEX\CT\CT_100
 
-    'DDEX\PIE\PIE_100': ..\src\DDEXWrapper\validation\DDEX\PIE\PIE_100
+    'DDEX\PIE\PIE_100': ..\src\validation\DDEX\PIE\PIE_100
 
-    'DDEX\MEAD\MEAD_100': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_100
-    'DDEX\MEAD\MEAD_101': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_101
-    'DDEX\MEAD\MEAD_110': ..\src\DDEXWrapper\validation\DDEX\MEAD\MEAD_110
+    'DDEX\MEAD\MEAD_100': ..\src\validation\DDEX\MEAD\MEAD_100
+    'DDEX\MEAD\MEAD_101': ..\src\validation\DDEX\MEAD\MEAD_101
+    'DDEX\MEAD\MEAD_110': ..\src\validation\DDEX\MEAD\MEAD_110
 
-    'DDEX\MWN\MWN_US_LIC_100': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LIC_100
-    'DDEX\MWN\MWN_US_LIC_101': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LIC_101
+    'DDEX\MWN\MWN_US_LIC_100': ..\src\validation\DDEX\MWN\MWN_US_LIC_100
+    'DDEX\MWN\MWN_US_LIC_101': ..\src\validation\DDEX\MWN\MWN_US_LIC_101
     
-    'DDEX\MWN\MWN_US_LOD_100': ..\src\DDEXWrapper\validation\DDEX\MWN\MWN_US_LOD_100
+    'DDEX\MWN\MWN_US_LOD_100': ..\src\validation\DDEX\MWN\MWN_US_LOD_100
+    
+    'DDEX\MWN\MWN_100': ..\src\validation\DDEX\MWN\MWN_100
 
-    'DDEX\MWL\MWL_200': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_200
-    'DDEX\MWL\MWL_211': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_211
-    'DDEX\MWL\MWL_212': ..\src\DDEXWrapper\validation\DDEX\MWL\MWL_212
+    'DDEX\MWL\MWL_200': ..\src\validation\DDEX\MWL\MWL_200
+    'DDEX\MWL\MWL_211': ..\src\validation\DDEX\MWL\MWL_211
+    'DDEX\MWL\MWL_212': ..\src\validation\DDEX\MWL\MWL_212
 
-    'DDEX\RDR_C\RDR_C_100': ..\src\DDEXWrapper\validation\DDEX\RDR_C\RDR_C_100
-    'DDEX\RDR_C\RDR_C_110': ..\src\DDEXWrapper\validation\DDEX\RDR_C\RDR_C_110
-    'DDEX\RDR_N\RDR_N_150': ..\src\DDEXWrapper\validation\DDEX\RDR_N\RDR_N_150
+    'DDEX\RDR_C\RDR_C_100': ..\src\validation\DDEX\RDR_C\RDR_C_100
+    'DDEX\RDR_C\RDR_C_110': ..\src\validation\DDEX\RDR_C\RDR_C_110
+    'DDEX\RDR_N\RDR_N_150': ..\src\validation\DDEX\RDR_N\RDR_N_150
 
-    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\DDEXWrapper\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
+    'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     
   aliases:
     '':

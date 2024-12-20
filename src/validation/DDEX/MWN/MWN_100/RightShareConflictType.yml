@@ -1,0 +1,15 @@
+DDEX\MWN\MWN_100\RightShareConflictType:
+    properties:
+        conflictRightShareReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~S[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules

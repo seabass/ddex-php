@@ -1,0 +1,50 @@
+DDEX\MWN\MWN_100\RequestType:
+    properties:
+        requestWorkReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~W[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestResourceReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~A[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        requestReleaseReference:
+            -
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~R[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        condition:
+            -
+                Valid: null
+        requestReason:
+            -
+                Choice:
+                    choices:
+                        - UserDefined
+                        - DisputeResolutionRequest
+                        - GeneralRequest
+                        - PublisherAddition
+                        - PublisherChange
+                        - PublisherRemoval
+                        - Recall
+                        - ReleaseListUpdate
+                        - SpecificRequest
+                        - WriterAddition
+                        - WriterChange
+                        - WriterRemoval
+                    groups:
+                        - xsd_rules

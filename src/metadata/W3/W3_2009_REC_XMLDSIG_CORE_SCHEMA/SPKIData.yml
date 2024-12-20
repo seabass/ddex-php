@@ -1,0 +1,14 @@
+W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\SPKIData:
+    xml_namespaces:
+        ern: 'http://ddex.net/xml/ern/431'
+        dsr: 'http://ddex.net/xml/dsr/43D1'
+        rin: 'http://ddex.net/xml/rin/21'
+        ct: 'http://ddex.net/xml/ct/10'
+        pie: 'http://ddex.net/xml/pie/10'
+        mead: 'http://ddex.net/xml/mead/110'
+        mwn: 'http://ddex.net/xml/mwn/10'
+        mwl: 'http://ddex.net/xml/mwl/212'
+        rdr-c: 'http://ddex.net/xml/rdr-c/11'
+        rdn-n: 'http://ddex.net/xml/rdr-n/15'
+    xml_root_name: 'ern:SPKIData'
+    xml_root_namespace: 'http://www.w3.org/2000/09/xmldsig#'

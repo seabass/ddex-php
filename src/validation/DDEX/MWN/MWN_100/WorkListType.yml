@@ -1,0 +1,9 @@
+DDEX\MWN\MWN_100\WorkListType:
+    properties:
+        musicalWork:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

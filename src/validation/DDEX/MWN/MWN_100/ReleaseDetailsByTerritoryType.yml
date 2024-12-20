@@ -1,0 +1,17 @@
+DDEX\MWN\MWN_100\ReleaseDetailsByTerritoryType:
+    properties:
+        rightsAgreementId:
+            -
+                Valid: null
+        title:
+            -
+                Valid: null
+        displayArtist:
+            -
+                Valid: null
+        administratingRecordCompany:
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null
