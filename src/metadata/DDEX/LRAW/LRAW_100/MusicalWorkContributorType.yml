@@ -1,0 +1,25 @@
+DDEX\LRAW\LRAW_100\MusicalWorkContributorType:
+    properties:
+        musicalWorkContributorReference:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkContributorReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkContributorReference
+                setter: setMusicalWorkContributorReference
+            type: string
+        musicalWorkContributorRole:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkContributorRole
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkContributorRole
+                setter: setMusicalWorkContributorRole
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkContributorRole
+            type: array<DDEX\LRAW\LRAW_100\MusicalWorkContributorRoleType>

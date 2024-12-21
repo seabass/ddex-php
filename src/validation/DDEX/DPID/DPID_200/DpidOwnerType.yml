@@ -1,0 +1,54 @@
+DDEX\DPID\DPID_200\DpidOwnerType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        status:
+            -
+                Choice:
+                    choices:
+                        - Active
+                        - Deleted
+                        - Replaced
+                    groups:
+                        - xsd_rules
+        dPID:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        preferredDPID:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules
+        companyName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        licenseRecord:
+            -
+                Choice:
+                    choices:
+                        - HasLicense
+                        - HasNoLicense
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        contact:
+            -
+                Valid: null

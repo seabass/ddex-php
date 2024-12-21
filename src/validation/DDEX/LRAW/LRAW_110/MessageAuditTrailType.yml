@@ -1,0 +1,9 @@
+DDEX\LRAW\LRAW_110\MessageAuditTrailType:
+    properties:
+        messageAuditTrailEvent:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

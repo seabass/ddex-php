@@ -1,0 +1,14 @@
+DDEX\LRAW\LRAW_110\ArtistType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

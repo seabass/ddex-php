@@ -1,0 +1,17 @@
+DDEX\LRAW\LRAW_100\AssertionType:
+    properties:
+        asserter:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        isTrue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        assertionDateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

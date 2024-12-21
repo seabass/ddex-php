@@ -1,0 +1,36 @@
+DDEX\LRAW\LRAW_110\AssertedLinkType:
+    properties:
+        linkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        assertion:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        resourceWorkRelationshipType:
+            -
+                Choice:
+                    choices:
+                        - Interpellation
+                        - Medley
+                        - MultipleWorkResource
+                        - MusicalWorkWithSamples
+                        - SingleWorkResource
+                    groups:
+                        - xsd_rules
+        soundRecording:
+            -
+                Valid: null
+        video:
+            -
+                Valid: null
+        musicalWork:
+            -
+                Valid: null

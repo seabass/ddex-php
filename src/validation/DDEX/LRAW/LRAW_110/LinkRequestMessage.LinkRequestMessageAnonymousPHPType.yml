@@ -1,0 +1,28 @@
+DDEX\LRAW\LRAW_110\LinkRequestMessage\LinkRequestMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        partyList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        linkRequest:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

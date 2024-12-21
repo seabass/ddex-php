@@ -1,0 +1,12 @@
+DDEX\LRAW\LRAW_100\MusicalWorkContributorType:
+    properties:
+        musicalWorkContributorReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

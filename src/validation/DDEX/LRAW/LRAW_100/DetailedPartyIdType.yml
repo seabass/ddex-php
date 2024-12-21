@@ -1,0 +1,8 @@
+DDEX\LRAW\LRAW_100\DetailedPartyIdType:
+    properties:
+        dPID:
+            -
+                Regex:
+                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
+                    groups:
+                        - xsd_rules

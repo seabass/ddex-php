@@ -1,0 +1,7 @@
+DDEX\LRAW\LRAW_100\ReferenceTitleType:
+    properties:
+        titleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,42 @@
+DDEX\LRAW\LRAW_110\AssertionType:
+    properties:
+        asserter:
+            expose: true
+            access_type: public_method
+            serialized_name: Asserter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAsserter
+                setter: setAsserter
+            type: DDEX\LRAW\LRAW_110\AsserterType
+        isTrue:
+            expose: true
+            access_type: public_method
+            serialized_name: IsTrue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsTrue
+                setter: setIsTrue
+            type: bool
+        missingLinkReason:
+            expose: true
+            access_type: public_method
+            serialized_name: MissingLinkReason
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMissingLinkReason
+                setter: setMissingLinkReason
+            type: DDEX\LRAW\LRAW_110\MissingLinkReasonType
+        assertionDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: AssertionDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAssertionDateTime
+                setter: setAssertionDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

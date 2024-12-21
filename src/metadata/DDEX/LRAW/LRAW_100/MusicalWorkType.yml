@@ -1,0 +1,51 @@
+DDEX\LRAW\LRAW_100\MusicalWorkType:
+    properties:
+        musicalWorkId:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWorkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWorkId
+                setter: setMusicalWorkId
+            xml_list:
+                inline: true
+                entry_name: MusicalWorkId
+            type: array<DDEX\LRAW\LRAW_100\MusicalWorkIdType>
+        referenceTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitleText
+                setter: setReferenceTitleText
+            xml_list:
+                inline: true
+                entry_name: ReferenceTitleText
+            type: array<DDEX\LRAW\LRAW_100\ReferenceTitleTextType>
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            xml_list:
+                inline: true
+                entry_name: ReferenceTitle
+            type: array<DDEX\LRAW\LRAW_100\ReferenceTitleType>
+        writer:
+            expose: true
+            access_type: public_method
+            serialized_name: Writer
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getWriter
+                setter: setWriter
+            type: DDEX\LRAW\LRAW_100\MusicalWorkContributorType

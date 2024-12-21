@@ -1,0 +1,28 @@
+DDEX\LRAW\LRAW_100\LinkResourceAndWorkMessage\LinkResourceAndWorkMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        partyList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Count:
+                    min: 1
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        assertedLink:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

@@ -1,0 +1,39 @@
+DDEX\LRAW\LRAW_110\LinkResourceAndWorkMessage\LinkResourceAndWorkMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\LRAW\LRAW_110\MessageHeaderType
+        partyList:
+            expose: true
+            access_type: public_method
+            serialized_name: PartyList
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPartyList
+                setter: setPartyList
+            type: array<DDEX\LRAW\LRAW_110\PartyType>
+            xml_list:
+                inline: false
+                entry_name: Party
+                skip_when_empty: false
+        assertedLink:
+            expose: true
+            access_type: public_method
+            serialized_name: AssertedLink
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAssertedLink
+                setter: setAssertedLink
+            xml_list:
+                inline: true
+                entry_name: AssertedLink
+            type: array<DDEX\LRAW\LRAW_110\AssertedLinkType>

@@ -1,0 +1,68 @@
+DDEX\LRAW\LRAW_100\AssertedLinkType:
+    properties:
+        linkId:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkId
+                setter: setLinkId
+            type: DDEX\LRAW\LRAW_100\LinkIdType
+        assertion:
+            expose: true
+            access_type: public_method
+            serialized_name: Assertion
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAssertion
+                setter: setAssertion
+            xml_list:
+                inline: true
+                entry_name: Assertion
+            type: array<DDEX\LRAW\LRAW_100\AssertionType>
+        resourceWorkRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceWorkRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceWorkRelationshipType
+                setter: setResourceWorkRelationshipType
+            type: string
+        soundRecording:
+            expose: true
+            access_type: public_method
+            serialized_name: SoundRecording
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSoundRecording
+                setter: setSoundRecording
+            type: DDEX\LRAW\LRAW_100\SoundRecordingType
+        video:
+            expose: true
+            access_type: public_method
+            serialized_name: Video
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVideo
+                setter: setVideo
+            type: DDEX\LRAW\LRAW_100\VideoType
+        musicalWork:
+            expose: true
+            access_type: public_method
+            serialized_name: MusicalWork
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMusicalWork
+                setter: setMusicalWork
+            xml_list:
+                inline: true
+                entry_name: MusicalWork
+            type: array<DDEX\LRAW\LRAW_100\MusicalWorkType>

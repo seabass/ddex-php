@@ -62,6 +62,13 @@ xsd2php:
     'http://ddex.net/xml/rdr-c/11': 'DDEX\RDR_C\RDR_C_110'
     'http://ddex.net/xml/rdr-n/15': 'DDEX\RDR_N\RDR_N_150'
 
+    'http://ddex.net/xml/dpid/10': 'DDEX\DPID\DPID_100'
+    'http://ddex.net/xml/dpid/11': 'DDEX\DPID\DPID_110'
+    'http://ddex.net/xml/dpid/20': 'DDEX\DPID\DPID_200'
+
+    'http://ddex.net/xml/lraw/10': 'DDEX\LRAW\LRAW_100'
+    'http://ddex.net/xml/lraw/11': 'DDEX\LRAW\LRAW_110'
+
 
 
     # avs
@@ -161,6 +168,13 @@ xsd2php:
     'http://ddex.net/xml/rdr-c/11': 'rdr-c'
     'http://ddex.net/xml/rdr-n/15': 'rdn-n'
 
+    'http://ddex.net/xml/dpid/10': 'dpid-100'
+    'http://ddex.net/xml/dpid/11': 'dpid-110'
+    'http://ddex.net/xml/dpid/20': 'dpid-200'
+
+    'http://ddex.net/xml/lraw/10': 'lraw'
+    'http://ddex.net/xml/lraw/11': 'lraw'
+
 
 
   destinations_php:
@@ -221,6 +235,13 @@ xsd2php:
     'DDEX\RDR_C\RDR_C_100': ..\src\schema\DDEX\RDR_C\RDR_C_100
     'DDEX\RDR_C\RDR_C_110': ..\src\schema\DDEX\RDR_C\RDR_C_110
     'DDEX\RDR_N\RDR_N_150': ..\src\schema\DDEX\RDR_N\RDR_N_150
+
+    'DDEX\DPID\DPID_100': ..\src\schema\DDEX\DPID\DPID_100
+    'DDEX\DPID\DPID_110': ..\src\schema\DDEX\DPID\DPID_110
+    'DDEX\DPID\DPID_200': ..\src\schema\DDEX\DPID\DPID_200
+
+    'DDEX\LRAW\LRAW_100': ..\src\schema\DDEX\LRAW\LRAW_100
+    'DDEX\LRAW\LRAW_110': ..\src\schema\DDEX\LRAW\LRAW_110
 
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\schema\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
@@ -284,6 +305,13 @@ xsd2php:
     'DDEX\RDR_C\RDR_C_110': ..\src\metadata\DDEX\RDR_C\RDR_C_110
     'DDEX\RDR_N\RDR_N_150': ..\src\metadata\DDEX\RDR_N\RDR_N_150
 
+    'DDEX\DPID\DPID_100': ..\src\metadata\DDEX\DPID\DPID_100
+    'DDEX\DPID\DPID_110': ..\src\metadata\DDEX\DPID\DPID_110
+    'DDEX\DPID\DPID_200': ..\src\metadata\DDEX\DPID\DPID_200
+
+    'DDEX\LRAW\LRAW_100': ..\src\metadata\DDEX\LRAW\LRAW_100
+    'DDEX\LRAW\LRAW_110': ..\src\metadata\DDEX\LRAW\LRAW_110
+
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\metadata\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
 
   destinations_validation:
@@ -344,6 +372,13 @@ xsd2php:
     'DDEX\RDR_C\RDR_C_100': ..\src\validation\DDEX\RDR_C\RDR_C_100
     'DDEX\RDR_C\RDR_C_110': ..\src\validation\DDEX\RDR_C\RDR_C_110
     'DDEX\RDR_N\RDR_N_150': ..\src\validation\DDEX\RDR_N\RDR_N_150
+
+    'DDEX\DPID\DPID_100': ..\src\validation\DDEX\DPID\DPID_100
+    'DDEX\DPID\DPID_110': ..\src\validation\DDEX\DPID\DPID_110
+    'DDEX\DPID\DPID_200': ..\src\validation\DDEX\DPID\DPID_200
+
+    'DDEX\LRAW\LRAW_100': ..\src\validation\DDEX\LRAW\LRAW_100
+    'DDEX\LRAW\LRAW_110': ..\src\validation\DDEX\LRAW\LRAW_110
 
     'W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA': ..\src\validation\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA
     

@@ -1,0 +1,18 @@
+DDEX\LRAW\LRAW_100\PartyType:
+    properties:
+        partyReference:
+            -
+                Regex:
+                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyId:
+            -
+                Valid: null
+        partyName:
+            -
+                Valid: null

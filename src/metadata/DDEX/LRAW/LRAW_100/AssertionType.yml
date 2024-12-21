@@ -1,0 +1,32 @@
+DDEX\LRAW\LRAW_100\AssertionType:
+    properties:
+        asserter:
+            expose: true
+            access_type: public_method
+            serialized_name: Asserter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAsserter
+                setter: setAsserter
+            type: DDEX\LRAW\LRAW_100\AsserterType
+        isTrue:
+            expose: true
+            access_type: public_method
+            serialized_name: IsTrue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsTrue
+                setter: setIsTrue
+            type: bool
+        assertionDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: AssertionDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAssertionDateTime
+                setter: setAssertionDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

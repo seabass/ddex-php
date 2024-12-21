@@ -1,0 +1,84 @@
+DDEX\LRAW\LRAW_110\VideoType:
+    properties:
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            xml_list:
+                inline: true
+                entry_name: ResourceId
+            type: array<DDEX\LRAW\LRAW_110\VideoIdType>
+        referenceTitleText:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitleText
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitleText
+                setter: setReferenceTitleText
+            xml_list:
+                inline: true
+                entry_name: ReferenceTitleText
+            type: array<DDEX\LRAW\LRAW_110\ReferenceTitleTextType>
+        referenceTitle:
+            expose: true
+            access_type: public_method
+            serialized_name: ReferenceTitle
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReferenceTitle
+                setter: setReferenceTitle
+            xml_list:
+                inline: true
+                entry_name: ReferenceTitle
+            type: array<DDEX\LRAW\LRAW_110\ReferenceTitleType>
+        displayArtistName:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtistName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtistName
+                setter: setDisplayArtistName
+            type: DDEX\LRAW\LRAW_110\NameType
+        displayArtist:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayArtist
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayArtist
+                setter: setDisplayArtist
+            xml_list:
+                inline: true
+                entry_name: DisplayArtist
+            type: array<DDEX\LRAW\LRAW_110\ArtistType>
+        duration:
+            expose: true
+            access_type: public_method
+            serialized_name: Duration
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDuration
+                setter: setDuration
+            type: DateInterval
+        pLineYear:
+            expose: true
+            access_type: public_method
+            serialized_name: PLineYear
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPLineYear
+                setter: setPLineYear
+            type: int

@@ -1,0 +1,16 @@
+DDEX\LRAW\LRAW_110\LinkRequestType:
+    properties:
+        linkRequestId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        soundRecording:
+            -
+                Valid: null
+        video:
+            -
+                Valid: null
+        musicalWork:
+            -
+                Valid: null

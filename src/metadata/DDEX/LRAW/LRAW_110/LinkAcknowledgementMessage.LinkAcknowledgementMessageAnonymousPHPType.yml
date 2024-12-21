@@ -1,0 +1,35 @@
+DDEX\LRAW\LRAW_110\LinkAcknowledgementMessage\LinkAcknowledgementMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\LRAW\LRAW_110\MessageHeaderType
+        linkId:
+            expose: true
+            access_type: public_method
+            serialized_name: LinkId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLinkId
+                setter: setLinkId
+            xml_list:
+                inline: true
+                entry_name: LinkId
+            type: array<DDEX\LRAW\LRAW_110\LinkIdType>
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: DDEX\LRAW\LRAW_110\StatusType

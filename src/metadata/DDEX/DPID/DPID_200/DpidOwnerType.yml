@@ -1,0 +1,94 @@
+DDEX\DPID\DPID_200\DpidOwnerType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: string
+        dPID:
+            expose: true
+            access_type: public_method
+            serialized_name: DPID
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDPID
+                setter: setDPID
+            type: string
+        preferredDPID:
+            expose: true
+            access_type: public_method
+            serialized_name: PreferredDPID
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPreferredDPID
+                setter: setPreferredDPID
+            type: string
+        companyName:
+            expose: true
+            access_type: public_method
+            serialized_name: CompanyName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getCompanyName
+                setter: setCompanyName
+            type: string
+        serviceName:
+            expose: true
+            access_type: public_method
+            serialized_name: ServiceName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getServiceName
+                setter: setServiceName
+            type: string
+        licenseRecord:
+            expose: true
+            access_type: public_method
+            serialized_name: LicenseRecord
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLicenseRecord
+                setter: setLicenseRecord
+            type: string
+        address:
+            expose: true
+            access_type: public_method
+            serialized_name: Address
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAddress
+                setter: setAddress
+            type: string
+        contact:
+            expose: true
+            access_type: public_method
+            serialized_name: Contact
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContact
+                setter: setContact
+            xml_list:
+                inline: true
+                entry_name: Contact
+            type: array<DDEX\DPID\DPID_200\ContactType>

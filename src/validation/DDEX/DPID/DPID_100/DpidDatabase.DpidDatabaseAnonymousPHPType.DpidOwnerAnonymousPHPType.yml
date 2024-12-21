@@ -1,0 +1,30 @@
+DDEX\DPID\DPID_100\DpidDatabase\DpidDatabaseAnonymousPHPType\DpidOwnerAnonymousPHPType:
+    properties:
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        status:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        dPID:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        companyName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        contact:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

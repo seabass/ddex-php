@@ -1,0 +1,15 @@
+DDEX\DPID\DPID_110\DpidDatabase\DpidDatabaseAnonymousPHPType:
+    properties:
+        dpidOwner:
+            expose: true
+            access_type: public_method
+            serialized_name: DpidOwner
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDpidOwner
+                setter: setDpidOwner
+            xml_list:
+                inline: true
+                entry_name: DpidOwner
+            type: array<DDEX\DPID\DPID_110\DpidDatabase\DpidDatabaseAnonymousPHPType\DpidOwnerAnonymousPHPType>

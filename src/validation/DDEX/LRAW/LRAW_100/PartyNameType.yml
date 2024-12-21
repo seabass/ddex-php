@@ -1,0 +1,7 @@
+DDEX\LRAW\LRAW_100\PartyNameType:
+    properties:
+        fullName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

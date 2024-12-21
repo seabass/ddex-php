@@ -1,0 +1,20 @@
+DDEX\LRAW\LRAW_110\MusicalWorkType:
+    properties:
+        musicalWorkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        referenceTitleText:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceTitle:
+            -
+                Valid: null
+        writer:
+            -
+                Valid: null

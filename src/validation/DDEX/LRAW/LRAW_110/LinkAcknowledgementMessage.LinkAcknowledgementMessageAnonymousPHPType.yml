@@ -1,0 +1,21 @@
+DDEX\LRAW\LRAW_110\LinkAcknowledgementMessage\LinkAcknowledgementMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        linkId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        status:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

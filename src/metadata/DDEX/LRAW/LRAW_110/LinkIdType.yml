@@ -1,0 +1,25 @@
+DDEX\LRAW\LRAW_110\LinkIdType:
+    properties:
+        iSLI:
+            expose: true
+            access_type: public_method
+            serialized_name: ISLI
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getISLI
+                setter: setISLI
+            type: string
+        proprietaryId:
+            expose: true
+            access_type: public_method
+            serialized_name: ProprietaryId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getProprietaryId
+                setter: setProprietaryId
+            xml_list:
+                inline: true
+                entry_name: ProprietaryId
+            type: array<DDEX\LRAW\LRAW_110\ProprietaryIdType>

@@ -1,0 +1,112 @@
+<?php
+
+namespace DDEX\LRAW\LRAW_100;
+
+/**
+ * Class representing AssertionType
+ *
+ * A Composite containing details of an Assertion.
+ * XSD Type: Assertion
+ */
+class AssertionType
+{
+    /**
+     * A Reference for a Party (specific to this Message) asserting the link between a sound recording and the work(s) it uses. This is a LocalPartyAnchorReference starting with the letter P.
+     *
+     * @var \DDEX\LRAW\LRAW_100\AsserterType $asserter
+     */
+    private $asserter = null;
+
+    /**
+     * A Flag indicating whether the Assertion is positive (=true) or not (=false).
+     *
+     * @var bool $isTrue
+     */
+    private $isTrue = null;
+
+    /**
+     * The DateTime of the Assertion, in ISO 8601 format: YYYY-MM-DDThh:mm:ssTZD.
+     *
+     * @var \DateTime $assertionDateTime
+     */
+    private $assertionDateTime = null;
+
+    /**
+     * Gets as asserter
+     *
+     * A Reference for a Party (specific to this Message) asserting the link between a sound recording and the work(s) it uses. This is a LocalPartyAnchorReference starting with the letter P.
+     *
+     * @return \DDEX\LRAW\LRAW_100\AsserterType
+     */
+    public function getAsserter()
+    {
+        return $this->asserter;
+    }
+
+    /**
+     * Sets a new asserter
+     *
+     * A Reference for a Party (specific to this Message) asserting the link between a sound recording and the work(s) it uses. This is a LocalPartyAnchorReference starting with the letter P.
+     *
+     * @param \DDEX\LRAW\LRAW_100\AsserterType $asserter
+     * @return self
+     */
+    public function setAsserter(\DDEX\LRAW\LRAW_100\AsserterType $asserter)
+    {
+        $this->asserter = $asserter;
+        return $this;
+    }
+
+    /**
+     * Gets as isTrue
+     *
+     * A Flag indicating whether the Assertion is positive (=true) or not (=false).
+     *
+     * @return bool
+     */
+    public function getIsTrue()
+    {
+        return $this->isTrue;
+    }
+
+    /**
+     * Sets a new isTrue
+     *
+     * A Flag indicating whether the Assertion is positive (=true) or not (=false).
+     *
+     * @param bool $isTrue
+     * @return self
+     */
+    public function setIsTrue($isTrue)
+    {
+        $this->isTrue = $isTrue;
+        return $this;
+    }
+
+    /**
+     * Gets as assertionDateTime
+     *
+     * The DateTime of the Assertion, in ISO 8601 format: YYYY-MM-DDThh:mm:ssTZD.
+     *
+     * @return \DateTime
+     */
+    public function getAssertionDateTime()
+    {
+        return $this->assertionDateTime;
+    }
+
+    /**
+     * Sets a new assertionDateTime
+     *
+     * The DateTime of the Assertion, in ISO 8601 format: YYYY-MM-DDThh:mm:ssTZD.
+     *
+     * @param \DateTime $assertionDateTime
+     * @return self
+     */
+    public function setAssertionDateTime(\DateTime $assertionDateTime)
+    {
+        $this->assertionDateTime = $assertionDateTime;
+        return $this;
+    }
+}
+

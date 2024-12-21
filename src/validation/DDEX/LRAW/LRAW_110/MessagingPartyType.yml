@@ -1,0 +1,10 @@
+DDEX\LRAW\LRAW_110\MessagingPartyType:
+    properties:
+        partyId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        partyName:
+            -
+                Valid: null

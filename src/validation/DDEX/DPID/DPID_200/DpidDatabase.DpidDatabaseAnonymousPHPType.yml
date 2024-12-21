@@ -1,0 +1,9 @@
+DDEX\DPID\DPID_200\DpidDatabase\DpidDatabaseAnonymousPHPType:
+    properties:
+        dpidOwner:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

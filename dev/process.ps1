@@ -25,7 +25,6 @@ process {
 		$ConfigYamlFile = '.\xsd2php_config.yml'
 		$DownloadUrl = "https://service.ddex.net/xml/"
 		$XmlPaths = @(
-			
 			"..\src\xml\ct"
 			"..\src\xml\dsr"
 			"..\src\xml\ern"
@@ -41,6 +40,8 @@ process {
 			"..\src\xml\mc-us-lod"
 			
 			"..\src\xml\mwn\10"
+            "..\src\xml\dpid"
+            "..\src\xml\lraw"
 		)
 
 		if(Test-Path $XSDListFile) {

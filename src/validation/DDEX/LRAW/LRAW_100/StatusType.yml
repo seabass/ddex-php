@@ -1,0 +1,12 @@
+DDEX\LRAW\LRAW_100\StatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Accepted
+                        - Acknowledged
+                        - Conflict
+                        - UserDefined
+                    groups:
+                        - xsd_rules

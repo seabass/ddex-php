@@ -1,0 +1,27 @@
+DDEX\DPID\DPID_200\ContactType:
+    properties:
+        role:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        name:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        email:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        telephone:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        address:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

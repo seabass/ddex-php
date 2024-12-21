@@ -1,0 +1,11 @@
+DDEX\LRAW\LRAW_110\MissingLinkReasonType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - NoLinkFound
+                        - NoMatchFound
+                        - UserDefined
+                    groups:
+                        - xsd_rules
