@@ -1,9 +1,0 @@
-DDEX\RIN\RIN_210\ProjectListType:
-    properties:
-        project:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

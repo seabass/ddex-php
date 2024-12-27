@@ -1,9 +1,0 @@
-DDEX\RIN\RIN_200\PartyListType:
-    properties:
-        party:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

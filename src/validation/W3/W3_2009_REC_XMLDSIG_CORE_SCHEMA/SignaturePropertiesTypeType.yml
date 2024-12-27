@@ -1,9 +1,0 @@
-W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\SignaturePropertiesTypeType:
-    properties:
-        signatureProperty:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

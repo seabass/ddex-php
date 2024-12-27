@@ -1,8 +1,0 @@
-DDEX\PIE\PIE_100\NameIdType:
-    properties:
-        ipiNameNumber:
-            -
-                Regex:
-                    pattern: '~[0-9]{11}~u'
-                    groups:
-                        - xsd_rules

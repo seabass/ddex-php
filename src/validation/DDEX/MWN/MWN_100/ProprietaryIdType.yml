@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_100\ProprietaryIdType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

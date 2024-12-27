@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_US_LOD_100\CategoryType:
-    properties:
-        term:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

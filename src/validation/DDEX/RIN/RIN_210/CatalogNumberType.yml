@@ -1,7 +1,0 @@
-DDEX\RIN\RIN_210\CatalogNumberType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

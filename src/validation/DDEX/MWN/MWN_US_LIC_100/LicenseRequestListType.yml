@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_US_LIC_100\LicenseRequestListType:
-    properties:
-        licenseRequest:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

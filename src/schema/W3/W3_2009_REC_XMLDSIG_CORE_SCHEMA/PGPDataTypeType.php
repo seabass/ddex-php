@@ -21,6 +21,11 @@ class PGPDataTypeType
     private $pGPKeyPacket = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as pGPKeyID
      *
      * @return string
@@ -61,6 +66,28 @@ class PGPDataTypeType
     public function setPGPKeyPacket($pGPKeyPacket)
     {
         $this->pGPKeyPacket = $pGPKeyPacket;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

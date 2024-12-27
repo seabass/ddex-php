@@ -1,8 +1,0 @@
-DDEX\RIN\RIN10F\EventDateType:
-    properties:
-        __value:
-            -
-                Regex:
-                    pattern: '~[0-9]{4}(-[0-9]{2}){0,1}(-[0-9]{2}){0,1}~u'
-                    groups:
-                        - xsd_rules

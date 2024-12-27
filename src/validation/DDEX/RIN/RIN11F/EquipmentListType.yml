@@ -1,9 +1,0 @@
-DDEX\RIN\RIN11F\EquipmentListType:
-    properties:
-        equipment:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

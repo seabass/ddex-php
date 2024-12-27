@@ -1,9 +1,0 @@
-DDEX\MEAD\MEAD_101\ReleaseInformationListType:
-    properties:
-        releaseInformation:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

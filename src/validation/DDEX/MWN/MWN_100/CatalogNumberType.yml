@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_100\CatalogNumberType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

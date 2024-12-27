@@ -1,7 +1,0 @@
-DDEX\RDR_C\RDR_C_110\MessageStatusType:
-    properties:
-        status:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

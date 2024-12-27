@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_US_LIC_101\RightsAgreementIdType:
-    properties:
-        proprietaryId:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

@@ -1,9 +1,0 @@
-DDEX\MEAD\MEAD_101\CommentaryNoteTypeType:
-    properties:
-        __value:
-            -
-                Choice:
-                    choices:
-                        - UserDefined
-                    groups:
-                        - xsd_rules

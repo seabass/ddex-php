@@ -149,9 +149,9 @@ xsd2php:
 
     'http://ddex.net/xml/pie/10': 'pie'
 
-    'http://ddex.net/xml/mead/100': 'mead'
+    'http://ddex.net/xml/mead/10': 'mead'
     'http://ddex.net/xml/mead/101': 'mead'
-    'http://ddex.net/xml/mead/110': 'mead'
+    'http://ddex.net/xml/mead/11': 'mead'
 
     'http://ddex.net/xml/mc-us-lic/10': 'mwn'
     'http://ddex.net/xml/mc-us-lic/101': 'mwn'

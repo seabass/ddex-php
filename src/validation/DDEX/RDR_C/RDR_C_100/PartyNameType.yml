@@ -1,7 +1,0 @@
-DDEX\RDR_C\RDR_C_100\PartyNameType:
-    properties:
-        fullName:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

@@ -1,9 +1,0 @@
-DDEX\RIN\RIN10F\FileListType:
-    properties:
-        file:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

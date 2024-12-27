@@ -51,6 +51,11 @@ class KeyInfoTypeType
     private $mgmtData = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as id
      *
      * @return string
@@ -223,6 +228,28 @@ class KeyInfoTypeType
     public function setMgmtData($mgmtData)
     {
         $this->mgmtData = $mgmtData;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

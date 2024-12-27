@@ -53,6 +53,11 @@ class X509DataType
     private $partyId = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as x509IssuerSerial
      *
      * An Element of type X509IssuerSerialType.
@@ -205,6 +210,28 @@ class X509DataType
     public function setPartyId(?\DDEX\RIN\RIN11F\PartyIdType $partyId = null)
     {
         $this->partyId = $partyId;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

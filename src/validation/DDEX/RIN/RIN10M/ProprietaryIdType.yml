@@ -1,7 +1,0 @@
-DDEX\RIN\RIN10M\ProprietaryIdType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

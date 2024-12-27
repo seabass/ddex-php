@@ -1,8 +1,0 @@
-DDEX\RIN\RIN10F\DetailedPartyIdType:
-    properties:
-        dPID:
-            -
-                Regex:
-                    pattern: '~PADPIDA[a-zA-Z0-9]+~u'
-                    groups:
-                        - xsd_rules

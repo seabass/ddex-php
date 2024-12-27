@@ -1,9 +1,0 @@
-DDEX\MEAD\MEAD_110\ImageType:
-    properties:
-        file:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

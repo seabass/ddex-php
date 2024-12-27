@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_100\MusicalWorkDetailsByTerritoryType:
-    properties:
-        musicalWorkContributor:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

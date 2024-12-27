@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_110\CategoryType:
-    properties:
-        term:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

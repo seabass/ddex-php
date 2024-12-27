@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_100\ICPNType:
-    properties:
-        isEan:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

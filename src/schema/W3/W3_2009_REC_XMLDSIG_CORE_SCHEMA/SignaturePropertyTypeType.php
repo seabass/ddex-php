@@ -21,6 +21,11 @@ class SignaturePropertyTypeType
     private $id = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as target
      *
      * @return string
@@ -61,6 +66,28 @@ class SignaturePropertyTypeType
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

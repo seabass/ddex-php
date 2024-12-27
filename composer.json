@@ -6,19 +6,19 @@
         "digital data exchange",
         "music rights",
         "music tech",
-        "Electronic Release Notification Message Suite (ERN)",
-        "Bulk communication of Work And Recording Metadata (BWARM)",
-        "Recording Data and Rights (RDR)",
-        "Musical Works Data and Rights communication (MWDR)",
-        "Musical Work Right Share Notification Choreography (MWN)",
-        "Musical Work Licensing Choreography (MWL)",
-        "Letters of Direction Choreography (LoD)",
-        "Claim Detail Message Suite (CDM)",
-        "Digital Sales Reporting Message Suite (DSR)",
-        "Media Enrichment and Description (MEAD)",
-        "Party Identification and Enrichment (PIE)",
-        "Catalogue Transfer (CT)",
-        "Recording Information Notification (RIN)"
+        "Electronic Release Notification Message Suite - ERN",
+        "Bulk communication of Work And Recording Metadata - BWARM",
+        "Recording Data and Rights - RDR",
+        "Musical Works Data and Rights communication - MWDR",
+        "Musical Work Right Share Notification Choreography - MWN",
+        "Musical Work Licensing Choreography - MWL",
+        "Letters of Direction Choreography - LoD",
+        "Claim Detail Message Suite - CDM",
+        "Digital Sales Reporting Message Suite - DSR",
+        "Media Enrichment and Description - MEAD",
+        "Party Identification and Enrichment - PIE",
+        "Catalogue Transfer - CT",
+        "Recording Information Notification - RIN"
     ],
     "license": "MIT",
     "authors": [
@@ -34,10 +34,6 @@
         "goetas-webservices/xsd2php": "@dev",
         "goetas-webservices/xsd2php-runtime": "@dev",
         "goetas-webservices/xsd-reader": "^0.4.8"
-    },
-    "require-dev": {
-        "goetas-webservices/xsd2php": "@dev",
-        "goetas-webservices/xsd2php-runtime": "@dev"
     },
     "repositories": [
         {

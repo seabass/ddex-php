@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_US_LOD_100\WorkListType:
-    properties:
-        musicalWork:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

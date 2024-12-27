@@ -21,6 +21,11 @@ class KeyValueTypeType
     private $rSAKeyValue = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as dSAKeyValue
      *
      * @return \W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\DSAKeyValue
@@ -61,6 +66,28 @@ class KeyValueTypeType
     public function setRSAKeyValue(?\W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\RSAKeyValue $rSAKeyValue = null)
     {
         $this->rSAKeyValue = $rSAKeyValue;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

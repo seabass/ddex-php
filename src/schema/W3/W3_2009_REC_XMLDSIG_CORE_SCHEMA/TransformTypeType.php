@@ -16,6 +16,11 @@ class TransformTypeType
     private $algorithm = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * @var string $xPath
      */
     private $xPath = null;
@@ -39,6 +44,28 @@ class TransformTypeType
     public function setAlgorithm($algorithm)
     {
         $this->algorithm = $algorithm;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 

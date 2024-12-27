@@ -1,9 +1,0 @@
-DDEX\RIN\RIN_200\MusicalWorkListType:
-    properties:
-        musicalWork:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

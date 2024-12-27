@@ -1,7 +1,0 @@
-DDEX\RIN\RIN_210\DetailedPartyNameType:
-    properties:
-        fullName:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

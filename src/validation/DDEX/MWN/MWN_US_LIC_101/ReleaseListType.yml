@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_US_LIC_101\ReleaseListType:
-    properties:
-        release:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

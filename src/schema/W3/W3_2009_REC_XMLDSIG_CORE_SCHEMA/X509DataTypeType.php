@@ -36,6 +36,11 @@ class X509DataTypeType
     private $x509CRL = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Gets as x509IssuerSerial
      *
      * @return \W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\X509IssuerSerialTypeType
@@ -142,6 +147,28 @@ class X509DataTypeType
     public function setX509CRL($x509CRL)
     {
         $this->x509CRL = $x509CRL;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

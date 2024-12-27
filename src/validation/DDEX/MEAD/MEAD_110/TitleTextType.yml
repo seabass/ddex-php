@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_110\TitleTextType:
-    properties:
-        title:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

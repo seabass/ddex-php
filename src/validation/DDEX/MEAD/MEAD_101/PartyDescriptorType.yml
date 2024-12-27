@@ -1,8 +1,0 @@
-DDEX\MEAD\MEAD_101\PartyDescriptorType:
-    properties:
-        partyId:
-            -
-                Valid: null
-        partyName:
-            -
-                Valid: null

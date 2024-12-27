@@ -1,7 +1,0 @@
-DDEX\RDR_C\RDR_C_110\BatchStatusType:
-    properties:
-        status:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

@@ -1,9 +1,0 @@
-DDEX\RIN\RIN_210\DataCarrierListType:
-    properties:
-        dataCarrier:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

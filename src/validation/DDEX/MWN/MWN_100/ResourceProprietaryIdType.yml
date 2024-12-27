@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_100\ResourceProprietaryIdType:
-    properties:
-        proprietaryId:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

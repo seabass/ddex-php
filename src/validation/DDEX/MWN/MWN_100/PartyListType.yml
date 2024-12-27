@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_100\PartyListType:
-    properties:
-        party:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

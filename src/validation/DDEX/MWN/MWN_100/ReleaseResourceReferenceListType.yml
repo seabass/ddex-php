@@ -1,7 +1,0 @@
-DDEX\MWN\MWN_100\ReleaseResourceReferenceListType:
-    properties:
-        releaseResourceReference:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

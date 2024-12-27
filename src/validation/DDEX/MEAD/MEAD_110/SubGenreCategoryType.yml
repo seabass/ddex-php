@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_110\SubGenreCategoryType:
-    properties:
-        value:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

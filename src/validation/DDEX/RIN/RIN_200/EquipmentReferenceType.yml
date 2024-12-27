@@ -1,8 +1,0 @@
-DDEX\RIN\RIN_200\EquipmentReferenceType:
-    properties:
-        __value:
-            -
-                Regex:
-                    pattern: '~I[\d\-_a-zA-Z]+~u'
-                    groups:
-                        - xsd_rules

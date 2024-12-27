@@ -1,7 +1,0 @@
-DDEX\PIE\PIE_100\PrimaryRoleType:
-    properties:
-        value:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

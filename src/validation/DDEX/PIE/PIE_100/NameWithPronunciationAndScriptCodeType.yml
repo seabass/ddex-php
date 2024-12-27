@@ -1,7 +1,0 @@
-DDEX\PIE\PIE_100\NameWithPronunciationAndScriptCodeType:
-    properties:
-        name:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

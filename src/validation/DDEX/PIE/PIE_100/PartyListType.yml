@@ -1,9 +1,0 @@
-DDEX\PIE\PIE_100\PartyListType:
-    properties:
-        party:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

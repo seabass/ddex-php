@@ -1,9 +1,0 @@
-DDEX\RIN\RIN_210\EquipmentManufacturerType:
-    properties:
-        __value:
-            -
-                Choice:
-                    choices:
-                        - UserDefined
-                    groups:
-                        - xsd_rules

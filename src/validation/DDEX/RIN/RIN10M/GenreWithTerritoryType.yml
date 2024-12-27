@@ -1,7 +1,0 @@
-DDEX\RIN\RIN10M\GenreWithTerritoryType:
-    properties:
-        genreText:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

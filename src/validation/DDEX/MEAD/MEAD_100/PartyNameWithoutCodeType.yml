@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_100\PartyNameWithoutCodeType:
-    properties:
-        fullName:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

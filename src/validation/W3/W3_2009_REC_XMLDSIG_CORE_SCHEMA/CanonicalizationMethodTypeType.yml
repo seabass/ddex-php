@@ -1,7 +1,0 @@
-W3\W3_2009_REC_XMLDSIG_CORE_SCHEMA\CanonicalizationMethodTypeType:
-    properties:
-        algorithm:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

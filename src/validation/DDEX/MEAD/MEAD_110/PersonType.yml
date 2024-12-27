@@ -1,8 +1,0 @@
-DDEX\MEAD\MEAD_110\PersonType:
-    properties:
-        email:
-            -
-                Regex:
-                    pattern: ~\w+@(\w+\.)+\w+~u
-                    groups:
-                        - xsd_rules

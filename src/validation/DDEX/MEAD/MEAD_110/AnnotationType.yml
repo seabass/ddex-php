@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_110\AnnotationType:
-    properties:
-        text:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

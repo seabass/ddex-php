@@ -1,9 +1,0 @@
-DDEX\MWN\MWN_100\RightShareListType:
-    properties:
-        rightShare:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

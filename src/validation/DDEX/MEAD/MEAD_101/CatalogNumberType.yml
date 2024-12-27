@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_101\CatalogNumberType:
-    properties:
-        namespace:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

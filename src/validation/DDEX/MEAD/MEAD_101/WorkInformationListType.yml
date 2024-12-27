@@ -1,9 +1,0 @@
-DDEX\MEAD\MEAD_101\WorkInformationListType:
-    properties:
-        workInformation:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

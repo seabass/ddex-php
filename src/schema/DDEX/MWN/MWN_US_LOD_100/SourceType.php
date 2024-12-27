@@ -103,6 +103,11 @@ class SourceType
     private $updated = null;
 
     /**
+     * @var mixed $any
+     */
+    private $any = null;
+
+    /**
      * Adds as author
      *
      * A Composite containing details of the Name, Identifier and Role(s) of an author of a Resource.
@@ -571,6 +576,28 @@ class SourceType
     public function setUpdated(\DateTime $updated = null)
     {
         $this->updated = $updated;
+        return $this;
+    }
+
+    /**
+     * Gets as any
+     *
+     * @return mixed
+     */
+    public function getAny()
+    {
+        return $this->any;
+    }
+
+    /**
+     * Sets a new any
+     *
+     * @param $any
+     * @return self
+     */
+    public function setAny($any)
+    {
+        $this->any = $any;
         return $this;
     }
 }

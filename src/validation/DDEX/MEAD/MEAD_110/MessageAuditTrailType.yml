@@ -1,9 +1,0 @@
-DDEX\MEAD\MEAD_110\MessageAuditTrailType:
-    properties:
-        messageAuditTrailEvent:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
-            -
-                Valid: null

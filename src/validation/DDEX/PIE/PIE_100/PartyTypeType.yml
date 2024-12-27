@@ -1,7 +1,0 @@
-DDEX\PIE\PIE_100\PartyTypeType:
-    properties:
-        value:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules

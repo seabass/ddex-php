@@ -1,7 +1,0 @@
-DDEX\MEAD\MEAD_101\TitleTextWithPronunciationType:
-    properties:
-        title:
-            -
-                NotNull:
-                    groups:
-                        - xsd_rules
