@@ -1,0 +1,5 @@
+DDEX\ERN\ERN_C_WS_160\ReleaseStatusMessage:
+    xml_namespaces:
+        ern-c-ws: 'http://ddex.net/xml/ern-c-ws/16'
+    xml_root_name: 'ern-c-ws:ReleaseStatusMessage'
+    xml_root_namespace: 'http://ddex.net/xml/ern-c-ws/16'

@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_C_WS_160\PartyNameWithoutCodeType:
+    properties:
+        fullName:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

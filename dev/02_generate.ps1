@@ -20,6 +20,9 @@ $XsdSchemaPaths = @(
 
 	# Electronic Release Notification Message Suite (ERN)
 	"..\src\xml\ern"
+	"..\src\xml\ern-c"  #Any\Any bug
+	"..\src\xml\ern-c-sftp"  #Any\Any bug
+	"..\src\xml\ern-c-ws"  #Any\Any bug
 	
 	# Digital Sales Reporting Message Suite (DSR)
 	"..\src\xml\dsr"

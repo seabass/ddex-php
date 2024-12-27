@@ -24,6 +24,18 @@ xsd2php:
     'http://ddex.net/xml/ern/411':  'DDEX\ERN\ERN_411'
     'http://ddex.net/xml/ern/431':  'DDEX\ERN\ERN_431'
 
+    'http://ddex.net/xml/ern-c/13':  'DDEX\ERN\ERN_C_130'
+    'http://ddex.net/xml/ern-c/15':  'DDEX\ERN\ERN_C_150'
+
+    'http://ddex.net/xml/ern-c-sftp/16': 'DDEX\ERN\ERN_C_SFTP_160'
+    'http://ddex.net/xml/ern-c-sftp/17': 'DDEX\ERN\ERN_C_SFTP_170'
+    'http://ddex.net/xml/ern-c-sftp/18': 'DDEX\ERN\ERN_C_SFTP_180'
+    'http://ddex.net/xml/ern-c-sftp/181': 'DDEX\ERN\ERN_C_SFTP_181'
+
+    'http://ddex.net/xml/ern-c-ws/16': 'DDEX\ERN\ERN_C_WS_160'
+    'http://ddex.net/xml/ern-c-ws/17': 'DDEX\ERN\ERN_C_WS_170'
+    'http://ddex.net/xml/ern-c-ws/18': 'DDEX\ERN\ERN_C_WS_180'
+
     'http://ddex.net/xml/dsr/40':  'DDEX\DSR\DSR_400'
     'http://ddex.net/xml/dsr/41':  'DDEX\DSR\DSR_410'
     'http://ddex.net/xml/dsr/42':  'DDEX\DSR\DSR_420'
@@ -132,6 +144,19 @@ xsd2php:
     'http://ddex.net/xml/ern/43': 'ern'
     'http://ddex.net/xml/ern/431': 'ern'
 
+
+    'http://ddex.net/xml/ern-c/13': 'ern-c'
+    'http://ddex.net/xml/ern-c/15': 'ern-c'
+
+    'http://ddex.net/xml/ern-c-sftp/16': 'ern-c-sftp'
+    'http://ddex.net/xml/ern-c-sftp/17': 'ern-c-sftp'
+    'http://ddex.net/xml/ern-c-sftp/18': 'ern-c-sftp'
+    'http://ddex.net/xml/ern-c-sftp/181': 'ern-c-sftp'
+
+    'http://ddex.net/xml/ern-c-ws/16': 'ern-c-ws'
+    'http://ddex.net/xml/ern-c-ws/17': 'ern-c-ws'
+    'http://ddex.net/xml/ern-c-ws/18': 'ern-c-ws'
+
     'http://ddex.net/xml/dsr/40': 'dsr'
     'http://ddex.net/xml/dsr/41': 'dsr'
     'http://ddex.net/xml/dsr/42': 'dsr'
@@ -199,6 +224,18 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\schema\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\schema\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\schema\DDEX\ERN\ERN_431
+
+    'DDEX\ERN\ERN_C_130': ..\src\schema\DDEX\ERN_C_130
+    'DDEX\ERN\ERN_C_150': ..\src\schema\DDEX\ERN_C_150
+
+    'DDEX\ERN\ERN_C_SFTP_160': ..\src\schema\DDEX\ERN_C_SFTP_160
+    'DDEX\ERN\ERN_C_SFTP_170': ..\src\schema\DDEX\ERN_C_SFTP_170
+    'DDEX\ERN\ERN_C_SFTP_180': ..\src\schema\DDEX\ERN_C_SFTP_180
+    'DDEX\ERN\ERN_C_SFTP_181': ..\src\schema\DDEX\ERN_C_SFTP_181
+
+    'DDEX\ERN\ERN_C_WS_160': ..\src\schema\DDEX\ERN_C_WS_160
+    'DDEX\ERN\ERN_C_WS_170': ..\src\schema\DDEX\ERN_C_WS_170
+    'DDEX\ERN\ERN_C_WS_180': ..\src\schema\DDEX\ERN_C_WS_180
 
     'DDEX\DSR\DSR_400': ..\src\schema\DDEX\DSR\DSR_400
     'DDEX\DSR\DSR_410': ..\src\schema\DDEX\DSR\DSR_410
@@ -269,6 +306,18 @@ xsd2php:
     'DDEX\ERN\ERN_430': ..\src\metadata\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\metadata\DDEX\ERN\ERN_431
 
+    'DDEX\ERN\ERN_C_130': ..\src\metadata\DDEX\ERN_C_130
+    'DDEX\ERN\ERN_C_150': ..\src\metadata\DDEX\ERN_C_150
+
+    'DDEX\ERN\ERN_C_SFTP_160': ..\src\metadata\DDEX\ERN_C_SFTP_160
+    'DDEX\ERN\ERN_C_SFTP_170': ..\src\metadata\DDEX\ERN_C_SFTP_170
+    'DDEX\ERN\ERN_C_SFTP_180': ..\src\metadata\DDEX\ERN_C_SFTP_180
+    'DDEX\ERN\ERN_C_SFTP_181': ..\src\metadata\DDEX\ERN_C_SFTP_181
+
+    'DDEX\ERN\ERN_C_WS_160': ..\src\metadata\DDEX\ERN_C_WS_160
+    'DDEX\ERN\ERN_C_WS_170': ..\src\metadata\DDEX\ERN_C_WS_170
+    'DDEX\ERN\ERN_C_WS_180': ..\src\metadata\DDEX\ERN_C_WS_180
+
     'DDEX\DSR\DSR_400': ..\src\metadata\DDEX\DSR\DSR_400
     'DDEX\DSR\DSR_410': ..\src\metadata\DDEX\DSR\DSR_410
     'DDEX\DSR\DSR_420': ..\src\metadata\DDEX\DSR\DSR_420
@@ -336,6 +385,18 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\validation\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\validation\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\validation\DDEX\ERN\ERN_431
+    
+    'DDEX\ERN\ERN_C_130': ..\src\validation\DDEX\ERN_C_130
+    'DDEX\ERN\ERN_C_150': ..\src\validation\DDEX\ERN_C_150
+
+    'DDEX\ERN\ERN_C_SFTP_160': ..\src\validation\DDEX\ERN_C_SFTP_160
+    'DDEX\ERN\ERN_C_SFTP_170': ..\src\validation\DDEX\ERN_C_SFTP_170
+    'DDEX\ERN\ERN_C_SFTP_180': ..\src\validation\DDEX\ERN_C_SFTP_180
+    'DDEX\ERN\ERN_C_SFTP_181': ..\src\validation\DDEX\ERN_C_SFTP_181
+
+    'DDEX\ERN\ERN_C_WS_160': ..\src\validation\DDEX\ERN_C_WS_160
+    'DDEX\ERN\ERN_C_WS_170': ..\src\validation\DDEX\ERN_C_WS_170
+    'DDEX\ERN\ERN_C_WS_180': ..\src\validation\DDEX\ERN_C_WS_180
 
     'DDEX\DSR\DSR_400': ..\src\validation\DDEX\DSR\DSR_400
     'DDEX\DSR\DSR_410': ..\src\validation\DDEX\DSR\DSR_410

@@ -1,0 +1,199 @@
+<?php
+
+namespace DDEX\ERN\ERN_C_SFTP_181;
+
+/**
+ * Class representing MessagingPartyType
+ *
+ * A Composite containing details of a MessagingParty.
+ * XSD Type: MessagingParty
+ */
+class MessagingPartyType
+{
+    /**
+     * The Language and script for the Elements of the MessagingParty as defined in IETF RfC 5646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-script][-region][-variant]. A list of common language/script combinations has been published in the Language Metadata Table (LMT) at https://www.mesaonline.org/lmt by the Media & Entertainment Services Alliance. Other language/script combinations allowed by IETF RfC 5646 are also valid. This is represented in an XML schema as an XML Attribute.
+     *
+     * @var string $languageAndScriptCode
+     */
+    private $languageAndScriptCode = null;
+
+    /**
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @var \DDEX\ERN\ERN_C_SFTP_181\PartyIdType[] $partyId
+     */
+    private $partyId = [
+        
+    ];
+
+    /**
+     * A Composite containing details of the PartyNames for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @var \DDEX\ERN\ERN_C_SFTP_181\PartyNameType $partyName
+     */
+    private $partyName = null;
+
+    /**
+     * A Composite containing a TradingName for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @var \DDEX\ERN\ERN_C_SFTP_181\NameType $tradingName
+     */
+    private $tradingName = null;
+
+    /**
+     * Gets as languageAndScriptCode
+     *
+     * The Language and script for the Elements of the MessagingParty as defined in IETF RfC 5646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-script][-region][-variant]. A list of common language/script combinations has been published in the Language Metadata Table (LMT) at https://www.mesaonline.org/lmt by the Media & Entertainment Services Alliance. Other language/script combinations allowed by IETF RfC 5646 are also valid. This is represented in an XML schema as an XML Attribute.
+     *
+     * @return string
+     */
+    public function getLanguageAndScriptCode()
+    {
+        return $this->languageAndScriptCode;
+    }
+
+    /**
+     * Sets a new languageAndScriptCode
+     *
+     * The Language and script for the Elements of the MessagingParty as defined in IETF RfC 5646. The default is the same as indicated for the containing composite. Language and Script are provided as lang[-script][-region][-variant]. A list of common language/script combinations has been published in the Language Metadata Table (LMT) at https://www.mesaonline.org/lmt by the Media & Entertainment Services Alliance. Other language/script combinations allowed by IETF RfC 5646 are also valid. This is represented in an XML schema as an XML Attribute.
+     *
+     * @param string $languageAndScriptCode
+     * @return self
+     */
+    public function setLanguageAndScriptCode($languageAndScriptCode)
+    {
+        $this->languageAndScriptCode = $languageAndScriptCode;
+        return $this;
+    }
+
+    /**
+     * Adds as partyId
+     *
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @return self
+     * @param \DDEX\ERN\ERN_C_SFTP_181\PartyIdType $partyId
+     */
+    public function addToPartyId(\DDEX\ERN\ERN_C_SFTP_181\PartyIdType $partyId)
+    {
+        $this->partyId[] = $partyId;
+        return $this;
+    }
+
+    /**
+     * isset partyId
+     *
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetPartyId($index)
+    {
+        return isset($this->partyId[$index]);
+    }
+
+    /**
+     * unset partyId
+     *
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetPartyId($index)
+    {
+        unset($this->partyId[$index]);
+    }
+
+    /**
+     * Gets as partyId
+     *
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @return \DDEX\ERN\ERN_C_SFTP_181\PartyIdType[]
+     */
+    public function getPartyId()
+    {
+        return $this->partyId;
+    }
+
+    /**
+     * Sets a new partyId
+     *
+     * A Composite containing details of the PartyId for the Party handling the Message. If no Namespace is given, the Identifier is a DdexPartyId (DPID). Note that DPIDs are not normally used to identify Artists, producers or other Creators.
+     *
+     * @param \DDEX\ERN\ERN_C_SFTP_181\PartyIdType[] $partyId
+     * @return self
+     */
+    public function setPartyId(array $partyId)
+    {
+        $this->partyId = $partyId;
+        return $this;
+    }
+
+    /**
+     * Gets as partyName
+     *
+     * A Composite containing details of the PartyNames for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @return \DDEX\ERN\ERN_C_SFTP_181\PartyNameType
+     */
+    public function getPartyName()
+    {
+        return $this->partyName;
+    }
+
+    /**
+     * Sets a new partyName
+     *
+     * A Composite containing details of the PartyNames for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @param \DDEX\ERN\ERN_C_SFTP_181\PartyNameType $partyName
+     * @return self
+     */
+    public function setPartyName(?\DDEX\ERN\ERN_C_SFTP_181\PartyNameType $partyName = null)
+    {
+        $this->partyName = $partyName;
+        return $this;
+    }
+
+    /**
+     * Gets as tradingName
+     *
+     * A Composite containing a TradingName for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @return \DDEX\ERN\ERN_C_SFTP_181\NameType
+     */
+    public function getTradingName()
+    {
+        return $this->tradingName;
+    }
+
+    /**
+     * Sets a new tradingName
+     *
+     * A Composite containing a TradingName for the Party handling the Message.
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/guidance-on-contributors%2C-artists-and-writers/lengths-of-artist-names
+     * Further Reading: https://kb.ddex.net/implementing-each-standard/best-practices-for-all-ddex-standards/general-guidance-on-messages/field-length-and-precision
+     *
+     * @param \DDEX\ERN\ERN_C_SFTP_181\NameType $tradingName
+     * @return self
+     */
+    public function setTradingName(?\DDEX\ERN\ERN_C_SFTP_181\NameType $tradingName = null)
+    {
+        $this->tradingName = $tradingName;
+        return $this;
+    }
+}
+

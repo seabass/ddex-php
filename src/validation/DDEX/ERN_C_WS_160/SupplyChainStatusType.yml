@@ -1,0 +1,22 @@
+DDEX\ERN\ERN_C_WS_160\SupplyChainStatusType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - DeliveredToReleaseDistributor
+                        - InDeliveryToReleaseDistributor
+                        - InPreparationForDeliveryToReleaseDistributor
+                        - OrderPlacedForReleaseDistributor
+                        - ProcessingErrorAtReleaseCreator
+                        - ProcessingErrorAtReleaseDistributor
+                        - ReleaseMadeAvailableToConsumers
+                        - ReleaseNotAvailable
+                        - ReleaseReceivedByReleaseDistributor
+                        - ReleaseStagedForPublication
+                        - SuccessfullyIngestedByReleaseDistributor
+                        - UserDefined
+                        - ReleaseViolatesTermsOfService
+                        - RightsConflict
+                    groups:
+                        - xsd_rules
