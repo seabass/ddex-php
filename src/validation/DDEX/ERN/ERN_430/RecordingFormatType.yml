@@ -55,6 +55,7 @@ DDEX\ERN\ERN_430\RecordingFormatType:
                         - NonMusicalWorkTrailer
                         - NonMusicalWorkVideoChapter
                         - NonSerialAudioVisualRecording
+                        - OfficialMusicVideo
                         - OperaVideo
                         - Performance
                         - RawFootage

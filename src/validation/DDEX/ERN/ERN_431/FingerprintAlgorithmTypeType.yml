@@ -4,6 +4,7 @@ DDEX\ERN\ERN_431\FingerprintAlgorithmTypeType:
             -
                 Choice:
                     choices:
+                        - ISCC
                         - UserDefined
                     groups:
                         - xsd_rules

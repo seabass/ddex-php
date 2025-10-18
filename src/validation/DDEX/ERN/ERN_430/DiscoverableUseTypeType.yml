@@ -51,9 +51,9 @@ DDEX\ERN\ERN_430\DiscoverableUseTypeType:
                         - UseAsVoiceMail
                         - UseAsWallpaper
                         - UseForDataMining
-                        - UseForGenerativeAI
+                        - UseForTrainingGenerativeAI
                         - UseForIdentification
-                        - UseForNonGenerativeAI
+                        - UseForTrainingNonGenerativeAI
                         - UseInMobilePhoneMessaging
                         - UseInPhoneListening
                         - UserDefined

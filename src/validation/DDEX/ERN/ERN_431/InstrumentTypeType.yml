@@ -16,6 +16,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - AcousticBassGuitar
                         - BabyBass
                         - Bass
+                        - BassGuitar
                         - ElectricBassGuitar
                         - FretlessBassGuitar
                         - PiccoloBass
@@ -60,6 +61,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - ElectricPiano
                         - Harpsichord
                         - Keyboard
+                        - Klavier
                         - Mellotron
                         - Optigan
                         - Pianet
@@ -98,6 +100,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - BassDrum(Concert)
                         - BassDrum(Kick)
                         - Bata
+                        - Bells
                         - BellTree
                         - Bendir
                         - Berimbau
@@ -141,6 +144,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Djembe
                         - Dohol
                         - Doumbek
+                        - Drum
                         - DrumSticks
                         - Duggi
                         - Dunun
@@ -171,6 +175,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Jawbone
                         - Jawharp
                         - Jug
+                        - Kalimba
                         - Kanjira
                         - Katsa
                         - Kendang
@@ -189,7 +194,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Marimbaphone
                         - Marimbula
                         - Mazhar
-                        - Kalimba
+                        - Mbira
                         - MetalCans
                         - MouthPercussion
                         - Mridangam
@@ -242,7 +247,9 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - TalkingDrum
                         - Tambora
                         - Tamborim
+                        - Tambour
                         - Tambourine
+                        - Tamtam
                         - TaongaPuoro
                         - Tar(Percussion)
                         - Tarol
@@ -434,6 +441,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Rabel
                         - Rebab
                         - Rebec
+                        - Ruan
                         - Santoor
                         - Sarangi
                         - Sarod
@@ -475,6 +483,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Viol
                         - Viola
                         - ViolaDAmore
+                        - ViolaDaGamba
                         - ViolaPomposa
                         - Violin
                         - ViolinoPiccolo
@@ -489,6 +498,8 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Zhonghu
                         - Zither
                         - ArpeggiatingSynth
+                        - OndesMartenot
+                        - Sampler
                         - SynthBass
                         - SynthBrass
                         - SynthChoir
@@ -498,6 +509,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - SynthSteelDrums
                         - SynthStrings
                         - Synthesizer
+                        - Theremin
                         - GroupBackgroundVocalists
                         - BoyVoice
                         - ChildVoice
@@ -540,6 +552,7 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - BassDulcian
                         - BassFlute
                         - BassHarmonica
+                        - BassOboe
                         - BassRecorder
                         - BassSackbut
                         - BassSaxophone
@@ -599,10 +612,12 @@ DDEX\ERN\ERN_431\InstrumentTypeType:
                         - Guanzi
                         - Gyaling
                         - Harmonica
+                        - Harmonium
                         - Heckelphone
                         - Helicon
                         - HeraldTrumpet
                         - HighlandPipes
+                        - Horn
                         - HotFountainPen
                         - IrishLowWhistle
                         - Jagdhorn

@@ -8,7 +8,6 @@ DDEX\ERN\ERN_431\PriceType:
                         - AFN
                         - ALL
                         - AMD
-                        - ANG
                         - AOA
                         - ARS
                         - AUD
@@ -39,7 +38,6 @@ DDEX\ERN\ERN_431\PriceType:
                         - COP
                         - COU
                         - CRC
-                        - CUC
                         - CUP
                         - CVE
                         - CZK
@@ -131,7 +129,6 @@ DDEX\ERN\ERN_431\PriceType:
                         - SGD
                         - SHP
                         - SLE
-                        - SLL
                         - SOS
                         - SRD
                         - SSP
@@ -159,15 +156,18 @@ DDEX\ERN\ERN_431\PriceType:
                         - VND
                         - VUV
                         - WST
+                        - XAD
                         - XAF
                         - XCD
+                        - XCG
                         - XOF
                         - XPF
                         - YER
                         - ZAR
                         - ZMW
                         - ZWG
-                        - ZWL
+                        - ANG
+                        - CUC
                         - CYP
                         - EEK
                         - HRK
@@ -178,8 +178,10 @@ DDEX\ERN\ERN_431\PriceType:
                         - ROL
                         - SIT
                         - SKK
+                        - SLL
                         - STD
                         - VEF
+                        - ZWL
                     groups:
                         - xsd_rules
             -

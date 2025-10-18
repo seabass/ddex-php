@@ -51,9 +51,9 @@ DDEX\CT\CT_100\DiscoverableUseTypeType:
                         - UseAsVoiceMail
                         - UseAsWallpaper
                         - UseForDataMining
-                        - UseForGenerativeAI
+                        - UseForTrainingGenerativeAI
                         - UseForIdentification
-                        - UseForNonGenerativeAI
+                        - UseForTrainingNonGenerativeAI
                         - UseInMobilePhoneMessaging
                         - UseInPhoneListening
                         - UserDefined

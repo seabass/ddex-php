@@ -8,7 +8,6 @@ DDEX\CT\CT_100\PriceType:
                         - AFN
                         - ALL
                         - AMD
-                        - ANG
                         - AOA
                         - ARS
                         - AUD
@@ -39,7 +38,6 @@ DDEX\CT\CT_100\PriceType:
                         - COP
                         - COU
                         - CRC
-                        - CUC
                         - CUP
                         - CVE
                         - CZK
@@ -131,7 +129,6 @@ DDEX\CT\CT_100\PriceType:
                         - SGD
                         - SHP
                         - SLE
-                        - SLL
                         - SOS
                         - SRD
                         - SSP
@@ -159,15 +156,18 @@ DDEX\CT\CT_100\PriceType:
                         - VND
                         - VUV
                         - WST
+                        - XAD
                         - XAF
                         - XCD
+                        - XCG
                         - XOF
                         - XPF
                         - YER
                         - ZAR
                         - ZMW
                         - ZWG
-                        - ZWL
+                        - ANG
+                        - CUC
                         - CYP
                         - EEK
                         - HRK
@@ -178,8 +178,10 @@ DDEX\CT\CT_100\PriceType:
                         - ROL
                         - SIT
                         - SKK
+                        - SLL
                         - STD
                         - VEF
+                        - ZWL
                     groups:
                         - xsd_rules
             -
