@@ -31,34 +31,33 @@ $XsdSchemaPaths = @(
 	"..\src\xml\ct"
 
 	# Media Enrichment and Description (MEAD)
-	#"..\src\xml\mead" #Any\Any bug
+	"..\src\xml\mead" #Any\Any bug
 
 	# Party Identification and Enrichment (PIE)
-	#"..\src\xml\pie" #Any\Any bug
+	"..\src\xml\pie" #Any\Any bug
 
 	# Recording Data and Rights Standards (RDR)
-	#"..\src\xml\rdr" #Any\Any bug
-	#"..\src\xml\rdr-n" #Any\Any bug
-	#"..\src\xml\rdr-c" #Any\Any bug
+	"..\src\xml\rdr" #Any\Any bug
+	"..\src\xml\rdr-n" #Any\Any bug
+	"..\src\xml\rdr-c" #Any\Any bug
 
 	# Recording Information Notification (RIN)
-	#"..\src\xml\rin" #Any\Any bug
+	"..\src\xml\rin" #Any\Any bug
 
 	# Musical Work Data and Rights communication (MWDR)
-	#"..\src\xml\mwn\10"
+	"..\src\xml\mwn\10"
 	"..\src\xml\mwl"
-	#"..\src\xml\mc-us-lic" #Any\Any bug
-	#"..\src\xml\mc-us-lod" #Any\Any bug
+	"..\src\xml\mc-us-lic" #Any\Any bug
+	"..\src\xml\mc-us-lod" #Any\Any bug
 
 	# Links between Resources and Musical Works (LRAW)
 	"..\src\xml\lraw"
 
-
 	# Anomaly Reporting (CDM) - unsupported
-	#"..\src\xml\?"
+	"..\src\xml\?"
 
 	# Anomaly Reporting (AR) - unsupported
-	#"..\src\xml\?"
+	"..\src\xml\?"
 	
 )
 

@@ -38,9 +38,9 @@ DDEX\RDR_N\RDR_N_150\UseTypeType:
                         - Stream
                         - UseForDataMining
                         - UseForEducationAndOrSocialPurposes
-                        - UseForGenerativeAI
+                        - UseForTrainingGenerativeAI
                         - UseForIdentification
-                        - UseForNonGenerativeAI
+                        - UseForTrainingNonGenerativeAI
                         - UserDefined
                         - Webcast
                     groups:
