@@ -118,6 +118,7 @@ class ERN_app {
 			'420',
 			'430',
 			'431',
+			'432',
 		];
 
 		if(!$this->VERSION)
@@ -185,7 +186,7 @@ class ERN_app {
 }
 
 
-$ERN_app = new ERN_app('431'); // ERN 4.31
+$ERN_app = new ERN_app('432'); // ERN 4.32
 
 $NewReleaseMessage = $ERN_app->DataAccessor();
 
@@ -195,9 +196,9 @@ $NewReleaseMessage->setAvsVersionId('3');
 $NewReleaseMessage->setLanguageAndScriptCode('en-US');
 
 	$messageHeader = $ERN_app->ClassConstructor('MessageHeaderType');
-	$messageHeader->setMessageThreadId('20240929000001');
-	$messageHeader->setMessageId('20240929000001-0000001');
-	$messageHeader->setMessageFileName('20240929000001-0000001.xml');
+	$messageHeader->setMessageThreadId('20260519000001');
+	$messageHeader->setMessageId('20260519000001-0000001');
+	$messageHeader->setMessageFileName('20260519000001-0000001.xml');
 
 
 echo $ERN_app->serialize();

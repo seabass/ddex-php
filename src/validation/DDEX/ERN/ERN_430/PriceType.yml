@@ -16,7 +16,6 @@ DDEX\ERN\ERN_430\PriceType:
                         - BAM
                         - BBD
                         - BDT
-                        - BGN
                         - BHD
                         - BIF
                         - BMD
@@ -167,6 +166,7 @@ DDEX\ERN\ERN_430\PriceType:
                         - ZMW
                         - ZWG
                         - ANG
+                        - BGN
                         - CUC
                         - CYP
                         - EEK

@@ -35,7 +35,6 @@ DDEX\RDR_N\RDR_N_150\RevenueDeclarationType:
                         - BAM
                         - BBD
                         - BDT
-                        - BGN
                         - BHD
                         - BIF
                         - BMD
@@ -186,6 +185,7 @@ DDEX\RDR_N\RDR_N_150\RevenueDeclarationType:
                         - ZMW
                         - ZWG
                         - ANG
+                        - BGN
                         - CUC
                         - CYP
                         - EEK

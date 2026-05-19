@@ -13,7 +13,7 @@
 
 All versioned standards are included. The latest version is shown. See [Implementing each standard](https://kb.ddex.net/implementing-each-standard/) for documentation.
 
-#### ERN: Electronic Release Notification Message Suite ![ERN](https://img.shields.io/badge/ERN-4.3.1-green.svg)
+#### ERN: Electronic Release Notification Message Suite ![ERN](https://img.shields.io/badge/ERN-4.3.2-green.svg)
 
 #### MEAD: Media Enrichment and Description ![MEAD](https://img.shields.io/badge/MEAD-1.1-green.svg)
 
@@ -53,7 +53,7 @@ composer install seabass/ddex-php
 
 ## Usage
 
-See [examples](https://github.com/seabass/ddex-php/blob/master/dev/examples) for more information.
+See [examples](https://github.com/seabass/ddex-php/tree/main/dev/example.php) for more information.
 
 ```php
 composer install seabass/ddex-php
