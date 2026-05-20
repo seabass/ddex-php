@@ -1,0 +1,57 @@
+DDEX\ERN\ERN_432\ReleaseTypeForReleaseNotificationType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Album
+                        - AlertToneRelease
+                        - AsPerContract
+                        - AudioBookRelease
+                        - AudioDramaRelease
+                        - BackCoverImageRelease
+                        - BookletBackImageRelease
+                        - BookletFrontImageRelease
+                        - BookletRelease
+                        - Bundle
+                        - ClassicalAlbum
+                        - ClassicalDigitalBoxedSet
+                        - ClassicalMultimediaAlbum
+                        - ConcertVideo
+                        - DigitalBoxSetRelease
+                        - DjMix
+                        - Documentary
+                        - Drama
+                        - DramaticoMusicalVideoRelease
+                        - EBookRelease
+                        - EP
+                        - Episode
+                        - FeatureFilm
+                        - KaraokeRelease
+                        - LiveEventVideo
+                        - LogoRelease
+                        - LongFormMusicalWorkVideoRelease
+                        - LongFormNonMusicalWorkVideoRelease
+                        - LyricSheetRelease
+                        - MultimediaAlbum
+                        - MultimediaDigitalBoxedSet
+                        - MultimediaSingle
+                        - MusicalWorkBasedGameRelease
+                        - NonMusicalWorkBasedGameRelease
+                        - PlayList
+                        - RingbackToneRelease
+                        - RingtoneRelease
+                        - Season
+                        - Series
+                        - SheetMusicRelease
+                        - ShortFilm
+                        - Single
+                        - SingleResourceRelease
+                        - StemBundle
+                        - UserDefined
+                        - VideoAlbum
+                        - VideoMastertoneRelease
+                        - VideoSingle
+                        - WallpaperRelease
+                    groups:
+                        - xsd_rules

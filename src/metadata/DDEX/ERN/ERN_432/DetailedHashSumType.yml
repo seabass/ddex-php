@@ -1,0 +1,52 @@
+DDEX\ERN\ERN_432\DetailedHashSumType:
+    properties:
+        algorithm:
+            expose: true
+            access_type: public_method
+            serialized_name: Algorithm
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAlgorithm
+                setter: setAlgorithm
+            type: DDEX\ERN\ERN_432\HashSumAlgorithmTypeType
+        version:
+            expose: true
+            access_type: public_method
+            serialized_name: Version
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVersion
+                setter: setVersion
+            type: string
+        parameter:
+            expose: true
+            access_type: public_method
+            serialized_name: Parameter
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getParameter
+                setter: setParameter
+            type: string
+        dataType:
+            expose: true
+            access_type: public_method
+            serialized_name: DataType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDataType
+                setter: setDataType
+            type: string
+        hashSumValue:
+            expose: true
+            access_type: public_method
+            serialized_name: HashSumValue
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHashSumValue
+                setter: setHashSumValue
+            type: string

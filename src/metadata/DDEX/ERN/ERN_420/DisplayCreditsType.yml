@@ -46,7 +46,10 @@ DDEX\ERN\ERN_420\DisplayCreditsType:
             accessor:
                 getter: getDisplayCreditParty
                 setter: setDisplayCreditParty
-            type: string
+            xml_list:
+                inline: true
+                entry_name: DisplayCreditParty
+            type: array<string>
         nameUsedInDisplayCredit:
             expose: true
             access_type: public_method
@@ -56,4 +59,7 @@ DDEX\ERN\ERN_420\DisplayCreditsType:
             accessor:
                 getter: getNameUsedInDisplayCredit
                 setter: setNameUsedInDisplayCredit
-            type: string
+            xml_list:
+                inline: true
+                entry_name: NameUsedInDisplayCredit
+            type: array<string>

@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_432\RightsTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - MakeAvailableRight
+                        - MechanicalRight
+                        - PerformingRight
+                        - PrintRight
+                        - ReproductionRight
+                        - SynchronizationRight
+                        - UserDefined
+                    groups:
+                        - xsd_rules

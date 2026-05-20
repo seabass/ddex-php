@@ -1,0 +1,20 @@
+DDEX\ERN\ERN_432\UserInterfaceTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ConnectedDevice
+                        - GameConsole
+                        - Jukebox
+                        - KaraokeMachine
+                        - Kiosk
+                        - LocalStorageJukebox
+                        - PersonalComputer
+                        - PhysicalMediaWriter
+                        - PortableDevice
+                        - RemoteStorageJukebox
+                        - SmartSpeakers
+                        - UserDefined
+                    groups:
+                        - xsd_rules

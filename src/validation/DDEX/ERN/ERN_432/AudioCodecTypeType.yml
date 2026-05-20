@@ -1,0 +1,33 @@
+DDEX\ERN\ERN_432\AudioCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AAC
+                        - AC-4
+                        - DolbyAtmosMasterADM
+                        - ADPCM
+                        - ALaw
+                        - AMR
+                        - AMR-NB
+                        - AMR-WB
+                        - DolbyDigitalPlus
+                        - FLAC
+                        - MP
+                        - MP2
+                        - MP3
+                        - MPEG-H_3D
+                        - MQA
+                        - MuLaw
+                        - PCM
+                        - PDM
+                        - QCELP
+                        - RealAudio
+                        - Shockwave
+                        - Unknown
+                        - UserDefined
+                        - Vorbis
+                        - WMA
+                    groups:
+                        - xsd_rules

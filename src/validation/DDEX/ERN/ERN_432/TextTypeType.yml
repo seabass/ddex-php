@@ -1,0 +1,18 @@
+DDEX\ERN\ERN_432\TextTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Caption
+                        - ClosedCaption
+                        - EBook
+                        - LinerNotes
+                        - LyricText
+                        - NonInteractiveBooklet
+                        - SubTitle
+                        - TextDocument
+                        - Unknown
+                        - UserDefined
+                    groups:
+                        - xsd_rules

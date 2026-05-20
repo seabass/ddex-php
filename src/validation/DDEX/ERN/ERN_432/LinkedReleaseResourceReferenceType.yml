@@ -1,0 +1,34 @@
+DDEX\ERN\ERN_432\LinkedReleaseResourceReferenceType:
+    properties:
+        __value:
+            -
+                Regex:
+                    pattern: '~A[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+        linkDescription:
+            -
+                Choice:
+                    choices:
+                        - Booklet
+                        - Caption
+                        - ChapterImage
+                        - CoverArt
+                        - Lyrics
+                        - SubTitle
+                        - VideoScreenCapture
+                        - UserDefined
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+        sequenceNumber:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules

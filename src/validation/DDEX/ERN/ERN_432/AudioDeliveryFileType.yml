@@ -1,0 +1,36 @@
+DDEX\ERN\ERN_432\AudioDeliveryFileType:
+    properties:
+        type:
+            -
+                Regex:
+                    pattern: ~AudioFile~u
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        numberOfAudioObjects:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        bitsPerSample:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        bitDepth:
+            -
+                Regex:
+                    pattern: '~[\-+]?[0-9]+~u'
+                    groups:
+                        - xsd_rules
+        file:
+            -
+                Valid: null
+        fingerprint:
+            -
+                Valid: null

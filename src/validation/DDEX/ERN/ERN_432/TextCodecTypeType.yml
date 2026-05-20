@@ -1,0 +1,32 @@
+DDEX\ERN\ERN_432\TextCodecTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ASCII
+                        - AsciiOrIso8859nText
+                        - DdexLyricsFile
+                        - EBU-TT
+                        - EnhancedLRC
+                        - EPUB
+                        - HTML
+                        - LRC
+                        - MicrosoftWord
+                        - OpenDocumentText
+                        - OOXML
+                        - PDF
+                        - PostScript
+                        - RTF
+                        - SimpleLRC
+                        - SRT
+                        - TTML
+                        - Unknown
+                        - UserDefined
+                        - UTF8Text
+                        - VTT
+                        - WindowsText
+                        - XHTML
+                        - XML
+                    groups:
+                        - xsd_rules

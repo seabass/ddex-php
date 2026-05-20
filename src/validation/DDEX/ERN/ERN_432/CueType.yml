@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_432\CueType:
+    properties:
+        resourceId:
+            -
+                Valid: null
+        workId:
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        formalTitle:
+            -
+                Valid: null
+        groupingTitle:
+            -
+                Valid: null
+        contributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        cLine:
+            -
+                Valid: null

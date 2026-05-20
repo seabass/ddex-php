@@ -1,0 +1,45 @@
+DDEX\ERN\ERN_432\RelatedResourceType:
+    properties:
+        resourceRelationshipType:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceRelationshipType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceRelationshipType
+                setter: setResourceRelationshipType
+            type: string
+        resourceRelatedResourceReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceRelatedResourceReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceRelatedResourceReference
+                setter: setResourceRelatedResourceReference
+            type: string
+        resourceId:
+            expose: true
+            access_type: public_method
+            serialized_name: ResourceId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getResourceId
+                setter: setResourceId
+            type: DDEX\ERN\ERN_432\ResourceIdType
+        timing:
+            expose: true
+            access_type: public_method
+            serialized_name: Timing
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTiming
+                setter: setTiming
+            xml_list:
+                inline: true
+                entry_name: Timing
+            type: array<DDEX\ERN\ERN_432\TimingType>

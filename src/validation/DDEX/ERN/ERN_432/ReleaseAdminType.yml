@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_432\ReleaseAdminType:
+    properties:
+        releaseAdminId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

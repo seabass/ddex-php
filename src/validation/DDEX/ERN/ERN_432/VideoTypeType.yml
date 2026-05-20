@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_432\VideoTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Clip
+                        - FrontCoverVideo
+                        - LongFormMusicalWorkVideo
+                        - LongFormNonMusicalWorkVideo
+                        - ShortFormMusicalWorkVideo
+                        - ShortFormNonMusicalWorkVideo
+                        - UserDefined
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,35 @@
+DDEX\ERN\ERN_432\ReleaseAdminType:
+    properties:
+        releaseAdminId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseAdminId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseAdminId
+                setter: setReleaseAdminId
+            type: string
+        personnelDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: PersonnelDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getPersonnelDescription
+                setter: setPersonnelDescription
+            type: string
+        systemDescription:
+            expose: true
+            access_type: public_method
+            serialized_name: SystemDescription
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSystemDescription
+                setter: setSystemDescription
+            xml_list:
+                inline: true
+                entry_name: SystemDescription
+            type: array<string>

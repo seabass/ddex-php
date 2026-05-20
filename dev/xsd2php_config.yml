@@ -23,6 +23,7 @@ xsd2php:
     'http://ddex.net/xml/ern/383':  'DDEX\ERN\ERN_383'
     'http://ddex.net/xml/ern/411':  'DDEX\ERN\ERN_411'
     'http://ddex.net/xml/ern/431':  'DDEX\ERN\ERN_431'
+    'http://ddex.net/xml/ern/432':  'DDEX\ERN\ERN_432'
 
     'http://ddex.net/xml/ern-c/13':  'DDEX\ERN\ERN_C_130'
     'http://ddex.net/xml/ern-c/15':  'DDEX\ERN\ERN_C_150'
@@ -143,6 +144,7 @@ xsd2php:
     'http://ddex.net/xml/ern/42': 'ern'
     'http://ddex.net/xml/ern/43': 'ern'
     'http://ddex.net/xml/ern/431': 'ern'
+    'http://ddex.net/xml/ern/432': 'ern'
 
 
     'http://ddex.net/xml/ern-c/13': 'ern-c'
@@ -224,6 +226,7 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\schema\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\schema\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\schema\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_432': ..\src\schema\DDEX\ERN\ERN_432
 
     'DDEX\ERN\ERN_C_130': ..\src\schema\DDEX\ERN_C_130
     'DDEX\ERN\ERN_C_150': ..\src\schema\DDEX\ERN_C_150
@@ -305,6 +308,7 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\metadata\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\metadata\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\metadata\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_432': ..\src\metadata\DDEX\ERN\ERN_432
 
     'DDEX\ERN\ERN_C_130': ..\src\metadata\DDEX\ERN_C_130
     'DDEX\ERN\ERN_C_150': ..\src\metadata\DDEX\ERN_C_150
@@ -385,6 +389,7 @@ xsd2php:
     'DDEX\ERN\ERN_420': ..\src\validation\DDEX\ERN\ERN_420
     'DDEX\ERN\ERN_430': ..\src\validation\DDEX\ERN\ERN_430
     'DDEX\ERN\ERN_431': ..\src\validation\DDEX\ERN\ERN_431
+    'DDEX\ERN\ERN_432': ..\src\validation\DDEX\ERN\ERN_432
     
     'DDEX\ERN\ERN_C_130': ..\src\validation\DDEX\ERN_C_130
     'DDEX\ERN\ERN_C_150': ..\src\validation\DDEX\ERN_C_150

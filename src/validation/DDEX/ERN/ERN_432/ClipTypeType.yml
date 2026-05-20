@@ -1,0 +1,11 @@
+DDEX\ERN\ERN_432\ClipTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - Preview
+                        - StandaloneClip
+                        - UserDefined
+                    groups:
+                        - xsd_rules

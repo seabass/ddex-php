@@ -1,0 +1,35 @@
+DDEX\ERN\ERN_432\SoundRecordingClipDetailsType:
+    properties:
+        technicalResourceDetailsReference:
+            -
+                Regex:
+                    pattern: '~T[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        clipType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        timing:
+            -
+                Valid: null
+        expressionType:
+            -
+                Choice:
+                    choices:
+                        - Informative
+                        - Instructive
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        deliveryFile:
+            -
+                Valid: null

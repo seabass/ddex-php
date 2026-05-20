@@ -1,0 +1,28 @@
+DDEX\ERN\ERN_432\SubGenreCategoryType:
+    properties:
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            xml_list:
+                inline: true
+                entry_name: Value
+            type: array<DDEX\ERN\ERN_432\SubGenreCategoryValueType>
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\ERN\ERN_432\TextWithoutTerritoryType>

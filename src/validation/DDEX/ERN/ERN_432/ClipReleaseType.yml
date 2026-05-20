@@ -1,0 +1,53 @@
+DDEX\ERN\ERN_432\ClipReleaseType:
+    properties:
+        releaseReference:
+            -
+                Regex:
+                    pattern: '~R[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        displayTitle:
+            -
+                Valid: null
+        formalTitle:
+            -
+                Valid: null
+        groupingTitle:
+            -
+                Valid: null
+        releaseResourceReference:
+            -
+                Regex:
+                    pattern: '~A[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        releaseLabelReference:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        displayGenre:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        relatedRelease:
+            -
+                Valid: null

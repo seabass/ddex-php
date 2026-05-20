@@ -1,0 +1,52 @@
+DDEX\ERN\ERN_432\VenueType:
+    properties:
+        venueName:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueName
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueName
+                setter: setVenueName
+            type: string
+        venueAddress:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueAddress
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueAddress
+                setter: setVenueAddress
+            type: string
+        territoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: TerritoryCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getTerritoryCode
+                setter: setTerritoryCode
+            type: DDEX\ERN\ERN_432\AllTerritoryCodeType
+        locationCode:
+            expose: true
+            access_type: public_method
+            serialized_name: LocationCode
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getLocationCode
+                setter: setLocationCode
+            type: string
+        venueRoom:
+            expose: true
+            access_type: public_method
+            serialized_name: VenueRoom
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getVenueRoom
+                setter: setVenueRoom
+            type: string

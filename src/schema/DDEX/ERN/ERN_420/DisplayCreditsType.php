@@ -41,16 +41,20 @@ class DisplayCreditsType
     /**
      * A Reference for a Party credited with the display credit.
      *
-     * @var string $displayCreditParty
+     * @var string[] $displayCreditParty
      */
-    private $displayCreditParty = null;
+    private $displayCreditParty = [
+        
+    ];
 
     /**
      * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
      *
-     * @var string $nameUsedInDisplayCredit
+     * @var string[] $nameUsedInDisplayCredit
      */
-    private $nameUsedInDisplayCredit = null;
+    private $nameUsedInDisplayCredit = [
+        
+    ];
 
     /**
      * Gets as languageAndScriptCode
@@ -157,11 +161,51 @@ class DisplayCreditsType
     }
 
     /**
+     * Adds as displayCreditParty
+     *
+     * A Reference for a Party credited with the display credit.
+     *
+     * @return self
+     * @param string $displayCreditParty
+     */
+    public function addToDisplayCreditParty($displayCreditParty)
+    {
+        $this->displayCreditParty[] = $displayCreditParty;
+        return $this;
+    }
+
+    /**
+     * isset displayCreditParty
+     *
+     * A Reference for a Party credited with the display credit.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetDisplayCreditParty($index)
+    {
+        return isset($this->displayCreditParty[$index]);
+    }
+
+    /**
+     * unset displayCreditParty
+     *
+     * A Reference for a Party credited with the display credit.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetDisplayCreditParty($index)
+    {
+        unset($this->displayCreditParty[$index]);
+    }
+
+    /**
      * Gets as displayCreditParty
      *
      * A Reference for a Party credited with the display credit.
      *
-     * @return string
+     * @return string[]
      */
     public function getDisplayCreditParty()
     {
@@ -176,10 +220,50 @@ class DisplayCreditsType
      * @param string $displayCreditParty
      * @return self
      */
-    public function setDisplayCreditParty($displayCreditParty)
+    public function setDisplayCreditParty(array $displayCreditParty = null)
     {
         $this->displayCreditParty = $displayCreditParty;
         return $this;
+    }
+
+    /**
+     * Adds as nameUsedInDisplayCredit
+     *
+     * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
+     *
+     * @return self
+     * @param string $nameUsedInDisplayCredit
+     */
+    public function addToNameUsedInDisplayCredit($nameUsedInDisplayCredit)
+    {
+        $this->nameUsedInDisplayCredit[] = $nameUsedInDisplayCredit;
+        return $this;
+    }
+
+    /**
+     * isset nameUsedInDisplayCredit
+     *
+     * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
+     *
+     * @param int|string $index
+     * @return bool
+     */
+    public function issetNameUsedInDisplayCredit($index)
+    {
+        return isset($this->nameUsedInDisplayCredit[$index]);
+    }
+
+    /**
+     * unset nameUsedInDisplayCredit
+     *
+     * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
+     *
+     * @param int|string $index
+     * @return void
+     */
+    public function unsetNameUsedInDisplayCredit($index)
+    {
+        unset($this->nameUsedInDisplayCredit[$index]);
     }
 
     /**
@@ -187,7 +271,7 @@ class DisplayCreditsType
      *
      * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
      *
-     * @return string
+     * @return string[]
      */
     public function getNameUsedInDisplayCredit()
     {
@@ -199,10 +283,10 @@ class DisplayCreditsType
      *
      * The Name for the Party as used in the DisplayCreditText. If no such element is present, the DisplayCreditText contains the Name of the credited Party as specified in the PartyName of the Party composite.
      *
-     * @param string $nameUsedInDisplayCredit
+     * @param string[] $nameUsedInDisplayCredit
      * @return self
      */
-    public function setNameUsedInDisplayCredit($nameUsedInDisplayCredit)
+    public function setNameUsedInDisplayCredit(array $nameUsedInDisplayCredit = null)
     {
         $this->nameUsedInDisplayCredit = $nameUsedInDisplayCredit;
         return $this;

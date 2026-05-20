@@ -516,7 +516,10 @@ DDEX\ERN\ERN_410\DisplayCreditsType:
                         - xsd_rules
         displayCreditParty:
             -
-                Regex:
-                    pattern: '~P[\d\-_a-zA-Z]+~u'
+                All:
+                    constraints:
+                        -
+                            Regex:
+                                pattern: '~P[\d\-_a-zA-Z]+~u'
                     groups:
                         - xsd_rules

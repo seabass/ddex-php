@@ -1,0 +1,43 @@
+DDEX\ERN\ERN_432\SoundRecordingEditionType:
+    properties:
+        type:
+            -
+                Choice:
+                    choices:
+                        - ImmersiveEdition
+                        - NonImmersiveEdition
+                    groups:
+                        - xsd_rules
+        resourceId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        editionContributor:
+            -
+                Valid: null
+        pLine:
+            -
+                Valid: null
+        recordingMode:
+            -
+                Choice:
+                    choices:
+                        - BinauralAudio
+                        - ImmersiveAudio
+                        - LCR
+                        - Mono
+                        - MultichannelAudio
+                        - MultiTrack
+                        - Quad
+                        - Stems
+                        - Stereo
+                        - SurroundSound
+                        - Unknown
+                    groups:
+                        - xsd_rules
+        technicalDetails:
+            -
+                Valid: null

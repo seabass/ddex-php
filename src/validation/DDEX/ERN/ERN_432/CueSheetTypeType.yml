@@ -1,0 +1,13 @@
+DDEX\ERN\ERN_432\CueSheetTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - AverageCueSheet
+                        - CompositeCueSheet
+                        - StandardCueSheet
+                        - SummarisedCueSheet
+                        - SurrogateCueSheet
+                    groups:
+                        - xsd_rules

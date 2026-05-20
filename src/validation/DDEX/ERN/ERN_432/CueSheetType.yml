@@ -1,0 +1,24 @@
+DDEX\ERN\ERN_432\CueSheetType:
+    properties:
+        cueSheetReference:
+            -
+                Regex:
+                    pattern: '~Q[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        cueSheetType:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        cue:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null

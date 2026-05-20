@@ -1,0 +1,83 @@
+DDEX\ERN\ERN_432\NewReleaseMessage\NewReleaseMessageAnonymousPHPType:
+    properties:
+        releaseProfileVersionId:
+            -
+                Choice:
+                    choices:
+                        - Audio
+                        - DjMix
+                        - LongFormMusicalWorkVideo
+                        - MixedMedia
+                        - Ringtone
+                        - SimpleAudioSingle
+                        - SimpleVideoSingle
+                        - Video
+                    groups:
+                        - xsd_rules
+        releaseProfileVariantVersionId:
+            -
+                Choice:
+                    choices:
+                        - BoxedSet
+                        - 'BoxedSet Classical'
+                        - Classical
+                    groups:
+                        - xsd_rules
+        avsVersionId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        languageAndScriptCode:
+            -
+                Regex:
+                    pattern: '~[a-zA-Z]{2,3}(-[a-zA-Z]+){0,1}(-[a-zA-Z]{2}|-[0-9]{3}){0,1}(-[a-zA-Z][a-zA-Z0-9]{4}[a-zA-Z0-9]*){0,1}~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseAdmin:
+            -
+                Valid: null
+        partyList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        cueSheetList:
+            -
+                Valid: null
+        resourceList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        chapterList:
+            -
+                Valid: null
+        releaseList:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        dealList:
+            -
+                Valid: null
+        supplementalDocumentList:
+            -
+                Valid: null

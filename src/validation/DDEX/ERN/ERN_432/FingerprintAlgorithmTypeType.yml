@@ -1,0 +1,10 @@
+DDEX\ERN\ERN_432\FingerprintAlgorithmTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - ISCC
+                        - UserDefined
+                    groups:
+                        - xsd_rules

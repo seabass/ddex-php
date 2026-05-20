@@ -1,0 +1,34 @@
+DDEX\ERN\ERN_432\GenreCategoryType:
+    properties:
+        applicableTerritoryCode:
+            expose: true
+            access_type: public_method
+            serialized_name: ApplicableTerritoryCode
+            accessor:
+                getter: getApplicableTerritoryCode
+                setter: setApplicableTerritoryCode
+            xml_attribute: true
+            type: string
+        value:
+            expose: true
+            access_type: public_method
+            serialized_name: Value
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getValue
+                setter: setValue
+            type: DDEX\ERN\ERN_432\GenreCategoryValueType
+        description:
+            expose: true
+            access_type: public_method
+            serialized_name: Description
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDescription
+                setter: setDescription
+            xml_list:
+                inline: true
+                entry_name: Description
+            type: array<DDEX\ERN\ERN_432\TextWithoutTerritoryType>

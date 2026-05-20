@@ -1,0 +1,7 @@
+DDEX\ERN\ERN_432\SubGenreCategoryType:
+    properties:
+        value:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

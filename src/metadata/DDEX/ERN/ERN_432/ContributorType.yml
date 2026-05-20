@@ -1,0 +1,110 @@
+DDEX\ERN\ERN_432\ContributorType:
+    properties:
+        sequenceNumber:
+            expose: true
+            access_type: public_method
+            serialized_name: SequenceNumber
+            accessor:
+                getter: getSequenceNumber
+                setter: setSequenceNumber
+            xml_attribute: true
+            type: int
+        contributorPartyReference:
+            expose: true
+            access_type: public_method
+            serialized_name: ContributorPartyReference
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getContributorPartyReference
+                setter: setContributorPartyReference
+            type: string
+        specialContributor:
+            expose: true
+            access_type: public_method
+            serialized_name: SpecialContributor
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getSpecialContributor
+                setter: setSpecialContributor
+            type: DDEX\ERN\ERN_432\SpecialContributorTypeType
+        role:
+            expose: true
+            access_type: public_method
+            serialized_name: Role
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getRole
+                setter: setRole
+            xml_list:
+                inline: true
+                entry_name: Role
+            type: array<DDEX\ERN\ERN_432\ContributorRoleType>
+        instrumentType:
+            expose: true
+            access_type: public_method
+            serialized_name: InstrumentType
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getInstrumentType
+                setter: setInstrumentType
+            xml_list:
+                inline: true
+                entry_name: InstrumentType
+            type: array<DDEX\ERN\ERN_432\InstrumentTypeType>
+        aiContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: AiContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getAiContribution
+                setter: setAiContribution
+            type: string
+        hasMadeFeaturedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeFeaturedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeFeaturedContribution
+                setter: setHasMadeFeaturedContribution
+            type: bool
+        hasMadeContractedContribution:
+            expose: true
+            access_type: public_method
+            serialized_name: HasMadeContractedContribution
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getHasMadeContractedContribution
+                setter: setHasMadeContractedContribution
+            type: bool
+        isCredited:
+            expose: true
+            access_type: public_method
+            serialized_name: IsCredited
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getIsCredited
+                setter: setIsCredited
+            type: DDEX\ERN\ERN_432\IsCreditedType
+        displayCredits:
+            expose: true
+            access_type: public_method
+            serialized_name: DisplayCredits
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getDisplayCredits
+                setter: setDisplayCredits
+            xml_list:
+                inline: true
+                entry_name: DisplayCredits
+            type: array<DDEX\ERN\ERN_432\DisplayCreditsType>

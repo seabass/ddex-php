@@ -1,0 +1,15 @@
+DDEX\ERN\ERN_432\BrandType:
+    properties:
+        brandReference:
+            -
+                Regex:
+                    pattern: '~P[_0-9a-zA-Z-]+~u'
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        brandName:
+            -
+                Valid: null

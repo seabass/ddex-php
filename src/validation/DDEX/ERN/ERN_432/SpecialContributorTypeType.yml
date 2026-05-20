@@ -1,0 +1,12 @@
+DDEX\ERN\ERN_432\SpecialContributorTypeType:
+    properties:
+        __value:
+            -
+                Choice:
+                    choices:
+                        - GenerativeAI
+                        - Traditional
+                        - UserDefined
+                        - VariousArtists
+                    groups:
+                        - xsd_rules

@@ -1,0 +1,62 @@
+DDEX\ERN\ERN_432\ConditionForRightsClaimPolicyType:
+    properties:
+        value:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        unit:
+            -
+                Choice:
+                    choices:
+                        - Millisecond
+                        - Minute
+                        - Percent
+                        - Pixel
+                        - Second
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        referenceCreation:
+            -
+                Choice:
+                    choices:
+                        - ReferenceResource
+                        - ConsumerResource
+                    groups:
+                        - xsd_rules
+        relationalRelator:
+            -
+                Choice:
+                    choices:
+                        - EqualTo
+                        - LessThan
+                        - LessThanOrEqualTo
+                        - MoreThan
+                        - MoreThanOrEqualTo
+                        - NotEqualTo
+                    groups:
+                        - xsd_rules
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        measurementType:
+            -
+                Choice:
+                    choices:
+                        - BothAudioAndVideo
+                        - EitherAudioOrVideo
+                        - Audio
+                        - Video
+                    groups:
+                        - xsd_rules
+        segment:
+            -
+                Valid: null
+        serviceException:
+            -
+                Valid: null
