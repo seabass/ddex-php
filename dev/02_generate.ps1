@@ -49,6 +49,7 @@ $XsdSchemaPaths = @(
 	"..\src\xml\mwl"
 	"..\src\xml\mc-us-lic" #Any\Any bug
 	"..\src\xml\mc-us-lod" #Any\Any bug
+    #"..\src\xml\mc-notif" #Any\Any bug
 
 	# Links between Resources and Musical Works (LRAW)
 	"..\src\xml\lraw"
