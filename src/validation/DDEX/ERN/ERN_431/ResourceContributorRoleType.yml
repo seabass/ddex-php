@@ -4,6 +4,9 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
             -
                 Choice:
                     choices:
+                        - A+R
+                        - A+RAdministrator
+                        - A+RCoordinator
                         - Accompanyist
                         - Actor
                         - AdditionalEngineer
@@ -23,6 +26,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - ArtDirector
                         - Artist
                         - ArtistBackgroundVocalEngineer
+                        - ArtistManager
                         - ArtistVocalEngineer
                         - ArtistVocalSecondEngineer
                         - AssistantCameraOperator
@@ -49,17 +53,22 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - BroadcastJournalist
                         - Calligrapher
                         - CameraOperator
+                        - Cantor
                         - Carpenter
                         - Cartographer
                         - Cartoonist
                         - CastingDirector
                         - Causeur
                         - Censor
+                        - ChamberEnsemble
+                        - ChamberOrchestra
                         - ChiefLightingTechnician
                         - Choir
                         - ChoirMember
                         - Choreographer
+                        - Chorus
                         - ChorusMaster
+                        - ChorusMember
                         - CircusArtist
                         - ClapperLoader
                         - ClubDJ
@@ -126,6 +135,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - GuestConductor
                         - GroupMember
                         - Hairdresser
+                        - HornArranger
                         - Illustrator
                         - ImmersiveMasteringEngineer
                         - ImmersiveMixingEngineer
@@ -175,6 +185,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - PreProductionSecondEngineer
                         - Presenter
                         - PrimaryMusician
+                        - PrincipalMusicDirector
                         - ProductionAssistant
                         - ProductionCompany
                         - ProductionCoordinator
@@ -191,6 +202,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - Pyrotechnician
                         - RecordingEngineer
                         - RecordingSecondEngineer
+                        - RecordingSupervisor
                         - Redactor
                         - ReissueProducer
                         - RemixedArtist
@@ -219,6 +231,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - SignLanguageInterpreter
                         - Soloist
                         - SoundDesigner
+                        - SoundEditor
                         - SoundMixer
                         - SoundRecordist
                         - SoundSupervisor
@@ -229,6 +242,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - StageDirector
                         - StageEngineer
                         - StoryTeller
+                        - StringArranger
                         - StringEngineer
                         - StringProducer
                         - StringsDirector
@@ -242,6 +256,7 @@ DDEX\ERN\ERN_431\ResourceContributorRoleType:
                         - SupportingActor
                         - SurroundMixingEngineer
                         - SurroundMixingSecondEngineer
+                        - SymphonicOrchestra
                         - TapeOperator
                         - TechnicalDirector
                         - Tonmeister

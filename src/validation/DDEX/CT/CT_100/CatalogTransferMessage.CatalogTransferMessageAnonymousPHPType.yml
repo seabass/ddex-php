@@ -302,6 +302,7 @@ DDEX\CT\CT_100\CatalogTransferMessage\CatalogTransferMessageAnonymousPHPType:
                                     - ZA
                                     - ZM
                                     - ZW
+                                    - Worldwide
                     groups:
                         - xsd_rules
         excludedTerritoryCode:
@@ -565,6 +566,7 @@ DDEX\CT\CT_100\CatalogTransferMessage\CatalogTransferMessageAnonymousPHPType:
                                     - ZA
                                     - ZM
                                     - ZW
+                                    - Worldwide
                     groups:
                         - xsd_rules
         effectiveTransferDate:

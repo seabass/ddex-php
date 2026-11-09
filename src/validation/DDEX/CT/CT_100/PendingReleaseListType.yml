@@ -261,6 +261,7 @@ DDEX\CT\CT_100\PendingReleaseListType:
                                     - ZA
                                     - ZM
                                     - ZW
+                                    - Worldwide
                     groups:
                         - xsd_rules
         excludedTerritoryCode:
@@ -524,6 +525,7 @@ DDEX\CT\CT_100\PendingReleaseListType:
                                     - ZA
                                     - ZM
                                     - ZW
+                                    - Worldwide
                     groups:
                         - xsd_rules
         pendingRelease:

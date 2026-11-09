@@ -28,7 +28,7 @@
         }
     ],
     "require": {
-        "php": ">=7.4.0",
+        "php": ">=8.2",
         "jms/serializer": "^3.32",
         "symfony/validator": "^6.4",
         "goetas-webservices/xsd2php": "@dev",
@@ -47,7 +47,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "DDEX": "src/"
+            "DDEX": "src/schema/"
         },
         "files": [
             "src/App.php"

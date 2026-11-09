@@ -50,6 +50,9 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - SubstitutedPublisher
                         - Unknown
                         - UserDefined
+                        - A+R
+                        - A+RAdministrator
+                        - A+RCoordinator
                         - Accompanyist
                         - Actor
                         - AdditionalEngineer
@@ -69,6 +72,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - ArtDirector
                         - Artist
                         - ArtistBackgroundVocalEngineer
+                        - ArtistManager
                         - ArtistVocalEngineer
                         - ArtistVocalSecondEngineer
                         - AssistantCameraOperator
@@ -95,17 +99,22 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - BroadcastJournalist
                         - Calligrapher
                         - CameraOperator
+                        - Cantor
                         - Carpenter
                         - Cartographer
                         - Cartoonist
                         - CastingDirector
                         - Causeur
                         - Censor
+                        - ChamberEnsemble
+                        - ChamberOrchestra
                         - ChiefLightingTechnician
                         - Choir
                         - ChoirMember
                         - Choreographer
+                        - Chorus
                         - ChorusMaster
+                        - ChorusMember
                         - CircusArtist
                         - ClapperLoader
                         - ClubDJ
@@ -172,6 +181,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - GuestConductor
                         - GroupMember
                         - Hairdresser
+                        - HornArranger
                         - Illustrator
                         - ImmersiveMasteringEngineer
                         - ImmersiveMixingEngineer
@@ -221,6 +231,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - PreProductionSecondEngineer
                         - Presenter
                         - PrimaryMusician
+                        - PrincipalMusicDirector
                         - ProductionAssistant
                         - ProductionCompany
                         - ProductionCoordinator
@@ -237,6 +248,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - Pyrotechnician
                         - RecordingEngineer
                         - RecordingSecondEngineer
+                        - RecordingSupervisor
                         - Redactor
                         - ReissueProducer
                         - RemixedArtist
@@ -265,6 +277,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - SignLanguageInterpreter
                         - Soloist
                         - SoundDesigner
+                        - SoundEditor
                         - SoundMixer
                         - SoundRecordist
                         - SoundSupervisor
@@ -275,6 +288,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - StageDirector
                         - StageEngineer
                         - StoryTeller
+                        - StringArranger
                         - StringEngineer
                         - StringProducer
                         - StringsDirector
@@ -288,6 +302,7 @@ DDEX\ERN\ERN_431\ContributorRoleValueType:
                         - SupportingActor
                         - SurroundMixingEngineer
                         - SurroundMixingSecondEngineer
+                        - SymphonicOrchestra
                         - TapeOperator
                         - TechnicalDirector
                         - Tonmeister

@@ -1,0 +1,42 @@
+DDEX\ERN\ERN_C_WS_160\ReleaseStatusMessage\ReleaseStatusMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            expose: true
+            access_type: public_method
+            serialized_name: MessageHeader
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getMessageHeader
+                setter: setMessageHeader
+            type: DDEX\ERN\ERN_C_WS_160\MessageHeaderType
+        releaseId:
+            expose: true
+            access_type: public_method
+            serialized_name: ReleaseId
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getReleaseId
+                setter: setReleaseId
+            type: DDEX\ERN\ERN_C_WS_160\ReleaseIdType
+        status:
+            expose: true
+            access_type: public_method
+            serialized_name: Status
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatus
+                setter: setStatus
+            type: DDEX\ERN\ERN_C_WS_160\SupplyChainStatusType
+        statusChangeDateTime:
+            expose: true
+            access_type: public_method
+            serialized_name: StatusChangeDateTime
+            xml_element:
+                cdata: false
+            accessor:
+                getter: getStatusChangeDateTime
+                setter: setStatusChangeDateTime
+            type: GoetasWebservices\Xsd\XsdToPhp\XMLSchema\DateTime

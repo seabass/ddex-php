@@ -1,0 +1,26 @@
+DDEX\ERN\ERN_C_WS_160\ReleaseStatusMessage\ReleaseStatusMessageAnonymousPHPType:
+    properties:
+        messageHeader:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        releaseId:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+            -
+                Valid: null
+        status:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules
+        statusChangeDateTime:
+            -
+                NotNull:
+                    groups:
+                        - xsd_rules

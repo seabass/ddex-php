@@ -47,6 +47,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - PortugueseGuitar
                         - RenaissanceGuitar
                         - RomanticGuitar
+                        - SteelGuitar
                         - TenorGuitar
                         - Tiple
                         - TouchGuitar
@@ -57,6 +58,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Chamberlin
                         - Clavichord
                         - Clavinet
+                        - DigitalPiano
                         - Dulcitone
                         - ElectricPiano
                         - Harpsichord
@@ -70,6 +72,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Spinet
                         - VakoOrchestron
                         - Virginals
+                        - ChamberOrgan
                         - ElectricOrgan
                         - HammondOrgan
                         - LowreyOrgan
@@ -77,6 +80,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - PipeOrgan
                         - PositiveOrgan
                         - PumpOrgan
+                        - WurlitzerOrgan
                         - BarrelOrgan
                         - BicyclePump
                         - ChurchBells
@@ -125,6 +129,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Chocalho
                         - Clapstick
                         - Claves
+                        - ClayDrum
                         - Claypot
                         - Congas
                         - Cowbell
@@ -136,6 +141,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Cymbals
                         - Daf
                         - Damaru
+                        - Darbouka
                         - Davul
                         - Dayereh
                         - Defi
@@ -148,6 +154,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - DrumSticks
                         - Duggi
                         - Dunun
+                        - ElectronicPercussion
                         - ElephantBell
                         - FingerClicks
                         - FingerCymbals
@@ -196,6 +203,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Mazhar
                         - Mbira
                         - MetalCans
+                        - Metallophone
                         - MouthPercussion
                         - Mridangam
                         - Muharsing
@@ -343,6 +351,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Cello
                         - CelloBanjo
                         - CelticHarp
+                        - CelticElectroHarp
                         - Charango
                         - Cimbalom
                         - Citole
@@ -453,7 +462,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Sitar
                         - SopranoDomra
                         - StringInstrument
-                        - StrohlViolin
+                        - StrohViolin
                         - Surbahar
                         - Swarmandal
                         - Tambura
@@ -467,6 +476,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Timple
                         - TogamanGuitarViol
                         - TrebleRebec
+                        - TrebleTanpura
                         - TrebleViol
                         - TrombaMarina
                         - Tumbi
@@ -487,6 +497,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - ViolaPomposa
                         - Violin
                         - ViolinoPiccolo
+                        - Violone
                         - WelshTripleHarp
                         - WireStrungHarp
                         - Xalam
@@ -498,8 +509,11 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Zhonghu
                         - Zither
                         - ArpeggiatingSynth
+                        - ElectronicWindInstrument
                         - OndesMartenot
                         - Sampler
+                        - Stylophone
+                        - Synclavier
                         - SynthBass
                         - SynthBrass
                         - SynthChoir
@@ -510,20 +524,6 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - SynthStrings
                         - Synthesizer
                         - Theremin
-                        - GroupBackgroundVocalists
-                        - BoyVoice
-                        - ChildVoice
-                        - ChildrensBackgroundVocalist
-                        - FemaleVoice
-                        - FemaleBackgroundVocalist
-                        - GirlVoice
-                        - LeadVocalist
-                        - MaleVoice
-                        - MaleBackgroundVocalist
-                        - MixedVoice
-                        - MixedBackgroundVocalist
-                        - NeutralVoice
-                        - Voice
                         - Alboka
                         - Alpenhorn
                         - AltoClarinet
@@ -651,6 +651,7 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - PiccoloFlute
                         - PiccoloTrumpet
                         - Pinkillu
+                        - Pipes
                         - PocketTrumpet
                         - PoliceWhistle
                         - PostHorn
@@ -699,12 +700,14 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - TenorCrumhorn
                         - TenorDulcian
                         - TenorFlute
+                        - TenorHorn
                         - TenorRecorder
                         - TenorSackbut
                         - TenorSaxophone
                         - TenorShawm
                         - TenorTrombone
                         - TinWhistle
+                        - TraversoFlute
                         - Trombone
                         - Trumpet
                         - Tuba
@@ -713,10 +716,12 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - ValveTrombone
                         - Vuvuzela
                         - WagnerTuba
+                        - Whistle
                         - WillowFlute
                         - WindInstrument
                         - WoodFlute
                         - WoodTrumpet
+                        - WoodwindInstrument
                         - Wot
                         - Xaphoon
                         - Xiao
@@ -724,9 +729,26 @@ DDEX\ERN\ERN_430\InstrumentTypeType:
                         - Zummara
                         - Zurna
                         - Choir
+                        - HornSection
                         - PercussionSection
                         - StringSection
                         - WindSection
                         - UserDefined
+                        - Beatboxing
+                        - BoyVoice
+                        - ChildrensBackgroundVocalist
+                        - ChildVoice
+                        - FemaleBackgroundVocalist
+                        - FemaleVoice
+                        - GirlVoice
+                        - GroupBackgroundVocalists
+                        - LeadVocalist
+                        - MaleBackgroundVocalist
+                        - MaleVoice
+                        - MixedBackgroundVocalist
+                        - MixedVoice
+                        - NeutralVoice
+                        - Voice
+                        - Yodelling
                     groups:
                         - xsd_rules

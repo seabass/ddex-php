@@ -30,9 +30,9 @@ DDEX\ERN\ERN_431\WorkRightsControllerType:
             -
                 Choice:
                     choices:
+                        - ExclusiveLicensee
                         - OriginalOwner
                         - SuccessorInTitle
-                        - ExclusiveLicensee
                     groups:
                         - xsd_rules
         startDate:
